@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+/** Anime details page component. */
 @Component({
 	selector: 'camp-details-page',
 	standalone: true,
