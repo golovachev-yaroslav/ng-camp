@@ -1,6 +1,6 @@
 import { AiredDto } from '@js-camp/core/dtos/anime/aired.dto';
-import { AnimeType } from '@js-camp/core/dtos/enums/anime-type';
-import { AnimeStatus } from '@js-camp/core/dtos/enums/anime-status';
+import { AnimeStatus } from '@js-camp/core/models/enums/anime-status';
+import { AnimeType } from '@js-camp/core/models/enums/anime-type';
 
 /** Anime DTO. */
 export interface AnimeDto {
