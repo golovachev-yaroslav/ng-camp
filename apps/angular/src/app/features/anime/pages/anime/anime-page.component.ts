@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, DestroyRef, inject } from '@angular/core';
 import { CommonModule, AsyncPipe } from '@angular/common';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { MatTableModule } from '@angular/material/table';
 import { MatSortModule, Sort } from '@angular/material/sort';
 import { MatPaginatorModule, PageEvent } from '@angular/material/paginator';
@@ -9,12 +9,13 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
-import { BehaviorSubject, Observable, tap, delay, switchMap } from 'rxjs';
+import { BehaviorSubject, Observable, tap, delay, switchMap, distinctUntilChanged } from 'rxjs';
 
 import { AnimeService } from '@js-camp/angular/core/services/anime.service';
 import { Anime } from '@js-camp/core/models/anime/anime';
 import { Pagination } from '@js-camp/core/models/pagintation';
 import { AnimeType } from '@js-camp/core/models/enums/anime-type';
+import { QueryParams } from '@js-camp/core/models/query-params';
 
 /** Anime page component. */
 @Component({
@@ -58,6 +59,8 @@ export class AnimePageComponent {
 
 	private readonly activeRoute = inject(ActivatedRoute);
 
+	private readonly router = inject(Router);
+
 	private readonly destroyRef = inject(DestroyRef);
 
 	/** Columns. */
@@ -76,8 +79,10 @@ export class AnimePageComponent {
 
 	private createAnimeStream(): Observable<Pagination<Anime>> {
 		return this.activeRoute.queryParams.pipe(
+			distinctUntilChanged(),
 			switchMap(params =>
 				this.animeService.getAnimeList().pipe(
+					tap(() => console.log(params)),
 					tap(() => this.isLoading$.next(true)),
 					delay(1000),
 					tap(() => this.isLoading$.next(false)),
@@ -91,14 +96,44 @@ export class AnimePageComponent {
 	 * @param event Page event.
 	 */
 	protected onPageChange(event: PageEvent): void {
-		console.log(event);
+		this.setQueryParams({
+			pageNumber: event.pageIndex,
+			pageSize: event.pageSize,
+		});
 	}
 
 	/**
 	 * Change table sort.
-	 * @param event Event.
+	 * @param sort Event.
 	 */
-	protected onSortChange(event: Sort): void {
-		console.log(event);
+	protected onSortChange(sort: Sort): void {
+		this.setQueryParams({
+			direction: sort.direction,
+			field: sort.active,
+		});
+	}
+
+	/** Query params. */
+	protected get queryParams(): QueryParams {
+		const query = this.activeRoute.snapshot.queryParams;
+
+		return {
+			search: query['search'],
+			type: query['type'],
+			pageNumber: query['pageNumber'],
+			pageSize: query['pageSize'],
+			field: query['field'],
+			direction: query['direction'],
+		};
+	}
+
+	/**
+	 * Sets query params.
+	 * @param params Changed params.
+	 */
+	private setQueryParams(params: Partial<QueryParams>): void {
+		const pathname = this.router.url.split('?')[0];
+
+		this.router.navigate([pathname], { queryParams: { ...this.queryParams, ...params } });
 	}
 }
