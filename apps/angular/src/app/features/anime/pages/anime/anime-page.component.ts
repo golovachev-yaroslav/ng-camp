@@ -115,15 +115,15 @@ export class AnimePageComponent {
 
 	/** Query params. */
 	protected get queryParams(): QueryParams {
-		const query = this.activeRoute.snapshot.queryParams;
+		const { queryParams } = this.activeRoute.snapshot;
 
 		return {
-			search: query['search'],
-			type: query['type'],
-			pageNumber: query['pageNumber'],
-			pageSize: query['pageSize'],
-			field: query['field'],
-			direction: query['direction'],
+			search: queryParams['search'],
+			type: queryParams['type'],
+			pageNumber: queryParams['pageNumber'],
+			pageSize: queryParams['pageSize'],
+			field: queryParams['field'],
+			direction: queryParams['direction'],
 		};
 	}
 
