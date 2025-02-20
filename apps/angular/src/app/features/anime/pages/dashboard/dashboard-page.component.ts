@@ -3,23 +3,23 @@ import { CommonModule, AsyncPipe } from '@angular/common';
 import { MatTableModule } from '@angular/material/table';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
-import { BehaviorSubject, Observable, tap, delay } from 'rxjs';
+import { BehaviorSubject, Observable, finalize } from 'rxjs';
 
 import { AnimeService } from '@js-camp/angular/core/services/anime.service';
 import { Anime } from '@js-camp/core/models/anime/anime';
 import { Pagination } from '@js-camp/core/models/pagintation';
 
-/** Anime page component. */
+/** Dashboard page component. */
 @Component({
-	selector: 'camp-anime-page',
+	selector: 'camp-dashboard-page',
 	standalone: true,
 	imports: [CommonModule, AsyncPipe, MatTableModule, MatProgressSpinnerModule],
-	templateUrl: './anime-page.component.html',
-	styleUrl: './anime-page.component.css',
+	templateUrl: './dashboard-page.component.html',
+	styleUrl: './dashboard-page.component.css',
 	changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class AnimePageComponent {
-	/** Anime page. */
+export class DashboardPageComponent {
+	/** Anime list. */
 	protected readonly animes$: Observable<Pagination<Anime>>;
 
 	/** Loading state. */
@@ -31,7 +31,7 @@ export class AnimePageComponent {
 
 	/** Columns. */
 	public readonly displayedColumns: string[] = [
-		'image',
+		'poster',
 		'titleEnglish',
 		'titleJapanese',
 		'airedStart',
@@ -44,13 +44,11 @@ export class AnimePageComponent {
 	}
 
 	private createAnimeStream(): Observable<Pagination<Anime>> {
+		this.isLoading$.next(true);
+
 		return this.animeService.getAnimeList().pipe(
-			tap(() => this.isLoading$.next(true)),
 			takeUntilDestroyed(this.destroyRef),
-		)
-			.pipe(
-				delay(2000),
-				tap(() => this.isLoading$.next(false)),
-			);
+			finalize(() => this.isLoading$.next(false)),
+		);
 	}
 }

@@ -14,8 +14,8 @@ export class Anime {
 	/** Japanese title. */
 	public readonly titleJapanese: string;
 
-	/** Image URL. */
-	public readonly image: string | null;
+	/** Poster URL. */
+	public readonly poster: string | null;
 
 	/** Created date. */
 	public readonly created: Date;
@@ -42,7 +42,7 @@ export class Anime {
 		this.id = data.id;
 		this.titleEnglish = data.titleEnglish;
 		this.titleJapanese = data.titleJapanese;
-		this.image = data.image;
+		this.poster = data.poster;
 		this.created = data.created;
 		this.modified = data.modified;
 		this.type = data.type;

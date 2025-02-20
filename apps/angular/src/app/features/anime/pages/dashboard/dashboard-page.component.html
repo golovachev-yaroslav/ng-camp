@@ -6,10 +6,13 @@
 	<div class="table-wrapper">
 		<table mat-table [dataSource]="animes.items" class="mat-elevation-z8">
 
-			<ng-container matColumnDef="image">
+			<tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+			<tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+			<ng-container matColumnDef="poster">
 				<th mat-header-cell *matHeaderCellDef></th>
 				<td mat-cell *matCellDef="let anime">
-					<img src={{anime.image}} alt="{{anime.name}}" class="poster" />
+					<img src={{anime.poster}} alt="{{anime.name}}" class="poster" />
 				</td>
 			</ng-container>
 
@@ -37,9 +40,6 @@
 				<th mat-header-cell *matHeaderCellDef> Status </th>
 				<td mat-cell *matCellDef="let anime"> {{anime.status}} </td>
 			</ng-container>
-
-			<tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
-			<tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 		</table>
 	</div>
 }

@@ -21,7 +21,7 @@ export class AnimeService {
 	private readonly animeApiUrl = `${environment.apiUrl}/api/v1/anime/`;
 
 	/**
-	 * Get anime from server.
+	 * Get anime list from server.
 	 */
 	public getAnimeList(): Observable<Pagination<Anime>> {
 		return this.httpService

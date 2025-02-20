@@ -16,7 +16,7 @@ export namespace AnimeMapper {
 			userScore: dto.user_score,
 			titleEnglish: dto.title_eng,
 			titleJapanese: dto.title_jpn,
-			image: dto.image,
+			poster: dto.image,
 			type: dto.type,
 			status: dto.status,
 			aired: AiredMapper.fromDto(dto.aired),

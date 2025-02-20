@@ -1,14 +1,14 @@
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 
-import { AnimePageComponent } from './pages/anime/anime-page.component';
+import { DashboardPageComponent } from './pages/dashboard/dashboard-page.component';
 import { DetailsPageComponent } from './pages/details/details-page.component';
 
 /** Routes object. */
 export const routes: Routes = [
 	{
 		path: '',
-		component: AnimePageComponent,
+		component: DashboardPageComponent,
 	},
 	{
 		path: ':id',
