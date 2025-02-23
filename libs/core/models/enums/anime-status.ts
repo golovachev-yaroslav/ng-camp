@@ -2,9 +2,9 @@ import { enumToArray } from '@js-camp/core/utils/enum-to-array';
 
 /** Anime statuses. */
 export enum AnimeStatus {
-	Finished = 'Finished',
-	Airing = 'Airing',
-	NotYetAired = 'NotYetAired',
+	Finished = 'AIRING',
+	Airing = 'FINISHED',
+	NotYetAired = 'NOT_YET_AIRED',
 }
 
 /** Anime status. */
@@ -17,7 +17,7 @@ export namespace AnimeStatus {
 		[AnimeStatus.NotYetAired]: 'Not yet aired',
 	};
 
-	/** Converts anime sstatus enum to array. */
+	/** Converts anime status enum to array. */
 	export function toArray(): AnimeStatus[] {
 		return enumToArray(AnimeStatus);
 	}

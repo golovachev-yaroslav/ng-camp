@@ -2,12 +2,13 @@ import { enumToArray } from '@js-camp/core/utils/enum-to-array';
 
 /** Anime type. */
 export enum AnimeType {
-	Tv = 'Tv',
-	Ova = 'Ova',
-	Movie = 'Movie',
-	Special = 'Special',
-	Ona = 'Ona',
-	Music = 'Music',
+	Tv = 'TV',
+	Ova = 'OVA',
+	Movie = 'MOVIE',
+	Special = 'SPECIAL',
+	Ona = 'ONA',
+	Music = 'MUSIC',
+	PromotionalVideos = 'PROMOTIONAL_VIDEOS',
 	Unknown = 'Unknown',
 }
 
@@ -21,6 +22,7 @@ export namespace AnimeType {
 		[AnimeType.Ova]: 'Ova',
 		[AnimeType.Special]: 'Special',
 		[AnimeType.Tv]: 'Tv',
+		[AnimeType.PromotionalVideos]: 'Promotional Videos',
 		[AnimeType.Unknown]: 'Unknown',
 	};
 

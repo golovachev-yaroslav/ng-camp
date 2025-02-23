@@ -1,22 +1,13 @@
-import { SortDirection } from '@angular/material/sort';
-import { AnimeType } from '@js-camp/core/models/enums/anime-type';
-
 /** Query params. */
 export interface QueryParams {
-	/** Page size. */
-	readonly pageSize: number;
+	/** Limit. */
+	readonly limit: number;
 
 	/** Page number. */
-	readonly pageNumber: number;
+	readonly offset: number;
 
-	/** Filter type. */
-	readonly type: AnimeType[];
-
-	/** Soring field. */
-	readonly field: string;
-
-	/** Sorting direction. */
-	readonly direction: SortDirection;
+	/** Sort field. */
+	readonly sort: string;
 
 	/** Search. */
 	readonly search: string;
