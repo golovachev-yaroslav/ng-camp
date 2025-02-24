@@ -45,20 +45,6 @@
 			"library": {
 				"linter": "eslint"
 			}
-		},
-		"@nx/react": {
-			"application": {
-				"style": "css",
-				"linter": "eslint",
-				"babel": true
-			},
-			"component": {
-				"style": "css"
-			},
-			"library": {
-				"style": "css",
-				"linter": "eslint"
-			}
 		}
 	},
 	"defaultProject": "angular",

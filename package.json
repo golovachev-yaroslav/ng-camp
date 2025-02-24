@@ -9,10 +9,6 @@
     "node": "20.15.0"
   },
   "scripts": {
-    "react:build": "nx run react:build",
-    "react:serve": "nx run react:serve",
-    "react:lint": "nx run react:lint --fix",
-    "react:stylelint": "nx run react:stylelint",
     "angular:build": "nx run angular:build",
     "angular:build:development": "nx run angular:build:development",
     "angular:serve": "nx run angular:serve",
