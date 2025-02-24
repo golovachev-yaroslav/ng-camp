@@ -1,8 +1,10 @@
-import { Anime } from '@js-camp/core/models/anime/anime';
-import { AnimeDto } from '@js-camp/core/dtos/anime/anime.dto';
-import { AiredMapper } from '@js-camp/core/mappers/aired.mapper';
+import { Anime } from '../models/anime/anime';
+import { AnimeDto } from '../dtos/anime/anime.dto';
+
+import { AiredMapper } from './aired.mapper';
 
 export namespace AnimeMapper {
+
 	/**
 	 * Maps dto to model.
 	 * @param dto Anime dto.

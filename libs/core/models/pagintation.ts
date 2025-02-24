@@ -1,5 +1,5 @@
 /** Pagination meta info. */
-export interface Pagination<T> {
+export type Pagination<T> = {
 
 	/** Total count of items. */
 	readonly count: number;
@@ -12,4 +12,4 @@ export interface Pagination<T> {
 
 	/** Items. */
 	readonly items: readonly T[];
-}
+};

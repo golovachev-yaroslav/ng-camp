@@ -1,5 +1,5 @@
-import { Pagination } from '@js-camp/core/models/pagintation';
-import { PaginationDto } from '@js-camp/core/dtos/pagination.dto';
+import { Pagination } from '../models/pagintation';
+import { PaginationDto } from '../dtos/pagination.dto';
 
 /** Pagination mapper. */
 export namespace PaginationMapper {

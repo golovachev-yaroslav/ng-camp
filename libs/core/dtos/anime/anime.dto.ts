@@ -1,9 +1,11 @@
-import { AiredDto } from '@js-camp/core/dtos/anime/aired.dto';
-import { AnimeType } from '@js-camp/core/dtos/enums/anime-type';
-import { AnimeStatus } from '@js-camp/core/dtos/enums/anime-status';
+import { AnimeType } from '../enums/anime-type';
+import { AnimeStatus } from '../enums/anime-status';
+
+import { AiredDto } from './aired.dto';
 
 /** Anime DTO. */
-export interface AnimeDto {
+export type AnimeDto = {
+
 	/** Unique id. */
 	readonly id: number;
 
@@ -36,4 +38,4 @@ export interface AnimeDto {
 
 	/** User score. */
 	readonly user_score: number | null;
-}
+};

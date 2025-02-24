@@ -1,7 +1,8 @@
-import { Aired } from '@js-camp/core/models/anime/aired';
-import { AnimeType } from '@js-camp/core/dtos/enums/anime-type';
-import { AnimeStatus } from '@js-camp/core/dtos/enums/anime-status';
-import { OmitImmerable } from '@js-camp/core/models/immerable';
+import { AnimeType } from '../../dtos/enums/anime-type';
+import { AnimeStatus } from '../../dtos/enums/anime-status';
+import { OmitImmerable } from '../immerable';
+
+import { Aired } from './aired';
 
 /** Anime. */
 export class Anime {
