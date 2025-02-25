@@ -1,5 +1,5 @@
 /** Aired dates DTO. */
-export type AiredDto = {
+export interface AiredDto {
 
 	/**
 	 *  Start date.
@@ -12,4 +12,4 @@ export type AiredDto = {
 	 *  @example 1975-01-01T00:00:00Z.
 	 */
 	readonly end: string | null;
-};
+}

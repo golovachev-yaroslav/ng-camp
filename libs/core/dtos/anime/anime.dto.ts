@@ -4,7 +4,7 @@ import { AnimeStatus } from '../enums/anime-status';
 import { AiredDto } from './aired.dto';
 
 /** Anime DTO. */
-export type AnimeDto = {
+export interface AnimeDto {
 
 	/** Unique id. */
 	readonly id: number;
@@ -38,4 +38,4 @@ export type AnimeDto = {
 
 	/** User score. */
 	readonly user_score: number | null;
-};
+}

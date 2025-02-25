@@ -1,5 +1,5 @@
 /** Genre DTO. */
-export type GenreDto = {
+export interface GenreDto {
 
 	/** Id. */
 	readonly id: number;
@@ -15,4 +15,4 @@ export type GenreDto = {
 
 	/** DTO type. */
 	readonly type: 'GENRES';
-};
+}
