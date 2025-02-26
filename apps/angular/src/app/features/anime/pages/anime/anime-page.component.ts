@@ -52,8 +52,8 @@ export class AnimePageComponent {
 	/** Anime status enum. */
 	protected readonly animeStatus = AnimeStatus;
 
-	/** Selected filters. */
-	protected selectedFilters = AnimeType.toArray()[0];
+	/** Selected types filter. */
+	protected selectedTypesFilter: string[] = [];
 
 	/** Anime filters. */
 	protected readonly filters: readonly AnimeType[] = AnimeType.toArray();
@@ -81,8 +81,8 @@ export class AnimePageComponent {
 		'status',
 	];
 
-	/** Select form control. */
-	protected readonly filterControl = this.formBuilder.control<readonly AnimeType[]>([]);
+	/** Select type control. */
+	protected readonly filterTypeControl = this.formBuilder.control(this.toggleOnTypeFilters());
 
 	public constructor() {
 		this.animes$ = this.createAnimeStream();
@@ -117,11 +117,23 @@ export class AnimePageComponent {
 	}
 
 	/**
+	 * Toggle on type filters.
+	 */
+	private toggleOnTypeFilters(): string[] {
+		const params = AnimeHttpParamsMapper.fromDto(this.queryParams);
+
+		this.selectedTypesFilter = params.typeIn?.split(',') ?? [];
+
+		return this.selectedTypesFilter;
+	}
+
+	/**
 	 * Transform query parameters.
 	 * @param query Query parameters.
 	 */
 	private transformQueryParams(query: Params): QueryParams {
 		const params = AnimeHttpParamsMapper.fromDto(query);
+
 		this.setQueryParams(params);
 
 		return params;
@@ -141,7 +153,7 @@ export class AnimePageComponent {
 	/** Change filter. */
 	protected onFilterChange(): void {
 		this.setQueryParams({
-			typeIn: this.filterControl.value.toString(),
+			typeIn: this.filterTypeControl.value.toString(),
 		});
 	}
 
