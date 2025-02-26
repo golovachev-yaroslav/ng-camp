@@ -3,10 +3,10 @@
   "version": "0.0.0",
   "license": "MIT",
   "engines": {
-    "node": "^20.15.0"
+    "node": "^22.13.1"
   },
   "volta": {
-    "node": "20.15.0"
+    "node": "22.13.1"
   },
   "scripts": {
     "angular:build": "nx run angular:build",
