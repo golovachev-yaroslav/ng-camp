@@ -117,7 +117,7 @@ export class AnimePageComponent {
 	}
 
 	/**
-	 * Toggle on type filters.
+	 * Toggle on types filter.
 	 */
 	private toggleOnTypeFilters(): string[] {
 		const params = AnimeHttpParamsMapper.fromDto(this.queryParams);
