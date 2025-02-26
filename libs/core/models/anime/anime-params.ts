@@ -1,5 +1,4 @@
 import { QueryParams } from '@js-camp/core/models/query-params';
-import { AnimeType } from '@js-camp/core/models/enums/anime-type';
 import { AnimeStatus } from '@js-camp/core/models/enums/anime-status';
 import { AnimeSort } from '@js-camp/core/models/enums/anime-sort';
 
