@@ -1,0 +1,21 @@
+.table-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.poster {
+  width: 150px;
+  height: 150px;
+  padding: 8px;
+  object-fit: contain;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
