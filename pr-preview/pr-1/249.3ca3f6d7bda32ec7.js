@@ -34,7 +34,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ 6610);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 2978);
 /**
- * @license Angular v18.0.5
+ * @license Angular v18.2.9
  * (c) 2010-2024 Google LLC. https://angular.io/
  * License: MIT
  */
@@ -666,7 +666,7 @@ function keyframes(steps) {
  *  - Transition animations applied based on
  *    the trigger's expression value
  *
- *   ```HTML
+ *   ```html
  *   <div [@myAnimationTrigger]="myStatusExp">
  *    ...
  *   </div>
@@ -683,7 +683,7 @@ function keyframes(steps) {
  *  - Transition animations applied based on custom logic dependent
  *    on the trigger's expression value and provided parameters
  *
- *    ```HTML
+ *    ```html
  *    <div [@myAnimationTrigger]="{
  *     value: stepName,
  *     params: { target: currentTarget }
@@ -1073,8 +1073,8 @@ function stagger(timings, animation) {
 let AnimationBuilder = /*#__PURE__*/(() => {
   class AnimationBuilder {
     static {
-      this.ɵfac = function AnimationBuilder_Factory(t) {
-        return new (t || AnimationBuilder)();
+      this.ɵfac = function AnimationBuilder_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || AnimationBuilder)();
       };
     }
     static {
@@ -1128,8 +1128,8 @@ let BrowserAnimationBuilder = /*#__PURE__*/(() => {
       return new BrowserAnimationFactory(id, this._renderer);
     }
     static {
-      this.ɵfac = function BrowserAnimationBuilder_Factory(t) {
-        return new (t || BrowserAnimationBuilder)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.RendererFactory2), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common__WEBPACK_IMPORTED_MODULE_1__.DOCUMENT));
+      this.ɵfac = function BrowserAnimationBuilder_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || BrowserAnimationBuilder)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.RendererFactory2), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common__WEBPACK_IMPORTED_MODULE_1__.DOCUMENT));
       };
     }
     static {
@@ -1241,7 +1241,6 @@ function isAnimationRenderer(renderer) {
  *
  * @see {@link animate}
  * @see {@link AnimationPlayer}
- * @see {@link ɵAnimationGroupPlayer AnimationGroupPlayer}
  *
  * @publicApi
  */
@@ -1528,7 +1527,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_animations__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/animations */ 194);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 2978);
 /**
- * @license Angular v18.0.5
+ * @license Angular v18.2.9
  * (c) 2010-2024 Google LLC. https://angular.io/
  * License: MIT
  */
@@ -1858,8 +1857,8 @@ let NoopAnimationDriver = /*#__PURE__*/(() => {
       return new _angular_animations__WEBPACK_IMPORTED_MODULE_1__.NoopAnimationPlayer(duration, delay);
     }
     static {
-      this.ɵfac = function NoopAnimationDriver_Factory(t) {
-        return new (t || NoopAnimationDriver)();
+      this.ɵfac = function NoopAnimationDriver_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || NoopAnimationDriver)();
       };
     }
     static {
@@ -5782,7 +5781,13 @@ class BaseAnimationRenderer {
     this.engine.onInsert(this.namespaceId, newChild, parent, isMove);
   }
   removeChild(parent, oldChild, isHostElement) {
-    this.engine.onRemove(this.namespaceId, oldChild, this.delegate);
+    // Prior to the changes in #57203, this method wasn't being called at all by `core` if the child
+    // doesn't have a parent. There appears to be some animation-specific downstream logic that
+    // depends on the null check happening before the animation engine. This check keeps the old
+    // behavior while allowing `core` to not have to check for the parent element anymore.
+    if (this.parentNode(oldChild)) {
+      this.engine.onRemove(this.namespaceId, oldChild, this.delegate);
+    }
   }
   selectRootElement(selectorOrNode, preserveContent) {
     return this.delegate.selectRootElement(selectorOrNode, preserveContent);
@@ -5893,14 +5898,7 @@ class AnimationRendererFactory {
     this._rendererCache = new Map();
     this._cdRecurDepth = 0;
     engine.onRemovalComplete = (element, delegate) => {
-      // Note: if a component element has a leave animation, and a host leave animation,
-      // the view engine will call `removeChild` for the parent
-      // component renderer as well as for the child component renderer.
-      // Therefore, we need to check if we already removed the element.
-      const parentNode = delegate?.parentNode(element);
-      if (parentNode) {
-        delegate.removeChild(parentNode, element);
-      }
+      delegate?.removeChild(null, element);
     };
   }
   createRenderer(hostElement, type) {

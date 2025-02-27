@@ -20,8 +20,8 @@ __webpack_require__.r(__webpack_exports__);
 let AppComponent = /*#__PURE__*/(() => {
   class AppComponent {
     static {
-      this.ɵfac = function AppComponent_Factory(t) {
-        return new (t || AppComponent)();
+      this.ɵfac = function AppComponent_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || AppComponent)();
       };
     }
     static {
@@ -84,8 +84,8 @@ const appRoutes = [{
 let AppRoutes = /*#__PURE__*/(() => {
   class AppRoutes {
     static {
-      this.ɵfac = function AppRoutes_Factory(t) {
-        return new (t || AppRoutes)();
+      this.ɵfac = function AppRoutes_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || AppRoutes)();
       };
     }
     static {
@@ -126,8 +126,8 @@ __webpack_require__.r(__webpack_exports__);
 let PageNotFoundComponent = /*#__PURE__*/(() => {
   class PageNotFoundComponent {
     static {
-      this.ɵfac = function PageNotFoundComponent_Factory(t) {
-        return new (t || PageNotFoundComponent)();
+      this.ɵfac = function PageNotFoundComponent_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || PageNotFoundComponent)();
       };
     }
     static {
@@ -179,8 +179,8 @@ let ApiKeyInterceptor = /*#__PURE__*/(() => {
       return next.handle(updatedRequest);
     }
     static {
-      this.ɵfac = function ApiKeyInterceptor_Factory(t) {
-        return new (t || ApiKeyInterceptor)();
+      this.ɵfac = function ApiKeyInterceptor_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || ApiKeyInterceptor)();
       };
     }
     static {
@@ -3226,7 +3226,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   HashLocationStrategy: () => (/* binding */ HashLocationStrategy),
 /* harmony export */   I18nPluralPipe: () => (/* binding */ I18nPluralPipe),
 /* harmony export */   I18nSelectPipe: () => (/* binding */ I18nSelectPipe),
-/* harmony export */   IMAGE_CONFIG: () => (/* reexport safe */ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵIMAGE_CONFIG"]),
+/* harmony export */   IMAGE_CONFIG: () => (/* reexport safe */ _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵIMAGE_CONFIG"]),
 /* harmony export */   IMAGE_LOADER: () => (/* binding */ IMAGE_LOADER),
 /* harmony export */   JsonPipe: () => (/* binding */ JsonPipe),
 /* harmony export */   KeyValuePipe: () => (/* binding */ KeyValuePipe),
@@ -3309,9 +3309,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "ɵparseCookieValue": () => (/* binding */ parseCookieValue),
 /* harmony export */   "ɵsetRootDomAdapter": () => (/* binding */ setRootDomAdapter)
 /* harmony export */ });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 2978);
+/* harmony import */ var _home_runner_work_ng_camp_ng_camp_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 3308);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 2978);
+
 /**
- * @license Angular v18.0.5
+ * @license Angular v18.2.9
  * (c) 2010-2024 Google LLC. https://angular.io/
  * License: MIT
  */
@@ -3342,12 +3344,12 @@ class DomAdapter {}
 let PlatformNavigation = /*#__PURE__*/(() => {
   class PlatformNavigation {
     static {
-      this.ɵfac = function PlatformNavigation_Factory(t) {
-        return new (t || PlatformNavigation)();
+      this.ɵfac = function PlatformNavigation_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || PlatformNavigation)();
       };
     }
     static {
-      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
+      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
         token: PlatformNavigation,
         factory: () => (() => window.navigation)(),
         providedIn: 'platform'
@@ -3367,7 +3369,7 @@ let PlatformNavigation = /*#__PURE__*/(() => {
  *
  * @publicApi
  */
-const DOCUMENT = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_0__.InjectionToken(ngDevMode ? 'DocumentToken' : '');
+const DOCUMENT = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_1__.InjectionToken(ngDevMode ? 'DocumentToken' : '');
 
 /**
  * This class should not be used directly by an application developer. Instead, use
@@ -3397,14 +3399,14 @@ let PlatformLocation = /*#__PURE__*/(() => {
       throw new Error(ngDevMode ? 'Not implemented' : '');
     }
     static {
-      this.ɵfac = function PlatformLocation_Factory(t) {
-        return new (t || PlatformLocation)();
+      this.ɵfac = function PlatformLocation_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || PlatformLocation)();
       };
     }
     static {
-      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
+      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
         token: PlatformLocation,
-        factory: () => (() => (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.inject)(BrowserPlatformLocation))(),
+        factory: () => (() => (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(BrowserPlatformLocation))(),
         providedIn: 'platform'
       });
     }
@@ -3420,7 +3422,7 @@ let PlatformLocation = /*#__PURE__*/(() => {
  *
  * @publicApi
  */
-const LOCATION_INITIALIZED = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_0__.InjectionToken(ngDevMode ? 'Location Initialized' : '');
+const LOCATION_INITIALIZED = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_1__.InjectionToken(ngDevMode ? 'Location Initialized' : '');
 /**
  * `PlatformLocation` encapsulates all of the direct calls to platform APIs.
  * This class should not be used directly by an application developer. Instead, use
@@ -3432,7 +3434,7 @@ let BrowserPlatformLocation = /*#__PURE__*/(() => {
   class BrowserPlatformLocation extends PlatformLocation {
     constructor() {
       super();
-      this._doc = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.inject)(DOCUMENT);
+      this._doc = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(DOCUMENT);
       this._location = window.location;
       this._history = window.history;
     }
@@ -3492,12 +3494,12 @@ let BrowserPlatformLocation = /*#__PURE__*/(() => {
       return this._history.state;
     }
     static {
-      this.ɵfac = function BrowserPlatformLocation_Factory(t) {
-        return new (t || BrowserPlatformLocation)();
+      this.ɵfac = function BrowserPlatformLocation_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || BrowserPlatformLocation)();
       };
     }
     static {
-      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
+      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
         token: BrowserPlatformLocation,
         factory: () => (() => new BrowserPlatformLocation())(),
         providedIn: 'platform'
@@ -3576,7 +3578,7 @@ function normalizeQueryParams(params) {
  * interact with application route state.
  *
  * For instance, `HashLocationStrategy` produces URLs like
- * <code class="no-auto-link">http://example.com#/foo</code>,
+ * <code class="no-auto-link">http://example.com/#/foo</code>,
  * and `PathLocationStrategy` produces
  * <code class="no-auto-link">http://example.com/foo</code> as an equivalent URL.
  *
@@ -3590,14 +3592,14 @@ let LocationStrategy = /*#__PURE__*/(() => {
       throw new Error(ngDevMode ? 'Not implemented' : '');
     }
     static {
-      this.ɵfac = function LocationStrategy_Factory(t) {
-        return new (t || LocationStrategy)();
+      this.ɵfac = function LocationStrategy_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || LocationStrategy)();
       };
     }
     static {
-      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
+      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
         token: LocationStrategy,
-        factory: () => (() => (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.inject)(PathLocationStrategy))(),
+        factory: () => (() => (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(PathLocationStrategy))(),
         providedIn: 'root'
       });
     }
@@ -3630,7 +3632,7 @@ let LocationStrategy = /*#__PURE__*/(() => {
  *
  * @publicApi
  */
-const APP_BASE_HREF = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_0__.InjectionToken(ngDevMode ? 'appBaseHref' : '');
+const APP_BASE_HREF = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_1__.InjectionToken(ngDevMode ? 'appBaseHref' : '');
 /**
  * @description
  * A {@link LocationStrategy} used to configure the {@link Location} service to
@@ -3668,7 +3670,7 @@ let PathLocationStrategy = /*#__PURE__*/(() => {
       super();
       this._platformLocation = _platformLocation;
       this._removeListenerFns = [];
-      this._baseHref = href ?? this._platformLocation.getBaseHrefFromDOM() ?? (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.inject)(DOCUMENT).location?.origin ?? '';
+      this._baseHref = href ?? this._platformLocation.getBaseHrefFromDOM() ?? (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(DOCUMENT).location?.origin ?? '';
     }
     /** @nodoc */
     ngOnDestroy() {
@@ -3711,12 +3713,12 @@ let PathLocationStrategy = /*#__PURE__*/(() => {
       this._platformLocation.historyGo?.(relativePosition);
     }
     static {
-      this.ɵfac = function PathLocationStrategy_Factory(t) {
-        return new (t || PathLocationStrategy)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](PlatformLocation), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](APP_BASE_HREF, 8));
+      this.ɵfac = function PathLocationStrategy_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || PathLocationStrategy)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](PlatformLocation), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](APP_BASE_HREF, 8));
       };
     }
     static {
-      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
+      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
         token: PathLocationStrategy,
         factory: PathLocationStrategy.ɵfac,
         providedIn: 'root'
@@ -3807,12 +3809,12 @@ let HashLocationStrategy = /*#__PURE__*/(() => {
       this._platformLocation.historyGo?.(relativePosition);
     }
     static {
-      this.ɵfac = function HashLocationStrategy_Factory(t) {
-        return new (t || HashLocationStrategy)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](PlatformLocation), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](APP_BASE_HREF, 8));
+      this.ɵfac = function HashLocationStrategy_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || HashLocationStrategy)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](PlatformLocation), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](APP_BASE_HREF, 8));
       };
     }
     static {
-      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
+      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
         token: HashLocationStrategy,
         factory: HashLocationStrategy.ɵfac
       });
@@ -3856,7 +3858,7 @@ let Location = /*#__PURE__*/(() => {
   class Location {
     constructor(locationStrategy) {
       /** @internal */
-      this._subject = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+      this._subject = new _angular_core__WEBPACK_IMPORTED_MODULE_1__.EventEmitter();
       /** @internal */
       this._urlChangeListeners = [];
       /** @internal */
@@ -4074,12 +4076,12 @@ let Location = /*#__PURE__*/(() => {
       this.stripTrailingSlash = stripTrailingSlash;
     }
     static {
-      this.ɵfac = function Location_Factory(t) {
-        return new (t || Location)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](LocationStrategy));
+      this.ɵfac = function Location_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || Location)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](LocationStrategy));
       };
     }
     static {
-      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
+      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
         token: Location,
         factory: () => createLocation(),
         providedIn: 'root'
@@ -4092,7 +4094,7 @@ let Location = /*#__PURE__*/(() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && void 0;
 })();
 function createLocation() {
-  return new Location((0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"])(LocationStrategy));
+  return new Location((0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"])(LocationStrategy));
 }
 function _stripBasePath(basePath, url) {
   if (!basePath || !url.startsWith(basePath)) {
@@ -4492,7 +4494,7 @@ var WeekDay = /*#__PURE__*/function (WeekDay) {
  * This function serves no purpose when relying on the `Intl` API.
  */
 function getLocaleId(locale) {
-  return (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵfindLocaleData"])(locale)[_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵLocaleDataIndex"].LocaleId];
+  return (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵfindLocaleData"])(locale)[_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵLocaleDataIndex"].LocaleId];
 }
 /**
  * Retrieves day period strings for the given locale.
@@ -4509,8 +4511,8 @@ function getLocaleId(locale) {
  * Use `Intl.DateTimeFormat` for date formating instead.
  */
 function getLocaleDayPeriods(locale, formStyle, width) {
-  const data = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵfindLocaleData"])(locale);
-  const amPmData = [data[_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵLocaleDataIndex"].DayPeriodsFormat], data[_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵLocaleDataIndex"].DayPeriodsStandalone]];
+  const data = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵfindLocaleData"])(locale);
+  const amPmData = [data[_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵLocaleDataIndex"].DayPeriodsFormat], data[_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵLocaleDataIndex"].DayPeriodsStandalone]];
   const amPm = getLastDefinedValue(amPmData, formStyle);
   return getLastDefinedValue(amPm, width);
 }
@@ -4530,8 +4532,8 @@ function getLocaleDayPeriods(locale, formStyle, width) {
  * Use `Intl.DateTimeFormat` for date formating instead.
  */
 function getLocaleDayNames(locale, formStyle, width) {
-  const data = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵfindLocaleData"])(locale);
-  const daysData = [data[_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵLocaleDataIndex"].DaysFormat], data[_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵLocaleDataIndex"].DaysStandalone]];
+  const data = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵfindLocaleData"])(locale);
+  const daysData = [data[_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵLocaleDataIndex"].DaysFormat], data[_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵLocaleDataIndex"].DaysStandalone]];
   const days = getLastDefinedValue(daysData, formStyle);
   return getLastDefinedValue(days, width);
 }
@@ -4551,8 +4553,8 @@ function getLocaleDayNames(locale, formStyle, width) {
  * Use `Intl.DateTimeFormat` for date formating instead.
  */
 function getLocaleMonthNames(locale, formStyle, width) {
-  const data = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵfindLocaleData"])(locale);
-  const monthsData = [data[_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵLocaleDataIndex"].MonthsFormat], data[_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵLocaleDataIndex"].MonthsStandalone]];
+  const data = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵfindLocaleData"])(locale);
+  const monthsData = [data[_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵLocaleDataIndex"].MonthsFormat], data[_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵLocaleDataIndex"].MonthsStandalone]];
   const months = getLastDefinedValue(monthsData, formStyle);
   return getLastDefinedValue(months, width);
 }
@@ -4571,8 +4573,8 @@ function getLocaleMonthNames(locale, formStyle, width) {
  * Use `Intl.DateTimeFormat` for date formating instead.
  */
 function getLocaleEraNames(locale, width) {
-  const data = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵfindLocaleData"])(locale);
-  const erasData = data[_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵLocaleDataIndex"].Eras];
+  const data = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵfindLocaleData"])(locale);
+  const erasData = data[_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵLocaleDataIndex"].Eras];
   return getLastDefinedValue(erasData, width);
 }
 /**
@@ -4593,8 +4595,8 @@ function getLocaleEraNames(locale, width) {
  * - Other librairies like [`date-fns`](https://date-fns.org/), [`day.js`](https://day.js.org/en/) or [`weekstart`](https://www.npmjs.com/package/weekstart) library provide their own locale based data for the first day of the week.
  */
 function getLocaleFirstDayOfWeek(locale) {
-  const data = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵfindLocaleData"])(locale);
-  return data[_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵLocaleDataIndex"].FirstDayOfWeek];
+  const data = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵfindLocaleData"])(locale);
+  return data[_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵLocaleDataIndex"].FirstDayOfWeek];
 }
 /**
  * Range of week days that are considered the week-end for the given locale.
@@ -4610,8 +4612,8 @@ function getLocaleFirstDayOfWeek(locale) {
  * Libraries like [`Luxon`](https://moment.github.io/luxon/#/) rely on `Intl` but fallback on the ISO 8601 definition (Saturday+Sunday) if `getWeekInfo` is not supported .
  */
 function getLocaleWeekEndRange(locale) {
-  const data = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵfindLocaleData"])(locale);
-  return data[_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵLocaleDataIndex"].WeekendRange];
+  const data = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵfindLocaleData"])(locale);
+  return data[_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵLocaleDataIndex"].WeekendRange];
 }
 /**
  * Retrieves a localized date-value formatting string.
@@ -4628,8 +4630,8 @@ function getLocaleWeekEndRange(locale) {
  * Use `Intl.DateTimeFormat` for date formating instead.
  */
 function getLocaleDateFormat(locale, width) {
-  const data = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵfindLocaleData"])(locale);
-  return getLastDefinedValue(data[_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵLocaleDataIndex"].DateFormat], width);
+  const data = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵfindLocaleData"])(locale);
+  return getLastDefinedValue(data[_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵLocaleDataIndex"].DateFormat], width);
 }
 /**
  * Retrieves a localized time-value formatting string.
@@ -4645,8 +4647,8 @@ function getLocaleDateFormat(locale, width) {
  * Use `Intl.DateTimeFormat` for date formating instead.
  */
 function getLocaleTimeFormat(locale, width) {
-  const data = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵfindLocaleData"])(locale);
-  return getLastDefinedValue(data[_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵLocaleDataIndex"].TimeFormat], width);
+  const data = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵfindLocaleData"])(locale);
+  return getLastDefinedValue(data[_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵLocaleDataIndex"].TimeFormat], width);
 }
 /**
  * Retrieves a localized date-time formatting string.
@@ -4663,8 +4665,8 @@ function getLocaleTimeFormat(locale, width) {
  * Use `Intl.DateTimeFormat` for date formating instead.
  */
 function getLocaleDateTimeFormat(locale, width) {
-  const data = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵfindLocaleData"])(locale);
-  const dateTimeFormatData = data[_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵLocaleDataIndex"].DateTimeFormat];
+  const data = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵfindLocaleData"])(locale);
+  const dateTimeFormatData = data[_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵLocaleDataIndex"].DateTimeFormat];
   return getLastDefinedValue(dateTimeFormatData, width);
 }
 /**
@@ -4681,13 +4683,13 @@ function getLocaleDateTimeFormat(locale, width) {
  * Use `Intl.NumberFormat` to format numbers instead.
  */
 function getLocaleNumberSymbol(locale, symbol) {
-  const data = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵfindLocaleData"])(locale);
-  const res = data[_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵLocaleDataIndex"].NumberSymbols][symbol];
+  const data = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵfindLocaleData"])(locale);
+  const res = data[_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵLocaleDataIndex"].NumberSymbols][symbol];
   if (typeof res === 'undefined') {
     if (symbol === NumberSymbol.CurrencyDecimal) {
-      return data[_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵLocaleDataIndex"].NumberSymbols][NumberSymbol.Decimal];
+      return data[_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵLocaleDataIndex"].NumberSymbols][NumberSymbol.Decimal];
     } else if (symbol === NumberSymbol.CurrencyGroup) {
-      return data[_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵLocaleDataIndex"].NumberSymbols][NumberSymbol.Group];
+      return data[_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵLocaleDataIndex"].NumberSymbols][NumberSymbol.Group];
     }
   }
   return res;
@@ -4731,8 +4733,8 @@ function getLocaleNumberSymbol(locale, symbol) {
  * Let `Intl.NumberFormat` determine the number format instead
  */
 function getLocaleNumberFormat(locale, type) {
-  const data = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵfindLocaleData"])(locale);
-  return data[_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵLocaleDataIndex"].NumberFormats][type];
+  const data = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵfindLocaleData"])(locale);
+  return data[_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵLocaleDataIndex"].NumberFormats][type];
 }
 /**
  * Retrieves the symbol used to represent the currency for the main country
@@ -4748,8 +4750,8 @@ function getLocaleNumberFormat(locale, type) {
  * @deprecated Use the `Intl` API to format a currency with from currency code
  */
 function getLocaleCurrencySymbol(locale) {
-  const data = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵfindLocaleData"])(locale);
-  return data[_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵLocaleDataIndex"].CurrencySymbol] || null;
+  const data = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵfindLocaleData"])(locale);
+  return data[_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵLocaleDataIndex"].CurrencySymbol] || null;
 }
 /**
  * Retrieves the name of the currency for the main country corresponding
@@ -4764,8 +4766,8 @@ function getLocaleCurrencySymbol(locale) {
  * @deprecated Use the `Intl` API to format a currency with from currency code
  */
 function getLocaleCurrencyName(locale) {
-  const data = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵfindLocaleData"])(locale);
-  return data[_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵLocaleDataIndex"].CurrencyName] || null;
+  const data = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵfindLocaleData"])(locale);
+  return data[_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵLocaleDataIndex"].CurrencyName] || null;
 }
 /**
  * Retrieves the default currency code for the given locale.
@@ -4781,7 +4783,7 @@ function getLocaleCurrencyName(locale) {
  * Time relative currency data is provided by the CLDR project. See https://www.unicode.org/cldr/charts/44/supplemental/detailed_territory_currency_information.html
  */
 function getLocaleCurrencyCode(locale) {
-  return (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵgetLocaleCurrencyCode"])(locale);
+  return (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵgetLocaleCurrencyCode"])(locale);
 }
 /**
  * Retrieves the currency values for a given locale.
@@ -4790,8 +4792,8 @@ function getLocaleCurrencyCode(locale) {
  * @see [Internationalization (i18n) Guide](guide/i18n)
  */
 function getLocaleCurrencies(locale) {
-  const data = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵfindLocaleData"])(locale);
-  return data[_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵLocaleDataIndex"].Currencies];
+  const data = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵfindLocaleData"])(locale);
+  return data[_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵLocaleDataIndex"].Currencies];
 }
 /**
  * @publicApi
@@ -4799,10 +4801,10 @@ function getLocaleCurrencies(locale) {
  * @deprecated Angular recommends relying on the `Intl` API for i18n.
  * Use `Intl.PluralRules` instead
  */
-const getLocalePluralCase = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵgetLocalePluralCase"];
+const getLocalePluralCase = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵgetLocalePluralCase"];
 function checkFullData(data) {
-  if (!data[_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵLocaleDataIndex"].ExtraData]) {
-    throw new Error(`Missing extra locale data for the locale "${data[_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵLocaleDataIndex"].LocaleId]}". Use "registerLocaleData" to load new data. See the "I18n guide" on angular.io to know more.`);
+  if (!data[_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵLocaleDataIndex"].ExtraData]) {
+    throw new Error(`Missing extra locale data for the locale "${data[_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵLocaleDataIndex"].LocaleId]}". Use "registerLocaleData" to load new data. See the "I18n guide" on angular.io to know more.`);
   }
 }
 /**
@@ -4831,9 +4833,9 @@ function checkFullData(data) {
  * Let `Intl.DateTimeFormat` determine the day period instead.
  */
 function getLocaleExtraDayPeriodRules(locale) {
-  const data = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵfindLocaleData"])(locale);
+  const data = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵfindLocaleData"])(locale);
   checkFullData(data);
-  const rules = data[_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵLocaleDataIndex"].ExtraData][2 /* ɵExtraLocaleDataIndex.ExtraDayPeriodsRules */] || [];
+  const rules = data[_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵLocaleDataIndex"].ExtraData][2 /* ɵExtraLocaleDataIndex.ExtraDayPeriodsRules */] || [];
   return rules.map(rule => {
     if (typeof rule === 'string') {
       return extractTime(rule);
@@ -4862,9 +4864,9 @@ function getLocaleExtraDayPeriodRules(locale) {
  * To extract a day period use `Intl.DateTimeFormat` with the `dayPeriod` option instead.
  */
 function getLocaleExtraDayPeriods(locale, formStyle, width) {
-  const data = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵfindLocaleData"])(locale);
+  const data = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵfindLocaleData"])(locale);
   checkFullData(data);
-  const dayPeriodsData = [data[_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵLocaleDataIndex"].ExtraData][0 /* ɵExtraLocaleDataIndex.ExtraDayPeriodFormats */], data[_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵLocaleDataIndex"].ExtraData][1 /* ɵExtraLocaleDataIndex.ExtraDayPeriodStandalone */]];
+  const dayPeriodsData = [data[_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵLocaleDataIndex"].ExtraData][0 /* ɵExtraLocaleDataIndex.ExtraDayPeriodFormats */], data[_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵLocaleDataIndex"].ExtraData][1 /* ɵExtraLocaleDataIndex.ExtraDayPeriodStandalone */]];
   const dayPeriods = getLastDefinedValue(dayPeriodsData, formStyle) || [];
   return getLastDefinedValue(dayPeriods, width) || [];
 }
@@ -4882,8 +4884,8 @@ function getLocaleExtraDayPeriods(locale, formStyle, width) {
  * 3rd party alternatives like [`rtl-detect`](https://www.npmjs.com/package/rtl-detect) can work around this issue.
  */
 function getLocaleDirection(locale) {
-  const data = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵfindLocaleData"])(locale);
-  return data[_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵLocaleDataIndex"].Directionality];
+  const data = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵfindLocaleData"])(locale);
+  return data[_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵLocaleDataIndex"].Directionality];
 }
 /**
  * Retrieves the first value that is defined in an array, going backwards from an index position.
@@ -5006,8 +5008,7 @@ var TranslationType = /*#__PURE__*/function (TranslationType) {
  * or an [ISO date-time string](https://www.w3.org/TR/NOTE-datetime).
  * @param format The date-time components to include. See `DatePipe` for details.
  * @param locale A locale code for the locale format rules to use.
- * @param timezone The time zone. A time zone offset from GMT (such as `'+0430'`),
- * or a standard UTC/GMT or continental US time zone abbreviation.
+ * @param timezone The time zone. A time zone offset from GMT (such as `'+0430'`).
  * If not specified, uses host system settings.
  *
  * @returns The formatted date string.
@@ -6070,21 +6071,21 @@ function parseIntAutoRadix(text) {
 let NgLocalization = /*#__PURE__*/(() => {
   class NgLocalization {
     static {
-      this.ɵfac = function NgLocalization_Factory(t) {
-        return new (t || NgLocalization)();
+      this.ɵfac = function NgLocalization_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || NgLocalization)();
       };
     }
     static {
-      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
+      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
         token: NgLocalization,
-        factory: function NgLocalization_Factory(t) {
-          let r = null;
-          if (t) {
-            r = new t();
+        factory: function NgLocalization_Factory(__ngFactoryType__) {
+          let __ngConditionalFactory__ = null;
+          if (__ngFactoryType__) {
+            __ngConditionalFactory__ = new __ngFactoryType__();
           } else {
-            r = (locale => new NgLocaleLocalization(locale))(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.LOCALE_ID));
+            __ngConditionalFactory__ = (locale => new NgLocaleLocalization(locale))(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.LOCALE_ID));
           }
-          return r;
+          return __ngConditionalFactory__;
         },
         providedIn: 'root'
       });
@@ -6143,12 +6144,12 @@ let NgLocaleLocalization = /*#__PURE__*/(() => {
       }
     }
     static {
-      this.ɵfac = function NgLocaleLocalization_Factory(t) {
-        return new (t || NgLocaleLocalization)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.LOCALE_ID));
+      this.ɵfac = function NgLocaleLocalization_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || NgLocaleLocalization)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.LOCALE_ID));
       };
     }
     static {
-      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
+      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
         token: NgLocaleLocalization,
         factory: NgLocaleLocalization.ɵfac
       });
@@ -6170,7 +6171,7 @@ let NgLocaleLocalization = /*#__PURE__*/(() => {
  * @publicApi
  */
 function registerLocaleData(data, localeId, extraData) {
-  return (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵregisterLocaleData"])(data, localeId, extraData);
+  return (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵregisterLocaleData"])(data, localeId, extraData);
 }
 function parseCookieValue(cookieStr, name) {
   name = encodeURIComponent(name);
@@ -6304,7 +6305,7 @@ let NgClass = /*#__PURE__*/(() => {
     _toggleClass(klass, enabled) {
       if (ngDevMode) {
         if (typeof klass !== 'string') {
-          throw new Error(`NgClass can only toggle CSS classes expressed as strings, got ${(0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵstringify"])(klass)}`);
+          throw new Error(`NgClass can only toggle CSS classes expressed as strings, got ${(0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵstringify"])(klass)}`);
         }
       }
       klass = klass.trim();
@@ -6319,12 +6320,12 @@ let NgClass = /*#__PURE__*/(() => {
       }
     }
     static {
-      this.ɵfac = function NgClass_Factory(t) {
-        return new (t || NgClass)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.Renderer2));
+      this.ɵfac = function NgClass_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || NgClass)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.Renderer2));
       };
     }
     static {
-      this.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({
+      this.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({
         type: NgClass,
         selectors: [["", "ngClass", ""]],
         inputs: {
@@ -6445,7 +6446,7 @@ let NgComponentOutlet = /*#__PURE__*/(() => {
           if (this._needToReCreateNgModuleInstance(changes)) {
             this._moduleRef?.destroy();
             if (this.ngComponentOutletNgModule) {
-              this._moduleRef = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.createNgModule)(this.ngComponentOutletNgModule, getParentInjector(injector));
+              this._moduleRef = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.createNgModule)(this.ngComponentOutletNgModule, getParentInjector(injector));
             } else if (this.ngComponentOutletNgModuleFactory) {
               this._moduleRef = this.ngComponentOutletNgModuleFactory.create(getParentInjector(injector));
             } else {
@@ -6489,12 +6490,12 @@ let NgComponentOutlet = /*#__PURE__*/(() => {
       }
     }
     static {
-      this.ɵfac = function NgComponentOutlet_Factory(t) {
-        return new (t || NgComponentOutlet)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewContainerRef));
+      this.ɵfac = function NgComponentOutlet_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || NgComponentOutlet)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.ViewContainerRef));
       };
     }
     static {
-      this.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({
+      this.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({
         type: NgComponentOutlet,
         selectors: [["", "ngComponentOutlet", ""]],
         inputs: {
@@ -6506,7 +6507,7 @@ let NgComponentOutlet = /*#__PURE__*/(() => {
           ngComponentOutletNgModuleFactory: "ngComponentOutletNgModuleFactory"
         },
         standalone: true,
-        features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵNgOnChangesFeature"]]
+        features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]]
       });
     }
   }
@@ -6517,7 +6518,7 @@ let NgComponentOutlet = /*#__PURE__*/(() => {
 })();
 // Helper function that returns an Injector instance of a parent NgModule.
 function getParentInjector(injector) {
-  const parentNgModule = injector.get(_angular_core__WEBPACK_IMPORTED_MODULE_0__.NgModuleRef);
+  const parentNgModule = injector.get(_angular_core__WEBPACK_IMPORTED_MODULE_1__.NgModuleRef);
   return parentNgModule.injector;
 }
 
@@ -6525,21 +6526,34 @@ function getParentInjector(injector) {
  * @publicApi
  */
 class NgForOfContext {
-  constructor($implicit, ngForOf, index, count) {
+  constructor( /** Reference to the current item from the collection. */
+  $implicit,
+  /**
+   * The value of the iterable expression. Useful when the expression is
+   * more complex then a property access, for example when using the async pipe
+   * (`userStreams | async`).
+   */
+  ngForOf, /** Returns an index of the current item in the collection. */
+  index, /** Returns total amount of items in the collection. */
+  count) {
     this.$implicit = $implicit;
     this.ngForOf = ngForOf;
     this.index = index;
     this.count = count;
   }
+  // Indicates whether this is the first item in the collection.
   get first() {
     return this.index === 0;
   }
+  // Indicates whether this is the last item in the collection.
   get last() {
     return this.index === this.count - 1;
   }
+  // Indicates whether an index of this item in the collection is even.
   get even() {
     return this.index % 2 === 0;
   }
+  // Indicates whether an index of this item in the collection is odd.
   get odd() {
     return !this.even;
   }
@@ -6689,7 +6703,7 @@ let NgForOf = /*#__PURE__*/(() => {
     }
     /**
      * A reference to the template that is stamped out for each item in the iterable.
-     * @see [template reference variable](guide/templates/reference-variables)
+     * @see [template reference variable](guide/templates/variables#template-reference-variables)
      */
     set ngForTemplate(value) {
       // TODO(TS2.1): make TemplateRef<Partial<NgForRowOf<T>>> once we move to TS v2.1
@@ -6719,7 +6733,7 @@ let NgForOf = /*#__PURE__*/(() => {
               if (typeof value === 'object') {
                 errorMessage += ' Did you mean to use the keyvalue pipe?';
               }
-              throw new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](-2200 /* RuntimeErrorCode.NG_FOR_MISSING_DIFFER */, errorMessage);
+              throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](-2200 /* RuntimeErrorCode.NG_FOR_MISSING_DIFFER */, errorMessage);
             }
           } else {
             // CAUTION: this logic is duplicated for development mode above, as the try-catch
@@ -6771,12 +6785,12 @@ let NgForOf = /*#__PURE__*/(() => {
       return true;
     }
     static {
-      this.ɵfac = function NgForOf_Factory(t) {
-        return new (t || NgForOf)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewContainerRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.TemplateRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.IterableDiffers));
+      this.ɵfac = function NgForOf_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || NgForOf)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.ViewContainerRef), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.TemplateRef), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.IterableDiffers));
       };
     }
     static {
-      this.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({
+      this.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({
         type: NgForOf,
         selectors: [["", "ngFor", "", "ngForOf", ""]],
         inputs: {
@@ -7004,12 +7018,12 @@ let NgIf = /*#__PURE__*/(() => {
       return true;
     }
     static {
-      this.ɵfac = function NgIf_Factory(t) {
-        return new (t || NgIf)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewContainerRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.TemplateRef));
+      this.ɵfac = function NgIf_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || NgIf)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.ViewContainerRef), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.TemplateRef));
       };
     }
     static {
-      this.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({
+      this.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({
         type: NgIf,
         selectors: [["", "ngIf", ""]],
         inputs: {
@@ -7038,15 +7052,9 @@ class NgIfContext {
 function assertTemplate(property, templateRef) {
   const isTemplateRefOrNull = !!(!templateRef || templateRef.createEmbeddedView);
   if (!isTemplateRefOrNull) {
-    throw new Error(`${property} must be a TemplateRef, but received '${(0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵstringify"])(templateRef)}'.`);
+    throw new Error(`${property} must be a TemplateRef, but received '${(0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵstringify"])(templateRef)}'.`);
   }
 }
-
-/**
- * A constant indicating a type of comparison that NgSwitch uses to match cases. Extracted to a
- * separate file to facilitate G3 patches.
- */
-const NG_SWITCH_USE_STRICT_EQUALS = true;
 class SwitchView {
   constructor(_viewContainerRef, _templateRef) {
     this._viewContainerRef = _viewContainerRef;
@@ -7160,10 +7168,7 @@ let NgSwitch = /*#__PURE__*/(() => {
     }
     /** @internal */
     _matchCase(value) {
-      const matched = NG_SWITCH_USE_STRICT_EQUALS ? value === this._ngSwitch : value == this._ngSwitch;
-      if ((typeof ngDevMode === 'undefined' || ngDevMode) && matched !== (value == this._ngSwitch)) {
-        console.warn((0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵformatRuntimeError"])(2001 /* RuntimeErrorCode.EQUALITY_NG_SWITCH_DIFFERENCE */, 'As of Angular v17 the NgSwitch directive uses strict equality comparison === instead of == to match different cases. ' + `Previously the case value "${stringifyValue(value)}" matched switch expression value "${stringifyValue(this._ngSwitch)}", but this is no longer the case with the stricter equality check. ` + 'Your comparison results return different results using === vs. == and you should adjust your ngSwitch expression and / or values to conform with the strict equality requirements.'));
-      }
+      const matched = value === this._ngSwitch;
       this._lastCasesMatched ||= matched;
       this._lastCaseCheckIndex++;
       if (this._lastCaseCheckIndex === this._caseCount) {
@@ -7182,12 +7187,12 @@ let NgSwitch = /*#__PURE__*/(() => {
       }
     }
     static {
-      this.ɵfac = function NgSwitch_Factory(t) {
-        return new (t || NgSwitch)();
+      this.ɵfac = function NgSwitch_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || NgSwitch)();
       };
     }
     static {
-      this.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({
+      this.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({
         type: NgSwitch,
         selectors: [["", "ngSwitch", ""]],
         inputs: {
@@ -7253,12 +7258,12 @@ let NgSwitchCase = /*#__PURE__*/(() => {
       this._view.enforceState(this.ngSwitch._matchCase(this.ngSwitchCase));
     }
     static {
-      this.ɵfac = function NgSwitchCase_Factory(t) {
-        return new (t || NgSwitchCase)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewContainerRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.TemplateRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](NgSwitch, 9));
+      this.ɵfac = function NgSwitchCase_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || NgSwitchCase)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.ViewContainerRef), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.TemplateRef), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](NgSwitch, 9));
       };
     }
     static {
-      this.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({
+      this.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({
         type: NgSwitchCase,
         selectors: [["", "ngSwitchCase", ""]],
         inputs: {
@@ -7296,12 +7301,12 @@ let NgSwitchDefault = /*#__PURE__*/(() => {
       ngSwitch._addDefault(new SwitchView(viewContainer, templateRef));
     }
     static {
-      this.ɵfac = function NgSwitchDefault_Factory(t) {
-        return new (t || NgSwitchDefault)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewContainerRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.TemplateRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](NgSwitch, 9));
+      this.ɵfac = function NgSwitchDefault_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || NgSwitchDefault)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.ViewContainerRef), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.TemplateRef), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](NgSwitch, 9));
       };
     }
     static {
-      this.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({
+      this.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({
         type: NgSwitchDefault,
         selectors: [["", "ngSwitchDefault", ""]],
         standalone: true
@@ -7314,7 +7319,7 @@ let NgSwitchDefault = /*#__PURE__*/(() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && void 0;
 })();
 function throwNgSwitchProviderNotFoundError(attrName, directiveName) {
-  throw new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](2000 /* RuntimeErrorCode.PARENT_NG_SWITCH_NOT_FOUND */, `An element with the "${attrName}" attribute ` + `(matching the "${directiveName}" directive) must be located inside an element with the "ngSwitch" attribute ` + `(matching "NgSwitch" directive)`);
+  throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](2000 /* RuntimeErrorCode.PARENT_NG_SWITCH_NOT_FOUND */, `An element with the "${attrName}" attribute ` + `(matching the "${directiveName}" directive) must be located inside an element with the "ngSwitch" attribute ` + `(matching "NgSwitch" directive)`);
 }
 function stringifyValue(value) {
   return typeof value === 'string' ? `'${value}'` : String(value);
@@ -7379,12 +7384,12 @@ let NgPlural = /*#__PURE__*/(() => {
       }
     }
     static {
-      this.ɵfac = function NgPlural_Factory(t) {
-        return new (t || NgPlural)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](NgLocalization));
+      this.ɵfac = function NgPlural_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || NgPlural)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](NgLocalization));
       };
     }
     static {
-      this.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({
+      this.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({
         type: NgPlural,
         selectors: [["", "ngPlural", ""]],
         inputs: {
@@ -7427,12 +7432,12 @@ let NgPluralCase = /*#__PURE__*/(() => {
       ngPlural.addCase(isANumber ? `=${value}` : value, new SwitchView(viewContainer, template));
     }
     static {
-      this.ɵfac = function NgPluralCase_Factory(t) {
-        return new (t || NgPluralCase)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinjectAttribute"]('ngPluralCase'), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.TemplateRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewContainerRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](NgPlural, 1));
+      this.ɵfac = function NgPluralCase_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || NgPluralCase)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinjectAttribute"]('ngPluralCase'), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.TemplateRef), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.ViewContainerRef), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](NgPlural, 1));
       };
     }
     static {
-      this.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({
+      this.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({
         type: NgPluralCase,
         selectors: [["", "ngPluralCase", ""]],
         standalone: true
@@ -7506,7 +7511,7 @@ let NgStyle = /*#__PURE__*/(() => {
     }
     _setStyle(nameAndUnit, value) {
       const [name, unit] = nameAndUnit.split('.');
-      const flags = name.indexOf('-') === -1 ? undefined : _angular_core__WEBPACK_IMPORTED_MODULE_0__.RendererStyleFlags2.DashCase;
+      const flags = name.indexOf('-') === -1 ? undefined : _angular_core__WEBPACK_IMPORTED_MODULE_1__.RendererStyleFlags2.DashCase;
       if (value != null) {
         this._renderer.setStyle(this._ngEl.nativeElement, name, unit ? `${value}${unit}` : value, flags);
       } else {
@@ -7519,12 +7524,12 @@ let NgStyle = /*#__PURE__*/(() => {
       changes.forEachChangedItem(record => this._setStyle(record.key, record.currentValue));
     }
     static {
-      this.ɵfac = function NgStyle_Factory(t) {
-        return new (t || NgStyle)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.KeyValueDiffers), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.Renderer2));
+      this.ɵfac = function NgStyle_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || NgStyle)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.KeyValueDiffers), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.Renderer2));
       };
     }
     static {
-      this.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({
+      this.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({
         type: NgStyle,
         selectors: [["", "ngStyle", ""]],
         inputs: {
@@ -7632,12 +7637,12 @@ let NgTemplateOutlet = /*#__PURE__*/(() => {
       });
     }
     static {
-      this.ɵfac = function NgTemplateOutlet_Factory(t) {
-        return new (t || NgTemplateOutlet)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewContainerRef));
+      this.ɵfac = function NgTemplateOutlet_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || NgTemplateOutlet)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.ViewContainerRef));
       };
     }
     static {
-      this.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({
+      this.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({
         type: NgTemplateOutlet,
         selectors: [["", "ngTemplateOutlet", ""]],
         inputs: {
@@ -7646,7 +7651,7 @@ let NgTemplateOutlet = /*#__PURE__*/(() => {
           ngTemplateOutletInjector: "ngTemplateOutletInjector"
         },
         standalone: true,
-        features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵNgOnChangesFeature"]]
+        features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]]
       });
     }
   }
@@ -7662,7 +7667,7 @@ let NgTemplateOutlet = /*#__PURE__*/(() => {
  */
 const COMMON_DIRECTIVES = [NgClass, NgComponentOutlet, NgForOf, NgIf, NgTemplateOutlet, NgStyle, NgSwitch, NgSwitchCase, NgSwitchDefault, NgPlural, NgPluralCase];
 function invalidPipeArgumentError(type, value) {
-  return new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](2100 /* RuntimeErrorCode.INVALID_PIPE_ARGUMENT */, ngDevMode && `InvalidPipeArgument: '${value}' for pipe '${(0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵstringify"])(type)}'`);
+  return new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](2100 /* RuntimeErrorCode.INVALID_PIPE_ARGUMENT */, ngDevMode && `InvalidPipeArgument: '${value}' for pipe '${(0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵstringify"])(type)}'`);
 }
 class SubscribableStrategy {
   createSubscription(async, updateLatestValue) {
@@ -7673,7 +7678,7 @@ class SubscribableStrategy {
     //
     // `untracked` also prevents signal _writes_ which happen in the subscription side effect from
     // being treated as signal writes during the template evaluation (which throws errors).
-    return (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.untracked)(() => async.subscribe({
+    return (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.untracked)(() => async.subscribe({
       next: updateLatestValue,
       error: e => {
         throw e;
@@ -7682,7 +7687,7 @@ class SubscribableStrategy {
   }
   dispose(subscription) {
     // See the comment in `createSubscription` above on the use of `untracked`.
-    (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.untracked)(() => subscription.unsubscribe());
+    (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.untracked)(() => subscription.unsubscribe());
   }
 }
 class PromiseStrategy {
@@ -7772,10 +7777,10 @@ let AsyncPipe = /*#__PURE__*/(() => {
       this._subscription = this._strategy.createSubscription(obj, value => this._updateLatestValue(obj, value));
     }
     _selectStrategy(obj) {
-      if ((0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵisPromise"])(obj)) {
+      if ((0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵisPromise"])(obj)) {
         return _promiseStrategy;
       }
-      if ((0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵisSubscribable"])(obj)) {
+      if ((0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵisSubscribable"])(obj)) {
         return _subscribableStrategy;
       }
       throw invalidPipeArgumentError(AsyncPipe, obj);
@@ -7797,12 +7802,12 @@ let AsyncPipe = /*#__PURE__*/(() => {
       }
     }
     static {
-      this.ɵfac = function AsyncPipe_Factory(t) {
-        return new (t || AsyncPipe)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ChangeDetectorRef, 16));
+      this.ɵfac = function AsyncPipe_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || AsyncPipe)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.ChangeDetectorRef, 16));
       };
     }
     static {
-      this.ɵpipe = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefinePipe"]({
+      this.ɵpipe = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefinePipe"]({
         name: "async",
         type: AsyncPipe,
         pure: false,
@@ -7841,12 +7846,12 @@ let LowerCasePipe = /*#__PURE__*/(() => {
       return value.toLowerCase();
     }
     static {
-      this.ɵfac = function LowerCasePipe_Factory(t) {
-        return new (t || LowerCasePipe)();
+      this.ɵfac = function LowerCasePipe_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || LowerCasePipe)();
       };
     }
     static {
-      this.ɵpipe = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefinePipe"]({
+      this.ɵpipe = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefinePipe"]({
         name: "lowercase",
         type: LowerCasePipe,
         pure: true,
@@ -7895,12 +7900,12 @@ let TitleCasePipe = /*#__PURE__*/(() => {
       return value.replace(unicodeWordMatch, txt => txt[0].toUpperCase() + txt.slice(1).toLowerCase());
     }
     static {
-      this.ɵfac = function TitleCasePipe_Factory(t) {
-        return new (t || TitleCasePipe)();
+      this.ɵfac = function TitleCasePipe_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || TitleCasePipe)();
       };
     }
     static {
-      this.ɵpipe = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefinePipe"]({
+      this.ɵpipe = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefinePipe"]({
         name: "titlecase",
         type: TitleCasePipe,
         pure: true,
@@ -7931,12 +7936,12 @@ let UpperCasePipe = /*#__PURE__*/(() => {
       return value.toUpperCase();
     }
     static {
-      this.ɵfac = function UpperCasePipe_Factory(t) {
-        return new (t || UpperCasePipe)();
+      this.ɵfac = function UpperCasePipe_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || UpperCasePipe)();
       };
     }
     static {
-      this.ɵpipe = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefinePipe"]({
+      this.ɵpipe = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefinePipe"]({
         name: "uppercase",
         type: UpperCasePipe,
         pure: true,
@@ -7962,7 +7967,7 @@ const DEFAULT_DATE_FORMAT = 'mediumDate';
  *
  * @deprecated use DATE_PIPE_DEFAULT_OPTIONS token to configure DatePipe
  */
-const DATE_PIPE_DEFAULT_TIMEZONE = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_0__.InjectionToken(ngDevMode ? 'DATE_PIPE_DEFAULT_TIMEZONE' : '');
+const DATE_PIPE_DEFAULT_TIMEZONE = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_1__.InjectionToken(ngDevMode ? 'DATE_PIPE_DEFAULT_TIMEZONE' : '');
 /**
  * DI token that allows to provide default configuration for the `DatePipe` instances in an
  * application. The value is an object which can include the following fields:
@@ -7994,7 +7999,7 @@ const DATE_PIPE_DEFAULT_TIMEZONE = /*#__PURE__*/new _angular_core__WEBPACK_IMPOR
  * ]
  * ```
  */
-const DATE_PIPE_DEFAULT_OPTIONS = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_0__.InjectionToken(ngDevMode ? 'DATE_PIPE_DEFAULT_OPTIONS' : '');
+const DATE_PIPE_DEFAULT_OPTIONS = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_1__.InjectionToken(ngDevMode ? 'DATE_PIPE_DEFAULT_OPTIONS' : '');
 /**
  * @ngModule CommonModule
  * @description
@@ -8171,12 +8176,12 @@ let DatePipe = /*#__PURE__*/(() => {
       }
     }
     static {
-      this.ɵfac = function DatePipe_Factory(t) {
-        return new (t || DatePipe)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.LOCALE_ID, 16), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](DATE_PIPE_DEFAULT_TIMEZONE, 24), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](DATE_PIPE_DEFAULT_OPTIONS, 24));
+      this.ɵfac = function DatePipe_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || DatePipe)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.LOCALE_ID, 16), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](DATE_PIPE_DEFAULT_TIMEZONE, 24), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](DATE_PIPE_DEFAULT_OPTIONS, 24));
       };
     }
     static {
-      this.ɵpipe = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefinePipe"]({
+      this.ɵpipe = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefinePipe"]({
         name: "date",
         type: DatePipe,
         pure: true,
@@ -8225,12 +8230,12 @@ let I18nPluralPipe = /*#__PURE__*/(() => {
       return pluralMap[key].replace(_INTERPOLATION_REGEXP, value.toString());
     }
     static {
-      this.ɵfac = function I18nPluralPipe_Factory(t) {
-        return new (t || I18nPluralPipe)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](NgLocalization, 16));
+      this.ɵfac = function I18nPluralPipe_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || I18nPluralPipe)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](NgLocalization, 16));
       };
     }
     static {
-      this.ɵpipe = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefinePipe"]({
+      this.ɵpipe = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefinePipe"]({
         name: "i18nPlural",
         type: I18nPluralPipe,
         pure: true,
@@ -8282,12 +8287,12 @@ let I18nSelectPipe = /*#__PURE__*/(() => {
       return '';
     }
     static {
-      this.ɵfac = function I18nSelectPipe_Factory(t) {
-        return new (t || I18nSelectPipe)();
+      this.ɵfac = function I18nSelectPipe_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || I18nSelectPipe)();
       };
     }
     static {
-      this.ɵpipe = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefinePipe"]({
+      this.ɵpipe = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefinePipe"]({
         name: "i18nSelect",
         type: I18nSelectPipe,
         pure: true,
@@ -8325,12 +8330,12 @@ let JsonPipe = /*#__PURE__*/(() => {
       return JSON.stringify(value, null, 2);
     }
     static {
-      this.ɵfac = function JsonPipe_Factory(t) {
-        return new (t || JsonPipe)();
+      this.ɵfac = function JsonPipe_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || JsonPipe)();
       };
     }
     static {
-      this.ɵpipe = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefinePipe"]({
+      this.ɵpipe = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefinePipe"]({
         name: "json",
         type: JsonPipe,
         pure: false,
@@ -8397,12 +8402,12 @@ let KeyValuePipe = /*#__PURE__*/(() => {
       return this.keyValues;
     }
     static {
-      this.ɵfac = function KeyValuePipe_Factory(t) {
-        return new (t || KeyValuePipe)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.KeyValueDiffers, 16));
+      this.ɵfac = function KeyValuePipe_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || KeyValuePipe)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.KeyValueDiffers, 16));
       };
     }
     static {
-      this.ɵpipe = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefinePipe"]({
+      this.ɵpipe = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefinePipe"]({
         name: "keyvalue",
         type: KeyValuePipe,
         pure: false,
@@ -8509,13 +8514,6 @@ let DecimalPipe = /*#__PURE__*/(() => {
     constructor(_locale) {
       this._locale = _locale;
     }
-    /**
-     * @param value The value to be formatted.
-     * @param digitsInfo Sets digit and decimal representation.
-     * [See more](#digitsinfo).
-     * @param locale Specifies what locale format rules to use.
-     * [See more](#locale).
-     */
     transform(value, digitsInfo, locale) {
       if (!isValue(value)) return null;
       locale ||= this._locale;
@@ -8527,12 +8525,12 @@ let DecimalPipe = /*#__PURE__*/(() => {
       }
     }
     static {
-      this.ɵfac = function DecimalPipe_Factory(t) {
-        return new (t || DecimalPipe)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.LOCALE_ID, 16));
+      this.ɵfac = function DecimalPipe_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || DecimalPipe)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.LOCALE_ID, 16));
       };
     }
     static {
-      this.ɵpipe = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefinePipe"]({
+      this.ɵpipe = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefinePipe"]({
         name: "number",
         type: DecimalPipe,
         pure: true,
@@ -8597,12 +8595,12 @@ let PercentPipe = /*#__PURE__*/(() => {
       }
     }
     static {
-      this.ɵfac = function PercentPipe_Factory(t) {
-        return new (t || PercentPipe)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.LOCALE_ID, 16));
+      this.ɵfac = function PercentPipe_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || PercentPipe)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.LOCALE_ID, 16));
       };
     }
     static {
-      this.ɵpipe = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefinePipe"]({
+      this.ɵpipe = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefinePipe"]({
         name: "percent",
         type: PercentPipe,
         pure: true,
@@ -8642,39 +8640,6 @@ let CurrencyPipe = /*#__PURE__*/(() => {
       this._locale = _locale;
       this._defaultCurrencyCode = _defaultCurrencyCode;
     }
-    /**
-     *
-     * @param value The number to be formatted as currency.
-     * @param currencyCode The [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code,
-     * such as `USD` for the US dollar and `EUR` for the euro. The default currency code can be
-     * configured using the `DEFAULT_CURRENCY_CODE` injection token.
-     * @param display The format for the currency indicator. One of the following:
-     *   - `code`: Show the code (such as `USD`).
-     *   - `symbol`(default): Show the symbol (such as `$`).
-     *   - `symbol-narrow`: Use the narrow symbol for locales that have two symbols for their
-     * currency.
-     * For example, the Canadian dollar CAD has the symbol `CA$` and the symbol-narrow `$`. If the
-     * locale has no narrow symbol, uses the standard symbol for the locale.
-     *   - String: Use the given string value instead of a code or a symbol.
-     * For example, an empty string will suppress the currency & symbol.
-     *   - Boolean (marked deprecated in v5): `true` for symbol and false for `code`.
-     *
-     * @param digitsInfo Decimal representation options, specified by a string
-     * in the following format:<br>
-     * <code>{minIntegerDigits}.{minFractionDigits}-{maxFractionDigits}</code>.
-     *   - `minIntegerDigits`: The minimum number of integer digits before the decimal point.
-     * Default is `1`.
-     *   - `minFractionDigits`: The minimum number of digits after the decimal point.
-     * Default is `2`.
-     *   - `maxFractionDigits`: The maximum number of digits after the decimal point.
-     * Default is `2`.
-     * If not provided, the number will be formatted with the proper amount of digits,
-     * depending on what the [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) specifies.
-     * For example, the Canadian dollar has 2 digits, whereas the Chilean peso has none.
-     * @param locale A locale code for the locale format rules to use.
-     * When not supplied, uses the value of `LOCALE_ID`, which is `en-US` by default.
-     * See [Setting your app locale](guide/i18n/locale-id).
-     */
     transform(value, currencyCode = this._defaultCurrencyCode, display = 'symbol', digitsInfo, locale) {
       if (!isValue(value)) return null;
       locale ||= this._locale;
@@ -8700,12 +8665,12 @@ let CurrencyPipe = /*#__PURE__*/(() => {
       }
     }
     static {
-      this.ɵfac = function CurrencyPipe_Factory(t) {
-        return new (t || CurrencyPipe)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.LOCALE_ID, 16), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.DEFAULT_CURRENCY_CODE, 16));
+      this.ɵfac = function CurrencyPipe_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || CurrencyPipe)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.LOCALE_ID, 16), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.DEFAULT_CURRENCY_CODE, 16));
       };
     }
     static {
-      this.ɵpipe = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefinePipe"]({
+      this.ɵpipe = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefinePipe"]({
         name: "currency",
         type: CurrencyPipe,
         pure: true,
@@ -8783,12 +8748,12 @@ let SlicePipe = /*#__PURE__*/(() => {
       return typeof obj === 'string' || Array.isArray(obj);
     }
     static {
-      this.ɵfac = function SlicePipe_Factory(t) {
-        return new (t || SlicePipe)();
+      this.ɵfac = function SlicePipe_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || SlicePipe)();
       };
     }
     static {
-      this.ɵpipe = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefinePipe"]({
+      this.ɵpipe = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefinePipe"]({
         name: "slice",
         type: SlicePipe,
         pure: false,
@@ -8825,17 +8790,17 @@ const COMMON_PIPES = [AsyncPipe, UpperCasePipe, LowerCasePipe, JsonPipe, SlicePi
 let CommonModule = /*#__PURE__*/(() => {
   class CommonModule {
     static {
-      this.ɵfac = function CommonModule_Factory(t) {
-        return new (t || CommonModule)();
+      this.ɵfac = function CommonModule_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || CommonModule)();
       };
     }
     static {
-      this.ɵmod = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({
+      this.ɵmod = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({
         type: CommonModule
       });
     }
     static {
-      this.ɵinj = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({});
+      this.ɵinj = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({});
     }
   }
   return CommonModule;
@@ -8868,7 +8833,7 @@ function isPlatformServer(platformId) {
 /**
  * @publicApi
  */
-const VERSION = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_0__.Version('18.0.5');
+const VERSION = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_1__.Version('18.2.9');
 
 /**
  * Defines a scroll position manager. Implemented by `BrowserViewportScroller`.
@@ -8881,10 +8846,10 @@ let ViewportScroller = /*#__PURE__*/(() => {
     // See #23917
     /** @nocollapse */
     static {
-      this.ɵprov = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"])({
+      this.ɵprov = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"])({
         token: ViewportScroller,
         providedIn: 'root',
-        factory: () => isPlatformBrowser((0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.inject)(_angular_core__WEBPACK_IMPORTED_MODULE_0__.PLATFORM_ID)) ? new BrowserViewportScroller((0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.inject)(DOCUMENT), window) : new NullViewportScroller()
+        factory: () => isPlatformBrowser((0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(_angular_core__WEBPACK_IMPORTED_MODULE_1__.PLATFORM_ID)) ? new BrowserViewportScroller((0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(DOCUMENT), window) : new NullViewportScroller()
       });
     }
   }
@@ -9084,7 +9049,7 @@ const noopImageLoader = config => config.src;
  * @see {@link NgOptimizedImage}
  * @publicApi
  */
-const IMAGE_LOADER = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_0__.InjectionToken(ngDevMode ? 'ImageLoader' : '', {
+const IMAGE_LOADER = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_1__.InjectionToken(ngDevMode ? 'ImageLoader' : '', {
   providedIn: 'root',
   factory: () => noopImageLoader
 });
@@ -9127,10 +9092,10 @@ function createImageLoader(buildUrlFn, exampleUrls) {
   };
 }
 function throwInvalidPathError(path, exampleUrls) {
-  throw new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](2959 /* RuntimeErrorCode.INVALID_LOADER_ARGUMENTS */, ngDevMode && `Image loader has detected an invalid path (\`${path}\`). ` + `To fix this, supply a path using one of the following formats: ${exampleUrls.join(' or ')}`);
+  throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](2959 /* RuntimeErrorCode.INVALID_LOADER_ARGUMENTS */, ngDevMode && `Image loader has detected an invalid path (\`${path}\`). ` + `To fix this, supply a path using one of the following formats: ${exampleUrls.join(' or ')}`);
 }
 function throwUnexpectedAbsoluteUrlError(path, url) {
-  throw new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](2959 /* RuntimeErrorCode.INVALID_LOADER_ARGUMENTS */, ngDevMode && `Image loader has detected a \`<img>\` tag with an invalid \`ngSrc\` attribute: ${url}. ` + `This image loader expects \`ngSrc\` to be a relative URL - ` + `however the provided value is an absolute URL. ` + `To fix this, provide \`ngSrc\` as a path relative to the base URL ` + `configured for this loader (\`${path}\`).`);
+  throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](2959 /* RuntimeErrorCode.INVALID_LOADER_ARGUMENTS */, ngDevMode && `Image loader has detected a \`<img>\` tag with an invalid \`ngSrc\` attribute: ${url}. ` + `This image loader expects \`ngSrc\` to be a relative URL - ` + `however the provided value is an absolute URL. ` + `To fix this, provide \`ngSrc\` as a path relative to the base URL ` + `configured for this loader (\`${path}\`).`);
 }
 
 /**
@@ -9311,7 +9276,7 @@ function isNetlifyUrl(url) {
  */
 function provideNetlifyLoader(path) {
   if (path && !isValidPath(path)) {
-    throw new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](2959 /* RuntimeErrorCode.INVALID_LOADER_ARGUMENTS */, ngDevMode && `Image loader has detected an invalid path (\`${path}\`). ` + `To fix this, supply either the full URL to the Netlify site, or leave it empty to use the current site.`);
+    throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](2959 /* RuntimeErrorCode.INVALID_LOADER_ARGUMENTS */, ngDevMode && `Image loader has detected an invalid path (\`${path}\`). ` + `To fix this, supply either the full URL to the Netlify site, or leave it empty to use the current site.`);
   }
   if (path) {
     const url = new URL(path);
@@ -9349,7 +9314,7 @@ function createNetlifyUrl(config, path) {
       url.searchParams.set(validParams.get(param), value.toString());
     } else {
       if (ngDevMode) {
-        console.warn((0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵformatRuntimeError"])(2959 /* RuntimeErrorCode.INVALID_LOADER_ARGUMENTS */, `The Netlify image loader has detected an \`<img>\` tag with the unsupported attribute "\`${param}\`".`));
+        console.warn((0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵformatRuntimeError"])(2959 /* RuntimeErrorCode.INVALID_LOADER_ARGUMENTS */, `The Netlify image loader has detected an \`<img>\` tag with the unsupported attribute "\`${param}\`".`));
       }
     }
   }
@@ -9370,7 +9335,7 @@ function imgDirectiveDetails(ngSrc, includeNgSrc = true) {
  */
 function assertDevMode(checkName) {
   if (!ngDevMode) {
-    throw new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](2958 /* RuntimeErrorCode.UNEXPECTED_DEV_MODE_CHECK_IN_PROD_MODE */, `Unexpected invocation of the ${checkName} in the prod mode. ` + `Please make sure that the prod mode is enabled for production builds.`);
+    throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](2958 /* RuntimeErrorCode.UNEXPECTED_DEV_MODE_CHECK_IN_PROD_MODE */, `Unexpected invocation of the ${checkName} in the prod mode. ` + `Please make sure that the prod mode is enabled for production builds.`);
   }
 }
 
@@ -9391,9 +9356,10 @@ let LCPImageObserver = /*#__PURE__*/(() => {
       this.images = new Map();
       this.window = null;
       this.observer = null;
+      const isBrowser = isPlatformBrowser((0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(_angular_core__WEBPACK_IMPORTED_MODULE_1__.PLATFORM_ID));
       assertDevMode('LCP checker');
-      const win = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.inject)(DOCUMENT).defaultView;
-      if (typeof win !== 'undefined' && typeof PerformanceObserver !== 'undefined') {
+      const win = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(DOCUMENT).defaultView;
+      if (isBrowser && typeof PerformanceObserver !== 'undefined') {
         this.window = win;
         this.observer = this.initPerformanceObserver();
       }
@@ -9448,6 +9414,7 @@ let LCPImageObserver = /*#__PURE__*/(() => {
       this.images.delete(getUrl(rewrittenSrc, this.window).href);
     }
     updateImage(originalSrc, newSrc) {
+      if (!this.observer) return;
       const originalUrl = getUrl(originalSrc, this.window).href;
       const img = this.images.get(originalUrl);
       if (img) {
@@ -9462,12 +9429,12 @@ let LCPImageObserver = /*#__PURE__*/(() => {
       this.images.clear();
     }
     static {
-      this.ɵfac = function LCPImageObserver_Factory(t) {
-        return new (t || LCPImageObserver)();
+      this.ɵfac = function LCPImageObserver_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || LCPImageObserver)();
       };
     }
     static {
-      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
+      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
         token: LCPImageObserver,
         factory: LCPImageObserver.ɵfac,
         providedIn: 'root'
@@ -9481,11 +9448,11 @@ let LCPImageObserver = /*#__PURE__*/(() => {
 })();
 function logMissingPriorityError(ngSrc) {
   const directiveDetails = imgDirectiveDetails(ngSrc);
-  console.error((0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵformatRuntimeError"])(2955 /* RuntimeErrorCode.LCP_IMG_MISSING_PRIORITY */, `${directiveDetails} this image is the Largest Contentful Paint (LCP) ` + `element but was not marked "priority". This image should be marked ` + `"priority" in order to prioritize its loading. ` + `To fix this, add the "priority" attribute.`));
+  console.error((0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵformatRuntimeError"])(2955 /* RuntimeErrorCode.LCP_IMG_MISSING_PRIORITY */, `${directiveDetails} this image is the Largest Contentful Paint (LCP) ` + `element but was not marked "priority". This image should be marked ` + `"priority" in order to prioritize its loading. ` + `To fix this, add the "priority" attribute.`));
 }
 function logModifiedWarning(ngSrc) {
   const directiveDetails = imgDirectiveDetails(ngSrc);
-  console.warn((0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵformatRuntimeError"])(2964 /* RuntimeErrorCode.LCP_IMG_NGSRC_MODIFIED */, `${directiveDetails} this image is the Largest Contentful Paint (LCP) ` + `element and has had its "ngSrc" attribute modified. This can cause ` + `slower loading performance. It is recommended not to modify the "ngSrc" ` + `property on any image which could be the LCP element.`));
+  console.warn((0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵformatRuntimeError"])(2964 /* RuntimeErrorCode.LCP_IMG_NGSRC_MODIFIED */, `${directiveDetails} this image is the Largest Contentful Paint (LCP) ` + `element and has had its "ngSrc" attribute modified. This can cause ` + `slower loading performance. It is recommended not to modify the "ngSrc" ` + `property on any image which could be the LCP element.`));
 }
 
 // Set of origins that are always excluded from the preconnect checks.
@@ -9508,7 +9475,7 @@ const INTERNAL_PRECONNECT_CHECK_BLOCKLIST = /*#__PURE__*/new Set(['localhost', '
  *
  * @publicApi
  */
-const PRECONNECT_CHECK_BLOCKLIST = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_0__.InjectionToken(ngDevMode ? 'PRECONNECT_CHECK_BLOCKLIST' : '');
+const PRECONNECT_CHECK_BLOCKLIST = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_1__.InjectionToken(ngDevMode ? 'PRECONNECT_CHECK_BLOCKLIST' : '');
 /**
  * Contains the logic to detect whether an image, marked with the "priority" attribute
  * has a corresponding `<link rel="preconnect">` tag in the `document.head`.
@@ -9519,7 +9486,8 @@ const PRECONNECT_CHECK_BLOCKLIST = /*#__PURE__*/new _angular_core__WEBPACK_IMPOR
 let PreconnectLinkChecker = /*#__PURE__*/(() => {
   class PreconnectLinkChecker {
     constructor() {
-      this.document = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.inject)(DOCUMENT);
+      this.document = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(DOCUMENT);
+      this.isServer = isPlatformServer((0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(_angular_core__WEBPACK_IMPORTED_MODULE_1__.PLATFORM_ID));
       /**
        * Set of <link rel="preconnect"> tags found on this page.
        * The `null` value indicates that there was no DOM query operation performed.
@@ -9536,7 +9504,7 @@ let PreconnectLinkChecker = /*#__PURE__*/(() => {
       if (typeof win !== 'undefined') {
         this.window = win;
       }
-      const blocklist = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.inject)(PRECONNECT_CHECK_BLOCKLIST, {
+      const blocklist = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(PRECONNECT_CHECK_BLOCKLIST, {
         optional: true
       });
       if (blocklist) {
@@ -9560,7 +9528,7 @@ let PreconnectLinkChecker = /*#__PURE__*/(() => {
      * @param originalNgSrc ngSrc value
      */
     assertPreconnect(rewrittenSrc, originalNgSrc) {
-      if (!this.window) return;
+      if (this.isServer) return;
       const imgUrl = getUrl(rewrittenSrc, this.window);
       if (this.blocklist.has(imgUrl.hostname) || this.alreadySeen.has(imgUrl.origin)) return;
       // Register this origin as seen, so we don't check it again later.
@@ -9571,7 +9539,7 @@ let PreconnectLinkChecker = /*#__PURE__*/(() => {
       // performance implications of making extra DOM lookups for each image.
       this.preconnectLinks ??= this.queryPreconnectLinks();
       if (!this.preconnectLinks.has(imgUrl.origin)) {
-        console.warn((0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵformatRuntimeError"])(2956 /* RuntimeErrorCode.PRIORITY_IMG_MISSING_PRECONNECT_TAG */, `${imgDirectiveDetails(originalNgSrc)} there is no preconnect tag present for this ` + `image. Preconnecting to the origin(s) that serve priority images ensures that these ` + `images are delivered as soon as possible. To fix this, please add the following ` + `element into the <head> of the document:\n` + `  <link rel="preconnect" href="${imgUrl.origin}">`));
+        console.warn((0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵformatRuntimeError"])(2956 /* RuntimeErrorCode.PRIORITY_IMG_MISSING_PRECONNECT_TAG */, `${imgDirectiveDetails(originalNgSrc)} there is no preconnect tag present for this ` + `image. Preconnecting to the origin(s) that serve priority images ensures that these ` + `images are delivered as soon as possible. To fix this, please add the following ` + `element into the <head> of the document:\n` + `  <link rel="preconnect" href="${imgUrl.origin}">`));
       }
     }
     queryPreconnectLinks() {
@@ -9589,12 +9557,12 @@ let PreconnectLinkChecker = /*#__PURE__*/(() => {
       this.alreadySeen.clear();
     }
     static {
-      this.ɵfac = function PreconnectLinkChecker_Factory(t) {
-        return new (t || PreconnectLinkChecker)();
+      this.ɵfac = function PreconnectLinkChecker_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || PreconnectLinkChecker)();
       };
     }
     static {
-      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
+      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
         token: PreconnectLinkChecker,
         factory: PreconnectLinkChecker.ɵfac,
         providedIn: 'root'
@@ -9630,7 +9598,7 @@ const DEFAULT_PRELOADED_IMAGES_LIMIT = 5;
  * This Set tracks the original src passed into the `ngSrc` input not the src after it has been
  * run through the specified `IMAGE_LOADER`.
  */
-const PRELOADED_IMAGES = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_0__.InjectionToken('NG_OPTIMIZED_PRELOADED_IMAGES', {
+const PRELOADED_IMAGES = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_1__.InjectionToken('NG_OPTIMIZED_PRELOADED_IMAGES', {
   providedIn: 'root',
   factory: () => new Set()
 });
@@ -9646,8 +9614,8 @@ const PRELOADED_IMAGES = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE
 let PreloadLinkCreator = /*#__PURE__*/(() => {
   class PreloadLinkCreator {
     constructor() {
-      this.preloadedImages = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.inject)(PRELOADED_IMAGES);
-      this.document = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.inject)(DOCUMENT);
+      this.preloadedImages = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(PRELOADED_IMAGES);
+      this.document = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(DOCUMENT);
     }
     /**
      * @description Add a preload `<link>` to the `<head>` of the `index.html` that is served from the
@@ -9668,7 +9636,7 @@ let PreloadLinkCreator = /*#__PURE__*/(() => {
     createPreloadLinkTag(renderer, src, srcset, sizes) {
       if (ngDevMode) {
         if (this.preloadedImages.size >= DEFAULT_PRELOADED_IMAGES_LIMIT) {
-          throw new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](2961 /* RuntimeErrorCode.TOO_MANY_PRELOADED_IMAGES */, ngDevMode && `The \`NgOptimizedImage\` directive has detected that more than ` + `${DEFAULT_PRELOADED_IMAGES_LIMIT} images were marked as priority. ` + `This might negatively affect an overall performance of the page. ` + `To fix this, remove the "priority" attribute from images with less priority.`);
+          throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](2961 /* RuntimeErrorCode.TOO_MANY_PRELOADED_IMAGES */, ngDevMode && `The \`NgOptimizedImage\` directive has detected that more than ` + `${DEFAULT_PRELOADED_IMAGES_LIMIT} images were marked as priority. ` + `This might negatively affect an overall performance of the page. ` + `To fix this, remove the "priority" attribute from images with less priority.`);
         }
       }
       if (this.preloadedImages.has(src)) {
@@ -9689,12 +9657,12 @@ let PreloadLinkCreator = /*#__PURE__*/(() => {
       renderer.appendChild(this.document.head, preload);
     }
     static {
-      this.ɵfac = function PreloadLinkCreator_Factory(t) {
-        return new (t || PreloadLinkCreator)();
+      this.ɵfac = function PreloadLinkCreator_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || PreloadLinkCreator)();
       };
     }
     static {
-      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
+      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
         token: PreloadLinkCreator,
         factory: PreloadLinkCreator.ɵfac,
         providedIn: 'root'
@@ -9765,6 +9733,11 @@ const FIXED_SRCSET_HEIGHT_LIMIT = 1080;
  */
 const PLACEHOLDER_BLUR_AMOUNT = 15;
 /**
+ * Placeholder dimension (height or width) limit in pixels. Angular produces a warning
+ * when this limit is crossed.
+ */
+const PLACEHOLDER_DIMENSION_LIMIT = 1000;
+/**
  * Used to warn or error when the user provides an overly large dataURL for the placeholder
  * attribute.
  * Character count of Base64 images is 1 character per byte, and base64 encoding is approximately
@@ -9777,6 +9750,22 @@ const DATA_URL_WARN_LIMIT = 4000;
 const DATA_URL_ERROR_LIMIT = 10000;
 /** Info about built-in loaders we can test for. */
 const BUILT_IN_LOADERS = [imgixLoaderInfo, imageKitLoaderInfo, cloudinaryLoaderInfo, netlifyLoaderInfo];
+/**
+ * Threshold for the PRIORITY_TRUE_COUNT
+ */
+const PRIORITY_COUNT_THRESHOLD = 10;
+/**
+ * This count is used to log a devMode warning
+ * when the count of directive instances with priority=true
+ * exceeds the threshold PRIORITY_COUNT_THRESHOLD
+ */
+let IMGS_WITH_PRIORITY_ATTR_COUNT = 0;
+/**
+ * This function is for testing purpose.
+ */
+function resetImagePriorityCount() {
+  IMGS_WITH_PRIORITY_ATTR_COUNT = 0;
+}
 /**
  * Directive that improves image loading performance by enforcing best practices.
  *
@@ -9861,7 +9850,7 @@ const BUILT_IN_LOADERS = [imgixLoaderInfo, imageKitLoaderInfo, cloudinaryLoaderI
  *   {
  *      provide: IMAGE_LOADER,
  *      useValue: (config: ImageLoaderConfig) => {
- *        return `https://example.com/${config.src}-${config.width}.jpg}`;
+ *        return `https://example.com/${config.src}-${config.width}.jpg`;
  *      }
  *   },
  * ],
@@ -9878,13 +9867,13 @@ const BUILT_IN_LOADERS = [imgixLoaderInfo, imageKitLoaderInfo, cloudinaryLoaderI
 let NgOptimizedImage = /*#__PURE__*/(() => {
   class NgOptimizedImage {
     constructor() {
-      this.imageLoader = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.inject)(IMAGE_LOADER);
-      this.config = processConfig((0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.inject)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵIMAGE_CONFIG"]));
-      this.renderer = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.inject)(_angular_core__WEBPACK_IMPORTED_MODULE_0__.Renderer2);
-      this.imgElement = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.inject)(_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef).nativeElement;
-      this.injector = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.inject)(_angular_core__WEBPACK_IMPORTED_MODULE_0__.Injector);
-      this.isServer = isPlatformServer((0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.inject)(_angular_core__WEBPACK_IMPORTED_MODULE_0__.PLATFORM_ID));
-      this.preloadLinkCreator = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.inject)(PreloadLinkCreator);
+      this.imageLoader = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(IMAGE_LOADER);
+      this.config = processConfig((0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵIMAGE_CONFIG"]));
+      this.renderer = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(_angular_core__WEBPACK_IMPORTED_MODULE_1__.Renderer2);
+      this.imgElement = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(_angular_core__WEBPACK_IMPORTED_MODULE_1__.ElementRef).nativeElement;
+      this.injector = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(_angular_core__WEBPACK_IMPORTED_MODULE_1__.Injector);
+      this.isServer = isPlatformServer((0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(_angular_core__WEBPACK_IMPORTED_MODULE_1__.PLATFORM_ID));
+      this.preloadLinkCreator = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(PreloadLinkCreator);
       // a LCP image observer - should be injected only in the dev mode
       this.lcpObserver = ngDevMode ? this.injector.get(LCPImageObserver) : null;
       /**
@@ -9910,9 +9899,9 @@ let NgOptimizedImage = /*#__PURE__*/(() => {
     }
     /** @nodoc */
     ngOnInit() {
-      (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵperformanceMarkFeature"])('NgOptimizedImage');
+      (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵperformanceMarkFeature"])('NgOptimizedImage');
       if (ngDevMode) {
-        const ngZone = this.injector.get(_angular_core__WEBPACK_IMPORTED_MODULE_0__.NgZone);
+        const ngZone = this.injector.get(_angular_core__WEBPACK_IMPORTED_MODULE_1__.NgZone);
         assertNonEmptyInput(this, 'ngSrc', this.ngSrc);
         assertValidNgSrcset(this, this.ngSrcset);
         assertNoConflictingSrc(this);
@@ -9947,7 +9936,7 @@ let NgOptimizedImage = /*#__PURE__*/(() => {
         assertNoNgSrcsetWithoutLoader(this, this.imageLoader);
         assertNoLoaderParamsWithoutLoader(this, this.imageLoader);
         if (this.lcpObserver !== null) {
-          const ngZone = this.injector.get(_angular_core__WEBPACK_IMPORTED_MODULE_0__.NgZone);
+          const ngZone = this.injector.get(_angular_core__WEBPACK_IMPORTED_MODULE_1__.NgZone);
           ngZone.runOutsideAngular(() => {
             this.lcpObserver.registerImage(this.getRewrittenSrc(), this.ngSrc, this.priority);
           });
@@ -9955,6 +9944,10 @@ let NgOptimizedImage = /*#__PURE__*/(() => {
         if (this.priority) {
           const checker = this.injector.get(PreconnectLinkChecker);
           checker.assertPreconnect(this.getRewrittenSrc(), this.ngSrc);
+          if (!this.isServer) {
+            const applicationRef = this.injector.get(_angular_core__WEBPACK_IMPORTED_MODULE_1__.ApplicationRef);
+            assetPriorityCountBelowThreshold(applicationRef);
+          }
         }
       }
       if (this.placeholder) {
@@ -9996,11 +9989,14 @@ let NgOptimizedImage = /*#__PURE__*/(() => {
         this.updateSrcAndSrcset(true);
         const newSrc = this._renderedSrc;
         if (this.lcpObserver !== null && oldSrc && newSrc && oldSrc !== newSrc) {
-          const ngZone = this.injector.get(_angular_core__WEBPACK_IMPORTED_MODULE_0__.NgZone);
+          const ngZone = this.injector.get(_angular_core__WEBPACK_IMPORTED_MODULE_1__.NgZone);
           ngZone.runOutsideAngular(() => {
             this.lcpObserver?.updateImage(oldSrc, newSrc);
           });
         }
+      }
+      if (ngDevMode && changes['placeholder']?.currentValue && !this.isServer) {
+        assertPlaceholderDimensions(this, this.imgElement);
       }
     }
     callImageLoader(configWithoutCustomParams) {
@@ -10115,7 +10111,7 @@ let NgOptimizedImage = /*#__PURE__*/(() => {
           width: placeholderResolution,
           isPlaceholder: true
         })})`;
-      } else if (typeof placeholderInput === 'string' && placeholderInput.startsWith('data:')) {
+      } else if (typeof placeholderInput === 'string') {
         return `url(${placeholderInput})`;
       }
       return null;
@@ -10132,7 +10128,7 @@ let NgOptimizedImage = /*#__PURE__*/(() => {
     }
     removePlaceholderOnLoad(img) {
       const callback = () => {
-        const changeDetectorRef = this.injector.get(_angular_core__WEBPACK_IMPORTED_MODULE_0__.ChangeDetectorRef);
+        const changeDetectorRef = this.injector.get(_angular_core__WEBPACK_IMPORTED_MODULE_1__.ChangeDetectorRef);
         removeLoadListenerFn();
         removeErrorListenerFn();
         this.placeholder = false;
@@ -10140,6 +10136,7 @@ let NgOptimizedImage = /*#__PURE__*/(() => {
       };
       const removeLoadListenerFn = this.renderer.listen(img, 'load', callback);
       const removeErrorListenerFn = this.renderer.listen(img, 'error', callback);
+      callOnLoadIfImageIsLoaded(img, callback);
     }
     /** @nodoc */
     ngOnDestroy() {
@@ -10153,38 +10150,38 @@ let NgOptimizedImage = /*#__PURE__*/(() => {
       this.renderer.setAttribute(this.imgElement, name, value);
     }
     static {
-      this.ɵfac = function NgOptimizedImage_Factory(t) {
-        return new (t || NgOptimizedImage)();
+      this.ɵfac = function NgOptimizedImage_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || NgOptimizedImage)();
       };
     }
     static {
-      this.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({
+      this.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({
         type: NgOptimizedImage,
         selectors: [["img", "ngSrc", ""]],
         hostVars: 18,
         hostBindings: function NgOptimizedImage_HostBindings(rf, ctx) {
           if (rf & 2) {
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstyleProp"]("position", ctx.fill ? "absolute" : null)("width", ctx.fill ? "100%" : null)("height", ctx.fill ? "100%" : null)("inset", ctx.fill ? "0" : null)("background-size", ctx.placeholder ? "cover" : null)("background-position", ctx.placeholder ? "50% 50%" : null)("background-repeat", ctx.placeholder ? "no-repeat" : null)("background-image", ctx.placeholder ? ctx.generatePlaceholder(ctx.placeholder) : null)("filter", ctx.placeholder && ctx.shouldBlurPlaceholder(ctx.placeholderConfig) ? "blur(15px)" : null);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵstyleProp"]("position", ctx.fill ? "absolute" : null)("width", ctx.fill ? "100%" : null)("height", ctx.fill ? "100%" : null)("inset", ctx.fill ? "0" : null)("background-size", ctx.placeholder ? "cover" : null)("background-position", ctx.placeholder ? "50% 50%" : null)("background-repeat", ctx.placeholder ? "no-repeat" : null)("background-image", ctx.placeholder ? ctx.generatePlaceholder(ctx.placeholder) : null)("filter", ctx.placeholder && ctx.shouldBlurPlaceholder(ctx.placeholderConfig) ? "blur(15px)" : null);
           }
         },
         inputs: {
           ngSrc: [2, "ngSrc", "ngSrc", unwrapSafeUrl],
           ngSrcset: "ngSrcset",
           sizes: "sizes",
-          width: [2, "width", "width", _angular_core__WEBPACK_IMPORTED_MODULE_0__.numberAttribute],
-          height: [2, "height", "height", _angular_core__WEBPACK_IMPORTED_MODULE_0__.numberAttribute],
+          width: [2, "width", "width", _angular_core__WEBPACK_IMPORTED_MODULE_1__.numberAttribute],
+          height: [2, "height", "height", _angular_core__WEBPACK_IMPORTED_MODULE_1__.numberAttribute],
           loading: "loading",
-          priority: [2, "priority", "priority", _angular_core__WEBPACK_IMPORTED_MODULE_0__.booleanAttribute],
+          priority: [2, "priority", "priority", _angular_core__WEBPACK_IMPORTED_MODULE_1__.booleanAttribute],
           loaderParams: "loaderParams",
-          disableOptimizedSrcset: [2, "disableOptimizedSrcset", "disableOptimizedSrcset", _angular_core__WEBPACK_IMPORTED_MODULE_0__.booleanAttribute],
-          fill: [2, "fill", "fill", _angular_core__WEBPACK_IMPORTED_MODULE_0__.booleanAttribute],
-          placeholder: [2, "placeholder", "placeholder", booleanOrDataUrlAttribute],
+          disableOptimizedSrcset: [2, "disableOptimizedSrcset", "disableOptimizedSrcset", _angular_core__WEBPACK_IMPORTED_MODULE_1__.booleanAttribute],
+          fill: [2, "fill", "fill", _angular_core__WEBPACK_IMPORTED_MODULE_1__.booleanAttribute],
+          placeholder: [2, "placeholder", "placeholder", booleanOrUrlAttribute],
           placeholderConfig: "placeholderConfig",
           src: "src",
           srcset: "srcset"
         },
         standalone: true,
-        features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵInputTransformsFeature"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵNgOnChangesFeature"]]
+        features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵInputTransformsFeature"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]]
       });
     }
   }
@@ -10202,7 +10199,7 @@ function processConfig(config) {
   if (config.breakpoints) {
     sortedBreakpoints.breakpoints = config.breakpoints.sort((a, b) => a - b);
   }
-  return Object.assign({}, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵIMAGE_CONFIG_DEFAULTS"], config, sortedBreakpoints);
+  return Object.assign({}, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵIMAGE_CONFIG_DEFAULTS"], config, sortedBreakpoints);
 }
 /***** Assert functions *****/
 /**
@@ -10210,7 +10207,7 @@ function processConfig(config) {
  */
 function assertNoConflictingSrc(dir) {
   if (dir.src) {
-    throw new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](2950 /* RuntimeErrorCode.UNEXPECTED_SRC_ATTR */, `${imgDirectiveDetails(dir.ngSrc)} both \`src\` and \`ngSrc\` have been set. ` + `Supplying both of these attributes breaks lazy loading. ` + `The NgOptimizedImage directive sets \`src\` itself based on the value of \`ngSrc\`. ` + `To fix this, please remove the \`src\` attribute.`);
+    throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](2950 /* RuntimeErrorCode.UNEXPECTED_SRC_ATTR */, `${imgDirectiveDetails(dir.ngSrc)} both \`src\` and \`ngSrc\` have been set. ` + `Supplying both of these attributes breaks lazy loading. ` + `The NgOptimizedImage directive sets \`src\` itself based on the value of \`ngSrc\`. ` + `To fix this, please remove the \`src\` attribute.`);
   }
 }
 /**
@@ -10218,7 +10215,7 @@ function assertNoConflictingSrc(dir) {
  */
 function assertNoConflictingSrcset(dir) {
   if (dir.srcset) {
-    throw new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](2951 /* RuntimeErrorCode.UNEXPECTED_SRCSET_ATTR */, `${imgDirectiveDetails(dir.ngSrc)} both \`srcset\` and \`ngSrcset\` have been set. ` + `Supplying both of these attributes breaks lazy loading. ` + `The NgOptimizedImage directive sets \`srcset\` itself based on the value of ` + `\`ngSrcset\`. To fix this, please remove the \`srcset\` attribute.`);
+    throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](2951 /* RuntimeErrorCode.UNEXPECTED_SRCSET_ATTR */, `${imgDirectiveDetails(dir.ngSrc)} both \`srcset\` and \`ngSrcset\` have been set. ` + `Supplying both of these attributes breaks lazy loading. ` + `The NgOptimizedImage directive sets \`srcset\` itself based on the value of ` + `\`ngSrcset\`. To fix this, please remove the \`srcset\` attribute.`);
   }
 }
 /**
@@ -10230,7 +10227,7 @@ function assertNotBase64Image(dir) {
     if (ngSrc.length > BASE64_IMG_MAX_LENGTH_IN_ERROR) {
       ngSrc = ngSrc.substring(0, BASE64_IMG_MAX_LENGTH_IN_ERROR) + '...';
     }
-    throw new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](2952 /* RuntimeErrorCode.INVALID_INPUT */, `${imgDirectiveDetails(dir.ngSrc, false)} \`ngSrc\` is a Base64-encoded string ` + `(${ngSrc}). NgOptimizedImage does not support Base64-encoded strings. ` + `To fix this, disable the NgOptimizedImage directive for this element ` + `by removing \`ngSrc\` and using a standard \`src\` attribute instead.`);
+    throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](2952 /* RuntimeErrorCode.INVALID_INPUT */, `${imgDirectiveDetails(dir.ngSrc, false)} \`ngSrc\` is a Base64-encoded string ` + `(${ngSrc}). NgOptimizedImage does not support Base64-encoded strings. ` + `To fix this, disable the NgOptimizedImage directive for this element ` + `by removing \`ngSrc\` and using a standard \`src\` attribute instead.`);
   }
 }
 /**
@@ -10239,7 +10236,7 @@ function assertNotBase64Image(dir) {
 function assertNoComplexSizes(dir) {
   let sizes = dir.sizes;
   if (sizes?.match(/((\)|,)\s|^)\d+px/)) {
-    throw new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](2952 /* RuntimeErrorCode.INVALID_INPUT */, `${imgDirectiveDetails(dir.ngSrc, false)} \`sizes\` was set to a string including ` + `pixel values. For automatic \`srcset\` generation, \`sizes\` must only include responsive ` + `values, such as \`sizes="50vw"\` or \`sizes="(min-width: 768px) 50vw, 100vw"\`. ` + `To fix this, modify the \`sizes\` attribute, or provide your own \`ngSrcset\` value directly.`);
+    throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](2952 /* RuntimeErrorCode.INVALID_INPUT */, `${imgDirectiveDetails(dir.ngSrc, false)} \`sizes\` was set to a string including ` + `pixel values. For automatic \`srcset\` generation, \`sizes\` must only include responsive ` + `values, such as \`sizes="50vw"\` or \`sizes="(min-width: 768px) 50vw, 100vw"\`. ` + `To fix this, modify the \`sizes\` attribute, or provide your own \`ngSrcset\` value directly.`);
   }
 }
 function assertValidPlaceholder(dir, imageLoader) {
@@ -10252,7 +10249,7 @@ function assertValidPlaceholder(dir, imageLoader) {
  */
 function assertNoPlaceholderConfigWithoutPlaceholder(dir) {
   if (dir.placeholderConfig && !dir.placeholder) {
-    throw new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](2952 /* RuntimeErrorCode.INVALID_INPUT */, `${imgDirectiveDetails(dir.ngSrc, false)} \`placeholderConfig\` options were provided for an ` + `image that does not use the \`placeholder\` attribute, and will have no effect.`);
+    throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](2952 /* RuntimeErrorCode.INVALID_INPUT */, `${imgDirectiveDetails(dir.ngSrc, false)} \`placeholderConfig\` options were provided for an ` + `image that does not use the \`placeholder\` attribute, and will have no effect.`);
   }
 }
 /**
@@ -10261,7 +10258,7 @@ function assertNoPlaceholderConfigWithoutPlaceholder(dir) {
  */
 function assertNoRelativePlaceholderWithoutLoader(dir, imageLoader) {
   if (dir.placeholder === true && imageLoader === noopImageLoader) {
-    throw new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](2963 /* RuntimeErrorCode.MISSING_NECESSARY_LOADER */, `${imgDirectiveDetails(dir.ngSrc)} the \`placeholder\` attribute is set to true but ` + `no image loader is configured (i.e. the default one is being used), ` + `which would result in the same image being used for the primary image and its placeholder. ` + `To fix this, provide a loader or remove the \`placeholder\` attribute from the image.`);
+    throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](2963 /* RuntimeErrorCode.MISSING_NECESSARY_LOADER */, `${imgDirectiveDetails(dir.ngSrc)} the \`placeholder\` attribute is set to true but ` + `no image loader is configured (i.e. the default one is being used), ` + `which would result in the same image being used for the primary image and its placeholder. ` + `To fix this, provide a loader or remove the \`placeholder\` attribute from the image.`);
   }
 }
 /**
@@ -10270,10 +10267,10 @@ function assertNoRelativePlaceholderWithoutLoader(dir, imageLoader) {
 function assertNoOversizedDataUrl(dir) {
   if (dir.placeholder && typeof dir.placeholder === 'string' && dir.placeholder.startsWith('data:')) {
     if (dir.placeholder.length > DATA_URL_ERROR_LIMIT) {
-      throw new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](2965 /* RuntimeErrorCode.OVERSIZED_PLACEHOLDER */, `${imgDirectiveDetails(dir.ngSrc)} the \`placeholder\` attribute is set to a data URL which is longer ` + `than ${DATA_URL_ERROR_LIMIT} characters. This is strongly discouraged, as large inline placeholders ` + `directly increase the bundle size of Angular and hurt page load performance. To fix this, generate ` + `a smaller data URL placeholder.`);
+      throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](2965 /* RuntimeErrorCode.OVERSIZED_PLACEHOLDER */, `${imgDirectiveDetails(dir.ngSrc)} the \`placeholder\` attribute is set to a data URL which is longer ` + `than ${DATA_URL_ERROR_LIMIT} characters. This is strongly discouraged, as large inline placeholders ` + `directly increase the bundle size of Angular and hurt page load performance. To fix this, generate ` + `a smaller data URL placeholder.`);
     }
     if (dir.placeholder.length > DATA_URL_WARN_LIMIT) {
-      console.warn((0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵformatRuntimeError"])(2965 /* RuntimeErrorCode.OVERSIZED_PLACEHOLDER */, `${imgDirectiveDetails(dir.ngSrc)} the \`placeholder\` attribute is set to a data URL which is longer ` + `than ${DATA_URL_WARN_LIMIT} characters. This is discouraged, as large inline placeholders ` + `directly increase the bundle size of Angular and hurt page load performance. For better loading performance, ` + `generate a smaller data URL placeholder.`));
+      console.warn((0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵformatRuntimeError"])(2965 /* RuntimeErrorCode.OVERSIZED_PLACEHOLDER */, `${imgDirectiveDetails(dir.ngSrc)} the \`placeholder\` attribute is set to a data URL which is longer ` + `than ${DATA_URL_WARN_LIMIT} characters. This is discouraged, as large inline placeholders ` + `directly increase the bundle size of Angular and hurt page load performance. For better loading performance, ` + `generate a smaller data URL placeholder.`));
     }
   }
 }
@@ -10283,7 +10280,7 @@ function assertNoOversizedDataUrl(dir) {
 function assertNotBlobUrl(dir) {
   const ngSrc = dir.ngSrc.trim();
   if (ngSrc.startsWith('blob:')) {
-    throw new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](2952 /* RuntimeErrorCode.INVALID_INPUT */, `${imgDirectiveDetails(dir.ngSrc)} \`ngSrc\` was set to a blob URL (${ngSrc}). ` + `Blob URLs are not supported by the NgOptimizedImage directive. ` + `To fix this, disable the NgOptimizedImage directive for this element ` + `by removing \`ngSrc\` and using a regular \`src\` attribute instead.`);
+    throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](2952 /* RuntimeErrorCode.INVALID_INPUT */, `${imgDirectiveDetails(dir.ngSrc)} \`ngSrc\` was set to a blob URL (${ngSrc}). ` + `Blob URLs are not supported by the NgOptimizedImage directive. ` + `To fix this, disable the NgOptimizedImage directive for this element ` + `by removing \`ngSrc\` and using a regular \`src\` attribute instead.`);
   }
 }
 /**
@@ -10293,7 +10290,7 @@ function assertNonEmptyInput(dir, name, value) {
   const isString = typeof value === 'string';
   const isEmptyString = isString && value.trim() === '';
   if (!isString || isEmptyString) {
-    throw new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](2952 /* RuntimeErrorCode.INVALID_INPUT */, `${imgDirectiveDetails(dir.ngSrc)} \`${name}\` has an invalid value ` + `(\`${value}\`). To fix this, change the value to a non-empty string.`);
+    throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](2952 /* RuntimeErrorCode.INVALID_INPUT */, `${imgDirectiveDetails(dir.ngSrc)} \`${name}\` has an invalid value ` + `(\`${value}\`). To fix this, change the value to a non-empty string.`);
   }
 }
 /**
@@ -10310,13 +10307,13 @@ function assertValidNgSrcset(dir, value) {
   }
   const isValidSrcset = isValidWidthDescriptor || isValidDensityDescriptor;
   if (!isValidSrcset) {
-    throw new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](2952 /* RuntimeErrorCode.INVALID_INPUT */, `${imgDirectiveDetails(dir.ngSrc)} \`ngSrcset\` has an invalid value (\`${value}\`). ` + `To fix this, supply \`ngSrcset\` using a comma-separated list of one or more width ` + `descriptors (e.g. "100w, 200w") or density descriptors (e.g. "1x, 2x").`);
+    throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](2952 /* RuntimeErrorCode.INVALID_INPUT */, `${imgDirectiveDetails(dir.ngSrc)} \`ngSrcset\` has an invalid value (\`${value}\`). ` + `To fix this, supply \`ngSrcset\` using a comma-separated list of one or more width ` + `descriptors (e.g. "100w, 200w") or density descriptors (e.g. "1x, 2x").`);
   }
 }
 function assertUnderDensityCap(dir, value) {
   const underDensityCap = value.split(',').every(num => num === '' || parseFloat(num) <= ABSOLUTE_SRCSET_DENSITY_CAP);
   if (!underDensityCap) {
-    throw new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](2952 /* RuntimeErrorCode.INVALID_INPUT */, `${imgDirectiveDetails(dir.ngSrc)} the \`ngSrcset\` contains an unsupported image density:` + `\`${value}\`. NgOptimizedImage generally recommends a max image density of ` + `${RECOMMENDED_SRCSET_DENSITY_CAP}x but supports image densities up to ` + `${ABSOLUTE_SRCSET_DENSITY_CAP}x. The human eye cannot distinguish between image densities ` + `greater than ${RECOMMENDED_SRCSET_DENSITY_CAP}x - which makes them unnecessary for ` + `most use cases. Images that will be pinch-zoomed are typically the primary use case for ` + `${ABSOLUTE_SRCSET_DENSITY_CAP}x images. Please remove the high density descriptor and try again.`);
+    throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](2952 /* RuntimeErrorCode.INVALID_INPUT */, `${imgDirectiveDetails(dir.ngSrc)} the \`ngSrcset\` contains an unsupported image density:` + `\`${value}\`. NgOptimizedImage generally recommends a max image density of ` + `${RECOMMENDED_SRCSET_DENSITY_CAP}x but supports image densities up to ` + `${ABSOLUTE_SRCSET_DENSITY_CAP}x. The human eye cannot distinguish between image densities ` + `greater than ${RECOMMENDED_SRCSET_DENSITY_CAP}x - which makes them unnecessary for ` + `most use cases. Images that will be pinch-zoomed are typically the primary use case for ` + `${ABSOLUTE_SRCSET_DENSITY_CAP}x images. Please remove the high density descriptor and try again.`);
   }
 }
 /**
@@ -10330,7 +10327,7 @@ function postInitInputChangeError(dir, inputName) {
   } else {
     reason = `Changing the \`${inputName}\` would have no effect on the underlying ` + `image element, because the resource loading has already occurred.`;
   }
-  return new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](2953 /* RuntimeErrorCode.UNEXPECTED_INPUT_CHANGE */, `${imgDirectiveDetails(dir.ngSrc)} \`${inputName}\` was updated after initialization. ` + `The NgOptimizedImage directive will not react to this input change. ${reason} ` + `To fix this, either switch \`${inputName}\` to a static value ` + `or wrap the image element in an *ngIf that is gated on the necessary value.`);
+  return new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](2953 /* RuntimeErrorCode.UNEXPECTED_INPUT_CHANGE */, `${imgDirectiveDetails(dir.ngSrc)} \`${inputName}\` was updated after initialization. ` + `The NgOptimizedImage directive will not react to this input change. ${reason} ` + `To fix this, either switch \`${inputName}\` to a static value ` + `or wrap the image element in an *ngIf that is gated on the necessary value.`);
 }
 /**
  * Verify that none of the listed inputs has changed.
@@ -10359,7 +10356,7 @@ function assertGreaterThanZero(dir, inputValue, inputName) {
   const validNumber = typeof inputValue === 'number' && inputValue > 0;
   const validString = typeof inputValue === 'string' && /^\d+$/.test(inputValue.trim()) && parseInt(inputValue) > 0;
   if (!validNumber && !validString) {
-    throw new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](2952 /* RuntimeErrorCode.INVALID_INPUT */, `${imgDirectiveDetails(dir.ngSrc)} \`${inputName}\` has an invalid value. ` + `To fix this, provide \`${inputName}\` as a number greater than 0.`);
+    throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](2952 /* RuntimeErrorCode.INVALID_INPUT */, `${imgDirectiveDetails(dir.ngSrc)} \`${inputName}\` has an invalid value. ` + `To fix this, provide \`${inputName}\` as a number greater than 0.`);
   }
 }
 /**
@@ -10368,7 +10365,7 @@ function assertGreaterThanZero(dir, inputValue, inputName) {
  * - Whether image styling is "correct" (see below for a longer explanation).
  */
 function assertNoImageDistortion(dir, img, renderer) {
-  const removeLoadListenerFn = renderer.listen(img, 'load', () => {
+  const callback = () => {
     removeLoadListenerFn();
     removeErrorListenerFn();
     const computedStyle = window.getComputedStyle(img);
@@ -10399,9 +10396,9 @@ function assertNoImageDistortion(dir, img, renderer) {
     const inaccurateDimensions = Math.abs(suppliedAspectRatio - intrinsicAspectRatio) > ASPECT_RATIO_TOLERANCE;
     const stylingDistortion = nonZeroRenderedDimensions && Math.abs(intrinsicAspectRatio - renderedAspectRatio) > ASPECT_RATIO_TOLERANCE;
     if (inaccurateDimensions) {
-      console.warn((0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵformatRuntimeError"])(2952 /* RuntimeErrorCode.INVALID_INPUT */, `${imgDirectiveDetails(dir.ngSrc)} the aspect ratio of the image does not match ` + `the aspect ratio indicated by the width and height attributes. ` + `\nIntrinsic image size: ${intrinsicWidth}w x ${intrinsicHeight}h ` + `(aspect-ratio: ${round(intrinsicAspectRatio)}). \nSupplied width and height attributes: ` + `${suppliedWidth}w x ${suppliedHeight}h (aspect-ratio: ${round(suppliedAspectRatio)}). ` + `\nTo fix this, update the width and height attributes.`));
+      console.warn((0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵformatRuntimeError"])(2952 /* RuntimeErrorCode.INVALID_INPUT */, `${imgDirectiveDetails(dir.ngSrc)} the aspect ratio of the image does not match ` + `the aspect ratio indicated by the width and height attributes. ` + `\nIntrinsic image size: ${intrinsicWidth}w x ${intrinsicHeight}h ` + `(aspect-ratio: ${round(intrinsicAspectRatio)}). \nSupplied width and height attributes: ` + `${suppliedWidth}w x ${suppliedHeight}h (aspect-ratio: ${round(suppliedAspectRatio)}). ` + `\nTo fix this, update the width and height attributes.`));
     } else if (stylingDistortion) {
-      console.warn((0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵformatRuntimeError"])(2952 /* RuntimeErrorCode.INVALID_INPUT */, `${imgDirectiveDetails(dir.ngSrc)} the aspect ratio of the rendered image ` + `does not match the image's intrinsic aspect ratio. ` + `\nIntrinsic image size: ${intrinsicWidth}w x ${intrinsicHeight}h ` + `(aspect-ratio: ${round(intrinsicAspectRatio)}). \nRendered image size: ` + `${renderedWidth}w x ${renderedHeight}h (aspect-ratio: ` + `${round(renderedAspectRatio)}). \nThis issue can occur if "width" and "height" ` + `attributes are added to an image without updating the corresponding ` + `image styling. To fix this, adjust image styling. In most cases, ` + `adding "height: auto" or "width: auto" to the image styling will fix ` + `this issue.`));
+      console.warn((0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵformatRuntimeError"])(2952 /* RuntimeErrorCode.INVALID_INPUT */, `${imgDirectiveDetails(dir.ngSrc)} the aspect ratio of the rendered image ` + `does not match the image's intrinsic aspect ratio. ` + `\nIntrinsic image size: ${intrinsicWidth}w x ${intrinsicHeight}h ` + `(aspect-ratio: ${round(intrinsicAspectRatio)}). \nRendered image size: ` + `${renderedWidth}w x ${renderedHeight}h (aspect-ratio: ` + `${round(renderedAspectRatio)}). \nThis issue can occur if "width" and "height" ` + `attributes are added to an image without updating the corresponding ` + `image styling. To fix this, adjust image styling. In most cases, ` + `adding "height: auto" or "width: auto" to the image styling will fix ` + `this issue.`));
     } else if (!dir.ngSrcset && nonZeroRenderedDimensions) {
       // If `ngSrcset` hasn't been set, sanity check the intrinsic size.
       const recommendedWidth = RECOMMENDED_SRCSET_DENSITY_CAP * renderedWidth;
@@ -10409,10 +10406,11 @@ function assertNoImageDistortion(dir, img, renderer) {
       const oversizedWidth = intrinsicWidth - recommendedWidth >= OVERSIZED_IMAGE_TOLERANCE;
       const oversizedHeight = intrinsicHeight - recommendedHeight >= OVERSIZED_IMAGE_TOLERANCE;
       if (oversizedWidth || oversizedHeight) {
-        console.warn((0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵformatRuntimeError"])(2960 /* RuntimeErrorCode.OVERSIZED_IMAGE */, `${imgDirectiveDetails(dir.ngSrc)} the intrinsic image is significantly ` + `larger than necessary. ` + `\nRendered image size: ${renderedWidth}w x ${renderedHeight}h. ` + `\nIntrinsic image size: ${intrinsicWidth}w x ${intrinsicHeight}h. ` + `\nRecommended intrinsic image size: ${recommendedWidth}w x ${recommendedHeight}h. ` + `\nNote: Recommended intrinsic image size is calculated assuming a maximum DPR of ` + `${RECOMMENDED_SRCSET_DENSITY_CAP}. To improve loading time, resize the image ` + `or consider using the "ngSrcset" and "sizes" attributes.`));
+        console.warn((0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵformatRuntimeError"])(2960 /* RuntimeErrorCode.OVERSIZED_IMAGE */, `${imgDirectiveDetails(dir.ngSrc)} the intrinsic image is significantly ` + `larger than necessary. ` + `\nRendered image size: ${renderedWidth}w x ${renderedHeight}h. ` + `\nIntrinsic image size: ${intrinsicWidth}w x ${intrinsicHeight}h. ` + `\nRecommended intrinsic image size: ${recommendedWidth}w x ${recommendedHeight}h. ` + `\nNote: Recommended intrinsic image size is calculated assuming a maximum DPR of ` + `${RECOMMENDED_SRCSET_DENSITY_CAP}. To improve loading time, resize the image ` + `or consider using the "ngSrcset" and "sizes" attributes.`));
       }
     }
-  });
+  };
+  const removeLoadListenerFn = renderer.listen(img, 'load', callback);
   // We only listen to the `error` event to remove the `load` event listener because it will not be
   // fired if the image fails to load. This is done to prevent memory leaks in development mode
   // because image elements aren't garbage-collected properly. It happens because zone.js stores the
@@ -10421,6 +10419,7 @@ function assertNoImageDistortion(dir, img, renderer) {
     removeLoadListenerFn();
     removeErrorListenerFn();
   });
+  callOnLoadIfImageIsLoaded(img, callback);
 }
 /**
  * Verifies that a specified input is set.
@@ -10430,7 +10429,7 @@ function assertNonEmptyWidthAndHeight(dir) {
   if (dir.width === undefined) missingAttributes.push('width');
   if (dir.height === undefined) missingAttributes.push('height');
   if (missingAttributes.length > 0) {
-    throw new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](2954 /* RuntimeErrorCode.REQUIRED_INPUT_MISSING */, `${imgDirectiveDetails(dir.ngSrc)} these required attributes ` + `are missing: ${missingAttributes.map(attr => `"${attr}"`).join(', ')}. ` + `Including "width" and "height" attributes will prevent image-related layout shifts. ` + `To fix this, include "width" and "height" attributes on the image tag or turn on ` + `"fill" mode with the \`fill\` attribute.`);
+    throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](2954 /* RuntimeErrorCode.REQUIRED_INPUT_MISSING */, `${imgDirectiveDetails(dir.ngSrc)} these required attributes ` + `are missing: ${missingAttributes.map(attr => `"${attr}"`).join(', ')}. ` + `Including "width" and "height" attributes will prevent image-related layout shifts. ` + `To fix this, include "width" and "height" attributes on the image tag or turn on ` + `"fill" mode with the \`fill\` attribute.`);
   }
 }
 /**
@@ -10439,7 +10438,7 @@ function assertNonEmptyWidthAndHeight(dir) {
  */
 function assertEmptyWidthAndHeight(dir) {
   if (dir.width || dir.height) {
-    throw new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](2952 /* RuntimeErrorCode.INVALID_INPUT */, `${imgDirectiveDetails(dir.ngSrc)} the attributes \`height\` and/or \`width\` are present ` + `along with the \`fill\` attribute. Because \`fill\` mode causes an image to fill its containing ` + `element, the size attributes have no effect and should be removed.`);
+    throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](2952 /* RuntimeErrorCode.INVALID_INPUT */, `${imgDirectiveDetails(dir.ngSrc)} the attributes \`height\` and/or \`width\` are present ` + `along with the \`fill\` attribute. Because \`fill\` mode causes an image to fill its containing ` + `element, the size attributes have no effect and should be removed.`);
   }
 }
 /**
@@ -10447,19 +10446,21 @@ function assertEmptyWidthAndHeight(dir) {
  * guidance that this can be caused by the containing element's CSS position property.
  */
 function assertNonZeroRenderedHeight(dir, img, renderer) {
-  const removeLoadListenerFn = renderer.listen(img, 'load', () => {
+  const callback = () => {
     removeLoadListenerFn();
     removeErrorListenerFn();
     const renderedHeight = img.clientHeight;
     if (dir.fill && renderedHeight === 0) {
-      console.warn((0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵformatRuntimeError"])(2952 /* RuntimeErrorCode.INVALID_INPUT */, `${imgDirectiveDetails(dir.ngSrc)} the height of the fill-mode image is zero. ` + `This is likely because the containing element does not have the CSS 'position' ` + `property set to one of the following: "relative", "fixed", or "absolute". ` + `To fix this problem, make sure the container element has the CSS 'position' ` + `property defined and the height of the element is not zero.`));
+      console.warn((0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵformatRuntimeError"])(2952 /* RuntimeErrorCode.INVALID_INPUT */, `${imgDirectiveDetails(dir.ngSrc)} the height of the fill-mode image is zero. ` + `This is likely because the containing element does not have the CSS 'position' ` + `property set to one of the following: "relative", "fixed", or "absolute". ` + `To fix this problem, make sure the container element has the CSS 'position' ` + `property defined and the height of the element is not zero.`));
     }
-  });
+  };
+  const removeLoadListenerFn = renderer.listen(img, 'load', callback);
   // See comments in the `assertNoImageDistortion`.
   const removeErrorListenerFn = renderer.listen(img, 'error', () => {
     removeLoadListenerFn();
     removeErrorListenerFn();
   });
+  callOnLoadIfImageIsLoaded(img, callback);
 }
 /**
  * Verifies that the `loading` attribute is set to a valid input &
@@ -10467,11 +10468,11 @@ function assertNonZeroRenderedHeight(dir, img, renderer) {
  */
 function assertValidLoadingInput(dir) {
   if (dir.loading && dir.priority) {
-    throw new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](2952 /* RuntimeErrorCode.INVALID_INPUT */, `${imgDirectiveDetails(dir.ngSrc)} the \`loading\` attribute ` + `was used on an image that was marked "priority". ` + `Setting \`loading\` on priority images is not allowed ` + `because these images will always be eagerly loaded. ` + `To fix this, remove the “loading” attribute from the priority image.`);
+    throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](2952 /* RuntimeErrorCode.INVALID_INPUT */, `${imgDirectiveDetails(dir.ngSrc)} the \`loading\` attribute ` + `was used on an image that was marked "priority". ` + `Setting \`loading\` on priority images is not allowed ` + `because these images will always be eagerly loaded. ` + `To fix this, remove the “loading” attribute from the priority image.`);
   }
   const validInputs = ['auto', 'eager', 'lazy'];
   if (typeof dir.loading === 'string' && !validInputs.includes(dir.loading)) {
-    throw new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](2952 /* RuntimeErrorCode.INVALID_INPUT */, `${imgDirectiveDetails(dir.ngSrc)} the \`loading\` attribute ` + `has an invalid value (\`${dir.loading}\`). ` + `To fix this, provide a valid value ("lazy", "eager", or "auto").`);
+    throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](2952 /* RuntimeErrorCode.INVALID_INPUT */, `${imgDirectiveDetails(dir.ngSrc)} the \`loading\` attribute ` + `has an invalid value (\`${dir.loading}\`). ` + `To fix this, provide a valid value ("lazy", "eager", or "auto").`);
   }
 }
 /**
@@ -10493,7 +10494,7 @@ function assertNotMissingBuiltInLoader(ngSrc, imageLoader) {
       }
     }
     if (builtInLoaderName) {
-      console.warn((0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵformatRuntimeError"])(2962 /* RuntimeErrorCode.MISSING_BUILTIN_LOADER */, `NgOptimizedImage: It looks like your images may be hosted on the ` + `${builtInLoaderName} CDN, but your app is not using Angular's ` + `built-in loader for that CDN. We recommend switching to use ` + `the built-in by calling \`provide${builtInLoaderName}Loader()\` ` + `in your \`providers\` and passing it your instance's base URL. ` + `If you don't want to use the built-in loader, define a custom ` + `loader function using IMAGE_LOADER to silence this warning.`));
+      console.warn((0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵformatRuntimeError"])(2962 /* RuntimeErrorCode.MISSING_BUILTIN_LOADER */, `NgOptimizedImage: It looks like your images may be hosted on the ` + `${builtInLoaderName} CDN, but your app is not using Angular's ` + `built-in loader for that CDN. We recommend switching to use ` + `the built-in by calling \`provide${builtInLoaderName}Loader()\` ` + `in your \`providers\` and passing it your instance's base URL. ` + `If you don't want to use the built-in loader, define a custom ` + `loader function using IMAGE_LOADER to silence this warning.`));
     }
   }
 }
@@ -10502,7 +10503,7 @@ function assertNotMissingBuiltInLoader(ngSrc, imageLoader) {
  */
 function assertNoNgSrcsetWithoutLoader(dir, imageLoader) {
   if (dir.ngSrcset && imageLoader === noopImageLoader) {
-    console.warn((0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵformatRuntimeError"])(2963 /* RuntimeErrorCode.MISSING_NECESSARY_LOADER */, `${imgDirectiveDetails(dir.ngSrc)} the \`ngSrcset\` attribute is present but ` + `no image loader is configured (i.e. the default one is being used), ` + `which would result in the same image being used for all configured sizes. ` + `To fix this, provide a loader or remove the \`ngSrcset\` attribute from the image.`));
+    console.warn((0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵformatRuntimeError"])(2963 /* RuntimeErrorCode.MISSING_NECESSARY_LOADER */, `${imgDirectiveDetails(dir.ngSrc)} the \`ngSrcset\` attribute is present but ` + `no image loader is configured (i.e. the default one is being used), ` + `which would result in the same image being used for all configured sizes. ` + `To fix this, provide a loader or remove the \`ngSrcset\` attribute from the image.`));
   }
 }
 /**
@@ -10511,7 +10512,55 @@ function assertNoNgSrcsetWithoutLoader(dir, imageLoader) {
  */
 function assertNoLoaderParamsWithoutLoader(dir, imageLoader) {
   if (dir.loaderParams && imageLoader === noopImageLoader) {
-    console.warn((0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵformatRuntimeError"])(2963 /* RuntimeErrorCode.MISSING_NECESSARY_LOADER */, `${imgDirectiveDetails(dir.ngSrc)} the \`loaderParams\` attribute is present but ` + `no image loader is configured (i.e. the default one is being used), ` + `which means that the loaderParams data will not be consumed and will not affect the URL. ` + `To fix this, provide a custom loader or remove the \`loaderParams\` attribute from the image.`));
+    console.warn((0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵformatRuntimeError"])(2963 /* RuntimeErrorCode.MISSING_NECESSARY_LOADER */, `${imgDirectiveDetails(dir.ngSrc)} the \`loaderParams\` attribute is present but ` + `no image loader is configured (i.e. the default one is being used), ` + `which means that the loaderParams data will not be consumed and will not affect the URL. ` + `To fix this, provide a custom loader or remove the \`loaderParams\` attribute from the image.`));
+  }
+}
+/**
+ * Warns if the priority attribute is used too often on page load
+ */
+function assetPriorityCountBelowThreshold(_x) {
+  return _assetPriorityCountBelowThreshold.apply(this, arguments);
+}
+/**
+ * Warns if placeholder's dimension are over a threshold.
+ *
+ * This assert function is meant to only run on the browser.
+ */
+function _assetPriorityCountBelowThreshold() {
+  _assetPriorityCountBelowThreshold = (0,_home_runner_work_ng_camp_ng_camp_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* (appRef) {
+    if (IMGS_WITH_PRIORITY_ATTR_COUNT === 0) {
+      IMGS_WITH_PRIORITY_ATTR_COUNT++;
+      yield (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵwhenStable"])(appRef);
+      if (IMGS_WITH_PRIORITY_ATTR_COUNT > PRIORITY_COUNT_THRESHOLD) {
+        console.warn((0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵformatRuntimeError"])(2966 /* RuntimeErrorCode.TOO_MANY_PRIORITY_ATTRIBUTES */, `NgOptimizedImage: The "priority" attribute is set to true more than ${PRIORITY_COUNT_THRESHOLD} times (${IMGS_WITH_PRIORITY_ATTR_COUNT} times). ` + `Marking too many images as "high" priority can hurt your application's LCP (https://web.dev/lcp). ` + `"Priority" should only be set on the image expected to be the page's LCP element.`));
+      }
+    } else {
+      IMGS_WITH_PRIORITY_ATTR_COUNT++;
+    }
+  });
+  return _assetPriorityCountBelowThreshold.apply(this, arguments);
+}
+function assertPlaceholderDimensions(dir, imgElement) {
+  const computedStyle = window.getComputedStyle(imgElement);
+  let renderedWidth = parseFloat(computedStyle.getPropertyValue('width'));
+  let renderedHeight = parseFloat(computedStyle.getPropertyValue('height'));
+  if (renderedWidth > PLACEHOLDER_DIMENSION_LIMIT || renderedHeight > PLACEHOLDER_DIMENSION_LIMIT) {
+    console.warn((0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵformatRuntimeError"])(2967 /* RuntimeErrorCode.PLACEHOLDER_DIMENSION_LIMIT_EXCEEDED */, `${imgDirectiveDetails(dir.ngSrc)} it uses a placeholder image, but at least one ` + `of the dimensions attribute (height or width) exceeds the limit of ${PLACEHOLDER_DIMENSION_LIMIT}px. ` + `To fix this, use a smaller image as a placeholder.`));
+  }
+}
+function callOnLoadIfImageIsLoaded(img, callback) {
+  // https://html.spec.whatwg.org/multipage/embedded-content.html#dom-img-complete
+  // The spec defines that `complete` is truthy once its request state is fully available.
+  // The image may already be available if it’s loaded from the browser cache.
+  // In that case, the `load` event will not fire at all, meaning that all setup
+  // callbacks listening for the `load` event will not be invoked.
+  // In Safari, there is a known behavior where the `complete` property of an
+  // `HTMLImageElement` may sometimes return `true` even when the image is not fully loaded.
+  // Checking both `img.complete` and `img.naturalWidth` is the most reliable way to
+  // determine if an image has been fully loaded, especially in browsers where the
+  // `complete` property may return `true` prematurely.
+  if (img.complete && img.naturalWidth) {
+    callback();
   }
 }
 function round(input) {
@@ -10523,15 +10572,15 @@ function unwrapSafeUrl(value) {
   if (typeof value === 'string') {
     return value;
   }
-  return (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵunwrapSafeValue"])(value);
+  return (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵunwrapSafeValue"])(value);
 }
 // Transform function to handle inputs which may be booleans, strings, or string representations
 // of boolean values. Used for the placeholder attribute.
-function booleanOrDataUrlAttribute(value) {
-  if (typeof value === 'string' && value.startsWith(`data:`)) {
+function booleanOrUrlAttribute(value) {
+  if (typeof value === 'string' && value !== 'true' && value !== 'false' && value !== '') {
     return value;
   }
-  return (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.booleanAttribute)(value);
+  return (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.booleanAttribute)(value);
 }
 
 /**
@@ -10620,7 +10669,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/common */ 6610);
 
 /**
- * @license Angular v18.0.5
+ * @license Angular v18.2.9
  * (c) 2010-2024 Google LLC. https://angular.io/
  * License: MIT
  */
@@ -12076,8 +12125,8 @@ let HttpClient = /*#__PURE__*/(() => {
       return this.request('PUT', url, addBody(options, body));
     }
     static {
-      this.ɵfac = function HttpClient_Factory(t) {
-        return new (t || HttpClient)(_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵinject"](HttpHandler));
+      this.ɵfac = function HttpClient_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || HttpClient)(_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵinject"](HttpHandler));
       };
     }
     static {
@@ -12120,10 +12169,12 @@ function getResponseUrl$1(response) {
 let FetchBackend = /*#__PURE__*/(() => {
   class FetchBackend {
     constructor() {
-      // We need to bind the native fetch to its context or it will throw an "illegal invocation"
+      // We use an arrow function to always reference the current global implementation of `fetch`.
+      // This is helpful for cases when the global `fetch` implementation is modified by external code,
+      // see https://github.com/angular/angular/issues/57527.
       this.fetchImpl = (0,_angular_core__WEBPACK_IMPORTED_MODULE_5__.inject)(FetchFactory, {
         optional: true
-      })?.fetch ?? fetch.bind(globalThis);
+      })?.fetch ?? ((...args) => globalThis.fetch(...args));
       this.ngZone = (0,_angular_core__WEBPACK_IMPORTED_MODULE_5__.inject)(_angular_core__WEBPACK_IMPORTED_MODULE_5__.NgZone);
     }
     handle(request) {
@@ -12141,10 +12192,13 @@ let FetchBackend = /*#__PURE__*/(() => {
         const init = _this.createRequestInit(request);
         let response;
         try {
-          const fetchPromise = _this.fetchImpl(request.urlWithParams, {
+          // Run fetch outside of Angular zone.
+          // This is due to Node.js fetch implementation (Undici) which uses a number of setTimeouts to check if
+          // the response should eventually timeout which causes extra CD cycles every 500ms
+          const fetchPromise = _this.ngZone.runOutsideAngular(() => _this.fetchImpl(request.urlWithParams, {
             signal,
             ...init
-          });
+          }));
           // Make sure Zone.js doesn't trigger false-positive unhandled promise
           // error in case the Promise is rejected synchronously. See function
           // description for additional information.
@@ -12287,9 +12341,11 @@ let FetchBackend = /*#__PURE__*/(() => {
       // Setting all the requested headers.
       req.headers.forEach((name, values) => headers[name] = values.join(','));
       // Add an Accept header if one isn't present already.
-      headers['Accept'] ??= 'application/json, text/plain, */*';
+      if (!req.headers.has('Accept')) {
+        headers['Accept'] = 'application/json, text/plain, */*';
+      }
       // Auto-detect the Content-Type header if one isn't present already.
-      if (!headers['Content-Type']) {
+      if (!req.headers.has('Content-Type')) {
         const detectedType = req.detectContentTypeHeader();
         // Sometimes Content-Type detection fails.
         if (detectedType !== null) {
@@ -12313,8 +12369,8 @@ let FetchBackend = /*#__PURE__*/(() => {
       return chunksAll;
     }
     static {
-      this.ɵfac = function FetchBackend_Factory(t) {
-        return new (t || FetchBackend)();
+      this.ɵfac = function FetchBackend_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || FetchBackend)();
       };
     }
     static {
@@ -12453,8 +12509,8 @@ let HttpInterceptorHandler = /*#__PURE__*/(() => {
       }
     }
     static {
-      this.ɵfac = function HttpInterceptorHandler_Factory(t) {
-        return new (t || HttpInterceptorHandler)(_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵinject"](HttpBackend), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_5__.EnvironmentInjector));
+      this.ɵfac = function HttpInterceptorHandler_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || HttpInterceptorHandler)(_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵinject"](HttpBackend), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_5__.EnvironmentInjector));
       };
     }
     static {
@@ -12585,10 +12641,10 @@ let JsonpClientBackend = /*#__PURE__*/(() => {
         // the response callback from the window. This logic is used in both the
         // success, error, and cancellation paths, so it's extracted out for convenience.
         const cleanup = () => {
+          node.removeEventListener('load', onLoad);
+          node.removeEventListener('error', onError);
           // Remove the <script> tag if it's still on the page.
-          if (node.parentNode) {
-            node.parentNode.removeChild(node);
-          }
+          node.remove();
           // Remove the response callback from the callbackMap (window object in the
           // browser).
           delete this.callbackMap[callback];
@@ -12668,8 +12724,8 @@ let JsonpClientBackend = /*#__PURE__*/(() => {
       foreignDocument.adoptNode(script);
     }
     static {
-      this.ɵfac = function JsonpClientBackend_Factory(t) {
-        return new (t || JsonpClientBackend)(_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵinject"](JsonpCallbackContext), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵinject"](_angular_common__WEBPACK_IMPORTED_MODULE_8__.DOCUMENT));
+      this.ɵfac = function JsonpClientBackend_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || JsonpClientBackend)(_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵinject"](JsonpCallbackContext), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵinject"](_angular_common__WEBPACK_IMPORTED_MODULE_8__.DOCUMENT));
       };
     }
     static {
@@ -12718,8 +12774,8 @@ let JsonpInterceptor = /*#__PURE__*/(() => {
       return (0,_angular_core__WEBPACK_IMPORTED_MODULE_5__.runInInjectionContext)(this.injector, () => jsonpInterceptorFn(initialRequest, downstreamRequest => next.handle(downstreamRequest)));
     }
     static {
-      this.ɵfac = function JsonpInterceptor_Factory(t) {
-        return new (t || JsonpInterceptor)(_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_5__.EnvironmentInjector));
+      this.ɵfac = function JsonpInterceptor_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || JsonpInterceptor)(_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_5__.EnvironmentInjector));
       };
     }
     static {
@@ -13024,8 +13080,8 @@ let HttpXhrBackend = /*#__PURE__*/(() => {
       }));
     }
     static {
-      this.ɵfac = function HttpXhrBackend_Factory(t) {
-        return new (t || HttpXhrBackend)(_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵinject"](_angular_common__WEBPACK_IMPORTED_MODULE_8__.XhrFactory));
+      this.ɵfac = function HttpXhrBackend_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || HttpXhrBackend)(_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵinject"](_angular_common__WEBPACK_IMPORTED_MODULE_8__.XhrFactory));
       };
     }
     static {
@@ -13086,8 +13142,8 @@ let HttpXsrfCookieExtractor = /*#__PURE__*/(() => {
       return this.lastToken;
     }
     static {
-      this.ɵfac = function HttpXsrfCookieExtractor_Factory(t) {
-        return new (t || HttpXsrfCookieExtractor)(_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵinject"](_angular_common__WEBPACK_IMPORTED_MODULE_8__.DOCUMENT), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_5__.PLATFORM_ID), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵinject"](XSRF_COOKIE_NAME));
+      this.ɵfac = function HttpXsrfCookieExtractor_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || HttpXsrfCookieExtractor)(_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵinject"](_angular_common__WEBPACK_IMPORTED_MODULE_8__.DOCUMENT), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_5__.PLATFORM_ID), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵinject"](XSRF_COOKIE_NAME));
       };
     }
     static {
@@ -13133,8 +13189,8 @@ let HttpXsrfInterceptor = /*#__PURE__*/(() => {
       return (0,_angular_core__WEBPACK_IMPORTED_MODULE_5__.runInInjectionContext)(this.injector, () => xsrfInterceptorFn(initialRequest, downstreamRequest => next.handle(downstreamRequest)));
     }
     static {
-      this.ɵfac = function HttpXsrfInterceptor_Factory(t) {
-        return new (t || HttpXsrfInterceptor)(_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_5__.EnvironmentInjector));
+      this.ɵfac = function HttpXsrfInterceptor_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || HttpXsrfInterceptor)(_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_5__.EnvironmentInjector));
       };
     }
     static {
@@ -13420,8 +13476,8 @@ let HttpClientXsrfModule = /*#__PURE__*/(() => {
       };
     }
     static {
-      this.ɵfac = function HttpClientXsrfModule_Factory(t) {
-        return new (t || HttpClientXsrfModule)();
+      this.ɵfac = function HttpClientXsrfModule_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || HttpClientXsrfModule)();
       };
     }
     static {
@@ -13466,8 +13522,8 @@ let HttpClientXsrfModule = /*#__PURE__*/(() => {
 let HttpClientModule = /*#__PURE__*/(() => {
   class HttpClientModule {
     static {
-      this.ɵfac = function HttpClientModule_Factory(t) {
-        return new (t || HttpClientModule)();
+      this.ɵfac = function HttpClientModule_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || HttpClientModule)();
       };
     }
     static {
@@ -13498,8 +13554,8 @@ let HttpClientModule = /*#__PURE__*/(() => {
 let HttpClientJsonpModule = /*#__PURE__*/(() => {
   class HttpClientJsonpModule {
     static {
-      this.ɵfac = function HttpClientJsonpModule_Factory(t) {
-        return new (t || HttpClientJsonpModule)();
+      this.ɵfac = function HttpClientJsonpModule_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || HttpClientJsonpModule)();
       };
     }
     static {
@@ -13943,7 +13999,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   viewChild: () => (/* binding */ viewChild),
 /* harmony export */   viewChildren: () => (/* binding */ viewChildren),
 /* harmony export */   "ɵALLOW_MULTIPLE_PLATFORMS": () => (/* binding */ ALLOW_MULTIPLE_PLATFORMS),
-/* harmony export */   "ɵAfterRenderEventManager": () => (/* binding */ AfterRenderEventManager),
+/* harmony export */   "ɵAfterRenderManager": () => (/* binding */ AfterRenderManager),
 /* harmony export */   "ɵCONTAINER_HEADER_OFFSET": () => (/* binding */ CONTAINER_HEADER_OFFSET),
 /* harmony export */   "ɵChangeDetectionScheduler": () => (/* binding */ ChangeDetectionScheduler),
 /* harmony export */   "ɵChangeDetectionSchedulerImpl": () => (/* binding */ ChangeDetectionSchedulerImpl),
@@ -13959,7 +14015,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "ɵIMAGE_CONFIG_DEFAULTS": () => (/* binding */ IMAGE_CONFIG_DEFAULTS),
 /* harmony export */   "ɵINJECTOR_SCOPE": () => (/* binding */ INJECTOR_SCOPE),
 /* harmony export */   "ɵINPUT_SIGNAL_BRAND_WRITE_TYPE": () => (/* binding */ ɵINPUT_SIGNAL_BRAND_WRITE_TYPE),
+/* harmony export */   "ɵINTERNAL_APPLICATION_ERROR_HANDLER": () => (/* binding */ INTERNAL_APPLICATION_ERROR_HANDLER),
 /* harmony export */   "ɵIS_HYDRATION_DOM_REUSE_ENABLED": () => (/* binding */ IS_HYDRATION_DOM_REUSE_ENABLED),
+/* harmony export */   "ɵJSACTION_EVENT_CONTRACT": () => (/* binding */ JSACTION_EVENT_CONTRACT),
 /* harmony export */   "ɵLContext": () => (/* binding */ LContext),
 /* harmony export */   "ɵLifecycleHooksFeature": () => (/* binding */ LifecycleHooksFeature),
 /* harmony export */   "ɵLocaleDataIndex": () => (/* binding */ LocaleDataIndex),
@@ -13981,6 +14039,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "ɵRender3ComponentRef": () => (/* binding */ ComponentRef),
 /* harmony export */   "ɵRender3NgModuleRef": () => (/* binding */ NgModuleRef),
 /* harmony export */   "ɵRuntimeError": () => (/* binding */ RuntimeError),
+/* harmony export */   "ɵSIGNAL": () => (/* reexport safe */ _angular_core_primitives_signals__WEBPACK_IMPORTED_MODULE_0__.SIGNAL),
 /* harmony export */   "ɵSSR_CONTENT_INTEGRITY_MARKER": () => (/* binding */ SSR_CONTENT_INTEGRITY_MARKER),
 /* harmony export */   "ɵTESTABILITY": () => (/* binding */ TESTABILITY),
 /* harmony export */   "ɵTESTABILITY_GETTER": () => (/* binding */ TESTABILITY_GETTER),
@@ -14030,7 +14089,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "ɵgetUnknownPropertyStrictMode": () => (/* binding */ ɵgetUnknownPropertyStrictMode),
 /* harmony export */   "ɵglobal": () => (/* binding */ _global),
 /* harmony export */   "ɵinjectChangeDetectorRef": () => (/* binding */ injectChangeDetectorRef),
-/* harmony export */   "ɵinternalAfterNextRender": () => (/* binding */ internalAfterNextRender),
 /* harmony export */   "ɵinternalCreateApplication": () => (/* binding */ internalCreateApplication),
 /* harmony export */   "ɵinternalProvideZoneChangeDetection": () => (/* binding */ internalProvideZoneChangeDetection),
 /* harmony export */   "ɵisBoundToModule": () => (/* binding */ isBoundToModule),
@@ -14043,7 +14101,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "ɵnoSideEffects": () => (/* binding */ noSideEffects),
 /* harmony export */   "ɵpatchComponentDefWithScope": () => (/* binding */ patchComponentDefWithScope),
 /* harmony export */   "ɵperformanceMarkFeature": () => (/* binding */ performanceMarkFeature),
-/* harmony export */   "ɵqueueStateUpdate": () => (/* binding */ queueStateUpdate),
 /* harmony export */   "ɵreadHydrationInfo": () => (/* binding */ readHydrationInfo),
 /* harmony export */   "ɵregisterLocaleData": () => (/* binding */ registerLocaleData),
 /* harmony export */   "ɵrenderDeferBlockState": () => (/* binding */ renderDeferBlockState),
@@ -14274,7 +14331,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs/operators */ 6715);
 /* harmony import */ var _angular_core_primitives_event_dispatch__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/core/primitives/event-dispatch */ 103);
 /**
- * @license Angular v18.0.5
+ * @license Angular v18.2.9
  * (c) 2010-2024 Google LLC. https://angular.io/
  * License: MIT
  */
@@ -15888,6 +15945,9 @@ if ((typeof ngDevMode === 'undefined' || ngDevMode) && /*#__PURE__*/initNgDevMod
 /**
  * A multi-provider token for initialization functions that will run upon construction of an
  * environment injector.
+ *
+ * Note: As opposed to the `APP_INITIALIZER` token, the `ENVIRONMENT_INITIALIZER` functions are not awaited,
+ * hence they should not be `async`.
  *
  * @publicApi
  */
@@ -18464,7 +18524,7 @@ function requiresRefreshOrTraversal(lView) {
  * parents above.
  */
 function updateAncestorTraversalFlagsOnAttach(lView) {
-  lView[ENVIRONMENT].changeDetectionScheduler?.notify(7 /* NotificationSource.ViewAttached */);
+  lView[ENVIRONMENT].changeDetectionScheduler?.notify(8 /* NotificationSource.ViewAttached */);
   if (lView[FLAGS] & 64 /* LViewFlags.Dirty */) {
     lView[FLAGS] |= 1024 /* LViewFlags.RefreshView */;
   }
@@ -19455,6 +19515,9 @@ function toTNodeTypeAsString(tNodeType) {
  */
 function isTNodeShape(value) {
   return value != null && typeof value === 'object' && (value.insertBeforeIndex === null || typeof value.insertBeforeIndex === 'number' || Array.isArray(value.insertBeforeIndex));
+}
+function isLetDeclaration(tNode) {
+  return !!(tNode.type & 128 /* TNodeType.LetDeclaration */);
 }
 /**
  * Returns `true` if the `TNode` has a directive which has `@Input()` for `class` binding.
@@ -20588,7 +20651,7 @@ class Injector {
  * Copyright Google LLC All Rights Reserved.
  *
  * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
+ * found in the LICENSE file at https://angular.dev/license
  */
 /**
  * Creates a token that can be used to inject static attributes of the host node.
@@ -20705,6 +20768,736 @@ function wrappedError(message, originalError) {
 function getOriginalError(error) {
   return error[ERROR_ORIGINAL_ERROR];
 }
+const SCHEDULE_IN_ROOT_ZONE_DEFAULT = true;
+
+/**
+ * `DestroyRef` lets you set callbacks to run for any cleanup or destruction behavior.
+ * The scope of this destruction depends on where `DestroyRef` is injected. If `DestroyRef`
+ * is injected in a component or directive, the callbacks run when that component or
+ * directive is destroyed. Otherwise the callbacks run when a corresponding injector is destroyed.
+ *
+ * @publicApi
+ */
+let DestroyRef = /*#__PURE__*/(() => {
+  class DestroyRef {
+    /**
+     * @internal
+     * @nocollapse
+     */
+    static {
+      this.__NG_ELEMENT_ID__ = injectDestroyRef;
+    }
+    /**
+     * @internal
+     * @nocollapse
+     */
+    static {
+      this.__NG_ENV_ID__ = injector => injector;
+    }
+  }
+  return DestroyRef;
+})();
+class NodeInjectorDestroyRef extends DestroyRef {
+  constructor(_lView) {
+    super();
+    this._lView = _lView;
+  }
+  onDestroy(callback) {
+    storeLViewOnDestroy(this._lView, callback);
+    return () => removeLViewOnDestroy(this._lView, callback);
+  }
+}
+function injectDestroyRef() {
+  return new NodeInjectorDestroyRef(getLView());
+}
+
+/**
+ * Internal implementation of the pending tasks service.
+ */
+let PendingTasks = /*#__PURE__*/(() => {
+  class PendingTasks {
+    constructor() {
+      this.taskId = 0;
+      this.pendingTasks = new Set();
+      this.hasPendingTasks = new rxjs__WEBPACK_IMPORTED_MODULE_1__.BehaviorSubject(false);
+    }
+    get _hasPendingTasks() {
+      return this.hasPendingTasks.value;
+    }
+    add() {
+      if (!this._hasPendingTasks) {
+        this.hasPendingTasks.next(true);
+      }
+      const taskId = this.taskId++;
+      this.pendingTasks.add(taskId);
+      return taskId;
+    }
+    remove(taskId) {
+      this.pendingTasks.delete(taskId);
+      if (this.pendingTasks.size === 0 && this._hasPendingTasks) {
+        this.hasPendingTasks.next(false);
+      }
+    }
+    ngOnDestroy() {
+      this.pendingTasks.clear();
+      if (this._hasPendingTasks) {
+        this.hasPendingTasks.next(false);
+      }
+    }
+    /** @nocollapse */
+    static {
+      this.ɵprov = ɵɵdefineInjectable({
+        token: PendingTasks,
+        providedIn: 'root',
+        factory: () => new PendingTasks()
+      });
+    }
+  }
+  return PendingTasks;
+})();
+/**
+ * Experimental service that keeps track of pending tasks contributing to the stableness of Angular
+ * application. While several existing Angular services (ex.: `HttpClient`) will internally manage
+ * tasks influencing stability, this API gives control over stability to library and application
+ * developers for specific cases not covered by Angular internals.
+ *
+ * The concept of stability comes into play in several important scenarios:
+ * - SSR process needs to wait for the application stability before serializing and sending rendered
+ * HTML;
+ * - tests might want to delay assertions until the application becomes stable;
+ *
+ * @usageNotes
+ * ```typescript
+ * const pendingTasks = inject(ExperimentalPendingTasks);
+ * const taskCleanup = pendingTasks.add();
+ * // do work that should block application's stability and then:
+ * taskCleanup();
+ * ```
+ *
+ * This API is experimental. Neither the shape, nor the underlying behavior is stable and can change
+ * in patch versions. We will iterate on the exact API based on the feedback and our understanding
+ * of the problem and solution space.
+ *
+ * @publicApi
+ * @experimental
+ */
+let ExperimentalPendingTasks = /*#__PURE__*/(() => {
+  class ExperimentalPendingTasks {
+    constructor() {
+      this.internalPendingTasks = inject(PendingTasks);
+    }
+    /**
+     * Adds a new task that should block application's stability.
+     * @returns A cleanup function that removes a task when called.
+     */
+    add() {
+      const taskId = this.internalPendingTasks.add();
+      return () => this.internalPendingTasks.remove(taskId);
+    }
+    /** @nocollapse */
+    static {
+      this.ɵprov = ɵɵdefineInjectable({
+        token: ExperimentalPendingTasks,
+        providedIn: 'root',
+        factory: () => new ExperimentalPendingTasks()
+      });
+    }
+  }
+  return ExperimentalPendingTasks;
+})();
+class EventEmitter_ extends rxjs__WEBPACK_IMPORTED_MODULE_2__.Subject {
+  constructor(isAsync = false) {
+    super();
+    this.destroyRef = undefined;
+    this.pendingTasks = undefined;
+    this.__isAsync = isAsync;
+    // Attempt to retrieve a `DestroyRef` and `PendingTasks` optionally.
+    // For backwards compatibility reasons, this cannot be required.
+    if (isInInjectionContext()) {
+      // `DestroyRef` is optional because it is not available in all contexts.
+      // But it is useful to properly complete the `EventEmitter` if used with `outputToObservable`
+      // when the component/directive is destroyed. (See `outputToObservable` for more details.)
+      this.destroyRef = inject(DestroyRef, {
+        optional: true
+      }) ?? undefined;
+      this.pendingTasks = inject(PendingTasks, {
+        optional: true
+      }) ?? undefined;
+    }
+  }
+  emit(value) {
+    const prevConsumer = (0,_angular_core_primitives_signals__WEBPACK_IMPORTED_MODULE_0__.setActiveConsumer)(null);
+    try {
+      super.next(value);
+    } finally {
+      (0,_angular_core_primitives_signals__WEBPACK_IMPORTED_MODULE_0__.setActiveConsumer)(prevConsumer);
+    }
+  }
+  subscribe(observerOrNext, error, complete) {
+    let nextFn = observerOrNext;
+    let errorFn = error || (() => null);
+    let completeFn = complete;
+    if (observerOrNext && typeof observerOrNext === 'object') {
+      const observer = observerOrNext;
+      nextFn = observer.next?.bind(observer);
+      errorFn = observer.error?.bind(observer);
+      completeFn = observer.complete?.bind(observer);
+    }
+    if (this.__isAsync) {
+      errorFn = this.wrapInTimeout(errorFn);
+      if (nextFn) {
+        nextFn = this.wrapInTimeout(nextFn);
+      }
+      if (completeFn) {
+        completeFn = this.wrapInTimeout(completeFn);
+      }
+    }
+    const sink = super.subscribe({
+      next: nextFn,
+      error: errorFn,
+      complete: completeFn
+    });
+    if (observerOrNext instanceof rxjs__WEBPACK_IMPORTED_MODULE_3__.Subscription) {
+      observerOrNext.add(sink);
+    }
+    return sink;
+  }
+  wrapInTimeout(fn) {
+    return value => {
+      const taskId = this.pendingTasks?.add();
+      setTimeout(() => {
+        fn(value);
+        if (taskId !== undefined) {
+          this.pendingTasks?.remove(taskId);
+        }
+      });
+    };
+  }
+}
+/**
+ * @publicApi
+ */
+const EventEmitter = EventEmitter_;
+function noop(...args) {
+  // Do nothing.
+}
+
+/**
+ * Gets a scheduling function that runs the callback after the first of setTimeout and
+ * requestAnimationFrame resolves.
+ *
+ * - `requestAnimationFrame` ensures that change detection runs ahead of a browser repaint.
+ * This ensures that the create and update passes of a change detection always happen
+ * in the same frame.
+ * - When the browser is resource-starved, `rAF` can execute _before_ a `setTimeout` because
+ * rendering is a very high priority process. This means that `setTimeout` cannot guarantee
+ * same-frame create and update pass, when `setTimeout` is used to schedule the update phase.
+ * - While `rAF` gives us the desirable same-frame updates, it has two limitations that
+ * prevent it from being used alone. First, it does not run in background tabs, which would
+ * prevent Angular from initializing an application when opened in a new tab (for example).
+ * Second, repeated calls to requestAnimationFrame will execute at the refresh rate of the
+ * hardware (~16ms for a 60Hz display). This would cause significant slowdown of tests that
+ * are written with several updates and asserts in the form of "update; await stable; assert;".
+ * - Both `setTimeout` and `rAF` are able to "coalesce" several events from a single user
+ * interaction into a single change detection. Importantly, this reduces view tree traversals when
+ * compared to an alternative timing mechanism like `queueMicrotask`, where change detection would
+ * then be interleaves between each event.
+ *
+ * By running change detection after the first of `setTimeout` and `rAF` to execute, we get the
+ * best of both worlds.
+ *
+ * @returns a function to cancel the scheduled callback
+ */
+function scheduleCallbackWithRafRace(callback) {
+  let timeoutId;
+  let animationFrameId;
+  function cleanup() {
+    callback = noop;
+    try {
+      if (animationFrameId !== undefined && typeof cancelAnimationFrame === 'function') {
+        cancelAnimationFrame(animationFrameId);
+      }
+      if (timeoutId !== undefined) {
+        clearTimeout(timeoutId);
+      }
+    } catch {
+      // Clearing/canceling can fail in tests due to the timing of functions being patched and unpatched
+      // Just ignore the errors - we protect ourselves from this issue by also making the callback a no-op.
+    }
+  }
+  timeoutId = setTimeout(() => {
+    callback();
+    cleanup();
+  });
+  if (typeof requestAnimationFrame === 'function') {
+    animationFrameId = requestAnimationFrame(() => {
+      callback();
+      cleanup();
+    });
+  }
+  return () => cleanup();
+}
+function scheduleCallbackWithMicrotask(callback) {
+  queueMicrotask(() => callback());
+  return () => {
+    callback = noop;
+  };
+}
+class AsyncStackTaggingZoneSpec {
+  constructor(namePrefix, consoleAsyncStackTaggingImpl = console) {
+    this.name = 'asyncStackTagging for ' + namePrefix;
+    this.createTask = consoleAsyncStackTaggingImpl?.createTask ?? (() => null);
+  }
+  onScheduleTask(delegate, _current, target, task) {
+    task.consoleTask = this.createTask(`Zone - ${task.source || task.type}`);
+    return delegate.scheduleTask(target, task);
+  }
+  onInvokeTask(delegate, _currentZone, targetZone, task, applyThis, applyArgs) {
+    let ret;
+    if (task.consoleTask) {
+      ret = task.consoleTask.run(() => delegate.invokeTask(targetZone, task, applyThis, applyArgs));
+    } else {
+      ret = delegate.invokeTask(targetZone, task, applyThis, applyArgs);
+    }
+    return ret;
+  }
+}
+const isAngularZoneProperty = 'isAngularZone';
+const angularZoneInstanceIdProperty = isAngularZoneProperty + '_ID';
+let ngZoneInstanceId = 0;
+/**
+ * An injectable service for executing work inside or outside of the Angular zone.
+ *
+ * The most common use of this service is to optimize performance when starting a work consisting of
+ * one or more asynchronous tasks that don't require UI updates or error handling to be handled by
+ * Angular. Such tasks can be kicked off via {@link #runOutsideAngular} and if needed, these tasks
+ * can reenter the Angular zone via {@link #run}.
+ *
+ * <!-- TODO: add/fix links to:
+ *   - docs explaining zones and the use of zones in Angular and change-detection
+ *   - link to runOutsideAngular/run (throughout this file!)
+ *   -->
+ *
+ * @usageNotes
+ * ### Example
+ *
+ * ```
+ * import {Component, NgZone} from '@angular/core';
+ * import {NgIf} from '@angular/common';
+ *
+ * @Component({
+ *   selector: 'ng-zone-demo',
+ *   template: `
+ *     <h2>Demo: NgZone</h2>
+ *
+ *     <p>Progress: {{progress}}%</p>
+ *     <p *ngIf="progress >= 100">Done processing {{label}} of Angular zone!</p>
+ *
+ *     <button (click)="processWithinAngularZone()">Process within Angular zone</button>
+ *     <button (click)="processOutsideOfAngularZone()">Process outside of Angular zone</button>
+ *   `,
+ * })
+ * export class NgZoneDemo {
+ *   progress: number = 0;
+ *   label: string;
+ *
+ *   constructor(private _ngZone: NgZone) {}
+ *
+ *   // Loop inside the Angular zone
+ *   // so the UI DOES refresh after each setTimeout cycle
+ *   processWithinAngularZone() {
+ *     this.label = 'inside';
+ *     this.progress = 0;
+ *     this._increaseProgress(() => console.log('Inside Done!'));
+ *   }
+ *
+ *   // Loop outside of the Angular zone
+ *   // so the UI DOES NOT refresh after each setTimeout cycle
+ *   processOutsideOfAngularZone() {
+ *     this.label = 'outside';
+ *     this.progress = 0;
+ *     this._ngZone.runOutsideAngular(() => {
+ *       this._increaseProgress(() => {
+ *         // reenter the Angular zone and display done
+ *         this._ngZone.run(() => { console.log('Outside Done!'); });
+ *       });
+ *     });
+ *   }
+ *
+ *   _increaseProgress(doneCallback: () => void) {
+ *     this.progress += 1;
+ *     console.log(`Current progress: ${this.progress}%`);
+ *
+ *     if (this.progress < 100) {
+ *       window.setTimeout(() => this._increaseProgress(doneCallback), 10);
+ *     } else {
+ *       doneCallback();
+ *     }
+ *   }
+ * }
+ * ```
+ *
+ * @publicApi
+ */
+class NgZone {
+  constructor(options) {
+    this.hasPendingMacrotasks = false;
+    this.hasPendingMicrotasks = false;
+    /**
+     * Whether there are no outstanding microtasks or macrotasks.
+     */
+    this.isStable = true;
+    /**
+     * Notifies when code enters Angular Zone. This gets fired first on VM Turn.
+     */
+    this.onUnstable = new EventEmitter(false);
+    /**
+     * Notifies when there is no more microtasks enqueued in the current VM Turn.
+     * This is a hint for Angular to do change detection, which may enqueue more microtasks.
+     * For this reason this event can fire multiple times per VM Turn.
+     */
+    this.onMicrotaskEmpty = new EventEmitter(false);
+    /**
+     * Notifies when the last `onMicrotaskEmpty` has run and there are no more microtasks, which
+     * implies we are about to relinquish VM turn.
+     * This event gets called just once.
+     */
+    this.onStable = new EventEmitter(false);
+    /**
+     * Notifies that an error has been delivered.
+     */
+    this.onError = new EventEmitter(false);
+    const {
+      enableLongStackTrace = false,
+      shouldCoalesceEventChangeDetection = false,
+      shouldCoalesceRunChangeDetection = false,
+      scheduleInRootZone = SCHEDULE_IN_ROOT_ZONE_DEFAULT
+    } = options;
+    if (typeof Zone == 'undefined') {
+      throw new RuntimeError(908 /* RuntimeErrorCode.MISSING_ZONEJS */, ngDevMode && `In this configuration Angular requires Zone.js`);
+    }
+    Zone.assertZonePatched();
+    const self = this;
+    self._nesting = 0;
+    self._outer = self._inner = Zone.current;
+    // AsyncStackTaggingZoneSpec provides `linked stack traces` to show
+    // where the async operation is scheduled. For more details, refer
+    // to this article, https://developer.chrome.com/blog/devtools-better-angular-debugging/
+    // And we only import this AsyncStackTaggingZoneSpec in development mode,
+    // in the production mode, the AsyncStackTaggingZoneSpec will be tree shaken away.
+    if (ngDevMode) {
+      self._inner = self._inner.fork(new AsyncStackTaggingZoneSpec('Angular'));
+    }
+    if (Zone['TaskTrackingZoneSpec']) {
+      self._inner = self._inner.fork(new Zone['TaskTrackingZoneSpec']());
+    }
+    if (enableLongStackTrace && Zone['longStackTraceZoneSpec']) {
+      self._inner = self._inner.fork(Zone['longStackTraceZoneSpec']);
+    }
+    // if shouldCoalesceRunChangeDetection is true, all tasks including event tasks will be
+    // coalesced, so shouldCoalesceEventChangeDetection option is not necessary and can be skipped.
+    self.shouldCoalesceEventChangeDetection = !shouldCoalesceRunChangeDetection && shouldCoalesceEventChangeDetection;
+    self.shouldCoalesceRunChangeDetection = shouldCoalesceRunChangeDetection;
+    self.callbackScheduled = false;
+    self.scheduleInRootZone = scheduleInRootZone;
+    forkInnerZoneWithAngularBehavior(self);
+  }
+  /**
+    This method checks whether the method call happens within an Angular Zone instance.
+  */
+  static isInAngularZone() {
+    // Zone needs to be checked, because this method might be called even when NoopNgZone is used.
+    return typeof Zone !== 'undefined' && Zone.current.get(isAngularZoneProperty) === true;
+  }
+  /**
+    Assures that the method is called within the Angular Zone, otherwise throws an error.
+  */
+  static assertInAngularZone() {
+    if (!NgZone.isInAngularZone()) {
+      throw new RuntimeError(909 /* RuntimeErrorCode.UNEXPECTED_ZONE_STATE */, ngDevMode && 'Expected to be in Angular Zone, but it is not!');
+    }
+  }
+  /**
+    Assures that the method is called outside of the Angular Zone, otherwise throws an error.
+  */
+  static assertNotInAngularZone() {
+    if (NgZone.isInAngularZone()) {
+      throw new RuntimeError(909 /* RuntimeErrorCode.UNEXPECTED_ZONE_STATE */, ngDevMode && 'Expected to not be in Angular Zone, but it is!');
+    }
+  }
+  /**
+   * Executes the `fn` function synchronously within the Angular zone and returns value returned by
+   * the function.
+   *
+   * Running functions via `run` allows you to reenter Angular zone from a task that was executed
+   * outside of the Angular zone (typically started via {@link #runOutsideAngular}).
+   *
+   * Any future tasks or microtasks scheduled from within this function will continue executing from
+   * within the Angular zone.
+   *
+   * If a synchronous error happens it will be rethrown and not reported via `onError`.
+   */
+  run(fn, applyThis, applyArgs) {
+    return this._inner.run(fn, applyThis, applyArgs);
+  }
+  /**
+   * Executes the `fn` function synchronously within the Angular zone as a task and returns value
+   * returned by the function.
+   *
+   * Running functions via `run` allows you to reenter Angular zone from a task that was executed
+   * outside of the Angular zone (typically started via {@link #runOutsideAngular}).
+   *
+   * Any future tasks or microtasks scheduled from within this function will continue executing from
+   * within the Angular zone.
+   *
+   * If a synchronous error happens it will be rethrown and not reported via `onError`.
+   */
+  runTask(fn, applyThis, applyArgs, name) {
+    const zone = this._inner;
+    const task = zone.scheduleEventTask('NgZoneEvent: ' + name, fn, EMPTY_PAYLOAD, noop, noop);
+    try {
+      return zone.runTask(task, applyThis, applyArgs);
+    } finally {
+      zone.cancelTask(task);
+    }
+  }
+  /**
+   * Same as `run`, except that synchronous errors are caught and forwarded via `onError` and not
+   * rethrown.
+   */
+  runGuarded(fn, applyThis, applyArgs) {
+    return this._inner.runGuarded(fn, applyThis, applyArgs);
+  }
+  /**
+   * Executes the `fn` function synchronously in Angular's parent zone and returns value returned by
+   * the function.
+   *
+   * Running functions via {@link #runOutsideAngular} allows you to escape Angular's zone and do
+   * work that
+   * doesn't trigger Angular change-detection or is subject to Angular's error handling.
+   *
+   * Any future tasks or microtasks scheduled from within this function will continue executing from
+   * outside of the Angular zone.
+   *
+   * Use {@link #run} to reenter the Angular zone and do work that updates the application model.
+   */
+  runOutsideAngular(fn) {
+    return this._outer.run(fn);
+  }
+}
+const EMPTY_PAYLOAD = {};
+function checkStable(zone) {
+  // TODO: @JiaLiPassion, should check zone.isCheckStableRunning to prevent
+  // re-entry. The case is:
+  //
+  // @Component({...})
+  // export class AppComponent {
+  // constructor(private ngZone: NgZone) {
+  //   this.ngZone.onStable.subscribe(() => {
+  //     this.ngZone.run(() => console.log('stable'););
+  //   });
+  // }
+  //
+  // The onStable subscriber run another function inside ngZone
+  // which causes `checkStable()` re-entry.
+  // But this fix causes some issues in g3, so this fix will be
+  // launched in another PR.
+  if (zone._nesting == 0 && !zone.hasPendingMicrotasks && !zone.isStable) {
+    try {
+      zone._nesting++;
+      zone.onMicrotaskEmpty.emit(null);
+    } finally {
+      zone._nesting--;
+      if (!zone.hasPendingMicrotasks) {
+        try {
+          zone.runOutsideAngular(() => zone.onStable.emit(null));
+        } finally {
+          zone.isStable = true;
+        }
+      }
+    }
+  }
+}
+function delayChangeDetectionForEvents(zone) {
+  /**
+   * We also need to check _nesting here
+   * Consider the following case with shouldCoalesceRunChangeDetection = true
+   *
+   * ngZone.run(() => {});
+   * ngZone.run(() => {});
+   *
+   * We want the two `ngZone.run()` only trigger one change detection
+   * when shouldCoalesceRunChangeDetection is true.
+   * And because in this case, change detection run in async way(requestAnimationFrame),
+   * so we also need to check the _nesting here to prevent multiple
+   * change detections.
+   */
+  if (zone.isCheckStableRunning || zone.callbackScheduled) {
+    return;
+  }
+  zone.callbackScheduled = true;
+  function scheduleCheckStable() {
+    scheduleCallbackWithRafRace(() => {
+      zone.callbackScheduled = false;
+      updateMicroTaskStatus(zone);
+      zone.isCheckStableRunning = true;
+      checkStable(zone);
+      zone.isCheckStableRunning = false;
+    });
+  }
+  if (zone.scheduleInRootZone) {
+    Zone.root.run(() => {
+      scheduleCheckStable();
+    });
+  } else {
+    zone._outer.run(() => {
+      scheduleCheckStable();
+    });
+  }
+  updateMicroTaskStatus(zone);
+}
+function forkInnerZoneWithAngularBehavior(zone) {
+  const delayChangeDetectionForEventsDelegate = () => {
+    delayChangeDetectionForEvents(zone);
+  };
+  const instanceId = ngZoneInstanceId++;
+  zone._inner = zone._inner.fork({
+    name: 'angular',
+    properties: {
+      [isAngularZoneProperty]: true,
+      [angularZoneInstanceIdProperty]: instanceId,
+      [angularZoneInstanceIdProperty + instanceId]: true
+    },
+    onInvokeTask: (delegate, current, target, task, applyThis, applyArgs) => {
+      // Prevent triggering change detection when the flag is detected.
+      if (shouldBeIgnoredByZone(applyArgs)) {
+        return delegate.invokeTask(target, task, applyThis, applyArgs);
+      }
+      try {
+        onEnter(zone);
+        return delegate.invokeTask(target, task, applyThis, applyArgs);
+      } finally {
+        if (zone.shouldCoalesceEventChangeDetection && task.type === 'eventTask' || zone.shouldCoalesceRunChangeDetection) {
+          delayChangeDetectionForEventsDelegate();
+        }
+        onLeave(zone);
+      }
+    },
+    onInvoke: (delegate, current, target, callback, applyThis, applyArgs, source) => {
+      try {
+        onEnter(zone);
+        return delegate.invoke(target, callback, applyThis, applyArgs, source);
+      } finally {
+        if (zone.shouldCoalesceRunChangeDetection &&
+        // Do not delay change detection when the task is the scheduler's tick.
+        // We need to synchronously trigger the stability logic so that the
+        // zone-based scheduler can prevent a duplicate ApplicationRef.tick
+        // by first checking if the scheduler tick is running. This does seem a bit roundabout,
+        // but we _do_ still want to trigger all the correct events when we exit the zone.run
+        // (`onMicrotaskEmpty` and `onStable` _should_ emit; developers can have code which
+        // relies on these events happening after change detection runs).
+        // Note: `zone.callbackScheduled` is already in delayChangeDetectionForEventsDelegate
+        // but is added here as well to prevent reads of applyArgs when not necessary
+        !zone.callbackScheduled && !isSchedulerTick(applyArgs)) {
+          delayChangeDetectionForEventsDelegate();
+        }
+        onLeave(zone);
+      }
+    },
+    onHasTask: (delegate, current, target, hasTaskState) => {
+      delegate.hasTask(target, hasTaskState);
+      if (current === target) {
+        // We are only interested in hasTask events which originate from our zone
+        // (A child hasTask event is not interesting to us)
+        if (hasTaskState.change == 'microTask') {
+          zone._hasPendingMicrotasks = hasTaskState.microTask;
+          updateMicroTaskStatus(zone);
+          checkStable(zone);
+        } else if (hasTaskState.change == 'macroTask') {
+          zone.hasPendingMacrotasks = hasTaskState.macroTask;
+        }
+      }
+    },
+    onHandleError: (delegate, current, target, error) => {
+      delegate.handleError(target, error);
+      zone.runOutsideAngular(() => zone.onError.emit(error));
+      return false;
+    }
+  });
+}
+function updateMicroTaskStatus(zone) {
+  if (zone._hasPendingMicrotasks || (zone.shouldCoalesceEventChangeDetection || zone.shouldCoalesceRunChangeDetection) && zone.callbackScheduled === true) {
+    zone.hasPendingMicrotasks = true;
+  } else {
+    zone.hasPendingMicrotasks = false;
+  }
+}
+function onEnter(zone) {
+  zone._nesting++;
+  if (zone.isStable) {
+    zone.isStable = false;
+    zone.onUnstable.emit(null);
+  }
+}
+function onLeave(zone) {
+  zone._nesting--;
+  checkStable(zone);
+}
+/**
+ * Provides a noop implementation of `NgZone` which does nothing. This zone requires explicit calls
+ * to framework to perform rendering.
+ */
+class NoopNgZone {
+  constructor() {
+    this.hasPendingMicrotasks = false;
+    this.hasPendingMacrotasks = false;
+    this.isStable = true;
+    this.onUnstable = new EventEmitter();
+    this.onMicrotaskEmpty = new EventEmitter();
+    this.onStable = new EventEmitter();
+    this.onError = new EventEmitter();
+  }
+  run(fn, applyThis, applyArgs) {
+    return fn.apply(applyThis, applyArgs);
+  }
+  runGuarded(fn, applyThis, applyArgs) {
+    return fn.apply(applyThis, applyArgs);
+  }
+  runOutsideAngular(fn) {
+    return fn();
+  }
+  runTask(fn, applyThis, applyArgs, name) {
+    return fn.apply(applyThis, applyArgs);
+  }
+}
+function shouldBeIgnoredByZone(applyArgs) {
+  return hasApplyArgsData(applyArgs, '__ignore_ng_zone__');
+}
+function isSchedulerTick(applyArgs) {
+  return hasApplyArgsData(applyArgs, '__scheduler_tick__');
+}
+function hasApplyArgsData(applyArgs, key) {
+  if (!Array.isArray(applyArgs)) {
+    return false;
+  }
+  // We should only ever get 1 arg passed through to invokeTask.
+  // Short circuit here incase that behavior changes.
+  if (applyArgs.length !== 1) {
+    return false;
+  }
+  return applyArgs[0]?.data?.[key] === true;
+}
+function getNgZone(ngZoneToUse = 'zone.js', options) {
+  if (ngZoneToUse === 'noop') {
+    return new NoopNgZone();
+  }
+  if (ngZoneToUse === 'zone.js') {
+    return new NgZone(options);
+  }
+  return ngZoneToUse;
+}
+
+// Public API for Zone
 
 /**
  * Provides a hook for centralized exception handling.
@@ -20763,51 +21556,11 @@ class ErrorHandler {
 const INTERNAL_APPLICATION_ERROR_HANDLER = /*#__PURE__*/new InjectionToken(typeof ngDevMode === 'undefined' || ngDevMode ? 'internal error handler' : '', {
   providedIn: 'root',
   factory: () => {
+    const zone = inject(NgZone);
     const userErrorHandler = inject(ErrorHandler);
-    return userErrorHandler.handleError.bind(undefined);
+    return e => zone.runOutsideAngular(() => userErrorHandler.handleError(e));
   }
 });
-
-/**
- * `DestroyRef` lets you set callbacks to run for any cleanup or destruction behavior.
- * The scope of this destruction depends on where `DestroyRef` is injected. If `DestroyRef`
- * is injected in a component or directive, the callbacks run when that component or
- * directive is destroyed. Otherwise the callbacks run when a corresponding injector is destroyed.
- *
- * @publicApi
- */
-let DestroyRef = /*#__PURE__*/(() => {
-  class DestroyRef {
-    /**
-     * @internal
-     * @nocollapse
-     */
-    static {
-      this.__NG_ELEMENT_ID__ = injectDestroyRef;
-    }
-    /**
-     * @internal
-     * @nocollapse
-     */
-    static {
-      this.__NG_ENV_ID__ = injector => injector;
-    }
-  }
-  return DestroyRef;
-})();
-class NodeInjectorDestroyRef extends DestroyRef {
-  constructor(_lView) {
-    super();
-    this._lView = _lView;
-  }
-  onDestroy(callback) {
-    storeLViewOnDestroy(this._lView, callback);
-    return () => removeLViewOnDestroy(this._lView, callback);
-  }
-}
-function injectDestroyRef() {
-  return new NodeInjectorDestroyRef(getLView());
-}
 
 /**
  * An `OutputEmitterRef` is created by the `output()` function and can be
@@ -20892,8 +21645,8 @@ function getOutputDestroyRef(ref) {
  *
  * To use `output()`, import the function from `@angular/core`.
  *
- * ```
- * import {output} from '@angular/core`;
+ * ```ts
+ * import {output} from '@angular/core';
  * ```
  *
  * Inside your component, introduce a new class member and initialize
@@ -21046,171 +21799,6 @@ let ElementRef = /*#__PURE__*/(() => {
 function unwrapElementRef(value) {
   return value instanceof ElementRef ? value.nativeElement : value;
 }
-
-/**
- * Internal implementation of the pending tasks service.
- */
-let PendingTasks = /*#__PURE__*/(() => {
-  class PendingTasks {
-    constructor() {
-      this.taskId = 0;
-      this.pendingTasks = new Set();
-      this.hasPendingTasks = new rxjs__WEBPACK_IMPORTED_MODULE_1__.BehaviorSubject(false);
-    }
-    get _hasPendingTasks() {
-      return this.hasPendingTasks.value;
-    }
-    add() {
-      if (!this._hasPendingTasks) {
-        this.hasPendingTasks.next(true);
-      }
-      const taskId = this.taskId++;
-      this.pendingTasks.add(taskId);
-      return taskId;
-    }
-    remove(taskId) {
-      this.pendingTasks.delete(taskId);
-      if (this.pendingTasks.size === 0 && this._hasPendingTasks) {
-        this.hasPendingTasks.next(false);
-      }
-    }
-    ngOnDestroy() {
-      this.pendingTasks.clear();
-      if (this._hasPendingTasks) {
-        this.hasPendingTasks.next(false);
-      }
-    }
-    /** @nocollapse */
-    static {
-      this.ɵprov = ɵɵdefineInjectable({
-        token: PendingTasks,
-        providedIn: 'root',
-        factory: () => new PendingTasks()
-      });
-    }
-  }
-  return PendingTasks;
-})();
-/**
- * Experimental service that keeps track of pending tasks contributing to the stableness of Angular
- * application. While several existing Angular services (ex.: `HttpClient`) will internally manage
- * tasks influencing stability, this API gives control over stability to library and application
- * developers for specific cases not covered by Angular internals.
- *
- * The concept of stability comes into play in several important scenarios:
- * - SSR process needs to wait for the application stability before serializing and sending rendered
- * HTML;
- * - tests might want to delay assertions until the application becomes stable;
- *
- * @usageNotes
- * ```typescript
- * const pendingTasks = inject(ExperimentalPendingTasks);
- * const taskCleanup = pendingTasks.add();
- * // do work that should block application's stability and then:
- * taskCleanup();
- * ```
- *
- * This API is experimental. Neither the shape, nor the underlying behavior is stable and can change
- * in patch versions. We will iterate on the exact API based on the feedback and our understanding
- * of the problem and solution space.
- *
- * @publicApi
- * @experimental
- */
-let ExperimentalPendingTasks = /*#__PURE__*/(() => {
-  class ExperimentalPendingTasks {
-    constructor() {
-      this.internalPendingTasks = inject(PendingTasks);
-    }
-    /**
-     * Adds a new task that should block application's stability.
-     * @returns A cleanup function that removes a task when called.
-     */
-    add() {
-      const taskId = this.internalPendingTasks.add();
-      return () => this.internalPendingTasks.remove(taskId);
-    }
-    /** @nocollapse */
-    static {
-      this.ɵprov = ɵɵdefineInjectable({
-        token: ExperimentalPendingTasks,
-        providedIn: 'root',
-        factory: () => new ExperimentalPendingTasks()
-      });
-    }
-  }
-  return ExperimentalPendingTasks;
-})();
-class EventEmitter_ extends rxjs__WEBPACK_IMPORTED_MODULE_2__.Subject {
-  constructor(isAsync = false) {
-    super();
-    this.destroyRef = undefined;
-    this.pendingTasks = undefined;
-    this.__isAsync = isAsync;
-    // Attempt to retrieve a `DestroyRef` and `PendingTasks` optionally.
-    // For backwards compatibility reasons, this cannot be required.
-    if (isInInjectionContext()) {
-      this.destroyRef = inject(DestroyRef, {
-        optional: true
-      }) ?? undefined;
-      this.pendingTasks = inject(PendingTasks, {
-        optional: true
-      }) ?? undefined;
-    }
-  }
-  emit(value) {
-    const prevConsumer = (0,_angular_core_primitives_signals__WEBPACK_IMPORTED_MODULE_0__.setActiveConsumer)(null);
-    try {
-      super.next(value);
-    } finally {
-      (0,_angular_core_primitives_signals__WEBPACK_IMPORTED_MODULE_0__.setActiveConsumer)(prevConsumer);
-    }
-  }
-  subscribe(observerOrNext, error, complete) {
-    let nextFn = observerOrNext;
-    let errorFn = error || (() => null);
-    let completeFn = complete;
-    if (observerOrNext && typeof observerOrNext === 'object') {
-      const observer = observerOrNext;
-      nextFn = observer.next?.bind(observer);
-      errorFn = observer.error?.bind(observer);
-      completeFn = observer.complete?.bind(observer);
-    }
-    if (this.__isAsync) {
-      errorFn = this.wrapInTimeout(errorFn);
-      if (nextFn) {
-        nextFn = this.wrapInTimeout(nextFn);
-      }
-      if (completeFn) {
-        completeFn = this.wrapInTimeout(completeFn);
-      }
-    }
-    const sink = super.subscribe({
-      next: nextFn,
-      error: errorFn,
-      complete: completeFn
-    });
-    if (observerOrNext instanceof rxjs__WEBPACK_IMPORTED_MODULE_3__.Subscription) {
-      observerOrNext.add(sink);
-    }
-    return sink;
-  }
-  wrapInTimeout(fn) {
-    return value => {
-      const taskId = this.pendingTasks?.add();
-      setTimeout(() => {
-        fn(value);
-        if (taskId !== undefined) {
-          this.pendingTasks?.remove(taskId);
-        }
-      });
-    };
-  }
-}
-/**
- * @publicApi
- */
-const EventEmitter = EventEmitter_;
 function symbolIterator() {
   // @ts-expect-error accessing a private member
   return this._results[Symbol.iterator]();
@@ -21427,6 +22015,14 @@ function isInSkipHydrationBlock(tNode) {
     currentTNode = currentTNode.parent;
   }
   return false;
+}
+/**
+ * Check if an i18n block is in a skip hydration section by looking at a parent TNode
+ * to determine if this TNode is in a skip hydration section or the TNode has
+ * the `ngSkipHydration` attribute.
+ */
+function isI18nInSkipHydrationBlock(parentTNode) {
+  return hasInSkipHydrationBlockFlag(parentTNode) || hasSkipHydrationAttrOnTNode(parentTNode) || isInSkipHydrationBlock(parentTNode);
 }
 
 // Keeps track of the currently-active LViews.
@@ -22948,10 +23544,6 @@ const IS_I18N_HYDRATION_ENABLED = /*#__PURE__*/new InjectionToken(typeof ngDevMo
  */
 const IS_EVENT_REPLAY_ENABLED = /*#__PURE__*/new InjectionToken(typeof ngDevMode === 'undefined' || !!ngDevMode ? 'IS_EVENT_REPLAY_ENABLED' : '');
 const EVENT_REPLAY_ENABLED_DEFAULT = false;
-/**
- * Internal token that indicates whether global event delegation support is enabled.
- */
-const IS_GLOBAL_EVENT_DELEGATION_ENABLED = /*#__PURE__*/new InjectionToken(typeof ngDevMode === 'undefined' || !!ngDevMode ? 'IS_GLOBAL_EVENT_DELEGATION_ENABLED' : '');
 
 /**
  * @fileoverview
@@ -23288,7 +23880,7 @@ class DOMParserHelper {
         // the `inertDocumentHelper` instead.
         return this.inertDocumentHelper.getInertBodyElement(html);
       }
-      body.removeChild(body.firstChild);
+      body.firstChild?.remove();
       return body;
     } catch {
       return null;
@@ -23601,7 +24193,7 @@ function _sanitizeHtml(defaultDoc, unsafeHtmlInput) {
     if (inertBodyElement) {
       const parent = getTemplateContent(inertBodyElement) || inertBodyElement;
       while (parent.firstChild) {
-        parent.removeChild(parent.firstChild);
+        parent.firstChild.remove();
       }
     }
   }
@@ -24469,7 +25061,7 @@ function detachViewFromDOM(tView, lView) {
   // When we remove a view from the DOM, we need to rerun afterRender hooks
   // We don't necessarily needs to run change detection. DOM removal only requires
   // change detection if animations are enabled (this notification is handled by animations).
-  lView[ENVIRONMENT].changeDetectionScheduler?.notify(8 /* NotificationSource.ViewDetachedFromDOM */);
+  lView[ENVIRONMENT].changeDetectionScheduler?.notify(9 /* NotificationSource.ViewDetachedFromDOM */);
   applyView(tView, lView, lView[RENDERER], 2 /* WalkTNodeTreeAction.Detach */, null, null);
 }
 /**
@@ -24870,14 +25462,6 @@ function nativeAppendOrInsertBefore(renderer, parent, child, beforeNode, isMove)
     nativeAppendChild(renderer, parent, child);
   }
 }
-/** Removes a node from the DOM given its native parent. */
-function nativeRemoveChild(renderer, parent, child, isHostElement) {
-  renderer.removeChild(parent, child, isHostElement);
-}
-/** Checks if an element is a `<template>` node. */
-function isTemplateNode(node) {
-  return node.tagName === 'TEMPLATE' && node.content !== undefined;
-}
 /**
  * Returns a native parent of a given native node.
  */
@@ -24967,7 +25551,7 @@ function appendChild(tView, lView, childRNode, childTNode) {
  */
 function getFirstNativeNode(lView, tNode) {
   if (tNode !== null) {
-    ngDevMode && assertTNodeType(tNode, 3 /* TNodeType.AnyRNode */ | 12 /* TNodeType.AnyContainer */ | 32 /* TNodeType.Icu */ | 16 /* TNodeType.Projection */);
+    ngDevMode && assertTNodeType(tNode, 3 /* TNodeType.AnyRNode */ | 12 /* TNodeType.AnyContainer */ | 32 /* TNodeType.Icu */ | 16 /* TNodeType.Projection */ | 128 /* TNodeType.LetDeclaration */);
     const tNodeType = tNode.type;
     if (tNodeType & 3 /* TNodeType.AnyRNode */) {
       return getNativeByTNode(tNode, lView);
@@ -24985,6 +25569,8 @@ function getFirstNativeNode(lView, tNode) {
           return unwrapRNode(rNodeOrLContainer);
         }
       }
+    } else if (tNodeType & 128 /* TNodeType.LetDeclaration */) {
+      return getFirstNativeNode(lView, tNode.next);
     } else if (tNodeType & 32 /* TNodeType.Icu */) {
       let nextRNode = icuContainerIterate(tNode, lView);
       let rNode = nextRNode();
@@ -25038,10 +25624,7 @@ function getBeforeNodeForView(viewIndexInContainer, lContainer) {
  */
 function nativeRemoveNode(renderer, rNode, isHostElement) {
   ngDevMode && ngDevMode.rendererRemoveNode++;
-  const nativeParent = nativeParentNode(renderer, rNode);
-  if (nativeParent) {
-    nativeRemoveChild(renderer, nativeParent, rNode, isHostElement);
-  }
+  renderer.removeChild(null, rNode, isHostElement);
 }
 /**
  * Clears the contents of a given RElement.
@@ -28863,6 +29446,10 @@ function trySerializeI18nBlock(lView, index, context) {
   if (!tI18n || !tI18n.ast) {
     return null;
   }
+  const parentTNode = tView.data[tI18n.parentTNodeIndex];
+  if (parentTNode && isI18nInSkipHydrationBlock(parentTNode)) {
+    return null;
+  }
   const serializedI18nBlock = {
     caseQueue: [],
     disconnectedNodes: new Set(),
@@ -29012,11 +29599,11 @@ function forkHydrationState(state, nextNode) {
   };
 }
 function prepareI18nBlockForHydrationImpl(lView, index, parentTNode, subTemplateIndex) {
-  if (!isI18nHydrationSupportEnabled()) {
-    return;
-  }
   const hydrationInfo = lView[HYDRATION];
   if (!hydrationInfo) {
+    return;
+  }
+  if (!isI18nHydrationSupportEnabled() || parentTNode && (isI18nInSkipHydrationBlock(parentTNode) || isDisconnectedNode$1(hydrationInfo, parentTNode.index - HEADER_OFFSET))) {
     return;
   }
   const tView = lView[TVIEW];
@@ -29274,6 +29861,13 @@ function removeDehydratedView(dehydratedView, renderer) {
  */
 function cleanupLContainer(lContainer) {
   removeDehydratedViews(lContainer);
+  // The host could be an LView if this container is on a component node.
+  // In this case, descend into host LView for further cleanup. See also
+  // LContainer[HOST] docs for additional information.
+  const hostLView = lContainer[HOST];
+  if (isLView(hostLView)) {
+    cleanupLView(hostLView);
+  }
   for (let i = CONTAINER_HEADER_OFFSET; i < lContainer.length; i++) {
     cleanupLView(lContainer[i]);
   }
@@ -29309,9 +29903,6 @@ function cleanupDehydratedViews(appRef) {
       if (isLView(lNode)) {
         cleanupLView(lNode);
       } else {
-        // Cleanup in the root component view
-        const componentLView = lNode[HOST];
-        cleanupLView(componentLView);
         // Cleanup in all views within this view container
         cleanupLContainer(lNode);
       }
@@ -29407,6 +29998,8 @@ const PROVIDED_ZONELESS = /*#__PURE__*/new InjectionToken(typeof ngDevMode === '
   factory: () => false
 });
 const ZONELESS_SCHEDULER_DISABLED = /*#__PURE__*/new InjectionToken(typeof ngDevMode === 'undefined' || ngDevMode ? 'scheduler disabled' : '');
+// TODO(atscott): Remove in v19. Scheduler should be done with runOutsideAngular.
+const SCHEDULE_IN_ROOT_ZONE = /*#__PURE__*/new InjectionToken(typeof ngDevMode === 'undefined' || ngDevMode ? 'run changes outside zone in root' : '');
 
 /**
  * Represents a component created by a `ComponentFactory`.
@@ -29529,892 +30122,6 @@ let Sanitizer = /*#__PURE__*/(() => {
     }
   }
   return Sanitizer;
-})();
-/**
- * Asserts that the current stack frame is not within a reactive context. Useful
- * to disallow certain code from running inside a reactive context (see {@link toSignal}).
- *
- * @param debugFn a reference to the function making the assertion (used for the error message).
- *
- * @publicApi
- */
-function assertNotInReactiveContext(debugFn, extraContext) {
-  // Taking a `Function` instead of a string name here prevents the un-minified name of the function
-  // from being retained in the bundle regardless of minification.
-  if ((0,_angular_core_primitives_signals__WEBPACK_IMPORTED_MODULE_0__.getActiveConsumer)() !== null) {
-    throw new RuntimeError(-602 /* RuntimeErrorCode.ASSERTION_NOT_INSIDE_REACTIVE_CONTEXT */, ngDevMode && `${debugFn.name}() cannot be called from within a reactive context.${extraContext ? ` ${extraContext}` : ''}`);
-  }
-}
-const markedFeatures = /*#__PURE__*/new Set();
-// tslint:disable:ban
-/**
- * A guarded `performance.mark` for feature marking.
- *
- * This method exists because while all supported browser and node.js version supported by Angular
- * support performance.mark API. This is not the case for other environments such as JSDOM and
- * Cloudflare workers.
- */
-function performanceMarkFeature(feature) {
-  if (markedFeatures.has(feature)) {
-    return;
-  }
-  markedFeatures.add(feature);
-  performance?.mark?.('mark_feature_usage', {
-    detail: {
-      feature
-    }
-  });
-}
-
-/**
- * Gets a scheduling function that runs the callback after the first of setTimeout and
- * requestAnimationFrame resolves.
- *
- * - `requestAnimationFrame` ensures that change detection runs ahead of a browser repaint.
- * This ensures that the create and update passes of a change detection always happen
- * in the same frame.
- * - When the browser is resource-starved, `rAF` can execute _before_ a `setTimeout` because
- * rendering is a very high priority process. This means that `setTimeout` cannot guarantee
- * same-frame create and update pass, when `setTimeout` is used to schedule the update phase.
- * - While `rAF` gives us the desirable same-frame updates, it has two limitations that
- * prevent it from being used alone. First, it does not run in background tabs, which would
- * prevent Angular from initializing an application when opened in a new tab (for example).
- * Second, repeated calls to requestAnimationFrame will execute at the refresh rate of the
- * hardware (~16ms for a 60Hz display). This would cause significant slowdown of tests that
- * are written with several updates and asserts in the form of "update; await stable; assert;".
- * - Both `setTimeout` and `rAF` are able to "coalesce" several events from a single user
- * interaction into a single change detection. Importantly, this reduces view tree traversals when
- * compared to an alternative timing mechanism like `queueMicrotask`, where change detection would
- * then be interleaves between each event.
- *
- * By running change detection after the first of `setTimeout` and `rAF` to execute, we get the
- * best of both worlds.
- *
- * @returns a function to cancel the scheduled callback
- */
-function scheduleCallbackWithRafRace(callback) {
-  let executeCallback = true;
-  setTimeout(() => {
-    if (!executeCallback) {
-      return;
-    }
-    executeCallback = false;
-    callback();
-  });
-  if (typeof _global['requestAnimationFrame'] === 'function') {
-    _global['requestAnimationFrame'](() => {
-      if (!executeCallback) {
-        return;
-      }
-      executeCallback = false;
-      callback();
-    });
-  }
-  return () => {
-    executeCallback = false;
-  };
-}
-function scheduleCallbackWithMicrotask(callback) {
-  let executeCallback = true;
-  queueMicrotask(() => {
-    if (executeCallback) {
-      callback();
-    }
-  });
-  return () => {
-    executeCallback = false;
-  };
-}
-function noop(...args) {
-  // Do nothing.
-}
-class AsyncStackTaggingZoneSpec {
-  constructor(namePrefix, consoleAsyncStackTaggingImpl = console) {
-    this.name = 'asyncStackTagging for ' + namePrefix;
-    this.createTask = consoleAsyncStackTaggingImpl?.createTask ?? (() => null);
-  }
-  onScheduleTask(delegate, _current, target, task) {
-    task.consoleTask = this.createTask(`Zone - ${task.source || task.type}`);
-    return delegate.scheduleTask(target, task);
-  }
-  onInvokeTask(delegate, _currentZone, targetZone, task, applyThis, applyArgs) {
-    let ret;
-    if (task.consoleTask) {
-      ret = task.consoleTask.run(() => delegate.invokeTask(targetZone, task, applyThis, applyArgs));
-    } else {
-      ret = delegate.invokeTask(targetZone, task, applyThis, applyArgs);
-    }
-    return ret;
-  }
-}
-
-/**
- * An injectable service for executing work inside or outside of the Angular zone.
- *
- * The most common use of this service is to optimize performance when starting a work consisting of
- * one or more asynchronous tasks that don't require UI updates or error handling to be handled by
- * Angular. Such tasks can be kicked off via {@link #runOutsideAngular} and if needed, these tasks
- * can reenter the Angular zone via {@link #run}.
- *
- * <!-- TODO: add/fix links to:
- *   - docs explaining zones and the use of zones in Angular and change-detection
- *   - link to runOutsideAngular/run (throughout this file!)
- *   -->
- *
- * @usageNotes
- * ### Example
- *
- * ```
- * import {Component, NgZone} from '@angular/core';
- * import {NgIf} from '@angular/common';
- *
- * @Component({
- *   selector: 'ng-zone-demo',
- *   template: `
- *     <h2>Demo: NgZone</h2>
- *
- *     <p>Progress: {{progress}}%</p>
- *     <p *ngIf="progress >= 100">Done processing {{label}} of Angular zone!</p>
- *
- *     <button (click)="processWithinAngularZone()">Process within Angular zone</button>
- *     <button (click)="processOutsideOfAngularZone()">Process outside of Angular zone</button>
- *   `,
- * })
- * export class NgZoneDemo {
- *   progress: number = 0;
- *   label: string;
- *
- *   constructor(private _ngZone: NgZone) {}
- *
- *   // Loop inside the Angular zone
- *   // so the UI DOES refresh after each setTimeout cycle
- *   processWithinAngularZone() {
- *     this.label = 'inside';
- *     this.progress = 0;
- *     this._increaseProgress(() => console.log('Inside Done!'));
- *   }
- *
- *   // Loop outside of the Angular zone
- *   // so the UI DOES NOT refresh after each setTimeout cycle
- *   processOutsideOfAngularZone() {
- *     this.label = 'outside';
- *     this.progress = 0;
- *     this._ngZone.runOutsideAngular(() => {
- *       this._increaseProgress(() => {
- *         // reenter the Angular zone and display done
- *         this._ngZone.run(() => { console.log('Outside Done!'); });
- *       });
- *     });
- *   }
- *
- *   _increaseProgress(doneCallback: () => void) {
- *     this.progress += 1;
- *     console.log(`Current progress: ${this.progress}%`);
- *
- *     if (this.progress < 100) {
- *       window.setTimeout(() => this._increaseProgress(doneCallback), 10);
- *     } else {
- *       doneCallback();
- *     }
- *   }
- * }
- * ```
- *
- * @publicApi
- */
-class NgZone {
-  constructor({
-    enableLongStackTrace = false,
-    shouldCoalesceEventChangeDetection = false,
-    shouldCoalesceRunChangeDetection = false
-  }) {
-    this.hasPendingMacrotasks = false;
-    this.hasPendingMicrotasks = false;
-    /**
-     * Whether there are no outstanding microtasks or macrotasks.
-     */
-    this.isStable = true;
-    /**
-     * Notifies when code enters Angular Zone. This gets fired first on VM Turn.
-     */
-    this.onUnstable = new EventEmitter(false);
-    /**
-     * Notifies when there is no more microtasks enqueued in the current VM Turn.
-     * This is a hint for Angular to do change detection, which may enqueue more microtasks.
-     * For this reason this event can fire multiple times per VM Turn.
-     */
-    this.onMicrotaskEmpty = new EventEmitter(false);
-    /**
-     * Notifies when the last `onMicrotaskEmpty` has run and there are no more microtasks, which
-     * implies we are about to relinquish VM turn.
-     * This event gets called just once.
-     */
-    this.onStable = new EventEmitter(false);
-    /**
-     * Notifies that an error has been delivered.
-     */
-    this.onError = new EventEmitter(false);
-    if (typeof Zone == 'undefined') {
-      throw new RuntimeError(908 /* RuntimeErrorCode.MISSING_ZONEJS */, ngDevMode && `In this configuration Angular requires Zone.js`);
-    }
-    Zone.assertZonePatched();
-    const self = this;
-    self._nesting = 0;
-    self._outer = self._inner = Zone.current;
-    // AsyncStackTaggingZoneSpec provides `linked stack traces` to show
-    // where the async operation is scheduled. For more details, refer
-    // to this article, https://developer.chrome.com/blog/devtools-better-angular-debugging/
-    // And we only import this AsyncStackTaggingZoneSpec in development mode,
-    // in the production mode, the AsyncStackTaggingZoneSpec will be tree shaken away.
-    if (ngDevMode) {
-      self._inner = self._inner.fork(new AsyncStackTaggingZoneSpec('Angular'));
-    }
-    if (Zone['TaskTrackingZoneSpec']) {
-      self._inner = self._inner.fork(new Zone['TaskTrackingZoneSpec']());
-    }
-    if (enableLongStackTrace && Zone['longStackTraceZoneSpec']) {
-      self._inner = self._inner.fork(Zone['longStackTraceZoneSpec']);
-    }
-    // if shouldCoalesceRunChangeDetection is true, all tasks including event tasks will be
-    // coalesced, so shouldCoalesceEventChangeDetection option is not necessary and can be skipped.
-    self.shouldCoalesceEventChangeDetection = !shouldCoalesceRunChangeDetection && shouldCoalesceEventChangeDetection;
-    self.shouldCoalesceRunChangeDetection = shouldCoalesceRunChangeDetection;
-    self.callbackScheduled = false;
-    forkInnerZoneWithAngularBehavior(self);
-  }
-  /**
-    This method checks whether the method call happens within an Angular Zone instance.
-  */
-  static isInAngularZone() {
-    // Zone needs to be checked, because this method might be called even when NoopNgZone is used.
-    return typeof Zone !== 'undefined' && Zone.current.get('isAngularZone') === true;
-  }
-  /**
-    Assures that the method is called within the Angular Zone, otherwise throws an error.
-  */
-  static assertInAngularZone() {
-    if (!NgZone.isInAngularZone()) {
-      throw new RuntimeError(909 /* RuntimeErrorCode.UNEXPECTED_ZONE_STATE */, ngDevMode && 'Expected to be in Angular Zone, but it is not!');
-    }
-  }
-  /**
-    Assures that the method is called outside of the Angular Zone, otherwise throws an error.
-  */
-  static assertNotInAngularZone() {
-    if (NgZone.isInAngularZone()) {
-      throw new RuntimeError(909 /* RuntimeErrorCode.UNEXPECTED_ZONE_STATE */, ngDevMode && 'Expected to not be in Angular Zone, but it is!');
-    }
-  }
-  /**
-   * Executes the `fn` function synchronously within the Angular zone and returns value returned by
-   * the function.
-   *
-   * Running functions via `run` allows you to reenter Angular zone from a task that was executed
-   * outside of the Angular zone (typically started via {@link #runOutsideAngular}).
-   *
-   * Any future tasks or microtasks scheduled from within this function will continue executing from
-   * within the Angular zone.
-   *
-   * If a synchronous error happens it will be rethrown and not reported via `onError`.
-   */
-  run(fn, applyThis, applyArgs) {
-    return this._inner.run(fn, applyThis, applyArgs);
-  }
-  /**
-   * Executes the `fn` function synchronously within the Angular zone as a task and returns value
-   * returned by the function.
-   *
-   * Running functions via `run` allows you to reenter Angular zone from a task that was executed
-   * outside of the Angular zone (typically started via {@link #runOutsideAngular}).
-   *
-   * Any future tasks or microtasks scheduled from within this function will continue executing from
-   * within the Angular zone.
-   *
-   * If a synchronous error happens it will be rethrown and not reported via `onError`.
-   */
-  runTask(fn, applyThis, applyArgs, name) {
-    const zone = this._inner;
-    const task = zone.scheduleEventTask('NgZoneEvent: ' + name, fn, EMPTY_PAYLOAD, noop, noop);
-    try {
-      return zone.runTask(task, applyThis, applyArgs);
-    } finally {
-      zone.cancelTask(task);
-    }
-  }
-  /**
-   * Same as `run`, except that synchronous errors are caught and forwarded via `onError` and not
-   * rethrown.
-   */
-  runGuarded(fn, applyThis, applyArgs) {
-    return this._inner.runGuarded(fn, applyThis, applyArgs);
-  }
-  /**
-   * Executes the `fn` function synchronously in Angular's parent zone and returns value returned by
-   * the function.
-   *
-   * Running functions via {@link #runOutsideAngular} allows you to escape Angular's zone and do
-   * work that
-   * doesn't trigger Angular change-detection or is subject to Angular's error handling.
-   *
-   * Any future tasks or microtasks scheduled from within this function will continue executing from
-   * outside of the Angular zone.
-   *
-   * Use {@link #run} to reenter the Angular zone and do work that updates the application model.
-   */
-  runOutsideAngular(fn) {
-    return this._outer.run(fn);
-  }
-}
-const EMPTY_PAYLOAD = {};
-function checkStable(zone) {
-  // TODO: @JiaLiPassion, should check zone.isCheckStableRunning to prevent
-  // re-entry. The case is:
-  //
-  // @Component({...})
-  // export class AppComponent {
-  // constructor(private ngZone: NgZone) {
-  //   this.ngZone.onStable.subscribe(() => {
-  //     this.ngZone.run(() => console.log('stable'););
-  //   });
-  // }
-  //
-  // The onStable subscriber run another function inside ngZone
-  // which causes `checkStable()` re-entry.
-  // But this fix causes some issues in g3, so this fix will be
-  // launched in another PR.
-  if (zone._nesting == 0 && !zone.hasPendingMicrotasks && !zone.isStable) {
-    try {
-      zone._nesting++;
-      zone.onMicrotaskEmpty.emit(null);
-    } finally {
-      zone._nesting--;
-      if (!zone.hasPendingMicrotasks) {
-        try {
-          zone.runOutsideAngular(() => zone.onStable.emit(null));
-        } finally {
-          zone.isStable = true;
-        }
-      }
-    }
-  }
-}
-function delayChangeDetectionForEvents(zone) {
-  /**
-   * We also need to check _nesting here
-   * Consider the following case with shouldCoalesceRunChangeDetection = true
-   *
-   * ngZone.run(() => {});
-   * ngZone.run(() => {});
-   *
-   * We want the two `ngZone.run()` only trigger one change detection
-   * when shouldCoalesceRunChangeDetection is true.
-   * And because in this case, change detection run in async way(requestAnimationFrame),
-   * so we also need to check the _nesting here to prevent multiple
-   * change detections.
-   */
-  if (zone.isCheckStableRunning || zone.callbackScheduled) {
-    return;
-  }
-  zone.callbackScheduled = true;
-  Zone.root.run(() => {
-    scheduleCallbackWithRafRace(() => {
-      zone.callbackScheduled = false;
-      updateMicroTaskStatus(zone);
-      zone.isCheckStableRunning = true;
-      checkStable(zone);
-      zone.isCheckStableRunning = false;
-    });
-  });
-  updateMicroTaskStatus(zone);
-}
-function forkInnerZoneWithAngularBehavior(zone) {
-  const delayChangeDetectionForEventsDelegate = () => {
-    delayChangeDetectionForEvents(zone);
-  };
-  zone._inner = zone._inner.fork({
-    name: 'angular',
-    properties: {
-      'isAngularZone': true
-    },
-    onInvokeTask: (delegate, current, target, task, applyThis, applyArgs) => {
-      // Prevent triggering change detection when the flag is detected.
-      if (shouldBeIgnoredByZone(applyArgs)) {
-        return delegate.invokeTask(target, task, applyThis, applyArgs);
-      }
-      try {
-        onEnter(zone);
-        return delegate.invokeTask(target, task, applyThis, applyArgs);
-      } finally {
-        if (zone.shouldCoalesceEventChangeDetection && task.type === 'eventTask' || zone.shouldCoalesceRunChangeDetection) {
-          delayChangeDetectionForEventsDelegate();
-        }
-        onLeave(zone);
-      }
-    },
-    onInvoke: (delegate, current, target, callback, applyThis, applyArgs, source) => {
-      try {
-        onEnter(zone);
-        return delegate.invoke(target, callback, applyThis, applyArgs, source);
-      } finally {
-        if (zone.shouldCoalesceRunChangeDetection &&
-        // Do not delay change detection when the task is the scheduler's tick.
-        // We need to synchronously trigger the stability logic so that the
-        // zone-based scheduler can prevent a duplicate ApplicationRef.tick
-        // by first checking if the scheduler tick is running. This does seem a bit roundabout,
-        // but we _do_ still want to trigger all the correct events when we exit the zone.run
-        // (`onMicrotaskEmpty` and `onStable` _should_ emit; developers can have code which
-        // relies on these events happening after change detection runs).
-        // Note: `zone.callbackScheduled` is already in delayChangeDetectionForEventsDelegate
-        // but is added here as well to prevent reads of applyArgs when not necessary
-        !zone.callbackScheduled && !isSchedulerTick(applyArgs)) {
-          delayChangeDetectionForEventsDelegate();
-        }
-        onLeave(zone);
-      }
-    },
-    onHasTask: (delegate, current, target, hasTaskState) => {
-      delegate.hasTask(target, hasTaskState);
-      if (current === target) {
-        // We are only interested in hasTask events which originate from our zone
-        // (A child hasTask event is not interesting to us)
-        if (hasTaskState.change == 'microTask') {
-          zone._hasPendingMicrotasks = hasTaskState.microTask;
-          updateMicroTaskStatus(zone);
-          checkStable(zone);
-        } else if (hasTaskState.change == 'macroTask') {
-          zone.hasPendingMacrotasks = hasTaskState.macroTask;
-        }
-      }
-    },
-    onHandleError: (delegate, current, target, error) => {
-      delegate.handleError(target, error);
-      zone.runOutsideAngular(() => zone.onError.emit(error));
-      return false;
-    }
-  });
-}
-function updateMicroTaskStatus(zone) {
-  if (zone._hasPendingMicrotasks || (zone.shouldCoalesceEventChangeDetection || zone.shouldCoalesceRunChangeDetection) && zone.callbackScheduled === true) {
-    zone.hasPendingMicrotasks = true;
-  } else {
-    zone.hasPendingMicrotasks = false;
-  }
-}
-function onEnter(zone) {
-  zone._nesting++;
-  if (zone.isStable) {
-    zone.isStable = false;
-    zone.onUnstable.emit(null);
-  }
-}
-function onLeave(zone) {
-  zone._nesting--;
-  checkStable(zone);
-}
-/**
- * Provides a noop implementation of `NgZone` which does nothing. This zone requires explicit calls
- * to framework to perform rendering.
- */
-class NoopNgZone {
-  constructor() {
-    this.hasPendingMicrotasks = false;
-    this.hasPendingMacrotasks = false;
-    this.isStable = true;
-    this.onUnstable = new EventEmitter();
-    this.onMicrotaskEmpty = new EventEmitter();
-    this.onStable = new EventEmitter();
-    this.onError = new EventEmitter();
-  }
-  run(fn, applyThis, applyArgs) {
-    return fn.apply(applyThis, applyArgs);
-  }
-  runGuarded(fn, applyThis, applyArgs) {
-    return fn.apply(applyThis, applyArgs);
-  }
-  runOutsideAngular(fn) {
-    return fn();
-  }
-  runTask(fn, applyThis, applyArgs, name) {
-    return fn.apply(applyThis, applyArgs);
-  }
-}
-function shouldBeIgnoredByZone(applyArgs) {
-  return hasApplyArgsData(applyArgs, '__ignore_ng_zone__');
-}
-function isSchedulerTick(applyArgs) {
-  return hasApplyArgsData(applyArgs, '__scheduler_tick__');
-}
-function hasApplyArgsData(applyArgs, key) {
-  if (!Array.isArray(applyArgs)) {
-    return false;
-  }
-  // We should only ever get 1 arg passed through to invokeTask.
-  // Short circuit here incase that behavior changes.
-  if (applyArgs.length !== 1) {
-    return false;
-  }
-  return applyArgs[0]?.data?.[key] === true;
-}
-function getNgZone(ngZoneToUse = 'zone.js', options) {
-  if (ngZoneToUse === 'noop') {
-    return new NoopNgZone();
-  }
-  if (ngZoneToUse === 'zone.js') {
-    return new NgZone(options);
-  }
-  return ngZoneToUse;
-}
-
-/**
- * The phase to run an `afterRender` or `afterNextRender` callback in.
- *
- * Callbacks in the same phase run in the order they are registered. Phases run in the
- * following order after each render:
- *
- *   1. `AfterRenderPhase.EarlyRead`
- *   2. `AfterRenderPhase.Write`
- *   3. `AfterRenderPhase.MixedReadWrite`
- *   4. `AfterRenderPhase.Read`
- *
- * Angular is unable to verify or enforce that phases are used correctly, and instead
- * relies on each developer to follow the guidelines documented for each value and
- * carefully choose the appropriate one, refactoring their code if necessary. By doing
- * so, Angular is better able to minimize the performance degradation associated with
- * manual DOM access, ensuring the best experience for the end users of your application
- * or library.
- *
- * @developerPreview
- */
-var AfterRenderPhase = /*#__PURE__*/function (AfterRenderPhase) {
-  /**
-   * Use `AfterRenderPhase.EarlyRead` for callbacks that only need to **read** from the
-   * DOM before a subsequent `AfterRenderPhase.Write` callback, for example to perform
-   * custom layout that the browser doesn't natively support. **Never** use this phase
-   * for callbacks that can write to the DOM or when `AfterRenderPhase.Read` is adequate.
-   *
-   * <div class="alert is-important">
-   *
-   * Using this value can degrade performance.
-   * Instead, prefer using built-in browser functionality when possible.
-   *
-   * </div>
-   */
-  AfterRenderPhase[AfterRenderPhase["EarlyRead"] = 0] = "EarlyRead";
-  /**
-   * Use `AfterRenderPhase.Write` for callbacks that only **write** to the DOM. **Never**
-   * use this phase for callbacks that can read from the DOM.
-   */
-  AfterRenderPhase[AfterRenderPhase["Write"] = 1] = "Write";
-  /**
-   * Use `AfterRenderPhase.MixedReadWrite` for callbacks that read from or write to the
-   * DOM, that haven't been refactored to use a different phase. **Never** use this phase
-   * for callbacks that can use a different phase instead.
-   *
-   * <div class="alert is-critical">
-   *
-   * Using this value can **significantly** degrade performance.
-   * Instead, prefer refactoring into multiple callbacks using a more specific phase.
-   *
-   * </div>
-   */
-  AfterRenderPhase[AfterRenderPhase["MixedReadWrite"] = 2] = "MixedReadWrite";
-  /**
-   * Use `AfterRenderPhase.Read` for callbacks that only **read** from the DOM. **Never**
-   * use this phase for callbacks that can write to the DOM.
-   */
-  AfterRenderPhase[AfterRenderPhase["Read"] = 3] = "Read";
-  return AfterRenderPhase;
-}(AfterRenderPhase || {});
-/** `AfterRenderRef` that does nothing. */
-const NOOP_AFTER_RENDER_REF = {
-  destroy() {}
-};
-/**
- * Register a callback to run once before any userspace `afterRender` or
- * `afterNextRender` callbacks.
- *
- * This function should almost always be used instead of `afterRender` or
- * `afterNextRender` for implementing framework functionality. Consider:
- *
- *   1.) `AfterRenderPhase.EarlyRead` is intended to be used for implementing
- *       custom layout. If the framework itself mutates the DOM after *any*
- *       `AfterRenderPhase.EarlyRead` callbacks are run, the phase can no
- *       longer reliably serve its purpose.
- *
- *   2.) Importing `afterRender` in the framework can reduce the ability for it
- *       to be tree-shaken, and the framework shouldn't need much of the behavior.
- */
-function internalAfterNextRender(callback, options) {
-  const injector = options?.injector ?? inject(Injector);
-  // Similarly to the public `afterNextRender` function, an internal one
-  // is only invoked in a browser as long as the runOnServer option is not set.
-  if (!options?.runOnServer && !isPlatformBrowser(injector)) return;
-  const afterRenderEventManager = injector.get(AfterRenderEventManager);
-  afterRenderEventManager.internalCallbacks.push(callback);
-}
-/**
- * Register a callback to be invoked each time the application
- * finishes rendering.
- *
- * <div class="alert is-critical">
- *
- * You should always explicitly specify a non-default [phase](api/core/AfterRenderPhase), or you
- * risk significant performance degradation.
- *
- * </div>
- *
- * Note that the callback will run
- * - in the order it was registered
- * - once per render
- * - on browser platforms only
- *
- * <div class="alert is-important">
- *
- * Components are not guaranteed to be [hydrated](guide/hydration) before the callback runs.
- * You must use caution when directly reading or writing the DOM and layout.
- *
- * </div>
- *
- * @param callback A callback function to register
- * @param options Options to control the behavior of the callback
- *
- * @usageNotes
- *
- * Use `afterRender` to read or write the DOM after each render.
- *
- * ### Example
- * ```ts
- * @Component({
- *   selector: 'my-cmp',
- *   template: `<span #content>{{ ... }}</span>`,
- * })
- * export class MyComponent {
- *   @ViewChild('content') contentRef: ElementRef;
- *
- *   constructor() {
- *     afterRender(() => {
- *       console.log('content height: ' + this.contentRef.nativeElement.scrollHeight);
- *     }, {phase: AfterRenderPhase.Read});
- *   }
- * }
- * ```
- *
- * @developerPreview
- */
-function afterRender(callback, options) {
-  ngDevMode && assertNotInReactiveContext(afterRender, 'Call `afterRender` outside of a reactive context. For example, schedule the render ' + 'callback inside the component constructor`.');
-  !options && assertInInjectionContext(afterRender);
-  const injector = options?.injector ?? inject(Injector);
-  if (!isPlatformBrowser(injector)) {
-    return NOOP_AFTER_RENDER_REF;
-  }
-  performanceMarkFeature('NgAfterRender');
-  const afterRenderEventManager = injector.get(AfterRenderEventManager);
-  // Lazily initialize the handler implementation, if necessary. This is so that it can be
-  // tree-shaken if `afterRender` and `afterNextRender` aren't used.
-  const callbackHandler = afterRenderEventManager.handler ??= new AfterRenderCallbackHandlerImpl();
-  const phase = options?.phase ?? AfterRenderPhase.MixedReadWrite;
-  const destroy = () => {
-    callbackHandler.unregister(instance);
-    unregisterFn();
-  };
-  const unregisterFn = injector.get(DestroyRef).onDestroy(destroy);
-  const instance = runInInjectionContext(injector, () => new AfterRenderCallback(phase, callback));
-  callbackHandler.register(instance);
-  return {
-    destroy
-  };
-}
-/**
- * Register a callback to be invoked the next time the application
- * finishes rendering.
- *
- * <div class="alert is-critical">
- *
- * You should always explicitly specify a non-default [phase](api/core/AfterRenderPhase), or you
- * risk significant performance degradation.
- *
- * </div>
- *
- * Note that the callback will run
- * - in the order it was registered
- * - on browser platforms only
- *
- * <div class="alert is-important">
- *
- * Components are not guaranteed to be [hydrated](guide/hydration) before the callback runs.
- * You must use caution when directly reading or writing the DOM and layout.
- *
- * </div>
- *
- * @param callback A callback function to register
- * @param options Options to control the behavior of the callback
- *
- * @usageNotes
- *
- * Use `afterNextRender` to read or write the DOM once,
- * for example to initialize a non-Angular library.
- *
- * ### Example
- * ```ts
- * @Component({
- *   selector: 'my-chart-cmp',
- *   template: `<div #chart>{{ ... }}</div>`,
- * })
- * export class MyChartCmp {
- *   @ViewChild('chart') chartRef: ElementRef;
- *   chart: MyChart|null;
- *
- *   constructor() {
- *     afterNextRender(() => {
- *       this.chart = new MyChart(this.chartRef.nativeElement);
- *     }, {phase: AfterRenderPhase.Write});
- *   }
- * }
- * ```
- *
- * @developerPreview
- */
-function afterNextRender(callback, options) {
-  !options && assertInInjectionContext(afterNextRender);
-  const injector = options?.injector ?? inject(Injector);
-  if (!isPlatformBrowser(injector)) {
-    return NOOP_AFTER_RENDER_REF;
-  }
-  performanceMarkFeature('NgAfterNextRender');
-  const afterRenderEventManager = injector.get(AfterRenderEventManager);
-  // Lazily initialize the handler implementation, if necessary. This is so that it can be
-  // tree-shaken if `afterRender` and `afterNextRender` aren't used.
-  const callbackHandler = afterRenderEventManager.handler ??= new AfterRenderCallbackHandlerImpl();
-  const phase = options?.phase ?? AfterRenderPhase.MixedReadWrite;
-  const destroy = () => {
-    callbackHandler.unregister(instance);
-    unregisterFn();
-  };
-  const unregisterFn = injector.get(DestroyRef).onDestroy(destroy);
-  const instance = runInInjectionContext(injector, () => new AfterRenderCallback(phase, () => {
-    destroy();
-    callback();
-  }));
-  callbackHandler.register(instance);
-  return {
-    destroy
-  };
-}
-/**
- * A wrapper around a function to be used as an after render callback.
- */
-class AfterRenderCallback {
-  constructor(phase, callbackFn) {
-    this.phase = phase;
-    this.callbackFn = callbackFn;
-    this.zone = inject(NgZone);
-    this.errorHandler = inject(ErrorHandler, {
-      optional: true
-    });
-    // Registering a callback will notify the scheduler.
-    inject(ChangeDetectionScheduler, {
-      optional: true
-    })?.notify(6 /* NotificationSource.NewRenderHook */);
-  }
-  invoke() {
-    try {
-      this.zone.runOutsideAngular(this.callbackFn);
-    } catch (err) {
-      this.errorHandler?.handleError(err);
-    }
-  }
-}
-/**
- * Core functionality for `afterRender` and `afterNextRender`. Kept separate from
- * `AfterRenderEventManager` for tree-shaking.
- */
-class AfterRenderCallbackHandlerImpl {
-  constructor() {
-    this.executingCallbacks = false;
-    this.buckets = {
-      // Note: the order of these keys controls the order the phases are run.
-      [AfterRenderPhase.EarlyRead]: new Set(),
-      [AfterRenderPhase.Write]: new Set(),
-      [AfterRenderPhase.MixedReadWrite]: new Set(),
-      [AfterRenderPhase.Read]: new Set()
-    };
-    this.deferredCallbacks = new Set();
-  }
-  register(callback) {
-    // If we're currently running callbacks, new callbacks should be deferred
-    // until the next render operation.
-    const target = this.executingCallbacks ? this.deferredCallbacks : this.buckets[callback.phase];
-    target.add(callback);
-  }
-  unregister(callback) {
-    this.buckets[callback.phase].delete(callback);
-    this.deferredCallbacks.delete(callback);
-  }
-  execute() {
-    this.executingCallbacks = true;
-    for (const bucket of Object.values(this.buckets)) {
-      for (const callback of bucket) {
-        callback.invoke();
-      }
-    }
-    this.executingCallbacks = false;
-    for (const callback of this.deferredCallbacks) {
-      this.buckets[callback.phase].add(callback);
-    }
-    this.deferredCallbacks.clear();
-  }
-  destroy() {
-    for (const bucket of Object.values(this.buckets)) {
-      bucket.clear();
-    }
-    this.deferredCallbacks.clear();
-  }
-}
-/**
- * Implements core timing for `afterRender` and `afterNextRender` events.
- * Delegates to an optional `AfterRenderCallbackHandler` for implementation.
- */
-let AfterRenderEventManager = /*#__PURE__*/(() => {
-  class AfterRenderEventManager {
-    constructor() {
-      /* @internal */
-      this.handler = null;
-      /* @internal */
-      this.internalCallbacks = [];
-    }
-    /**
-     * Executes internal and user-provided callbacks.
-     */
-    execute() {
-      this.executeInternalCallbacks();
-      this.handler?.execute();
-    }
-    executeInternalCallbacks() {
-      // Note: internal callbacks power `internalAfterNextRender`. Since internal callbacks
-      // are fairly trivial, they are kept separate so that `AfterRenderCallbackHandlerImpl`
-      // can still be tree-shaken unless used by the application.
-      const callbacks = [...this.internalCallbacks];
-      this.internalCallbacks.length = 0;
-      for (const callback of callbacks) {
-        callback();
-      }
-    }
-    ngOnDestroy() {
-      this.handler?.destroy();
-      this.handler = null;
-      this.internalCallbacks.length = 0;
-    }
-    /** @nocollapse */
-    static {
-      this.ɵprov = ɵɵdefineInjectable({
-        token: AfterRenderEventManager,
-        providedIn: 'root',
-        factory: () => new AfterRenderEventManager()
-      });
-    }
-  }
-  return AfterRenderEventManager;
 })();
 function isModuleWithProviders(value) {
   return value.ngModule !== undefined;
@@ -30759,7 +30466,7 @@ class ComponentFactoryResolver extends ComponentFactoryResolver$1 {
     return new ComponentFactory(componentDef, this.ngModule);
   }
 }
-function toRefArray(map) {
+function toRefArray(map, isInputMap) {
   const array = [];
   for (const publicName in map) {
     if (!map.hasOwnProperty(publicName)) {
@@ -30769,10 +30476,21 @@ function toRefArray(map) {
     if (value === undefined) {
       continue;
     }
-    array.push({
-      propName: Array.isArray(value) ? value[0] : value,
-      templateName: publicName
-    });
+    const isArray = Array.isArray(value);
+    const propName = isArray ? value[0] : value;
+    const flags = isArray ? value[1] : InputFlags.None;
+    if (isInputMap) {
+      array.push({
+        propName: propName,
+        templateName: publicName,
+        isSignal: (flags & InputFlags.SignalBased) !== 0
+      });
+    } else {
+      array.push({
+        propName: propName,
+        templateName: publicName
+      });
+    }
   }
   return array;
 }
@@ -30787,7 +30505,7 @@ class ComponentFactory extends ComponentFactory$1 {
   get inputs() {
     const componentDef = this.componentDef;
     const inputTransforms = componentDef.inputTransforms;
-    const refArray = toRefArray(componentDef.inputs);
+    const refArray = toRefArray(componentDef.inputs, true);
     if (inputTransforms !== null) {
       for (const input of refArray) {
         if (inputTransforms.hasOwnProperty(input.propName)) {
@@ -30798,7 +30516,7 @@ class ComponentFactory extends ComponentFactory$1 {
     return refArray;
   }
   get outputs() {
-    return toRefArray(this.componentDef.outputs);
+    return toRefArray(this.componentDef.outputs, false);
   }
   /**
    * @param componentDef The component definition.
@@ -30833,14 +30551,12 @@ class ComponentFactory extends ComponentFactory$1 {
         throw new RuntimeError(407 /* RuntimeErrorCode.RENDERER_NOT_FOUND */, ngDevMode && 'Angular was not able to inject a renderer (RendererFactory2). ' + 'Likely this is due to a broken DI hierarchy. ' + 'Make sure that any injector used to create this component has a correct parent.');
       }
       const sanitizer = rootViewInjector.get(Sanitizer, null);
-      const afterRenderEventManager = rootViewInjector.get(AfterRenderEventManager, null);
       const changeDetectionScheduler = rootViewInjector.get(ChangeDetectionScheduler, null);
       const environment = {
         rendererFactory,
         sanitizer,
         // We don't use inline effects (yet).
         inlineEffectRunner: null,
-        afterRenderEventManager,
         changeDetectionScheduler
       };
       const hostRenderer = rendererFactory.createRenderer(null, this.componentDef);
@@ -30870,6 +30586,7 @@ class ComponentFactory extends ComponentFactory$1 {
       enterView(rootLView);
       let component;
       let tElementNode;
+      let componentView = null;
       try {
         const rootComponentDef = this.componentDef;
         let rootDirectives;
@@ -30884,7 +30601,7 @@ class ComponentFactory extends ComponentFactory$1 {
           rootDirectives = [rootComponentDef];
         }
         const hostTNode = createRootComponentTNode(rootLView, hostRNode);
-        const componentView = createRootComponentView(hostTNode, hostRNode, rootComponentDef, rootDirectives, rootLView, environment, hostRenderer);
+        componentView = createRootComponentView(hostTNode, hostRNode, rootComponentDef, rootDirectives, rootLView, environment, hostRenderer);
         tElementNode = getTNode(rootTView, HEADER_OFFSET);
         // TODO(crisbeto): in practice `hostRNode` should always be defined, but there are some
         // tests where the renderer is mocked out and `undefined` is returned. We should update the
@@ -30899,6 +30616,14 @@ class ComponentFactory extends ComponentFactory$1 {
         // and executed here? Angular 5 reference: https://stackblitz.com/edit/lifecycle-hooks-vcref
         component = createRootComponent(componentView, rootComponentDef, rootDirectives, hostDirectiveDefs, rootLView, [LifecycleHooksFeature]);
         renderView(rootTView, rootLView, null);
+      } catch (e) {
+        // Stop tracking the views if creation failed since
+        // the consumer won't have a way to dereference them.
+        if (componentView !== null) {
+          unregisterLView(componentView);
+        }
+        unregisterLView(rootLView);
+        throw e;
       } finally {
         leaveView();
       }
@@ -31058,7 +30783,7 @@ function createRootComponent(componentView, rootComponentDef, rootDirectives, ho
 function setRootNodeAttributes(hostRenderer, componentDef, hostRNode, rootSelectorOrNode) {
   if (rootSelectorOrNode) {
     // The placeholder will be replaced with the actual version at build time.
-    setUpAttributes(hostRenderer, hostRNode, ['ng-version', '18.0.5']);
+    setUpAttributes(hostRenderer, hostRNode, ['ng-version', '18.2.9']);
   } else {
     // If host element is created as a part of this function call (i.e. `rootSelectorOrNode`
     // is not defined), also apply attributes and classes extracted from component selector.
@@ -31907,6 +31632,26 @@ function getQueryResults(lView, queryIndex) {
   const tView = lView[TVIEW];
   const tQuery = getTQuery(tView, queryIndex);
   return tQuery.crossesNgTemplate ? collectQueryResults(tView, lView, queryIndex, []) : materializeViewResults(tView, lView, tQuery, queryIndex);
+}
+const markedFeatures = /*#__PURE__*/new Set();
+// tslint:disable:ban
+/**
+ * A guarded `performance.mark` for feature marking.
+ *
+ * This method exists because while all supported browser and node.js version supported by Angular
+ * support performance.mark API. This is not the case for other environments such as JSDOM and
+ * Cloudflare workers.
+ */
+function performanceMarkFeature(feature) {
+  if (markedFeatures.has(feature)) {
+    return;
+  }
+  markedFeatures.add(feature);
+  performance?.mark?.('mark_feature_usage', {
+    detail: {
+      feature
+    }
+  });
 }
 
 /**
@@ -32981,8 +32726,9 @@ function createNgModule(ngModule, parentInjector) {
  */
 const createNgModuleRef = createNgModule;
 class NgModuleRef extends NgModuleRef$1 {
-  constructor(ngModuleType, _parent, additionalProviders) {
+  constructor(ngModuleType, _parent, additionalProviders, runInjectorInitializers = true) {
     super();
+    this.ngModuleType = ngModuleType;
     this._parent = _parent;
     // tslint:disable-next-line:require-internal-with-underscore
     this._bootstrapComponents = [];
@@ -33007,8 +32753,13 @@ class NgModuleRef extends NgModuleRef$1 {
     // We need to resolve the injector types separately from the injector creation, because
     // the module might be trying to use this ref in its constructor for DI which will cause a
     // circular error that will eventually error out, because the injector isn't created yet.
+    if (runInjectorInitializers) {
+      this.resolveInjectorInitializers();
+    }
+  }
+  resolveInjectorInitializers() {
     this._r3Injector.resolveInjectorInitializers();
-    this.instance = this._r3Injector.get(ngModuleType);
+    this.instance = this._r3Injector.get(this.ngModuleType);
   }
   get injector() {
     return this._r3Injector;
@@ -33035,7 +32786,7 @@ class NgModuleFactory extends NgModuleFactory$1 {
   }
 }
 function createNgModuleRefWithProviders(moduleType, parentInjector, additionalProviders) {
-  return new NgModuleRef(moduleType, parentInjector, additionalProviders);
+  return new NgModuleRef(moduleType, parentInjector, additionalProviders, false);
 }
 class EnvironmentNgModuleRefAdapter extends NgModuleRef$1 {
   constructor(config) {
@@ -33457,7 +33208,7 @@ var DeferBlockBehavior = /*#__PURE__*/function (DeferBlockBehavior) {
  * Copyright Google LLC All Rights Reserved.
  *
  * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
+ * found in the LICENSE file at https://angular.dev/license
  */
 /**
  * Registers a cleanup function associated with a prefetching trigger
@@ -33491,7 +33242,263 @@ function invokeAllTriggerCleanupFns(lDetails) {
   invokeTriggerCleanupFns(0 /* TriggerType.Regular */, lDetails);
 }
 
-// Public API for Zone
+/**
+ * Asserts that the current stack frame is not within a reactive context. Useful
+ * to disallow certain code from running inside a reactive context (see {@link toSignal}).
+ *
+ * @param debugFn a reference to the function making the assertion (used for the error message).
+ *
+ * @publicApi
+ */
+function assertNotInReactiveContext(debugFn, extraContext) {
+  // Taking a `Function` instead of a string name here prevents the un-minified name of the function
+  // from being retained in the bundle regardless of minification.
+  if ((0,_angular_core_primitives_signals__WEBPACK_IMPORTED_MODULE_0__.getActiveConsumer)() !== null) {
+    throw new RuntimeError(-602 /* RuntimeErrorCode.ASSERTION_NOT_INSIDE_REACTIVE_CONTEXT */, ngDevMode && `${debugFn.name}() cannot be called from within a reactive context.${extraContext ? ` ${extraContext}` : ''}`);
+  }
+}
+
+/**
+ * The phase to run an `afterRender` or `afterNextRender` callback in.
+ *
+ * Callbacks in the same phase run in the order they are registered. Phases run in the
+ * following order after each render:
+ *
+ *   1. `AfterRenderPhase.EarlyRead`
+ *   2. `AfterRenderPhase.Write`
+ *   3. `AfterRenderPhase.MixedReadWrite`
+ *   4. `AfterRenderPhase.Read`
+ *
+ * Angular is unable to verify or enforce that phases are used correctly, and instead
+ * relies on each developer to follow the guidelines documented for each value and
+ * carefully choose the appropriate one, refactoring their code if necessary. By doing
+ * so, Angular is better able to minimize the performance degradation associated with
+ * manual DOM access, ensuring the best experience for the end users of your application
+ * or library.
+ *
+ * @deprecated Specify the phase for your callback to run in by passing a spec-object as the first
+ *   parameter to `afterRender` or `afterNextRender` instead of a function.
+ */
+var AfterRenderPhase = /*#__PURE__*/function (AfterRenderPhase) {
+  /**
+   * Use `AfterRenderPhase.EarlyRead` for callbacks that only need to **read** from the
+   * DOM before a subsequent `AfterRenderPhase.Write` callback, for example to perform
+   * custom layout that the browser doesn't natively support. Prefer the
+   * `AfterRenderPhase.EarlyRead` phase if reading can wait until after the write phase.
+   * **Never** write to the DOM in this phase.
+   *
+   * <div class="alert is-important">
+   *
+   * Using this value can degrade performance.
+   * Instead, prefer using built-in browser functionality when possible.
+   *
+   * </div>
+   */
+  AfterRenderPhase[AfterRenderPhase["EarlyRead"] = 0] = "EarlyRead";
+  /**
+   * Use `AfterRenderPhase.Write` for callbacks that only **write** to the DOM. **Never**
+   * read from the DOM in this phase.
+   */
+  AfterRenderPhase[AfterRenderPhase["Write"] = 1] = "Write";
+  /**
+   * Use `AfterRenderPhase.MixedReadWrite` for callbacks that read from or write to the
+   * DOM, that haven't been refactored to use a different phase. **Never** use this phase if
+   * it is possible to divide the work among the other phases instead.
+   *
+   * <div class="alert is-critical">
+   *
+   * Using this value can **significantly** degrade performance.
+   * Instead, prefer dividing work into the appropriate phase callbacks.
+   *
+   * </div>
+   */
+  AfterRenderPhase[AfterRenderPhase["MixedReadWrite"] = 2] = "MixedReadWrite";
+  /**
+   * Use `AfterRenderPhase.Read` for callbacks that only **read** from the DOM. **Never**
+   * write to the DOM in this phase.
+   */
+  AfterRenderPhase[AfterRenderPhase["Read"] = 3] = "Read";
+  return AfterRenderPhase;
+}(AfterRenderPhase || {});
+let AfterRenderManager = /*#__PURE__*/(() => {
+  class AfterRenderManager {
+    constructor() {
+      this.impl = null;
+    }
+    execute() {
+      this.impl?.execute();
+    }
+    /** @nocollapse */
+    static {
+      this.ɵprov = ɵɵdefineInjectable({
+        token: AfterRenderManager,
+        providedIn: 'root',
+        factory: () => new AfterRenderManager()
+      });
+    }
+  }
+  return AfterRenderManager;
+})();
+class AfterRenderImpl {
+  constructor() {
+    this.ngZone = inject(NgZone);
+    this.scheduler = inject(ChangeDetectionScheduler);
+    this.errorHandler = inject(ErrorHandler, {
+      optional: true
+    });
+    /** Current set of active sequences. */
+    this.sequences = new Set();
+    /** Tracks registrations made during the current set of executions. */
+    this.deferredRegistrations = new Set();
+    /** Whether the `AfterRenderManager` is currently executing hooks. */
+    this.executing = false;
+  }
+  static {
+    this.PHASES = [AfterRenderPhase.EarlyRead, AfterRenderPhase.Write, AfterRenderPhase.MixedReadWrite, AfterRenderPhase.Read];
+  }
+  /**
+   * Run the sequence of phases of hooks, once through. As a result of executing some hooks, more
+   * might be scheduled.
+   */
+  execute() {
+    this.executing = true;
+    for (const phase of AfterRenderImpl.PHASES) {
+      for (const sequence of this.sequences) {
+        if (sequence.erroredOrDestroyed || !sequence.hooks[phase]) {
+          continue;
+        }
+        try {
+          sequence.pipelinedValue = this.ngZone.runOutsideAngular(() => sequence.hooks[phase](sequence.pipelinedValue));
+        } catch (err) {
+          sequence.erroredOrDestroyed = true;
+          this.errorHandler?.handleError(err);
+        }
+      }
+    }
+    this.executing = false;
+    // Cleanup step to reset sequence state and also collect one-shot sequences for removal.
+    for (const sequence of this.sequences) {
+      sequence.afterRun();
+      if (sequence.once) {
+        this.sequences.delete(sequence);
+        // Destroy the sequence so its on destroy callbacks can be cleaned up
+        // immediately, instead of waiting until the injector is destroyed.
+        sequence.destroy();
+      }
+    }
+    for (const sequence of this.deferredRegistrations) {
+      this.sequences.add(sequence);
+    }
+    if (this.deferredRegistrations.size > 0) {
+      this.scheduler.notify(7 /* NotificationSource.DeferredRenderHook */);
+    }
+    this.deferredRegistrations.clear();
+  }
+  register(sequence) {
+    if (!this.executing) {
+      this.sequences.add(sequence);
+      // Trigger an `ApplicationRef.tick()` if one is not already pending/running, because we have a
+      // new render hook that needs to run.
+      this.scheduler.notify(6 /* NotificationSource.RenderHook */);
+    } else {
+      this.deferredRegistrations.add(sequence);
+    }
+  }
+  unregister(sequence) {
+    if (this.executing && this.sequences.has(sequence)) {
+      // We can't remove an `AfterRenderSequence` in the middle of iteration.
+      // Instead, mark it as destroyed so it doesn't run any more, and mark it as one-shot so it'll
+      // be removed at the end of the current execution.
+      sequence.erroredOrDestroyed = true;
+      sequence.pipelinedValue = undefined;
+      sequence.once = true;
+    } else {
+      // It's safe to directly remove this sequence.
+      this.sequences.delete(sequence);
+      this.deferredRegistrations.delete(sequence);
+    }
+  }
+  /** @nocollapse */
+  static {
+    this.ɵprov = /*#__PURE__*/ɵɵdefineInjectable({
+      token: AfterRenderImpl,
+      providedIn: 'root',
+      factory: () => new AfterRenderImpl()
+    });
+  }
+}
+class AfterRenderSequence {
+  constructor(impl, hooks, once, destroyRef) {
+    this.impl = impl;
+    this.hooks = hooks;
+    this.once = once;
+    /**
+     * Whether this sequence errored or was destroyed during this execution, and hooks should no
+     * longer run for it.
+     */
+    this.erroredOrDestroyed = false;
+    /**
+     * The value returned by the last hook execution (if any), ready to be pipelined into the next
+     * one.
+     */
+    this.pipelinedValue = undefined;
+    this.unregisterOnDestroy = destroyRef?.onDestroy(() => this.destroy());
+  }
+  afterRun() {
+    this.erroredOrDestroyed = false;
+    this.pipelinedValue = undefined;
+  }
+  destroy() {
+    this.impl.unregister(this);
+    this.unregisterOnDestroy?.();
+  }
+}
+function afterRender(callbackOrSpec, options) {
+  ngDevMode && assertNotInReactiveContext(afterRender, 'Call `afterRender` outside of a reactive context. For example, schedule the render ' + 'callback inside the component constructor`.');
+  !options?.injector && assertInInjectionContext(afterRender);
+  const injector = options?.injector ?? inject(Injector);
+  if (!isPlatformBrowser(injector)) {
+    return NOOP_AFTER_RENDER_REF;
+  }
+  performanceMarkFeature('NgAfterRender');
+  return afterRenderImpl(callbackOrSpec, injector, options, /* once */false);
+}
+function afterNextRender(callbackOrSpec, options) {
+  !options?.injector && assertInInjectionContext(afterNextRender);
+  const injector = options?.injector ?? inject(Injector);
+  if (!isPlatformBrowser(injector)) {
+    return NOOP_AFTER_RENDER_REF;
+  }
+  performanceMarkFeature('NgAfterNextRender');
+  return afterRenderImpl(callbackOrSpec, injector, options, /* once */true);
+}
+function getHooks(callbackOrSpec, phase) {
+  if (callbackOrSpec instanceof Function) {
+    const hooks = [undefined, undefined, undefined, undefined];
+    hooks[phase] = callbackOrSpec;
+    return hooks;
+  } else {
+    return [callbackOrSpec.earlyRead, callbackOrSpec.write, callbackOrSpec.mixedReadWrite, callbackOrSpec.read];
+  }
+}
+/**
+ * Shared implementation for `afterRender` and `afterNextRender`.
+ */
+function afterRenderImpl(callbackOrSpec, injector, options, once) {
+  const manager = injector.get(AfterRenderManager);
+  // Lazily initialize the handler implementation, if necessary. This is so that it can be
+  // tree-shaken if `afterRender` and `afterNextRender` aren't used.
+  manager.impl ??= injector.get(AfterRenderImpl);
+  const hooks = options?.phase ?? AfterRenderPhase.MixedReadWrite;
+  const destroyRef = options?.manualCleanup !== true ? injector.get(DestroyRef) : null;
+  const sequence = new AfterRenderSequence(manager.impl, getHooks(callbackOrSpec, hooks), once, destroyRef);
+  manager.impl.register(sequence);
+  return sequence;
+}
+/** `AfterRenderRef` that does nothing. */
+const NOOP_AFTER_RENDER_REF = {
+  destroy() {}
+};
 
 /**
  * Calculates a data slot index for defer block info (either static or
@@ -33606,7 +33613,7 @@ function isTDeferBlockDetails(value) {
  * Copyright Google LLC All Rights Reserved.
  *
  * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
+ * found in the LICENSE file at https://angular.dev/license
  */
 /** Configuration object used to register passive and capturing events. */
 const eventListenerOptions = {
@@ -33805,6 +33812,7 @@ function getTriggerElement(triggerLView, triggerIndex) {
  */
 function registerDomTrigger(initialLView, tNode, triggerIndex, walkUpTimes, registerFn, callback, type) {
   const injector = initialLView[INJECTOR];
+  const zone = injector.get(NgZone);
   function pollDomTrigger() {
     // If the initial view was destroyed, we don't need to do anything.
     if (isDestroyed(initialLView)) {
@@ -33819,7 +33827,9 @@ function registerDomTrigger(initialLView, tNode, triggerIndex, walkUpTimes, regi
     const triggerLView = getTriggerLView(initialLView, tNode, walkUpTimes);
     // Keep polling until we resolve the trigger's LView.
     if (!triggerLView) {
-      internalAfterNextRender(pollDomTrigger, {
+      afterNextRender({
+        read: pollDomTrigger
+      }, {
         injector
       });
       return;
@@ -33830,10 +33840,14 @@ function registerDomTrigger(initialLView, tNode, triggerIndex, walkUpTimes, regi
     }
     const element = getTriggerElement(triggerLView, triggerIndex);
     const cleanup = registerFn(element, () => {
-      if (initialLView !== triggerLView) {
-        removeLViewOnDestroy(triggerLView, cleanup);
-      }
-      callback();
+      // `pollDomTrigger` runs outside the zone (because of `afterNextRender`) and registers its
+      // listeners outside the zone, so we jump back into the zone prior to running the callback.
+      zone.run(() => {
+        if (initialLView !== triggerLView) {
+          removeLViewOnDestroy(triggerLView, cleanup);
+        }
+        callback();
+      });
     }, injector);
     // The trigger and deferred block might be in different LViews.
     // For the main LView the cleanup would happen as a part of
@@ -33846,7 +33860,9 @@ function registerDomTrigger(initialLView, tNode, triggerIndex, walkUpTimes, regi
     storeTriggerCleanupFn(type, lDetails, cleanup);
   }
   // Begin polling for the trigger.
-  internalAfterNextRender(pollDomTrigger, {
+  afterNextRender({
+    read: pollDomTrigger
+  }, {
     injector
   });
 }
@@ -34543,17 +34559,53 @@ function renderDeferBlockState(newState, tNode, lContainer, skipTimerScheduling 
   }
 }
 /**
- * Creates an instance of the `OutletInjector` using a private factory
- * function available on the `OutletInjector` class.
- *
- * @param parentOutletInjector Parent OutletInjector, which should be used
- *                             to produce a new instance.
- * @param parentInjector An Injector, which should be used as a parent one
- *                       for a newly created `OutletInjector` instance.
+ * Checks whether there is a cached injector associated with a given defer block
+ * declaration and returns if it exists. If there is no cached injector present -
+ * creates a new injector and stores in the cache.
  */
-function createRouterOutletInjector(parentOutletInjector, parentInjector) {
-  const outletInjector = parentOutletInjector.injector;
-  return outletInjector.__ngOutletInjector(parentInjector);
+function getOrCreateEnvironmentInjector(parentInjector, tDetails, providers) {
+  return parentInjector.get(CachedInjectorService).getOrCreateInjector(tDetails, parentInjector, providers, ngDevMode ? 'DeferBlock Injector' : '');
+}
+/**
+ * Creates a new injector, which contains providers collected from dependencies (NgModules) of
+ * defer-loaded components. This function detects different types of parent injectors and creates
+ * a new injector based on that.
+ */
+function createDeferBlockInjector(parentInjector, tDetails, providers) {
+  // Check if the parent injector is an instance of a `ChainedInjector`.
+  //
+  // In this case, we retain the shape of the injector and use a newly created
+  // `EnvironmentInjector` as a parent in the `ChainedInjector`. That is needed to
+  // make sure that the primary injector gets consulted first (since it's typically
+  // a NodeInjector) and `EnvironmentInjector` tree is consulted after that.
+  if (parentInjector instanceof ChainedInjector) {
+    const origInjector = parentInjector.injector;
+    // Guaranteed to be an environment injector
+    const parentEnvInjector = parentInjector.parentInjector;
+    const envInjector = getOrCreateEnvironmentInjector(parentEnvInjector, tDetails, providers);
+    return new ChainedInjector(origInjector, envInjector);
+  }
+  const parentEnvInjector = parentInjector.get(EnvironmentInjector);
+  // If the `parentInjector` is *not* an `EnvironmentInjector` - we need to create
+  // a new `ChainedInjector` with the following setup:
+  //
+  //  - the provided `parentInjector` becomes a primary injector
+  //  - an existing (real) `EnvironmentInjector` becomes a parent injector for
+  //    a newly-created one, which contains extra providers
+  //
+  // So the final order in which injectors would be consulted in this case would look like this:
+  //
+  //  1. Provided `parentInjector`
+  //  2. Newly-created `EnvironmentInjector` with extra providers
+  //  3. `EnvironmentInjector` from the `parentInjector`
+  if (parentEnvInjector !== parentInjector) {
+    const envInjector = getOrCreateEnvironmentInjector(parentEnvInjector, tDetails, providers);
+    return new ChainedInjector(parentInjector, envInjector);
+  }
+  // The `parentInjector` is an instance of an `EnvironmentInjector`.
+  // No need for special handling, we can use `parentInjector` as a
+  // parent injector directly.
+  return getOrCreateEnvironmentInjector(parentInjector, tDetails, providers);
 }
 /**
  * Applies changes to the DOM to reflect a given state.
@@ -34575,28 +34627,12 @@ function applyDeferBlockState(newState, lDetails, lContainer, tNode, hostLView) 
       // newly loaded standalone components used within the block, which may
       // import NgModules with providers. In order to make those providers
       // available for components declared in that NgModule, we create an instance
-      // of environment injector to host those providers and pass this injector
+      // of an environment injector to host those providers and pass this injector
       // to the logic that creates a view.
       const tDetails = getTDeferBlockDetails(hostTView, tNode);
       const providers = tDetails.providers;
       if (providers && providers.length > 0) {
-        const parentInjector = hostLView[INJECTOR];
-        // Note: we have a special case for Router's `OutletInjector`,
-        // since it's not an instance of the `EnvironmentInjector`, so
-        // we can't inject it. Once the `OutletInjector` is replaced
-        // with the `EnvironmentInjector` in Router's code, this special
-        // handling can be removed.
-        const isParentOutletInjector = isRouterOutletInjector(parentInjector);
-        const parentEnvInjector = isParentOutletInjector ? parentInjector : parentInjector.get(EnvironmentInjector);
-        injector = parentEnvInjector.get(CachedInjectorService).getOrCreateInjector(tDetails, parentEnvInjector, providers, ngDevMode ? 'DeferBlock Injector' : '');
-        // Note: this is a continuation of the special case for Router's `OutletInjector`.
-        // Since the `OutletInjector` handles `ActivatedRoute` and `ChildrenOutletContexts`
-        // dynamically (i.e. their values are not really stored statically in an injector),
-        // we need to "wrap" a defer injector into another `OutletInjector`, so we retain
-        // the dynamic resolution of the mentioned tokens.
-        if (isParentOutletInjector) {
-          injector = createRouterOutletInjector(parentInjector, injector);
-        }
+        injector = createDeferBlockInjector(hostLView[INJECTOR], tDetails, providers);
       }
     }
     const dehydratedView = findMatchingDehydratedView(lContainer, activeBlockTNode.tView.ssrId);
@@ -37157,7 +37193,7 @@ function ɵɵclassMapInterpolateV(values) {
  * Copyright Google LLC All Rights Reserved.
  *
  * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
+ * found in the LICENSE file at https://angular.dev/license
  */
 /**
  * Instruction that returns the component instance in which the current instruction is executing.
@@ -38082,7 +38118,7 @@ let _locateOrCreateElementContainerNode = (tView, lView, tNode, index) => {
 function locateOrCreateElementContainerNode(tView, lView, tNode, index) {
   let comment;
   const hydrationInfo = lView[HYDRATION];
-  const isNodeCreationMode = !hydrationInfo || isInSkipHydrationBlock$1() || isDetachedByI18n(tNode);
+  const isNodeCreationMode = !hydrationInfo || isInSkipHydrationBlock$1() || isDisconnectedNode$1(hydrationInfo, index) || isDetachedByI18n(tNode);
   lastNodeWasCreated(isNodeCreationMode);
   // Regular creation mode.
   if (isNodeCreationMode) {
@@ -39146,7 +39182,8 @@ function i18nStartFirstCreatePass(tView, parentTNodeIndex, lView, index, message
   tView.data[index] = {
     create: createOpCodes,
     update: updateOpCodes,
-    ast: astStack[0]
+    ast: astStack[0],
+    parentTNodeIndex
   };
 }
 /**
@@ -41899,7 +41936,7 @@ function ɵɵtextInterpolateV(values) {
  * Copyright Google LLC All Rights Reserved.
  *
  * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
+ * found in the LICENSE file at https://angular.dev/license
  */
 /**
  * Update a two-way bound property on a selected element.
@@ -41963,7 +42000,7 @@ function ɵɵtwoWayListener(eventName, listenerFn) {
  * Copyright Google LLC All Rights Reserved.
  *
  * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
+ * found in the LICENSE file at https://angular.dev/license
  */
 /** Object that indicates the value of a `@let` declaration that hasn't been initialized yet. */
 const UNINITIALIZED_LET = {};
@@ -44374,7 +44411,7 @@ class Version {
 /**
  * @publicApi
  */
-const VERSION = /*#__PURE__*/new Version('18.0.5');
+const VERSION = /*#__PURE__*/new Version('18.2.9');
 
 /*
  * This file exists to support compilation of @angular/core in Ivy mode.
@@ -44407,8 +44444,8 @@ let Console = /*#__PURE__*/(() => {
       console.warn(message);
     }
     static {
-      this.ɵfac = function Console_Factory(t) {
-        return new (t || Console)();
+      this.ɵfac = function Console_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || Console)();
       };
     }
     static {
@@ -44605,7 +44642,8 @@ function handleInstanceCreatedByInjectorEvent(context, data) {
   if (typeof value === 'object') {
     standaloneComponent = value?.constructor;
   }
-  if (standaloneComponent === undefined || !isStandaloneComponent(standaloneComponent)) {
+  // We want to also cover if `standaloneComponent === null` in addition to `undefined`
+  if (standaloneComponent == undefined || !isStandaloneComponent(standaloneComponent)) {
     return;
   }
   const environmentInjector = context.injector.get(EnvironmentInjector, null, {
@@ -45527,8 +45565,8 @@ let Testability = /*#__PURE__*/(() => {
       return [];
     }
     static {
-      this.ɵfac = function Testability_Factory(t) {
-        return new (t || Testability)(ɵɵinject(NgZone), ɵɵinject(TestabilityRegistry), ɵɵinject(TESTABILITY_GETTER));
+      this.ɵfac = function Testability_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || Testability)(ɵɵinject(NgZone), ɵɵinject(TestabilityRegistry), ɵɵinject(TESTABILITY_GETTER));
       };
     }
     static {
@@ -45615,8 +45653,8 @@ let TestabilityRegistry = /*#__PURE__*/(() => {
       return _testabilityGetter?.findTestabilityInTree(this, elem, findInAncestors) ?? null;
     }
     static {
-      this.ɵfac = function TestabilityRegistry_Factory(t) {
-        return new (t || TestabilityRegistry)();
+      this.ɵfac = function TestabilityRegistry_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || TestabilityRegistry)();
       };
     }
     static {
@@ -45838,8 +45876,8 @@ let ApplicationInitStatus = /*#__PURE__*/(() => {
       this.initialized = true;
     }
     static {
-      this.ɵfac = function ApplicationInitStatus_Factory(t) {
-        return new (t || ApplicationInitStatus)();
+      this.ɵfac = function ApplicationInitStatus_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || ApplicationInitStatus)();
       };
     }
     static {
@@ -46030,8 +46068,23 @@ let ApplicationRef = /*#__PURE__*/(() => {
       /** @internal */
       this._views = [];
       this.internalErrorHandler = inject(INTERNAL_APPLICATION_ERROR_HANDLER);
-      this.afterRenderEffectManager = inject(AfterRenderEventManager);
+      this.afterRenderManager = inject(AfterRenderManager);
       this.zonelessEnabled = inject(ZONELESS_ENABLED);
+      /**
+       * Current dirty state of the application across a number of dimensions (views, afterRender hooks,
+       * etc).
+       *
+       * A flag set here means that `tick()` will attempt to resolve the dirtiness when executed.
+       *
+       * @internal
+       */
+      this.dirtyFlags = 0 /* ApplicationRefDirtyFlags.None */;
+      /**
+       * Like `dirtyFlags` but don't cause `tick()` to loop.
+       *
+       * @internal
+       */
+      this.deferredDirtyFlags = 0 /* ApplicationRefDirtyFlags.None */;
       // Needed for ComponentFixture temporarily during migration of autoDetect behavior
       // Eventually the hostView of the fixture should just attach to ApplicationRef.
       this.externalTestViews = new Set();
@@ -46062,6 +46115,23 @@ let ApplicationRef = /*#__PURE__*/(() => {
      */
     get destroyed() {
       return this._destroyed;
+    }
+    /**
+     * @returns A promise that resolves when the application becomes stable
+     */
+    whenStable() {
+      let subscription;
+      return new Promise(resolve => {
+        subscription = this.isStable.subscribe({
+          next: stable => {
+            if (stable) {
+              resolve();
+            }
+          }
+        });
+      }).finally(() => {
+        subscription.unsubscribe();
+      });
     }
     /**
      * The `EnvironmentInjector` used to create this application.
@@ -46153,10 +46223,13 @@ let ApplicationRef = /*#__PURE__*/(() => {
      * detection pass during which all change detection must complete.
      */
     tick() {
-      this._tick(true);
+      if (!this.zonelessEnabled) {
+        this.dirtyFlags |= 1 /* ApplicationRefDirtyFlags.ViewTreeGlobal */;
+      }
+      this._tick();
     }
     /** @internal */
-    _tick(refreshViews) {
+    _tick() {
       (typeof ngDevMode === 'undefined' || ngDevMode) && this.warnIfDestroyed();
       if (this._runningTick) {
         throw new RuntimeError(101 /* RuntimeErrorCode.RECURSIVE_APPLICATION_REF_TICK */, ngDevMode && 'ApplicationRef.tick is called recursively');
@@ -46164,7 +46237,7 @@ let ApplicationRef = /*#__PURE__*/(() => {
       const prevConsumer = (0,_angular_core_primitives_signals__WEBPACK_IMPORTED_MODULE_0__.setActiveConsumer)(null);
       try {
         this._runningTick = true;
-        this.detectChangesInAttachedViews(refreshViews);
+        this.synchronize();
         if (typeof ngDevMode === 'undefined' || ngDevMode) {
           for (let view of this._views) {
             view.checkNoChanges();
@@ -46179,53 +46252,102 @@ let ApplicationRef = /*#__PURE__*/(() => {
         this.afterTick.next();
       }
     }
-    detectChangesInAttachedViews(refreshViews) {
+    /**
+     * Performs the core work of synchronizing the application state with the UI, resolving any
+     * pending dirtiness (potentially in a loop).
+     */
+    synchronize() {
       let rendererFactory = null;
       if (!this._injector.destroyed) {
         rendererFactory = this._injector.get(RendererFactory2, null, {
           optional: true
         });
       }
+      // When beginning synchronization, all deferred dirtiness becomes active dirtiness.
+      this.dirtyFlags |= this.deferredDirtyFlags;
+      this.deferredDirtyFlags = 0 /* ApplicationRefDirtyFlags.None */;
       let runs = 0;
-      const afterRenderEffectManager = this.afterRenderEffectManager;
-      while (runs < MAXIMUM_REFRESH_RERUNS) {
-        const isFirstPass = runs === 0;
-        // Some notifications to run a `tick` will only trigger render hooks. so we skip refreshing views the first time through.
-        // After the we execute render hooks in the first pass, we loop while views are marked dirty and should refresh them.
-        if (refreshViews || !isFirstPass) {
-          this.beforeRender.next(isFirstPass);
-          for (let {
-            _lView,
-            notifyErrorHandler
-          } of this._views) {
-            detectChangesInViewIfRequired(_lView, notifyErrorHandler, isFirstPass, this.zonelessEnabled);
-          }
-        } else {
-          // If we skipped refreshing views above, there might still be unflushed animations
-          // because we never called `detectChangesInternal` on the views.
-          rendererFactory?.begin?.();
-          rendererFactory?.end?.();
-        }
-        runs++;
-        afterRenderEffectManager.executeInternalCallbacks();
-        // If we have a newly dirty view after running internal callbacks, recheck the views again
-        // before running user-provided callbacks
-        if (this.allViews.some(({
-          _lView
-        }) => requiresRefreshOrTraversal(_lView))) {
-          continue;
-        }
-        afterRenderEffectManager.execute();
-        // If after running all afterRender callbacks we have no more views that need to be refreshed,
-        // we can break out of the loop
-        if (!this.allViews.some(({
-          _lView
-        }) => requiresRefreshOrTraversal(_lView))) {
-          break;
-        }
+      while (this.dirtyFlags !== 0 /* ApplicationRefDirtyFlags.None */ && runs++ < MAXIMUM_REFRESH_RERUNS) {
+        this.synchronizeOnce(rendererFactory);
       }
       if ((typeof ngDevMode === 'undefined' || ngDevMode) && runs >= MAXIMUM_REFRESH_RERUNS) {
         throw new RuntimeError(103 /* RuntimeErrorCode.INFINITE_CHANGE_DETECTION */, ngDevMode && 'Infinite change detection while refreshing application views. ' + 'Ensure views are not calling `markForCheck` on every template execution or ' + 'that afterRender hooks always mark views for check.');
+      }
+    }
+    /**
+     * Perform a single synchronization pass.
+     */
+    synchronizeOnce(rendererFactory) {
+      // If we happened to loop, deferred dirtiness can be processed as active dirtiness again.
+      this.dirtyFlags |= this.deferredDirtyFlags;
+      this.deferredDirtyFlags = 0 /* ApplicationRefDirtyFlags.None */;
+      // First check dirty views, if there are any.
+      if (this.dirtyFlags & 7 /* ApplicationRefDirtyFlags.ViewTreeAny */) {
+        // Change detection on views starts in targeted mode (only check components if they're
+        // marked as dirty) unless global checking is specifically requested via APIs like
+        // `ApplicationRef.tick()` and the `NgZone` integration.
+        const useGlobalCheck = Boolean(this.dirtyFlags & 1 /* ApplicationRefDirtyFlags.ViewTreeGlobal */);
+        // Clear the view-related dirty flags.
+        this.dirtyFlags &= ~7 /* ApplicationRefDirtyFlags.ViewTreeAny */;
+        // Set the AfterRender bit, as we're checking views and will need to run afterRender hooks.
+        this.dirtyFlags |= 8 /* ApplicationRefDirtyFlags.AfterRender */;
+        // Check all potentially dirty views.
+        this.beforeRender.next(useGlobalCheck);
+        for (let {
+          _lView,
+          notifyErrorHandler
+        } of this._views) {
+          detectChangesInViewIfRequired(_lView, notifyErrorHandler, useGlobalCheck, this.zonelessEnabled);
+        }
+        // If `markForCheck()` was called during view checking, it will have set the `ViewTreeCheck`
+        // flag. We clear the flag here because, for backwards compatibility, `markForCheck()`
+        // during view checking doesn't cause the view to be re-checked.
+        this.dirtyFlags &= ~4 /* ApplicationRefDirtyFlags.ViewTreeCheck */;
+        // Check if any views are still dirty after checking and we need to loop back.
+        this.syncDirtyFlagsWithViews();
+        if (this.dirtyFlags & 7 /* ApplicationRefDirtyFlags.ViewTreeAny */) {
+          // If any views are still dirty after checking, loop back before running render hooks.
+          return;
+        }
+      } else {
+        // If we skipped refreshing views above, there might still be unflushed animations
+        // because we never called `detectChangesInternal` on the views.
+        rendererFactory?.begin?.();
+        rendererFactory?.end?.();
+      }
+      // Even if there were no dirty views, afterRender hooks might still be dirty.
+      if (this.dirtyFlags & 8 /* ApplicationRefDirtyFlags.AfterRender */) {
+        this.dirtyFlags &= ~8 /* ApplicationRefDirtyFlags.AfterRender */;
+        this.afterRenderManager.execute();
+        // afterRender hooks might influence dirty flags.
+      }
+      this.syncDirtyFlagsWithViews();
+    }
+    /**
+     * Checks `allViews` for views which require refresh/traversal, and updates `dirtyFlags`
+     * accordingly, with two potential behaviors:
+     *
+     * 1. If any of our views require updating, then this adds the `ViewTreeTraversal` dirty flag.
+     *    This _should_ be a no-op, since the scheduler should've added the flag at the same time the
+     *    view was marked as needing updating.
+     *
+     *    TODO(alxhub): figure out if this behavior is still needed for edge cases.
+     *
+     * 2. If none of our views require updating, then clear the view-related `dirtyFlag`s. This
+     *    happens when the scheduler is notified of a view becoming dirty, but the view itself isn't
+     *    reachable through traversal from our roots (e.g. it's detached from the CD tree).
+     */
+    syncDirtyFlagsWithViews() {
+      if (this.allViews.some(({
+        _lView
+      }) => requiresRefreshOrTraversal(_lView))) {
+        // If after running all afterRender callbacks new views are dirty, ensure we loop back.
+        this.dirtyFlags |= 2 /* ApplicationRefDirtyFlags.ViewTreeTraversal */;
+        return;
+      } else {
+        // Even though this flag may be set, none of _our_ views require traversal, and so the
+        // `ApplicationRef` doesn't require any repeated checking.
+        this.dirtyFlags &= ~7 /* ApplicationRefDirtyFlags.ViewTreeAny */;
       }
     }
     /**
@@ -46316,8 +46438,8 @@ let ApplicationRef = /*#__PURE__*/(() => {
       }
     }
     static {
-      this.ɵfac = function ApplicationRef_Factory(t) {
-        return new (t || ApplicationRef)();
+      this.ɵfac = function ApplicationRef_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || ApplicationRef)();
       };
     }
     static {
@@ -46418,7 +46540,7 @@ let Compiler = /*#__PURE__*/(() => {
       return Promise.resolve(this.compileModuleSync(moduleType));
     }
     /**
-     * Same as {@link #compileModuleSync} but also creates ComponentFactories for all components.
+     * Same as {@link Compiler#compileModuleSync compileModuleSync} but also creates ComponentFactories for all components.
      */
     compileModuleAndAllComponentsSync(moduleType) {
       const ngModuleFactory = this.compileModuleSync(moduleType);
@@ -46431,7 +46553,7 @@ let Compiler = /*#__PURE__*/(() => {
       return new ModuleWithComponentFactories(ngModuleFactory, componentFactories);
     }
     /**
-     * Same as {@link #compileModuleAsync} but also creates ComponentFactories for all components.
+     * Same as {@link Compiler#compileModuleAsync compileModuleAsync} but also creates ComponentFactories for all components.
      */
     compileModuleAndAllComponentsAsync(moduleType) {
       return Promise.resolve(this.compileModuleAndAllComponentsSync(moduleType));
@@ -46451,8 +46573,8 @@ let Compiler = /*#__PURE__*/(() => {
       return undefined;
     }
     static {
-      this.ɵfac = function Compiler_Factory(t) {
-        return new (t || Compiler)();
+      this.ɵfac = function Compiler_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || Compiler)();
       };
     }
     static {
@@ -46564,8 +46686,8 @@ let NgZoneChangeDetectionScheduler = /*#__PURE__*/(() => {
       this._onMicrotaskEmptySubscription?.unsubscribe();
     }
     static {
-      this.ɵfac = function NgZoneChangeDetectionScheduler_Factory(t) {
-        return new (t || NgZoneChangeDetectionScheduler)();
+      this.ɵfac = function NgZoneChangeDetectionScheduler_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || NgZoneChangeDetectionScheduler)();
       };
     }
     static {
@@ -46595,9 +46717,13 @@ const PROVIDED_NG_ZONE = /*#__PURE__*/new InjectionToken(typeof ngDevMode === 'u
 });
 function internalProvideZoneChangeDetection({
   ngZoneFactory,
-  ignoreChangesOutsideZone
+  ignoreChangesOutsideZone,
+  scheduleInRootZone
 }) {
-  ngZoneFactory ??= () => new NgZone(getNgZoneOptions());
+  ngZoneFactory ??= () => new NgZone({
+    ...getNgZoneOptions(),
+    scheduleInRootZone
+  });
   return [{
     provide: NgZone,
     useFactory: ngZoneFactory
@@ -46622,21 +46748,16 @@ function internalProvideZoneChangeDetection({
         service.initialize();
       };
     }
-  }, {
-    provide: INTERNAL_APPLICATION_ERROR_HANDLER,
-    useFactory: ngZoneApplicationErrorHandlerFactory
   },
   // Always disable scheduler whenever explicitly disabled, even if another place called
   // `provideZoneChangeDetection` without the 'ignore' option.
   ignoreChangesOutsideZone === true ? {
     provide: ZONELESS_SCHEDULER_DISABLED,
     useValue: true
-  } : []];
-}
-function ngZoneApplicationErrorHandlerFactory() {
-  const zone = inject(NgZone);
-  const userErrorHandler = inject(ErrorHandler);
-  return e => zone.runOutsideAngular(() => userErrorHandler.handleError(e));
+  } : [], {
+    provide: SCHEDULE_IN_ROOT_ZONE,
+    useValue: scheduleInRootZone ?? SCHEDULE_IN_ROOT_ZONE_DEFAULT
+  }];
 }
 /**
  * Provides `NgZone`-based change detection for the application bootstrapped using
@@ -46660,15 +46781,18 @@ function ngZoneApplicationErrorHandlerFactory() {
  */
 function provideZoneChangeDetection(options) {
   const ignoreChangesOutsideZone = options?.ignoreChangesOutsideZone;
+  const scheduleInRootZone = options?.scheduleInRootZone;
   const zoneProviders = internalProvideZoneChangeDetection({
     ngZoneFactory: () => {
       const ngZoneOptions = getNgZoneOptions(options);
+      ngZoneOptions.scheduleInRootZone = scheduleInRootZone;
       if (ngZoneOptions.shouldCoalesceEventChangeDetection) {
         performanceMarkFeature('NgZone_CoalesceEvent');
       }
       return new NgZone(ngZoneOptions);
     },
-    ignoreChangesOutsideZone
+    ignoreChangesOutsideZone,
+    scheduleInRootZone
   });
   return makeEnvironmentProviders([{
     provide: PROVIDED_NG_ZONE,
@@ -46727,8 +46851,8 @@ let ZoneStablePendingTask = /*#__PURE__*/(() => {
       this.subscription.unsubscribe();
     }
     static {
-      this.ɵfac = function ZoneStablePendingTask_Factory(t) {
-        return new (t || ZoneStablePendingTask)();
+      this.ɵfac = function ZoneStablePendingTask_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || ZoneStablePendingTask)();
       };
     }
     static {
@@ -46781,8 +46905,11 @@ let ChangeDetectionSchedulerImpl = /*#__PURE__*/(() => {
         }
       }];
       this.subscriptions = new rxjs__WEBPACK_IMPORTED_MODULE_3__.Subscription();
+      this.angularZoneId = this.zoneIsDefined ? this.ngZone._inner?.get(angularZoneInstanceIdProperty) : null;
+      this.scheduleInRootZone = !this.zonelessEnabled && this.zoneIsDefined && (inject(SCHEDULE_IN_ROOT_ZONE, {
+        optional: true
+      }) ?? false);
       this.cancelScheduledCallback = null;
-      this.shouldRefreshViews = false;
       this.useMicrotaskScheduler = false;
       this.runningTick = false;
       this.pendingRenderTaskId = null;
@@ -46823,25 +46950,38 @@ let ChangeDetectionSchedulerImpl = /*#__PURE__*/(() => {
         return;
       }
       switch (source) {
+        case 0 /* NotificationSource.MarkAncestorsForTraversal */:
+          {
+            this.appRef.dirtyFlags |= 2 /* ApplicationRefDirtyFlags.ViewTreeTraversal */;
+            break;
+          }
         case 3 /* NotificationSource.DebugApplyChanges */:
         case 2 /* NotificationSource.DeferBlockStateUpdate */:
-        case 0 /* NotificationSource.MarkAncestorsForTraversal */:
         case 4 /* NotificationSource.MarkForCheck */:
         case 5 /* NotificationSource.Listener */:
         case 1 /* NotificationSource.SetInput */:
           {
-            this.shouldRefreshViews = true;
+            this.appRef.dirtyFlags |= 4 /* ApplicationRefDirtyFlags.ViewTreeCheck */;
             break;
           }
-        case 8 /* NotificationSource.ViewDetachedFromDOM */:
-        case 7 /* NotificationSource.ViewAttached */:
-        case 6 /* NotificationSource.NewRenderHook */:
-        case 9 /* NotificationSource.AsyncAnimationsLoaded */:
+        case 7 /* NotificationSource.DeferredRenderHook */:
+          {
+            // Render hooks are "deferred" when they're triggered from other render hooks. Using the
+            // deferred dirty flags ensures that adding new hooks doesn't automatically trigger a loop
+            // inside tick().
+            this.appRef.deferredDirtyFlags |= 8 /* ApplicationRefDirtyFlags.AfterRender */;
+            break;
+          }
+        case 9 /* NotificationSource.ViewDetachedFromDOM */:
+        case 8 /* NotificationSource.ViewAttached */:
+        case 6 /* NotificationSource.RenderHook */:
+        case 10 /* NotificationSource.AsyncAnimationsLoaded */:
         default:
           {
             // These notifications only schedule a tick but do not change whether we should refresh
             // views. Instead, we only need to run render hooks unless another notification from the
             // other set is also received before `tick` happens.
+            this.appRef.dirtyFlags |= 8 /* ApplicationRefDirtyFlags.AfterRender */;
           }
       }
       if (!this.shouldScheduleTick()) {
@@ -46857,16 +46997,10 @@ let ChangeDetectionSchedulerImpl = /*#__PURE__*/(() => {
       }
       const scheduleCallback = this.useMicrotaskScheduler ? scheduleCallbackWithMicrotask : scheduleCallbackWithRafRace;
       this.pendingRenderTaskId = this.taskService.add();
-      if (this.zoneIsDefined) {
-        Zone.root.run(() => {
-          this.cancelScheduledCallback = scheduleCallback(() => {
-            this.tick(this.shouldRefreshViews);
-          });
-        });
+      if (this.scheduleInRootZone) {
+        this.cancelScheduledCallback = Zone.root.run(() => scheduleCallback(() => this.tick()));
       } else {
-        this.cancelScheduledCallback = scheduleCallback(() => {
-          this.tick(this.shouldRefreshViews);
-        });
+        this.cancelScheduledCallback = this.ngZone.runOutsideAngular(() => scheduleCallback(() => this.tick()));
       }
     }
     shouldScheduleTick() {
@@ -46879,7 +47013,7 @@ let ChangeDetectionSchedulerImpl = /*#__PURE__*/(() => {
       }
       // If we're inside the zone don't bother with scheduler. Zone will stabilize
       // eventually and run change detection.
-      if (!this.zonelessEnabled && this.zoneIsDefined && NgZone.isInAngularZone()) {
+      if (!this.zonelessEnabled && this.zoneIsDefined && Zone.current.get(angularZoneInstanceIdProperty + this.angularZoneId)) {
         return false;
       }
       return true;
@@ -46893,18 +47027,33 @@ let ChangeDetectionSchedulerImpl = /*#__PURE__*/(() => {
      * @param shouldRefreshViews Passed directly to `ApplicationRef._tick` and skips straight to
      *     render hooks when `false`.
      */
-    tick(shouldRefreshViews) {
+    tick() {
       // When ngZone.run below exits, onMicrotaskEmpty may emit if the zone is
       // stable. We want to prevent double ticking so we track whether the tick is
       // already running and skip it if so.
       if (this.runningTick || this.appRef.destroyed) {
         return;
       }
+      // The scheduler used to pass "whether to check views" as a boolean flag instead of setting
+      // fine-grained dirtiness flags, and global checking was always used on the first pass. This
+      // created an interesting edge case: if a notification made a view dirty and then ticked via the
+      // scheduler (and not the zone) a global check was still performed.
+      //
+      // Ideally, this would not be the case, and only zone-based ticks would do global passes.
+      // However this is a breaking change and requires fixes in g3. Until this cleanup can be done,
+      // we add the `ViewTreeGlobal` flag to request a global check if any views are dirty in a
+      // scheduled tick (unless zoneless is enabled, in which case global checks aren't really a
+      // thing).
+      //
+      // TODO(alxhub): clean up and remove this workaround as a breaking change.
+      if (!this.zonelessEnabled && this.appRef.dirtyFlags & 7 /* ApplicationRefDirtyFlags.ViewTreeAny */) {
+        this.appRef.dirtyFlags |= 1 /* ApplicationRefDirtyFlags.ViewTreeGlobal */;
+      }
       const task = this.taskService.add();
       try {
         this.ngZone.run(() => {
           this.runningTick = true;
-          this.appRef._tick(shouldRefreshViews);
+          this.appRef._tick();
         }, undefined, this.schedulerTickApplyArgs);
       } catch (e) {
         this.taskService.remove(task);
@@ -46928,7 +47077,6 @@ let ChangeDetectionSchedulerImpl = /*#__PURE__*/(() => {
       this.cleanup();
     }
     cleanup() {
-      this.shouldRefreshViews = false;
       this.runningTick = false;
       this.cancelScheduledCallback?.();
       this.cancelScheduledCallback = null;
@@ -46946,8 +47094,8 @@ let ChangeDetectionSchedulerImpl = /*#__PURE__*/(() => {
       }
     }
     static {
-      this.ɵfac = function ChangeDetectionSchedulerImpl_Factory(t) {
-        return new (t || ChangeDetectionSchedulerImpl)();
+      this.ɵfac = function ChangeDetectionSchedulerImpl_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || ChangeDetectionSchedulerImpl)();
       };
     }
     static {
@@ -47005,7 +47153,7 @@ let ChangeDetectionSchedulerImpl = /*#__PURE__*/(() => {
  *
  * @publicApi
  * @experimental
- * @see {@link bootstrapApplication}
+ * @see [bootstrapApplication](/api/platform-browser/bootstrapApplication)
  */
 function provideExperimentalZonelessChangeDetection() {
   performanceMarkFeature('NgZoneless');
@@ -47022,6 +47170,9 @@ function provideExperimentalZonelessChangeDetection() {
   }, {
     provide: ZONELESS_ENABLED,
     useValue: true
+  }, {
+    provide: SCHEDULE_IN_ROOT_ZONE,
+    useValue: false
   }, typeof ngDevMode === 'undefined' || ngDevMode ? [{
     provide: PROVIDED_ZONELESS,
     useValue: true
@@ -47197,6 +47348,194 @@ var MissingTranslationStrategy = /*#__PURE__*/function (MissingTranslationStrate
   MissingTranslationStrategy[MissingTranslationStrategy["Ignore"] = 2] = "Ignore";
   return MissingTranslationStrategy;
 }(MissingTranslationStrategy || {});
+// A delay in milliseconds before the scan is run after onLoad, to avoid any
+// potential race conditions with other LCP-related functions. This delay
+// happens outside of the main JavaScript execution and will only effect the timing
+// on when the warning becomes visible in the console.
+const SCAN_DELAY = 200;
+const OVERSIZED_IMAGE_TOLERANCE = 1200;
+let ImagePerformanceWarning = /*#__PURE__*/(() => {
+  class ImagePerformanceWarning {
+    constructor() {
+      // Map of full image URLs -> original `ngSrc` values.
+      this.window = null;
+      this.observer = null;
+      this.options = inject(IMAGE_CONFIG);
+      this.isBrowser = inject(PLATFORM_ID) === 'browser';
+    }
+    start() {
+      if (!this.isBrowser || typeof PerformanceObserver === 'undefined' || this.options?.disableImageSizeWarning && this.options?.disableImageLazyLoadWarning) {
+        return;
+      }
+      this.observer = this.initPerformanceObserver();
+      const doc = getDocument();
+      const win = doc.defaultView;
+      if (typeof win !== 'undefined') {
+        this.window = win;
+        // Wait to avoid race conditions where LCP image triggers
+        // load event before it's recorded by the performance observer
+        const waitToScan = () => {
+          setTimeout(this.scanImages.bind(this), SCAN_DELAY);
+        };
+        const setup = () => {
+          // Consider the case when the application is created and destroyed multiple times.
+          // Typically, applications are created instantly once the page is loaded, and the
+          // `window.load` listener is always triggered. However, the `window.load` event will never
+          // be fired if the page is loaded, and the application is created later. Checking for
+          // `readyState` is the easiest way to determine whether the page has been loaded or not.
+          if (doc.readyState === 'complete') {
+            waitToScan();
+          } else {
+            this.window?.addEventListener('load', waitToScan, {
+              once: true
+            });
+          }
+        };
+        // Angular doesn't have to run change detection whenever any asynchronous tasks are invoked in
+        // the scope of this functionality.
+        if (typeof Zone !== 'undefined') {
+          Zone.root.run(() => setup());
+        } else {
+          setup();
+        }
+      }
+    }
+    ngOnDestroy() {
+      this.observer?.disconnect();
+    }
+    initPerformanceObserver() {
+      if (typeof PerformanceObserver === 'undefined') {
+        return null;
+      }
+      const observer = new PerformanceObserver(entryList => {
+        const entries = entryList.getEntries();
+        if (entries.length === 0) return;
+        // We use the latest entry produced by the `PerformanceObserver` as the best
+        // signal on which element is actually an LCP one. As an example, the first image to load on
+        // a page, by virtue of being the only thing on the page so far, is often a LCP candidate
+        // and gets reported by PerformanceObserver, but isn't necessarily the LCP element.
+        const lcpElement = entries[entries.length - 1];
+        // Cast to `any` due to missing `element` on the `LargestContentfulPaint` type of entry.
+        // See https://developer.mozilla.org/en-US/docs/Web/API/LargestContentfulPaint
+        const imgSrc = lcpElement.element?.src ?? '';
+        // Exclude `data:` and `blob:` URLs, since they are fetched resources.
+        if (imgSrc.startsWith('data:') || imgSrc.startsWith('blob:')) return;
+        this.lcpImageUrl = imgSrc;
+      });
+      observer.observe({
+        type: 'largest-contentful-paint',
+        buffered: true
+      });
+      return observer;
+    }
+    scanImages() {
+      const images = getDocument().querySelectorAll('img');
+      let lcpElementFound,
+        lcpElementLoadedCorrectly = false;
+      images.forEach(image => {
+        if (!this.options?.disableImageSizeWarning) {
+          // Image elements using the NgOptimizedImage directive are excluded,
+          // as that directive has its own version of this check.
+          if (!image.getAttribute('ng-img') && this.isOversized(image)) {
+            logOversizedImageWarning(image.src);
+          }
+        }
+        if (!this.options?.disableImageLazyLoadWarning && this.lcpImageUrl) {
+          if (image.src === this.lcpImageUrl) {
+            lcpElementFound = true;
+            if (image.loading !== 'lazy' || image.getAttribute('ng-img')) {
+              // This variable is set to true and never goes back to false to account
+              // for the case where multiple images have the same src url, and some
+              // have lazy loading while others don't.
+              // Also ignore NgOptimizedImage because there's a different warning for that.
+              lcpElementLoadedCorrectly = true;
+            }
+          }
+        }
+      });
+      if (lcpElementFound && !lcpElementLoadedCorrectly && this.lcpImageUrl && !this.options?.disableImageLazyLoadWarning) {
+        logLazyLCPWarning(this.lcpImageUrl);
+      }
+    }
+    isOversized(image) {
+      if (!this.window) {
+        return false;
+      }
+      // The `isOversized` check may not be applicable or may require adjustments
+      // for several types of image formats or scenarios. Currently, we specify only
+      // `svg`, but this may also include `gif` since their quality isn’t tied to
+      // dimensions in the same way as raster images.
+      const nonOversizedImageExtentions = [
+      // SVG images are vector-based, which means they can scale
+      // to any size without losing quality.
+      '.svg'];
+      // Convert it to lowercase because this may have uppercase
+      // extensions, such as `IMAGE.SVG`.
+      // We fallback to an empty string because `src` may be `undefined`
+      // if it is explicitly set to `null` by some third-party code
+      // (e.g., `image.src = null`).
+      const imageSource = (image.src || '').toLowerCase();
+      if (nonOversizedImageExtentions.some(extension => imageSource.endsWith(extension))) {
+        return false;
+      }
+      const computedStyle = this.window.getComputedStyle(image);
+      let renderedWidth = parseFloat(computedStyle.getPropertyValue('width'));
+      let renderedHeight = parseFloat(computedStyle.getPropertyValue('height'));
+      const boxSizing = computedStyle.getPropertyValue('box-sizing');
+      const objectFit = computedStyle.getPropertyValue('object-fit');
+      if (objectFit === `cover`) {
+        // Object fit cover may indicate a use case such as a sprite sheet where
+        // this warning does not apply.
+        return false;
+      }
+      if (boxSizing === 'border-box') {
+        // If the image `box-sizing` is set to `border-box`, we adjust the rendered
+        // dimensions by subtracting padding values.
+        const paddingTop = computedStyle.getPropertyValue('padding-top');
+        const paddingRight = computedStyle.getPropertyValue('padding-right');
+        const paddingBottom = computedStyle.getPropertyValue('padding-bottom');
+        const paddingLeft = computedStyle.getPropertyValue('padding-left');
+        renderedWidth -= parseFloat(paddingRight) + parseFloat(paddingLeft);
+        renderedHeight -= parseFloat(paddingTop) + parseFloat(paddingBottom);
+      }
+      const intrinsicWidth = image.naturalWidth;
+      const intrinsicHeight = image.naturalHeight;
+      const recommendedWidth = this.window.devicePixelRatio * renderedWidth;
+      const recommendedHeight = this.window.devicePixelRatio * renderedHeight;
+      const oversizedWidth = intrinsicWidth - recommendedWidth >= OVERSIZED_IMAGE_TOLERANCE;
+      const oversizedHeight = intrinsicHeight - recommendedHeight >= OVERSIZED_IMAGE_TOLERANCE;
+      return oversizedWidth || oversizedHeight;
+    }
+    static {
+      this.ɵfac = function ImagePerformanceWarning_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || ImagePerformanceWarning)();
+      };
+    }
+    static {
+      this.ɵprov = /*@__PURE__*/ɵɵdefineInjectable({
+        token: ImagePerformanceWarning,
+        factory: ImagePerformanceWarning.ɵfac,
+        providedIn: 'root'
+      });
+    }
+  }
+  return ImagePerformanceWarning;
+})();
+/*#__PURE__*/(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ImagePerformanceWarning, [{
+    type: Injectable,
+    args: [{
+      providedIn: 'root'
+    }]
+  }], null, null);
+})();
+function logLazyLCPWarning(src) {
+  console.warn(formatRuntimeError(-913 /* RuntimeErrorCode.IMAGE_PERFORMANCE_WARNING */, `An image with src ${src} is the Largest Contentful Paint (LCP) element ` + `but was given a "loading" value of "lazy", which can negatively impact ` + `application loading performance. This warning can be addressed by ` + `changing the loading value of the LCP image to "eager", or by using the ` + `NgOptimizedImage directive's prioritization utilities. For more ` + `information about addressing or disabling this warning, see ` + `https://angular.dev/errors/NG0913`));
+}
+function logOversizedImageWarning(src) {
+  console.warn(formatRuntimeError(-913 /* RuntimeErrorCode.IMAGE_PERFORMANCE_WARNING */, `An image with src ${src} has intrinsic file dimensions much larger than its ` + `rendered size. This can negatively impact application loading performance. ` + `For more information about addressing or disabling this warning, see ` + `https://angular.dev/errors/NG0913`));
+}
+
 /**
  * Internal token that allows to register extra callbacks that should be invoked during the
  * `PlatformRef.destroy` operation. This token is needed to avoid a direct reference to the
@@ -47204,6 +47543,93 @@ var MissingTranslationStrategy = /*#__PURE__*/function (MissingTranslationStrate
  * entire class tree-shakeable.
  */
 const PLATFORM_DESTROY_LISTENERS = /*#__PURE__*/new InjectionToken(ngDevMode ? 'PlatformDestroyListeners' : '');
+function isApplicationBootstrapConfig(config) {
+  return !config.moduleRef;
+}
+function bootstrap(config) {
+  const envInjector = isApplicationBootstrapConfig(config) ? config.r3Injector : config.moduleRef.injector;
+  const ngZone = envInjector.get(NgZone);
+  return ngZone.run(() => {
+    if (isApplicationBootstrapConfig(config)) {
+      config.r3Injector.resolveInjectorInitializers();
+    } else {
+      config.moduleRef.resolveInjectorInitializers();
+    }
+    const exceptionHandler = envInjector.get(ErrorHandler, null);
+    if (typeof ngDevMode === 'undefined' || ngDevMode) {
+      if (exceptionHandler === null) {
+        const errorMessage = isApplicationBootstrapConfig(config) ? 'No `ErrorHandler` found in the Dependency Injection tree.' : 'No ErrorHandler. Is platform module (BrowserModule) included';
+        throw new RuntimeError(402 /* RuntimeErrorCode.MISSING_REQUIRED_INJECTABLE_IN_BOOTSTRAP */, errorMessage);
+      }
+      if (envInjector.get(PROVIDED_ZONELESS) && envInjector.get(PROVIDED_NG_ZONE)) {
+        throw new RuntimeError(408 /* RuntimeErrorCode.PROVIDED_BOTH_ZONE_AND_ZONELESS */, 'Invalid change detection configuration: ' + 'provideZoneChangeDetection and provideExperimentalZonelessChangeDetection cannot be used together.');
+      }
+    }
+    let onErrorSubscription;
+    ngZone.runOutsideAngular(() => {
+      onErrorSubscription = ngZone.onError.subscribe({
+        next: error => {
+          exceptionHandler.handleError(error);
+        }
+      });
+    });
+    // If the whole platform is destroyed, invoke the `destroy` method
+    // for all bootstrapped applications as well.
+    if (isApplicationBootstrapConfig(config)) {
+      const destroyListener = () => envInjector.destroy();
+      const onPlatformDestroyListeners = config.platformInjector.get(PLATFORM_DESTROY_LISTENERS);
+      onPlatformDestroyListeners.add(destroyListener);
+      envInjector.onDestroy(() => {
+        onErrorSubscription.unsubscribe();
+        onPlatformDestroyListeners.delete(destroyListener);
+      });
+    } else {
+      const destroyListener = () => config.moduleRef.destroy();
+      const onPlatformDestroyListeners = config.platformInjector.get(PLATFORM_DESTROY_LISTENERS);
+      onPlatformDestroyListeners.add(destroyListener);
+      config.moduleRef.onDestroy(() => {
+        remove(config.allPlatformModules, config.moduleRef);
+        onErrorSubscription.unsubscribe();
+        onPlatformDestroyListeners.delete(destroyListener);
+      });
+    }
+    return _callAndReportToErrorHandler(exceptionHandler, ngZone, () => {
+      const initStatus = envInjector.get(ApplicationInitStatus);
+      initStatus.runInitializers();
+      return initStatus.donePromise.then(() => {
+        // If the `LOCALE_ID` provider is defined at bootstrap then we set the value for ivy
+        const localeId = envInjector.get(LOCALE_ID, DEFAULT_LOCALE_ID);
+        setLocaleId(localeId || DEFAULT_LOCALE_ID);
+        if (typeof ngDevMode === 'undefined' || ngDevMode) {
+          const imagePerformanceService = envInjector.get(ImagePerformanceWarning);
+          imagePerformanceService.start();
+        }
+        if (isApplicationBootstrapConfig(config)) {
+          const appRef = envInjector.get(ApplicationRef);
+          if (config.rootComponent !== undefined) {
+            appRef.bootstrap(config.rootComponent);
+          }
+          return appRef;
+        } else {
+          moduleDoBootstrap(config.moduleRef, config.allPlatformModules);
+          return config.moduleRef;
+        }
+      });
+    });
+  });
+}
+function moduleDoBootstrap(moduleRef, allPlatformModules) {
+  const appRef = moduleRef.injector.get(ApplicationRef);
+  if (moduleRef._bootstrapComponents.length > 0) {
+    moduleRef._bootstrapComponents.forEach(f => appRef.bootstrap(f));
+  } else if (moduleRef.instance.ngDoBootstrap) {
+    moduleRef.instance.ngDoBootstrap(appRef);
+  } else {
+    throw new RuntimeError(-403 /* RuntimeErrorCode.BOOTSTRAP_COMPONENTS_NOT_FOUND */, ngDevMode && `The module ${stringify(moduleRef.instance.constructor)} was bootstrapped, ` + `but it does not declare "@NgModule.bootstrap" components nor a "ngDoBootstrap" method. ` + `Please define one of these.`);
+  }
+  allPlatformModules.push(moduleRef);
+}
+
 /**
  * The Angular platform is the entry point for Angular on a web page.
  * Each page has exactly one platform. Services (such as reflection) which are common
@@ -47229,61 +47655,27 @@ let PlatformRef = /*#__PURE__*/(() => {
      *     argument is deprecated. Use the `PlatformRef.bootstrapModule` API instead.
      */
     bootstrapModuleFactory(moduleFactory, options) {
-      // Note: We need to create the NgZone _before_ we instantiate the module,
-      // as instantiating the module creates some providers eagerly.
-      // So we create a mini parent injector that just contains the new NgZone and
-      // pass that as parent to the NgModuleFactory.
-      const ngZone = getNgZone(options?.ngZone, getNgZoneOptions({
-        eventCoalescing: options?.ngZoneEventCoalescing,
-        runCoalescing: options?.ngZoneRunCoalescing
-      }));
-      // Note: Create ngZoneInjector within ngZone.run so that all of the instantiated services are
-      // created within the Angular zone
-      // Do not try to replace ngZone.run with ApplicationRef#run because ApplicationRef would then be
-      // created outside of the Angular zone.
-      return ngZone.run(() => {
-        const ignoreChangesOutsideZone = options?.ignoreChangesOutsideZone;
-        const moduleRef = createNgModuleRefWithProviders(moduleFactory.moduleType, this.injector, [...internalProvideZoneChangeDetection({
-          ngZoneFactory: () => ngZone,
-          ignoreChangesOutsideZone
-        }), {
-          provide: ChangeDetectionScheduler,
-          useExisting: ChangeDetectionSchedulerImpl
-        }]);
-        if (typeof ngDevMode === 'undefined' || ngDevMode) {
-          if (moduleRef.injector.get(PROVIDED_NG_ZONE)) {
-            throw new RuntimeError(207 /* RuntimeErrorCode.PROVIDER_IN_WRONG_CONTEXT */, '`bootstrapModule` does not support `provideZoneChangeDetection`. Use `BootstrapOptions` instead.');
-          }
-          if (moduleRef.injector.get(ZONELESS_ENABLED) && options?.ngZone !== 'noop') {
-            throw new RuntimeError(408 /* RuntimeErrorCode.PROVIDED_BOTH_ZONE_AND_ZONELESS */, 'Invalid change detection configuration: ' + "`ngZone: 'noop'` must be set in `BootstrapOptions` with provideExperimentalZonelessChangeDetection.");
-          }
-        }
-        const exceptionHandler = moduleRef.injector.get(ErrorHandler, null);
-        if ((typeof ngDevMode === 'undefined' || ngDevMode) && exceptionHandler === null) {
-          throw new RuntimeError(402 /* RuntimeErrorCode.MISSING_REQUIRED_INJECTABLE_IN_BOOTSTRAP */, 'No ErrorHandler. Is platform module (BrowserModule) included?');
-        }
-        ngZone.runOutsideAngular(() => {
-          const subscription = ngZone.onError.subscribe({
-            next: error => {
-              exceptionHandler.handleError(error);
-            }
-          });
-          moduleRef.onDestroy(() => {
-            remove(this._modules, moduleRef);
-            subscription.unsubscribe();
-          });
-        });
-        return _callAndReportToErrorHandler(exceptionHandler, ngZone, () => {
-          const initStatus = moduleRef.injector.get(ApplicationInitStatus);
-          initStatus.runInitializers();
-          return initStatus.donePromise.then(() => {
-            // If the `LOCALE_ID` provider is defined at bootstrap then we set the value for ivy
-            const localeId = moduleRef.injector.get(LOCALE_ID, DEFAULT_LOCALE_ID);
-            setLocaleId(localeId || DEFAULT_LOCALE_ID);
-            this._moduleDoBootstrap(moduleRef);
-            return moduleRef;
-          });
-        });
+      const scheduleInRootZone = options?.scheduleInRootZone;
+      const ngZoneFactory = () => getNgZone(options?.ngZone, {
+        ...getNgZoneOptions({
+          eventCoalescing: options?.ngZoneEventCoalescing,
+          runCoalescing: options?.ngZoneRunCoalescing
+        }),
+        scheduleInRootZone
+      });
+      const ignoreChangesOutsideZone = options?.ignoreChangesOutsideZone;
+      const allAppProviders = [internalProvideZoneChangeDetection({
+        ngZoneFactory,
+        ignoreChangesOutsideZone
+      }), {
+        provide: ChangeDetectionScheduler,
+        useExisting: ChangeDetectionSchedulerImpl
+      }];
+      const moduleRef = createNgModuleRefWithProviders(moduleFactory.moduleType, this.injector, allAppProviders);
+      return bootstrap({
+        moduleRef,
+        allPlatformModules: this._modules,
+        platformInjector: this.injector
       });
     }
     /**
@@ -47305,17 +47697,6 @@ let PlatformRef = /*#__PURE__*/(() => {
     bootstrapModule(moduleType, compilerOptions = []) {
       const options = optionsReducer({}, compilerOptions);
       return compileNgModuleFactory(this.injector, options, moduleType).then(moduleFactory => this.bootstrapModuleFactory(moduleFactory, options));
-    }
-    _moduleDoBootstrap(moduleRef) {
-      const appRef = moduleRef.injector.get(ApplicationRef);
-      if (moduleRef._bootstrapComponents.length > 0) {
-        moduleRef._bootstrapComponents.forEach(f => appRef.bootstrap(f));
-      } else if (moduleRef.instance.ngDoBootstrap) {
-        moduleRef.instance.ngDoBootstrap(appRef);
-      } else {
-        throw new RuntimeError(-403 /* RuntimeErrorCode.BOOTSTRAP_COMPONENTS_NOT_FOUND */, ngDevMode && `The module ${stringify(moduleRef.instance.constructor)} was bootstrapped, ` + `but it does not declare "@NgModule.bootstrap" components nor a "ngDoBootstrap" method. ` + `Please define one of these.`);
-      }
-      this._modules.push(moduleRef);
     }
     /**
      * Registers a listener to be called when the platform is destroyed.
@@ -47354,8 +47735,8 @@ let PlatformRef = /*#__PURE__*/(() => {
       return this._destroyed;
     }
     static {
-      this.ɵfac = function PlatformRef_Factory(t) {
-        return new (t || PlatformRef)(ɵɵinject(Injector));
+      this.ɵfac = function PlatformRef_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || PlatformRef)(ɵɵinject(Injector));
       };
     }
     static {
@@ -47771,7 +48152,7 @@ function createViewRef(tNode, lView, isPipe) {
 /**
  * Represents an Angular view.
  *
- * @see {@link ChangeDetectorRef#usage-notes Change detection usage}
+ * @see [Change detection usage](/api/core/ChangeDetectorRef?tab=usage-notes)
  *
  * @publicApi
  */
@@ -49406,8 +49787,8 @@ let ApplicationModule = /*#__PURE__*/(() => {
     // Inject ApplicationRef to make it eager...
     constructor(appRef) {}
     static {
-      this.ɵfac = function ApplicationModule_Factory(t) {
-        return new (t || ApplicationModule)(ɵɵinject(ApplicationRef));
+      this.ɵfac = function ApplicationModule_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || ApplicationModule)(ɵɵinject(ApplicationRef));
       };
     }
     static {
@@ -49870,6 +50251,9 @@ function signalUpdateFn(node, updater) {
   }
   signalSetFn(node, updater(node.value));
 }
+function runPostSignalSetFn() {
+  postSignalSetFn?.();
+}
 // Note: Using an IIFE here to ensure that the spread assignment is not considered
 // a side-effect, ending up preserving `COMPUTED_NODE` and `REACTIVE_NODE`.
 // TODO: remove when https://github.com/evanw/esbuild/issues/3392 is resolved.
@@ -49962,172 +50346,6 @@ function setAlternateWeakRefImpl(impl) {
   // TODO: remove this function
 }
 
-// A delay in milliseconds before the scan is run after onLoad, to avoid any
-// potential race conditions with other LCP-related functions. This delay
-// happens outside of the main JavaScript execution and will only effect the timing
-// on when the warning becomes visible in the console.
-const SCAN_DELAY = 200;
-const OVERSIZED_IMAGE_TOLERANCE = 1200;
-let ImagePerformanceWarning = /*#__PURE__*/(() => {
-  class ImagePerformanceWarning {
-    constructor() {
-      // Map of full image URLs -> original `ngSrc` values.
-      this.window = null;
-      this.observer = null;
-      this.options = inject(IMAGE_CONFIG);
-      this.ngZone = inject(NgZone);
-    }
-    start() {
-      if (typeof PerformanceObserver === 'undefined' || this.options?.disableImageSizeWarning && this.options?.disableImageLazyLoadWarning) {
-        return;
-      }
-      this.observer = this.initPerformanceObserver();
-      const doc = getDocument();
-      const win = doc.defaultView;
-      if (typeof win !== 'undefined') {
-        this.window = win;
-        // Wait to avoid race conditions where LCP image triggers
-        // load event before it's recorded by the performance observer
-        const waitToScan = () => {
-          setTimeout(this.scanImages.bind(this), SCAN_DELAY);
-        };
-        // Angular doesn't have to run change detection whenever any asynchronous tasks are invoked in
-        // the scope of this functionality.
-        this.ngZone.runOutsideAngular(() => {
-          // Consider the case when the application is created and destroyed multiple times.
-          // Typically, applications are created instantly once the page is loaded, and the
-          // `window.load` listener is always triggered. However, the `window.load` event will never
-          // be fired if the page is loaded, and the application is created later. Checking for
-          // `readyState` is the easiest way to determine whether the page has been loaded or not.
-          if (doc.readyState === 'complete') {
-            waitToScan();
-          } else {
-            this.window?.addEventListener('load', waitToScan, {
-              once: true
-            });
-          }
-        });
-      }
-    }
-    ngOnDestroy() {
-      this.observer?.disconnect();
-    }
-    initPerformanceObserver() {
-      if (typeof PerformanceObserver === 'undefined') {
-        return null;
-      }
-      const observer = new PerformanceObserver(entryList => {
-        const entries = entryList.getEntries();
-        if (entries.length === 0) return;
-        // We use the latest entry produced by the `PerformanceObserver` as the best
-        // signal on which element is actually an LCP one. As an example, the first image to load on
-        // a page, by virtue of being the only thing on the page so far, is often a LCP candidate
-        // and gets reported by PerformanceObserver, but isn't necessarily the LCP element.
-        const lcpElement = entries[entries.length - 1];
-        // Cast to `any` due to missing `element` on the `LargestContentfulPaint` type of entry.
-        // See https://developer.mozilla.org/en-US/docs/Web/API/LargestContentfulPaint
-        const imgSrc = lcpElement.element?.src ?? '';
-        // Exclude `data:` and `blob:` URLs, since they are fetched resources.
-        if (imgSrc.startsWith('data:') || imgSrc.startsWith('blob:')) return;
-        this.lcpImageUrl = imgSrc;
-      });
-      observer.observe({
-        type: 'largest-contentful-paint',
-        buffered: true
-      });
-      return observer;
-    }
-    scanImages() {
-      const images = getDocument().querySelectorAll('img');
-      let lcpElementFound,
-        lcpElementLoadedCorrectly = false;
-      images.forEach(image => {
-        if (!this.options?.disableImageSizeWarning) {
-          for (const image of images) {
-            // Image elements using the NgOptimizedImage directive are excluded,
-            // as that directive has its own version of this check.
-            if (!image.getAttribute('ng-img') && this.isOversized(image)) {
-              logOversizedImageWarning(image.src);
-            }
-          }
-        }
-        if (!this.options?.disableImageLazyLoadWarning && this.lcpImageUrl) {
-          if (image.src === this.lcpImageUrl) {
-            lcpElementFound = true;
-            if (image.loading !== 'lazy' || image.getAttribute('ng-img')) {
-              // This variable is set to true and never goes back to false to account
-              // for the case where multiple images have the same src url, and some
-              // have lazy loading while others don't.
-              // Also ignore NgOptimizedImage because there's a different warning for that.
-              lcpElementLoadedCorrectly = true;
-            }
-          }
-        }
-      });
-      if (lcpElementFound && !lcpElementLoadedCorrectly && this.lcpImageUrl && !this.options?.disableImageLazyLoadWarning) {
-        logLazyLCPWarning(this.lcpImageUrl);
-      }
-    }
-    isOversized(image) {
-      if (!this.window) {
-        return false;
-      }
-      const computedStyle = this.window.getComputedStyle(image);
-      let renderedWidth = parseFloat(computedStyle.getPropertyValue('width'));
-      let renderedHeight = parseFloat(computedStyle.getPropertyValue('height'));
-      const boxSizing = computedStyle.getPropertyValue('box-sizing');
-      const objectFit = computedStyle.getPropertyValue('object-fit');
-      if (objectFit === `cover`) {
-        // Object fit cover may indicate a use case such as a sprite sheet where
-        // this warning does not apply.
-        return false;
-      }
-      if (boxSizing === 'border-box') {
-        const paddingTop = computedStyle.getPropertyValue('padding-top');
-        const paddingRight = computedStyle.getPropertyValue('padding-right');
-        const paddingBottom = computedStyle.getPropertyValue('padding-bottom');
-        const paddingLeft = computedStyle.getPropertyValue('padding-left');
-        renderedWidth -= parseFloat(paddingRight) + parseFloat(paddingLeft);
-        renderedHeight -= parseFloat(paddingTop) + parseFloat(paddingBottom);
-      }
-      const intrinsicWidth = image.naturalWidth;
-      const intrinsicHeight = image.naturalHeight;
-      const recommendedWidth = this.window.devicePixelRatio * renderedWidth;
-      const recommendedHeight = this.window.devicePixelRatio * renderedHeight;
-      const oversizedWidth = intrinsicWidth - recommendedWidth >= OVERSIZED_IMAGE_TOLERANCE;
-      const oversizedHeight = intrinsicHeight - recommendedHeight >= OVERSIZED_IMAGE_TOLERANCE;
-      return oversizedWidth || oversizedHeight;
-    }
-    static {
-      this.ɵfac = function ImagePerformanceWarning_Factory(t) {
-        return new (t || ImagePerformanceWarning)();
-      };
-    }
-    static {
-      this.ɵprov = /*@__PURE__*/ɵɵdefineInjectable({
-        token: ImagePerformanceWarning,
-        factory: ImagePerformanceWarning.ɵfac,
-        providedIn: 'root'
-      });
-    }
-  }
-  return ImagePerformanceWarning;
-})();
-/*#__PURE__*/(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ImagePerformanceWarning, [{
-    type: Injectable,
-    args: [{
-      providedIn: 'root'
-    }]
-  }], null, null);
-})();
-function logLazyLCPWarning(src) {
-  console.warn(formatRuntimeError(-913 /* RuntimeErrorCode.IMAGE_PERFORMANCE_WARNING */, `An image with src ${src} is the Largest Contentful Paint (LCP) element ` + `but was given a "loading" value of "lazy", which can negatively impact ` + `application loading performance. This warning can be addressed by ` + `changing the loading value of the LCP image to "eager", or by using the ` + `NgOptimizedImage directive's prioritization utilities. For more ` + `information about addressing or disabling this warning, see ` + `https://angular.dev/errors/NG0913`));
-}
-function logOversizedImageWarning(src) {
-  console.warn(formatRuntimeError(-913 /* RuntimeErrorCode.IMAGE_PERFORMANCE_WARNING */, `An image with src ${src} has intrinsic file dimensions much larger than its ` + `rendered size. This can negatively impact application loading performance. ` + `For more information about addressing or disabling this warning, see ` + `https://angular.dev/errors/NG0913`));
-}
-
 /**
  * Internal create application API that implements the core application creation logic and optional
  * bootstrap logic.
@@ -50164,53 +50382,10 @@ function internalCreateApplication(config) {
       // happens after we get the NgZone instance from the Injector.
       runEnvironmentInitializers: false
     });
-    const envInjector = adapter.injector;
-    const ngZone = envInjector.get(NgZone);
-    return ngZone.run(() => {
-      envInjector.resolveInjectorInitializers();
-      const exceptionHandler = envInjector.get(ErrorHandler, null);
-      if (typeof ngDevMode === 'undefined' || ngDevMode) {
-        if (!exceptionHandler) {
-          throw new RuntimeError(402 /* RuntimeErrorCode.MISSING_REQUIRED_INJECTABLE_IN_BOOTSTRAP */, 'No `ErrorHandler` found in the Dependency Injection tree.');
-        }
-        if (envInjector.get(PROVIDED_ZONELESS) && envInjector.get(PROVIDED_NG_ZONE)) {
-          throw new RuntimeError(408 /* RuntimeErrorCode.PROVIDED_BOTH_ZONE_AND_ZONELESS */, 'Invalid change detection configuration: ' + 'provideZoneChangeDetection and provideExperimentalZonelessChangeDetection cannot be used together.');
-        }
-      }
-      let onErrorSubscription;
-      ngZone.runOutsideAngular(() => {
-        onErrorSubscription = ngZone.onError.subscribe({
-          next: error => {
-            exceptionHandler.handleError(error);
-          }
-        });
-      });
-      // If the whole platform is destroyed, invoke the `destroy` method
-      // for all bootstrapped applications as well.
-      const destroyListener = () => envInjector.destroy();
-      const onPlatformDestroyListeners = platformInjector.get(PLATFORM_DESTROY_LISTENERS);
-      onPlatformDestroyListeners.add(destroyListener);
-      envInjector.onDestroy(() => {
-        onErrorSubscription.unsubscribe();
-        onPlatformDestroyListeners.delete(destroyListener);
-      });
-      return _callAndReportToErrorHandler(exceptionHandler, ngZone, () => {
-        const initStatus = envInjector.get(ApplicationInitStatus);
-        initStatus.runInitializers();
-        return initStatus.donePromise.then(() => {
-          const localeId = envInjector.get(LOCALE_ID, DEFAULT_LOCALE_ID);
-          setLocaleId(localeId || DEFAULT_LOCALE_ID);
-          const appRef = envInjector.get(ApplicationRef);
-          if (rootComponent !== undefined) {
-            appRef.bootstrap(rootComponent);
-          }
-          if (typeof ngDevMode === 'undefined' || ngDevMode) {
-            const imagePerformanceService = envInjector.get(ImagePerformanceWarning);
-            imagePerformanceService.start();
-          }
-          return appRef;
-        });
-      });
+    return bootstrap({
+      r3Injector: adapter.injector,
+      platformInjector,
+      rootComponent
     });
   } catch (e) {
     return Promise.reject(e);
@@ -50256,8 +50431,6 @@ function getDeferBlocks(lView, deferBlocks) {
     }
   }
 }
-
-// tslint:disable:no-duplicate-imports
 function invokeRegisteredListeners(event) {
   const handlerFns = event.currentTarget?.__jsaction_fns?.get(event.type);
   if (!handlerFns) {
@@ -50267,14 +50440,13 @@ function invokeRegisteredListeners(event) {
     handler(event);
   }
 }
-function setJSActionAttribute(nativeElement, eventTypes) {
+function setJSActionAttributes(nativeElement, eventTypes) {
   if (!eventTypes.length) {
     return;
   }
   const parts = eventTypes.reduce((prev, curr) => prev + curr + ':;', '');
-  const existingAttr = nativeElement.getAttribute(_angular_core_primitives_event_dispatch__WEBPACK_IMPORTED_MODULE_6__.JSACTION);
-  //  This is required to be a module accessor to appease security tests on setAttribute.
-  nativeElement.setAttribute(_angular_core_primitives_event_dispatch__WEBPACK_IMPORTED_MODULE_6__.JSACTION, `${existingAttr ?? ''}${parts}`);
+  const existingAttr = nativeElement.getAttribute(_angular_core_primitives_event_dispatch__WEBPACK_IMPORTED_MODULE_6__.Attribute.JSACTION);
+  nativeElement.setAttribute(_angular_core_primitives_event_dispatch__WEBPACK_IMPORTED_MODULE_6__.Attribute.JSACTION, `${existingAttr ?? ''}${parts}`);
 }
 const sharedStashFunction = (rEl, eventType, listenerFn) => {
   const el = rEl;
@@ -50285,63 +50457,23 @@ const sharedStashFunction = (rEl, eventType, listenerFn) => {
   el.__jsaction_fns = eventListenerMap;
 };
 const removeListeners = el => {
-  el.removeAttribute(_angular_core_primitives_event_dispatch__WEBPACK_IMPORTED_MODULE_6__.JSACTION);
+  el.removeAttribute(_angular_core_primitives_event_dispatch__WEBPACK_IMPORTED_MODULE_6__.Attribute.JSACTION);
   el.__jsaction_fns = undefined;
 };
-let GlobalEventDelegation = /*#__PURE__*/(() => {
-  class GlobalEventDelegation {
-    addEvent(el, eventName) {
-      if (this.eventContract) {
-        this.eventContract.addEvent(eventName);
-        setJSActionAttribute(el, [eventName]);
-        return true;
-      }
-      return false;
-    }
-    static {
-      this.ɵfac = function GlobalEventDelegation_Factory(t) {
-        return new (t || GlobalEventDelegation)();
-      };
-    }
-    static {
-      this.ɵprov = /*@__PURE__*/ɵɵdefineInjectable({
-        token: GlobalEventDelegation,
-        factory: GlobalEventDelegation.ɵfac,
-        providedIn: 'root'
-      });
-    }
-  }
-  return GlobalEventDelegation;
-})();
-/*#__PURE__*/(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(GlobalEventDelegation, [{
-    type: Injectable,
-    args: [{
-      providedIn: 'root'
-    }]
-  }], null, null);
-})();
-const initGlobalEventDelegation = (eventDelegation, injector) => {
-  if (injector.get(IS_EVENT_REPLAY_ENABLED, EVENT_REPLAY_ENABLED_DEFAULT)) {
-    return;
-  }
-  eventDelegation.eventContract = new _angular_core_primitives_event_dispatch__WEBPACK_IMPORTED_MODULE_6__.EventContract(new _angular_core_primitives_event_dispatch__WEBPACK_IMPORTED_MODULE_6__.EventContractContainer(document.body), /* useActionResolver= */false);
-  const dispatcher = new _angular_core_primitives_event_dispatch__WEBPACK_IMPORTED_MODULE_6__.EventDispatcher(invokeRegisteredListeners);
-  (0,_angular_core_primitives_event_dispatch__WEBPACK_IMPORTED_MODULE_6__.registerDispatcher)(eventDelegation.eventContract, dispatcher);
-};
-const CONTRACT_PROPERTY = 'ngContracts';
+const JSACTION_EVENT_CONTRACT = /*#__PURE__*/new InjectionToken(ngDevMode ? 'EVENT_CONTRACT_DETAILS' : '', {
+  providedIn: 'root',
+  factory: () => ({})
+});
+
 /**
  * A set of DOM elements with `jsaction` attributes.
  */
 const jsactionSet = /*#__PURE__*/new Set();
-function isGlobalEventDelegationEnabled(injector) {
-  return injector.get(IS_GLOBAL_EVENT_DELEGATION_ENABLED, false);
-}
 /**
  * Determines whether Event Replay feature should be activated on the client.
  */
 function shouldEnableEventReplay(injector) {
-  return injector.get(IS_EVENT_REPLAY_ENABLED, EVENT_REPLAY_ENABLED_DEFAULT) && !isGlobalEventDelegationEnabled(injector);
+  return injector.get(IS_EVENT_REPLAY_ENABLED, EVENT_REPLAY_ENABLED_DEFAULT);
 }
 /**
  * Returns a set of providers required to setup support for event replay.
@@ -50357,7 +50489,7 @@ function withEventReplay() {
         // is enabled, but there are no events configured in this application, in which case
         // we don't activate this feature, since there are no events to replay.
         const appId = inject(APP_ID);
-        isEnabled = !!globalThis[CONTRACT_PROPERTY]?.[appId];
+        isEnabled = !!window._ejsas?.[appId];
       }
       if (isEnabled) {
         performanceMarkFeature('NgEventReplay');
@@ -50390,8 +50522,8 @@ function withEventReplay() {
           // of the application is completed. This timing is similar to the unclaimed
           // dehydrated views cleanup timing.
           whenStable(appRef).then(() => {
-            const globalEventDelegation = injector.get(GlobalEventDelegation);
-            initEventReplay(globalEventDelegation, injector);
+            const eventContractDetails = injector.get(JSACTION_EVENT_CONTRACT);
+            initEventReplay(eventContractDetails, injector);
             jsactionSet.forEach(removeListeners);
             // After hydration, we shouldn't need to do anymore work related to
             // event replay anymore.
@@ -50404,23 +50536,20 @@ function withEventReplay() {
     multi: true
   }];
 }
-// TODO: Upstream this back into event-dispatch.
-function getJsactionData(container) {
-  return container._ejsa;
-}
 const initEventReplay = (eventDelegation, injector) => {
   const appId = injector.get(APP_ID);
   // This is set in packages/platform-server/src/utils.ts
-  const container = globalThis[CONTRACT_PROPERTY]?.[appId];
-  const earlyJsactionData = getJsactionData(container);
-  const eventContract = eventDelegation.eventContract = new _angular_core_primitives_event_dispatch__WEBPACK_IMPORTED_MODULE_6__.EventContract(new _angular_core_primitives_event_dispatch__WEBPACK_IMPORTED_MODULE_6__.EventContractContainer(earlyJsactionData.c), /* useActionResolver= */false);
+  const earlyJsactionData = window._ejsas[appId];
+  const eventContract = eventDelegation.instance = new _angular_core_primitives_event_dispatch__WEBPACK_IMPORTED_MODULE_6__.EventContract(new _angular_core_primitives_event_dispatch__WEBPACK_IMPORTED_MODULE_6__.EventContractContainer(earlyJsactionData.c));
   for (const et of earlyJsactionData.et) {
     eventContract.addEvent(et);
   }
   for (const et of earlyJsactionData.etc) {
     eventContract.addEvent(et);
   }
-  eventContract.replayEarlyEvents(container);
+  const eventInfos = (0,_angular_core_primitives_event_dispatch__WEBPACK_IMPORTED_MODULE_6__.getAppScopedQueuedEventInfos)(appId);
+  eventContract.replayEarlyEventInfos(eventInfos);
+  (0,_angular_core_primitives_event_dispatch__WEBPACK_IMPORTED_MODULE_6__.clearAppScopedEarlyEventContract)(appId);
   const dispatcher = new _angular_core_primitives_event_dispatch__WEBPACK_IMPORTED_MODULE_6__.EventDispatcher(invokeRegisteredListeners);
   (0,_angular_core_primitives_event_dispatch__WEBPACK_IMPORTED_MODULE_6__.registerDispatcher)(eventContract, dispatcher);
 };
@@ -50429,11 +50558,11 @@ const initEventReplay = (eventDelegation, injector) => {
  * LView. Maps collected events to a corresponding DOM element (an element is used as a key).
  */
 function collectDomEventsInfo(tView, lView, eventTypesToReplay) {
-  const events = new Map();
+  const domEventsInfo = new Map();
   const lCleanup = lView[CLEANUP];
   const tCleanup = tView.cleanup;
   if (!tCleanup || !lCleanup) {
-    return events;
+    return domEventsInfo;
   }
   for (let i = 0; i < tCleanup.length;) {
     const firstParam = tCleanup[i++];
@@ -50441,14 +50570,14 @@ function collectDomEventsInfo(tView, lView, eventTypesToReplay) {
     if (typeof firstParam !== 'string') {
       continue;
     }
-    const name = firstParam;
-    if (!(0,_angular_core_primitives_event_dispatch__WEBPACK_IMPORTED_MODULE_6__.isSupportedEvent)(name)) {
+    const eventType = firstParam;
+    if (!(0,_angular_core_primitives_event_dispatch__WEBPACK_IMPORTED_MODULE_6__.isEarlyEventType)(eventType)) {
       continue;
     }
-    if ((0,_angular_core_primitives_event_dispatch__WEBPACK_IMPORTED_MODULE_6__.isCaptureEvent)(name)) {
-      eventTypesToReplay.capture.add(name);
+    if ((0,_angular_core_primitives_event_dispatch__WEBPACK_IMPORTED_MODULE_6__.isCaptureEventType)(eventType)) {
+      eventTypesToReplay.capture.add(eventType);
     } else {
-      eventTypesToReplay.regular.add(name);
+      eventTypesToReplay.regular.add(eventType);
     }
     const listenerElement = unwrapRNode(lView[secondParam]);
     i++; // move the cursor to the next position (location of the listener idx)
@@ -50460,13 +50589,13 @@ function collectDomEventsInfo(tView, lView, eventTypesToReplay) {
     if (!isDomEvent) {
       continue;
     }
-    if (!events.has(listenerElement)) {
-      events.set(listenerElement, [name]);
+    if (!domEventsInfo.has(listenerElement)) {
+      domEventsInfo.set(listenerElement, [eventType]);
     } else {
-      events.get(listenerElement).push(name);
+      domEventsInfo.get(listenerElement).push(eventType);
     }
   }
-  return events;
+  return domEventsInfo;
 }
 
 /**
@@ -50787,7 +50916,7 @@ function serializeLView(lView, context) {
     if (nativeElementsToEventTypes && tNode.type & 2 /* TNodeType.Element */) {
       const nativeElement = unwrapRNode(lView[i]);
       if (nativeElementsToEventTypes.has(nativeElement)) {
-        setJSActionAttribute(nativeElement, nativeElementsToEventTypes.get(nativeElement));
+        setJSActionAttributes(nativeElement, nativeElementsToEventTypes.get(nativeElement));
       }
     }
     if (Array.isArray(tNode.projection)) {
@@ -50845,8 +50974,10 @@ function serializeLView(lView, context) {
       }
       ngh[CONTAINERS] ??= {};
       ngh[CONTAINERS][noOffsetIndex] = serializeLContainer(lView[i], context);
-    } else if (Array.isArray(lView[i])) {
+    } else if (Array.isArray(lView[i]) && !isLetDeclaration(tNode)) {
       // This is a component, annotate the host node with an `ngh` attribute.
+      // Note: Let declarations that return an array are also storing an array in the LView,
+      // we need to exclude them.
       const targetNode = unwrapRNode(lView[i][HOST]);
       if (!targetNode.hasAttribute(SKIP_HYDRATION_ATTR_NAME)) {
         annotateHostElementForHydration(targetNode, lView[i], context);
@@ -50893,6 +51024,11 @@ function serializeLView(lView, context) {
  *     connection to identify the location of a node.
  */
 function conditionallyAnnotateNodePath(ngh, tNode, lView, excludedParentNodes) {
+  if (isProjectionTNode(tNode)) {
+    // Do not annotate projection nodes (<ng-content />), since
+    // they don't have a corresponding DOM node representing them.
+    return;
+  }
   // Handle case #1 described above.
   if (tNode.projectionNext && tNode.projectionNext !== tNode.next && !isInSkipHydrationBlock(tNode.projectionNext)) {
     appendSerializedNodePath(ngh, tNode.projectionNext, lView, excludedParentNodes);
@@ -51193,36 +51329,6 @@ function verifySsrContentsIntegrity() {
   if (!hydrationMarker) {
     throw new RuntimeError(-507 /* RuntimeErrorCode.MISSING_SSR_CONTENT_INTEGRITY_MARKER */, typeof ngDevMode !== 'undefined' && ngDevMode && 'Angular hydration logic detected that HTML content of this page was modified after it ' + 'was produced during server side rendering. Make sure that there are no optimizations ' + 'that remove comment nodes from HTML enabled on your CDN. Angular hydration ' + 'relies on HTML produced by the server, including whitespaces and comment nodes.');
   }
-}
-
-/**
- * Queue a state update to be performed asynchronously.
- *
- * This is useful to safely update application state that is used in an expression that was already
- * checked during change detection. This defers the update until later and prevents
- * `ExpressionChangedAfterItHasBeenChecked` errors. Using signals for state is recommended instead,
- * but it's not always immediately possible to change the state to a signal because it would be a
- * breaking change. When the callback updates state used in an expression, this needs to be
- * accompanied by an explicit notification to the framework that something has changed (i.e.
- * updating a signal or calling `ChangeDetectorRef.markForCheck()`) or may still cause
- * `ExpressionChangedAfterItHasBeenChecked` in dev mode or fail to synchronize the state to the DOM
- * in production.
- */
-function queueStateUpdate(callback, options) {
-  !options && assertInInjectionContext(queueStateUpdate);
-  const injector = options?.injector ?? inject(Injector);
-  const appRef = injector.get(ApplicationRef);
-  let executed = false;
-  const runCallbackOnce = () => {
-    if (executed || appRef.destroyed) return;
-    executed = true;
-    callback();
-  };
-  internalAfterNextRender(runCallbackOnce, {
-    injector,
-    runOnServer: true
-  });
-  queueMicrotask(runCallbackOnce);
 }
 
 /**
@@ -51783,108 +51889,111 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   EventDispatcher: () => (/* binding */ EventDispatcher),
 /* harmony export */   EventInfoWrapper: () => (/* binding */ EventInfoWrapper),
 /* harmony export */   EventPhase: () => (/* binding */ EventPhase),
-/* harmony export */   JSACTION: () => (/* binding */ JSACTION$1),
-/* harmony export */   JSINSTANCE: () => (/* binding */ JSINSTANCE),
-/* harmony export */   JSTRACK: () => (/* binding */ JSTRACK),
-/* harmony export */   OI: () => (/* binding */ OI$1),
-/* harmony export */   VED: () => (/* binding */ VED),
-/* harmony export */   VET: () => (/* binding */ VET),
-/* harmony export */   bootstrapEarlyEventContract: () => (/* binding */ bootstrapEarlyEventContract),
-/* harmony export */   isCaptureEvent: () => (/* binding */ isCaptureEvent),
-/* harmony export */   isSupportedEvent: () => (/* binding */ isSupportedEvent),
-/* harmony export */   registerDispatcher: () => (/* binding */ registerDispatcher)
+/* harmony export */   bootstrapAppScopedEarlyEventContract: () => (/* binding */ bootstrapAppScopedEarlyEventContract),
+/* harmony export */   clearAppScopedEarlyEventContract: () => (/* binding */ clearAppScopedEarlyEventContract),
+/* harmony export */   getActionCache: () => (/* binding */ getDefaulted),
+/* harmony export */   getAppScopedQueuedEventInfos: () => (/* binding */ getAppScopedQueuedEventInfos),
+/* harmony export */   isCaptureEventType: () => (/* binding */ isCaptureEventType),
+/* harmony export */   isEarlyEventType: () => (/* binding */ isEarlyEventType),
+/* harmony export */   registerAppScopedDispatcher: () => (/* binding */ registerAppScopedDispatcher),
+/* harmony export */   registerDispatcher: () => (/* binding */ registerDispatcher$1),
+/* harmony export */   removeAllAppScopedEventListeners: () => (/* binding */ removeAllAppScopedEventListeners)
 /* harmony export */ });
 /**
- * @license Angular v18.0.5
+ * @license Angular v18.2.9
  * (c) 2010-2024 Google LLC. https://angular.io/
  * License: MIT
  */
 
-/**
- * The jsaction attribute defines a mapping of a DOM event to a
- * generic event (aka jsaction), to which the actual event handlers
- * that implement the behavior of the application are bound. The
- * value is a semicolon separated list of colon separated pairs of
- * an optional DOM event name and a jsaction name. If the optional
- * DOM event name is omitted, 'click' is assumed. The jsaction names
- * are dot separated pairs of a namespace and a simple jsaction
- * name.
- *
- * See grammar in README.md for expected syntax in the attribute value.
- */
-const JSACTION$1 = 'jsaction';
-/**
- * The oi attribute is a log impression tag for impression logging
- * and action tracking. For an element that carries a jsaction
- * attribute, the element is identified for the purpose of
- * impression logging and click tracking by the dot separated path
- * of all oi attributes in the chain of ancestors of the element.
- *
- * Used by ActionFlow.
- */
-const OI$1 = 'oi';
-/**
- * The ved attribute is an encoded ClickTrackingCGI proto to track
- * visual elements.
- *
- * Used by ActionFlow.
- */
-const VED = 'ved';
-/**
- * The vet attribute is the visual element type used to identify tracked
- * visual elements.
- */
-const VET = 'vet';
-/**
- * Support for iteration on reprocessing.
- *
- * Used by ActionFlow.
- */
-const JSINSTANCE = 'jsinstance';
-/**
- * All click jsactions that happen on the element that carries this
- * attribute or its descendants are automatically logged.
- * Impressions of jsactions on these elements are tracked too, if
- * requested by the impression() method of ActionFlow.
- *
- * Used by ActionFlow.
- */
-const JSTRACK = 'jstrack';
 const Attribute = {
-  JSACTION: JSACTION$1,
-  OI: OI$1,
-  VED,
-  VET,
-  JSINSTANCE,
-  JSTRACK
+  /**
+   * The jsaction attribute defines a mapping of a DOM event to a
+   * generic event (aka jsaction), to which the actual event handlers
+   * that implement the behavior of the application are bound. The
+   * value is a semicolon separated list of colon separated pairs of
+   * an optional DOM event name and a jsaction name. If the optional
+   * DOM event name is omitted, 'click' is assumed. The jsaction names
+   * are dot separated pairs of a namespace and a simple jsaction
+   * name.
+   *
+   * See grammar in README.md for expected syntax in the attribute value.
+   */
+  JSACTION: 'jsaction'
 };
-const Char = {
+
+/** All properties that are used by jsaction. */
+const Property = {
   /**
-   * The separator between the namespace and the action name in the
-   * jsaction attribute value.
+   * The parsed value of the jsaction attribute is stored in this
+   * property on the DOM node. The parsed value is an Object. The
+   * property names of the object are the events; the values are the
+   * names of the actions. This property is attached even on nodes
+   * that don't have a jsaction attribute as an optimization, because
+   * property lookup is faster than attribute access.
    */
-  NAMESPACE_ACTION_SEPARATOR: '.',
+  JSACTION: '__jsaction',
   /**
-   * The separator between the event name and action in the jsaction
-   * attribute value.
+   * The owner property references an a logical owner for a DOM node. JSAction
+   * will follow this reference instead of parentNode when traversing the DOM
+   * to find jsaction attributes. This allows overlaying a logical structure
+   * over a document where the DOM structure can't reflect that structure.
    */
-  EVENT_ACTION_SEPARATOR: ':',
-  /**
-   * The separator between the logged oi attribute values in the &oi=
-   * URL parameter value.
-   */
-  OI_SEPARATOR: '.',
-  /**
-   * The separator between the key and the value pairs in the &cad=
-   * URL parameter value.
-   */
-  CAD_KEY_VALUE_SEPARATOR: ':',
-  /**
-   * The separator between the key-value pairs in the &cad= URL
-   * parameter value.
-   */
-  CAD_SEPARATOR: ','
+  OWNER: '__owner'
 };
+
+/**
+ * Map from jsaction annotation to a parsed map from event name to action name.
+ */
+const parseCache = {};
+/**
+ * Reads the jsaction parser cache from the given DOM Element.
+ */
+function get(element) {
+  return element[Property.JSACTION];
+}
+/**
+ * Reads the jsaction parser cache for the given DOM element. If no cache is yet present,
+ * creates an empty one.
+ */
+function getDefaulted(element) {
+  const cache = get(element) ?? {};
+  set(element, cache);
+  return cache;
+}
+/**
+ * Writes the jsaction parser cache to the given DOM Element.
+ */
+function set(element, actionMap) {
+  element[Property.JSACTION] = actionMap;
+}
+/**
+ * Looks up the parsed action map from the source jsaction attribute value.
+ *
+ * @param text Unparsed jsaction attribute value.
+ * @return Parsed jsaction attribute value, if already present in the cache.
+ */
+function getParsed(text) {
+  return parseCache[text];
+}
+/**
+ * Inserts the parse result for the given source jsaction value into the cache.
+ *
+ * @param text Unparsed jsaction attribute value.
+ * @param parsed Attribute value parsed into the action map.
+ */
+function setParsed(text, parsed) {
+  parseCache[text] = parsed;
+}
+/**
+ * Clears the jsaction parser cache from the given DOM Element.
+ *
+ * @param element .
+ */
+function clear(element) {
+  if (Property.JSACTION in element) {
+    delete element[Property.JSACTION];
+  }
+}
 
 /*
  * Names of events that are special to jsaction. These are not all
@@ -52122,362 +52231,30 @@ const EventType = {
    */
   CUSTOM: '_custom'
 };
-const NON_BUBBLING_MOUSE_EVENTS = [EventType.MOUSEENTER, EventType.MOUSELEAVE, 'pointerenter', 'pointerleave'];
-/**
- * Detects whether a given event type is supported by JSAction.
- */
-const isSupportedEvent = eventType => SUPPORTED_EVENTS.indexOf(eventType) >= 0;
-const SUPPORTED_EVENTS = [EventType.CLICK, EventType.DBLCLICK, EventType.FOCUS, EventType.FOCUSIN, EventType.BLUR, EventType.ERROR, EventType.FOCUSOUT, EventType.KEYDOWN, EventType.KEYUP, EventType.KEYPRESS, EventType.LOAD, EventType.MOUSEOVER, EventType.MOUSEOUT, EventType.SUBMIT, EventType.TOGGLE, EventType.TOUCHSTART, EventType.TOUCHEND, EventType.TOUCHMOVE, 'touchcancel', 'auxclick', 'change', 'compositionstart', 'compositionupdate', 'compositionend', 'beforeinput', 'input', 'select', 'copy', 'cut', 'paste', 'mousedown', 'mouseup', 'wheel', 'contextmenu', 'dragover', 'dragenter', 'dragleave', 'drop', 'dragstart', 'dragend', 'pointerdown', 'pointermove', 'pointerup', 'pointercancel', 'pointerover', 'pointerout', 'gotpointercapture', 'lostpointercapture',
+/** All event types that do not bubble or capture and need a polyfill. */
+const MOUSE_SPECIAL_EVENT_TYPES = [EventType.MOUSEENTER, EventType.MOUSELEAVE, 'pointerenter', 'pointerleave'];
+/** All event types that are registered in the bubble phase. */
+const BUBBLE_EVENT_TYPES = [EventType.CLICK, EventType.DBLCLICK, EventType.FOCUSIN, EventType.FOCUSOUT, EventType.KEYDOWN, EventType.KEYUP, EventType.KEYPRESS, EventType.MOUSEOVER, EventType.MOUSEOUT, EventType.SUBMIT, EventType.TOUCHSTART, EventType.TOUCHEND, EventType.TOUCHMOVE, 'touchcancel', 'auxclick', 'change', 'compositionstart', 'compositionupdate', 'compositionend', 'beforeinput', 'input', 'select', 'copy', 'cut', 'paste', 'mousedown', 'mouseup', 'wheel', 'contextmenu', 'dragover', 'dragenter', 'dragleave', 'drop', 'dragstart', 'dragend', 'pointerdown', 'pointermove', 'pointerup', 'pointercancel', 'pointerover', 'pointerout', 'gotpointercapture', 'lostpointercapture',
 // Video events.
 'ended', 'loadedmetadata',
 // Page visibility events.
 'pagehide', 'pageshow', 'visibilitychange',
 // Content visibility events.
 'beforematch'];
+/** All event types that are registered in the capture phase. */
+const CAPTURE_EVENT_TYPES = [EventType.FOCUS, EventType.BLUR, EventType.ERROR, EventType.LOAD, EventType.TOGGLE];
 /**
- *
- * Decides whether or not an event type is an event that only has a capture phase.
- *
+ * Whether or not an event type should be registered in the capture phase.
  * @param eventType
  * @returns bool
  */
-const isCaptureEvent = eventType => CAPTURE_EVENTS.indexOf(eventType) >= 0;
-const CAPTURE_EVENTS = [EventType.FOCUS, EventType.BLUR, EventType.ERROR, EventType.LOAD, EventType.TOGGLE];
-
+const isCaptureEventType = eventType => CAPTURE_EVENT_TYPES.indexOf(eventType) >= 0;
+/** All event types that are registered early.  */
+const EARLY_EVENT_TYPES = /*#__PURE__*/BUBBLE_EVENT_TYPES.concat(CAPTURE_EVENT_TYPES);
 /**
- * The parsed value of the jsaction attribute is stored in this
- * property on the DOM node. The parsed value is an Object. The
- * property names of the object are the events; the values are the
- * names of the actions. This property is attached even on nodes
- * that don't have a jsaction attribute as an optimization, because
- * property lookup is faster than attribute access.
+ * Whether or not an event type is registered in the early contract.
  */
-const JSACTION = '__jsaction';
-/** The value of the oi attribute as a property, for faster access. */
-const OI = '__oi';
-/**
- * The owner property references an a logical owner for a DOM node. JSAction
- * will follow this reference instead of parentNode when traversing the DOM
- * to find jsaction attributes. This allows overlaying a logical structure
- * over a document where the DOM structure can't reflect that structure.
- */
-const OWNER = '__owner';
-/** All properties that are used by jsaction. */
-const Property = {
-  JSACTION,
-  OI,
-  OWNER
-};
-
-/**
- * Map from jsaction annotation to a parsed map from event name to action name.
- */
-const parseCache = {};
-/**
- * Reads the jsaction parser cache from the given DOM Element.
- *
- * @param element .
- * @return Map from event to qualified name of the jsaction bound to it.
- */
-function get(element) {
-  // @ts-ignore
-  return element[JSACTION];
-}
-/**
- * Writes the jsaction parser cache to the given DOM Element.
- *
- * @param element .
- * @param actionMap Map from event to qualified name of the jsaction bound to
- *     it.
- */
-function set(element, actionMap) {
-  // @ts-ignore
-  element[JSACTION] = actionMap;
-}
-/**
- * Looks up the parsed action map from the source jsaction attribute value.
- *
- * @param text Unparsed jsaction attribute value.
- * @return Parsed jsaction attribute value, if already present in the cache.
- */
-function getParsed(text) {
-  return parseCache[text];
-}
-/**
- * Inserts the parse result for the given source jsaction value into the cache.
- *
- * @param text Unparsed jsaction attribute value.
- * @param parsed Attribute value parsed into the action map.
- */
-function setParsed(text, parsed) {
-  parseCache[text] = parsed;
-}
-/**
- * Clears the jsaction parser cache from the given DOM Element.
- *
- * @param element .
- */
-function clear(element) {
-  if (JSACTION in element) {
-    delete element[JSACTION];
-  }
-}
-
-/** Added for readability when accessing stable property names. */
-function getEventType(eventInfo) {
-  return eventInfo.eventType;
-}
-/** Added for readability when accessing stable property names. */
-function setEventType(eventInfo, eventType) {
-  eventInfo.eventType = eventType;
-}
-/** Added for readability when accessing stable property names. */
-function getEvent(eventInfo) {
-  return eventInfo.event;
-}
-/** Added for readability when accessing stable property names. */
-function setEvent(eventInfo, event) {
-  eventInfo.event = event;
-}
-/** Added for readability when accessing stable property names. */
-function getTargetElement(eventInfo) {
-  return eventInfo.targetElement;
-}
-/** Added for readability when accessing stable property names. */
-function setTargetElement(eventInfo, targetElement) {
-  eventInfo.targetElement = targetElement;
-}
-/** Added for readability when accessing stable property names. */
-function getContainer(eventInfo) {
-  return eventInfo.eic;
-}
-/** Added for readability when accessing stable property names. */
-function setContainer(eventInfo, container) {
-  eventInfo.eic = container;
-}
-/** Added for readability when accessing stable property names. */
-function getTimestamp(eventInfo) {
-  return eventInfo.timeStamp;
-}
-/** Added for readability when accessing stable property names. */
-function setTimestamp(eventInfo, timestamp) {
-  eventInfo.timeStamp = timestamp;
-}
-/** Added for readability when accessing stable property names. */
-function getAction(eventInfo) {
-  return eventInfo.eia;
-}
-/** Added for readability when accessing stable property names. */
-function setAction(eventInfo, actionName, actionElement) {
-  eventInfo.eia = [actionName, actionElement];
-}
-/** Added for readability when accessing stable property names. */
-function unsetAction(eventInfo) {
-  eventInfo.eia = undefined;
-}
-/** Added for readability when accessing stable property names. */
-function getActionName(actionInfo) {
-  return actionInfo[0];
-}
-/** Added for readability when accessing stable property names. */
-function getActionElement(actionInfo) {
-  return actionInfo[1];
-}
-/** Added for readability when accessing stable property names. */
-function getIsReplay(eventInfo) {
-  return eventInfo.eirp;
-}
-/** Added for readability when accessing stable property names. */
-function setIsReplay(eventInfo, replay) {
-  eventInfo.eirp = replay;
-}
-/** Added for readability when accessing stable property names. */
-function getA11yClickKey(eventInfo) {
-  return eventInfo.eiack;
-}
-/** Added for readability when accessing stable property names. */
-function setA11yClickKey(eventInfo, a11yClickKey) {
-  eventInfo.eiack = a11yClickKey;
-}
-/** Added for readability when accessing stable property names. */
-function getResolved(eventInfo) {
-  return eventInfo.eir;
-}
-/** Added for readability when accessing stable property names. */
-function setResolved(eventInfo, resolved) {
-  eventInfo.eir = resolved;
-}
-/** Clones an `EventInfo` */
-function cloneEventInfo(eventInfo) {
-  return {
-    eventType: eventInfo.eventType,
-    event: eventInfo.event,
-    targetElement: eventInfo.targetElement,
-    eic: eventInfo.eic,
-    eia: eventInfo.eia,
-    timeStamp: eventInfo.timeStamp,
-    eirp: eventInfo.eirp,
-    eiack: eventInfo.eiack,
-    eir: eventInfo.eir
-  };
-}
-/**
- * Utility function for creating an `EventInfo`.
- *
- * This can be used from code-size sensitive compilation units, as taking
- * parameters vs. an `Object` literal reduces code size.
- */
-function createEventInfoFromParameters(eventType, event, targetElement, container, timestamp, action, isReplay, a11yClickKey) {
-  return {
-    eventType,
-    event,
-    targetElement,
-    eic: container,
-    timeStamp: timestamp,
-    eia: action,
-    eirp: isReplay,
-    eiack: a11yClickKey
-  };
-}
-/**
- * Utility function for creating an `EventInfo`.
- *
- * This should be used in compilation units that are less sensitive to code
- * size.
- */
-function createEventInfo({
-  eventType,
-  event,
-  targetElement,
-  container,
-  timestamp,
-  action,
-  isReplay,
-  a11yClickKey
-}) {
-  return {
-    eventType,
-    event,
-    targetElement,
-    eic: container,
-    timeStamp: timestamp,
-    eia: action ? [action.name, action.element] : undefined,
-    eirp: isReplay,
-    eiack: a11yClickKey
-  };
-}
-/**
- * Utility class around an `EventInfo`.
- *
- * This should be used in compilation units that are less sensitive to code
- * size.
- */
-class EventInfoWrapper {
-  constructor(eventInfo) {
-    this.eventInfo = eventInfo;
-  }
-  getEventType() {
-    return getEventType(this.eventInfo);
-  }
-  setEventType(eventType) {
-    setEventType(this.eventInfo, eventType);
-  }
-  getEvent() {
-    return getEvent(this.eventInfo);
-  }
-  setEvent(event) {
-    setEvent(this.eventInfo, event);
-  }
-  getTargetElement() {
-    return getTargetElement(this.eventInfo);
-  }
-  setTargetElement(targetElement) {
-    setTargetElement(this.eventInfo, targetElement);
-  }
-  getContainer() {
-    return getContainer(this.eventInfo);
-  }
-  setContainer(container) {
-    setContainer(this.eventInfo, container);
-  }
-  getTimestamp() {
-    return getTimestamp(this.eventInfo);
-  }
-  setTimestamp(timestamp) {
-    setTimestamp(this.eventInfo, timestamp);
-  }
-  getAction() {
-    const action = getAction(this.eventInfo);
-    if (!action) return undefined;
-    return {
-      name: action[0],
-      element: action[1]
-    };
-  }
-  setAction(action) {
-    if (!action) {
-      unsetAction(this.eventInfo);
-      return;
-    }
-    setAction(this.eventInfo, action.name, action.element);
-  }
-  getIsReplay() {
-    return getIsReplay(this.eventInfo);
-  }
-  setIsReplay(replay) {
-    setIsReplay(this.eventInfo, replay);
-  }
-  getResolved() {
-    return getResolved(this.eventInfo);
-  }
-  setResolved(resolved) {
-    setResolved(this.eventInfo, resolved);
-  }
-  clone() {
-    return new EventInfoWrapper(cloneEventInfo(this.eventInfo));
-  }
-}
-
-/**
- * Determines if one node is contained within another. Adapted from
- * {@see goog.dom.contains}.
- * @param node Node that should contain otherNode.
- * @param otherNode Node being contained.
- * @return True if otherNode is contained within node.
- */
-function contains(node, otherNode) {
-  if (otherNode === null) {
-    return false;
-  }
-  // We use browser specific methods for this if available since it is faster
-  // that way.
-  // IE DOM
-  if ('contains' in node && otherNode.nodeType === 1) {
-    return node.contains(otherNode);
-  }
-  // W3C DOM Level 3
-  if ('compareDocumentPosition' in node) {
-    return node === otherNode || Boolean(node.compareDocumentPosition(otherNode) & 16);
-  }
-  // W3C DOM Level 1
-  while (otherNode && node !== otherNode) {
-    otherNode = otherNode.parentNode;
-  }
-  return otherNode === node;
-}
-/**
- * Helper method for broadcastCustomEvent. Returns true if any member of
- * the set is an ancestor of element.
- */
-function hasAncestorInNodeList(element, nodeList) {
-  for (let idx = 0; idx < nodeList.length; ++idx) {
-    const member = nodeList[idx];
-    if (member !== element && contains(member, element)) {
-      return true;
-    }
-  }
-  return false;
-}
+const isEarlyEventType = eventType => EARLY_EVENT_TYPES.indexOf(eventType) >= 0;
 
 /**
  * If on a Macintosh with an extended keyboard, the Enter key located in the
@@ -52540,7 +52317,7 @@ function addEventListener(element, eventType, handler) {
   // Error and load events (i.e. on images) do not bubble so they are also
   // handled in the capture phase.
   let capture = false;
-  if (isCaptureEvent(eventType)) {
+  if (isCaptureEventType(eventType)) {
     capture = true;
   }
   element.addEventListener(eventType, handler, capture);
@@ -52837,7 +52614,7 @@ function isMouseSpecialEvent(e, type, element) {
   // `relatedTarget` is an old DOM API.
   // tslint:disable-next-line:no-any
   const related = e.relatedTarget;
-  return (e.type === EventType.MOUSEOVER && type === EventType.MOUSEENTER || e.type === EventType.MOUSEOUT && type === EventType.MOUSELEAVE || e.type === EventType.POINTEROVER && type === EventType.POINTERENTER || e.type === EventType.POINTEROUT && type === EventType.POINTERLEAVE) && (!related || related !== element && !contains(element, related));
+  return (e.type === EventType.MOUSEOVER && type === EventType.MOUSEENTER || e.type === EventType.MOUSEOUT && type === EventType.MOUSELEAVE || e.type === EventType.POINTEROVER && type === EventType.POINTERENTER || e.type === EventType.POINTEROUT && type === EventType.POINTERLEAVE) && (!related || related !== element && !element.contains(related));
 }
 /**
  * Creates a new EventLike object for a mouseenter/mouseleave event that's
@@ -53105,6 +52882,288 @@ const testing = {
 };
 
 /**
+ * Whether the user agent is running on iOS.
+ */
+const isIos = typeof navigator !== 'undefined' && /*#__PURE__*/ /iPhone|iPad|iPod/.test(navigator.userAgent);
+/**
+ * A class representing a container node and all the event handlers
+ * installed on it. Used so that handlers can be cleaned up if the
+ * container is removed from the contract.
+ */
+class EventContractContainer {
+  /**
+   * @param element The container Element.
+   */
+  constructor(element) {
+    this.element = element;
+    /**
+     * Array of event handlers and their corresponding event types that are
+     * installed on this container.
+     *
+     */
+    this.handlerInfos = [];
+  }
+  /**
+   * Installs the provided installer on the element owned by this container,
+   * and maintains a reference to resulting handler in order to remove it
+   * later if desired.
+   */
+  addEventListener(eventType, getHandler) {
+    // In iOS, event bubbling doesn't happen automatically in any DOM element,
+    // unless it has an onclick attribute or DOM event handler attached to it.
+    // This breaks JsAction in some cases. See "Making Elements Clickable"
+    // section at http://goo.gl/2VoGnB.
+    //
+    // A workaround for this issue is to change the CSS cursor style to 'pointer'
+    // for the container element, which magically turns on event bubbling. This
+    // solution is described in the comments section at http://goo.gl/6pEO1z.
+    //
+    // We use a navigator.userAgent check here as this problem is present both
+    // on Mobile Safari and thin WebKit wrappers, such as Chrome for iOS.
+    if (isIos) {
+      this.element.style.cursor = 'pointer';
+    }
+    this.handlerInfos.push(addEventListener(this.element, eventType, getHandler(this.element)));
+  }
+  /**
+   * Removes all the handlers installed on this container.
+   */
+  cleanUp() {
+    for (let i = 0; i < this.handlerInfos.length; i++) {
+      removeEventListener(this.element, this.handlerInfos[i]);
+    }
+    this.handlerInfos = [];
+  }
+}
+const Char = {
+  /**
+   * The separator between the namespace and the action name in the
+   * jsaction attribute value.
+   */
+  NAMESPACE_ACTION_SEPARATOR: '.',
+  /**
+   * The separator between the event name and action in the jsaction
+   * attribute value.
+   */
+  EVENT_ACTION_SEPARATOR: ':'
+};
+
+/** Added for readability when accessing stable property names. */
+function getEventType(eventInfo) {
+  return eventInfo.eventType;
+}
+/** Added for readability when accessing stable property names. */
+function setEventType(eventInfo, eventType) {
+  eventInfo.eventType = eventType;
+}
+/** Added for readability when accessing stable property names. */
+function getEvent(eventInfo) {
+  return eventInfo.event;
+}
+/** Added for readability when accessing stable property names. */
+function setEvent(eventInfo, event) {
+  eventInfo.event = event;
+}
+/** Added for readability when accessing stable property names. */
+function getTargetElement(eventInfo) {
+  return eventInfo.targetElement;
+}
+/** Added for readability when accessing stable property names. */
+function setTargetElement(eventInfo, targetElement) {
+  eventInfo.targetElement = targetElement;
+}
+/** Added for readability when accessing stable property names. */
+function getContainer(eventInfo) {
+  return eventInfo.eic;
+}
+/** Added for readability when accessing stable property names. */
+function setContainer(eventInfo, container) {
+  eventInfo.eic = container;
+}
+/** Added for readability when accessing stable property names. */
+function getTimestamp(eventInfo) {
+  return eventInfo.timeStamp;
+}
+/** Added for readability when accessing stable property names. */
+function setTimestamp(eventInfo, timestamp) {
+  eventInfo.timeStamp = timestamp;
+}
+/** Added for readability when accessing stable property names. */
+function getAction(eventInfo) {
+  return eventInfo.eia;
+}
+/** Added for readability when accessing stable property names. */
+function setAction(eventInfo, actionName, actionElement) {
+  eventInfo.eia = [actionName, actionElement];
+}
+/** Added for readability when accessing stable property names. */
+function unsetAction(eventInfo) {
+  eventInfo.eia = undefined;
+}
+/** Added for readability when accessing stable property names. */
+function getActionName(actionInfo) {
+  return actionInfo[0];
+}
+/** Added for readability when accessing stable property names. */
+function getActionElement(actionInfo) {
+  return actionInfo[1];
+}
+/** Added for readability when accessing stable property names. */
+function getIsReplay(eventInfo) {
+  return eventInfo.eirp;
+}
+/** Added for readability when accessing stable property names. */
+function setIsReplay(eventInfo, replay) {
+  eventInfo.eirp = replay;
+}
+/** Added for readability when accessing stable property names. */
+function getA11yClickKey(eventInfo) {
+  return eventInfo.eiack;
+}
+/** Added for readability when accessing stable property names. */
+function setA11yClickKey(eventInfo, a11yClickKey) {
+  eventInfo.eiack = a11yClickKey;
+}
+/** Added for readability when accessing stable property names. */
+function getResolved(eventInfo) {
+  return eventInfo.eir;
+}
+/** Added for readability when accessing stable property names. */
+function setResolved(eventInfo, resolved) {
+  eventInfo.eir = resolved;
+}
+/** Clones an `EventInfo` */
+function cloneEventInfo(eventInfo) {
+  return {
+    eventType: eventInfo.eventType,
+    event: eventInfo.event,
+    targetElement: eventInfo.targetElement,
+    eic: eventInfo.eic,
+    eia: eventInfo.eia,
+    timeStamp: eventInfo.timeStamp,
+    eirp: eventInfo.eirp,
+    eiack: eventInfo.eiack,
+    eir: eventInfo.eir
+  };
+}
+/**
+ * Utility function for creating an `EventInfo`.
+ *
+ * This can be used from code-size sensitive compilation units, as taking
+ * parameters vs. an `Object` literal reduces code size.
+ */
+function createEventInfoFromParameters(eventType, event, targetElement, container, timestamp, action, isReplay, a11yClickKey) {
+  return {
+    eventType,
+    event,
+    targetElement,
+    eic: container,
+    timeStamp: timestamp,
+    eia: action,
+    eirp: isReplay,
+    eiack: a11yClickKey
+  };
+}
+/**
+ * Utility function for creating an `EventInfo`.
+ *
+ * This should be used in compilation units that are less sensitive to code
+ * size.
+ */
+function createEventInfo({
+  eventType,
+  event,
+  targetElement,
+  container,
+  timestamp,
+  action,
+  isReplay,
+  a11yClickKey
+}) {
+  return {
+    eventType,
+    event,
+    targetElement,
+    eic: container,
+    timeStamp: timestamp,
+    eia: action ? [action.name, action.element] : undefined,
+    eirp: isReplay,
+    eiack: a11yClickKey
+  };
+}
+/**
+ * Utility class around an `EventInfo`.
+ *
+ * This should be used in compilation units that are less sensitive to code
+ * size.
+ */
+class EventInfoWrapper {
+  constructor(eventInfo) {
+    this.eventInfo = eventInfo;
+  }
+  getEventType() {
+    return getEventType(this.eventInfo);
+  }
+  setEventType(eventType) {
+    setEventType(this.eventInfo, eventType);
+  }
+  getEvent() {
+    return getEvent(this.eventInfo);
+  }
+  setEvent(event) {
+    setEvent(this.eventInfo, event);
+  }
+  getTargetElement() {
+    return getTargetElement(this.eventInfo);
+  }
+  setTargetElement(targetElement) {
+    setTargetElement(this.eventInfo, targetElement);
+  }
+  getContainer() {
+    return getContainer(this.eventInfo);
+  }
+  setContainer(container) {
+    setContainer(this.eventInfo, container);
+  }
+  getTimestamp() {
+    return getTimestamp(this.eventInfo);
+  }
+  setTimestamp(timestamp) {
+    setTimestamp(this.eventInfo, timestamp);
+  }
+  getAction() {
+    const action = getAction(this.eventInfo);
+    if (!action) return undefined;
+    return {
+      name: action[0],
+      element: action[1]
+    };
+  }
+  setAction(action) {
+    if (!action) {
+      unsetAction(this.eventInfo);
+      return;
+    }
+    setAction(this.eventInfo, action.name, action.element);
+  }
+  getIsReplay() {
+    return getIsReplay(this.eventInfo);
+  }
+  setIsReplay(replay) {
+    setIsReplay(this.eventInfo, replay);
+  }
+  getResolved() {
+    return getResolved(this.eventInfo);
+  }
+  setResolved(resolved) {
+    setResolved(this.eventInfo, resolved);
+  }
+  clone() {
+    return new EventInfoWrapper(cloneEventInfo(this.eventInfo));
+  }
+}
+
+/**
  * Since maps from event to action are immutable we can use a single map
  * to represent the empty map.
  */
@@ -53118,13 +53177,16 @@ const DEFAULT_EVENT_TYPE = EventType.CLICK;
 /** Resolves actions for Events. */
 class ActionResolver {
   constructor({
-    syntheticMouseEventSupport = false
+    syntheticMouseEventSupport = false,
+    clickModSupport = true
   } = {}) {
     this.a11yClickSupport = false;
+    this.clickModSupport = true;
     this.updateEventInfoForA11yClick = undefined;
     this.preventDefaultForA11yClick = undefined;
     this.populateClickOnlyAction = undefined;
     this.syntheticMouseEventSupport = syntheticMouseEventSupport;
+    this.clickModSupport = clickModSupport;
   }
   resolveEventType(eventInfo) {
     // We distinguish modified and plain clicks in order to support the
@@ -53160,7 +53222,7 @@ class ActionResolver {
     // addEvent() is necessary for CLICK, KEYDOWN, and KEYPRESS event types.  If
     // a11y click support is enabled, addEvent() will set up the appropriate key
     // event handler automatically.
-    if (getEventType(eventInfo) === EventType.CLICK && isModifiedClickEvent(getEvent(eventInfo))) {
+    if (this.clickModSupport && getEventType(eventInfo) === EventType.CLICK && isModifiedClickEvent(getEvent(eventInfo))) {
       setEventType(eventInfo, EventType.CLICKMOD);
     } else if (this.a11yClickSupport) {
       this.updateEventInfoForA11yClick(eventInfo);
@@ -53249,7 +53311,7 @@ class ActionResolver {
    * shadow root if needed.
    */
   getParentNode(element) {
-    const owner = element[OWNER];
+    const owner = element[Property.OWNER];
     if (owner) {
       return owner;
     }
@@ -53435,7 +53497,7 @@ function shouldPreventDefaultBeforeDispatching(actionElement, eventInfoWrapper) 
  * Registers deferred functionality for an EventContract and a Jsaction
  * Dispatcher.
  */
-function registerDispatcher$1(eventContract, dispatcher) {
+function registerDispatcher$2(eventContract, dispatcher) {
   eventContract.ecrd(eventInfo => {
     dispatcher.dispatch(eventInfo);
   }, Restriction.I_AM_THE_JSACTION_FRAMEWORK);
@@ -53456,9 +53518,12 @@ const COMPOSED_PATH_ERROR_MESSAGE = `\`composedPath\` called during event replay
  * `currentTarget`, etc.
  */
 class EventDispatcher {
-  constructor(dispatchDelegate) {
+  constructor(dispatchDelegate, clickModSupport = true) {
     this.dispatchDelegate = dispatchDelegate;
-    this.actionResolver = new ActionResolver();
+    this.clickModSupport = clickModSupport;
+    this.actionResolver = new ActionResolver({
+      clickModSupport
+    });
     this.dispatcher = new Dispatcher(eventInfoWrapper => {
       this.dispatchToDelegate(eventInfoWrapper);
     }, {
@@ -53479,6 +53544,10 @@ class EventDispatcher {
     prepareEventForBubbling(eventInfoWrapper);
     while (eventInfoWrapper.getAction()) {
       prepareEventForDispatch(eventInfoWrapper);
+      // If this is a capture event, ONLY dispatch if the action element is the target.
+      if (isCaptureEventType(eventInfoWrapper.getEventType()) && eventInfoWrapper.getAction().element !== eventInfoWrapper.getTargetElement()) {
+        return;
+      }
       this.dispatchDelegate(eventInfoWrapper.getEvent(), eventInfoWrapper.getAction().name);
       if (propagationStopped(eventInfoWrapper)) {
         return;
@@ -53489,8 +53558,10 @@ class EventDispatcher {
 }
 function prepareEventForBubbling(eventInfoWrapper) {
   const event = eventInfoWrapper.getEvent();
+  const originalStopPropagation = eventInfoWrapper.getEvent().stopPropagation.bind(event);
   const stopPropagation = () => {
     event[PROPAGATION_STOPPED_SYMBOL] = true;
+    originalStopPropagation();
   };
   patchEventInstance(event, 'stopPropagation', stopPropagation);
   patchEventInstance(event, 'stopImmediatePropagation', stopPropagation);
@@ -53502,9 +53573,11 @@ function propagationStopped(eventInfoWrapper) {
 function prepareEventForReplay(eventInfoWrapper) {
   const event = eventInfoWrapper.getEvent();
   const target = eventInfoWrapper.getTargetElement();
+  const originalPreventDefault = event.preventDefault.bind(event);
   patchEventInstance(event, 'target', target);
   patchEventInstance(event, 'eventPhase', EventPhase.REPLAY);
   patchEventInstance(event, 'preventDefault', () => {
+    originalPreventDefault();
     throw new Error(PREVENT_DEFAULT_ERROR_MESSAGE + (ngDevMode ? PREVENT_DEFAULT_ERROR_MESSAGE_DETAILS : ''));
   });
   patchEventInstance(event, 'composedPath', () => {
@@ -53554,113 +53627,81 @@ function patchEventInstance(event, property, value, {
  * Registers deferred functionality for an EventContract and a Jsaction
  * Dispatcher.
  */
-function registerDispatcher(eventContract, dispatcher) {
+function registerDispatcher$1(eventContract, dispatcher) {
   eventContract.ecrd(eventInfo => {
     dispatcher.dispatch(eventInfo);
   }, Restriction.I_AM_THE_JSACTION_FRAMEWORK);
 }
 
 /**
- * Whether the user agent is running on iOS.
+ * EarlyEventContract intercepts events in the bubbling phase at the
+ * boundary of the document body. This mapping will be passed to the
+ * late-loaded EventContract.
  */
-const isIos = typeof navigator !== 'undefined' && /*#__PURE__*/ /iPhone|iPad|iPod/.test(navigator.userAgent);
-/**
- * A class representing a container node and all the event handlers
- * installed on it. Used so that handlers can be cleaned up if the
- * container is removed from the contract.
- */
-class EventContractContainer {
-  /**
-   * @param element The container Element.
-   */
-  constructor(element) {
-    this.element = element;
-    /**
-     * Array of event handlers and their corresponding event types that are
-     * installed on this container.
-     *
-     */
-    this.handlerInfos = [];
+class EarlyEventContract {
+  constructor(dataContainer = window, container = window.document.documentElement) {
+    this.dataContainer = dataContainer;
+    dataContainer._ejsa = createEarlyJsactionData(container);
   }
   /**
-   * Installs the provided installer on the element owned by this container,
-   * and maintains a reference to resulting handler in order to remove it
-   * later if desired.
+   * Installs a list of event types for container .
    */
-  addEventListener(eventType, getHandler) {
-    // In iOS, event bubbling doesn't happen automatically in any DOM element,
-    // unless it has an onclick attribute or DOM event handler attached to it.
-    // This breaks JsAction in some cases. See "Making Elements Clickable"
-    // section at http://goo.gl/2VoGnB.
-    //
-    // A workaround for this issue is to change the CSS cursor style to 'pointer'
-    // for the container element, which magically turns on event bubbling. This
-    // solution is described in the comments section at http://goo.gl/6pEO1z.
-    //
-    // We use a navigator.userAgent check here as this problem is present both
-    // on Mobile Safari and thin WebKit wrappers, such as Chrome for iOS.
-    if (isIos) {
-      this.element.style.cursor = 'pointer';
-    }
-    this.handlerInfos.push(addEventListener(this.element, eventType, getHandler(this.element)));
+  addEvents(types, capture) {
+    addEvents(this.dataContainer._ejsa, types, capture);
   }
-  /**
-   * Removes all the handlers installed on this container.
-   */
-  cleanUp() {
-    for (let i = 0; i < this.handlerInfos.length; i++) {
-      removeEventListener(this.element, this.handlerInfos[i]);
-    }
-    this.handlerInfos = [];
+}
+/** Creates an `EarlyJsactionData` object. */
+function createEarlyJsactionData(container) {
+  const q = [];
+  const d = eventInfo => {
+    q.push(eventInfo);
+  };
+  const h = event => {
+    d(createEventInfoFromParameters(event.type, event, event.target, container, Date.now()));
+  };
+  return {
+    c: container,
+    q,
+    et: [],
+    etc: [],
+    d,
+    h
+  };
+}
+/** Add all the events to the container stored in the `EarlyJsactionData`. */
+function addEvents(earlyJsactionData, types, capture) {
+  for (let i = 0; i < types.length; i++) {
+    const eventType = types[i];
+    const eventTypes = capture ? earlyJsactionData.etc : earlyJsactionData.et;
+    eventTypes.push(eventType);
+    earlyJsactionData.c.addEventListener(eventType, earlyJsactionData.h, capture);
+  }
+}
+/** Get the queued `EventInfo` objects that were dispatched before a dispatcher was registered. */
+function getQueuedEventInfos(earlyJsactionData) {
+  return earlyJsactionData?.q ?? [];
+}
+/** Register a different dispatcher function on the `EarlyJsactionData`. */
+function registerDispatcher(earlyJsactionData, dispatcher) {
+  if (!earlyJsactionData) {
+    return;
+  }
+  earlyJsactionData.d = dispatcher;
+}
+/** Removes all event listener handlers. */
+function removeAllEventListeners(earlyJsactionData) {
+  if (!earlyJsactionData) {
+    return;
+  }
+  removeEventListeners(earlyJsactionData.c, earlyJsactionData.et, earlyJsactionData.h);
+  removeEventListeners(earlyJsactionData.c, earlyJsactionData.etc, earlyJsactionData.h, true);
+}
+function removeEventListeners(container, eventTypes, earlyEventHandler, capture) {
+  for (let i = 0; i < eventTypes.length; i++) {
+    container.removeEventListener(eventTypes[i], earlyEventHandler, /* useCapture */capture);
   }
 }
 
-/**
- * Update `EventInfo` to be `eventType = 'click'` and sets `a11yClickKey` if it
- * is a a11y click.
- */
-function updateEventInfoForA11yClick(eventInfo) {
-  if (!isActionKeyEvent(getEvent(eventInfo))) {
-    return;
-  }
-  setA11yClickKey(eventInfo, true);
-  // A 'click' triggered by a DOM keypress should be mapped to the 'click'
-  // jsaction.
-  setEventType(eventInfo, EventType.CLICK);
-}
-/**
- * Call `preventDefault` on an a11y click if it is space key or to prevent the
- * browser's default action for native HTML controls.
- */
-function preventDefaultForA11yClick(eventInfo) {
-  if (!getA11yClickKey(eventInfo) || !isSpaceKeyEvent(getEvent(eventInfo)) && !shouldCallPreventDefaultOnNativeHtmlControl(getEvent(eventInfo))) {
-    return;
-  }
-  preventDefault(getEvent(eventInfo));
-}
-/**
- * Sets the `action` to `clickonly` for a click event that is not an a11y click
- * and if there is not already a click action.
- */
-function populateClickOnlyAction(actionElement, eventInfo, actionMap) {
-  if (
-  // If there's already an action, don't attempt to set a CLICKONLY
-  getAction(eventInfo) ||
-  // Only attempt CLICKONLY if the type is CLICK
-  getEventType(eventInfo) !== EventType.CLICK ||
-  // a11y clicks are never CLICKONLY
-  getA11yClickKey(eventInfo) || actionMap[EventType.CLICKONLY] === undefined) {
-    return;
-  }
-  setEventType(eventInfo, EventType.CLICKONLY);
-  setAction(eventInfo, actionMap[EventType.CLICKONLY], actionElement);
-}
-
-/**
- * @define Support for accessible click actions.  This flag can be overridden in
- * a build rule.
- */
-const A11Y_CLICK_SUPPORT = false;
 /**
  * @define Support for the non-bubbling mouseenter and mouseleave events.  This
  * flag can be overridden in a build rule.
@@ -53707,13 +53748,9 @@ const MOUSE_SPECIAL_SUPPORT = false;
 let EventContract = /*#__PURE__*/(() => {
   class EventContract {
     static {
-      this.A11Y_CLICK_SUPPORT = A11Y_CLICK_SUPPORT;
-    }
-    static {
       this.MOUSE_SPECIAL_SUPPORT = MOUSE_SPECIAL_SUPPORT;
     }
-    constructor(containerManager, useActionResolver) {
-      this.useActionResolver = useActionResolver;
+    constructor(containerManager) {
       /**
        * The DOM events which this contract covers. Used to prevent double
        * registration of event types. The value of the map is the
@@ -53736,18 +53773,7 @@ let EventContract = /*#__PURE__*/(() => {
        * as soon as the `Dispatcher` is registered.
        */
       this.queuedEventInfos = [];
-      /** Whether to add an a11y click listener. */
-      this.addA11yClickListener = false;
       this.containerManager = containerManager;
-      if (this.useActionResolver) {
-        this.actionResolver = new ActionResolver({
-          syntheticMouseEventSupport: EventContract.MOUSE_SPECIAL_SUPPORT
-        });
-      }
-      if (EventContract.A11Y_CLICK_SUPPORT) {
-        // Add a11y click support to the `EventContract`.
-        this.addA11yClickSupport();
-      }
     }
     handleEvent(eventType, event, container) {
       const eventInfo = createEventInfoFromParameters( /* eventType= */eventType, /* event= */event, /* targetElement= */event.target, /* container= */container, /* timestamp= */Date.now());
@@ -53762,10 +53788,6 @@ let EventContract = /*#__PURE__*/(() => {
         setIsReplay(eventInfo, true);
         this.queuedEventInfos?.push(eventInfo);
         return;
-      }
-      if (this.useActionResolver) {
-        this.actionResolver.resolveEventType(eventInfo);
-        this.actionResolver.resolveAction(eventInfo);
       }
       this.dispatcher(eventInfo);
     }
@@ -53786,7 +53808,7 @@ let EventContract = /*#__PURE__*/(() => {
       if (eventType in this.eventHandlers || !this.containerManager) {
         return;
       }
-      if (!EventContract.MOUSE_SPECIAL_SUPPORT && NON_BUBBLING_MOUSE_EVENTS.indexOf(eventType) >= 0) {
+      if (!EventContract.MOUSE_SPECIAL_SUPPORT && MOUSE_SPECIAL_EVENT_TYPES.indexOf(eventType) >= 0) {
         return;
       }
       const eventHandler = (eventType, event, container) => {
@@ -53805,42 +53827,40 @@ let EventContract = /*#__PURE__*/(() => {
           eventHandler(eventType, event, element);
         };
       });
-      // Automatically install a keypress/keydown event handler if support for
-      // accessible clicks is turned on.
-      if (this.addA11yClickListener && eventType === EventType.CLICK) {
-        this.addEvent(EventType.KEYDOWN);
-      }
     }
     /**
      * Gets the queued early events and replay them using the appropriate handler
      * in the provided event contract. Once all the events are replayed, it cleans
      * up the early contract.
      */
-    replayEarlyEvents(earlyJsactionContainer = window) {
+    replayEarlyEvents(earlyJsactionData = window._ejsa) {
       // Check if the early contract is present and prevent calling this function
       // more than once.
-      const earlyJsactionData = earlyJsactionContainer._ejsa;
       if (!earlyJsactionData) {
         return;
       }
       // Replay the early contract events.
-      const earlyEventInfos = earlyJsactionData.q;
-      for (let idx = 0; idx < earlyEventInfos.length; idx++) {
-        const earlyEventInfo = earlyEventInfos[idx];
+      this.replayEarlyEventInfos(earlyJsactionData.q);
+      // Clean up the early contract.
+      removeAllEventListeners(earlyJsactionData);
+      delete window._ejsa;
+    }
+    /**
+     * Replays all the early `EventInfo` objects, dispatching them through the normal
+     * `EventContract` flow.
+     */
+    replayEarlyEventInfos(earlyEventInfos) {
+      for (let i = 0; i < earlyEventInfos.length; i++) {
+        const earlyEventInfo = earlyEventInfos[i];
         const eventTypes = this.getEventTypesForBrowserEventType(earlyEventInfo.eventType);
-        for (let i = 0; i < eventTypes.length; i++) {
+        for (let j = 0; j < eventTypes.length; j++) {
           const eventInfo = cloneEventInfo(earlyEventInfo);
           // EventInfo eventType maps to JSAction's internal event type,
           // rather than the browser event type.
-          setEventType(eventInfo, eventTypes[i]);
+          setEventType(eventInfo, eventTypes[j]);
           this.handleEventInfo(eventInfo);
         }
       }
-      // Clean up the early contract.
-      const earlyEventHandler = earlyJsactionData.h;
-      removeEventListeners(earlyJsactionData.c, earlyJsactionData.et, earlyEventHandler);
-      removeEventListeners(earlyJsactionData.c, earlyJsactionData.etc, earlyEventHandler, true);
-      delete earlyJsactionContainer._ejsa;
     }
     /**
      * Returns all JSAction event types that have been registered for a given
@@ -53901,101 +53921,43 @@ let EventContract = /*#__PURE__*/(() => {
         this.queuedEventInfos = null;
       }
     }
-    /**
-     * Adds a11y click support to the given `EventContract`. Meant to be called in
-     * the same compilation unit as the `EventContract`.
-     */
-    addA11yClickSupport() {
-      this.addA11yClickSupportImpl(updateEventInfoForA11yClick, preventDefaultForA11yClick, populateClickOnlyAction);
-    }
-    /**
-     * Enables a11y click support to be deferred. Meant to be called in the same
-     * compilation unit as the `EventContract`.
-     */
-    exportAddA11yClickSupport() {
-      this.addA11yClickListener = true;
-      this.ecaacs = this.addA11yClickSupportImpl.bind(this);
-    }
-    /**
-     * Unrenamed function that loads a11yClickSupport.
-     */
-    addA11yClickSupportImpl(updateEventInfoForA11yClick, preventDefaultForA11yClick, populateClickOnlyAction) {
-      this.addA11yClickListener = true;
-      if (this.useActionResolver) {
-        this.actionResolver.addA11yClickSupport(updateEventInfoForA11yClick, preventDefaultForA11yClick, populateClickOnlyAction);
-      }
-    }
   }
   return EventContract;
 })();
-function removeEventListeners(container, eventTypes, earlyEventHandler, capture) {
-  for (let idx = 0; idx < eventTypes.length; idx++) {
-    container.removeEventListener(eventTypes[idx], earlyEventHandler, /* useCapture */capture);
+/**
+ * Creates an `EarlyJsactionData`, adds events to it, and populates it on a nested object on
+ * the window.
+ */
+function bootstrapAppScopedEarlyEventContract(container, appId, bubbleEventTypes, captureEventTypes, dataContainer = window) {
+  const earlyJsactionData = createEarlyJsactionData(container);
+  if (!dataContainer._ejsas) {
+    dataContainer._ejsas = {};
   }
+  dataContainer._ejsas[appId] = earlyJsactionData;
+  addEvents(earlyJsactionData, bubbleEventTypes);
+  addEvents(earlyJsactionData, captureEventTypes, /* capture= */true);
+}
+/** Get the queued `EventInfo` objects that were dispatched before a dispatcher was registered. */
+function getAppScopedQueuedEventInfos(appId, dataContainer = window) {
+  return getQueuedEventInfos(dataContainer._ejsas?.[appId]);
 }
 /**
- * Adds a11y click support to the given `EventContract`. Meant to be called
- * in a different compilation unit from the `EventContract`. The `EventContract`
- * must have called `exportAddA11yClickSupport` in its compilation unit for this
- * to have any effect.
+ * Registers a dispatcher function on the `EarlyJsactionData` present on the nested object on the
+ * window.
  */
-function addDeferredA11yClickSupport(eventContract) {
-  eventContract.ecaacs?.(updateEventInfoForA11yClick, preventDefaultForA11yClick, populateClickOnlyAction);
+function registerAppScopedDispatcher(restriction, appId, dispatcher, dataContainer = window) {
+  registerDispatcher(dataContainer._ejsas?.[appId], dispatcher);
 }
-
-/**
- * EarlyEventContract intercepts events in the bubbling phase at the
- * boundary of the document body. This mapping will be passed to the
- * late-loaded EventContract.
- */
-class EarlyEventContract {
-  constructor(replaySink = window, container = window.document.documentElement) {
-    this.replaySink = replaySink;
-    this.container = container;
-    replaySink._ejsa = {
-      c: container,
-      q: [],
-      et: [],
-      etc: [],
-      h: event => {
-        const eventInfo = createEventInfoFromParameters(event.type, event, event.target, container, Date.now());
-        replaySink._ejsa.q.push(eventInfo);
-      }
-    };
-  }
-  /**
-   * Installs a list of event types for container .
-   */
-  addEvents(types, capture) {
-    const replaySink = this.replaySink._ejsa;
-    for (let idx = 0; idx < types.length; idx++) {
-      const eventType = types[idx];
-      const eventTypes = capture ? replaySink.etc : replaySink.et;
-      eventTypes.push(eventType);
-      this.container.addEventListener(eventType, replaySink.h, capture);
-    }
-  }
+/** Removes all event listener handlers. */
+function removeAllAppScopedEventListeners(appId, dataContainer = window) {
+  removeAllEventListeners(dataContainer._ejsas?.[appId]);
 }
-
-/**
- * Provides a factory function for bootstrapping an event contract on a
- * specified object (by default, exposed on the `window`).
- * @param field The property on the object that the event contract will be placed on.
- * @param container The container that listens to events
- * @param appId A given identifier for an application. If there are multiple apps on the page
- *              then this is how contracts can be initialized for each one.
- * @param eventTypes An array of event names that should be listened to.
- * @param captureEventTypes An array of event names that should be listened to with capture.
- * @param earlyJsactionTracker The object that should receive the event contract.
- */
-function bootstrapEarlyEventContract(field, container, appId, eventTypes, captureEventTypes, earlyJsactionTracker = window) {
-  if (!earlyJsactionTracker[field]) {
-    earlyJsactionTracker[field] = {};
+/** Clear the early event contract. */
+function clearAppScopedEarlyEventContract(appId, dataContainer = window) {
+  if (!dataContainer._ejsas) {
+    return;
   }
-  earlyJsactionTracker[field][appId] = {};
-  const eventContract = new EarlyEventContract(earlyJsactionTracker[field][appId], container);
-  if (eventTypes) eventContract.addEvents(eventTypes);
-  if (captureEventTypes) eventContract.addEvents(captureEventTypes, true);
+  dataContainer._ejsas[appId] = undefined;
 }
 
 //# sourceMappingURL=event-dispatch.mjs.map
@@ -54026,9 +53988,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   isInNotificationPhase: () => (/* binding */ isInNotificationPhase),
 /* harmony export */   isReactive: () => (/* binding */ isReactive),
 /* harmony export */   producerAccessed: () => (/* binding */ producerAccessed),
+/* harmony export */   producerIncrementEpoch: () => (/* binding */ producerIncrementEpoch),
 /* harmony export */   producerNotifyConsumers: () => (/* binding */ producerNotifyConsumers),
 /* harmony export */   producerUpdateValueVersion: () => (/* binding */ producerUpdateValueVersion),
 /* harmony export */   producerUpdatesAllowed: () => (/* binding */ producerUpdatesAllowed),
+/* harmony export */   runPostSignalSetFn: () => (/* binding */ runPostSignalSetFn),
 /* harmony export */   setActiveConsumer: () => (/* binding */ setActiveConsumer),
 /* harmony export */   setAlternateWeakRefImpl: () => (/* binding */ setAlternateWeakRefImpl),
 /* harmony export */   setPostSignalSetFn: () => (/* binding */ setPostSignalSetFn),
@@ -54037,7 +54001,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   signalUpdateFn: () => (/* binding */ signalUpdateFn)
 /* harmony export */ });
 /**
- * @license Angular v18.0.5
+ * @license Angular v18.2.9
  * (c) 2010-2024 Google LLC. https://angular.io/
  * License: MIT
  */
@@ -54483,6 +54447,9 @@ function signalUpdateFn(node, updater) {
   }
   signalSetFn(node, updater(node.value));
 }
+function runPostSignalSetFn() {
+  postSignalSetFn?.();
+}
 // Note: Using an IIFE here to ensure that the spread assignment is not considered
 // a side-effect, ending up preserving `COMPUTED_NODE` and `REACTIVE_NODE`.
 // TODO: remove when https://github.com/evanw/esbuild/issues/3392 is resolved.
@@ -54588,13 +54555,14 @@ function setAlternateWeakRefImpl(impl) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   provideAnimationsAsync: () => (/* binding */ provideAnimationsAsync),
+/* harmony export */   "ɵASYNC_ANIMATION_LOADING_SCHEDULER_FN": () => (/* binding */ ɵASYNC_ANIMATION_LOADING_SCHEDULER_FN),
 /* harmony export */   "ɵAsyncAnimationRendererFactory": () => (/* binding */ AsyncAnimationRendererFactory)
 /* harmony export */ });
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ 6610);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 2978);
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser */ 6098);
 /**
- * @license Angular v18.0.5
+ * @license Angular v18.2.9
  * (c) 2010-2024 Google LLC. https://angular.io/
  * License: MIT
  */
@@ -54620,6 +54588,9 @@ let AsyncAnimationRendererFactory = /*#__PURE__*/(() => {
       this.scheduler = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.inject)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵChangeDetectionScheduler"], {
         optional: true
       });
+      this.loadingSchedulerFn = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.inject)(ɵASYNC_ANIMATION_LOADING_SCHEDULER_FN, {
+        optional: true
+      });
     }
     /** @nodoc */
     ngOnDestroy() {
@@ -54638,8 +54609,14 @@ let AsyncAnimationRendererFactory = /*#__PURE__*/(() => {
       // Note on the `.then(m => m)` part below: Closure compiler optimizations in g3 require
       // `.then` to be present for a dynamic import (or an import should be `await`ed) to detect
       // the set of imported symbols.
-      const moduleImpl = this.moduleImpl ?? __webpack_require__.e(/*! import() */ 249).then(__webpack_require__.bind(__webpack_require__, /*! @angular/animations/browser */ 1249)).then(m => m);
-      return moduleImpl.catch(e => {
+      const loadFn = () => this.moduleImpl ?? __webpack_require__.e(/*! import() */ 249).then(__webpack_require__.bind(__webpack_require__, /*! @angular/animations/browser */ 1249)).then(m => m);
+      let moduleImplPromise;
+      if (this.loadingSchedulerFn) {
+        moduleImplPromise = this.loadingSchedulerFn(loadFn);
+      } else {
+        moduleImplPromise = loadFn();
+      }
+      return moduleImplPromise.catch(e => {
         throw new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](5300 /* RuntimeErrorCode.ANIMATION_RENDERER_ASYNC_LOADING_FAILURE */, (typeof ngDevMode === 'undefined' || ngDevMode) && 'Async loading for animations package was ' + 'enabled, but loading failed. Angular falls back to using regular rendering. ' + "No animations will be displayed and their styles won't be applied.");
       }).then(({
         ɵcreateEngine,
@@ -54681,7 +54658,7 @@ let AsyncAnimationRendererFactory = /*#__PURE__*/(() => {
       this._rendererFactoryPromise?.then(animationRendererFactory => {
         const animationRenderer = animationRendererFactory.createRenderer(hostElement, rendererType);
         dynamicRenderer.use(animationRenderer);
-        this.scheduler?.notify(9 /* NotificationSource.AsyncAnimationsLoaded */);
+        this.scheduler?.notify(10 /* NotificationSource.AsyncAnimationsLoaded */);
       }).catch(e => {
         // Permanently use regular renderer when loading fails.
         dynamicRenderer.use(renderer);
@@ -54698,7 +54675,7 @@ let AsyncAnimationRendererFactory = /*#__PURE__*/(() => {
       return this.delegate.whenRenderingDone?.() ?? Promise.resolve();
     }
     static {
-      this.ɵfac = function AsyncAnimationRendererFactory_Factory(t) {
+      this.ɵfac = function AsyncAnimationRendererFactory_Factory(__ngFactoryType__) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinvalidFactory"]();
       };
     }
@@ -54817,6 +54794,12 @@ class DynamicDelegationRenderer {
     return this.replay !== null && propOrEventName.startsWith(ANIMATION_PREFIX);
   }
 }
+/**
+ * Provides a custom scheduler function for the async loading of the animation package.
+ *
+ * Private token for investigation purposes
+ */
+const ɵASYNC_ANIMATION_LOADING_SCHEDULER_FN = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_0__.InjectionToken(ngDevMode ? 'async_animation_loading_scheduler_fn' : '');
 
 /**
  * Returns the set of dependency-injection providers
@@ -54932,7 +54915,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 2978);
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ 6409);
 /**
- * @license Angular v18.0.5
+ * @license Angular v18.2.9
  * (c) 2010-2024 Google LLC. https://angular.io/
  * License: MIT
  */
@@ -54977,9 +54960,7 @@ class BrowserDomAdapter extends GenericBrowserDomAdapter {
     el.dispatchEvent(evt);
   }
   remove(node) {
-    if (node.parentNode) {
-      node.parentNode.removeChild(node);
-    }
+    node.remove();
   }
   createElement(tagName, doc) {
     doc = doc || this.getDefaultDocument();
@@ -55089,8 +55070,8 @@ let BrowserXhr = /*#__PURE__*/(() => {
       return new XMLHttpRequest();
     }
     static {
-      this.ɵfac = function BrowserXhr_Factory(t) {
-        return new (t || BrowserXhr)();
+      this.ɵfac = function BrowserXhr_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || BrowserXhr)();
       };
     }
     static {
@@ -55165,8 +55146,8 @@ let EventManager = /*#__PURE__*/(() => {
       return plugin;
     }
     static {
-      this.ɵfac = function EventManager_Factory(t) {
-        return new (t || EventManager)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](EVENT_MANAGER_PLUGINS), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.NgZone));
+      this.ɵfac = function EventManager_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || EventManager)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](EVENT_MANAGER_PLUGINS), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.NgZone));
       };
     }
     static {
@@ -55332,8 +55313,8 @@ let SharedStylesHost = /*#__PURE__*/(() => {
       hostNodes.add(this.doc.head);
     }
     static {
-      this.ɵfac = function SharedStylesHost_Factory(t) {
-        return new (t || SharedStylesHost)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_common__WEBPACK_IMPORTED_MODULE_0__.DOCUMENT), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.APP_ID), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.CSP_NONCE, 8), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.PLATFORM_ID));
+      this.ɵfac = function SharedStylesHost_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || SharedStylesHost)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_common__WEBPACK_IMPORTED_MODULE_0__.DOCUMENT), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.APP_ID), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.CSP_NONCE, 8), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.PLATFORM_ID));
       };
     }
     static {
@@ -55448,8 +55429,8 @@ let DomRendererFactory2 = /*#__PURE__*/(() => {
       this.rendererByCompId.clear();
     }
     static {
-      this.ɵfac = function DomRendererFactory2_Factory(t) {
-        return new (t || DomRendererFactory2)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](EventManager), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](SharedStylesHost), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.APP_ID), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](REMOVE_STYLES_ON_COMPONENT_DESTROY), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_common__WEBPACK_IMPORTED_MODULE_0__.DOCUMENT), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.PLATFORM_ID), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.NgZone), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.CSP_NONCE));
+      this.ɵfac = function DomRendererFactory2_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || DomRendererFactory2)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](EventManager), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](SharedStylesHost), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.APP_ID), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](REMOVE_STYLES_ON_COMPONENT_DESTROY), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_common__WEBPACK_IMPORTED_MODULE_0__.DOCUMENT), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.PLATFORM_ID), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.NgZone), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.CSP_NONCE));
       };
     }
     static {
@@ -55510,10 +55491,8 @@ class DefaultDomRenderer2 {
       targetParent.insertBefore(newChild, refChild);
     }
   }
-  removeChild(parent, oldChild) {
-    if (parent) {
-      parent.removeChild(oldChild);
-    }
+  removeChild(_parent, oldChild) {
+    oldChild.remove();
   }
   selectRootElement(selectorOrNode, preserveContent) {
     let el = typeof selectorOrNode === 'string' ? this.doc.querySelector(selectorOrNode) : selectorOrNode;
@@ -55660,8 +55639,8 @@ class ShadowDomRenderer extends DefaultDomRenderer2 {
   insertBefore(parent, newChild, refChild) {
     return super.insertBefore(this.nodeOrShadowRoot(parent), newChild, refChild);
   }
-  removeChild(parent, oldChild) {
-    return super.removeChild(this.nodeOrShadowRoot(parent), oldChild);
+  removeChild(_parent, oldChild) {
+    return super.removeChild(null, oldChild);
   }
   parentNode(node) {
     return this.nodeOrShadowRoot(super.parentNode(this.nodeOrShadowRoot(node)));
@@ -55722,8 +55701,8 @@ let DomEventsPlugin = /*#__PURE__*/(() => {
       return target.removeEventListener(eventName, callback);
     }
     static {
-      this.ɵfac = function DomEventsPlugin_Factory(t) {
-        return new (t || DomEventsPlugin)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_common__WEBPACK_IMPORTED_MODULE_0__.DOCUMENT));
+      this.ɵfac = function DomEventsPlugin_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || DomEventsPlugin)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_common__WEBPACK_IMPORTED_MODULE_0__.DOCUMENT));
       };
     }
     static {
@@ -55901,8 +55880,8 @@ let KeyEventsPlugin = /*#__PURE__*/(() => {
       return keyName === 'esc' ? 'escape' : keyName;
     }
     static {
-      this.ɵfac = function KeyEventsPlugin_Factory(t) {
-        return new (t || KeyEventsPlugin)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_common__WEBPACK_IMPORTED_MODULE_0__.DOCUMENT));
+      this.ɵfac = function KeyEventsPlugin_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || KeyEventsPlugin)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_common__WEBPACK_IMPORTED_MODULE_0__.DOCUMENT));
       };
     }
     static {
@@ -56136,8 +56115,8 @@ let BrowserModule = /*#__PURE__*/(() => {
       };
     }
     static {
-      this.ɵfac = function BrowserModule_Factory(t) {
-        return new (t || BrowserModule)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](BROWSER_MODULE_PROVIDERS_MARKER, 12));
+      this.ɵfac = function BrowserModule_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || BrowserModule)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](BROWSER_MODULE_PROVIDERS_MARKER, 12));
       };
     }
     static {
@@ -56303,8 +56282,8 @@ let Meta = /*#__PURE__*/(() => {
       return META_KEYS_MAP[prop] || prop;
     }
     static {
-      this.ɵfac = function Meta_Factory(t) {
-        return new (t || Meta)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_common__WEBPACK_IMPORTED_MODULE_0__.DOCUMENT));
+      this.ɵfac = function Meta_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || Meta)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_common__WEBPACK_IMPORTED_MODULE_0__.DOCUMENT));
       };
     }
     static {
@@ -56356,8 +56335,8 @@ let Title = /*#__PURE__*/(() => {
       this._doc.title = newTitle || '';
     }
     static {
-      this.ɵfac = function Title_Factory(t) {
-        return new (t || Title)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_common__WEBPACK_IMPORTED_MODULE_0__.DOCUMENT));
+      this.ɵfac = function Title_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || Title)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_common__WEBPACK_IMPORTED_MODULE_0__.DOCUMENT));
       };
     }
     static {
@@ -56571,7 +56550,9 @@ const EVENT_NAMES = {
  */
 const HAMMER_GESTURE_CONFIG = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_1__.InjectionToken('HammerGestureConfig');
 /**
- * Injection token used to provide a {@link HammerLoader} to Angular.
+ * Injection token used to provide a HammerLoader to Angular.
+ *
+ * @see {@link HammerLoader}
  *
  * @publicApi
  */
@@ -56628,8 +56609,8 @@ let HammerGestureConfig = /*#__PURE__*/(() => {
       return mc;
     }
     static {
-      this.ɵfac = function HammerGestureConfig_Factory(t) {
-        return new (t || HammerGestureConfig)();
+      this.ɵfac = function HammerGestureConfig_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || HammerGestureConfig)();
       };
     }
     static {
@@ -56734,8 +56715,8 @@ let HammerGesturesPlugin = /*#__PURE__*/(() => {
       return this._config.events.indexOf(eventName) > -1;
     }
     static {
-      this.ɵfac = function HammerGesturesPlugin_Factory(t) {
-        return new (t || HammerGesturesPlugin)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_common__WEBPACK_IMPORTED_MODULE_0__.DOCUMENT), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](HAMMER_GESTURE_CONFIG), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵConsole"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](HAMMER_LOADER, 8));
+      this.ɵfac = function HammerGesturesPlugin_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || HammerGesturesPlugin)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_common__WEBPACK_IMPORTED_MODULE_0__.DOCUMENT), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](HAMMER_GESTURE_CONFIG), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵConsole"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](HAMMER_LOADER, 8));
       };
     }
     static {
@@ -56764,8 +56745,8 @@ let HammerGesturesPlugin = /*#__PURE__*/(() => {
 let HammerModule = /*#__PURE__*/(() => {
   class HammerModule {
     static {
-      this.ɵfac = function HammerModule_Factory(t) {
-        return new (t || HammerModule)();
+      this.ɵfac = function HammerModule_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || HammerModule)();
       };
     }
     static {
@@ -56828,21 +56809,21 @@ let HammerModule = /*#__PURE__*/(() => {
 let DomSanitizer = /*#__PURE__*/(() => {
   class DomSanitizer {
     static {
-      this.ɵfac = function DomSanitizer_Factory(t) {
-        return new (t || DomSanitizer)();
+      this.ɵfac = function DomSanitizer_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || DomSanitizer)();
       };
     }
     static {
       this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
         token: DomSanitizer,
-        factory: function DomSanitizer_Factory(t) {
-          let r = null;
-          if (t) {
-            r = new (t || DomSanitizer)();
+        factory: function DomSanitizer_Factory(__ngFactoryType__) {
+          let __ngConditionalFactory__ = null;
+          if (__ngFactoryType__) {
+            __ngConditionalFactory__ = new (__ngFactoryType__ || DomSanitizer)();
           } else {
-            r = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](DomSanitizerImpl);
+            __ngConditionalFactory__ = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](DomSanitizerImpl);
           }
-          return r;
+          return __ngConditionalFactory__;
         },
         providedIn: 'root'
       });
@@ -56909,8 +56890,8 @@ let DomSanitizerImpl = /*#__PURE__*/(() => {
       return (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵbypassSanitizationTrustResourceUrl"])(value);
     }
     static {
-      this.ɵfac = function DomSanitizerImpl_Factory(t) {
-        return new (t || DomSanitizerImpl)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_common__WEBPACK_IMPORTED_MODULE_0__.DOCUMENT));
+      this.ɵfac = function DomSanitizerImpl_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || DomSanitizerImpl)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_common__WEBPACK_IMPORTED_MODULE_0__.DOCUMENT));
       };
     }
     static {
@@ -56961,9 +56942,9 @@ function withNoHttpTransferCache() {
   return hydrationFeature(HydrationFeatureKind.NoHttpTransferCache);
 }
 /**
- * The function accepts a an object, which allows to configure cache parameters,
+ * The function accepts an object, which allows to configure cache parameters,
  * such as which headers should be included (no headers are included by default),
- * wether POST requests should be cached or a callback function to determine if a
+ * whether POST requests should be cached or a callback function to determine if a
  * particular request should be cached.
  *
  * @publicApi
@@ -57012,9 +56993,10 @@ function provideZoneJsCompatibilityDetector() {
     provide: _angular_core__WEBPACK_IMPORTED_MODULE_1__.ENVIRONMENT_INITIALIZER,
     useValue: () => {
       const ngZone = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(_angular_core__WEBPACK_IMPORTED_MODULE_1__.NgZone);
+      const isZoneless = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵZONELESS_ENABLED"]);
       // Checking `ngZone instanceof NgZone` would be insufficient here,
       // because custom implementations might use NgZone as a base class.
-      if (ngZone.constructor !== _angular_core__WEBPACK_IMPORTED_MODULE_1__.NgZone) {
+      if (!isZoneless && ngZone.constructor !== _angular_core__WEBPACK_IMPORTED_MODULE_1__.NgZone) {
         const console = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵConsole"]);
         const message = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵformatRuntimeError"])(-5000 /* RuntimeErrorCode.UNSUPPORTED_ZONEJS_INSTANCE */, 'Angular detected that hydration was enabled for an application ' + 'that uses a custom or a noop Zone.js implementation. ' + 'This is not yet a fully supported configuration.');
         // tslint:disable-next-line:no-console
@@ -57035,9 +57017,12 @@ function provideZoneJsCompatibilityDetector() {
  * transferring this cache to the client to avoid extra HTTP requests. Learn more about data caching
  * [here](guide/ssr#caching-data-when-using-httpclient).
  *
- * These functions allow you to disable some of the default features or configure features
+ * These functions allow you to disable some of the default features or enable new ones:
+ *
  * * {@link withNoHttpTransferCache} to disable HTTP transfer cache
  * * {@link withHttpTransferCacheOptions} to configure some HTTP transfer cache options
+ * * {@link withI18nSupport} to enable hydration support for i18n blocks
+ * * {@link withEventReplay} to enable support for replaying user events
  *
  * @usageNotes
  *
@@ -57062,6 +57047,8 @@ function provideZoneJsCompatibilityDetector() {
  *
  * @see {@link withNoHttpTransferCache}
  * @see {@link withHttpTransferCacheOptions}
+ * @see {@link withI18nSupport}
+ * @see {@link withEventReplay}
  *
  * @param features Optional features to configure additional router behaviors.
  * @returns A set of providers to enable hydration.
@@ -57096,7 +57083,7 @@ function provideClientHydration(...features) {
 /**
  * @publicApi
  */
-const VERSION = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_1__.Version('18.0.5');
+const VERSION = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_1__.Version('18.2.9');
 
 /**
  * @module
@@ -57202,46 +57189,44 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "ɵafterNextNavigation": () => (/* binding */ afterNextNavigation),
 /* harmony export */   "ɵloadChildren": () => (/* binding */ loadChildren)
 /* harmony export */ });
-/* harmony import */ var _home_runner_work_ng_camp_ng_camp_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 3308);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 2978);
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ 2319);
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ 333);
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs */ 756);
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs */ 5981);
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! rxjs */ 199);
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! rxjs */ 943);
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! rxjs */ 6753);
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! rxjs */ 8001);
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! rxjs */ 6106);
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! rxjs */ 8823);
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! rxjs */ 8448);
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! rxjs */ 9086);
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! rxjs */ 907);
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! rxjs */ 2486);
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! @angular/common */ 6610);
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! rxjs/operators */ 3527);
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! rxjs/operators */ 2831);
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! rxjs/operators */ 8486);
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! rxjs/operators */ 965);
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! rxjs/operators */ 8503);
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! rxjs/operators */ 7567);
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! rxjs/operators */ 6715);
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! rxjs/operators */ 4807);
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! rxjs/operators */ 7236);
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! rxjs/operators */ 4526);
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! rxjs/operators */ 4024);
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! rxjs/operators */ 2290);
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! rxjs/operators */ 21);
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! rxjs/operators */ 2146);
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! rxjs/operators */ 3770);
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! rxjs/operators */ 6347);
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! rxjs/operators */ 9841);
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! rxjs/operators */ 6340);
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! rxjs/operators */ 3806);
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! @angular/platform-browser */ 6098);
-
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 2978);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! rxjs */ 2319);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ 333);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ 756);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs */ 5981);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! rxjs */ 199);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! rxjs */ 943);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! rxjs */ 6753);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! rxjs */ 8001);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! rxjs */ 6106);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! rxjs */ 8823);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! rxjs */ 8448);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! rxjs */ 9086);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! rxjs */ 907);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! rxjs */ 2486);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! @angular/common */ 6610);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs/operators */ 3527);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! rxjs/operators */ 2831);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! rxjs/operators */ 8486);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! rxjs/operators */ 965);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! rxjs/operators */ 8503);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! rxjs/operators */ 7567);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! rxjs/operators */ 6715);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! rxjs/operators */ 4807);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! rxjs/operators */ 7236);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! rxjs/operators */ 4526);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! rxjs/operators */ 4024);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! rxjs/operators */ 2290);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! rxjs/operators */ 21);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! rxjs/operators */ 2146);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! rxjs/operators */ 3770);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! rxjs/operators */ 6347);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! rxjs/operators */ 9841);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! rxjs/operators */ 6340);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! rxjs/operators */ 3806);
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! @angular/platform-browser */ 6098);
 /**
- * @license Angular v18.0.5
+ * @license Angular v18.2.9
  * (c) 2010-2024 Google LLC. https://angular.io/
  * License: MIT
  */
@@ -57394,16 +57379,16 @@ function last(a) {
   return a.length > 0 ? a[a.length - 1] : null;
 }
 function wrapIntoObservable(value) {
-  if ((0,rxjs__WEBPACK_IMPORTED_MODULE_1__.isObservable)(value)) {
+  if ((0,rxjs__WEBPACK_IMPORTED_MODULE_0__.isObservable)(value)) {
     return value;
   }
-  if ((0,_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵisPromise"])(value)) {
+  if ((0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵisPromise"])(value)) {
     // Use `Promise.resolve()` to wrap promise-like instances.
     // Required ie when a Resolver returns a AngularJS `$q` promise to correctly trigger the
     // change detection.
-    return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.from)(Promise.resolve(value));
+    return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.from)(Promise.resolve(value));
   }
-  return (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)(value);
+  return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(value);
 }
 const pathCompareMap = {
   'exact': equalSegmentGroups,
@@ -57510,7 +57495,7 @@ class UrlTree {
     this.fragment = fragment;
     if (typeof ngDevMode === 'undefined' || ngDevMode) {
       if (root.segments.length > 0) {
-        throw new _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵRuntimeError"](4015 /* RuntimeErrorCode.INVALID_ROOT_URL_SEGMENT */, 'The root `UrlSegmentGroup` should not contain `segments`. ' + 'Instead, these segments belong in the `children` so they can be associated with a named outlet.');
+        throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](4015 /* RuntimeErrorCode.INVALID_ROOT_URL_SEGMENT */, 'The root `UrlSegmentGroup` should not contain `segments`. ' + 'Instead, these segments belong in the `children` so they can be associated with a named outlet.');
       }
     }
   }
@@ -57633,12 +57618,12 @@ function mapChildrenIntoArray(segment, fn) {
 let UrlSerializer = /*#__PURE__*/(() => {
   class UrlSerializer {
     static {
-      this.ɵfac = function UrlSerializer_Factory(t) {
-        return new (t || UrlSerializer)();
+      this.ɵfac = function UrlSerializer_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || UrlSerializer)();
       };
     }
     static {
-      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjectable"]({
+      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
         token: UrlSerializer,
         factory: () => (() => new DefaultUrlSerializer())(),
         providedIn: 'root'
@@ -57849,7 +57834,7 @@ class UrlParser {
   parseSegment() {
     const path = matchSegments(this.remaining);
     if (path === '' && this.peekStartsWith(';')) {
-      throw new _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵRuntimeError"](4009 /* RuntimeErrorCode.EMPTY_PATH_WITH_PARAMS */, (typeof ngDevMode === 'undefined' || ngDevMode) && `Empty path url segment cannot have parameters: '${this.remaining}'.`);
+      throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](4009 /* RuntimeErrorCode.EMPTY_PATH_WITH_PARAMS */, (typeof ngDevMode === 'undefined' || ngDevMode) && `Empty path url segment cannot have parameters: '${this.remaining}'.`);
     }
     this.capture(path);
     return new UrlSegment(decode(path), this.parseMatrixParams());
@@ -57917,7 +57902,7 @@ class UrlParser {
       // if is is not one of these characters, then the segment was unescaped
       // or the group was not closed
       if (next !== '/' && next !== ')' && next !== ';') {
-        throw new _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵRuntimeError"](4010 /* RuntimeErrorCode.UNPARSABLE_URL */, (typeof ngDevMode === 'undefined' || ngDevMode) && `Cannot parse url '${this.url}'`);
+        throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](4010 /* RuntimeErrorCode.UNPARSABLE_URL */, (typeof ngDevMode === 'undefined' || ngDevMode) && `Cannot parse url '${this.url}'`);
       }
       let outletName = undefined;
       if (path.indexOf(':') > -1) {
@@ -57946,7 +57931,7 @@ class UrlParser {
   }
   capture(str) {
     if (!this.consumeOptional(str)) {
-      throw new _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵRuntimeError"](4011 /* RuntimeErrorCode.UNEXPECTED_VALUE_IN_URL */, (typeof ngDevMode === 'undefined' || ngDevMode) && `Expected "${str}".`);
+      throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](4011 /* RuntimeErrorCode.UNEXPECTED_VALUE_IN_URL */, (typeof ngDevMode === 'undefined' || ngDevMode) && `Expected "${str}".`);
     }
   }
 }
@@ -58143,11 +58128,11 @@ class Navigation {
     this.numberOfDoubleDots = numberOfDoubleDots;
     this.commands = commands;
     if (isAbsolute && commands.length > 0 && isMatrixParams(commands[0])) {
-      throw new _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵRuntimeError"](4003 /* RuntimeErrorCode.ROOT_SEGMENT_MATRIX_PARAMS */, (typeof ngDevMode === 'undefined' || ngDevMode) && 'Root segment cannot have matrix parameters');
+      throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](4003 /* RuntimeErrorCode.ROOT_SEGMENT_MATRIX_PARAMS */, (typeof ngDevMode === 'undefined' || ngDevMode) && 'Root segment cannot have matrix parameters');
     }
     const cmdWithOutlet = commands.find(isCommandWithOutlets);
     if (cmdWithOutlet && cmdWithOutlet !== last(commands)) {
-      throw new _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵRuntimeError"](4004 /* RuntimeErrorCode.MISPLACED_OUTLETS_COMMAND */, (typeof ngDevMode === 'undefined' || ngDevMode) && '{outlets:{}} has to be the last command');
+      throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](4004 /* RuntimeErrorCode.MISPLACED_OUTLETS_COMMAND */, (typeof ngDevMode === 'undefined' || ngDevMode) && '{outlets:{}} has to be the last command');
     }
   }
   toRoot() {
@@ -58232,7 +58217,7 @@ function createPositionApplyingDoubleDots(group, index, numberOfDoubleDots) {
     dd -= ci;
     g = g.parent;
     if (!g) {
-      throw new _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵRuntimeError"](4005 /* RuntimeErrorCode.INVALID_DOUBLE_DOTS */, (typeof ngDevMode === 'undefined' || ngDevMode) && "Invalid number of '../'");
+      throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](4005 /* RuntimeErrorCode.INVALID_DOUBLE_DOTS */, (typeof ngDevMode === 'undefined' || ngDevMode) && "Invalid number of '../'");
     }
     ci = g.segments.length;
   }
@@ -58931,16 +58916,184 @@ function stringifyEvent(routerEvent) {
 }
 
 /**
+ * Creates an `EnvironmentInjector` if the `Route` has providers and one does not already exist
+ * and returns the injector. Otherwise, if the `Route` does not have `providers`, returns the
+ * `currentInjector`.
+ *
+ * @param route The route that might have providers
+ * @param currentInjector The parent injector of the `Route`
+ */
+function getOrCreateRouteInjectorIfNeeded(route, currentInjector) {
+  if (route.providers && !route._injector) {
+    route._injector = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.createEnvironmentInjector)(route.providers, currentInjector, `Route: ${route.path}`);
+  }
+  return route._injector ?? currentInjector;
+}
+function getLoadedRoutes(route) {
+  return route._loadedRoutes;
+}
+function getLoadedInjector(route) {
+  return route._loadedInjector;
+}
+function getLoadedComponent(route) {
+  return route._loadedComponent;
+}
+function getProvidersInjector(route) {
+  return route._injector;
+}
+function validateConfig(config, parentPath = '', requireStandaloneComponents = false) {
+  // forEach doesn't iterate undefined values
+  for (let i = 0; i < config.length; i++) {
+    const route = config[i];
+    const fullPath = getFullPath(parentPath, route);
+    validateNode(route, fullPath, requireStandaloneComponents);
+  }
+}
+function assertStandalone(fullPath, component) {
+  if (component && (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵisNgModule"])(component)) {
+    throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](4014 /* RuntimeErrorCode.INVALID_ROUTE_CONFIG */, `Invalid configuration of route '${fullPath}'. You are using 'loadComponent' with a module, ` + `but it must be used with standalone components. Use 'loadChildren' instead.`);
+  } else if (component && !(0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.isStandalone)(component)) {
+    throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](4014 /* RuntimeErrorCode.INVALID_ROUTE_CONFIG */, `Invalid configuration of route '${fullPath}'. The component must be standalone.`);
+  }
+}
+function validateNode(route, fullPath, requireStandaloneComponents) {
+  if (typeof ngDevMode === 'undefined' || ngDevMode) {
+    if (!route) {
+      throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](4014 /* RuntimeErrorCode.INVALID_ROUTE_CONFIG */, `
+      Invalid configuration of route '${fullPath}': Encountered undefined route.
+      The reason might be an extra comma.
+
+      Example:
+      const routes: Routes = [
+        { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+        { path: 'dashboard',  component: DashboardComponent },, << two commas
+        { path: 'detail/:id', component: HeroDetailComponent }
+      ];
+    `);
+    }
+    if (Array.isArray(route)) {
+      throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](4014 /* RuntimeErrorCode.INVALID_ROUTE_CONFIG */, `Invalid configuration of route '${fullPath}': Array cannot be specified`);
+    }
+    if (!route.redirectTo && !route.component && !route.loadComponent && !route.children && !route.loadChildren && route.outlet && route.outlet !== PRIMARY_OUTLET) {
+      throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](4014 /* RuntimeErrorCode.INVALID_ROUTE_CONFIG */, `Invalid configuration of route '${fullPath}': a componentless route without children or loadChildren cannot have a named outlet set`);
+    }
+    if (route.redirectTo && route.children) {
+      throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](4014 /* RuntimeErrorCode.INVALID_ROUTE_CONFIG */, `Invalid configuration of route '${fullPath}': redirectTo and children cannot be used together`);
+    }
+    if (route.redirectTo && route.loadChildren) {
+      throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](4014 /* RuntimeErrorCode.INVALID_ROUTE_CONFIG */, `Invalid configuration of route '${fullPath}': redirectTo and loadChildren cannot be used together`);
+    }
+    if (route.children && route.loadChildren) {
+      throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](4014 /* RuntimeErrorCode.INVALID_ROUTE_CONFIG */, `Invalid configuration of route '${fullPath}': children and loadChildren cannot be used together`);
+    }
+    if (route.redirectTo && (route.component || route.loadComponent)) {
+      throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](4014 /* RuntimeErrorCode.INVALID_ROUTE_CONFIG */, `Invalid configuration of route '${fullPath}': redirectTo and component/loadComponent cannot be used together`);
+    }
+    if (route.component && route.loadComponent) {
+      throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](4014 /* RuntimeErrorCode.INVALID_ROUTE_CONFIG */, `Invalid configuration of route '${fullPath}': component and loadComponent cannot be used together`);
+    }
+    if (route.redirectTo && route.canActivate) {
+      throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](4014 /* RuntimeErrorCode.INVALID_ROUTE_CONFIG */, `Invalid configuration of route '${fullPath}': redirectTo and canActivate cannot be used together. Redirects happen before activation ` + `so canActivate will never be executed.`);
+    }
+    if (route.path && route.matcher) {
+      throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](4014 /* RuntimeErrorCode.INVALID_ROUTE_CONFIG */, `Invalid configuration of route '${fullPath}': path and matcher cannot be used together`);
+    }
+    if (route.redirectTo === void 0 && !route.component && !route.loadComponent && !route.children && !route.loadChildren) {
+      throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](4014 /* RuntimeErrorCode.INVALID_ROUTE_CONFIG */, `Invalid configuration of route '${fullPath}'. One of the following must be provided: component, loadComponent, redirectTo, children or loadChildren`);
+    }
+    if (route.path === void 0 && route.matcher === void 0) {
+      throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](4014 /* RuntimeErrorCode.INVALID_ROUTE_CONFIG */, `Invalid configuration of route '${fullPath}': routes must have either a path or a matcher specified`);
+    }
+    if (typeof route.path === 'string' && route.path.charAt(0) === '/') {
+      throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](4014 /* RuntimeErrorCode.INVALID_ROUTE_CONFIG */, `Invalid configuration of route '${fullPath}': path cannot start with a slash`);
+    }
+    if (route.path === '' && route.redirectTo !== void 0 && route.pathMatch === void 0) {
+      const exp = `The default value of 'pathMatch' is 'prefix', but often the intent is to use 'full'.`;
+      throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](4014 /* RuntimeErrorCode.INVALID_ROUTE_CONFIG */, `Invalid configuration of route '{path: "${fullPath}", redirectTo: "${route.redirectTo}"}': please provide 'pathMatch'. ${exp}`);
+    }
+    if (requireStandaloneComponents) {
+      assertStandalone(fullPath, route.component);
+    }
+  }
+  if (route.children) {
+    validateConfig(route.children, fullPath, requireStandaloneComponents);
+  }
+}
+function getFullPath(parentPath, currentRoute) {
+  if (!currentRoute) {
+    return parentPath;
+  }
+  if (!parentPath && !currentRoute.path) {
+    return '';
+  } else if (parentPath && !currentRoute.path) {
+    return `${parentPath}/`;
+  } else if (!parentPath && currentRoute.path) {
+    return currentRoute.path;
+  } else {
+    return `${parentPath}/${currentRoute.path}`;
+  }
+}
+/** Returns the `route.outlet` or PRIMARY_OUTLET if none exists. */
+function getOutlet(route) {
+  return route.outlet || PRIMARY_OUTLET;
+}
+/**
+ * Sorts the `routes` such that the ones with an outlet matching `outletName` come first.
+ * The order of the configs is otherwise preserved.
+ */
+function sortByMatchingOutlets(routes, outletName) {
+  const sortedConfig = routes.filter(r => getOutlet(r) === outletName);
+  sortedConfig.push(...routes.filter(r => getOutlet(r) !== outletName));
+  return sortedConfig;
+}
+/**
+ * Gets the first injector in the snapshot's parent tree.
+ *
+ * If the `Route` has a static list of providers, the returned injector will be the one created from
+ * those. If it does not exist, the returned injector may come from the parents, which may be from a
+ * loaded config or their static providers.
+ *
+ * Returns `null` if there is neither this nor any parents have a stored injector.
+ *
+ * Generally used for retrieving the injector to use for getting tokens for guards/resolvers and
+ * also used for getting the correct injector to use for creating components.
+ */
+function getClosestRouteInjector(snapshot) {
+  if (!snapshot) return null;
+  // If the current route has its own injector, which is created from the static providers on the
+  // route itself, we should use that. Otherwise, we start at the parent since we do not want to
+  // include the lazy loaded injector from this route.
+  if (snapshot.routeConfig?._injector) {
+    return snapshot.routeConfig._injector;
+  }
+  for (let s = snapshot.parent; s; s = s.parent) {
+    const route = s.routeConfig;
+    // Note that the order here is important. `_loadedInjector` stored on the route with
+    // `loadChildren: () => NgModule` so it applies to child routes with priority. The `_injector`
+    // is created from the static providers on that parent route, so it applies to the children as
+    // well, but only if there is no lazy loaded NgModuleRef injector.
+    if (route?._loadedInjector) return route._loadedInjector;
+    if (route?._injector) return route._injector;
+  }
+  return null;
+}
+
+/**
  * Store contextual information about a `RouterOutlet`
  *
  * @publicApi
  */
 class OutletContext {
-  constructor(injector) {
-    this.injector = injector;
+  get injector() {
+    return getClosestRouteInjector(this.route?.snapshot) ?? this.rootInjector;
+  }
+  // TODO(atscott): Only here to avoid a "breaking" change in a patch/minor. Remove in v19.
+  set injector(_) {}
+  constructor(rootInjector) {
+    this.rootInjector = rootInjector;
     this.outlet = null;
     this.route = null;
-    this.children = new ChildrenOutletContexts(this.injector);
+    this.children = new ChildrenOutletContexts(this.rootInjector);
     this.attachRef = null;
   }
 }
@@ -58952,8 +59105,8 @@ class OutletContext {
 let ChildrenOutletContexts = /*#__PURE__*/(() => {
   class ChildrenOutletContexts {
     /** @nodoc */
-    constructor(parentInjector) {
-      this.parentInjector = parentInjector;
+    constructor(rootInjector) {
+      this.rootInjector = rootInjector;
       // contexts for child outlets, by name.
       this.contexts = new Map();
     }
@@ -58990,7 +59143,7 @@ let ChildrenOutletContexts = /*#__PURE__*/(() => {
     getOrCreateContext(childName) {
       let context = this.getContext(childName);
       if (!context) {
-        context = new OutletContext(this.parentInjector);
+        context = new OutletContext(this.rootInjector);
         this.contexts.set(childName, context);
       }
       return context;
@@ -58999,12 +59152,12 @@ let ChildrenOutletContexts = /*#__PURE__*/(() => {
       return this.contexts.get(childName) || null;
     }
     static {
-      this.ɵfac = function ChildrenOutletContexts_Factory(t) {
-        return new (t || ChildrenOutletContexts)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__.EnvironmentInjector));
+      this.ɵfac = function ChildrenOutletContexts_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || ChildrenOutletContexts)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.EnvironmentInjector));
       };
     }
     static {
-      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjectable"]({
+      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
         token: ChildrenOutletContexts,
         factory: ChildrenOutletContexts.ɵfac,
         providedIn: 'root'
@@ -59144,11 +59297,11 @@ class RouterState extends Tree {
 }
 function createEmptyState(rootComponent) {
   const snapshot = createEmptyStateSnapshot(rootComponent);
-  const emptyUrl = new rxjs__WEBPACK_IMPORTED_MODULE_5__.BehaviorSubject([new UrlSegment('', {})]);
-  const emptyParams = new rxjs__WEBPACK_IMPORTED_MODULE_5__.BehaviorSubject({});
-  const emptyData = new rxjs__WEBPACK_IMPORTED_MODULE_5__.BehaviorSubject({});
-  const emptyQueryParams = new rxjs__WEBPACK_IMPORTED_MODULE_5__.BehaviorSubject({});
-  const fragment = new rxjs__WEBPACK_IMPORTED_MODULE_5__.BehaviorSubject('');
+  const emptyUrl = new rxjs__WEBPACK_IMPORTED_MODULE_4__.BehaviorSubject([new UrlSegment('', {})]);
+  const emptyParams = new rxjs__WEBPACK_IMPORTED_MODULE_4__.BehaviorSubject({});
+  const emptyData = new rxjs__WEBPACK_IMPORTED_MODULE_4__.BehaviorSubject({});
+  const emptyQueryParams = new rxjs__WEBPACK_IMPORTED_MODULE_4__.BehaviorSubject({});
+  const fragment = new rxjs__WEBPACK_IMPORTED_MODULE_4__.BehaviorSubject('');
   const activated = new ActivatedRoute(emptyUrl, emptyParams, emptyQueryParams, fragment, emptyData, PRIMARY_OUTLET, rootComponent, snapshot.root);
   activated.snapshot = snapshot.root;
   return new RouterState(new TreeNode(activated, []), snapshot);
@@ -59198,7 +59351,7 @@ class ActivatedRoute {
     this.outlet = outlet;
     this.component = component;
     this._futureSnapshot = futureSnapshot;
-    this.title = this.dataSubject?.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_6__.map)(d => d[RouteTitleKey])) ?? (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)(undefined);
+    this.title = this.dataSubject?.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_5__.map)(d => d[RouteTitleKey])) ?? (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(undefined);
     // TODO(atscott): Verify that these can be changed to `.asObservable()` with TGP.
     this.url = urlSubject;
     this.params = paramsSubject;
@@ -59236,7 +59389,7 @@ class ActivatedRoute {
    * The map supports retrieving single and multiple values from the same parameter.
    */
   get paramMap() {
-    this._paramMap ??= this.params.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_6__.map)(p => convertToParamMap(p)));
+    this._paramMap ??= this.params.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_5__.map)(p => convertToParamMap(p)));
     return this._paramMap;
   }
   /**
@@ -59244,7 +59397,7 @@ class ActivatedRoute {
    * The map supports retrieving single and multiple values from the query parameter.
    */
   get queryParamMap() {
-    this._queryParamMap ??= this.queryParams.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_6__.map)(p => convertToParamMap(p)));
+    this._queryParamMap ??= this.queryParams.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_5__.map)(p => convertToParamMap(p)));
     return this._queryParamMap;
   }
   toString() {
@@ -59559,22 +59712,22 @@ let RouterOutlet = /*#__PURE__*/(() => {
        *
        */
       this.name = PRIMARY_OUTLET;
-      this.activateEvents = new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter();
-      this.deactivateEvents = new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter();
+      this.activateEvents = new _angular_core__WEBPACK_IMPORTED_MODULE_1__.EventEmitter();
+      this.deactivateEvents = new _angular_core__WEBPACK_IMPORTED_MODULE_1__.EventEmitter();
       /**
        * Emits an attached component instance when the `RouteReuseStrategy` instructs to re-attach a
        * previously detached subtree.
        **/
-      this.attachEvents = new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter();
+      this.attachEvents = new _angular_core__WEBPACK_IMPORTED_MODULE_1__.EventEmitter();
       /**
        * Emits a detached component instance when the `RouteReuseStrategy` instructs to detach the
        * subtree.
        */
-      this.detachEvents = new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter();
-      this.parentContexts = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(ChildrenOutletContexts);
-      this.location = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(_angular_core__WEBPACK_IMPORTED_MODULE_2__.ViewContainerRef);
-      this.changeDetector = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(_angular_core__WEBPACK_IMPORTED_MODULE_2__.ChangeDetectorRef);
-      this.inputBinder = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(INPUT_BINDER, {
+      this.detachEvents = new _angular_core__WEBPACK_IMPORTED_MODULE_1__.EventEmitter();
+      this.parentContexts = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(ChildrenOutletContexts);
+      this.location = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(_angular_core__WEBPACK_IMPORTED_MODULE_1__.ViewContainerRef);
+      this.changeDetector = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(_angular_core__WEBPACK_IMPORTED_MODULE_1__.ChangeDetectorRef);
+      this.inputBinder = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(INPUT_BINDER, {
         optional: true
       });
       /** @nodoc */
@@ -59646,11 +59799,11 @@ let RouterOutlet = /*#__PURE__*/(() => {
      * @throws An error if the outlet is not activated.
      */
     get component() {
-      if (!this.activated) throw new _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵRuntimeError"](4012 /* RuntimeErrorCode.OUTLET_NOT_ACTIVATED */, (typeof ngDevMode === 'undefined' || ngDevMode) && 'Outlet is not activated');
+      if (!this.activated) throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](4012 /* RuntimeErrorCode.OUTLET_NOT_ACTIVATED */, (typeof ngDevMode === 'undefined' || ngDevMode) && 'Outlet is not activated');
       return this.activated.instance;
     }
     get activatedRoute() {
-      if (!this.activated) throw new _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵRuntimeError"](4012 /* RuntimeErrorCode.OUTLET_NOT_ACTIVATED */, (typeof ngDevMode === 'undefined' || ngDevMode) && 'Outlet is not activated');
+      if (!this.activated) throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](4012 /* RuntimeErrorCode.OUTLET_NOT_ACTIVATED */, (typeof ngDevMode === 'undefined' || ngDevMode) && 'Outlet is not activated');
       return this._activatedRoute;
     }
     get activatedRouteData() {
@@ -59663,7 +59816,7 @@ let RouterOutlet = /*#__PURE__*/(() => {
      * Called when the `RouteReuseStrategy` instructs to detach the subtree
      */
     detach() {
-      if (!this.activated) throw new _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵRuntimeError"](4012 /* RuntimeErrorCode.OUTLET_NOT_ACTIVATED */, (typeof ngDevMode === 'undefined' || ngDevMode) && 'Outlet is not activated');
+      if (!this.activated) throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](4012 /* RuntimeErrorCode.OUTLET_NOT_ACTIVATED */, (typeof ngDevMode === 'undefined' || ngDevMode) && 'Outlet is not activated');
       this.location.detach();
       const cmp = this.activated;
       this.activated = null;
@@ -59692,7 +59845,7 @@ let RouterOutlet = /*#__PURE__*/(() => {
     }
     activateWith(activatedRoute, environmentInjector) {
       if (this.isActivated) {
-        throw new _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵRuntimeError"](4013 /* RuntimeErrorCode.OUTLET_ALREADY_ACTIVATED */, (typeof ngDevMode === 'undefined' || ngDevMode) && 'Cannot activate an already activated outlet');
+        throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](4013 /* RuntimeErrorCode.OUTLET_ALREADY_ACTIVATED */, (typeof ngDevMode === 'undefined' || ngDevMode) && 'Cannot activate an already activated outlet');
       }
       this._activatedRoute = activatedRoute;
       const location = this.location;
@@ -59712,12 +59865,12 @@ let RouterOutlet = /*#__PURE__*/(() => {
       this.activateEvents.emit(this.activated.instance);
     }
     static {
-      this.ɵfac = function RouterOutlet_Factory(t) {
-        return new (t || RouterOutlet)();
+      this.ɵfac = function RouterOutlet_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || RouterOutlet)();
       };
     }
     static {
-      this.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineDirective"]({
+      this.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({
         type: RouterOutlet,
         selectors: [["router-outlet"]],
         inputs: {
@@ -59731,7 +59884,7 @@ let RouterOutlet = /*#__PURE__*/(() => {
         },
         exportAs: ["outlet"],
         standalone: true,
-        features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵNgOnChangesFeature"]]
+        features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]]
       });
     }
   }
@@ -59774,7 +59927,7 @@ class OutletInjector {
     return this.parent.get(token, notFoundValue);
   }
 }
-const INPUT_BINDER = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_2__.InjectionToken('');
+const INPUT_BINDER = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_1__.InjectionToken('');
 /**
  * Injectable used as a tree-shakable provider for opting in to binding router data to component
  * inputs.
@@ -59806,7 +59959,7 @@ let RoutedComponentInputBinder = /*#__PURE__*/(() => {
       const {
         activatedRoute
       } = outlet;
-      const dataSubscription = (0,rxjs__WEBPACK_IMPORTED_MODULE_7__.combineLatest)([activatedRoute.queryParams, activatedRoute.params, activatedRoute.data]).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_8__.switchMap)(([queryParams, params, data], index) => {
+      const dataSubscription = (0,rxjs__WEBPACK_IMPORTED_MODULE_6__.combineLatest)([activatedRoute.queryParams, activatedRoute.params, activatedRoute.data]).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_7__.switchMap)(([queryParams, params, data], index) => {
         data = {
           ...queryParams,
           ...params,
@@ -59815,7 +59968,7 @@ let RoutedComponentInputBinder = /*#__PURE__*/(() => {
         // Get the first result from the data subscription synchronously so it's available to
         // the component as soon as possible (and doesn't require a second change detection).
         if (index === 0) {
-          return (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)(data);
+          return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(data);
         }
         // Promise.resolve is used to avoid synchronously writing the wrong data when
         // two of the Observables in the `combineLatest` stream emit one after
@@ -59828,7 +59981,7 @@ let RoutedComponentInputBinder = /*#__PURE__*/(() => {
           this.unsubscribeFromRouteData(outlet);
           return;
         }
-        const mirror = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.reflectComponentType)(activatedRoute.component);
+        const mirror = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.reflectComponentType)(activatedRoute.component);
         if (!mirror) {
           this.unsubscribeFromRouteData(outlet);
           return;
@@ -59842,12 +59995,12 @@ let RoutedComponentInputBinder = /*#__PURE__*/(() => {
       this.outletDataSubscriptions.set(outlet, dataSubscription);
     }
     static {
-      this.ɵfac = function RoutedComponentInputBinder_Factory(t) {
-        return new (t || RoutedComponentInputBinder)();
+      this.ɵfac = function RoutedComponentInputBinder_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || RoutedComponentInputBinder)();
       };
     }
     static {
-      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjectable"]({
+      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
         token: RoutedComponentInputBinder,
         factory: RoutedComponentInputBinder.ɵfac
       });
@@ -59896,7 +60049,7 @@ function createOrReuseChildren(routeReuseStrategy, curr, prevState) {
   });
 }
 function createActivatedRoute(c) {
-  return new ActivatedRoute(new rxjs__WEBPACK_IMPORTED_MODULE_5__.BehaviorSubject(c.url), new rxjs__WEBPACK_IMPORTED_MODULE_5__.BehaviorSubject(c.params), new rxjs__WEBPACK_IMPORTED_MODULE_5__.BehaviorSubject(c.queryParams), new rxjs__WEBPACK_IMPORTED_MODULE_5__.BehaviorSubject(c.fragment), new rxjs__WEBPACK_IMPORTED_MODULE_5__.BehaviorSubject(c.data), c.outlet, c.component, c);
+  return new ActivatedRoute(new rxjs__WEBPACK_IMPORTED_MODULE_4__.BehaviorSubject(c.url), new rxjs__WEBPACK_IMPORTED_MODULE_4__.BehaviorSubject(c.params), new rxjs__WEBPACK_IMPORTED_MODULE_4__.BehaviorSubject(c.queryParams), new rxjs__WEBPACK_IMPORTED_MODULE_4__.BehaviorSubject(c.fragment), new rxjs__WEBPACK_IMPORTED_MODULE_4__.BehaviorSubject(c.data), c.outlet, c.component, c);
 }
 
 /**
@@ -59962,227 +60115,8 @@ function isRedirectingNavigationCancelingError(error) {
 function isNavigationCancelingError(error) {
   return !!error && error[NAVIGATION_CANCELING_ERROR];
 }
-
-/**
- * This component is used internally within the router to be a placeholder when an empty
- * router-outlet is needed. For example, with a config such as:
- *
- * `{path: 'parent', outlet: 'nav', children: [...]}`
- *
- * In order to render, there needs to be a component on this config, which will default
- * to this `EmptyOutletComponent`.
- */
-let ɵEmptyOutletComponent = /*#__PURE__*/(() => {
-  class ɵEmptyOutletComponent {
-    static {
-      this.ɵfac = function ɵEmptyOutletComponent_Factory(t) {
-        return new (t || ɵEmptyOutletComponent)();
-      };
-    }
-    static {
-      this.ɵcmp = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({
-        type: ɵEmptyOutletComponent,
-        selectors: [["ng-component"]],
-        standalone: true,
-        features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵStandaloneFeature"]],
-        decls: 1,
-        vars: 0,
-        template: function _EmptyOutletComponent_Template(rf, ctx) {
-          if (rf & 1) {
-            _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](0, "router-outlet");
-          }
-        },
-        dependencies: [RouterOutlet],
-        encapsulation: 2
-      });
-    }
-  }
-  return ɵEmptyOutletComponent;
-})();
-/*#__PURE__*/(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && void 0;
-})();
-
-/**
- * Creates an `EnvironmentInjector` if the `Route` has providers and one does not already exist
- * and returns the injector. Otherwise, if the `Route` does not have `providers`, returns the
- * `currentInjector`.
- *
- * @param route The route that might have providers
- * @param currentInjector The parent injector of the `Route`
- */
-function getOrCreateRouteInjectorIfNeeded(route, currentInjector) {
-  if (route.providers && !route._injector) {
-    route._injector = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.createEnvironmentInjector)(route.providers, currentInjector, `Route: ${route.path}`);
-  }
-  return route._injector ?? currentInjector;
-}
-function getLoadedRoutes(route) {
-  return route._loadedRoutes;
-}
-function getLoadedInjector(route) {
-  return route._loadedInjector;
-}
-function getLoadedComponent(route) {
-  return route._loadedComponent;
-}
-function getProvidersInjector(route) {
-  return route._injector;
-}
-function validateConfig(config, parentPath = '', requireStandaloneComponents = false) {
-  // forEach doesn't iterate undefined values
-  for (let i = 0; i < config.length; i++) {
-    const route = config[i];
-    const fullPath = getFullPath(parentPath, route);
-    validateNode(route, fullPath, requireStandaloneComponents);
-  }
-}
-function assertStandalone(fullPath, component) {
-  if (component && (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵisNgModule"])(component)) {
-    throw new _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵRuntimeError"](4014 /* RuntimeErrorCode.INVALID_ROUTE_CONFIG */, `Invalid configuration of route '${fullPath}'. You are using 'loadComponent' with a module, ` + `but it must be used with standalone components. Use 'loadChildren' instead.`);
-  } else if (component && !(0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.isStandalone)(component)) {
-    throw new _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵRuntimeError"](4014 /* RuntimeErrorCode.INVALID_ROUTE_CONFIG */, `Invalid configuration of route '${fullPath}'. The component must be standalone.`);
-  }
-}
-function validateNode(route, fullPath, requireStandaloneComponents) {
-  if (typeof ngDevMode === 'undefined' || ngDevMode) {
-    if (!route) {
-      throw new _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵRuntimeError"](4014 /* RuntimeErrorCode.INVALID_ROUTE_CONFIG */, `
-      Invalid configuration of route '${fullPath}': Encountered undefined route.
-      The reason might be an extra comma.
-
-      Example:
-      const routes: Routes = [
-        { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-        { path: 'dashboard',  component: DashboardComponent },, << two commas
-        { path: 'detail/:id', component: HeroDetailComponent }
-      ];
-    `);
-    }
-    if (Array.isArray(route)) {
-      throw new _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵRuntimeError"](4014 /* RuntimeErrorCode.INVALID_ROUTE_CONFIG */, `Invalid configuration of route '${fullPath}': Array cannot be specified`);
-    }
-    if (!route.redirectTo && !route.component && !route.loadComponent && !route.children && !route.loadChildren && route.outlet && route.outlet !== PRIMARY_OUTLET) {
-      throw new _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵRuntimeError"](4014 /* RuntimeErrorCode.INVALID_ROUTE_CONFIG */, `Invalid configuration of route '${fullPath}': a componentless route without children or loadChildren cannot have a named outlet set`);
-    }
-    if (route.redirectTo && route.children) {
-      throw new _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵRuntimeError"](4014 /* RuntimeErrorCode.INVALID_ROUTE_CONFIG */, `Invalid configuration of route '${fullPath}': redirectTo and children cannot be used together`);
-    }
-    if (route.redirectTo && route.loadChildren) {
-      throw new _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵRuntimeError"](4014 /* RuntimeErrorCode.INVALID_ROUTE_CONFIG */, `Invalid configuration of route '${fullPath}': redirectTo and loadChildren cannot be used together`);
-    }
-    if (route.children && route.loadChildren) {
-      throw new _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵRuntimeError"](4014 /* RuntimeErrorCode.INVALID_ROUTE_CONFIG */, `Invalid configuration of route '${fullPath}': children and loadChildren cannot be used together`);
-    }
-    if (route.redirectTo && (route.component || route.loadComponent)) {
-      throw new _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵRuntimeError"](4014 /* RuntimeErrorCode.INVALID_ROUTE_CONFIG */, `Invalid configuration of route '${fullPath}': redirectTo and component/loadComponent cannot be used together`);
-    }
-    if (route.component && route.loadComponent) {
-      throw new _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵRuntimeError"](4014 /* RuntimeErrorCode.INVALID_ROUTE_CONFIG */, `Invalid configuration of route '${fullPath}': component and loadComponent cannot be used together`);
-    }
-    if (route.redirectTo && route.canActivate) {
-      throw new _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵRuntimeError"](4014 /* RuntimeErrorCode.INVALID_ROUTE_CONFIG */, `Invalid configuration of route '${fullPath}': redirectTo and canActivate cannot be used together. Redirects happen before activation ` + `so canActivate will never be executed.`);
-    }
-    if (route.path && route.matcher) {
-      throw new _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵRuntimeError"](4014 /* RuntimeErrorCode.INVALID_ROUTE_CONFIG */, `Invalid configuration of route '${fullPath}': path and matcher cannot be used together`);
-    }
-    if (route.redirectTo === void 0 && !route.component && !route.loadComponent && !route.children && !route.loadChildren) {
-      throw new _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵRuntimeError"](4014 /* RuntimeErrorCode.INVALID_ROUTE_CONFIG */, `Invalid configuration of route '${fullPath}'. One of the following must be provided: component, loadComponent, redirectTo, children or loadChildren`);
-    }
-    if (route.path === void 0 && route.matcher === void 0) {
-      throw new _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵRuntimeError"](4014 /* RuntimeErrorCode.INVALID_ROUTE_CONFIG */, `Invalid configuration of route '${fullPath}': routes must have either a path or a matcher specified`);
-    }
-    if (typeof route.path === 'string' && route.path.charAt(0) === '/') {
-      throw new _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵRuntimeError"](4014 /* RuntimeErrorCode.INVALID_ROUTE_CONFIG */, `Invalid configuration of route '${fullPath}': path cannot start with a slash`);
-    }
-    if (route.path === '' && route.redirectTo !== void 0 && route.pathMatch === void 0) {
-      const exp = `The default value of 'pathMatch' is 'prefix', but often the intent is to use 'full'.`;
-      throw new _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵRuntimeError"](4014 /* RuntimeErrorCode.INVALID_ROUTE_CONFIG */, `Invalid configuration of route '{path: "${fullPath}", redirectTo: "${route.redirectTo}"}': please provide 'pathMatch'. ${exp}`);
-    }
-    if (requireStandaloneComponents) {
-      assertStandalone(fullPath, route.component);
-    }
-  }
-  if (route.children) {
-    validateConfig(route.children, fullPath, requireStandaloneComponents);
-  }
-}
-function getFullPath(parentPath, currentRoute) {
-  if (!currentRoute) {
-    return parentPath;
-  }
-  if (!parentPath && !currentRoute.path) {
-    return '';
-  } else if (parentPath && !currentRoute.path) {
-    return `${parentPath}/`;
-  } else if (!parentPath && currentRoute.path) {
-    return currentRoute.path;
-  } else {
-    return `${parentPath}/${currentRoute.path}`;
-  }
-}
-/**
- * Makes a copy of the config and adds any default required properties.
- */
-function standardizeConfig(r) {
-  const children = r.children && r.children.map(standardizeConfig);
-  const c = children ? {
-    ...r,
-    children
-  } : {
-    ...r
-  };
-  if (!c.component && !c.loadComponent && (children || c.loadChildren) && c.outlet && c.outlet !== PRIMARY_OUTLET) {
-    c.component = ɵEmptyOutletComponent;
-  }
-  return c;
-}
-/** Returns the `route.outlet` or PRIMARY_OUTLET if none exists. */
-function getOutlet(route) {
-  return route.outlet || PRIMARY_OUTLET;
-}
-/**
- * Sorts the `routes` such that the ones with an outlet matching `outletName` come first.
- * The order of the configs is otherwise preserved.
- */
-function sortByMatchingOutlets(routes, outletName) {
-  const sortedConfig = routes.filter(r => getOutlet(r) === outletName);
-  sortedConfig.push(...routes.filter(r => getOutlet(r) !== outletName));
-  return sortedConfig;
-}
-/**
- * Gets the first injector in the snapshot's parent tree.
- *
- * If the `Route` has a static list of providers, the returned injector will be the one created from
- * those. If it does not exist, the returned injector may come from the parents, which may be from a
- * loaded config or their static providers.
- *
- * Returns `null` if there is neither this nor any parents have a stored injector.
- *
- * Generally used for retrieving the injector to use for getting tokens for guards/resolvers and
- * also used for getting the correct injector to use for creating components.
- */
-function getClosestRouteInjector(snapshot) {
-  if (!snapshot) return null;
-  // If the current route has its own injector, which is created from the static providers on the
-  // route itself, we should use that. Otherwise, we start at the parent since we do not want to
-  // include the lazy loaded injector from this route.
-  if (snapshot.routeConfig?._injector) {
-    return snapshot.routeConfig._injector;
-  }
-  for (let s = snapshot.parent; s; s = s.parent) {
-    const route = s.routeConfig;
-    // Note that the order here is important. `_loadedInjector` stored on the route with
-    // `loadChildren: () => NgModule` so it applies to child routes with priority. The `_injector`
-    // is created from the static providers on that parent route, so it applies to the children as
-    // well, but only if there is no lazy loaded NgModuleRef injector.
-    if (route?._loadedInjector) return route._loadedInjector;
-    if (route?._injector) return route._injector;
-  }
-  return null;
-}
 let warnedAboutUnsupportedInputBinding = false;
-const activateRoutes = (rootContexts, routeReuseStrategy, forwardEvent, inputBindingEnabled) => (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_6__.map)(t => {
+const activateRoutes = (rootContexts, routeReuseStrategy, forwardEvent, inputBindingEnabled) => (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_5__.map)(t => {
   new ActivateRoutes(routeReuseStrategy, t.targetRouterState, t.currentRouterState, forwardEvent, inputBindingEnabled).activate(rootContexts);
   return t;
 });
@@ -60328,10 +60262,8 @@ class ActivateRoutes {
           advanceActivatedRoute(stored.route.value);
           this.activateChildRoutes(futureNode, null, context.children);
         } else {
-          const injector = getClosestRouteInjector(future.snapshot);
           context.attachRef = null;
           context.route = future;
-          context.injector = injector ?? context.injector;
           if (context.outlet) {
             // Activate the outlet when it has already been instantiated
             // Otherwise it will get activated from its `ngOnInit` when instantiated
@@ -60383,7 +60315,7 @@ function getTokenOrFunctionIdentity(tokenOrFunction, injector) {
   const NOT_FOUND = Symbol();
   const result = injector.get(tokenOrFunction, NOT_FOUND);
   if (result === NOT_FOUND) {
-    if (typeof tokenOrFunction === 'function' && !(0,_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵisInjectable"])(tokenOrFunction)) {
+    if (typeof tokenOrFunction === 'function' && !(0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵisInjectable"])(tokenOrFunction)) {
       // We think the token is just a function so return it as-is
       return tokenOrFunction;
     } else {
@@ -60523,12 +60455,12 @@ function isCanMatch(guard) {
   return guard && isFunction(guard.canMatch);
 }
 function isEmptyError(e) {
-  return e instanceof rxjs__WEBPACK_IMPORTED_MODULE_9__.EmptyError || e?.name === 'EmptyError';
+  return e instanceof rxjs__WEBPACK_IMPORTED_MODULE_8__.EmptyError || e?.name === 'EmptyError';
 }
 const INITIAL_VALUE = /* @__PURE__ */Symbol('INITIAL_VALUE');
 function prioritizedGuardValue() {
-  return (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_8__.switchMap)(obs => {
-    return (0,rxjs__WEBPACK_IMPORTED_MODULE_7__.combineLatest)(obs.map(o => o.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_10__.take)(1), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_11__.startWith)(INITIAL_VALUE)))).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_6__.map)(results => {
+  return (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_7__.switchMap)(obs => {
+    return (0,rxjs__WEBPACK_IMPORTED_MODULE_6__.combineLatest)(obs.map(o => o.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_9__.take)(1), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_10__.startWith)(INITIAL_VALUE)))).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_5__.map)(results => {
       for (const result of results) {
         if (result === true) {
           // If result is true, check the next one
@@ -60545,14 +60477,14 @@ function prioritizedGuardValue() {
       }
       // Everything resolved to true. Return true.
       return true;
-    }), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_12__.filter)(item => item !== INITIAL_VALUE), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_10__.take)(1));
+    }), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_11__.filter)(item => item !== INITIAL_VALUE), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_9__.take)(1));
   });
 }
 function isRedirect(val) {
   return isUrlTree(val) || val instanceof RedirectCommand;
 }
 function checkGuards(injector, forwardEvent) {
-  return (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_13__.mergeMap)(t => {
+  return (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_12__.mergeMap)(t => {
     const {
       targetSnapshot,
       currentSnapshot,
@@ -60562,28 +60494,28 @@ function checkGuards(injector, forwardEvent) {
       }
     } = t;
     if (canDeactivateChecks.length === 0 && canActivateChecks.length === 0) {
-      return (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)({
+      return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)({
         ...t,
         guardsResult: true
       });
     }
-    return runCanDeactivateChecks(canDeactivateChecks, targetSnapshot, currentSnapshot, injector).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_13__.mergeMap)(canDeactivate => {
-      return canDeactivate && isBoolean(canDeactivate) ? runCanActivateChecks(targetSnapshot, canActivateChecks, injector, forwardEvent) : (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)(canDeactivate);
-    }), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_6__.map)(guardsResult => ({
+    return runCanDeactivateChecks(canDeactivateChecks, targetSnapshot, currentSnapshot, injector).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_12__.mergeMap)(canDeactivate => {
+      return canDeactivate && isBoolean(canDeactivate) ? runCanActivateChecks(targetSnapshot, canActivateChecks, injector, forwardEvent) : (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(canDeactivate);
+    }), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_5__.map)(guardsResult => ({
       ...t,
       guardsResult
     })));
   });
 }
 function runCanDeactivateChecks(checks, futureRSS, currRSS, injector) {
-  return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.from)(checks).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_13__.mergeMap)(check => runCanDeactivate(check.component, check.route, currRSS, futureRSS, injector)), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_14__.first)(result => {
+  return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.from)(checks).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_12__.mergeMap)(check => runCanDeactivate(check.component, check.route, currRSS, futureRSS, injector)), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_13__.first)(result => {
     return result !== true;
   }, true));
 }
 function runCanActivateChecks(futureSnapshot, checks, injector, forwardEvent) {
-  return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.from)(checks).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_15__.concatMap)(check => {
-    return (0,rxjs__WEBPACK_IMPORTED_MODULE_16__.concat)(fireChildActivationStart(check.route.parent, forwardEvent), fireActivationStart(check.route, forwardEvent), runCanActivateChild(futureSnapshot, check.path, injector), runCanActivate(futureSnapshot, check.route, injector));
-  }), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_14__.first)(result => {
+  return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.from)(checks).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_14__.concatMap)(check => {
+    return (0,rxjs__WEBPACK_IMPORTED_MODULE_15__.concat)(fireChildActivationStart(check.route.parent, forwardEvent), fireActivationStart(check.route, forwardEvent), runCanActivateChild(futureSnapshot, check.path, injector), runCanActivate(futureSnapshot, check.route, injector));
+  }), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_13__.first)(result => {
     return result !== true;
   }, true));
 }
@@ -60599,7 +60531,7 @@ function fireActivationStart(snapshot, forwardEvent) {
   if (snapshot !== null && forwardEvent) {
     forwardEvent(new ActivationStart(snapshot));
   }
-  return (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)(true);
+  return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(true);
 }
 /**
  * This should fire off `ChildActivationStart` events for each route being activated at this
@@ -60613,75 +60545,75 @@ function fireChildActivationStart(snapshot, forwardEvent) {
   if (snapshot !== null && forwardEvent) {
     forwardEvent(new ChildActivationStart(snapshot));
   }
-  return (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)(true);
+  return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(true);
 }
 function runCanActivate(futureRSS, futureARS, injector) {
   const canActivate = futureARS.routeConfig ? futureARS.routeConfig.canActivate : null;
-  if (!canActivate || canActivate.length === 0) return (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)(true);
+  if (!canActivate || canActivate.length === 0) return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(true);
   const canActivateObservables = canActivate.map(canActivate => {
-    return (0,rxjs__WEBPACK_IMPORTED_MODULE_17__.defer)(() => {
+    return (0,rxjs__WEBPACK_IMPORTED_MODULE_16__.defer)(() => {
       const closestInjector = getClosestRouteInjector(futureARS) ?? injector;
       const guard = getTokenOrFunctionIdentity(canActivate, closestInjector);
-      const guardVal = isCanActivate(guard) ? guard.canActivate(futureARS, futureRSS) : (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.runInInjectionContext)(closestInjector, () => guard(futureARS, futureRSS));
-      return wrapIntoObservable(guardVal).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_14__.first)());
+      const guardVal = isCanActivate(guard) ? guard.canActivate(futureARS, futureRSS) : (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.runInInjectionContext)(closestInjector, () => guard(futureARS, futureRSS));
+      return wrapIntoObservable(guardVal).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_13__.first)());
     });
   });
-  return (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)(canActivateObservables).pipe(prioritizedGuardValue());
+  return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(canActivateObservables).pipe(prioritizedGuardValue());
 }
 function runCanActivateChild(futureRSS, path, injector) {
   const futureARS = path[path.length - 1];
   const canActivateChildGuards = path.slice(0, path.length - 1).reverse().map(p => getCanActivateChild(p)).filter(_ => _ !== null);
   const canActivateChildGuardsMapped = canActivateChildGuards.map(d => {
-    return (0,rxjs__WEBPACK_IMPORTED_MODULE_17__.defer)(() => {
+    return (0,rxjs__WEBPACK_IMPORTED_MODULE_16__.defer)(() => {
       const guardsMapped = d.guards.map(canActivateChild => {
         const closestInjector = getClosestRouteInjector(d.node) ?? injector;
         const guard = getTokenOrFunctionIdentity(canActivateChild, closestInjector);
-        const guardVal = isCanActivateChild(guard) ? guard.canActivateChild(futureARS, futureRSS) : (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.runInInjectionContext)(closestInjector, () => guard(futureARS, futureRSS));
-        return wrapIntoObservable(guardVal).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_14__.first)());
+        const guardVal = isCanActivateChild(guard) ? guard.canActivateChild(futureARS, futureRSS) : (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.runInInjectionContext)(closestInjector, () => guard(futureARS, futureRSS));
+        return wrapIntoObservable(guardVal).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_13__.first)());
       });
-      return (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)(guardsMapped).pipe(prioritizedGuardValue());
+      return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(guardsMapped).pipe(prioritizedGuardValue());
     });
   });
-  return (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)(canActivateChildGuardsMapped).pipe(prioritizedGuardValue());
+  return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(canActivateChildGuardsMapped).pipe(prioritizedGuardValue());
 }
 function runCanDeactivate(component, currARS, currRSS, futureRSS, injector) {
   const canDeactivate = currARS && currARS.routeConfig ? currARS.routeConfig.canDeactivate : null;
-  if (!canDeactivate || canDeactivate.length === 0) return (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)(true);
+  if (!canDeactivate || canDeactivate.length === 0) return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(true);
   const canDeactivateObservables = canDeactivate.map(c => {
     const closestInjector = getClosestRouteInjector(currARS) ?? injector;
     const guard = getTokenOrFunctionIdentity(c, closestInjector);
-    const guardVal = isCanDeactivate(guard) ? guard.canDeactivate(component, currARS, currRSS, futureRSS) : (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.runInInjectionContext)(closestInjector, () => guard(component, currARS, currRSS, futureRSS));
-    return wrapIntoObservable(guardVal).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_14__.first)());
+    const guardVal = isCanDeactivate(guard) ? guard.canDeactivate(component, currARS, currRSS, futureRSS) : (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.runInInjectionContext)(closestInjector, () => guard(component, currARS, currRSS, futureRSS));
+    return wrapIntoObservable(guardVal).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_13__.first)());
   });
-  return (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)(canDeactivateObservables).pipe(prioritizedGuardValue());
+  return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(canDeactivateObservables).pipe(prioritizedGuardValue());
 }
 function runCanLoadGuards(injector, route, segments, urlSerializer) {
   const canLoad = route.canLoad;
   if (canLoad === undefined || canLoad.length === 0) {
-    return (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)(true);
+    return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(true);
   }
   const canLoadObservables = canLoad.map(injectionToken => {
     const guard = getTokenOrFunctionIdentity(injectionToken, injector);
-    const guardVal = isCanLoad(guard) ? guard.canLoad(route, segments) : (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.runInInjectionContext)(injector, () => guard(route, segments));
+    const guardVal = isCanLoad(guard) ? guard.canLoad(route, segments) : (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.runInInjectionContext)(injector, () => guard(route, segments));
     return wrapIntoObservable(guardVal);
   });
-  return (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)(canLoadObservables).pipe(prioritizedGuardValue(), redirectIfUrlTree(urlSerializer));
+  return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(canLoadObservables).pipe(prioritizedGuardValue(), redirectIfUrlTree(urlSerializer));
 }
 function redirectIfUrlTree(urlSerializer) {
-  return (0,rxjs__WEBPACK_IMPORTED_MODULE_18__.pipe)((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_19__.tap)(result => {
+  return (0,rxjs__WEBPACK_IMPORTED_MODULE_17__.pipe)((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_18__.tap)(result => {
     if (typeof result === 'boolean') return;
     throw redirectingNavigationError(urlSerializer, result);
-  }), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_6__.map)(result => result === true));
+  }), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_5__.map)(result => result === true));
 }
 function runCanMatchGuards(injector, route, segments, urlSerializer) {
   const canMatch = route.canMatch;
-  if (!canMatch || canMatch.length === 0) return (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)(true);
+  if (!canMatch || canMatch.length === 0) return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(true);
   const canMatchObservables = canMatch.map(injectionToken => {
     const guard = getTokenOrFunctionIdentity(injectionToken, injector);
-    const guardVal = isCanMatch(guard) ? guard.canMatch(route, segments) : (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.runInInjectionContext)(injector, () => guard(route, segments));
+    const guardVal = isCanMatch(guard) ? guard.canMatch(route, segments) : (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.runInInjectionContext)(injector, () => guard(route, segments));
     return wrapIntoObservable(guardVal);
   });
-  return (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)(canMatchObservables).pipe(prioritizedGuardValue(), redirectIfUrlTree(urlSerializer));
+  return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(canMatchObservables).pipe(prioritizedGuardValue(), redirectIfUrlTree(urlSerializer));
 }
 class NoMatch {
   constructor(segmentGroup) {
@@ -60695,16 +60627,16 @@ class AbsoluteRedirect extends Error {
   }
 }
 function noMatch$1(segmentGroup) {
-  return (0,rxjs__WEBPACK_IMPORTED_MODULE_20__.throwError)(new NoMatch(segmentGroup));
+  return (0,rxjs__WEBPACK_IMPORTED_MODULE_19__.throwError)(new NoMatch(segmentGroup));
 }
 function absoluteRedirect(newTree) {
-  return (0,rxjs__WEBPACK_IMPORTED_MODULE_20__.throwError)(new AbsoluteRedirect(newTree));
+  return (0,rxjs__WEBPACK_IMPORTED_MODULE_19__.throwError)(new AbsoluteRedirect(newTree));
 }
 function namedOutletsRedirect(redirectTo) {
-  return (0,rxjs__WEBPACK_IMPORTED_MODULE_20__.throwError)(new _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵRuntimeError"](4000 /* RuntimeErrorCode.NAMED_OUTLET_REDIRECT */, (typeof ngDevMode === 'undefined' || ngDevMode) && `Only absolute redirects can have named outlets. redirectTo: '${redirectTo}'`));
+  return (0,rxjs__WEBPACK_IMPORTED_MODULE_19__.throwError)(new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](4000 /* RuntimeErrorCode.NAMED_OUTLET_REDIRECT */, (typeof ngDevMode === 'undefined' || ngDevMode) && `Only absolute redirects can have named outlets. redirectTo: '${redirectTo}'`));
 }
 function canLoadFails(route) {
-  return (0,rxjs__WEBPACK_IMPORTED_MODULE_20__.throwError)(navigationCancelingError((typeof ngDevMode === 'undefined' || ngDevMode) && `Cannot load children because the guard of the route "path: '${route.path}'" returned false`, NavigationCancellationCode.GuardRejected));
+  return (0,rxjs__WEBPACK_IMPORTED_MODULE_19__.throwError)(navigationCancelingError((typeof ngDevMode === 'undefined' || ngDevMode) && `Cannot load children because the guard of the route "path: '${route.path}'" returned false`, NavigationCancellationCode.GuardRejected));
 }
 class ApplyRedirects {
   constructor(urlSerializer, urlTree) {
@@ -60717,7 +60649,7 @@ class ApplyRedirects {
     while (true) {
       res = res.concat(c.segments);
       if (c.numberOfChildren === 0) {
-        return (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)(res);
+        return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(res);
       }
       if (c.numberOfChildren > 1 || !c.children[PRIMARY_OUTLET]) {
         return namedOutletsRedirect(`${route.redirectTo}`);
@@ -60738,7 +60670,7 @@ class ApplyRedirects {
         data,
         title
       } = currentSnapshot;
-      const newRedirect = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.runInInjectionContext)(injector, () => redirectToFn({
+      const newRedirect = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.runInInjectionContext)(injector, () => redirectToFn({
         params,
         data,
         queryParams,
@@ -60789,7 +60721,7 @@ class ApplyRedirects {
   }
   findPosParam(redirectTo, redirectToUrlSegment, posParams) {
     const pos = posParams[redirectToUrlSegment.path.substring(1)];
-    if (!pos) throw new _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵRuntimeError"](4001 /* RuntimeErrorCode.MISSING_REDIRECT */, (typeof ngDevMode === 'undefined' || ngDevMode) && `Cannot redirect to '${redirectTo}'. Cannot find '${redirectToUrlSegment.path}'.`);
+    if (!pos) throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](4001 /* RuntimeErrorCode.MISSING_REDIRECT */, (typeof ngDevMode === 'undefined' || ngDevMode) && `Cannot redirect to '${redirectTo}'. Cannot find '${redirectToUrlSegment.path}'.`);
     return pos;
   }
   findOrReturn(redirectToUrlSegment, actualSegments) {
@@ -60814,12 +60746,12 @@ const noMatch = {
 function matchWithChecks(segmentGroup, route, segments, injector, urlSerializer) {
   const result = match(segmentGroup, route, segments);
   if (!result.matched) {
-    return (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)(result);
+    return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(result);
   }
   // Only create the Route's `EnvironmentInjector` if it matches the attempted
   // navigation
   injector = getOrCreateRouteInjectorIfNeeded(route, injector);
-  return runCanMatchGuards(injector, route, segments, urlSerializer).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_6__.map)(v => v === true ? result : {
+  return runCanMatchGuards(injector, route, segments, urlSerializer).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_5__.map)(v => v === true ? result : {
     ...noMatch
   }));
 }
@@ -60929,28 +60861,6 @@ function emptyPathMatch(segmentGroup, slicedSegments, r) {
   }
   return r.path === '';
 }
-/**
- * Determines if `route` is a path match for the `rawSegment`, `segments`, and `outlet` without
- * verifying that its children are a full match for the remainder of the `rawSegment` children as
- * well.
- */
-function isImmediateMatch(route, rawSegment, segments, outlet) {
-  // We allow matches to empty paths when the outlets differ so we can match a url like `/(b:b)` to
-  // a config like
-  // * `{path: '', children: [{path: 'b', outlet: 'b'}]}`
-  // or even
-  // * `{path: '', outlet: 'a', children: [{path: 'b', outlet: 'b'}]`
-  //
-  // The exception here is when the segment outlet is for the primary outlet. This would
-  // result in a match inside the named outlet because all children there are written as primary
-  // outlets. So we need to prevent child named outlet matches in a url like `/b` in a config like
-  // * `{path: '', outlet: 'x' children: [{path: 'b'}]}`
-  // This should only match if the url is `/(x:b)`.
-  if (getOutlet(route) !== outlet && (outlet === PRIMARY_OUTLET || !emptyPathMatch(rawSegment, segments, route))) {
-    return false;
-  }
-  return match(rawSegment, route, segments).matched;
-}
 function noLeftoversInUrl(segmentGroup, segments, outlet) {
   return segments.length === 0 && !segmentGroup.children[outlet];
 }
@@ -60979,11 +60889,11 @@ class Recognizer {
     this.allowRedirects = true;
   }
   noMatchError(e) {
-    return new _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵRuntimeError"](4002 /* RuntimeErrorCode.NO_MATCH */, typeof ngDevMode === 'undefined' || ngDevMode ? `Cannot match any routes. URL Segment: '${e.segmentGroup}'` : `'${e.segmentGroup}'`);
+    return new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](4002 /* RuntimeErrorCode.NO_MATCH */, typeof ngDevMode === 'undefined' || ngDevMode ? `Cannot match any routes. URL Segment: '${e.segmentGroup}'` : `'${e.segmentGroup}'`);
   }
   recognize() {
     const rootSegmentGroup = split(this.urlTree.root, [], [], this.config).segmentGroup;
-    return this.match(rootSegmentGroup).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_6__.map)(({
+    return this.match(rootSegmentGroup).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_5__.map)(({
       children,
       rootSnapshot
     }) => {
@@ -61007,12 +60917,12 @@ class Recognizer {
     const rootSnapshot = new ActivatedRouteSnapshot([], Object.freeze({}), Object.freeze({
       ...this.urlTree.queryParams
     }), this.urlTree.fragment, Object.freeze({}), PRIMARY_OUTLET, this.rootComponentType, null, {});
-    return this.processSegmentGroup(this.injector, this.config, rootSegmentGroup, PRIMARY_OUTLET, rootSnapshot).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_6__.map)(children => {
+    return this.processSegmentGroup(this.injector, this.config, rootSegmentGroup, PRIMARY_OUTLET, rootSnapshot).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_5__.map)(children => {
       return {
         children,
         rootSnapshot
       };
-    }), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_21__.catchError)(e => {
+    }), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_20__.catchError)(e => {
       if (e instanceof AbsoluteRedirect) {
         this.urlTree = e.urlTree;
         return this.match(e.urlTree.root);
@@ -61027,7 +60937,7 @@ class Recognizer {
     if (segmentGroup.segments.length === 0 && segmentGroup.hasChildren()) {
       return this.processChildren(injector, config, segmentGroup, parentRoute);
     }
-    return this.processSegment(injector, config, segmentGroup, segmentGroup.segments, outlet, true, parentRoute).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_6__.map)(child => child instanceof TreeNode ? [child] : []));
+    return this.processSegment(injector, config, segmentGroup, segmentGroup.segments, outlet, true, parentRoute).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_5__.map)(child => child instanceof TreeNode ? [child] : []));
   }
   /**
    * Matches every child outlet in the `segmentGroup` to a `Route` in the config. Returns `null` if
@@ -61048,17 +60958,17 @@ class Recognizer {
         childOutlets.push(child);
       }
     }
-    return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.from)(childOutlets).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_15__.concatMap)(childOutlet => {
+    return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.from)(childOutlets).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_14__.concatMap)(childOutlet => {
       const child = segmentGroup.children[childOutlet];
       // Sort the config so that routes with outlets that match the one being activated
       // appear first, followed by routes for other outlets, which might match if they have
       // an empty path.
       const sortedConfig = sortByMatchingOutlets(config, childOutlet);
       return this.processSegmentGroup(injector, sortedConfig, child, childOutlet, parentRoute);
-    }), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_22__.scan)((children, outletChildren) => {
+    }), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_21__.scan)((children, outletChildren) => {
       children.push(...outletChildren);
       return children;
-    }), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_23__.defaultIfEmpty)(null), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_24__.last)(), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_13__.mergeMap)(children => {
+    }), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_22__.defaultIfEmpty)(null), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_23__.last)(), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_12__.mergeMap)(children => {
       if (children === null) return noMatch$1(segmentGroup);
       // Because we may have matched two outlets to the same empty path segment, we can have
       // multiple activated results for the same outlet. We should merge the children of
@@ -61070,21 +60980,21 @@ class Recognizer {
         checkOutletNameUniqueness(mergedChildren);
       }
       sortActivatedRouteSnapshots(mergedChildren);
-      return (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)(mergedChildren);
+      return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(mergedChildren);
     }));
   }
   processSegment(injector, routes, segmentGroup, segments, outlet, allowRedirects, parentRoute) {
-    return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.from)(routes).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_15__.concatMap)(r => {
-      return this.processSegmentAgainstRoute(r._injector ?? injector, routes, r, segmentGroup, segments, outlet, allowRedirects, parentRoute).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_21__.catchError)(e => {
+    return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.from)(routes).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_14__.concatMap)(r => {
+      return this.processSegmentAgainstRoute(r._injector ?? injector, routes, r, segmentGroup, segments, outlet, allowRedirects, parentRoute).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_20__.catchError)(e => {
         if (e instanceof NoMatch) {
-          return (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)(null);
+          return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(null);
         }
         throw e;
       }));
-    }), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_14__.first)(x => !!x), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_21__.catchError)(e => {
+    }), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_13__.first)(x => !!x), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_20__.catchError)(e => {
       if (isEmptyError(e)) {
         if (noLeftoversInUrl(segmentGroup, segments, outlet)) {
-          return (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)(new NoLeftoversInUrl());
+          return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(new NoLeftoversInUrl());
         }
         return noMatch$1(segmentGroup);
       }
@@ -61092,7 +61002,20 @@ class Recognizer {
     }));
   }
   processSegmentAgainstRoute(injector, routes, route, rawSegment, segments, outlet, allowRedirects, parentRoute) {
-    if (!isImmediateMatch(route, rawSegment, segments, outlet)) return noMatch$1(rawSegment);
+    // We allow matches to empty paths when the outlets differ so we can match a url like `/(b:b)` to
+    // a config like
+    // * `{path: '', children: [{path: 'b', outlet: 'b'}]}`
+    // or even
+    // * `{path: '', outlet: 'a', children: [{path: 'b', outlet: 'b'}]`
+    //
+    // The exception here is when the segment outlet is for the primary outlet. This would
+    // result in a match inside the named outlet because all children there are written as primary
+    // outlets. So we need to prevent child named outlet matches in a url like `/b` in a config like
+    // * `{path: '', outlet: 'x' children: [{path: 'b'}]}`
+    // This should only match if the url is `/(x:b)`.
+    if (getOutlet(route) !== outlet && (outlet === PRIMARY_OUTLET || !emptyPathMatch(rawSegment, segments, route))) {
+      return noMatch$1(rawSegment);
+    }
     if (route.redirectTo === undefined) {
       return this.matchSegmentAgainstRoute(injector, rawSegment, route, segments, outlet, parentRoute);
     }
@@ -61116,7 +61039,7 @@ class Recognizer {
       this.absoluteRedirectCount++;
       if (this.absoluteRedirectCount > MAX_ALLOWED_REDIRECTS) {
         if (ngDevMode) {
-          throw new _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵRuntimeError"](4016 /* RuntimeErrorCode.INFINITE_REDIRECT */, `Detected possible infinite redirect when redirecting from '${this.urlTree}' to '${route.redirectTo}'.\n` + `This is currently a dev mode only error but will become a` + ` call stack size exceeded error in production in a future major version.`);
+          throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](4016 /* RuntimeErrorCode.INFINITE_REDIRECT */, `Detected possible infinite redirect when redirecting from '${this.urlTree}' to '${route.redirectTo}'.\n` + `This is currently a dev mode only error but will become a` + ` call stack size exceeded error in production in a future major version.`);
         }
         this.allowRedirects = false;
       }
@@ -61128,7 +61051,7 @@ class Recognizer {
     currentSnapshot.params = Object.freeze(inherited.params);
     currentSnapshot.data = Object.freeze(inherited.data);
     const newTree = this.applyRedirects.applyRedirectCommands(consumedSegments, route.redirectTo, positionalParamSegments, currentSnapshot, injector);
-    return this.applyRedirects.lineralizeSegments(route, newTree).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_13__.mergeMap)(newSegments => {
+    return this.applyRedirects.lineralizeSegments(route, newTree).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_12__.mergeMap)(newSegments => {
       return this.processSegment(injector, routes, segmentGroup, newSegments.concat(remainingSegments), outlet, false, parentRoute);
     }));
   }
@@ -61141,13 +61064,13 @@ class Recognizer {
       // https://github.com/angular/angular/issues/40089
       rawSegment.children = {};
     }
-    return matchResult.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_8__.switchMap)(result => {
+    return matchResult.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_7__.switchMap)(result => {
       if (!result.matched) {
         return noMatch$1(rawSegment);
       }
       // If the route has an injector created from providers, we should start using that.
       injector = route._injector ?? injector;
-      return this.getChildConfig(injector, route, segments).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_8__.switchMap)(({
+      return this.getChildConfig(injector, route, segments).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_7__.switchMap)(({
         routes: childConfig
       }) => {
         const childInjector = route._loadedInjector ?? injector;
@@ -61167,12 +61090,12 @@ class Recognizer {
           slicedSegments
         } = split(rawSegment, consumedSegments, remainingSegments, childConfig);
         if (slicedSegments.length === 0 && segmentGroup.hasChildren()) {
-          return this.processChildren(childInjector, childConfig, segmentGroup, snapshot).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_6__.map)(children => {
+          return this.processChildren(childInjector, childConfig, segmentGroup, snapshot).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_5__.map)(children => {
             return new TreeNode(snapshot, children);
           }));
         }
         if (childConfig.length === 0 && slicedSegments.length === 0) {
-          return (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)(new TreeNode(snapshot, []));
+          return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(new TreeNode(snapshot, []));
         }
         const matchedOnOutlet = getOutlet(route) === outlet;
         // If we matched a config due to empty path match on a different outlet, we need to
@@ -61183,7 +61106,7 @@ class Recognizer {
         //  {path: 'c', component: C},
         // ]}
         // Notice that the children of the named outlet are configured with the primary outlet
-        return this.processSegment(childInjector, childConfig, segmentGroup, slicedSegments, matchedOnOutlet ? PRIMARY_OUTLET : outlet, true, snapshot).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_6__.map)(child => {
+        return this.processSegment(childInjector, childConfig, segmentGroup, slicedSegments, matchedOnOutlet ? PRIMARY_OUTLET : outlet, true, snapshot).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_5__.map)(child => {
           return new TreeNode(snapshot, child instanceof TreeNode ? [child] : []);
         }));
       }));
@@ -61192,7 +61115,7 @@ class Recognizer {
   getChildConfig(injector, route, segments) {
     if (route.children) {
       // The children belong to the same module
-      return (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)({
+      return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)({
         routes: route.children,
         injector
       });
@@ -61200,14 +61123,14 @@ class Recognizer {
     if (route.loadChildren) {
       // lazy children belong to the loaded module
       if (route._loadedRoutes !== undefined) {
-        return (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)({
+        return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)({
           routes: route._loadedRoutes,
           injector: route._loadedInjector
         });
       }
-      return runCanLoadGuards(injector, route, segments, this.urlSerializer).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_13__.mergeMap)(shouldLoadResult => {
+      return runCanLoadGuards(injector, route, segments, this.urlSerializer).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_12__.mergeMap)(shouldLoadResult => {
         if (shouldLoadResult) {
-          return this.configLoader.loadChildren(injector, route).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_19__.tap)(cfg => {
+          return this.configLoader.loadChildren(injector, route).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_18__.tap)(cfg => {
             route._loadedRoutes = cfg.routes;
             route._loadedInjector = cfg.injector;
           }));
@@ -61215,7 +61138,7 @@ class Recognizer {
         return canLoadFails(route);
       }));
     }
-    return (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)({
+    return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)({
       routes: [],
       injector
     });
@@ -61271,7 +61194,7 @@ function checkOutletNameUniqueness(nodes) {
     if (routeWithSameOutletName) {
       const p = routeWithSameOutletName.url.map(s => s.toString()).join('/');
       const c = n.value.url.map(s => s.toString()).join('/');
-      throw new _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵRuntimeError"](4006 /* RuntimeErrorCode.TWO_SEGMENTS_WITH_SAME_OUTLET */, (typeof ngDevMode === 'undefined' || ngDevMode) && `Two segments cannot have the same outlet name: '${p}' and '${c}'.`);
+      throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](4006 /* RuntimeErrorCode.TWO_SEGMENTS_WITH_SAME_OUTLET */, (typeof ngDevMode === 'undefined' || ngDevMode) && `Two segments cannot have the same outlet name: '${p}' and '${c}'.`);
     }
     names[n.value.outlet] = n.value;
   });
@@ -61283,7 +61206,7 @@ function getResolve(route) {
   return route.resolve || {};
 }
 function recognize(injector, configLoader, rootComponentType, config, serializer, paramsInheritanceStrategy) {
-  return (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_13__.mergeMap)(t => recognize$1(injector, configLoader, rootComponentType, config, t.extractedUrl, serializer, paramsInheritanceStrategy).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_6__.map)(({
+  return (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_12__.mergeMap)(t => recognize$1(injector, configLoader, rootComponentType, config, t.extractedUrl, serializer, paramsInheritanceStrategy).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_5__.map)(({
     state: targetSnapshot,
     tree: urlAfterRedirects
   }) => {
@@ -61295,7 +61218,7 @@ function recognize(injector, configLoader, rootComponentType, config, serializer
   })));
 }
 function resolveData(paramsInheritanceStrategy, injector) {
-  return (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_13__.mergeMap)(t => {
+  return (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_12__.mergeMap)(t => {
     const {
       targetSnapshot,
       guards: {
@@ -61303,7 +61226,7 @@ function resolveData(paramsInheritanceStrategy, injector) {
       }
     } = t;
     if (!canActivateChecks.length) {
-      return (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)(t);
+      return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(t);
     }
     // Iterating a Set in javascript  happens in insertion order so it is safe to use a `Set` to
     // preserve the correct order that the resolvers should run in.
@@ -61320,14 +61243,14 @@ function resolveData(paramsInheritanceStrategy, injector) {
       }
     }
     let routesProcessed = 0;
-    return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.from)(routesNeedingDataUpdates).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_15__.concatMap)(route => {
+    return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.from)(routesNeedingDataUpdates).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_14__.concatMap)(route => {
       if (routesWithResolversToRun.has(route)) {
         return runResolve(route, targetSnapshot, paramsInheritanceStrategy, injector);
       } else {
         route.data = getInherited(route, route.parent, paramsInheritanceStrategy).resolve;
-        return (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)(void 0);
+        return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(void 0);
       }
-    }), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_19__.tap)(() => routesProcessed++), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_25__.takeLast)(1), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_13__.mergeMap)(_ => routesProcessed === routesNeedingDataUpdates.size ? (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)(t) : rxjs__WEBPACK_IMPORTED_MODULE_26__.EMPTY));
+    }), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_18__.tap)(() => routesProcessed++), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_24__.takeLast)(1), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_12__.mergeMap)(_ => routesProcessed === routesNeedingDataUpdates.size ? (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(t) : rxjs__WEBPACK_IMPORTED_MODULE_25__.EMPTY));
   });
 }
 /**
@@ -61343,7 +61266,7 @@ function runResolve(futureARS, futureRSS, paramsInheritanceStrategy, injector) {
   if (config?.title !== undefined && !hasStaticTitle(config)) {
     resolve[RouteTitleKey] = config.title;
   }
-  return resolveNode(resolve, futureARS, futureRSS, injector).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_6__.map)(resolvedData => {
+  return resolveNode(resolve, futureARS, futureRSS, injector).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_5__.map)(resolvedData => {
     futureARS._resolvedData = resolvedData;
     futureARS.data = getInherited(futureARS, futureARS.parent, paramsInheritanceStrategy).resolve;
     return null;
@@ -61352,20 +61275,20 @@ function runResolve(futureARS, futureRSS, paramsInheritanceStrategy, injector) {
 function resolveNode(resolve, futureARS, futureRSS, injector) {
   const keys = getDataKeys(resolve);
   if (keys.length === 0) {
-    return (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)({});
+    return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)({});
   }
   const data = {};
-  return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.from)(keys).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_13__.mergeMap)(key => getResolver(resolve[key], futureARS, futureRSS, injector).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_14__.first)(), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_19__.tap)(value => {
+  return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.from)(keys).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_12__.mergeMap)(key => getResolver(resolve[key], futureARS, futureRSS, injector).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_13__.first)(), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_18__.tap)(value => {
     if (value instanceof RedirectCommand) {
       throw redirectingNavigationError(new DefaultUrlSerializer(), value);
     }
     data[key] = value;
-  }))), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_25__.takeLast)(1), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_27__.mapTo)(data), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_21__.catchError)(e => isEmptyError(e) ? rxjs__WEBPACK_IMPORTED_MODULE_26__.EMPTY : (0,rxjs__WEBPACK_IMPORTED_MODULE_20__.throwError)(e)));
+  }))), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_24__.takeLast)(1), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_26__.mapTo)(data), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_20__.catchError)(e => isEmptyError(e) ? rxjs__WEBPACK_IMPORTED_MODULE_25__.EMPTY : (0,rxjs__WEBPACK_IMPORTED_MODULE_19__.throwError)(e)));
 }
 function getResolver(injectionToken, futureARS, futureRSS, injector) {
   const closestInjector = getClosestRouteInjector(futureARS) ?? injector;
   const resolver = getTokenOrFunctionIdentity(injectionToken, closestInjector);
-  const resolverValue = resolver.resolve ? resolver.resolve(futureARS, futureRSS) : (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.runInInjectionContext)(closestInjector, () => resolver(futureARS, futureRSS));
+  const resolverValue = resolver.resolve ? resolver.resolve(futureARS, futureRSS) : (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.runInInjectionContext)(closestInjector, () => resolver(futureARS, futureRSS));
   return wrapIntoObservable(resolverValue);
 }
 
@@ -61376,12 +61299,12 @@ function getResolver(injectionToken, futureARS, futureRSS, injector) {
  * it will wait before continuing with the original value.
  */
 function switchTap(next) {
-  return (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_8__.switchMap)(v => {
+  return (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_7__.switchMap)(v => {
     const nextResult = next(v);
     if (nextResult) {
-      return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.from)(nextResult).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_6__.map)(() => v));
+      return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.from)(nextResult).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_5__.map)(() => v));
     }
-    return (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)(v);
+    return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(v);
   });
 }
 
@@ -61430,14 +61353,14 @@ let TitleStrategy = /*#__PURE__*/(() => {
       return snapshot.data[RouteTitleKey];
     }
     static {
-      this.ɵfac = function TitleStrategy_Factory(t) {
-        return new (t || TitleStrategy)();
+      this.ɵfac = function TitleStrategy_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || TitleStrategy)();
       };
     }
     static {
-      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjectable"]({
+      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
         token: TitleStrategy,
-        factory: () => (() => (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(DefaultTitleStrategy))(),
+        factory: () => (() => (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(DefaultTitleStrategy))(),
         providedIn: 'root'
       });
     }
@@ -61468,12 +61391,12 @@ let DefaultTitleStrategy = /*#__PURE__*/(() => {
       }
     }
     static {
-      this.ɵfac = function DefaultTitleStrategy_Factory(t) {
-        return new (t || DefaultTitleStrategy)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵinject"](_angular_platform_browser__WEBPACK_IMPORTED_MODULE_28__.Title));
+      this.ɵfac = function DefaultTitleStrategy_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || DefaultTitleStrategy)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_platform_browser__WEBPACK_IMPORTED_MODULE_27__.Title));
       };
     }
     static {
-      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjectable"]({
+      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
         token: DefaultTitleStrategy,
         factory: DefaultTitleStrategy.ɵfac,
         providedIn: 'root'
@@ -61491,10 +61414,66 @@ let DefaultTitleStrategy = /*#__PURE__*/(() => {
  *
  * @publicApi
  */
-const ROUTER_CONFIGURATION = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_2__.InjectionToken(typeof ngDevMode === 'undefined' || ngDevMode ? 'router config' : '', {
+const ROUTER_CONFIGURATION = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_1__.InjectionToken(typeof ngDevMode === 'undefined' || ngDevMode ? 'router config' : '', {
   providedIn: 'root',
   factory: () => ({})
 });
+
+/**
+ * This component is used internally within the router to be a placeholder when an empty
+ * router-outlet is needed. For example, with a config such as:
+ *
+ * `{path: 'parent', outlet: 'nav', children: [...]}`
+ *
+ * In order to render, there needs to be a component on this config, which will default
+ * to this `EmptyOutletComponent`.
+ */
+let ɵEmptyOutletComponent = /*#__PURE__*/(() => {
+  class ɵEmptyOutletComponent {
+    static {
+      this.ɵfac = function ɵEmptyOutletComponent_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || ɵEmptyOutletComponent)();
+      };
+    }
+    static {
+      this.ɵcmp = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({
+        type: ɵEmptyOutletComponent,
+        selectors: [["ng-component"]],
+        standalone: true,
+        features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵStandaloneFeature"]],
+        decls: 1,
+        vars: 0,
+        template: function _EmptyOutletComponent_Template(rf, ctx) {
+          if (rf & 1) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](0, "router-outlet");
+          }
+        },
+        dependencies: [RouterOutlet],
+        encapsulation: 2
+      });
+    }
+  }
+  return ɵEmptyOutletComponent;
+})();
+/*#__PURE__*/(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && void 0;
+})();
+/**
+ * Makes a copy of the config and adds any default required properties.
+ */
+function standardizeConfig(r) {
+  const children = r.children && r.children.map(standardizeConfig);
+  const c = children ? {
+    ...r,
+    children
+  } : {
+    ...r
+  };
+  if (!c.component && !c.loadComponent && (children || c.loadChildren) && c.outlet && c.outlet !== PRIMARY_OUTLET) {
+    c.component = ɵEmptyOutletComponent;
+  }
+  return c;
+}
 
 /**
  * The DI token for a router configuration.
@@ -61506,34 +61485,34 @@ const ROUTER_CONFIGURATION = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MO
  *
  * @publicApi
  */
-const ROUTES = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_2__.InjectionToken(ngDevMode ? 'ROUTES' : '');
+const ROUTES = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_1__.InjectionToken(ngDevMode ? 'ROUTES' : '');
 let RouterConfigLoader = /*#__PURE__*/(() => {
   class RouterConfigLoader {
     constructor() {
       this.componentLoaders = new WeakMap();
       this.childrenLoaders = new WeakMap();
-      this.compiler = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(_angular_core__WEBPACK_IMPORTED_MODULE_2__.Compiler);
+      this.compiler = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(_angular_core__WEBPACK_IMPORTED_MODULE_1__.Compiler);
     }
     loadComponent(route) {
       if (this.componentLoaders.get(route)) {
         return this.componentLoaders.get(route);
       } else if (route._loadedComponent) {
-        return (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)(route._loadedComponent);
+        return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(route._loadedComponent);
       }
       if (this.onLoadStartListener) {
         this.onLoadStartListener(route);
       }
-      const loadRunner = wrapIntoObservable(route.loadComponent()).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_6__.map)(maybeUnwrapDefaultExport), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_19__.tap)(component => {
+      const loadRunner = wrapIntoObservable(route.loadComponent()).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_5__.map)(maybeUnwrapDefaultExport), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_18__.tap)(component => {
         if (this.onLoadEndListener) {
           this.onLoadEndListener(route);
         }
         (typeof ngDevMode === 'undefined' || ngDevMode) && assertStandalone(route.path ?? '', component);
         route._loadedComponent = component;
-      }), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_29__.finalize)(() => {
+      }), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_28__.finalize)(() => {
         this.componentLoaders.delete(route);
       }));
       // Use custom ConnectableObservable as share in runners pipe increasing the bundle size too much
-      const loader = new rxjs__WEBPACK_IMPORTED_MODULE_30__.ConnectableObservable(loadRunner, () => new rxjs__WEBPACK_IMPORTED_MODULE_31__.Subject()).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_32__.refCount)());
+      const loader = new rxjs__WEBPACK_IMPORTED_MODULE_29__.ConnectableObservable(loadRunner, () => new rxjs__WEBPACK_IMPORTED_MODULE_30__.Subject()).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_31__.refCount)());
       this.componentLoaders.set(route, loader);
       return loader;
     }
@@ -61541,7 +61520,7 @@ let RouterConfigLoader = /*#__PURE__*/(() => {
       if (this.childrenLoaders.get(route)) {
         return this.childrenLoaders.get(route);
       } else if (route._loadedRoutes) {
-        return (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)({
+        return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)({
           routes: route._loadedRoutes,
           injector: route._loadedInjector
         });
@@ -61550,21 +61529,21 @@ let RouterConfigLoader = /*#__PURE__*/(() => {
         this.onLoadStartListener(route);
       }
       const moduleFactoryOrRoutes$ = loadChildren(route, this.compiler, parentInjector, this.onLoadEndListener);
-      const loadRunner = moduleFactoryOrRoutes$.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_29__.finalize)(() => {
+      const loadRunner = moduleFactoryOrRoutes$.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_28__.finalize)(() => {
         this.childrenLoaders.delete(route);
       }));
       // Use custom ConnectableObservable as share in runners pipe increasing the bundle size too much
-      const loader = new rxjs__WEBPACK_IMPORTED_MODULE_30__.ConnectableObservable(loadRunner, () => new rxjs__WEBPACK_IMPORTED_MODULE_31__.Subject()).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_32__.refCount)());
+      const loader = new rxjs__WEBPACK_IMPORTED_MODULE_29__.ConnectableObservable(loadRunner, () => new rxjs__WEBPACK_IMPORTED_MODULE_30__.Subject()).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_31__.refCount)());
       this.childrenLoaders.set(route, loader);
       return loader;
     }
     static {
-      this.ɵfac = function RouterConfigLoader_Factory(t) {
-        return new (t || RouterConfigLoader)();
+      this.ɵfac = function RouterConfigLoader_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || RouterConfigLoader)();
       };
     }
     static {
-      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjectable"]({
+      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
         token: RouterConfigLoader,
         factory: RouterConfigLoader.ɵfac,
         providedIn: 'root'
@@ -61585,13 +61564,13 @@ let RouterConfigLoader = /*#__PURE__*/(() => {
  * an update to the extractor.
  */
 function loadChildren(route, compiler, parentInjector, onLoadEndListener) {
-  return wrapIntoObservable(route.loadChildren()).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_6__.map)(maybeUnwrapDefaultExport), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_13__.mergeMap)(t => {
-    if (t instanceof _angular_core__WEBPACK_IMPORTED_MODULE_2__.NgModuleFactory || Array.isArray(t)) {
-      return (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)(t);
+  return wrapIntoObservable(route.loadChildren()).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_5__.map)(maybeUnwrapDefaultExport), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_12__.mergeMap)(t => {
+    if (t instanceof _angular_core__WEBPACK_IMPORTED_MODULE_1__.NgModuleFactory || Array.isArray(t)) {
+      return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(t);
     } else {
-      return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.from)(compiler.compileModuleAsync(t));
+      return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.from)(compiler.compileModuleAsync(t));
     }
-  }), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_6__.map)(factoryOrRoutes => {
+  }), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_5__.map)(factoryOrRoutes => {
     if (onLoadEndListener) {
       onLoadEndListener(route);
     }
@@ -61644,14 +61623,14 @@ function maybeUnwrapDefaultExport(input) {
 let UrlHandlingStrategy = /*#__PURE__*/(() => {
   class UrlHandlingStrategy {
     static {
-      this.ɵfac = function UrlHandlingStrategy_Factory(t) {
-        return new (t || UrlHandlingStrategy)();
+      this.ɵfac = function UrlHandlingStrategy_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || UrlHandlingStrategy)();
       };
     }
     static {
-      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjectable"]({
+      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
         token: UrlHandlingStrategy,
-        factory: () => (() => (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(DefaultUrlHandlingStrategy))(),
+        factory: () => (() => (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(DefaultUrlHandlingStrategy))(),
         providedIn: 'root'
       });
     }
@@ -61676,12 +61655,12 @@ let DefaultUrlHandlingStrategy = /*#__PURE__*/(() => {
       return newUrlPart;
     }
     static {
-      this.ɵfac = function DefaultUrlHandlingStrategy_Factory(t) {
-        return new (t || DefaultUrlHandlingStrategy)();
+      this.ɵfac = function DefaultUrlHandlingStrategy_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || DefaultUrlHandlingStrategy)();
       };
     }
     static {
-      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjectable"]({
+      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
         token: DefaultUrlHandlingStrategy,
         factory: DefaultUrlHandlingStrategy.ɵfac,
         providedIn: 'root'
@@ -61695,8 +61674,8 @@ let DefaultUrlHandlingStrategy = /*#__PURE__*/(() => {
 })();
 
 /// <reference types="dom-view-transitions" />
-const CREATE_VIEW_TRANSITION = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_2__.InjectionToken(ngDevMode ? 'view transition helper' : '');
-const VIEW_TRANSITION_OPTIONS = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_2__.InjectionToken(ngDevMode ? 'view transition options' : '');
+const CREATE_VIEW_TRANSITION = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_1__.InjectionToken(ngDevMode ? 'view transition helper' : '');
+const VIEW_TRANSITION_OPTIONS = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_1__.InjectionToken(ngDevMode ? 'view transition options' : '');
 /**
  * A helper function for using browser view transitions. This function skips the call to
  * `startViewTransition` if the browser does not support it.
@@ -61705,9 +61684,9 @@ const VIEW_TRANSITION_OPTIONS = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED
  */
 function createViewTransition(injector, from, to) {
   const transitionOptions = injector.get(VIEW_TRANSITION_OPTIONS);
-  const document = injector.get(_angular_common__WEBPACK_IMPORTED_MODULE_33__.DOCUMENT);
+  const document = injector.get(_angular_common__WEBPACK_IMPORTED_MODULE_32__.DOCUMENT);
   // Create promises outside the Angular zone to avoid causing extra change detections
-  return injector.get(_angular_core__WEBPACK_IMPORTED_MODULE_2__.NgZone).runOutsideAngular(() => {
+  return injector.get(_angular_core__WEBPACK_IMPORTED_MODULE_1__.NgZone).runOutsideAngular(() => {
     if (!document.startViewTransition || transitionOptions.skipNextTransition) {
       transitionOptions.skipNextTransition = false;
       // The timing of `startViewTransition` is closer to a macrotask. It won't be called
@@ -61731,7 +61710,7 @@ function createViewTransition(injector, from, to) {
       onViewTransitionCreated
     } = transitionOptions;
     if (onViewTransitionCreated) {
-      (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.runInInjectionContext)(injector, () => onViewTransitionCreated({
+      (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.runInInjectionContext)(injector, () => onViewTransitionCreated({
         transition,
         from,
         to
@@ -61748,13 +61727,14 @@ function createRenderPromise(injector) {
     // Wait for the microtask queue to empty after the next render happens (by waiting a macrotask).
     // This ensures any follow-up renders in the microtask queue are completed before the
     // view transition starts animating.
-    (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.afterNextRender)(() => setTimeout(resolve), {
-      injector,
-      phase: _angular_core__WEBPACK_IMPORTED_MODULE_2__.AfterRenderPhase.Read
+    (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.afterNextRender)({
+      read: () => setTimeout(resolve)
+    }, {
+      injector
     });
   });
 }
-const NAVIGATION_ERROR_HANDLER = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_2__.InjectionToken(typeof ngDevMode === 'undefined' || ngDevMode ? 'navigation error handler' : '');
+const NAVIGATION_ERROR_HANDLER = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_1__.InjectionToken(typeof ngDevMode === 'undefined' || ngDevMode ? 'navigation error handler' : '');
 let NavigationTransitions = /*#__PURE__*/(() => {
   class NavigationTransitions {
     get hasRequestedNavigation() {
@@ -61769,29 +61749,29 @@ let NavigationTransitions = /*#__PURE__*/(() => {
        * Router wants to respond to these events in various ways. Because the `NavigationTransition`
        * class is not public, this event subject is not publicly exposed.
        */
-      this.events = new rxjs__WEBPACK_IMPORTED_MODULE_31__.Subject();
+      this.events = new rxjs__WEBPACK_IMPORTED_MODULE_30__.Subject();
       /**
        * Used to abort the current transition with an error.
        */
-      this.transitionAbortSubject = new rxjs__WEBPACK_IMPORTED_MODULE_31__.Subject();
-      this.configLoader = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(RouterConfigLoader);
-      this.environmentInjector = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(_angular_core__WEBPACK_IMPORTED_MODULE_2__.EnvironmentInjector);
-      this.urlSerializer = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(UrlSerializer);
-      this.rootContexts = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(ChildrenOutletContexts);
-      this.location = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(_angular_common__WEBPACK_IMPORTED_MODULE_33__.Location);
-      this.inputBindingEnabled = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(INPUT_BINDER, {
+      this.transitionAbortSubject = new rxjs__WEBPACK_IMPORTED_MODULE_30__.Subject();
+      this.configLoader = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(RouterConfigLoader);
+      this.environmentInjector = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(_angular_core__WEBPACK_IMPORTED_MODULE_1__.EnvironmentInjector);
+      this.urlSerializer = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(UrlSerializer);
+      this.rootContexts = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(ChildrenOutletContexts);
+      this.location = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(_angular_common__WEBPACK_IMPORTED_MODULE_32__.Location);
+      this.inputBindingEnabled = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(INPUT_BINDER, {
         optional: true
       }) !== null;
-      this.titleStrategy = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(TitleStrategy);
-      this.options = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(ROUTER_CONFIGURATION, {
+      this.titleStrategy = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(TitleStrategy);
+      this.options = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(ROUTER_CONFIGURATION, {
         optional: true
       }) || {};
       this.paramsInheritanceStrategy = this.options.paramsInheritanceStrategy || 'emptyOnly';
-      this.urlHandlingStrategy = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(UrlHandlingStrategy);
-      this.createViewTransition = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(CREATE_VIEW_TRANSITION, {
+      this.urlHandlingStrategy = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(UrlHandlingStrategy);
+      this.createViewTransition = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(CREATE_VIEW_TRANSITION, {
         optional: true
       });
-      this.navigationErrorHandler = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(NAVIGATION_ERROR_HANDLER, {
+      this.navigationErrorHandler = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(NAVIGATION_ERROR_HANDLER, {
         optional: true
       });
       this.navigationId = 0;
@@ -61801,7 +61781,7 @@ let NavigationTransitions = /*#__PURE__*/(() => {
        *
        * @internal
        */
-      this.afterPreactivation = () => (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)(void 0);
+      this.afterPreactivation = () => (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(void 0);
       /** @internal */
       this.rootComponentType = null;
       const onLoadStart = r => this.events.next(new RouteConfigLoadStart(r));
@@ -61821,7 +61801,7 @@ let NavigationTransitions = /*#__PURE__*/(() => {
       });
     }
     setupNavigations(router, initialUrlTree, initialRouterState) {
-      this.transitions = new rxjs__WEBPACK_IMPORTED_MODULE_5__.BehaviorSubject({
+      this.transitions = new rxjs__WEBPACK_IMPORTED_MODULE_4__.BehaviorSubject({
         id: 0,
         currentUrlTree: initialUrlTree,
         currentRawUrl: initialUrlTree,
@@ -61844,17 +61824,17 @@ let NavigationTransitions = /*#__PURE__*/(() => {
         },
         guardsResult: null
       });
-      return this.transitions.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_12__.filter)(t => t.id !== 0),
+      return this.transitions.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_11__.filter)(t => t.id !== 0),
       // Extract URL
-      (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_6__.map)(t => ({
+      (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_5__.map)(t => ({
         ...t,
         extractedUrl: this.urlHandlingStrategy.extract(t.rawUrl)
       })),
       // Using switchMap so we cancel executing navigations when a new one comes in
-      (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_8__.switchMap)(overallTransitionState => {
+      (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_7__.switchMap)(overallTransitionState => {
         let completed = false;
         let errored = false;
-        return (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)(overallTransitionState).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_8__.switchMap)(t => {
+        return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(overallTransitionState).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_7__.switchMap)(t => {
           // It is possible that `switchMap` fails to cancel previous navigations if a new one happens synchronously while the operator
           // is processing the `next` notification of that previous navigation. This can happen when a new navigation (say 2) cancels a
           // previous one (1) and yet another navigation (3) happens synchronously in response to the `NavigationCancel` event for (1).
@@ -61862,7 +61842,7 @@ let NavigationTransitions = /*#__PURE__*/(() => {
           if (this.navigationId > overallTransitionState.id) {
             const cancellationReason = typeof ngDevMode === 'undefined' || ngDevMode ? `Navigation ID ${overallTransitionState.id} is not equal to the current navigation id ${this.navigationId}` : '';
             this.cancelNavigationTransition(overallTransitionState, cancellationReason, NavigationCancellationCode.SupersededByNewNavigation);
-            return rxjs__WEBPACK_IMPORTED_MODULE_26__.EMPTY;
+            return rxjs__WEBPACK_IMPORTED_MODULE_25__.EMPTY;
           }
           this.currentTransition = overallTransitionState;
           // Store the Navigation object
@@ -61870,6 +61850,7 @@ let NavigationTransitions = /*#__PURE__*/(() => {
             id: t.id,
             initialUrl: t.rawUrl,
             extractedUrl: t.extractedUrl,
+            targetBrowserUrl: typeof t.extras.browserUrl === 'string' ? this.urlSerializer.parse(t.extras.browserUrl) : t.extras.browserUrl,
             trigger: t.source,
             extras: t.extras,
             previousNavigation: !this.lastSuccessfulNavigation ? null : {
@@ -61883,16 +61864,16 @@ let NavigationTransitions = /*#__PURE__*/(() => {
             const reason = typeof ngDevMode === 'undefined' || ngDevMode ? `Navigation to ${t.rawUrl} was ignored because it is the same as the current Router URL.` : '';
             this.events.next(new NavigationSkipped(t.id, this.urlSerializer.serialize(t.rawUrl), reason, NavigationSkippedCode.IgnoredSameUrlNavigation));
             t.resolve(false);
-            return rxjs__WEBPACK_IMPORTED_MODULE_26__.EMPTY;
+            return rxjs__WEBPACK_IMPORTED_MODULE_25__.EMPTY;
           }
           if (this.urlHandlingStrategy.shouldProcessUrl(t.rawUrl)) {
-            return (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)(t).pipe(
+            return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(t).pipe(
             // Fire NavigationStart event
-            (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_8__.switchMap)(t => {
+            (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_7__.switchMap)(t => {
               const transition = this.transitions?.getValue();
               this.events.next(new NavigationStart(t.id, this.urlSerializer.serialize(t.extractedUrl), t.source, t.restoredState));
               if (transition !== this.transitions?.getValue()) {
-                return rxjs__WEBPACK_IMPORTED_MODULE_26__.EMPTY;
+                return rxjs__WEBPACK_IMPORTED_MODULE_25__.EMPTY;
               }
               // This delay is required to match old behavior that forced
               // navigation to always be async
@@ -61901,7 +61882,7 @@ let NavigationTransitions = /*#__PURE__*/(() => {
             // Recognize
             recognize(this.environmentInjector, this.configLoader, this.rootComponentType, router.config, this.urlSerializer, this.paramsInheritanceStrategy),
             // Update URL if in `eager` update mode
-            (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_19__.tap)(t => {
+            (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_18__.tap)(t => {
               overallTransitionState.targetSnapshot = t.targetSnapshot;
               overallTransitionState.urlAfterRedirects = t.urlAfterRedirects;
               this.currentNavigation = {
@@ -61937,7 +61918,7 @@ let NavigationTransitions = /*#__PURE__*/(() => {
               }
             };
             this.currentNavigation.finalUrl = extractedUrl;
-            return (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)(overallTransitionState);
+            return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(overallTransitionState);
           } else {
             /* When neither the current or previous URL can be processed, do
              * nothing other than update router's internal reference to the
@@ -61947,27 +61928,27 @@ let NavigationTransitions = /*#__PURE__*/(() => {
             const reason = typeof ngDevMode === 'undefined' || ngDevMode ? `Navigation was ignored because the UrlHandlingStrategy` + ` indicated neither the current URL ${t.currentRawUrl} nor target URL ${t.rawUrl} should be processed.` : '';
             this.events.next(new NavigationSkipped(t.id, this.urlSerializer.serialize(t.extractedUrl), reason, NavigationSkippedCode.IgnoredByUrlHandlingStrategy));
             t.resolve(false);
-            return rxjs__WEBPACK_IMPORTED_MODULE_26__.EMPTY;
+            return rxjs__WEBPACK_IMPORTED_MODULE_25__.EMPTY;
           }
         }),
         // --- GUARDS ---
-        (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_19__.tap)(t => {
+        (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_18__.tap)(t => {
           const guardsStart = new GuardsCheckStart(t.id, this.urlSerializer.serialize(t.extractedUrl), this.urlSerializer.serialize(t.urlAfterRedirects), t.targetSnapshot);
           this.events.next(guardsStart);
-        }), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_6__.map)(t => {
+        }), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_5__.map)(t => {
           this.currentTransition = overallTransitionState = {
             ...t,
             guards: getAllRouteGuards(t.targetSnapshot, t.currentSnapshot, this.rootContexts)
           };
           return overallTransitionState;
-        }), checkGuards(this.environmentInjector, evt => this.events.next(evt)), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_19__.tap)(t => {
+        }), checkGuards(this.environmentInjector, evt => this.events.next(evt)), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_18__.tap)(t => {
           overallTransitionState.guardsResult = t.guardsResult;
           if (t.guardsResult && typeof t.guardsResult !== 'boolean') {
             throw redirectingNavigationError(this.urlSerializer, t.guardsResult);
           }
           const guardsEnd = new GuardsCheckEnd(t.id, this.urlSerializer.serialize(t.extractedUrl), this.urlSerializer.serialize(t.urlAfterRedirects), t.targetSnapshot, !!t.guardsResult);
           this.events.next(guardsEnd);
-        }), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_12__.filter)(t => {
+        }), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_11__.filter)(t => {
           if (!t.guardsResult) {
             this.cancelNavigationTransition(t, '', NavigationCancellationCode.GuardRejected);
             return false;
@@ -61977,12 +61958,12 @@ let NavigationTransitions = /*#__PURE__*/(() => {
         // --- RESOLVE ---
         switchTap(t => {
           if (t.guards.canActivateChecks.length) {
-            return (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)(t).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_19__.tap)(t => {
+            return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(t).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_18__.tap)(t => {
               const resolveStart = new ResolveStart(t.id, this.urlSerializer.serialize(t.extractedUrl), this.urlSerializer.serialize(t.urlAfterRedirects), t.targetSnapshot);
               this.events.next(resolveStart);
-            }), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_8__.switchMap)(t => {
+            }), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_7__.switchMap)(t => {
               let dataResolved = false;
-              return (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)(t).pipe(resolveData(this.paramsInheritanceStrategy, this.environmentInjector), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_19__.tap)({
+              return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(t).pipe(resolveData(this.paramsInheritanceStrategy, this.environmentInjector), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_18__.tap)({
                 next: () => dataResolved = true,
                 complete: () => {
                   if (!dataResolved) {
@@ -61990,7 +61971,7 @@ let NavigationTransitions = /*#__PURE__*/(() => {
                   }
                 }
               }));
-            }), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_19__.tap)(t => {
+            }), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_18__.tap)(t => {
               const resolveEnd = new ResolveEnd(t.id, this.urlSerializer.serialize(t.extractedUrl), this.urlSerializer.serialize(t.urlAfterRedirects), t.targetSnapshot);
               this.events.next(resolveEnd);
             }));
@@ -62002,17 +61983,17 @@ let NavigationTransitions = /*#__PURE__*/(() => {
           const loadComponents = route => {
             const loaders = [];
             if (route.routeConfig?.loadComponent && !route.routeConfig._loadedComponent) {
-              loaders.push(this.configLoader.loadComponent(route.routeConfig).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_19__.tap)(loadedComponent => {
+              loaders.push(this.configLoader.loadComponent(route.routeConfig).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_18__.tap)(loadedComponent => {
                 route.component = loadedComponent;
-              }), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_6__.map)(() => void 0)));
+              }), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_5__.map)(() => void 0)));
             }
             for (const child of route.children) {
               loaders.push(...loadComponents(child));
             }
             return loaders;
           };
-          return (0,rxjs__WEBPACK_IMPORTED_MODULE_7__.combineLatest)(loadComponents(t.targetSnapshot.root)).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_23__.defaultIfEmpty)(null), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_10__.take)(1));
-        }), switchTap(() => this.afterPreactivation()), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_8__.switchMap)(() => {
+          return (0,rxjs__WEBPACK_IMPORTED_MODULE_6__.combineLatest)(loadComponents(t.targetSnapshot.root)).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_22__.defaultIfEmpty)(null), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_9__.take)(1));
+        }), switchTap(() => this.afterPreactivation()), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_7__.switchMap)(() => {
           const {
             currentSnapshot,
             targetSnapshot
@@ -62020,8 +62001,8 @@ let NavigationTransitions = /*#__PURE__*/(() => {
           const viewTransitionStarted = this.createViewTransition?.(this.environmentInjector, currentSnapshot.root, targetSnapshot.root);
           // If view transitions are enabled, block the navigation until the view
           // transition callback starts. Otherwise, continue immediately.
-          return viewTransitionStarted ? (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.from)(viewTransitionStarted).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_6__.map)(() => overallTransitionState)) : (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)(overallTransitionState);
-        }), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_6__.map)(t => {
+          return viewTransitionStarted ? (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.from)(viewTransitionStarted).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_5__.map)(() => overallTransitionState)) : (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(overallTransitionState);
+        }), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_5__.map)(t => {
           const targetRouterState = createRouterState(router.routeReuseStrategy, t.targetSnapshot, t.currentRouterState);
           this.currentTransition = overallTransitionState = {
             ...t,
@@ -62029,13 +62010,13 @@ let NavigationTransitions = /*#__PURE__*/(() => {
           };
           this.currentNavigation.targetRouterState = targetRouterState;
           return overallTransitionState;
-        }), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_19__.tap)(() => {
+        }), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_18__.tap)(() => {
           this.events.next(new BeforeActivateRoutes());
         }), activateRoutes(this.rootContexts, router.routeReuseStrategy, evt => this.events.next(evt), this.inputBindingEnabled),
         // Ensure that if some observable used to drive the transition doesn't
         // complete, the navigation still finalizes This should never happen, but
         // this is done as a safety measure to avoid surfacing this error (#49567).
-        (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_10__.take)(1), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_19__.tap)({
+        (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_9__.take)(1), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_18__.tap)({
           next: t => {
             completed = true;
             this.lastSuccessfulNavigation = this.currentNavigation;
@@ -62054,9 +62035,9 @@ let NavigationTransitions = /*#__PURE__*/(() => {
         // required in the future to support something like the abort signal of the
         // Navigation API where the navigation gets aborted from outside the
         // transition.
-        (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_34__.takeUntil)(this.transitionAbortSubject.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_19__.tap)(err => {
+        (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_33__.takeUntil)(this.transitionAbortSubject.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_18__.tap)(err => {
           throw err;
-        }))), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_29__.finalize)(() => {
+        }))), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_28__.finalize)(() => {
           /* When the navigation stream finishes either through error or success,
            * we set the `completed` or `errored` flag. However, there are some
            * situations where we could get here without either of those being set.
@@ -62073,7 +62054,7 @@ let NavigationTransitions = /*#__PURE__*/(() => {
             this.currentNavigation = null;
             this.currentTransition = null;
           }
-        }), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_21__.catchError)(e => {
+        }), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_20__.catchError)(e => {
           errored = true;
           /* This error type is issued during Redirect, and is handled as a
            * cancellation rather than an error. */
@@ -62091,7 +62072,7 @@ let NavigationTransitions = /*#__PURE__*/(() => {
           } else {
             const navigationError = new NavigationError(overallTransitionState.id, this.urlSerializer.serialize(overallTransitionState.extractedUrl), e, overallTransitionState.targetSnapshot ?? undefined);
             try {
-              const navigationErrorHandlerResult = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.runInInjectionContext)(this.environmentInjector, () => this.navigationErrorHandler?.(navigationError));
+              const navigationErrorHandlerResult = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.runInInjectionContext)(this.environmentInjector, () => this.navigationErrorHandler?.(navigationError));
               if (navigationErrorHandlerResult instanceof RedirectCommand) {
                 const {
                   message,
@@ -62123,7 +62104,7 @@ let NavigationTransitions = /*#__PURE__*/(() => {
               }
             }
           }
-          return rxjs__WEBPACK_IMPORTED_MODULE_26__.EMPTY;
+          return rxjs__WEBPACK_IMPORTED_MODULE_25__.EMPTY;
         }));
         // casting because `pipe` returns observable({}) when called with 8+ arguments
       }));
@@ -62155,16 +62136,17 @@ let NavigationTransitions = /*#__PURE__*/(() => {
       // The extracted URL is the part of the URL that this application cares about. `extract` may
       // return only part of the browser URL and that part may have not changed even if some other
       // portion of the URL did.
-      const extractedBrowserUrl = this.urlHandlingStrategy.extract(this.urlSerializer.parse(this.location.path(true)));
-      return extractedBrowserUrl.toString() !== this.currentTransition?.extractedUrl.toString() && !this.currentTransition?.extras.skipLocationChange;
+      const currentBrowserUrl = this.urlHandlingStrategy.extract(this.urlSerializer.parse(this.location.path(true)));
+      const targetBrowserUrl = this.currentNavigation?.targetBrowserUrl ?? this.currentNavigation?.extractedUrl;
+      return currentBrowserUrl.toString() !== targetBrowserUrl?.toString() && !this.currentNavigation?.extras.skipLocationChange;
     }
     static {
-      this.ɵfac = function NavigationTransitions_Factory(t) {
-        return new (t || NavigationTransitions)();
+      this.ɵfac = function NavigationTransitions_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || NavigationTransitions)();
       };
     }
     static {
-      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjectable"]({
+      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
         token: NavigationTransitions,
         factory: NavigationTransitions.ɵfac,
         providedIn: 'root'
@@ -62190,14 +62172,14 @@ function isBrowserTriggeredNavigation(source) {
 let RouteReuseStrategy = /*#__PURE__*/(() => {
   class RouteReuseStrategy {
     static {
-      this.ɵfac = function RouteReuseStrategy_Factory(t) {
-        return new (t || RouteReuseStrategy)();
+      this.ɵfac = function RouteReuseStrategy_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || RouteReuseStrategy)();
       };
     }
     static {
-      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjectable"]({
+      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
         token: RouteReuseStrategy,
-        factory: () => (() => (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(DefaultRouteReuseStrategy))(),
+        factory: () => (() => (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(DefaultRouteReuseStrategy))(),
         providedIn: 'root'
       });
     }
@@ -62258,13 +62240,13 @@ let DefaultRouteReuseStrategy = /*#__PURE__*/(() => {
     static {
       this.ɵfac = /* @__PURE__ */(() => {
         let ɵDefaultRouteReuseStrategy_BaseFactory;
-        return function DefaultRouteReuseStrategy_Factory(t) {
-          return (ɵDefaultRouteReuseStrategy_BaseFactory || (ɵDefaultRouteReuseStrategy_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetInheritedFactory"](DefaultRouteReuseStrategy)))(t || DefaultRouteReuseStrategy);
+        return function DefaultRouteReuseStrategy_Factory(__ngFactoryType__) {
+          return (ɵDefaultRouteReuseStrategy_BaseFactory || (ɵDefaultRouteReuseStrategy_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetInheritedFactory"](DefaultRouteReuseStrategy)))(__ngFactoryType__ || DefaultRouteReuseStrategy);
         };
       })();
     }
     static {
-      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjectable"]({
+      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
         token: DefaultRouteReuseStrategy,
         factory: DefaultRouteReuseStrategy.ɵfac,
         providedIn: 'root'
@@ -62279,14 +62261,14 @@ let DefaultRouteReuseStrategy = /*#__PURE__*/(() => {
 let StateManager = /*#__PURE__*/(() => {
   class StateManager {
     static {
-      this.ɵfac = function StateManager_Factory(t) {
-        return new (t || StateManager)();
+      this.ɵfac = function StateManager_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || StateManager)();
       };
     }
     static {
-      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjectable"]({
+      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
         token: StateManager,
-        factory: () => (() => (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(HistoryStateManager))(),
+        factory: () => (() => (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(HistoryStateManager))(),
         providedIn: 'root'
       });
     }
@@ -62300,13 +62282,13 @@ let HistoryStateManager = /*#__PURE__*/(() => {
   class HistoryStateManager extends StateManager {
     constructor() {
       super(...arguments);
-      this.location = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(_angular_common__WEBPACK_IMPORTED_MODULE_33__.Location);
-      this.urlSerializer = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(UrlSerializer);
-      this.options = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(ROUTER_CONFIGURATION, {
+      this.location = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(_angular_common__WEBPACK_IMPORTED_MODULE_32__.Location);
+      this.urlSerializer = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(UrlSerializer);
+      this.options = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(ROUTER_CONFIGURATION, {
         optional: true
       }) || {};
       this.canceledNavigationResolution = this.options.canceledNavigationResolution || 'replace';
-      this.urlHandlingStrategy = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(UrlHandlingStrategy);
+      this.urlHandlingStrategy = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(UrlHandlingStrategy);
       this.urlUpdateStrategy = this.options.urlUpdateStrategy || 'deferred';
       this.currentUrlTree = new UrlTree();
       this.rawUrlTree = this.currentUrlTree;
@@ -62369,17 +62351,15 @@ let HistoryStateManager = /*#__PURE__*/(() => {
         if (this.urlUpdateStrategy === 'eager') {
           if (!currentTransition.extras.skipLocationChange) {
             const rawUrl = this.urlHandlingStrategy.merge(currentTransition.finalUrl, currentTransition.initialUrl);
-            this.setBrowserUrl(rawUrl, currentTransition);
+            this.setBrowserUrl(currentTransition.targetBrowserUrl ?? rawUrl, currentTransition);
           }
         }
       } else if (e instanceof BeforeActivateRoutes) {
         this.currentUrlTree = currentTransition.finalUrl;
         this.rawUrlTree = this.urlHandlingStrategy.merge(currentTransition.finalUrl, currentTransition.initialUrl);
         this.routerState = currentTransition.targetRouterState;
-        if (this.urlUpdateStrategy === 'deferred') {
-          if (!currentTransition.extras.skipLocationChange) {
-            this.setBrowserUrl(this.rawUrlTree, currentTransition);
-          }
+        if (this.urlUpdateStrategy === 'deferred' && !currentTransition.extras.skipLocationChange) {
+          this.setBrowserUrl(currentTransition.targetBrowserUrl ?? this.rawUrlTree, currentTransition);
         }
       } else if (e instanceof NavigationCancel && (e.code === NavigationCancellationCode.GuardRejected || e.code === NavigationCancellationCode.NoDataFromResolver)) {
         this.restoreHistory(currentTransition);
@@ -62391,7 +62371,7 @@ let HistoryStateManager = /*#__PURE__*/(() => {
       }
     }
     setBrowserUrl(url, transition) {
-      const path = this.urlSerializer.serialize(url);
+      const path = url instanceof UrlTree ? this.urlSerializer.serialize(url) : url;
       if (this.location.isCurrentPathEqualTo(path) || !!transition.extras.replaceUrl) {
         // replacements do not update the target page
         const currentBrowserPageId = this.browserPageId;
@@ -62466,13 +62446,13 @@ let HistoryStateManager = /*#__PURE__*/(() => {
     static {
       this.ɵfac = /* @__PURE__ */(() => {
         let ɵHistoryStateManager_BaseFactory;
-        return function HistoryStateManager_Factory(t) {
-          return (ɵHistoryStateManager_BaseFactory || (ɵHistoryStateManager_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetInheritedFactory"](HistoryStateManager)))(t || HistoryStateManager);
+        return function HistoryStateManager_Factory(__ngFactoryType__) {
+          return (ɵHistoryStateManager_BaseFactory || (ɵHistoryStateManager_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetInheritedFactory"](HistoryStateManager)))(__ngFactoryType__ || HistoryStateManager);
         };
       })();
     }
     static {
-      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjectable"]({
+      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
         token: HistoryStateManager,
         factory: HistoryStateManager.ɵfac,
         providedIn: 'root'
@@ -62500,13 +62480,13 @@ var NavigationResult = /*#__PURE__*/function (NavigationResult) {
  * - `NavigationError`, `NavigationEnd`, or `NavigationSkipped` event emits
  */
 function afterNextNavigation(router, action) {
-  router.events.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_12__.filter)(e => e instanceof NavigationEnd || e instanceof NavigationCancel || e instanceof NavigationError || e instanceof NavigationSkipped), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_6__.map)(e => {
+  router.events.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_11__.filter)(e => e instanceof NavigationEnd || e instanceof NavigationCancel || e instanceof NavigationError || e instanceof NavigationSkipped), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_5__.map)(e => {
     if (e instanceof NavigationEnd || e instanceof NavigationSkipped) {
       return NavigationResult.COMPLETE;
     }
     const redirecting = e instanceof NavigationCancel ? e.code === NavigationCancellationCode.Redirect || e.code === NavigationCancellationCode.SupersededByNewNavigation : false;
     return redirecting ? NavigationResult.REDIRECTING : NavigationResult.FAILED;
-  }), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_12__.filter)(result => result !== NavigationResult.REDIRECTING), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_10__.take)(1)).subscribe(() => {
+  }), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_11__.filter)(result => result !== NavigationResult.REDIRECTING), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_9__.take)(1)).subscribe(() => {
     action();
   });
 }
@@ -62536,9 +62516,11 @@ const subsetMatchOptions = {
 /**
  * @description
  *
- * A service that provides navigation among views and URL manipulation capabilities.
+ * A service that facilitates navigation among views and URL manipulation capabilities.
+ * This service is provided in the root scope and configured with [provideRouter](api/router/provideRouter).
  *
  * @see {@link Route}
+ * @see {@link provideRouter}
  * @see [Routing and Navigation Guide](guide/routing/common-router-tasks).
  *
  * @ngModule RouterModule
@@ -62571,23 +62553,23 @@ let Router = /*#__PURE__*/(() => {
     }
     constructor() {
       this.disposed = false;
-      this.console = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵConsole"]);
-      this.stateManager = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(StateManager);
-      this.options = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(ROUTER_CONFIGURATION, {
+      this.console = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵConsole"]);
+      this.stateManager = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(StateManager);
+      this.options = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(ROUTER_CONFIGURATION, {
         optional: true
       }) || {};
-      this.pendingTasks = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵPendingTasks"]);
+      this.pendingTasks = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵPendingTasks"]);
       this.urlUpdateStrategy = this.options.urlUpdateStrategy || 'deferred';
-      this.navigationTransitions = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(NavigationTransitions);
-      this.urlSerializer = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(UrlSerializer);
-      this.location = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(_angular_common__WEBPACK_IMPORTED_MODULE_33__.Location);
-      this.urlHandlingStrategy = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(UrlHandlingStrategy);
+      this.navigationTransitions = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(NavigationTransitions);
+      this.urlSerializer = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(UrlSerializer);
+      this.location = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(_angular_common__WEBPACK_IMPORTED_MODULE_32__.Location);
+      this.urlHandlingStrategy = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(UrlHandlingStrategy);
       /**
        * The private `Subject` type for the public events exposed in the getter. This is used internally
        * to push events to. The separate field allows us to expose separate types in the public API
        * (i.e., an Observable rather than the Subject).
        */
-      this._events = new rxjs__WEBPACK_IMPORTED_MODULE_31__.Subject();
+      this._events = new rxjs__WEBPACK_IMPORTED_MODULE_30__.Subject();
       /**
        * A handler for navigation errors in this NgModule.
        *
@@ -62607,7 +62589,7 @@ let Router = /*#__PURE__*/(() => {
        * @deprecated Configure using `providers` instead:
        *   `{provide: RouteReuseStrategy, useClass: MyStrategy}`.
        */
-      this.routeReuseStrategy = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(RouteReuseStrategy);
+      this.routeReuseStrategy = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(RouteReuseStrategy);
       /**
        * How to handle a navigation request to the current URL.
        *
@@ -62618,7 +62600,7 @@ let Router = /*#__PURE__*/(() => {
        * @see {@link RouterModule}
        */
       this.onSameUrlNavigation = this.options.onSameUrlNavigation || 'ignore';
-      this.config = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(ROUTES, {
+      this.config = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(ROUTES, {
         optional: true
       })?.flat() ?? [];
       /**
@@ -62627,10 +62609,10 @@ let Router = /*#__PURE__*/(() => {
        * This option is enabled by the `withComponentInputBinding` feature of `provideRouter` or
        * `bindToComponentInputs` in the `ExtraOptions` of `RouterModule.forRoot`.
        */
-      this.componentInputBindingEnabled = !!(0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(INPUT_BINDER, {
+      this.componentInputBindingEnabled = !!(0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(INPUT_BINDER, {
         optional: true
       });
-      this.eventsSubscription = new rxjs__WEBPACK_IMPORTED_MODULE_35__.Subscription();
+      this.eventsSubscription = new rxjs__WEBPACK_IMPORTED_MODULE_34__.Subscription();
       this.resetConfig(this.config);
       this.navigationTransitions.setupNavigations(this, this.currentUrlTree, this.routerState).subscribe({
         error: e => {
@@ -62657,7 +62639,7 @@ let Router = /*#__PURE__*/(() => {
               const opts = e.navigationBehaviorOptions;
               const mergedTree = this.urlHandlingStrategy.merge(e.url, currentTransition.currentRawUrl);
               const extras = {
-                // Persist transient navigation info from the original navigation request.
+                browserUrl: currentTransition.extras.browserUrl,
                 info: currentTransition.extras.info,
                 skipLocationChange: currentTransition.extras.skipLocationChange,
                 // The URL is already updated at this point if we have 'eager' URL
@@ -62865,7 +62847,7 @@ let Router = /*#__PURE__*/(() => {
       } = navigationExtras;
       const f = preserveFragment ? this.currentUrlTree.fragment : fragment;
       let q = null;
-      switch (queryParamsHandling) {
+      switch (queryParamsHandling ?? this.options.defaultQueryParamsHandling) {
         case 'merge':
           q = {
             ...this.currentUrlTree.queryParams,
@@ -63055,12 +63037,12 @@ let Router = /*#__PURE__*/(() => {
       });
     }
     static {
-      this.ɵfac = function Router_Factory(t) {
-        return new (t || Router)();
+      this.ɵfac = function Router_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || Router)();
       };
     }
     static {
-      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjectable"]({
+      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
         token: Router,
         factory: Router.ɵfac,
         providedIn: 'root'
@@ -63076,7 +63058,7 @@ function validateCommands(commands) {
   for (let i = 0; i < commands.length; i++) {
     const cmd = commands[i];
     if (cmd == null) {
-      throw new _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵRuntimeError"](4008 /* RuntimeErrorCode.NULLISH_COMMAND */, (typeof ngDevMode === 'undefined' || ngDevMode) && `The requested path contains ${cmd} segment at index ${i}`);
+      throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](4008 /* RuntimeErrorCode.NULLISH_COMMAND */, (typeof ngDevMode === 'undefined' || ngDevMode) && `The requested path contains ${cmd} segment at index ${i}`);
     }
   }
 }
@@ -63151,6 +63133,9 @@ function isPublicRouterEvent(e) {
  * </a>
  * ```
  *
+ * `queryParams`, `fragment`, `queryParamsHandling`, `preserveFragment`, and `relativeTo`
+ * cannot be used when the `routerLink` input is a `UrlTree`.
+ *
  * See {@link UrlCreationOptions#queryParamsHandling}.
  *
  * ### Preserving navigation history
@@ -63195,9 +63180,8 @@ let RouterLink = /*#__PURE__*/(() => {
        * when a host element is `<a>`. For other tags, the value is `null`.
        */
       this.href = null;
-      this.commands = null;
       /** @internal */
-      this.onChanges = new rxjs__WEBPACK_IMPORTED_MODULE_31__.Subject();
+      this.onChanges = new rxjs__WEBPACK_IMPORTED_MODULE_30__.Subject();
       /**
        * Passed to {@link Router#createUrlTree} as part of the
        * `UrlCreationOptions`.
@@ -63219,6 +63203,7 @@ let RouterLink = /*#__PURE__*/(() => {
        * @see {@link Router#navigateByUrl}
        */
       this.replaceUrl = false;
+      this.routerLinkInput = null;
       const tagName = el.nativeElement.tagName?.toLowerCase();
       this.isAnchorElement = tagName === 'a' || tagName === 'area';
       if (this.isAnchorElement) {
@@ -63242,7 +63227,11 @@ let RouterLink = /*#__PURE__*/(() => {
       this.applyAttributeValue('tabindex', newTabIndex);
     }
     /** @nodoc */
+    // TODO(atscott): Remove changes parameter in major version as a breaking change.
     ngOnChanges(changes) {
+      if (ngDevMode && isUrlTree(this.routerLinkInput) && (this.fragment !== undefined || this.queryParams || this.queryParamsHandling || this.preserveFragment || this.relativeTo)) {
+        throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](4016 /* RuntimeErrorCode.INVALID_ROUTER_LINK_INPUTS */, 'Cannot configure queryParams or fragment when using a UrlTree as the routerLink input value.');
+      }
       if (this.isAnchorElement) {
         this.updateHref();
       }
@@ -63251,19 +63240,25 @@ let RouterLink = /*#__PURE__*/(() => {
       this.onChanges.next(this);
     }
     /**
-     * Commands to pass to {@link Router#createUrlTree}.
+     * Commands to pass to {@link Router#createUrlTree} or a `UrlTree`.
      *   - **array**: commands to pass to {@link Router#createUrlTree}.
      *   - **string**: shorthand for array of commands with just the string, i.e. `['/route']`
+     *   - **UrlTree**: a `UrlTree` for this link rather than creating one from the commands
+     *     and other inputs that correspond to properties of `UrlCreationOptions`.
      *   - **null|undefined**: effectively disables the `routerLink`
      * @see {@link Router#createUrlTree}
      */
-    set routerLink(commands) {
-      if (commands != null) {
-        this.commands = Array.isArray(commands) ? commands : [commands];
-        this.setTabIndexIfNotOnNativeEl('0');
-      } else {
-        this.commands = null;
+    set routerLink(commandsOrUrlTree) {
+      if (commandsOrUrlTree == null) {
+        this.routerLinkInput = null;
         this.setTabIndexIfNotOnNativeEl(null);
+      } else {
+        if (isUrlTree(commandsOrUrlTree)) {
+          this.routerLinkInput = commandsOrUrlTree;
+        } else {
+          this.routerLinkInput = Array.isArray(commandsOrUrlTree) ? commandsOrUrlTree : [commandsOrUrlTree];
+        }
+        this.setTabIndexIfNotOnNativeEl('0');
       }
     }
     /** @nodoc */
@@ -63310,7 +63305,7 @@ let RouterLink = /*#__PURE__*/(() => {
       // Note: we should investigate whether we can switch to using `@HostBinding('attr.href')`
       // instead of applying a value via a renderer, after a final merge of the
       // `RouterLinkWithHref` directive.
-      (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵsanitizeUrlOrResourceUrl"])(this.href, this.el.nativeElement.tagName.toLowerCase(), 'href');
+      (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsanitizeUrlOrResourceUrl"])(this.href, this.el.nativeElement.tagName.toLowerCase(), 'href');
       this.applyAttributeValue('href', sanitizedValue);
     }
     applyAttributeValue(attrName, attrValue) {
@@ -63323,10 +63318,12 @@ let RouterLink = /*#__PURE__*/(() => {
       }
     }
     get urlTree() {
-      if (this.commands === null) {
+      if (this.routerLinkInput === null) {
         return null;
+      } else if (isUrlTree(this.routerLinkInput)) {
+        return this.routerLinkInput;
       }
-      return this.router.createUrlTree(this.commands, {
+      return this.router.createUrlTree(this.routerLinkInput, {
         // If the `relativeTo` input is not defined, we want to use `this.route` by default.
         // Otherwise, we should use the value provided by the user in the input.
         relativeTo: this.relativeTo !== undefined ? this.relativeTo : this.route,
@@ -63337,23 +63334,23 @@ let RouterLink = /*#__PURE__*/(() => {
       });
     }
     static {
-      this.ɵfac = function RouterLink_Factory(t) {
-        return new (t || RouterLink)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](Router), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](ActivatedRoute), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵinjectAttribute"]('tabindex'), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__.Renderer2), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_common__WEBPACK_IMPORTED_MODULE_33__.LocationStrategy));
+      this.ɵfac = function RouterLink_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || RouterLink)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](Router), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](ActivatedRoute), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinjectAttribute"]('tabindex'), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.Renderer2), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_common__WEBPACK_IMPORTED_MODULE_32__.LocationStrategy));
       };
     }
     static {
-      this.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineDirective"]({
+      this.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({
         type: RouterLink,
         selectors: [["", "routerLink", ""]],
         hostVars: 1,
         hostBindings: function RouterLink_HostBindings(rf, ctx) {
           if (rf & 1) {
-            _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function RouterLink_click_HostBindingHandler($event) {
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function RouterLink_click_HostBindingHandler($event) {
               return ctx.onClick($event.button, $event.ctrlKey, $event.shiftKey, $event.altKey, $event.metaKey);
             });
           }
           if (rf & 2) {
-            _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵattribute"]("target", ctx.target);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵattribute"]("target", ctx.target);
           }
         },
         inputs: {
@@ -63364,13 +63361,13 @@ let RouterLink = /*#__PURE__*/(() => {
           state: "state",
           info: "info",
           relativeTo: "relativeTo",
-          preserveFragment: [2, "preserveFragment", "preserveFragment", _angular_core__WEBPACK_IMPORTED_MODULE_2__.booleanAttribute],
-          skipLocationChange: [2, "skipLocationChange", "skipLocationChange", _angular_core__WEBPACK_IMPORTED_MODULE_2__.booleanAttribute],
-          replaceUrl: [2, "replaceUrl", "replaceUrl", _angular_core__WEBPACK_IMPORTED_MODULE_2__.booleanAttribute],
+          preserveFragment: [2, "preserveFragment", "preserveFragment", _angular_core__WEBPACK_IMPORTED_MODULE_1__.booleanAttribute],
+          skipLocationChange: [2, "skipLocationChange", "skipLocationChange", _angular_core__WEBPACK_IMPORTED_MODULE_1__.booleanAttribute],
+          replaceUrl: [2, "replaceUrl", "replaceUrl", _angular_core__WEBPACK_IMPORTED_MODULE_1__.booleanAttribute],
           routerLink: "routerLink"
         },
         standalone: true,
-        features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵInputTransformsFeature"], _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵNgOnChangesFeature"]]
+        features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵInputTransformsFeature"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]]
       });
     }
   }
@@ -63488,7 +63485,7 @@ let RouterLinkActive = /*#__PURE__*/(() => {
        *  (isActiveChange)="this.onRouterLinkActive($event)">Bob</a>
        * ```
        */
-      this.isActiveChange = new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter();
+      this.isActiveChange = new _angular_core__WEBPACK_IMPORTED_MODULE_1__.EventEmitter();
       this.routerEventsSubscription = router.events.subscribe(s => {
         if (s instanceof NavigationEnd) {
           this.update();
@@ -63498,7 +63495,7 @@ let RouterLinkActive = /*#__PURE__*/(() => {
     /** @nodoc */
     ngAfterContentInit() {
       // `of(null)` is used to force subscribe body to execute once immediately (like `startWith`).
-      (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)(this.links.changes, (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)(null)).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_36__.mergeAll)()).subscribe(_ => {
+      (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(this.links.changes, (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(null)).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_35__.mergeAll)()).subscribe(_ => {
         this.update();
         this.subscribeToEachLinkOnChanges();
       });
@@ -63506,7 +63503,7 @@ let RouterLinkActive = /*#__PURE__*/(() => {
     subscribeToEachLinkOnChanges() {
       this.linkInputChangesSubscription?.unsubscribe();
       const allLinkChanges = [...this.links.toArray(), this.link].filter(link => !!link).map(link => link.onChanges);
-      this.linkInputChangesSubscription = (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.from)(allLinkChanges).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_36__.mergeAll)()).subscribe(link => {
+      this.linkInputChangesSubscription = (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.from)(allLinkChanges).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_35__.mergeAll)()).subscribe(link => {
         if (this._isActive !== this.isLinkActive(this.router)(link)) {
           this.update();
         }
@@ -63564,21 +63561,21 @@ let RouterLinkActive = /*#__PURE__*/(() => {
       return this.link && isActiveCheckFn(this.link) || this.links.some(isActiveCheckFn);
     }
     static {
-      this.ɵfac = function RouterLinkActive_Factory(t) {
-        return new (t || RouterLinkActive)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](Router), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__.Renderer2), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__.ChangeDetectorRef), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](RouterLink, 8));
+      this.ɵfac = function RouterLinkActive_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || RouterLinkActive)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](Router), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.Renderer2), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.ChangeDetectorRef), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](RouterLink, 8));
       };
     }
     static {
-      this.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineDirective"]({
+      this.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({
         type: RouterLinkActive,
         selectors: [["", "routerLinkActive", ""]],
         contentQueries: function RouterLinkActive_ContentQueries(rf, ctx, dirIndex) {
           if (rf & 1) {
-            _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵcontentQuery"](dirIndex, RouterLink, 5);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵcontentQuery"](dirIndex, RouterLink, 5);
           }
           if (rf & 2) {
             let _t;
-            _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵloadQuery"]()) && (ctx.links = _t);
+            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵloadQuery"]()) && (ctx.links = _t);
           }
         },
         inputs: {
@@ -63591,7 +63588,7 @@ let RouterLinkActive = /*#__PURE__*/(() => {
         },
         exportAs: ["routerLinkActive"],
         standalone: true,
-        features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵNgOnChangesFeature"]]
+        features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]]
       });
     }
   }
@@ -63629,15 +63626,15 @@ class PreloadingStrategy {}
 let PreloadAllModules = /*#__PURE__*/(() => {
   class PreloadAllModules {
     preload(route, fn) {
-      return fn().pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_21__.catchError)(() => (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)(null)));
+      return fn().pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_20__.catchError)(() => (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(null)));
     }
     static {
-      this.ɵfac = function PreloadAllModules_Factory(t) {
-        return new (t || PreloadAllModules)();
+      this.ɵfac = function PreloadAllModules_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || PreloadAllModules)();
       };
     }
     static {
-      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjectable"]({
+      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
         token: PreloadAllModules,
         factory: PreloadAllModules.ɵfac,
         providedIn: 'root'
@@ -63661,15 +63658,15 @@ let PreloadAllModules = /*#__PURE__*/(() => {
 let NoPreloading = /*#__PURE__*/(() => {
   class NoPreloading {
     preload(route, fn) {
-      return (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)(null);
+      return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(null);
     }
     static {
-      this.ɵfac = function NoPreloading_Factory(t) {
-        return new (t || NoPreloading)();
+      this.ɵfac = function NoPreloading_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || NoPreloading)();
       };
     }
     static {
-      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjectable"]({
+      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
         token: NoPreloading,
         factory: NoPreloading.ɵfac,
         providedIn: 'root'
@@ -63702,7 +63699,7 @@ let RouterPreloader = /*#__PURE__*/(() => {
       this.loader = loader;
     }
     setUpPreloading() {
-      this.subscription = this.router.events.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_12__.filter)(e => e instanceof NavigationEnd), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_15__.concatMap)(() => this.preload())).subscribe(() => {});
+      this.subscription = this.router.events.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_11__.filter)(e => e instanceof NavigationEnd), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_14__.concatMap)(() => this.preload())).subscribe(() => {});
     }
     preload() {
       return this.processRoutes(this.injector, this.router.config);
@@ -63717,7 +63714,7 @@ let RouterPreloader = /*#__PURE__*/(() => {
       const res = [];
       for (const route of routes) {
         if (route.providers && !route._injector) {
-          route._injector = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.createEnvironmentInjector)(route.providers, injector, `Route: ${route.path}`);
+          route._injector = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.createEnvironmentInjector)(route.providers, injector, `Route: ${route.path}`);
         }
         const injectorForCurrentRoute = route._injector ?? injector;
         const injectorForChildren = route._loadedInjector ?? injectorForCurrentRoute;
@@ -63736,7 +63733,7 @@ let RouterPreloader = /*#__PURE__*/(() => {
           res.push(this.processRoutes(injectorForChildren, route.children ?? route._loadedRoutes));
         }
       }
-      return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.from)(res).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_36__.mergeAll)());
+      return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.from)(res).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_35__.mergeAll)());
     }
     preloadConfig(injector, route) {
       return this.preloadingStrategy.preload(route, () => {
@@ -63744,11 +63741,11 @@ let RouterPreloader = /*#__PURE__*/(() => {
         if (route.loadChildren && route.canLoad === undefined) {
           loadedChildren$ = this.loader.loadChildren(injector, route);
         } else {
-          loadedChildren$ = (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)(null);
+          loadedChildren$ = (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(null);
         }
-        const recursiveLoadChildren$ = loadedChildren$.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_13__.mergeMap)(config => {
+        const recursiveLoadChildren$ = loadedChildren$.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_12__.mergeMap)(config => {
           if (config === null) {
-            return (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)(void 0);
+            return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(void 0);
           }
           route._loadedRoutes = config.routes;
           route._loadedInjector = config.injector;
@@ -63758,19 +63755,19 @@ let RouterPreloader = /*#__PURE__*/(() => {
         }));
         if (route.loadComponent && !route._loadedComponent) {
           const loadComponent$ = this.loader.loadComponent(route);
-          return (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.from)([recursiveLoadChildren$, loadComponent$]).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_36__.mergeAll)());
+          return (0,rxjs__WEBPACK_IMPORTED_MODULE_2__.from)([recursiveLoadChildren$, loadComponent$]).pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_35__.mergeAll)());
         } else {
           return recursiveLoadChildren$;
         }
       });
     }
     static {
-      this.ɵfac = function RouterPreloader_Factory(t) {
-        return new (t || RouterPreloader)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵinject"](Router), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__.Compiler), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__.EnvironmentInjector), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵinject"](PreloadingStrategy), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵinject"](RouterConfigLoader));
+      this.ɵfac = function RouterPreloader_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || RouterPreloader)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](Router), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.Compiler), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__.EnvironmentInjector), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](PreloadingStrategy), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](RouterConfigLoader));
       };
     }
     static {
-      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjectable"]({
+      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
         token: RouterPreloader,
         factory: RouterPreloader.ɵfac,
         providedIn: 'root'
@@ -63782,7 +63779,7 @@ let RouterPreloader = /*#__PURE__*/(() => {
 /*#__PURE__*/(() => {
   (typeof ngDevMode === "undefined" || ngDevMode) && void 0;
 })();
-const ROUTER_SCROLLER = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_2__.InjectionToken('');
+const ROUTER_SCROLLER = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_1__.InjectionToken('');
 let RouterScroller = /*#__PURE__*/(() => {
   class RouterScroller {
     /** @nodoc */
@@ -63796,7 +63793,6 @@ let RouterScroller = /*#__PURE__*/(() => {
       this.lastSource = 'imperative';
       this.restoredId = 0;
       this.store = {};
-      this.environmentInjector = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(_angular_core__WEBPACK_IMPORTED_MODULE_2__.EnvironmentInjector);
       // Default both options to 'disabled'
       options.scrollPositionRestoration ||= 'disabled';
       options.anchorScrolling ||= 'disabled';
@@ -63849,26 +63845,16 @@ let RouterScroller = /*#__PURE__*/(() => {
       });
     }
     scheduleScrollEvent(routerEvent, anchor) {
-      var _this = this;
-      this.zone.runOutsideAngular( /*#__PURE__*/(0,_home_runner_work_ng_camp_ng_camp_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
-        // The scroll event needs to be delayed until after change detection. Otherwise we may
+      this.zone.runOutsideAngular(() => {
+        // The scroll event needs to be delayed until after change detection. Otherwise, we may
         // attempt to restore the scroll position before the router outlet has fully rendered the
         // component by executing its update block of the template function.
-        yield new Promise(resolve => {
-          // TODO(atscott): Attempt to remove the setTimeout in a future PR.
-          setTimeout(() => {
-            resolve();
+        setTimeout(() => {
+          this.zone.run(() => {
+            this.transitions.events.next(new Scroll(routerEvent, this.lastSource === 'popstate' ? this.store[this.restoredId] : null, anchor));
           });
-          (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.afterNextRender)(() => {
-            resolve();
-          }, {
-            injector: _this.environmentInjector
-          });
-        });
-        _this.zone.run(() => {
-          _this.transitions.events.next(new Scroll(routerEvent, _this.lastSource === 'popstate' ? _this.store[_this.restoredId] : null, anchor));
-        });
-      }));
+        }, 0);
+      });
     }
     /** @nodoc */
     ngOnDestroy() {
@@ -63876,12 +63862,12 @@ let RouterScroller = /*#__PURE__*/(() => {
       this.scrollEventsSubscription?.unsubscribe();
     }
     static {
-      this.ɵfac = function RouterScroller_Factory(t) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵinvalidFactory"]();
+      this.ɵfac = function RouterScroller_Factory(__ngFactoryType__) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinvalidFactory"]();
       };
     }
     static {
-      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjectable"]({
+      this.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({
         token: RouterScroller,
         factory: RouterScroller.ɵfac
       });
@@ -63930,7 +63916,7 @@ let RouterScroller = /*#__PURE__*/(() => {
  * @returns A set of providers to setup a Router.
  */
 function provideRouter(routes, ...features) {
-  return (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.makeEnvironmentProviders)([{
+  return (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.makeEnvironmentProviders)([{
     provide: ROUTES,
     multi: true,
     useValue: routes
@@ -63942,7 +63928,7 @@ function provideRouter(routes, ...features) {
     useFactory: rootRoute,
     deps: [Router]
   }, {
-    provide: _angular_core__WEBPACK_IMPORTED_MODULE_2__.APP_BOOTSTRAP_LISTENER,
+    provide: _angular_core__WEBPACK_IMPORTED_MODULE_1__.APP_BOOTSTRAP_LISTENER,
     multi: true,
     useFactory: getBootstrapListener
   }, features.map(feature => feature.ɵproviders)]);
@@ -63963,16 +63949,16 @@ function routerFeature(kind, providers) {
  * An Injection token used to indicate whether `provideRouter` or `RouterModule.forRoot` was ever
  * called.
  */
-const ROUTER_IS_PROVIDED = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_2__.InjectionToken('', {
+const ROUTER_IS_PROVIDED = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_1__.InjectionToken('', {
   providedIn: 'root',
   factory: () => false
 });
 const routerIsProvidedDevModeCheck = {
-  provide: _angular_core__WEBPACK_IMPORTED_MODULE_2__.ENVIRONMENT_INITIALIZER,
+  provide: _angular_core__WEBPACK_IMPORTED_MODULE_1__.ENVIRONMENT_INITIALIZER,
   multi: true,
   useFactory() {
     return () => {
-      if (!(0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(ROUTER_IS_PROVIDED)) {
+      if (!(0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(ROUTER_IS_PROVIDED)) {
         console.warn('`provideRoutes` was called without `provideRouter` or `RouterModule.forRoot`. ' + 'This is likely a mistake.');
       }
     };
@@ -64031,19 +64017,19 @@ function withInMemoryScrolling(options = {}) {
   const providers = [{
     provide: ROUTER_SCROLLER,
     useFactory: () => {
-      const viewportScroller = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(_angular_common__WEBPACK_IMPORTED_MODULE_33__.ViewportScroller);
-      const zone = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(_angular_core__WEBPACK_IMPORTED_MODULE_2__.NgZone);
-      const transitions = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(NavigationTransitions);
-      const urlSerializer = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(UrlSerializer);
+      const viewportScroller = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(_angular_common__WEBPACK_IMPORTED_MODULE_32__.ViewportScroller);
+      const zone = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(_angular_core__WEBPACK_IMPORTED_MODULE_1__.NgZone);
+      const transitions = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(NavigationTransitions);
+      const urlSerializer = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(UrlSerializer);
       return new RouterScroller(urlSerializer, transitions, viewportScroller, zone, options);
     }
   }];
   return routerFeature(4 /* RouterFeatureKind.InMemoryScrollingFeature */, providers);
 }
 function getBootstrapListener() {
-  const injector = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(_angular_core__WEBPACK_IMPORTED_MODULE_2__.Injector);
+  const injector = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(_angular_core__WEBPACK_IMPORTED_MODULE_1__.Injector);
   return bootstrappedComponentRef => {
-    const ref = injector.get(_angular_core__WEBPACK_IMPORTED_MODULE_2__.ApplicationRef);
+    const ref = injector.get(_angular_core__WEBPACK_IMPORTED_MODULE_1__.ApplicationRef);
     if (bootstrappedComponentRef !== ref.components[0]) {
       return;
     }
@@ -64052,8 +64038,8 @@ function getBootstrapListener() {
     if (injector.get(INITIAL_NAVIGATION) === 1 /* InitialNavigation.EnabledNonBlocking */) {
       router.initialNavigation();
     }
-    injector.get(ROUTER_PRELOADER, null, _angular_core__WEBPACK_IMPORTED_MODULE_2__.InjectFlags.Optional)?.setUpPreloading();
-    injector.get(ROUTER_SCROLLER, null, _angular_core__WEBPACK_IMPORTED_MODULE_2__.InjectFlags.Optional)?.init();
+    injector.get(ROUTER_PRELOADER, null, _angular_core__WEBPACK_IMPORTED_MODULE_1__.InjectFlags.Optional)?.setUpPreloading();
+    injector.get(ROUTER_SCROLLER, null, _angular_core__WEBPACK_IMPORTED_MODULE_1__.InjectFlags.Optional)?.init();
     router.resetRootComponentType(ref.componentTypes[0]);
     if (!bootstrapDone.closed) {
       bootstrapDone.next();
@@ -64067,20 +64053,21 @@ function getBootstrapListener() {
  * `enabledBlocking`, the first navigation waits until bootstrapping is finished before continuing
  * to the activation phase.
  */
-const BOOTSTRAP_DONE = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_2__.InjectionToken(typeof ngDevMode === 'undefined' || ngDevMode ? 'bootstrap done indicator' : '', {
+const BOOTSTRAP_DONE = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_1__.InjectionToken(typeof ngDevMode === 'undefined' || ngDevMode ? 'bootstrap done indicator' : '', {
   factory: () => {
-    return new rxjs__WEBPACK_IMPORTED_MODULE_31__.Subject();
+    return new rxjs__WEBPACK_IMPORTED_MODULE_30__.Subject();
   }
 });
-const INITIAL_NAVIGATION = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_2__.InjectionToken(typeof ngDevMode === 'undefined' || ngDevMode ? 'initial navigation' : '', {
+const INITIAL_NAVIGATION = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_1__.InjectionToken(typeof ngDevMode === 'undefined' || ngDevMode ? 'initial navigation' : '', {
   providedIn: 'root',
   factory: () => 1 /* InitialNavigation.EnabledNonBlocking */
 });
 /**
  * Configures initial navigation to start before the root component is created.
  *
- * The bootstrap is blocked until the initial navigation is complete. This value is required for
- * [server-side rendering](guide/ssr) to work.
+ * The bootstrap is blocked until the initial navigation is complete. This should be set in case
+ * you use [server-side rendering](guide/ssr), but do not enable [hydration](guide/hydration) for
+ * your application.
  *
  * @usageNotes
  *
@@ -64106,11 +64093,11 @@ function withEnabledBlockingInitialNavigation() {
     provide: INITIAL_NAVIGATION,
     useValue: 0 /* InitialNavigation.EnabledBlocking */
   }, {
-    provide: _angular_core__WEBPACK_IMPORTED_MODULE_2__.APP_INITIALIZER,
+    provide: _angular_core__WEBPACK_IMPORTED_MODULE_1__.APP_INITIALIZER,
     multi: true,
-    deps: [_angular_core__WEBPACK_IMPORTED_MODULE_2__.Injector],
+    deps: [_angular_core__WEBPACK_IMPORTED_MODULE_1__.Injector],
     useFactory: injector => {
-      const locationInitialized = injector.get(_angular_common__WEBPACK_IMPORTED_MODULE_33__.LOCATION_INITIALIZED, Promise.resolve());
+      const locationInitialized = injector.get(_angular_common__WEBPACK_IMPORTED_MODULE_32__.LOCATION_INITIALIZED, Promise.resolve());
       return () => {
         return locationInitialized.then(() => {
           return new Promise(resolve => {
@@ -64126,7 +64113,7 @@ function withEnabledBlockingInitialNavigation() {
               // assume activation will complete successfully (even though this is not
               // guaranteed).
               resolve(true);
-              return bootstrapDone.closed ? (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.of)(void 0) : bootstrapDone;
+              return bootstrapDone.closed ? (0,rxjs__WEBPACK_IMPORTED_MODULE_3__.of)(void 0) : bootstrapDone;
             };
             router.initialNavigation();
           });
@@ -64164,10 +64151,10 @@ function withEnabledBlockingInitialNavigation() {
  */
 function withDisabledInitialNavigation() {
   const providers = [{
-    provide: _angular_core__WEBPACK_IMPORTED_MODULE_2__.APP_INITIALIZER,
+    provide: _angular_core__WEBPACK_IMPORTED_MODULE_1__.APP_INITIALIZER,
     multi: true,
     useFactory: () => {
-      const router = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(Router);
+      const router = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(Router);
       return () => {
         router.setUpLocationChangeListener();
       };
@@ -64206,10 +64193,10 @@ function withDebugTracing() {
   let providers = [];
   if (typeof ngDevMode === 'undefined' || ngDevMode) {
     providers = [{
-      provide: _angular_core__WEBPACK_IMPORTED_MODULE_2__.ENVIRONMENT_INITIALIZER,
+      provide: _angular_core__WEBPACK_IMPORTED_MODULE_1__.ENVIRONMENT_INITIALIZER,
       multi: true,
       useFactory: () => {
-        const router = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(Router);
+        const router = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(Router);
         return () => router.events.subscribe(e => {
           // tslint:disable:no-console
           console.group?.(`Router Event: ${e.constructor.name}`);
@@ -64225,7 +64212,7 @@ function withDebugTracing() {
   }
   return routerFeature(1 /* RouterFeatureKind.DebugTracingFeature */, providers);
 }
-const ROUTER_PRELOADER = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_2__.InjectionToken(typeof ngDevMode === 'undefined' || ngDevMode ? 'router preloader' : '');
+const ROUTER_PRELOADER = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_1__.InjectionToken(typeof ngDevMode === 'undefined' || ngDevMode ? 'router preloader' : '');
 /**
  * Allows to configure a preloading strategy to use. The strategy is configured by providing a
  * reference to a class that implements a `PreloadingStrategy`.
@@ -64322,8 +64309,8 @@ function withRouterConfig(options) {
  */
 function withHashLocation() {
   const providers = [{
-    provide: _angular_common__WEBPACK_IMPORTED_MODULE_33__.LocationStrategy,
-    useClass: _angular_common__WEBPACK_IMPORTED_MODULE_33__.HashLocationStrategy
+    provide: _angular_common__WEBPACK_IMPORTED_MODULE_32__.LocationStrategy,
+    useClass: _angular_common__WEBPACK_IMPORTED_MODULE_32__.HashLocationStrategy
   }];
   return routerFeature(6 /* RouterFeatureKind.RouterHashLocationFeature */, providers);
 }
@@ -64387,6 +64374,24 @@ function withNavigationErrorHandler(handler) {
  * );
  * ```
  *
+ * The router bindings information from any of the following sources:
+ *
+ *  - query parameters
+ *  - path and matrix parameters
+ *  - static route data
+ *  - data from resolvers
+ *
+ * Duplicate keys are resolved in the same order from above, from least to greatest,
+ * meaning that resolvers have the highest precedence and override any of the other information
+ * from the route.
+ *
+ * Importantly, when an input does not have an item in the route data with a matching key, this
+ * input is set to `undefined`. This prevents previous information from being
+ * retained if the data got removed from the route (i.e. if a query parameter is removed).
+ * Default values can be provided with a resolver on the route to ensure the value is always present
+ * or an input and use an input transform in the component.
+ *
+ * @see {@link guide/components/inputs#input-transforms input transforms}
  * @returns A set of providers for use with `provideRouter`.
  */
 function withComponentInputBinding() {
@@ -64421,7 +64426,7 @@ function withComponentInputBinding() {
  * @returns A set of providers for use with `provideRouter`.
  * @see https://developer.chrome.com/docs/web-platform/view-transitions/
  * @see https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API
- * @experimental
+ * @developerPreview
  */
 function withViewTransitions(options) {
   const providers = [{
@@ -64444,12 +64449,12 @@ const ROUTER_DIRECTIVES = [RouterOutlet, RouterLink, RouterLinkActive, ɵEmptyOu
 /**
  * @docsNotRequired
  */
-const ROUTER_FORROOT_GUARD = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_2__.InjectionToken(typeof ngDevMode === 'undefined' || ngDevMode ? 'router duplicate forRoot guard' : 'ROUTER_FORROOT_GUARD');
+const ROUTER_FORROOT_GUARD = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_1__.InjectionToken(typeof ngDevMode === 'undefined' || ngDevMode ? 'router duplicate forRoot guard' : 'ROUTER_FORROOT_GUARD');
 // TODO(atscott): All of these except `ActivatedRoute` are `providedIn: 'root'`. They are only kept
 // here to avoid a breaking change whereby the provider order matters based on where the
 // `RouterModule`/`RouterTestingModule` is imported. These can/should be removed as a "breaking"
 // change in a major version.
-const ROUTER_PROVIDERS = [_angular_common__WEBPACK_IMPORTED_MODULE_33__.Location, {
+const ROUTER_PROVIDERS = [_angular_common__WEBPACK_IMPORTED_MODULE_32__.Location, {
   provide: UrlSerializer,
   useClass: DefaultUrlSerializer
 }, Router, ChildrenOutletContexts, {
@@ -64515,7 +64520,7 @@ let RouterModule = /*#__PURE__*/(() => {
         }, {
           provide: ROUTER_FORROOT_GUARD,
           useFactory: provideForRootGuard,
-          deps: [[Router, new _angular_core__WEBPACK_IMPORTED_MODULE_2__.Optional(), new _angular_core__WEBPACK_IMPORTED_MODULE_2__.SkipSelf()]]
+          deps: [[Router, new _angular_core__WEBPACK_IMPORTED_MODULE_1__.Optional(), new _angular_core__WEBPACK_IMPORTED_MODULE_1__.SkipSelf()]]
         }, {
           provide: ROUTER_CONFIGURATION,
           useValue: config ? config : {}
@@ -64549,17 +64554,17 @@ let RouterModule = /*#__PURE__*/(() => {
       };
     }
     static {
-      this.ɵfac = function RouterModule_Factory(t) {
-        return new (t || RouterModule)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵinject"](ROUTER_FORROOT_GUARD, 8));
+      this.ɵfac = function RouterModule_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || RouterModule)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](ROUTER_FORROOT_GUARD, 8));
       };
     }
     static {
-      this.ɵmod = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineNgModule"]({
+      this.ɵmod = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({
         type: RouterModule
       });
     }
     static {
-      this.ɵinj = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjector"]({});
+      this.ɵinj = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({});
     }
   }
   return RouterModule;
@@ -64575,11 +64580,11 @@ function provideRouterScroller() {
   return {
     provide: ROUTER_SCROLLER,
     useFactory: () => {
-      const viewportScroller = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(_angular_common__WEBPACK_IMPORTED_MODULE_33__.ViewportScroller);
-      const zone = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(_angular_core__WEBPACK_IMPORTED_MODULE_2__.NgZone);
-      const config = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(ROUTER_CONFIGURATION);
-      const transitions = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(NavigationTransitions);
-      const urlSerializer = (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(UrlSerializer);
+      const viewportScroller = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(_angular_common__WEBPACK_IMPORTED_MODULE_32__.ViewportScroller);
+      const zone = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(_angular_core__WEBPACK_IMPORTED_MODULE_1__.NgZone);
+      const config = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(ROUTER_CONFIGURATION);
+      const transitions = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(NavigationTransitions);
+      const urlSerializer = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(UrlSerializer);
       if (config.scrollOffset) {
         viewportScroller.setOffset(config.scrollOffset);
       }
@@ -64591,21 +64596,21 @@ function provideRouterScroller() {
 // provide hash location directly via `{provide: LocationStrategy, useClass: HashLocationStrategy}`.
 function provideHashLocationStrategy() {
   return {
-    provide: _angular_common__WEBPACK_IMPORTED_MODULE_33__.LocationStrategy,
-    useClass: _angular_common__WEBPACK_IMPORTED_MODULE_33__.HashLocationStrategy
+    provide: _angular_common__WEBPACK_IMPORTED_MODULE_32__.LocationStrategy,
+    useClass: _angular_common__WEBPACK_IMPORTED_MODULE_32__.HashLocationStrategy
   };
 }
 // Note: For internal use only with `RouterModule`. Standalone setup via `provideRouter` does not
 // need this at all because `PathLocationStrategy` is the default factory for `LocationStrategy`.
 function providePathLocationStrategy() {
   return {
-    provide: _angular_common__WEBPACK_IMPORTED_MODULE_33__.LocationStrategy,
-    useClass: _angular_common__WEBPACK_IMPORTED_MODULE_33__.PathLocationStrategy
+    provide: _angular_common__WEBPACK_IMPORTED_MODULE_32__.LocationStrategy,
+    useClass: _angular_common__WEBPACK_IMPORTED_MODULE_32__.PathLocationStrategy
   };
 }
 function provideForRootGuard(router) {
   if ((typeof ngDevMode === 'undefined' || ngDevMode) && router) {
-    throw new _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵRuntimeError"](4007 /* RuntimeErrorCode.FOR_ROOT_CALLED_TWICE */, `The Router was provided more than once. This can happen if 'forRoot' is used outside of the root injector.` + ` Lazy loaded modules should use RouterModule.forChild() instead.`);
+    throw new _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵRuntimeError"](4007 /* RuntimeErrorCode.FOR_ROOT_CALLED_TWICE */, `The Router was provided more than once. This can happen if 'forRoot' is used outside of the root injector.` + ` Lazy loaded modules should use RouterModule.forChild() instead.`);
   }
   return 'guarded';
 }
@@ -64621,7 +64626,7 @@ function provideInitialNavigation(config) {
  *
  * @publicApi
  */
-const ROUTER_INITIALIZER = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_2__.InjectionToken(typeof ngDevMode === 'undefined' || ngDevMode ? 'Router Initializer' : '');
+const ROUTER_INITIALIZER = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_1__.InjectionToken(typeof ngDevMode === 'undefined' || ngDevMode ? 'Router Initializer' : '');
 function provideRouterInitializer() {
   return [
   // ROUTER_INITIALIZER token should be removed. It's public API but shouldn't be. We can just
@@ -64630,7 +64635,7 @@ function provideRouterInitializer() {
     provide: ROUTER_INITIALIZER,
     useFactory: getBootstrapListener
   }, {
-    provide: _angular_core__WEBPACK_IMPORTED_MODULE_2__.APP_BOOTSTRAP_LISTENER,
+    provide: _angular_core__WEBPACK_IMPORTED_MODULE_1__.APP_BOOTSTRAP_LISTENER,
     multi: true,
     useExisting: ROUTER_INITIALIZER
   }];
@@ -64646,7 +64651,7 @@ function provideRouterInitializer() {
  * @see {@link Route}
  */
 function mapToCanMatch(providers) {
-  return providers.map(provider => (...params) => (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(provider).canMatch(...params));
+  return providers.map(provider => (...params) => (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(provider).canMatch(...params));
 }
 /**
  * Maps an array of injectable classes with canActivate functions to an array of equivalent
@@ -64658,7 +64663,7 @@ function mapToCanMatch(providers) {
  * @see {@link Route}
  */
 function mapToCanActivate(providers) {
-  return providers.map(provider => (...params) => (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(provider).canActivate(...params));
+  return providers.map(provider => (...params) => (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(provider).canActivate(...params));
 }
 /**
  * Maps an array of injectable classes with canActivateChild functions to an array of equivalent
@@ -64670,7 +64675,7 @@ function mapToCanActivate(providers) {
  * @see {@link Route}
  */
 function mapToCanActivateChild(providers) {
-  return providers.map(provider => (...params) => (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(provider).canActivateChild(...params));
+  return providers.map(provider => (...params) => (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(provider).canActivateChild(...params));
 }
 /**
  * Maps an array of injectable classes with canDeactivate functions to an array of equivalent
@@ -64682,7 +64687,7 @@ function mapToCanActivateChild(providers) {
  * @see {@link Route}
  */
 function mapToCanDeactivate(providers) {
-  return providers.map(provider => (...params) => (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(provider).canDeactivate(...params));
+  return providers.map(provider => (...params) => (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(provider).canDeactivate(...params));
 }
 /**
  * Maps an injectable class with a resolve function to an equivalent `ResolveFn`
@@ -64694,7 +64699,7 @@ function mapToCanDeactivate(providers) {
  * @see {@link Route}
  */
 function mapToResolve(provider) {
-  return (...params) => (0,_angular_core__WEBPACK_IMPORTED_MODULE_2__.inject)(provider).resolve(...params);
+  return (...params) => (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.inject)(provider).resolve(...params);
 }
 
 /**
@@ -64705,7 +64710,7 @@ function mapToResolve(provider) {
 /**
  * @publicApi
  */
-const VERSION = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_2__.Version('18.0.5');
+const VERSION = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_1__.Version('18.2.9');
 
 /**
  * @module
@@ -64735,36 +64740,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ _asyncToGenerator)
 /* harmony export */ });
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {
+function asyncGeneratorStep(n, t, e, r, o, a, c) {
   try {
-    var info = gen[key](arg);
-    var value = info.value;
-  } catch (error) {
-    reject(error);
-    return;
+    var i = n[a](c),
+      u = i.value;
+  } catch (n) {
+    return void e(n);
   }
-  if (info.done) {
-    resolve(value);
-  } else {
-    Promise.resolve(value).then(_next, _throw);
-  }
+  i.done ? t(u) : Promise.resolve(u).then(r, o);
 }
-function _asyncToGenerator(fn) {
+function _asyncToGenerator(n) {
   return function () {
-    var self = this,
-      args = arguments;
-    return new Promise(function (resolve, reject) {
-      var gen = fn.apply(self, args);
-      function _next(value) {
-        asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);
+    var t = this,
+      e = arguments;
+    return new Promise(function (r, o) {
+      var a = n.apply(t, e);
+      function _next(n) {
+        asyncGeneratorStep(a, r, o, _next, _throw, "next", n);
       }
-      function _throw(err) {
-        asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);
+      function _throw(n) {
+        asyncGeneratorStep(a, r, o, _next, _throw, "throw", n);
       }
-      _next(undefined);
+      _next(void 0);
     });
   };
 }
+
 
 /***/ }),
 

@@ -20,8 +20,8 @@ __webpack_require__.r(__webpack_exports__);
 let HeaderComponent = /*#__PURE__*/(() => {
   class HeaderComponent {
     static {
-      this.ɵfac = function HeaderComponent_Factory(t) {
-        return new (t || HeaderComponent)();
+      this.ɵfac = function HeaderComponent_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || HeaderComponent)();
       };
     }
     static {
@@ -69,8 +69,8 @@ __webpack_require__.r(__webpack_exports__);
 let BaseLayoutComponent = /*#__PURE__*/(() => {
   class BaseLayoutComponent {
     static {
-      this.ɵfac = function BaseLayoutComponent_Factory(t) {
-        return new (t || BaseLayoutComponent)();
+      this.ɵfac = function BaseLayoutComponent_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || BaseLayoutComponent)();
       };
     }
     static {
@@ -128,8 +128,8 @@ const _c1 = ["*", "mat-toolbar-row"];
 let MatToolbarRow = /*#__PURE__*/(() => {
   class MatToolbarRow {
     static {
-      this.ɵfac = function MatToolbarRow_Factory(t) {
-        return new (t || MatToolbarRow)();
+      this.ɵfac = function MatToolbarRow_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || MatToolbarRow)();
       };
     }
     static {
@@ -175,8 +175,8 @@ let MatToolbar = /*#__PURE__*/(() => {
       }
     }
     static {
-      this.ɵfac = function MatToolbar_Factory(t) {
-        return new (t || MatToolbar)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_cdk_platform__WEBPACK_IMPORTED_MODULE_1__.Platform), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_common__WEBPACK_IMPORTED_MODULE_2__.DOCUMENT));
+      this.ɵfac = function MatToolbar_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || MatToolbar)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_cdk_platform__WEBPACK_IMPORTED_MODULE_1__.Platform), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_common__WEBPACK_IMPORTED_MODULE_2__.DOCUMENT));
       };
     }
     static {
@@ -237,8 +237,8 @@ function throwToolbarMixedModesError() {
 let MatToolbarModule = /*#__PURE__*/(() => {
   class MatToolbarModule {
     static {
-      this.ɵfac = function MatToolbarModule_Factory(t) {
-        return new (t || MatToolbarModule)();
+      this.ɵfac = function MatToolbarModule_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || MatToolbarModule)();
       };
     }
     static {

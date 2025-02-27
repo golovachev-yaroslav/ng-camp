@@ -210,8 +210,8 @@ let DashboardPageComponent = /*#__PURE__*/(() => {
       return this.animeService.getAnimeList().pipe((0,_angular_core_rxjs_interop__WEBPACK_IMPORTED_MODULE_3__.takeUntilDestroyed)(this.destroyRef), (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.finalize)(() => this.isLoading$.next(false)));
     }
     static {
-      this.ɵfac = function DashboardPageComponent_Factory(t) {
-        return new (t || DashboardPageComponent)();
+      this.ɵfac = function DashboardPageComponent_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || DashboardPageComponent)();
       };
     }
     static {
@@ -267,8 +267,8 @@ __webpack_require__.r(__webpack_exports__);
 let DetailsPageComponent = /*#__PURE__*/(() => {
   class DetailsPageComponent {
     static {
-      this.ɵfac = function DetailsPageComponent_Factory(t) {
-        return new (t || DetailsPageComponent)();
+      this.ɵfac = function DetailsPageComponent_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || DetailsPageComponent)();
       };
     }
     static {
@@ -328,8 +328,8 @@ const routes = [{
 let RoutesModule = /*#__PURE__*/(() => {
   class RoutesModule {
     static {
-      this.ɵfac = function RoutesModule_Factory(t) {
-        return new (t || RoutesModule)();
+      this.ɵfac = function RoutesModule_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || RoutesModule)();
       };
     }
     static {
@@ -392,8 +392,8 @@ let AnimeService = /*#__PURE__*/(() => {
       return this.httpService.get(this.animeApiUrl).pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_5__.map)(data => _js_camp_core_mappers_pagination_mapper__WEBPACK_IMPORTED_MODULE_1__.PaginationMapper.fromDto(data, _js_camp_core_mappers_anime_mapper__WEBPACK_IMPORTED_MODULE_0__.AnimeMapper.fromDto)));
     }
     static {
-      this.ɵfac = function AnimeService_Factory(t) {
-        return new (t || AnimeService)();
+      this.ɵfac = function AnimeService_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || AnimeService)();
       };
     }
     static {
@@ -1847,8 +1847,8 @@ let UniqueSelectionDispatcher = /*#__PURE__*/(() => {
       this._listeners = [];
     }
     static {
-      this.ɵfac = function UniqueSelectionDispatcher_Factory(t) {
-        return new (t || UniqueSelectionDispatcher)();
+      this.ɵfac = function UniqueSelectionDispatcher_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || UniqueSelectionDispatcher)();
       };
     }
     static {
@@ -2119,8 +2119,8 @@ let CdkFixedSizeVirtualScroll = /*#__PURE__*/(() => {
       this._scrollStrategy.updateItemAndBufferSize(this.itemSize, this.minBufferPx, this.maxBufferPx);
     }
     static {
-      this.ɵfac = function CdkFixedSizeVirtualScroll_Factory(t) {
-        return new (t || CdkFixedSizeVirtualScroll)();
+      this.ɵfac = function CdkFixedSizeVirtualScroll_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || CdkFixedSizeVirtualScroll)();
       };
     }
     static {
@@ -2282,8 +2282,8 @@ let ScrollDispatcher = /*#__PURE__*/(() => {
       }
     }
     static {
-      this.ɵfac = function ScrollDispatcher_Factory(t) {
-        return new (t || ScrollDispatcher)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.NgZone), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_cdk_platform__WEBPACK_IMPORTED_MODULE_9__.Platform), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common__WEBPACK_IMPORTED_MODULE_10__.DOCUMENT, 8));
+      this.ɵfac = function ScrollDispatcher_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || ScrollDispatcher)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.NgZone), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_cdk_platform__WEBPACK_IMPORTED_MODULE_9__.Platform), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common__WEBPACK_IMPORTED_MODULE_10__.DOCUMENT, 8));
       };
     }
     static {
@@ -2436,8 +2436,8 @@ let CdkScrollable = /*#__PURE__*/(() => {
       }
     }
     static {
-      this.ɵfac = function CdkScrollable_Factory(t) {
-        return new (t || CdkScrollable)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ScrollDispatcher), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.NgZone), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_12__.Directionality, 8));
+      this.ɵfac = function CdkScrollable_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || CdkScrollable)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ScrollDispatcher), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.NgZone), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_12__.Directionality, 8));
       };
     }
     static {
@@ -2583,8 +2583,8 @@ let ViewportRuler = /*#__PURE__*/(() => {
       };
     }
     static {
-      this.ɵfac = function ViewportRuler_Factory(t) {
-        return new (t || ViewportRuler)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_cdk_platform__WEBPACK_IMPORTED_MODULE_9__.Platform), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.NgZone), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common__WEBPACK_IMPORTED_MODULE_10__.DOCUMENT, 8));
+      this.ɵfac = function ViewportRuler_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || ViewportRuler)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_cdk_platform__WEBPACK_IMPORTED_MODULE_9__.Platform), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.NgZone), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common__WEBPACK_IMPORTED_MODULE_10__.DOCUMENT, 8));
       };
     }
     static {
@@ -2619,8 +2619,8 @@ let CdkVirtualScrollable = /*#__PURE__*/(() => {
       return orientation === 'horizontal' ? viewportEl.clientWidth : viewportEl.clientHeight;
     }
     static {
-      this.ɵfac = function CdkVirtualScrollable_Factory(t) {
-        return new (t || CdkVirtualScrollable)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ScrollDispatcher), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.NgZone), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_12__.Directionality, 8));
+      this.ɵfac = function CdkVirtualScrollable_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || CdkVirtualScrollable)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ScrollDispatcher), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.NgZone), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_12__.Directionality, 8));
       };
     }
     static {
@@ -3013,8 +3013,8 @@ let CdkVirtualScrollViewport = /*#__PURE__*/(() => {
       this._totalContentWidth = this.orientation === 'horizontal' ? `${this._totalContentSize}px` : '';
     }
     static {
-      this.ɵfac = function CdkVirtualScrollViewport_Factory(t) {
-        return new (t || CdkVirtualScrollViewport)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ChangeDetectorRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.NgZone), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](VIRTUAL_SCROLL_STRATEGY, 8), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_12__.Directionality, 8), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ScrollDispatcher), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ViewportRuler), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](VIRTUAL_SCROLLABLE, 8));
+      this.ɵfac = function CdkVirtualScrollViewport_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || CdkVirtualScrollViewport)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ChangeDetectorRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.NgZone), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](VIRTUAL_SCROLL_STRATEGY, 8), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_12__.Directionality, 8), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ScrollDispatcher), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ViewportRuler), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](VIRTUAL_SCROLLABLE, 8));
       };
     }
     static {
@@ -3327,8 +3327,8 @@ let CdkVirtualForOf = /*#__PURE__*/(() => {
       };
     }
     static {
-      this.ɵfac = function CdkVirtualForOf_Factory(t) {
-        return new (t || CdkVirtualForOf)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewContainerRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.TemplateRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.IterableDiffers), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_cdk_collections__WEBPACK_IMPORTED_MODULE_17__._VIEW_REPEATER_STRATEGY), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](CdkVirtualScrollViewport, 4), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.NgZone));
+      this.ɵfac = function CdkVirtualForOf_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || CdkVirtualForOf)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewContainerRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.TemplateRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.IterableDiffers), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_cdk_collections__WEBPACK_IMPORTED_MODULE_17__._VIEW_REPEATER_STRATEGY), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](CdkVirtualScrollViewport, 4), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.NgZone));
       };
     }
     static {
@@ -3367,8 +3367,8 @@ let CdkVirtualScrollableElement = /*#__PURE__*/(() => {
       return this.getElementRef().nativeElement.getBoundingClientRect()[from] - this.measureScrollOffset(from);
     }
     static {
-      this.ɵfac = function CdkVirtualScrollableElement_Factory(t) {
-        return new (t || CdkVirtualScrollableElement)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ScrollDispatcher), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.NgZone), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_12__.Directionality, 8));
+      this.ɵfac = function CdkVirtualScrollableElement_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || CdkVirtualScrollableElement)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ScrollDispatcher), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.NgZone), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_12__.Directionality, 8));
       };
     }
     static {
@@ -3403,8 +3403,8 @@ let CdkVirtualScrollableWindow = /*#__PURE__*/(() => {
       return this.getElementRef().nativeElement.getBoundingClientRect()[from];
     }
     static {
-      this.ɵfac = function CdkVirtualScrollableWindow_Factory(t) {
-        return new (t || CdkVirtualScrollableWindow)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ScrollDispatcher), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.NgZone), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_12__.Directionality, 8));
+      this.ɵfac = function CdkVirtualScrollableWindow_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || CdkVirtualScrollableWindow)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ScrollDispatcher), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.NgZone), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_12__.Directionality, 8));
       };
     }
     static {
@@ -3427,8 +3427,8 @@ let CdkVirtualScrollableWindow = /*#__PURE__*/(() => {
 let CdkScrollableModule = /*#__PURE__*/(() => {
   class CdkScrollableModule {
     static {
-      this.ɵfac = function CdkScrollableModule_Factory(t) {
-        return new (t || CdkScrollableModule)();
+      this.ɵfac = function CdkScrollableModule_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || CdkScrollableModule)();
       };
     }
     static {
@@ -3451,8 +3451,8 @@ let CdkScrollableModule = /*#__PURE__*/(() => {
 let ScrollingModule = /*#__PURE__*/(() => {
   class ScrollingModule {
     static {
-      this.ɵfac = function ScrollingModule_Factory(t) {
-        return new (t || ScrollingModule)();
+      this.ɵfac = function ScrollingModule_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || ScrollingModule)();
       };
     }
     static {
@@ -3622,8 +3622,8 @@ let CdkCellDef = /*#__PURE__*/(() => {
       this.template = template;
     }
     static {
-      this.ɵfac = function CdkCellDef_Factory(t) {
-        return new (t || CdkCellDef)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.TemplateRef));
+      this.ɵfac = function CdkCellDef_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || CdkCellDef)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.TemplateRef));
       };
     }
     static {
@@ -3649,8 +3649,8 @@ let CdkHeaderCellDef = /*#__PURE__*/(() => {
       this.template = template;
     }
     static {
-      this.ɵfac = function CdkHeaderCellDef_Factory(t) {
-        return new (t || CdkHeaderCellDef)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.TemplateRef));
+      this.ɵfac = function CdkHeaderCellDef_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || CdkHeaderCellDef)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.TemplateRef));
       };
     }
     static {
@@ -3676,8 +3676,8 @@ let CdkFooterCellDef = /*#__PURE__*/(() => {
       this.template = template;
     }
     static {
-      this.ɵfac = function CdkFooterCellDef_Factory(t) {
-        return new (t || CdkFooterCellDef)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.TemplateRef));
+      this.ɵfac = function CdkFooterCellDef_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || CdkFooterCellDef)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.TemplateRef));
       };
     }
     static {
@@ -3772,8 +3772,8 @@ let CdkColumnDef = /*#__PURE__*/(() => {
       }
     }
     static {
-      this.ɵfac = function CdkColumnDef_Factory(t) {
-        return new (t || CdkColumnDef)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](CDK_TABLE, 8));
+      this.ɵfac = function CdkColumnDef_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || CdkColumnDef)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](CDK_TABLE, 8));
       };
     }
     static {
@@ -3824,8 +3824,8 @@ let CdkHeaderCell = /*#__PURE__*/(() => {
       super(columnDef, elementRef);
     }
     static {
-      this.ɵfac = function CdkHeaderCell_Factory(t) {
-        return new (t || CdkHeaderCell)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](CdkColumnDef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef));
+      this.ɵfac = function CdkHeaderCell_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || CdkHeaderCell)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](CdkColumnDef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef));
       };
     }
     static {
@@ -3854,8 +3854,8 @@ let CdkFooterCell = /*#__PURE__*/(() => {
       }
     }
     static {
-      this.ɵfac = function CdkFooterCell_Factory(t) {
-        return new (t || CdkFooterCell)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](CdkColumnDef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef));
+      this.ɵfac = function CdkFooterCell_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || CdkFooterCell)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](CdkColumnDef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef));
       };
     }
     static {
@@ -3884,8 +3884,8 @@ let CdkCell = /*#__PURE__*/(() => {
       }
     }
     static {
-      this.ɵfac = function CdkCell_Factory(t) {
-        return new (t || CdkCell)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](CdkColumnDef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef));
+      this.ɵfac = function CdkCell_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || CdkCell)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](CdkColumnDef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef));
       };
     }
     static {
@@ -3969,8 +3969,8 @@ let _CoalescedStyleScheduler = /*#__PURE__*/(() => {
       }));
     }
     static {
-      this.ɵfac = function _CoalescedStyleScheduler_Factory(t) {
-        return new (t || _CoalescedStyleScheduler)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.NgZone));
+      this.ɵfac = function _CoalescedStyleScheduler_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || _CoalescedStyleScheduler)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.NgZone));
       };
     }
     static {
@@ -4029,8 +4029,8 @@ let BaseRowDef = /*#__PURE__*/(() => {
       }
     }
     static {
-      this.ɵfac = function BaseRowDef_Factory(t) {
-        return new (t || BaseRowDef)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.TemplateRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.IterableDiffers));
+      this.ɵfac = function BaseRowDef_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || BaseRowDef)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.TemplateRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.IterableDiffers));
       };
     }
     static {
@@ -4083,8 +4083,8 @@ let CdkHeaderRowDef = /*#__PURE__*/(() => {
       this._hasStickyChanged = false;
     }
     static {
-      this.ɵfac = function CdkHeaderRowDef_Factory(t) {
-        return new (t || CdkHeaderRowDef)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.TemplateRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.IterableDiffers), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](CDK_TABLE, 8));
+      this.ɵfac = function CdkHeaderRowDef_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || CdkHeaderRowDef)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.TemplateRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.IterableDiffers), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](CDK_TABLE, 8));
       };
     }
     static {
@@ -4143,8 +4143,8 @@ let CdkFooterRowDef = /*#__PURE__*/(() => {
       this._hasStickyChanged = false;
     }
     static {
-      this.ɵfac = function CdkFooterRowDef_Factory(t) {
-        return new (t || CdkFooterRowDef)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.TemplateRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.IterableDiffers), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](CDK_TABLE, 8));
+      this.ɵfac = function CdkFooterRowDef_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || CdkFooterRowDef)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.TemplateRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.IterableDiffers), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](CDK_TABLE, 8));
       };
     }
     static {
@@ -4179,8 +4179,8 @@ let CdkRowDef = /*#__PURE__*/(() => {
       this._table = _table;
     }
     static {
-      this.ɵfac = function CdkRowDef_Factory(t) {
-        return new (t || CdkRowDef)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.TemplateRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.IterableDiffers), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](CDK_TABLE, 8));
+      this.ɵfac = function CdkRowDef_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || CdkRowDef)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.TemplateRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.IterableDiffers), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](CDK_TABLE, 8));
       };
     }
     static {
@@ -4229,8 +4229,8 @@ let CdkCellOutlet = /*#__PURE__*/(() => {
       }
     }
     static {
-      this.ɵfac = function CdkCellOutlet_Factory(t) {
-        return new (t || CdkCellOutlet)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewContainerRef));
+      this.ɵfac = function CdkCellOutlet_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || CdkCellOutlet)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewContainerRef));
       };
     }
     static {
@@ -4250,8 +4250,8 @@ let CdkCellOutlet = /*#__PURE__*/(() => {
 let CdkHeaderRow = /*#__PURE__*/(() => {
   class CdkHeaderRow {
     static {
-      this.ɵfac = function CdkHeaderRow_Factory(t) {
-        return new (t || CdkHeaderRow)();
+      this.ɵfac = function CdkHeaderRow_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || CdkHeaderRow)();
       };
     }
     static {
@@ -4283,8 +4283,8 @@ let CdkHeaderRow = /*#__PURE__*/(() => {
 let CdkFooterRow = /*#__PURE__*/(() => {
   class CdkFooterRow {
     static {
-      this.ɵfac = function CdkFooterRow_Factory(t) {
-        return new (t || CdkFooterRow)();
+      this.ɵfac = function CdkFooterRow_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || CdkFooterRow)();
       };
     }
     static {
@@ -4316,8 +4316,8 @@ let CdkFooterRow = /*#__PURE__*/(() => {
 let CdkRow = /*#__PURE__*/(() => {
   class CdkRow {
     static {
-      this.ɵfac = function CdkRow_Factory(t) {
-        return new (t || CdkRow)();
+      this.ɵfac = function CdkRow_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || CdkRow)();
       };
     }
     static {
@@ -4353,8 +4353,8 @@ let CdkNoDataRow = /*#__PURE__*/(() => {
       this._contentClassName = 'cdk-no-data-row';
     }
     static {
-      this.ɵfac = function CdkNoDataRow_Factory(t) {
-        return new (t || CdkNoDataRow)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.TemplateRef));
+      this.ɵfac = function CdkNoDataRow_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || CdkNoDataRow)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.TemplateRef));
       };
     }
     static {
@@ -4403,10 +4403,6 @@ class StickyStyler {
     this._isBrowser = _isBrowser;
     this._needsPositionStickyOnElement = _needsPositionStickyOnElement;
     this._positionListener = _positionListener;
-    this._elemSizeCache = new WeakMap();
-    this._resizeObserver = globalThis?.ResizeObserver ? new globalThis.ResizeObserver(entries => this._updateCachedSizes(entries)) : null;
-    this._updatedStickyColumnsParamsToReplay = [];
-    this._stickyColumnsReplayTimeout = null;
     this._cachedCellWidths = [];
     this._borderCellCss = {
       'top': `${_stickCellCss}-border-elem-top`,
@@ -4422,9 +4418,6 @@ class StickyStyler {
    * @param stickyDirections The directions that should no longer be set as sticky on the rows.
    */
   clearStickyPositioning(rows, stickyDirections) {
-    if (stickyDirections.includes('left') || stickyDirections.includes('right')) {
-      this._removeFromStickyColumnReplayQueue(rows);
-    }
     const elementsToClear = [];
     for (const row of rows) {
       // If the row isn't an element (e.g. if it's an `ng-container`),
@@ -4454,16 +4447,8 @@ class StickyStyler {
    *     in this index position should be stuck to the end of the row.
    * @param recalculateCellWidths Whether the sticky styler should recalculate the width of each
    *     column cell. If `false` cached widths will be used instead.
-   * @param replay Whether to enqueue this call for replay after a ResizeObserver update.
    */
-  updateStickyColumns(rows, stickyStartStates, stickyEndStates, recalculateCellWidths = true, replay = true) {
-    if (replay) {
-      this._updateStickyColumnReplayQueue({
-        rows: [...rows],
-        stickyStartStates: [...stickyStartStates],
-        stickyEndStates: [...stickyEndStates]
-      });
-    }
+  updateStickyColumns(rows, stickyStartStates, stickyEndStates, recalculateCellWidths = true) {
     if (!rows.length || !this._isBrowser || !(stickyStartStates.some(state => state) || stickyEndStates.some(state => state))) {
       if (this._positionListener) {
         this._positionListener.stickyColumnsUpdated({
@@ -4543,7 +4528,7 @@ class StickyStyler {
         stickyOffsets[rowIndex] = stickyOffset;
         const row = rows[rowIndex];
         elementsToStick[rowIndex] = this._isNativeHtmlTable ? Array.from(row.children) : [row];
-        const height = this._retrieveElementSize(row).height;
+        const height = row.getBoundingClientRect().height;
         stickyOffset += height;
         stickyCellHeights[rowIndex] = height;
       }
@@ -4674,8 +4659,8 @@ class StickyStyler {
     const cellWidths = [];
     const firstRowCells = row.children;
     for (let i = 0; i < firstRowCells.length; i++) {
-      const cell = firstRowCells[i];
-      cellWidths.push(this._retrieveElementSize(cell).width);
+      let cell = firstRowCells[i];
+      cellWidths.push(cell.getBoundingClientRect().width);
     }
     this._cachedCellWidths = cellWidths;
     return cellWidths;
@@ -4712,81 +4697,6 @@ class StickyStyler {
     }
     return positions;
   }
-  /**
-   * Retreives the most recently observed size of the specified element from the cache, or
-   * meaures it directly if not yet cached.
-   */
-  _retrieveElementSize(element) {
-    const cachedSize = this._elemSizeCache.get(element);
-    if (cachedSize) {
-      return cachedSize;
-    }
-    const clientRect = element.getBoundingClientRect();
-    const size = {
-      width: clientRect.width,
-      height: clientRect.height
-    };
-    if (!this._resizeObserver) {
-      return size;
-    }
-    this._elemSizeCache.set(element, size);
-    this._resizeObserver.observe(element, {
-      box: 'border-box'
-    });
-    return size;
-  }
-  /**
-   * Conditionally enqueue the requested sticky update and clear previously queued updates
-   * for the same rows.
-   */
-  _updateStickyColumnReplayQueue(params) {
-    this._removeFromStickyColumnReplayQueue(params.rows);
-    // No need to replay if a flush is pending.
-    if (this._stickyColumnsReplayTimeout) {
-      return;
-    }
-    this._updatedStickyColumnsParamsToReplay.push(params);
-  }
-  /** Remove updates for the specified rows from the queue. */
-  _removeFromStickyColumnReplayQueue(rows) {
-    const rowsSet = new Set(rows);
-    for (const update of this._updatedStickyColumnsParamsToReplay) {
-      update.rows = update.rows.filter(row => !rowsSet.has(row));
-    }
-    this._updatedStickyColumnsParamsToReplay = this._updatedStickyColumnsParamsToReplay.filter(update => !!update.rows.length);
-  }
-  /** Update _elemSizeCache with the observed sizes. */
-  _updateCachedSizes(entries) {
-    let needsColumnUpdate = false;
-    for (const entry of entries) {
-      const newEntry = entry.borderBoxSize?.length ? {
-        width: entry.borderBoxSize[0].inlineSize,
-        height: entry.borderBoxSize[0].blockSize
-      } : {
-        width: entry.contentRect.width,
-        height: entry.contentRect.height
-      };
-      if (newEntry.width !== this._elemSizeCache.get(entry.target)?.width && isCell(entry.target)) {
-        needsColumnUpdate = true;
-      }
-      this._elemSizeCache.set(entry.target, newEntry);
-    }
-    if (needsColumnUpdate && this._updatedStickyColumnsParamsToReplay.length) {
-      if (this._stickyColumnsReplayTimeout) {
-        clearTimeout(this._stickyColumnsReplayTimeout);
-      }
-      this._stickyColumnsReplayTimeout = setTimeout(() => {
-        for (const update of this._updatedStickyColumnsParamsToReplay) {
-          this.updateStickyColumns(update.rows, update.stickyStartStates, update.stickyEndStates, true, false);
-        }
-        this._updatedStickyColumnsParamsToReplay = [];
-        this._stickyColumnsReplayTimeout = null;
-      }, 0);
-    }
-  }
-}
-function isCell(element) {
-  return ['cdk-cell', 'cdk-header-cell', 'cdk-footer-cell'].some(klass => element.classList.contains(klass));
 }
 
 /**
@@ -4857,8 +4767,8 @@ const STICKY_POSITIONING_LISTENER = /*#__PURE__*/new _angular_core__WEBPACK_IMPO
 let CdkRecycleRows = /*#__PURE__*/(() => {
   class CdkRecycleRows {
     static {
-      this.ɵfac = function CdkRecycleRows_Factory(t) {
-        return new (t || CdkRecycleRows)();
+      this.ɵfac = function CdkRecycleRows_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || CdkRecycleRows)();
       };
     }
     static {
@@ -4892,8 +4802,8 @@ let DataRowOutlet = /*#__PURE__*/(() => {
       table._outletAssigned();
     }
     static {
-      this.ɵfac = function DataRowOutlet_Factory(t) {
-        return new (t || DataRowOutlet)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewContainerRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef));
+      this.ɵfac = function DataRowOutlet_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || DataRowOutlet)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewContainerRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef));
       };
     }
     static {
@@ -4923,8 +4833,8 @@ let HeaderRowOutlet = /*#__PURE__*/(() => {
       table._outletAssigned();
     }
     static {
-      this.ɵfac = function HeaderRowOutlet_Factory(t) {
-        return new (t || HeaderRowOutlet)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewContainerRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef));
+      this.ɵfac = function HeaderRowOutlet_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || HeaderRowOutlet)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewContainerRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef));
       };
     }
     static {
@@ -4954,8 +4864,8 @@ let FooterRowOutlet = /*#__PURE__*/(() => {
       table._outletAssigned();
     }
     static {
-      this.ɵfac = function FooterRowOutlet_Factory(t) {
-        return new (t || FooterRowOutlet)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewContainerRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef));
+      this.ɵfac = function FooterRowOutlet_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || FooterRowOutlet)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewContainerRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef));
       };
     }
     static {
@@ -4986,8 +4896,8 @@ let NoDataRowOutlet = /*#__PURE__*/(() => {
       table._outletAssigned();
     }
     static {
-      this.ɵfac = function NoDataRowOutlet_Factory(t) {
-        return new (t || NoDataRowOutlet)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewContainerRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef));
+      this.ɵfac = function NoDataRowOutlet_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || NoDataRowOutlet)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewContainerRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef));
       };
     }
     static {
@@ -5056,12 +4966,11 @@ let CdkTable = /*#__PURE__*/(() => {
   class CdkTable {
     /** Aria role to apply to the table's cells based on the table's own role. */
     _getCellRole() {
-      // Perform this lazily in case the table's role was updated by a directive after construction.
       if (this._cellRoleInternal === undefined) {
-        // Note that we set `role="cell"` even on native `td` elements,
-        // because some browsers seem to require it. See #29784.
-        const tableRole = this._elementRef.nativeElement.getAttribute('role');
-        return tableRole === 'grid' || tableRole === 'treegrid' ? 'gridcell' : 'cell';
+        // Perform this lazily in case the table's role was updated by a directive after construction.
+        const role = this._elementRef.nativeElement.getAttribute('role');
+        const cellRole = role === 'grid' || role === 'treegrid' ? 'gridcell' : 'cell';
+        this._cellRoleInternal = this._isNativeHtmlTable && cellRole === 'cell' ? null : cellRole;
       }
       return this._cellRoleInternal;
     }
@@ -5616,12 +5525,7 @@ let CdkTable = /*#__PURE__*/(() => {
      * re-render that section.
      */
     _renderUpdatedColumns() {
-      const columnsDiffReducer = (acc, def) => {
-        // The differ should be run for every column, even if `acc` is already
-        // true (see #29922)
-        const diff = !!def.getColumnsDiff();
-        return acc || diff;
-      };
+      const columnsDiffReducer = (acc, def) => acc || !!def.getColumnsDiff();
       // Force re-render data rows if the list of column definitions have changed.
       const dataColumnsChanged = this._rowDefs.reduce(columnsDiffReducer, false);
       if (dataColumnsChanged) {
@@ -5897,8 +5801,8 @@ let CdkTable = /*#__PURE__*/(() => {
       this._changeDetectorRef.markForCheck();
     }
     static {
-      this.ɵfac = function CdkTable_Factory(t) {
-        return new (t || CdkTable)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.IterableDiffers), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ChangeDetectorRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinjectAttribute"]('role'), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_7__.Directionality, 8), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_common__WEBPACK_IMPORTED_MODULE_8__.DOCUMENT), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_cdk_platform__WEBPACK_IMPORTED_MODULE_9__.Platform), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_cdk_collections__WEBPACK_IMPORTED_MODULE_1__._VIEW_REPEATER_STRATEGY), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_COALESCED_STYLE_SCHEDULER), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_10__.ViewportRuler), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](STICKY_POSITIONING_LISTENER, 12), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.NgZone, 8));
+      this.ɵfac = function CdkTable_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || CdkTable)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.IterableDiffers), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ChangeDetectorRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinjectAttribute"]('role'), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_7__.Directionality, 8), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_common__WEBPACK_IMPORTED_MODULE_8__.DOCUMENT), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_cdk_platform__WEBPACK_IMPORTED_MODULE_9__.Platform), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_cdk_collections__WEBPACK_IMPORTED_MODULE_1__._VIEW_REPEATER_STRATEGY), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_COALESCED_STYLE_SCHEDULER), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_10__.ViewportRuler), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](STICKY_POSITIONING_LISTENER, 12), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.NgZone, 8));
       };
     }
     static {
@@ -6086,8 +5990,8 @@ let CdkTextColumn = /*#__PURE__*/(() => {
       }
     }
     static {
-      this.ɵfac = function CdkTextColumn_Factory(t) {
-        return new (t || CdkTextColumn)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](CdkTable, 8), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](TEXT_COLUMN_OPTIONS, 8));
+      this.ɵfac = function CdkTextColumn_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || CdkTextColumn)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](CdkTable, 8), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](TEXT_COLUMN_OPTIONS, 8));
       };
     }
     static {
@@ -6139,8 +6043,8 @@ const EXPORTED_DECLARATIONS = [CdkTable, CdkRowDef, CdkCellDef, CdkCellOutlet, C
 let CdkTableModule = /*#__PURE__*/(() => {
   class CdkTableModule {
     static {
-      this.ɵfac = function CdkTableModule_Factory(t) {
-        return new (t || CdkTableModule)();
+      this.ɵfac = function CdkTableModule_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || CdkTableModule)();
       };
     }
     static {
@@ -6226,7 +6130,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ 9090);
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ 6340);
 /**
- * @license Angular v18.0.5
+ * @license Angular v18.2.9
  * (c) 2010-2024 Google LLC. https://angular.io/
  * License: MIT
  */
@@ -6398,6 +6302,7 @@ function toSignal(source, options) {
   const requiresCleanup = !options?.manualCleanup;
   requiresCleanup && !options?.injector && (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.assertInInjectionContext)(toSignal);
   const cleanupRef = requiresCleanup ? options?.injector?.get(_angular_core__WEBPACK_IMPORTED_MODULE_0__.DestroyRef) ?? (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.inject)(_angular_core__WEBPACK_IMPORTED_MODULE_0__.DestroyRef) : null;
+  const equal = makeToSignalEqual(options?.equal);
   // Note: T is the Observable value type, and U is the initial value type. They don't have to be
   // the same - the returned signal gives values of type `T`.
   let state;
@@ -6405,12 +6310,16 @@ function toSignal(source, options) {
     // Initially the signal is in a `NoValue` state.
     state = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.signal)({
       kind: 0 /* StateKind.NoValue */
+    }, {
+      equal
     });
   } else {
     // If an initial value was passed, use it. Otherwise, use `undefined` as the initial value.
     state = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.signal)({
       kind: 1 /* StateKind.Value */,
       value: options?.initialValue
+    }, {
+      equal
     });
   }
   // Note: This code cannot run inside a reactive context (see assertion above). If we'd support
@@ -6438,8 +6347,8 @@ function toSignal(source, options) {
     // Completion of the Observable is meaningless to the signal. Signals don't have a concept of
     // "complete".
   });
-  if (ngDevMode && options?.requireSync && state().kind === 0 /* StateKind.NoValue */) {
-    throw new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](601 /* ɵRuntimeErrorCode.REQUIRE_SYNC_WITHOUT_SYNC_EMIT */, '`toSignal()` called with `requireSync` but `Observable` did not emit synchronously.');
+  if (options?.requireSync && state().kind === 0 /* StateKind.NoValue */) {
+    throw new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](601 /* ɵRuntimeErrorCode.REQUIRE_SYNC_WITHOUT_SYNC_EMIT */, (typeof ngDevMode === 'undefined' || ngDevMode) && '`toSignal()` called with `requireSync` but `Observable` did not emit synchronously.');
   }
   // Unsubscribe when the current context is destroyed, if requested.
   cleanupRef?.onDestroy(sub.unsubscribe.bind(sub));
@@ -6454,10 +6363,14 @@ function toSignal(source, options) {
         throw current.error;
       case 0 /* StateKind.NoValue */:
         // This shouldn't really happen because the error is thrown on creation.
-        // TODO(alxhub): use a RuntimeError when we finalize the error semantics
-        throw new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](601 /* ɵRuntimeErrorCode.REQUIRE_SYNC_WITHOUT_SYNC_EMIT */, '`toSignal()` called with `requireSync` but `Observable` did not emit synchronously.');
+        throw new _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵRuntimeError"](601 /* ɵRuntimeErrorCode.REQUIRE_SYNC_WITHOUT_SYNC_EMIT */, (typeof ngDevMode === 'undefined' || ngDevMode) && '`toSignal()` called with `requireSync` but `Observable` did not emit synchronously.');
     }
+  }, {
+    equal: options?.equal
   });
+}
+function makeToSignalEqual(userEquality = Object.is) {
+  return (a, b) => a.kind === 1 /* StateKind.Value */ && b.kind === 1 /* StateKind.Value */ && userEquality(a.value, b.value);
 }
 
 /**
@@ -6607,8 +6520,8 @@ let MatProgressSpinner = /*#__PURE__*/(() => {
       return this.strokeWidth / this.diameter * 100;
     }
     static {
-      this.ɵfac = function MatProgressSpinner_Factory(t) {
-        return new (t || MatProgressSpinner)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ANIMATION_MODULE_TYPE, 8), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](MAT_PROGRESS_SPINNER_DEFAULT_OPTIONS));
+      this.ɵfac = function MatProgressSpinner_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || MatProgressSpinner)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ANIMATION_MODULE_TYPE, 8), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](MAT_PROGRESS_SPINNER_DEFAULT_OPTIONS));
       };
     }
     static {
@@ -6703,8 +6616,8 @@ const MatSpinner = MatProgressSpinner;
 let MatProgressSpinnerModule = /*#__PURE__*/(() => {
   class MatProgressSpinnerModule {
     static {
-      this.ɵfac = function MatProgressSpinnerModule_Factory(t) {
-        return new (t || MatProgressSpinnerModule)();
+      this.ɵfac = function MatProgressSpinnerModule_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || MatProgressSpinnerModule)();
       };
     }
     static {
@@ -6840,8 +6753,8 @@ function MatTextColumn_td_2_Template(rf, ctx) {
 let MatRecycleRows = /*#__PURE__*/(() => {
   class MatRecycleRows {
     static {
-      this.ɵfac = function MatRecycleRows_Factory(t) {
-        return new (t || MatRecycleRows)();
+      this.ɵfac = function MatRecycleRows_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || MatRecycleRows)();
       };
     }
     static {
@@ -6873,8 +6786,8 @@ let MatTable = /*#__PURE__*/(() => {
     static {
       this.ɵfac = /* @__PURE__ */(() => {
         let ɵMatTable_BaseFactory;
-        return function MatTable_Factory(t) {
-          return (ɵMatTable_BaseFactory || (ɵMatTable_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](MatTable)))(t || MatTable);
+        return function MatTable_Factory(__ngFactoryType__) {
+          return (ɵMatTable_BaseFactory || (ɵMatTable_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](MatTable)))(__ngFactoryType__ || MatTable);
         };
       })();
     }
@@ -6951,8 +6864,8 @@ let MatCellDef = /*#__PURE__*/(() => {
     static {
       this.ɵfac = /* @__PURE__ */(() => {
         let ɵMatCellDef_BaseFactory;
-        return function MatCellDef_Factory(t) {
-          return (ɵMatCellDef_BaseFactory || (ɵMatCellDef_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](MatCellDef)))(t || MatCellDef);
+        return function MatCellDef_Factory(__ngFactoryType__) {
+          return (ɵMatCellDef_BaseFactory || (ɵMatCellDef_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](MatCellDef)))(__ngFactoryType__ || MatCellDef);
         };
       })();
     }
@@ -6982,8 +6895,8 @@ let MatHeaderCellDef = /*#__PURE__*/(() => {
     static {
       this.ɵfac = /* @__PURE__ */(() => {
         let ɵMatHeaderCellDef_BaseFactory;
-        return function MatHeaderCellDef_Factory(t) {
-          return (ɵMatHeaderCellDef_BaseFactory || (ɵMatHeaderCellDef_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](MatHeaderCellDef)))(t || MatHeaderCellDef);
+        return function MatHeaderCellDef_Factory(__ngFactoryType__) {
+          return (ɵMatHeaderCellDef_BaseFactory || (ɵMatHeaderCellDef_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](MatHeaderCellDef)))(__ngFactoryType__ || MatHeaderCellDef);
         };
       })();
     }
@@ -7013,8 +6926,8 @@ let MatFooterCellDef = /*#__PURE__*/(() => {
     static {
       this.ɵfac = /* @__PURE__ */(() => {
         let ɵMatFooterCellDef_BaseFactory;
-        return function MatFooterCellDef_Factory(t) {
-          return (ɵMatFooterCellDef_BaseFactory || (ɵMatFooterCellDef_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](MatFooterCellDef)))(t || MatFooterCellDef);
+        return function MatFooterCellDef_Factory(__ngFactoryType__) {
+          return (ɵMatFooterCellDef_BaseFactory || (ɵMatFooterCellDef_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](MatFooterCellDef)))(__ngFactoryType__ || MatFooterCellDef);
         };
       })();
     }
@@ -7061,8 +6974,8 @@ let MatColumnDef = /*#__PURE__*/(() => {
     static {
       this.ɵfac = /* @__PURE__ */(() => {
         let ɵMatColumnDef_BaseFactory;
-        return function MatColumnDef_Factory(t) {
-          return (ɵMatColumnDef_BaseFactory || (ɵMatColumnDef_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](MatColumnDef)))(t || MatColumnDef);
+        return function MatColumnDef_Factory(__ngFactoryType__) {
+          return (ɵMatColumnDef_BaseFactory || (ɵMatColumnDef_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](MatColumnDef)))(__ngFactoryType__ || MatColumnDef);
         };
       })();
     }
@@ -7095,8 +7008,8 @@ let MatHeaderCell = /*#__PURE__*/(() => {
     static {
       this.ɵfac = /* @__PURE__ */(() => {
         let ɵMatHeaderCell_BaseFactory;
-        return function MatHeaderCell_Factory(t) {
-          return (ɵMatHeaderCell_BaseFactory || (ɵMatHeaderCell_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](MatHeaderCell)))(t || MatHeaderCell);
+        return function MatHeaderCell_Factory(__ngFactoryType__) {
+          return (ɵMatHeaderCell_BaseFactory || (ɵMatHeaderCell_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](MatHeaderCell)))(__ngFactoryType__ || MatHeaderCell);
         };
       })();
     }
@@ -7121,8 +7034,8 @@ let MatFooterCell = /*#__PURE__*/(() => {
     static {
       this.ɵfac = /* @__PURE__ */(() => {
         let ɵMatFooterCell_BaseFactory;
-        return function MatFooterCell_Factory(t) {
-          return (ɵMatFooterCell_BaseFactory || (ɵMatFooterCell_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](MatFooterCell)))(t || MatFooterCell);
+        return function MatFooterCell_Factory(__ngFactoryType__) {
+          return (ɵMatFooterCell_BaseFactory || (ɵMatFooterCell_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](MatFooterCell)))(__ngFactoryType__ || MatFooterCell);
         };
       })();
     }
@@ -7147,8 +7060,8 @@ let MatCell = /*#__PURE__*/(() => {
     static {
       this.ɵfac = /* @__PURE__ */(() => {
         let ɵMatCell_BaseFactory;
-        return function MatCell_Factory(t) {
-          return (ɵMatCell_BaseFactory || (ɵMatCell_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](MatCell)))(t || MatCell);
+        return function MatCell_Factory(__ngFactoryType__) {
+          return (ɵMatCell_BaseFactory || (ɵMatCell_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](MatCell)))(__ngFactoryType__ || MatCell);
         };
       })();
     }
@@ -7179,8 +7092,8 @@ let MatHeaderRowDef = /*#__PURE__*/(() => {
     static {
       this.ɵfac = /* @__PURE__ */(() => {
         let ɵMatHeaderRowDef_BaseFactory;
-        return function MatHeaderRowDef_Factory(t) {
-          return (ɵMatHeaderRowDef_BaseFactory || (ɵMatHeaderRowDef_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](MatHeaderRowDef)))(t || MatHeaderRowDef);
+        return function MatHeaderRowDef_Factory(__ngFactoryType__) {
+          return (ɵMatHeaderRowDef_BaseFactory || (ɵMatHeaderRowDef_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](MatHeaderRowDef)))(__ngFactoryType__ || MatHeaderRowDef);
         };
       })();
     }
@@ -7214,8 +7127,8 @@ let MatFooterRowDef = /*#__PURE__*/(() => {
     static {
       this.ɵfac = /* @__PURE__ */(() => {
         let ɵMatFooterRowDef_BaseFactory;
-        return function MatFooterRowDef_Factory(t) {
-          return (ɵMatFooterRowDef_BaseFactory || (ɵMatFooterRowDef_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](MatFooterRowDef)))(t || MatFooterRowDef);
+        return function MatFooterRowDef_Factory(__ngFactoryType__) {
+          return (ɵMatFooterRowDef_BaseFactory || (ɵMatFooterRowDef_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](MatFooterRowDef)))(__ngFactoryType__ || MatFooterRowDef);
         };
       })();
     }
@@ -7250,8 +7163,8 @@ let MatRowDef = /*#__PURE__*/(() => {
     static {
       this.ɵfac = /* @__PURE__ */(() => {
         let ɵMatRowDef_BaseFactory;
-        return function MatRowDef_Factory(t) {
-          return (ɵMatRowDef_BaseFactory || (ɵMatRowDef_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](MatRowDef)))(t || MatRowDef);
+        return function MatRowDef_Factory(__ngFactoryType__) {
+          return (ɵMatRowDef_BaseFactory || (ɵMatRowDef_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](MatRowDef)))(__ngFactoryType__ || MatRowDef);
         };
       })();
     }
@@ -7282,8 +7195,8 @@ let MatHeaderRow = /*#__PURE__*/(() => {
     static {
       this.ɵfac = /* @__PURE__ */(() => {
         let ɵMatHeaderRow_BaseFactory;
-        return function MatHeaderRow_Factory(t) {
-          return (ɵMatHeaderRow_BaseFactory || (ɵMatHeaderRow_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](MatHeaderRow)))(t || MatHeaderRow);
+        return function MatHeaderRow_Factory(__ngFactoryType__) {
+          return (ɵMatHeaderRow_BaseFactory || (ɵMatHeaderRow_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](MatHeaderRow)))(__ngFactoryType__ || MatHeaderRow);
         };
       })();
     }
@@ -7322,8 +7235,8 @@ let MatFooterRow = /*#__PURE__*/(() => {
     static {
       this.ɵfac = /* @__PURE__ */(() => {
         let ɵMatFooterRow_BaseFactory;
-        return function MatFooterRow_Factory(t) {
-          return (ɵMatFooterRow_BaseFactory || (ɵMatFooterRow_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](MatFooterRow)))(t || MatFooterRow);
+        return function MatFooterRow_Factory(__ngFactoryType__) {
+          return (ɵMatFooterRow_BaseFactory || (ɵMatFooterRow_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](MatFooterRow)))(__ngFactoryType__ || MatFooterRow);
         };
       })();
     }
@@ -7362,8 +7275,8 @@ let MatRow = /*#__PURE__*/(() => {
     static {
       this.ɵfac = /* @__PURE__ */(() => {
         let ɵMatRow_BaseFactory;
-        return function MatRow_Factory(t) {
-          return (ɵMatRow_BaseFactory || (ɵMatRow_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](MatRow)))(t || MatRow);
+        return function MatRow_Factory(__ngFactoryType__) {
+          return (ɵMatRow_BaseFactory || (ɵMatRow_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](MatRow)))(__ngFactoryType__ || MatRow);
         };
       })();
     }
@@ -7406,8 +7319,8 @@ let MatNoDataRow = /*#__PURE__*/(() => {
     static {
       this.ɵfac = /* @__PURE__ */(() => {
         let ɵMatNoDataRow_BaseFactory;
-        return function MatNoDataRow_Factory(t) {
-          return (ɵMatNoDataRow_BaseFactory || (ɵMatNoDataRow_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](MatNoDataRow)))(t || MatNoDataRow);
+        return function MatNoDataRow_Factory(__ngFactoryType__) {
+          return (ɵMatNoDataRow_BaseFactory || (ɵMatNoDataRow_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](MatNoDataRow)))(__ngFactoryType__ || MatNoDataRow);
         };
       })();
     }
@@ -7443,8 +7356,8 @@ let MatTextColumn = /*#__PURE__*/(() => {
     static {
       this.ɵfac = /* @__PURE__ */(() => {
         let ɵMatTextColumn_BaseFactory;
-        return function MatTextColumn_Factory(t) {
-          return (ɵMatTextColumn_BaseFactory || (ɵMatTextColumn_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](MatTextColumn)))(t || MatTextColumn);
+        return function MatTextColumn_Factory(__ngFactoryType__) {
+          return (ɵMatTextColumn_BaseFactory || (ɵMatTextColumn_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](MatTextColumn)))(__ngFactoryType__ || MatTextColumn);
         };
       })();
     }
@@ -7486,8 +7399,8 @@ MatHeaderRow, MatRow, MatFooterRow, MatNoDataRow, MatTextColumn];
 let MatTableModule = /*#__PURE__*/(() => {
   class MatTableModule {
     static {
-      this.ɵfac = function MatTableModule_Factory(t) {
-        return new (t || MatTableModule)();
+      this.ɵfac = function MatTableModule_Factory(__ngFactoryType__) {
+        return new (__ngFactoryType__ || MatTableModule)();
       };
     }
     static {
