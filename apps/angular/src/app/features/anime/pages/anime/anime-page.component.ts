@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, DestroyRef, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, DestroyRef, inject, signal } from '@angular/core';
 import { CommonModule, AsyncPipe } from '@angular/common';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { MatTableModule } from '@angular/material/table';
@@ -6,10 +6,13 @@ import { MatSortModule, Sort } from '@angular/material/sort';
 import { MatPaginatorModule, PageEvent } from '@angular/material/paginator';
 import { NonNullableFormBuilder, ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
+import { MatInput } from '@angular/material/input';
+import { MatIconButton } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
-import { BehaviorSubject, Observable, finalize, map, switchMap, distinctUntilChanged } from 'rxjs';
+import { Observable, finalize, map, switchMap, distinctUntilChanged } from 'rxjs';
 
 import { AnimeService } from '@js-camp/angular/core/services/anime.service';
 import { Anime } from '@js-camp/core/models/anime/anime';
@@ -33,7 +36,10 @@ import { AnimeParams } from '@js-camp/core/models/anime/anime-params';
 		MatProgressSpinnerModule,
 		MatFormFieldModule,
 		MatSelectModule,
+		MatInput,
+		MatIconModule,
 		ReactiveFormsModule,
+		MatIconButton,
 	],
 	templateUrl: './anime-page.component.html',
 	styleUrl: './anime-page.component.css',
@@ -44,16 +50,13 @@ export class AnimePageComponent {
 	protected readonly animes$: Observable<Pagination<Anime>>;
 
 	/** Loading state. */
-	protected readonly isLoading$ = new BehaviorSubject(false);
+	protected readonly isLoading = signal(false);
 
 	/** Anime type enum. */
 	protected readonly animeType = AnimeType;
 
 	/** Anime status enum. */
 	protected readonly animeStatus = AnimeStatus;
-
-	/** Selected types filter. */
-	protected selectedTypesFilter: string[] = [];
 
 	/** Anime filters. */
 	protected readonly filters: readonly AnimeType[] = AnimeType.toArray();
@@ -72,7 +75,7 @@ export class AnimePageComponent {
 	private readonly formBuilder = inject(NonNullableFormBuilder);
 
 	/** Columns. */
-	public readonly displayedColumns: string[] = [
+	protected readonly displayedColumns: string[] = [
 		'poster',
 		'titleEnglish',
 		'titleJapanese',
@@ -81,8 +84,20 @@ export class AnimePageComponent {
 		'status',
 	];
 
+	/** Is hidden clear button. */
+	protected readonly isHiddenClearButton = signal(
+		this.queryParams.search === '' || this.queryParams.search === undefined,
+	);
+
 	/** Select type control. */
-	protected readonly filterTypeControl = this.formBuilder.control(this.toggleOnTypeFilters());
+	protected readonly filterTypeControl = this.formBuilder.control<string[] | undefined>(
+		this.queryParams.typeIn?.split(','),
+	);
+
+	/** Search form control. */
+	protected readonly searchForm = this.formBuilder.group({
+		search: this.queryParams.search,
+	});
 
 	public constructor() {
 		this.animes$ = this.createAnimeStream();
@@ -103,28 +118,17 @@ export class AnimePageComponent {
 	}
 
 	private createAnimeStream(): Observable<Pagination<Anime>> {
-		this.isLoading$.next(true);
+		this.isLoading.set(true);
 
 		return this.activeRoute.queryParams.pipe(
 			distinctUntilChanged(),
 			map(query => this.transformQueryParams(query)),
 			switchMap(params =>
 				this.getAnimeList(params).pipe(
-					finalize(() => this.isLoading$.next(false)),
+					finalize(() => this.isLoading.set(false)),
 					takeUntilDestroyed(this.destroyRef),
 				)),
 		);
-	}
-
-	/**
-	 * Toggle on types filter.
-	 */
-	private toggleOnTypeFilters(): string[] {
-		const params = AnimeHttpParamsMapper.fromDto(this.queryParams);
-
-		this.selectedTypesFilter = params.typeIn?.split(',') ?? [];
-
-		return this.selectedTypesFilter;
 	}
 
 	/**
@@ -153,7 +157,35 @@ export class AnimePageComponent {
 	/** Change filter. */
 	protected onFilterChange(): void {
 		this.setQueryParams({
-			typeIn: this.filterTypeControl.value.toString(),
+			typeIn: this.filterTypeControl.value ? this.filterTypeControl.value.toString() : '',
+			offset: 0,
+		});
+	}
+
+	/** Change filter. */
+	protected onEnterSearchValue(): void {
+		this.isHiddenClearButton.set(this.searchForm.value.search === '');
+	}
+
+	/** Clear search. */
+	protected onClearSearch(): void {
+		this.searchForm.setValue({
+			search: '',
+		});
+		this.isHiddenClearButton.set(true);
+		this.setQueryParams({
+			search: '',
+			offset: 0,
+		});
+	}
+
+	/**
+	 * Search movie.
+	 */
+	protected onSearch(): void {
+		this.setQueryParams({
+			search: this.searchForm.value.search,
+			offset: 0,
 		});
 	}
 
