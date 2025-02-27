@@ -442,12 +442,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ 6610);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 2978);
 /* harmony import */ var _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/cdk/platform */ 1857);
+/* harmony import */ var _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/cdk/keycodes */ 6809);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ 907);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! rxjs */ 2486);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! rxjs */ 2319);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! rxjs */ 756);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! rxjs */ 5981);
-/* harmony import */ var _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/cdk/keycodes */ 6809);
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs/operators */ 7236);
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! rxjs/operators */ 8887);
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! rxjs/operators */ 8503);
@@ -826,7 +826,7 @@ class ListKeyManager {
   constructor(_items, injector) {
     this._items = _items;
     this._activeItemIndex = -1;
-    this._activeItem = null;
+    this._activeItem = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.signal)(null);
     this._wrap = false;
     this._typeaheadSubscription = rxjs__WEBPACK_IMPORTED_MODULE_9__.Subscription.EMPTY;
     this._vertical = true;
@@ -955,9 +955,9 @@ class ListKeyManager {
     return this;
   }
   setActiveItem(item) {
-    const previousActiveItem = this._activeItem;
+    const previousActiveItem = this._activeItem();
     this.updateActiveItem(item);
-    if (this._activeItem !== previousActiveItem) {
+    if (this._activeItem() !== previousActiveItem) {
       this.change.next(this._activeItemIndex);
     }
   }
@@ -1051,7 +1051,7 @@ class ListKeyManager {
   }
   /** The active item. */
   get activeItem() {
-    return this._activeItem;
+    return this._activeItem();
   }
   /** Gets whether the user is currently typing into the manager using the typeahead feature. */
   isTyping() {
@@ -1078,7 +1078,7 @@ class ListKeyManager {
     const index = typeof item === 'number' ? item : itemArray.indexOf(item);
     const activeItem = itemArray[index];
     // Explicitly check for `null` and `undefined` because other falsy values are valid.
-    this._activeItem = activeItem == null ? null : activeItem;
+    this._activeItem.set(activeItem == null ? null : activeItem);
     this._activeItemIndex = index;
     this._typeahead?.setCurrentSelectedItemIndex(index);
   }
@@ -1151,8 +1151,9 @@ class ListKeyManager {
   /** Callback for when the items have changed. */
   _itemsChanged(newItems) {
     this._typeahead?.setItems(newItems);
-    if (this._activeItem) {
-      const newIndex = newItems.indexOf(this._activeItem);
+    const activeItem = this._activeItem();
+    if (activeItem) {
+      const newIndex = newItems.indexOf(activeItem);
       if (newIndex > -1 && newIndex !== this._activeItemIndex) {
         this._activeItemIndex = newIndex;
         this._typeahead?.setCurrentSelectedItemIndex(newIndex);
@@ -3602,7 +3603,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /** Current version of the Angular Component Development Kit. */
-const VERSION = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_0__.Version('18.2.9');
+const VERSION = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_0__.Version('18.2.13');
 
 //# sourceMappingURL=cdk.mjs.map
 
@@ -5032,7 +5033,7 @@ function MatOption_Conditional_6_Template(rf, ctx) {
 }
 const _c5 = ["mat-internal-form-field", ""];
 const _c6 = ["*"];
-const VERSION = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_0__.Version('18.2.9');
+const VERSION = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_0__.Version('18.2.13');
 
 /** @docs-private */
 let AnimationCurves = /*#__PURE__*/(() => {

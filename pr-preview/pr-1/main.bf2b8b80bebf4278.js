@@ -3313,7 +3313,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 2978);
 
 /**
- * @license Angular v18.2.9
+ * @license Angular v18.2.13
  * (c) 2010-2024 Google LLC. https://angular.io/
  * License: MIT
  */
@@ -8833,7 +8833,7 @@ function isPlatformServer(platformId) {
 /**
  * @publicApi
  */
-const VERSION = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_1__.Version('18.2.9');
+const VERSION = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_1__.Version('18.2.13');
 
 /**
  * Defines a scroll position manager. Implemented by `BrowserViewportScroller`.
@@ -10669,7 +10669,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/common */ 6610);
 
 /**
- * @license Angular v18.2.9
+ * @license Angular v18.2.13
  * (c) 2010-2024 Google LLC. https://angular.io/
  * License: MIT
  */
@@ -14331,7 +14331,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs/operators */ 6715);
 /* harmony import */ var _angular_core_primitives_event_dispatch__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/core/primitives/event-dispatch */ 103);
 /**
- * @license Angular v18.2.9
+ * @license Angular v18.2.13
  * (c) 2010-2024 Google LLC. https://angular.io/
  * License: MIT
  */
@@ -22461,7 +22461,6 @@ function getNearestLContainer(viewOrContainer) {
  *    is no component associated with it.
  *
  * @publicApi
- * @globalApi ng
  */
 function getComponent$1(element) {
   ngDevMode && assertDomElement(element);
@@ -22486,7 +22485,6 @@ function getComponent$1(element) {
  *    inside any component.
  *
  * @publicApi
- * @globalApi ng
  */
 function getContext(element) {
   assertDomElement(element);
@@ -22507,7 +22505,6 @@ function getContext(element) {
  *    part of a component view.
  *
  * @publicApi
- * @globalApi ng
  */
 function getOwningComponent(elementOrDir) {
   const context = getLContext(elementOrDir);
@@ -22528,7 +22525,6 @@ function getOwningComponent(elementOrDir) {
  * @returns Root components associated with the target object.
  *
  * @publicApi
- * @globalApi ng
  */
 function getRootComponents(elementOrDir) {
   const lView = readPatchedLView(elementOrDir);
@@ -22542,7 +22538,6 @@ function getRootComponents(elementOrDir) {
  * @returns Injector associated with the element, component or directive instance.
  *
  * @publicApi
- * @globalApi ng
  */
 function getInjector(elementOrDir) {
   const context = getLContext(elementOrDir);
@@ -22601,7 +22596,6 @@ function getInjectionTokens(element) {
  * @returns Array of directives associated with the node.
  *
  * @publicApi
- * @globalApi ng
  */
 function getDirectives(node) {
   // Skip text nodes because we can't have directives associated with them.
@@ -22634,7 +22628,6 @@ function getDirectives(node) {
  * @returns metadata of the passed directive or component
  *
  * @publicApi
- * @globalApi ng
  */
 function getDirectiveMetadata$1(directiveOrComponentInstance) {
   const {
@@ -22694,7 +22687,6 @@ function getLocalRefs(target) {
  * @returns Host element of the target.
  *
  * @publicApi
- * @globalApi ng
  */
 function getHostElement(componentOrDirective) {
   return getLContext(componentOrDirective).native;
@@ -22742,7 +22734,6 @@ function getRenderedText(component) {
  * @returns Array of event listeners on the DOM element.
  *
  * @publicApi
- * @globalApi ng
  */
 function getListeners(element) {
   ngDevMode && assertDomElement(element);
@@ -30783,7 +30774,7 @@ function createRootComponent(componentView, rootComponentDef, rootDirectives, ho
 function setRootNodeAttributes(hostRenderer, componentDef, hostRNode, rootSelectorOrNode) {
   if (rootSelectorOrNode) {
     // The placeholder will be replaced with the actual version at build time.
-    setUpAttributes(hostRenderer, hostRNode, ['ng-version', '18.2.9']);
+    setUpAttributes(hostRenderer, hostRNode, ['ng-version', '18.2.13']);
   } else {
     // If host element is created as a part of this function call (i.e. `rootSelectorOrNode`
     // is not defined), also apply attributes and classes extracted from component selector.
@@ -32534,22 +32525,14 @@ function ɵɵCopyDefinitionFeature(definition) {
  */
 function ɵɵHostDirectivesFeature(rawHostDirectives) {
   const feature = definition => {
-    const resolved = (Array.isArray(rawHostDirectives) ? rawHostDirectives : rawHostDirectives()).map(dir => {
-      return typeof dir === 'function' ? {
-        directive: resolveForwardRef(dir),
-        inputs: EMPTY_OBJ,
-        outputs: EMPTY_OBJ
-      } : {
-        directive: resolveForwardRef(dir.directive),
-        inputs: bindingArrayToMap(dir.inputs),
-        outputs: bindingArrayToMap(dir.outputs)
-      };
-    });
+    const isEager = Array.isArray(rawHostDirectives);
     if (definition.hostDirectives === null) {
       definition.findHostDirectiveDefs = findHostDirectiveDefs;
-      definition.hostDirectives = resolved;
+      definition.hostDirectives = isEager ? rawHostDirectives.map(createHostDirectiveDef) : [rawHostDirectives];
+    } else if (isEager) {
+      definition.hostDirectives.unshift(...rawHostDirectives.map(createHostDirectiveDef));
     } else {
-      definition.hostDirectives.unshift(...resolved);
+      definition.hostDirectives.unshift(rawHostDirectives);
     }
   };
   feature.ngInherit = true;
@@ -32557,20 +32540,43 @@ function ɵɵHostDirectivesFeature(rawHostDirectives) {
 }
 function findHostDirectiveDefs(currentDef, matchedDefs, hostDirectiveDefs) {
   if (currentDef.hostDirectives !== null) {
-    for (const hostDirectiveConfig of currentDef.hostDirectives) {
-      const hostDirectiveDef = getDirectiveDef(hostDirectiveConfig.directive);
-      if (typeof ngDevMode === 'undefined' || ngDevMode) {
-        validateHostDirective(hostDirectiveConfig, hostDirectiveDef);
+    for (const configOrFn of currentDef.hostDirectives) {
+      if (typeof configOrFn === 'function') {
+        const resolved = configOrFn();
+        for (const config of resolved) {
+          trackHostDirectiveDef(createHostDirectiveDef(config), matchedDefs, hostDirectiveDefs);
+        }
+      } else {
+        trackHostDirectiveDef(configOrFn, matchedDefs, hostDirectiveDefs);
       }
-      // We need to patch the `declaredInputs` so that
-      // `ngOnChanges` can map the properties correctly.
-      patchDeclaredInputs(hostDirectiveDef.declaredInputs, hostDirectiveConfig.inputs);
-      // Host directives execute before the host so that its host bindings can be overwritten.
-      findHostDirectiveDefs(hostDirectiveDef, matchedDefs, hostDirectiveDefs);
-      hostDirectiveDefs.set(hostDirectiveDef, hostDirectiveConfig);
-      matchedDefs.push(hostDirectiveDef);
     }
   }
+}
+/** Tracks a single host directive during directive matching. */
+function trackHostDirectiveDef(def, matchedDefs, hostDirectiveDefs) {
+  const hostDirectiveDef = getDirectiveDef(def.directive);
+  if (typeof ngDevMode === 'undefined' || ngDevMode) {
+    validateHostDirective(def, hostDirectiveDef);
+  }
+  // We need to patch the `declaredInputs` so that
+  // `ngOnChanges` can map the properties correctly.
+  patchDeclaredInputs(hostDirectiveDef.declaredInputs, def.inputs);
+  // Host directives execute before the host so that its host bindings can be overwritten.
+  findHostDirectiveDefs(hostDirectiveDef, matchedDefs, hostDirectiveDefs);
+  hostDirectiveDefs.set(hostDirectiveDef, def);
+  matchedDefs.push(hostDirectiveDef);
+}
+/** Creates a `HostDirectiveDef` from a used-defined host directive configuration. */
+function createHostDirectiveDef(config) {
+  return typeof config === 'function' ? {
+    directive: resolveForwardRef(config),
+    inputs: EMPTY_OBJ,
+    outputs: EMPTY_OBJ
+  } : {
+    directive: resolveForwardRef(config.directive),
+    inputs: bindingArrayToMap(config.inputs),
+    outputs: bindingArrayToMap(config.outputs)
+  };
 }
 /**
  * Converts an array in the form of `['publicName', 'alias', 'otherPublicName', 'otherAlias']` into
@@ -37508,7 +37514,11 @@ class UniqueValueMultiKeyMap {
   set(key, value) {
     if (this.kvMap.has(key)) {
       let prevValue = this.kvMap.get(key);
-      ngDevMode && assertNotSame(prevValue, value, `Detected a duplicated value ${value} for the key ${key}`);
+      // Note: we don't use `assertNotSame`, because the value needs to be stringified even if
+      // there is no error which can freeze the browser for large values (see #58509).
+      if (ngDevMode && prevValue === value) {
+        throw new Error(`Detected a duplicated value ${value} for the key ${key}`);
+      }
       if (this._vMap === undefined) {
         this._vMap = new Map();
       }
@@ -44411,7 +44421,7 @@ class Version {
 /**
  * @publicApi
  */
-const VERSION = /*#__PURE__*/new Version('18.2.9');
+const VERSION = /*#__PURE__*/new Version('18.2.13');
 
 /*
  * This file exists to support compilation of @angular/core in Ivy mode.
@@ -44733,7 +44743,6 @@ function canBeHeldWeakly(value) {
  * @param component Component to {@link ChangeDetectorRef#markForCheck mark for check}.
  *
  * @publicApi
- * @globalApi ng
  */
 function applyChanges(component) {
   ngDevMode && assertDefined(component, 'component');
@@ -51900,7 +51909,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   removeAllAppScopedEventListeners: () => (/* binding */ removeAllAppScopedEventListeners)
 /* harmony export */ });
 /**
- * @license Angular v18.2.9
+ * @license Angular v18.2.13
  * (c) 2010-2024 Google LLC. https://angular.io/
  * License: MIT
  */
@@ -54001,7 +54010,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   signalUpdateFn: () => (/* binding */ signalUpdateFn)
 /* harmony export */ });
 /**
- * @license Angular v18.2.9
+ * @license Angular v18.2.13
  * (c) 2010-2024 Google LLC. https://angular.io/
  * License: MIT
  */
@@ -54562,7 +54571,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 2978);
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser */ 6098);
 /**
- * @license Angular v18.2.9
+ * @license Angular v18.2.13
  * (c) 2010-2024 Google LLC. https://angular.io/
  * License: MIT
  */
@@ -54915,7 +54924,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 2978);
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ 6409);
 /**
- * @license Angular v18.2.9
+ * @license Angular v18.2.13
  * (c) 2010-2024 Google LLC. https://angular.io/
  * License: MIT
  */
@@ -57083,7 +57092,7 @@ function provideClientHydration(...features) {
 /**
  * @publicApi
  */
-const VERSION = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_1__.Version('18.2.9');
+const VERSION = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_1__.Version('18.2.13');
 
 /**
  * @module
@@ -57226,7 +57235,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! rxjs/operators */ 3806);
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! @angular/platform-browser */ 6098);
 /**
- * @license Angular v18.2.9
+ * @license Angular v18.2.13
  * (c) 2010-2024 Google LLC. https://angular.io/
  * License: MIT
  */
@@ -64710,7 +64719,7 @@ function mapToResolve(provider) {
 /**
  * @publicApi
  */
-const VERSION = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_1__.Version('18.2.9');
+const VERSION = /*#__PURE__*/new _angular_core__WEBPACK_IMPORTED_MODULE_1__.Version('18.2.13');
 
 /**
  * @module
