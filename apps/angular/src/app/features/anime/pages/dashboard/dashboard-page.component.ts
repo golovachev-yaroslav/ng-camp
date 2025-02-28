@@ -1,4 +1,4 @@
-import {Component, DestroyRef, inject, signal} from '@angular/core';
+import { Component, DestroyRef, inject, signal } from '@angular/core';
 import { CommonModule, AsyncPipe } from '@angular/common';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { MatTableModule } from '@angular/material/table';
@@ -159,7 +159,7 @@ export class DashboardPageComponent {
 	 * Search movie.
 	 * @param search Search text.
 	 */
-	protected onSearch(search = ''): void {
+	protected onSearch(search?: string): void {
 		this.setQueryParams({
 			search,
 			offset: 0,
