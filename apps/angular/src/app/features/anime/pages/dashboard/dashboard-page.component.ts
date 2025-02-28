@@ -23,9 +23,9 @@ import { QueryParams } from '@js-camp/core/models/query-params';
 import { AnimeHttpParamsMapper } from '@js-camp/core/mappers/anime-http-params.mapper';
 import { AnimeParams } from '@js-camp/core/models/anime/anime-params';
 
-/** Anime page component. */
+/** Dashboard page component. */
 @Component({
-	selector: 'camp-anime-page',
+	selector: 'camp-dashboard-page',
 	standalone: true,
 	imports: [
 		CommonModule,
@@ -41,11 +41,11 @@ import { AnimeParams } from '@js-camp/core/models/anime/anime-params';
 		ReactiveFormsModule,
 		MatIconButton,
 	],
-	templateUrl: './anime-page.component.html',
-	styleUrl: './anime-page.component.css',
+	templateUrl: './dashboard-page.component.html',
+	styleUrl: './dashboard-page.component.css',
 	changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class AnimePageComponent {
+export class DashboardPageComponent {
 	/** Anime list. */
 	protected readonly animes$: Observable<Pagination<Anime>>;
 
