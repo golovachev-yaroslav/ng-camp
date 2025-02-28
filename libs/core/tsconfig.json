@@ -2,13 +2,13 @@
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "outDir": "../../out-tsc/lib",
-    "target": "es2015",
+    "target": "es2022",
     "declaration": true,
     "declarationMap": true,
     "inlineSources": true,
     "lib": [
       "dom",
-      "es2018"
+      "es2022"
     ]
   },
   "references": [

@@ -1,0 +1,13 @@
+.filter-bar {
+  padding: var(--space-sm) 0;
+  display: flex;
+}
+
+.search {
+  margin-left: var(--space-lg);
+}
+
+.is-hidden-clear {
+  visibility: hidden;
+  opacity: 0;
+}
