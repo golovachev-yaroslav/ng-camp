@@ -1,7 +1,8 @@
-import { Aired } from '@js-camp/core/models/anime/aired';
-import { AiredDto } from '@js-camp/core/dtos/anime/aired.dto';
+import { Aired } from '../models/anime/aired';
+import { AiredDto } from '../dtos/anime/aired.dto';
 
 export namespace AiredMapper {
+
 	/**
 	 * Convert aired from model to DTO.
 	 * @param model Aired.
