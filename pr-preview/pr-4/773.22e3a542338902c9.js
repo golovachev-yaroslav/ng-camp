@@ -507,7 +507,7 @@ let DashboardPageComponent = /*#__PURE__*/(() => {
      * Search movie.
      * @param search Search text.
      */
-    onSearch(search = '') {
+    onSearch(search) {
       this.setQueryParams({
         search,
         offset: 0
