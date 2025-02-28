@@ -1,13 +1,11 @@
-import { ChangeDetectionStrategy, Component, DestroyRef, inject, signal } from '@angular/core';
+import {Component, DestroyRef, inject, signal} from '@angular/core';
 import { CommonModule, AsyncPipe } from '@angular/common';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { MatTableModule } from '@angular/material/table';
 import { MatSortModule, Sort } from '@angular/material/sort';
 import { MatPaginatorModule, PageEvent } from '@angular/material/paginator';
-import { NonNullableFormBuilder, ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
-import { MatInput } from '@angular/material/input';
-import { MatIconButton } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
@@ -22,6 +20,7 @@ import { AnimeStatus } from '@js-camp/core/models/enums/anime-status';
 import { QueryParams } from '@js-camp/core/models/query-params';
 import { AnimeHttpParamsMapper } from '@js-camp/core/mappers/anime-http-params.mapper';
 import { AnimeParams } from '@js-camp/core/models/anime/anime-params';
+import { FilterBarComponent } from '@js-camp/angular/app/features/anime/components/filter-bar/filter-bar.component';
 
 /** Dashboard page component. */
 @Component({
@@ -36,14 +35,12 @@ import { AnimeParams } from '@js-camp/core/models/anime/anime-params';
 		MatProgressSpinnerModule,
 		MatFormFieldModule,
 		MatSelectModule,
-		MatInput,
 		MatIconModule,
 		ReactiveFormsModule,
-		MatIconButton,
+		FilterBarComponent,
 	],
 	templateUrl: './dashboard-page.component.html',
 	styleUrl: './dashboard-page.component.css',
-	changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class DashboardPageComponent {
 	/** Anime list. */
@@ -52,14 +49,20 @@ export class DashboardPageComponent {
 	/** Loading state. */
 	protected readonly isLoading = signal(false);
 
+	/** Selected types. */
+	protected readonly selectedTypes = signal<AnimeType[]>([]);
+
+	/** Search value. */
+	protected readonly searchValue = signal<string>('');
+
 	/** Anime type enum. */
 	protected readonly animeType = AnimeType;
 
 	/** Anime status enum. */
 	protected readonly animeStatus = AnimeStatus;
 
-	/** Anime filters. */
-	protected readonly filters: readonly AnimeType[] = AnimeType.toArray();
+	/** Anime types list. */
+	protected readonly types: AnimeType[] = AnimeType.toArray();
 
 	/** Page size options. */
 	protected readonly pageSizeOptions = AnimeHttpParamsMapper.PAGE_SIZES;
@@ -72,8 +75,6 @@ export class DashboardPageComponent {
 
 	private readonly destroyRef = inject(DestroyRef);
 
-	private readonly formBuilder = inject(NonNullableFormBuilder);
-
 	/** Columns. */
 	protected readonly displayedColumns: string[] = [
 		'poster',
@@ -84,23 +85,9 @@ export class DashboardPageComponent {
 		'status',
 	];
 
-	/** Is hidden clear button. */
-	protected readonly isHiddenClearButton = signal(
-		this.queryParams.search === '' || this.queryParams.search === undefined,
-	);
-
-	/** Select type control. */
-	protected readonly filterTypeControl = this.formBuilder.control<string[] | undefined>(
-		this.queryParams.typeIn?.split(','),
-	);
-
-	/** Search form control. */
-	protected readonly searchForm = this.formBuilder.group({
-		search: this.queryParams.search,
-	});
-
 	public constructor() {
 		this.animes$ = this.createAnimeStream();
+		this.searchValue.set(this.queryParams.search);
 	}
 
 	/**
@@ -125,7 +112,10 @@ export class DashboardPageComponent {
 			map(query => this.transformQueryParams(query)),
 			switchMap(params =>
 				this.getAnimeList(params).pipe(
-					finalize(() => this.isLoading.set(false)),
+					finalize(() => {
+						this.isLoading.set(false);
+						this.selectedTypes.set(this.queryParams.typeIn?.split(',') as AnimeType[] ?? []);
+					}),
 					takeUntilDestroyed(this.destroyRef),
 				)),
 		);
@@ -154,37 +144,24 @@ export class DashboardPageComponent {
 		});
 	}
 
-	/** Change filter. */
-	protected onFilterChange(): void {
+	/**
+	 * Change filter.
+	 * @param types Anime types list.
+	 */
+	protected onFilterChange(types: AnimeType[]): void {
 		this.setQueryParams({
-			typeIn: this.filterTypeControl.value ? this.filterTypeControl.value.toString() : '',
-			offset: 0,
-		});
-	}
-
-	/** Change filter. */
-	protected onEnterSearchValue(): void {
-		this.isHiddenClearButton.set(this.searchForm.value.search === '');
-	}
-
-	/** Clear search. */
-	protected onClearSearch(): void {
-		this.searchForm.setValue({
-			search: '',
-		});
-		this.isHiddenClearButton.set(true);
-		this.setQueryParams({
-			search: '',
+			typeIn: types.toString(),
 			offset: 0,
 		});
 	}
 
 	/**
 	 * Search movie.
+	 * @param search Search text.
 	 */
-	protected onSearch(): void {
+	protected onSearch(search = ''): void {
 		this.setQueryParams({
-			search: this.searchForm.value.search,
+			search,
 			offset: 0,
 		});
 	}
