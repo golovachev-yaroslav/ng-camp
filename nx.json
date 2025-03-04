@@ -2,7 +2,7 @@
 	"$schema": "./node_modules/nx/schemas/nx-schema.json",
 	"npmScope": "saritasa",
 	"affected": {
-		"defaultBase": "develop"
+		"defaultBase": "main"
 	},
 	"tasksRunnerOptions": {
 		"default": {
@@ -45,25 +45,11 @@
 			"library": {
 				"linter": "eslint"
 			}
-		},
-		"@nx/react": {
-			"application": {
-				"style": "css",
-				"linter": "eslint",
-				"babel": true
-			},
-			"component": {
-				"style": "css"
-			},
-			"library": {
-				"style": "css",
-				"linter": "eslint"
-			}
 		}
 	},
 	"defaultProject": "angular",
 	"cli": {
-		"defaultCollection": "@nx/vite"
+		"defaultCollection": "@nx/angular"
 	},
 	"namedInputs": {
 		"default": ["{projectRoot}/**/*", "sharedGlobals"],
