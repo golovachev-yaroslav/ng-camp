@@ -1,4 +1,4 @@
-import { enumToArray } from '@js-camp/core/utils/enum-to-array';
+import { enumToArray } from '../../utils/enum-to-array';
 
 /** Anime type. */
 export enum AnimeType {
@@ -14,6 +14,7 @@ export enum AnimeType {
 
 /** Anime types. */
 export namespace AnimeType {
+
 	/** Anime types map-object to title view. */
 	const TO_TITLE_MAP: Record<AnimeType, string> = {
 		[AnimeType.Movie]: 'Movie',

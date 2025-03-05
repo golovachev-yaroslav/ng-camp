@@ -1,8 +1,8 @@
 import { Params } from '@angular/router';
 
-import { AnimeParams } from '@js-camp/core/models/anime/anime-params';
-import { AnimeParametersDto } from '@js-camp/core/dtos/anime/anime-params.dto';
-import { AnimeSort } from '@js-camp/core/models/enums/anime-sort';
+import { AnimeParams } from '../models/anime/anime-params';
+import { AnimeParametersDto } from '../dtos/anime/anime-params.dto';
+import { AnimeSort } from '../models/enums/anime-sort';
 
 /** Anime Http Parameters Mapper. */
 export namespace AnimeHttpParamsMapper {

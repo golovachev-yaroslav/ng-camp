@@ -1,4 +1,4 @@
-import { enumToArray } from '@js-camp/core/utils/enum-to-array';
+import { enumToArray } from '../../utils/enum-to-array';
 
 /** Anime sort. */
 export enum AnimeSort {

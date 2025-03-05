@@ -1,5 +1,6 @@
 /** Query params. */
 export interface QueryParams {
+
 	/** Limit. */
 	readonly limit: number;
 

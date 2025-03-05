@@ -1,5 +1,6 @@
 /** Query Params DTO. */
 export interface QueryParamsDto {
+
 	/** Limit. */
 	readonly limit: number;
 

@@ -1,4 +1,4 @@
-import { QueryParamsDto } from '@js-camp/core/dtos/query-params-dto';
+import { QueryParamsDto } from '../query-params-dto';
 
 /** Anime parameters DTO. */
 export interface AnimeParametersDto extends QueryParamsDto {
