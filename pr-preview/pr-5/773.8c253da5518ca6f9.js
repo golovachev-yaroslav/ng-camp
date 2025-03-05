@@ -808,7 +808,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   AnimeHttpParamsMapper: () => (/* binding */ AnimeHttpParamsMapper)
 /* harmony export */ });
-/* harmony import */ var _js_camp_core_models_enums_anime_sort__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @js-camp/core/models/enums/anime-sort */ 3745);
+/* harmony import */ var _models_enums_anime_sort__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../models/enums/anime-sort */ 3745);
 
 /** Anime Http Parameters Mapper. */
 var AnimeHttpParamsMapper;
@@ -822,7 +822,7 @@ var AnimeHttpParamsMapper;
    */
   function toDto(model) {
     return {
-      ordering: _js_camp_core_models_enums_anime_sort__WEBPACK_IMPORTED_MODULE_0__.AnimeSort.toReadable(model.sort),
+      ordering: _models_enums_anime_sort__WEBPACK_IMPORTED_MODULE_0__.AnimeSort.toReadable(model.sort),
       search: model.search,
       limit: model?.limit ?? DEFAULT_PAGE_SIZE,
       offset: model.offset ? model.offset * (model?.limit ?? DEFAULT_PAGE_SIZE) : undefined,
@@ -958,7 +958,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   AnimeSort: () => (/* binding */ AnimeSort)
 /* harmony export */ });
-/* harmony import */ var _js_camp_core_utils_enum_to_array__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @js-camp/core/utils/enum-to-array */ 7197);
+/* harmony import */ var _utils_enum_to_array__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../utils/enum-to-array */ 7197);
 
 /** Anime sort. */
 var AnimeSort = /*#__PURE__*/function (AnimeSort) {
@@ -985,7 +985,7 @@ var AnimeSort = /*#__PURE__*/function (AnimeSort) {
   };
   /** Converts anime ordering enum to array. */
   function toArray() {
-    return (0,_js_camp_core_utils_enum_to_array__WEBPACK_IMPORTED_MODULE_0__.enumToArray)(AnimeSort);
+    return (0,_utils_enum_to_array__WEBPACK_IMPORTED_MODULE_0__.enumToArray)(AnimeSort);
   }
   AnimeSort.toArray = toArray;
   /**
@@ -1010,7 +1010,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   AnimeStatus: () => (/* binding */ AnimeStatus)
 /* harmony export */ });
-/* harmony import */ var _js_camp_core_utils_enum_to_array__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @js-camp/core/utils/enum-to-array */ 7197);
+/* harmony import */ var _utils_enum_to_array__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../utils/enum-to-array */ 7197);
 
 /** Anime statuses. */
 var AnimeStatus = /*#__PURE__*/function (AnimeStatus) {
@@ -1029,7 +1029,7 @@ var AnimeStatus = /*#__PURE__*/function (AnimeStatus) {
   };
   /** Converts anime status enum to array. */
   function toArray() {
-    return (0,_js_camp_core_utils_enum_to_array__WEBPACK_IMPORTED_MODULE_0__.enumToArray)(AnimeStatus);
+    return (0,_utils_enum_to_array__WEBPACK_IMPORTED_MODULE_0__.enumToArray)(AnimeStatus);
   }
   AnimeStatus.toArray = toArray;
   /**
@@ -1054,7 +1054,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   AnimeType: () => (/* binding */ AnimeType)
 /* harmony export */ });
-/* harmony import */ var _js_camp_core_utils_enum_to_array__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @js-camp/core/utils/enum-to-array */ 7197);
+/* harmony import */ var _utils_enum_to_array__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../utils/enum-to-array */ 7197);
 
 /** Anime type. */
 var AnimeType = /*#__PURE__*/function (AnimeType) {
@@ -1083,7 +1083,7 @@ var AnimeType = /*#__PURE__*/function (AnimeType) {
   };
   /** Converts anime type enum to array. */
   function toArray() {
-    return (0,_js_camp_core_utils_enum_to_array__WEBPACK_IMPORTED_MODULE_0__.enumToArray)(AnimeType);
+    return (0,_utils_enum_to_array__WEBPACK_IMPORTED_MODULE_0__.enumToArray)(AnimeType);
   }
   AnimeType.toArray = toArray;
   /**
