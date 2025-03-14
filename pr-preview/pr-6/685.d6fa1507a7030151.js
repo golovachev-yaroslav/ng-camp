@@ -701,7 +701,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   RegisterMapper: () => (/* binding */ RegisterMapper)
 /* harmony export */ });
-/* harmony import */ var _js_camp_core_utils_extract_error__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @js-camp/core/utils/extract-error */ 1802);
+/* harmony import */ var _utils_extract_error__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/extract-error */ 1802);
 
 /** Register mapper. */
 var RegisterMapper;
@@ -709,10 +709,10 @@ var RegisterMapper;
   /** @inheritdoc */
   function validationErrorFromDto(errorDto) {
     return {
-      email: (0,_js_camp_core_utils_extract_error__WEBPACK_IMPORTED_MODULE_0__.extractErrorMessages)(errorDto, 'email') || (0,_js_camp_core_utils_extract_error__WEBPACK_IMPORTED_MODULE_0__.extractErrorMessages)(errorDto, 'unique'),
-      lastName: (0,_js_camp_core_utils_extract_error__WEBPACK_IMPORTED_MODULE_0__.extractErrorMessages)(errorDto, 'last_name'),
-      firstName: (0,_js_camp_core_utils_extract_error__WEBPACK_IMPORTED_MODULE_0__.extractErrorMessages)(errorDto, 'first_name'),
-      password: (0,_js_camp_core_utils_extract_error__WEBPACK_IMPORTED_MODULE_0__.extractErrorMessages)(errorDto, 'password_too_common') || (0,_js_camp_core_utils_extract_error__WEBPACK_IMPORTED_MODULE_0__.extractErrorMessages)(errorDto, 'password') || (0,_js_camp_core_utils_extract_error__WEBPACK_IMPORTED_MODULE_0__.extractErrorMessages)(errorDto, 'password_entirely_numeric')
+      email: (0,_utils_extract_error__WEBPACK_IMPORTED_MODULE_0__.extractErrorMessages)(errorDto, 'email') || (0,_utils_extract_error__WEBPACK_IMPORTED_MODULE_0__.extractErrorMessages)(errorDto, 'unique'),
+      lastName: (0,_utils_extract_error__WEBPACK_IMPORTED_MODULE_0__.extractErrorMessages)(errorDto, 'last_name'),
+      firstName: (0,_utils_extract_error__WEBPACK_IMPORTED_MODULE_0__.extractErrorMessages)(errorDto, 'first_name'),
+      password: (0,_utils_extract_error__WEBPACK_IMPORTED_MODULE_0__.extractErrorMessages)(errorDto, 'password_too_common') || (0,_utils_extract_error__WEBPACK_IMPORTED_MODULE_0__.extractErrorMessages)(errorDto, 'password') || (0,_utils_extract_error__WEBPACK_IMPORTED_MODULE_0__.extractErrorMessages)(errorDto, 'password_entirely_numeric')
     };
   }
   RegisterMapper.validationErrorFromDto = validationErrorFromDto;
@@ -818,7 +818,6 @@ __webpack_require__.r(__webpack_exports__);
 /**
  * Extract an error from the API response.
  * @param error List of errors.
- *
  * @returns The first error.
  */
 function extractError(error) {
