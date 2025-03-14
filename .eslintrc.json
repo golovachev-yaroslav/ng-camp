@@ -8,6 +8,7 @@
 			"extends": ["@saritasa/eslint-config-saritasa"],
 			"rules": {
 				"@typescript-eslint/dot-notation": "off",
+				"@typescript-eslint/prefer-nullish-coalescing": "off",
 				"no-tabs": "off",
 				"@typescript-eslint/indent": ["error", "tab"],
 				"@nx/enforce-module-boundaries": [
