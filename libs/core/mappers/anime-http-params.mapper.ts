@@ -4,7 +4,7 @@ import { AnimeParams } from '../models/anime/anime-params';
 import { AnimeParametersDto } from '../dtos/anime/anime-params.dto';
 import { AnimeSort } from '../models/enums/anime-sort';
 
-/** Anime Http Parameters Mapper. */
+/** Anime http parameters mapper. */
 export namespace AnimeHttpParamsMapper {
 	const DEFAULT_PAGE_SIZE = 10;
 

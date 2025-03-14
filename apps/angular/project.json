@@ -21,10 +21,11 @@
           "apps/angular/src/assets"
         ],
         "styles": [
-          "@angular/material/prebuilt-themes/deeppurple-amber.css",
+          "@angular/material/prebuilt-themes/azure-blue.css",
           "apps/angular/src/theme/variables.css",
           "apps/angular/src/theme/styles.css",
-          "libs/theme/src/index.css"
+          "apps/angular/src/theme/grid.css",
+          "apps/angular/src/theme/helper.css"
         ],
         "scripts": []
       },

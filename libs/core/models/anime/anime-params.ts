@@ -4,7 +4,6 @@ import { AnimeSort } from '../enums/anime-sort';
 
 /** Anime parameters. */
 export interface AnimeParams extends QueryParams {
-
 	/** Status. */
 	readonly status?: AnimeStatus;
 

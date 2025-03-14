@@ -1,5 +1,5 @@
 .toolbar {
-  background-color: var(--primary-color);
+  background-color: var(--mat-stepper-header-selected-state-icon-background-color);
   margin-bottom: var(--space-md);
-  color: var(--primary-contrast-color);
+  color: var(--mat-toolbar-container-background-color);
 }

@@ -3,10 +3,11 @@ import { AnimeDto } from '../dtos/anime/anime.dto';
 
 import { AiredMapper } from './aired.mapper';
 
+/** Anime mapper. */
 export namespace AnimeMapper {
 
 	/**
-	 * Maps dto to model.
+	 * Converts dto to model.
 	 * @param dto Anime dto.
 	 */
 	export function fromDto(dto: AnimeDto): Anime {

@@ -4,7 +4,6 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
 import { MatTableModule } from '@angular/material/table';
 import { MatSortModule, Sort } from '@angular/material/sort';
 import { MatPaginatorModule, PageEvent } from '@angular/material/paginator';
-import { ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -36,7 +35,6 @@ import { FilterBarComponent } from '@js-camp/angular/app/features/anime/componen
 		MatFormFieldModule,
 		MatSelectModule,
 		MatIconModule,
-		ReactiveFormsModule,
 		FilterBarComponent,
 	],
 	templateUrl: './dashboard-page.component.html',
