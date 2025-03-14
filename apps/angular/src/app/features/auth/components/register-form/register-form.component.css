@@ -1,0 +1,12 @@
+.host {
+  min-width: 480px;
+}
+
+.input-text::-webkit-outer-spin-button,
+.input-text::-webkit-inner-spin-button {
+  display: none;
+}
+
+.input-text {
+  appearance: textfield;
+}

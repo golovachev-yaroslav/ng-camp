@@ -1,1 +1,5 @@
-/* Temporary empty */
+.toolbar {
+  background-color: var(--mat-stepper-header-selected-state-icon-background-color);
+  margin-bottom: var(--space-md);
+  color: var(--mat-toolbar-container-background-color);
+}

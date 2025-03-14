@@ -1,5 +1,5 @@
-import { AnimeType } from '../../dtos/enums/anime-type';
-import { AnimeStatus } from '../../dtos/enums/anime-status';
+import { AnimeType } from '../enums/anime-type';
+import { AnimeStatus } from '../enums/anime-status';
 import { OmitImmerable } from '../immerable';
 
 import { Aired } from './aired';

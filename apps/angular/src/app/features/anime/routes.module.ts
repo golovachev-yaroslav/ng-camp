@@ -7,10 +7,12 @@ import { DetailsPageComponent } from './pages/details/details-page.component';
 /** Routes object. */
 export const routes: Routes = [
 	{
+		title: 'Dashboard',
 		path: '',
 		component: DashboardPageComponent,
 	},
 	{
+		title: 'Details',
 		path: ':id',
 		component: DetailsPageComponent,
 	},

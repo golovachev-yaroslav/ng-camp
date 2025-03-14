@@ -1,5 +1,5 @@
-import { AnimeType } from '../enums/anime-type';
-import { AnimeStatus } from '../enums/anime-status';
+import { AnimeStatus } from '../../models/enums/anime-status';
+import { AnimeType } from '../../models/enums/anime-type';
 
 import { AiredDto } from './aired.dto';
 
