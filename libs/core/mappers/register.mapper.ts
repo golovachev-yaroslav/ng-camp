@@ -1,13 +1,14 @@
-import { Register } from '@js-camp/core/models/auth/register';
-import { RegisterDto } from '@js-camp/core/dtos/auth/register.dto';
-import { EntityValidationErrors } from '@js-camp/core/models/app-error';
-import { extractError, extractErrorMessages } from '@js-camp/core/utils/extract-error';
+import { Register } from '../models/auth/register';
+import { RegisterDto } from '../dtos/auth/register.dto';
+import { EntityValidationErrors } from '../models/app-error';
+import { extractErrorMessages } from '../utils/extract-error';
 
 /** Register mapper. */
 export namespace RegisterMapper {
+
 	/** @inheritdoc */
 	export function validationErrorFromDto(
-		errorDto?: EntityValidationErrors<RegisterDto>[] | null
+		errorDto?: EntityValidationErrors<RegisterDto>[] | null,
 	): EntityValidationErrors<Register> {
 		return {
 			email: extractErrorMessages(errorDto, 'email') || extractErrorMessages(errorDto, 'unique'),

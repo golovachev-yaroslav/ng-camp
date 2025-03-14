@@ -1,5 +1,6 @@
 /** Register. */
 export interface Register {
+
 	/** Email. */
 	readonly email: string;
 

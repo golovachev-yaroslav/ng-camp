@@ -1,5 +1,6 @@
 /** Login. */
 export interface Login {
+
 	/** Email. */
 	readonly email: string;
 

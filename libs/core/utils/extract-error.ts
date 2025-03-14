@@ -1,9 +1,8 @@
-import { EntityValidationErrors } from '@js-camp/core/models/app-error';
+import { EntityValidationErrors } from '../models/app-error';
 
 /**
  * Extract an error from the API response.
  * @param error List of errors.
- *
  * @returns The first error.
  */
 export function extractError(error: unknown): string | undefined {
@@ -21,10 +20,10 @@ export function extractError(error: unknown): string | undefined {
  */
 export function extractErrorMessages(
 	errorsDto: EntityValidationErrors<any>[] | null | undefined,
-	attribute: string | null
+	attribute: string | null,
 ): string | undefined {
 	return errorsDto
-		?.filter((errorDto) => errorDto['code'] === attribute)
-		.map((errorDto) => errorDto['detail'])
+		?.filter(errorDto => errorDto['code'] === attribute)
+		.map(errorDto => errorDto['detail'])
 		.join(' ');
 }

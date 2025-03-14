@@ -1,8 +1,9 @@
-import { UserSecretDto } from '@js-camp/core/dtos/auth/user-secret-dto';
-import { UserSecret } from '@js-camp/core/models/auth/user-secret';
+import { UserSecretDto } from '../dtos/auth/user-secret-dto';
+import { UserSecret } from '../models/auth/user-secret';
 
 /** User secret mapper. */
 export namespace UserSecretMapper {
+
 	/**
 	 * Converts model to dto.
 	 * @param model User Secret model.
