@@ -812,20 +812,8 @@ class AppValidationError extends AppError {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   extractError: () => (/* binding */ extractError),
 /* harmony export */   extractErrorMessages: () => (/* binding */ extractErrorMessages)
 /* harmony export */ });
-/**
- * Extract an error from the API response.
- * @param error List of errors.
- * @returns The first error.
- */
-function extractError(error) {
-  if (Array.isArray(error)) {
-    return error[0];
-  }
-  return undefined;
-}
 /**
  * Finds and extract errors by attribute.
  * @param errorsDto Validation DTO errors.
