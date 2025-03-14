@@ -1,5 +1,5 @@
 import { AbstractControl, FormGroup, ValidatorFn } from '@angular/forms';
-import { AppValidationError, EntityValidationErrors } from '@js-camp/core/models/app-error';
+import { AppValidationError } from '@js-camp/core/models/app-error';
 
 /** Form validation. */
 export class FormValidation {

@@ -1,6 +1,5 @@
 import { Register } from '@js-camp/core/models/auth/register';
 import { RegisterDto } from '@js-camp/core/dtos/auth/register.dto';
-import { ValidationErrorDto } from '@js-camp/core/dtos/validation-error-dto';
 import { EntityValidationErrors } from '@js-camp/core/models/app-error';
 import { extractError, extractErrorMessages } from '@js-camp/core/utils/extract-error';
 

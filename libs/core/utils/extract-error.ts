@@ -1,4 +1,3 @@
-import { ValidationErrorDto } from '@js-camp/core/dtos/validation-error-dto';
 import { EntityValidationErrors } from '@js-camp/core/models/app-error';
 
 /**
