@@ -1,18 +1,22 @@
 "use strict";
-(self["webpackChunkangular"] = self["webpackChunkangular"] || []).push([[603],{
+(self["webpackChunkangular"] = self["webpackChunkangular"] || []).push([[76],{
 
-/***/ 2148:
-/*!***********************************************************************************!*\
-  !*** ./apps/angular/src/app/features/anime/components/header/header.component.ts ***!
-  \***********************************************************************************/
+/***/ 7295:
+/*!***********************************************************************!*\
+  !*** ./apps/angular/src/shared/components/header/header.component.ts ***!
+  \***********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   HeaderComponent: () => (/* binding */ HeaderComponent)
 /* harmony export */ });
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ 9102);
 /* harmony import */ var _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/material/toolbar */ 3550);
+/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/button */ 2221);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 2978);
+
+
 
 
 
@@ -30,73 +34,28 @@ let HeaderComponent = /*#__PURE__*/(() => {
         selectors: [["camp-header"]],
         standalone: true,
         features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵStandaloneFeature"]],
-        decls: 3,
+        decls: 8,
         vars: 0,
-        consts: [[1, "toolbar"]],
+        consts: [[1, "root"], ["mat-button", "", "routerLink", "/"], [1, "buttons"], ["mat-button", "", "color", "primary", "routerLink", "/auth/register", 1, "button"], ["mat-button", "", "color", "primary", "routerLink", "/auth/login", 1, "button"]],
         template: function HeaderComponent_Template(rf, ctx) {
           if (rf & 1) {
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-toolbar", 0)(1, "span");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-toolbar", 0)(1, "a", 1);
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Anime Application");
-            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 2)(4, "a", 3);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "Sign Up");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "a", 4);
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "Sign In");
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
           }
         },
-        dependencies: [_angular_material_toolbar__WEBPACK_IMPORTED_MODULE_1__.MatToolbarModule, _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_1__.MatToolbar],
-        styles: [".toolbar[_ngcontent-%COMP%] {\n  background-color: var(--mat-stepper-header-selected-state-icon-background-color);\n  margin-bottom: var(--space-md);\n  color: var(--mat-toolbar-container-background-color);\n}"]
+        dependencies: [_angular_material_toolbar__WEBPACK_IMPORTED_MODULE_1__.MatToolbarModule, _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_1__.MatToolbar, _angular_router__WEBPACK_IMPORTED_MODULE_2__.RouterLink, _angular_material_button__WEBPACK_IMPORTED_MODULE_3__.MatAnchor],
+        styles: [".root[_ngcontent-%COMP%] {\n  background-color: var(--mdc-switch-selected-focus-handle-color);\n  color: var(--mat-stepper-header-selected-state-icon-background-color);\n  margin-bottom: var(--space-md);\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n\n.buttons[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n\n  .button {\n    margin: 0 var(--space-md);\n  }\n}"]
       });
     }
   }
   return HeaderComponent;
-})();
-
-/***/ }),
-
-/***/ 7984:
-/*!*********************************************************************************************!*\
-  !*** ./apps/angular/src/app/features/anime/components/layout/base/base-layout.component.ts ***!
-  \*********************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   BaseLayoutComponent: () => (/* binding */ BaseLayoutComponent)
-/* harmony export */ });
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ 9102);
-/* harmony import */ var _js_camp_angular_app_features_anime_components_header_header_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @js-camp/angular/app/features/anime/components/header/header.component */ 2148);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 2978);
-
-
-
-/** Base layout component. */
-let BaseLayoutComponent = /*#__PURE__*/(() => {
-  class BaseLayoutComponent {
-    static {
-      this.ɵfac = function BaseLayoutComponent_Factory(__ngFactoryType__) {
-        return new (__ngFactoryType__ || BaseLayoutComponent)();
-      };
-    }
-    static {
-      this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({
-        type: BaseLayoutComponent,
-        selectors: [["camp-base-layout"]],
-        standalone: true,
-        features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵStandaloneFeature"]],
-        decls: 3,
-        vars: 0,
-        consts: [[1, "default-layout"]],
-        template: function BaseLayoutComponent_Template(rf, ctx) {
-          if (rf & 1) {
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](0, "camp-header");
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "div", 0);
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](2, "router-outlet");
-            _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-          }
-        },
-        dependencies: [_angular_router__WEBPACK_IMPORTED_MODULE_2__.RouterOutlet, _js_camp_angular_app_features_anime_components_header_header_component__WEBPACK_IMPORTED_MODULE_0__.HeaderComponent],
-        styles: [".default-layout[_ngcontent-%COMP%] {\n  padding: 0 var(--space-md);\n}"]
-      });
-    }
-  }
-  return BaseLayoutComponent;
 })();
 
 /***/ }),
