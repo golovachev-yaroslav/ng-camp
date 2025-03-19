@@ -7,10 +7,11 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButton, MatIconButton } from '@angular/material/button';
 import { MatInput } from '@angular/material/input';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { catchError, throwError } from 'rxjs';
 
 import { FormValidation } from '@js-camp/angular/core/utils/form-validation';
 import { AuthService } from '@js-camp/angular/core/services/auth.service';
-import { catchError, throwError } from 'rxjs';
 
 interface RegisterForm {
 
@@ -39,6 +40,8 @@ interface RegisterForm {
 	styleUrl: './register-form.component.css',
 })
 export class RegisterFormComponent {
+	private readonly snackBar = inject(MatSnackBar);
+
 	private readonly authService = inject(AuthService);
 
 	private readonly router = inject(Router);
@@ -110,6 +113,11 @@ export class RegisterFormComponent {
 					return throwError(() => errors);
 				}),
 			)
-			.subscribe(() => this.router.navigate(['/']));
+			.subscribe(() => {
+				this.snackBar.open('Register has been completed.', undefined, {
+					duration: 3000,
+				});
+				this.router.navigate(['/']);
+			});
 	}
 }

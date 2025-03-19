@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
-import { HeaderComponent } from '@js-camp/angular/app/features/anime/components/header/header.component';
+import { HeaderComponent } from '@js-camp/angular/shared/components/header/header.component';
 
 /** Base layout component. */
 @Component({

@@ -1,0 +1,21 @@
+@use '@angular/material' as mat;
+
+.root {
+  @include mat.toolbar-overrides((
+	container-background-color: var(--mdc-switch-selected-focus-handle-color),
+	container-text-color: var(--mat-stepper-header-selected-state-icon-background-color),
+  ));
+  margin-bottom: var(--space-md);
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+
+  .button {
+    margin: 0 var(--space-md);
+  }
+}
