@@ -1,20 +1,21 @@
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 
-import { RegisterPageComponent } from './pages/register/register-page.component';
-import { LoginPageComponent } from './pages/login/login-page.component';
-
 /** Routes object. */
 export const routes: Routes = [
 	{
 		title: 'Register',
 		path: 'register',
-		component: RegisterPageComponent,
+		loadComponent: () =>
+			import('./pages/register/register-page.component')
+				.then(m => m.RegisterPageComponent),
 	},
 	{
 		title: 'Login',
 		path: 'login',
-		component: LoginPageComponent,
+		loadComponent: () =>
+			import('./pages/login/login-page.component')
+				.then(m => m.LoginPageComponent),
 	},
 ];
 
