@@ -33,7 +33,7 @@ let BaseLayoutComponent = /*#__PURE__*/(() => {
         features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵStandaloneFeature"]],
         decls: 3,
         vars: 0,
-        consts: [[1, "default-layout"]],
+        consts: [[1, "auth-layout"]],
         template: function BaseLayoutComponent_Template(rf, ctx) {
           if (rf & 1) {
             _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](0, "camp-header");
@@ -43,7 +43,7 @@ let BaseLayoutComponent = /*#__PURE__*/(() => {
           }
         },
         dependencies: [_angular_router__WEBPACK_IMPORTED_MODULE_2__.RouterOutlet, _js_camp_angular_shared_components_header_header_component__WEBPACK_IMPORTED_MODULE_0__.HeaderComponent],
-        styles: [".default-layout[_ngcontent-%COMP%] {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  min-height: 100vh;\n}"]
+        styles: [".auth-layout[_ngcontent-%COMP%] {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  min-height: 100vh;\n}"]
       });
     }
   }

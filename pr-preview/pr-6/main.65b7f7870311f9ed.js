@@ -70,12 +70,12 @@ const appRoutes = [{
   path: 'auth',
   title: 'Auth',
   loadComponent: () => Promise.all(/*! import() */[__webpack_require__.e(221), __webpack_require__.e(76), __webpack_require__.e(984)]).then(__webpack_require__.bind(__webpack_require__, /*! ./features/auth/components/layout/base/base-layout.component */ 1984)).then(m => m.BaseLayoutComponent),
-  loadChildren: () => Promise.all(/*! import() */[__webpack_require__.e(221), __webpack_require__.e(194), __webpack_require__.e(98), __webpack_require__.e(685)]).then(__webpack_require__.bind(__webpack_require__, /*! ./features/auth/routes.module */ 5685)).then(module => module.RoutesModule)
+  loadChildren: () => __webpack_require__.e(/*! import() */ 685).then(__webpack_require__.bind(__webpack_require__, /*! ./features/auth/routes.module */ 5685)).then(module => module.RoutesModule)
 }, {
   path: 'anime',
   title: 'Anime',
   loadComponent: () => Promise.all(/*! import() */[__webpack_require__.e(221), __webpack_require__.e(76), __webpack_require__.e(603)]).then(__webpack_require__.bind(__webpack_require__, /*! ./features/anime/components/layout/base/base-layout.component */ 7984)).then(m => m.BaseLayoutComponent),
-  loadChildren: () => Promise.all(/*! import() */[__webpack_require__.e(221), __webpack_require__.e(194), __webpack_require__.e(98), __webpack_require__.e(773)]).then(__webpack_require__.bind(__webpack_require__, /*! ./features/anime/routes.module */ 4773)).then(module => module.RoutesModule)
+  loadChildren: () => Promise.all(/*! import() */[__webpack_require__.e(221), __webpack_require__.e(194), __webpack_require__.e(529), __webpack_require__.e(212), __webpack_require__.e(773)]).then(__webpack_require__.bind(__webpack_require__, /*! ./features/anime/routes.module */ 4773)).then(module => module.RoutesModule)
 }, {
   path: '',
   redirectTo: '/anime',
