@@ -9,6 +9,6 @@ import { MatAnchor } from '@angular/material/button';
 	standalone: true,
 	imports: [MatToolbarModule, RouterLink, MatAnchor],
 	templateUrl: './header.component.html',
-	styleUrl: './header.component.scss',
+	styleUrl: './header.component.css',
 })
 export class HeaderComponent {}
