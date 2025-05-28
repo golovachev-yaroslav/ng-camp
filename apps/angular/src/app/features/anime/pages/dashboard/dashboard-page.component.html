@@ -1,6 +1,7 @@
 @if (isLoading()) {
 	<mat-progress-spinner color="primary" mode="indeterminate" class="spinner" diameter="36" />
-} @if (animes$ | async; as animes) {
+}
+@if (animes$ | async; as animes) {
 	<div class="table-wrapper">
 		<camp-filter-bar
 			(filter)="onFilterChange($event)"
