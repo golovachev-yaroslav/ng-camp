@@ -1,4 +1,4 @@
-import { Component, OnInit, inject, input, output, signal } from '@angular/core';
+import { Component, OnInit, inject, input, output, signal, ChangeDetectionStrategy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatFormField, MatLabel, MatSuffix } from '@angular/material/form-field';
 import { MatIcon } from '@angular/material/icon';
@@ -28,6 +28,7 @@ import { AnimeType } from '@js-camp/core/models/enums/anime-type';
 	],
 	templateUrl: './filter-bar.component.html',
 	styleUrl: './filter-bar.component.css',
+	changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FilterBarComponent implements OnInit {
 	/** Search emit. */

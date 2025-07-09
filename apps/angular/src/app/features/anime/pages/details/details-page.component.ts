@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 /** Anime details page component. */
@@ -8,5 +8,6 @@ import { CommonModule } from '@angular/common';
 	imports: [CommonModule],
 	templateUrl: './details-page.component.html',
 	styleUrl: './details-page.component.css',
+	changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class DetailsPageComponent {}

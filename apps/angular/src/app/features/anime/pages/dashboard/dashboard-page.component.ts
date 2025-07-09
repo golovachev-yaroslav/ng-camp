@@ -1,4 +1,4 @@
-import { Component, DestroyRef, inject, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, DestroyRef, inject, signal } from '@angular/core';
 import { CommonModule, AsyncPipe } from '@angular/common';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { MatTableModule } from '@angular/material/table';
@@ -41,6 +41,7 @@ import { FilterBarComponent } from '@js-camp/angular/app/features/anime/componen
 	],
 	templateUrl: './dashboard-page.component.html',
 	styleUrl: './dashboard-page.component.css',
+	changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class DashboardPageComponent {
 	/** Anime list. */
@@ -65,7 +66,7 @@ export class DashboardPageComponent {
 	protected readonly types: AnimeType[] = AnimeType.toArray();
 
 	/** Page size options. */
-	protected readonly pageSizeOptions = AnimeHttpParamsMapper.PAGE_SIZES;
+	protected readonly pageSizeOptions = [5, 10, 25, 100];
 
 	private readonly animeService = inject(AnimeService);
 

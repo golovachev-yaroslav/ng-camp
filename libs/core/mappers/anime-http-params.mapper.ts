@@ -8,9 +8,6 @@ import { AnimeSort } from '../models/enums/anime-sort';
 export namespace AnimeHttpParamsMapper {
 	const DEFAULT_PAGE_SIZE = 10;
 
-	/** Page sizes. */
-	export const PAGE_SIZES: readonly number[] = [5, 10, 25, 100];
-
 	/**
 	 * Converts model to dto.
 	 * @param model Params model.
