@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, DestroyRef, inject, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, DestroyRef, inject, OnInit, signal } from '@angular/core';
 import { CommonModule, AsyncPipe } from '@angular/common';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { MatTableModule } from '@angular/material/table';
@@ -43,7 +43,7 @@ import { FilterBarComponent } from '@js-camp/angular/app/features/anime/componen
 	styleUrl: './dashboard-page.component.css',
 	changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class DashboardPageComponent {
+export class DashboardPageComponent implements OnInit {
 	/** Anime list. */
 	protected readonly animes$: Observable<Pagination<Anime>>;
 
@@ -88,6 +88,10 @@ export class DashboardPageComponent {
 
 	public constructor() {
 		this.animes$ = this.createAnimeStream();
+	}
+
+	/** @inheritdoc */
+	public ngOnInit(): void {
 		this.searchValue.set(this.queryParams.search);
 	}
 
