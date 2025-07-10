@@ -2,12 +2,9 @@ import { enumToArray } from '../../utils/enum-to-array';
 
 /** Anime sort. */
 export enum AnimeSort {
-	TitleEnglishAsc = 'titleEnglish',
-	TitleEnglishDesc = '-titleEnglish',
-	StatusAsc = 'status',
-	StatusDesc = '-status',
-	AiredStartAsc = 'airedStart',
-	AiredStartDesc = '-airedStart',
+	TitleEnglish = 'titleEnglish',
+	Status = 'status',
+	AiredStart = 'airedStart',
 	None = '',
 }
 
@@ -16,12 +13,9 @@ export namespace AnimeSort {
 
 	/** Anime ordering map-object to title view. */
 	const TO_TITLE_MAP: Record<AnimeSort, string> = {
-		[AnimeSort.TitleEnglishAsc]: 'title_eng',
-		[AnimeSort.TitleEnglishDesc]: '-title_eng',
-		[AnimeSort.StatusAsc]: 'status',
-		[AnimeSort.StatusDesc]: '-status',
-		[AnimeSort.AiredStartAsc]: 'aired__startswith',
-		[AnimeSort.AiredStartDesc]: '-aired__startswith',
+		[AnimeSort.TitleEnglish]: 'title_eng',
+		[AnimeSort.Status]: 'status',
+		[AnimeSort.AiredStart]: 'aired__startswith',
 		[AnimeSort.None]: '',
 	};
 

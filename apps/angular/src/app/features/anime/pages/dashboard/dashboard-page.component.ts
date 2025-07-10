@@ -96,13 +96,7 @@ export class DashboardPageComponent {
 	 * @param params Query params.
 	 */
 	private getAnimeList(params: AnimeParams): Observable<Pagination<Anime>> {
-		return this.animeService.getAnimeList({
-			limit: params.limit,
-			offset: params.offset,
-			search: params.search,
-			typeIn: params.typeIn,
-			sort: params.sort,
-		});
+		return this.animeService.getAnimeList(params);
 	}
 
 	private createAnimeStream(): Observable<Pagination<Anime>> {
@@ -115,11 +109,23 @@ export class DashboardPageComponent {
 				this.getAnimeList(params).pipe(
 					finalize(() => {
 						this.isLoading.set(false);
-						this.selectedTypes.set(this.queryParams.typeIn?.split(',') as AnimeType[] ?? []);
+						this.selectedTypes.set(this.transformTypes(this.queryParams.typeIn));
 					}),
 					takeUntilDestroyed(this.destroyRef),
 				)),
 		);
+	}
+
+	/**
+	 * Transform type parameters.
+	 * @param typeIn Query parameters.
+	 */
+	private transformTypes(typeIn?: string): AnimeType[] {
+		if (!typeIn) {
+			return [];
+		}
+
+		return typeIn.split(',') as AnimeType[];
 	}
 
 	/**
@@ -172,17 +178,9 @@ export class DashboardPageComponent {
 	 * @param sort Event.
 	 */
 	protected onSortChange(sort: Sort): void {
-		let ordering = '';
-		if (sort.direction === 'asc') {
-			ordering = sort.active;
-		}
-
-		if (sort.direction === 'desc') {
-			ordering = `-${sort.active}`;
-		}
-
 		this.setQueryParams({
-			sort: ordering,
+			field: sort.active,
+			direction: sort.direction,
 		});
 	}
 
@@ -194,7 +192,8 @@ export class DashboardPageComponent {
 			search: queryParams['search'],
 			offset: queryParams['offset'],
 			limit: queryParams['limit'],
-			sort: queryParams['sort'],
+			field: queryParams['field'],
+			direction: queryParams['direction'],
 			typeIn: queryParams['typeIn'],
 		};
 	}

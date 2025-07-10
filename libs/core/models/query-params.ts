@@ -1,15 +1,19 @@
+import { SortDirection } from '@angular/material/sort';
+
 /** Query params. */
 export interface QueryParams {
-
 	/** Limit. */
 	readonly limit: number;
 
 	/** Page number. */
 	readonly offset: number;
 
-	/** Sort field. */
-	readonly sort: string;
-
 	/** Search. */
 	readonly search: string;
+
+	/** Sort field. */
+	readonly field: string;
+
+	/** Sort direction. */
+	readonly direction: SortDirection;
 }
