@@ -453,6 +453,9 @@ let DashboardPageComponent = /*#__PURE__*/(() => {
       /** Columns. */
       this.displayedColumns = ['poster', 'titleEnglish', 'titleJapanese', 'airedStart', 'type', 'status'];
       this.animes$ = this.createAnimeStream();
+    }
+    /** @inheritdoc */
+    ngOnInit() {
       this.searchValue.set(this.queryParams.search);
     }
     /**
