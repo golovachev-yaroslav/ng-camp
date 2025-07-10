@@ -2,6 +2,7 @@ import { SortDirection } from '@angular/material/sort';
 
 /** Query params. */
 export interface QueryParams {
+
 	/** Limit. */
 	readonly limit: number;
 

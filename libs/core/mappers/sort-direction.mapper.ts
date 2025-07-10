@@ -1,5 +1,6 @@
 import { SortDirection } from '@angular/material/sort';
-import { QueryParams } from '@js-camp/core/models/query-params';
+
+import { QueryParams } from '../models/query-params';
 
 export namespace SortDirectionMapper {
 

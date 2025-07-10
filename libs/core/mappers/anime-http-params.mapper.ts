@@ -3,7 +3,7 @@ import { Params } from '@angular/router';
 import { AnimeParams } from '../models/anime/anime-params';
 import { AnimeParametersDto } from '../dtos/anime/anime-params.dto';
 import { AnimeSort } from '../models/enums/anime-sort';
-import { SortDirectionMapper } from '@js-camp/core/mappers/sort-direction.mapper';
+import { SortDirectionMapper } from '../mappers/sort-direction.mapper';
 
 /** Anime Http Parameters Mapper. */
 export namespace AnimeHttpParamsMapper {
