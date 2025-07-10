@@ -41,7 +41,8 @@ let HeaderComponent = /*#__PURE__*/(() => {
           }
         },
         dependencies: [_angular_material_toolbar__WEBPACK_IMPORTED_MODULE_1__.MatToolbarModule, _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_1__.MatToolbar],
-        styles: [".toolbar[_ngcontent-%COMP%] {\n  background-color: var(--primary-color);\n  margin-bottom: var(--space-md);\n  color: var(--primary-contrast-color);\n}"]
+        styles: [".toolbar[_ngcontent-%COMP%] {\n  background-color: var(--primary-color);\n  margin-bottom: var(--space-md);\n  color: var(--primary-contrast-color);\n}"],
+        changeDetection: 0
       });
     }
   }

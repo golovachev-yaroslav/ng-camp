@@ -170,7 +170,8 @@ let FilterBarComponent = /*#__PURE__*/(() => {
           }
         },
         dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_3__.CommonModule, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_4__.MatFormField, _angular_material_icon__WEBPACK_IMPORTED_MODULE_5__.MatIcon, _angular_material_button__WEBPACK_IMPORTED_MODULE_6__.MatIconButton, _angular_material_input__WEBPACK_IMPORTED_MODULE_7__.MatInput, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_4__.MatLabel, _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_8__.MatOption, _angular_material_select__WEBPACK_IMPORTED_MODULE_9__.MatSelect, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_4__.MatSuffix, _angular_forms__WEBPACK_IMPORTED_MODULE_2__.ReactiveFormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_2__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__.DefaultValueAccessor, _angular_forms__WEBPACK_IMPORTED_MODULE_2__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_2__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_2__.FormGroupDirective, _angular_forms__WEBPACK_IMPORTED_MODULE_2__.FormControlName],
-        styles: [".filter-bar[_ngcontent-%COMP%] {\n  padding: var(--space-sm) 0;\n  display: flex;\n}\n\n.search[_ngcontent-%COMP%] {\n  margin-left: var(--space-lg);\n}\n\n.is-hidden-clear[_ngcontent-%COMP%] {\n  visibility: hidden;\n  opacity: 0;\n}"]
+        styles: [".filter-bar[_ngcontent-%COMP%] {\n  padding: var(--space-sm) 0;\n  display: flex;\n}\n\n.search[_ngcontent-%COMP%] {\n  margin-left: var(--space-lg);\n}\n\n.is-hidden-clear[_ngcontent-%COMP%] {\n  visibility: hidden;\n  opacity: 0;\n}"],
+        changeDetection: 0
       });
     }
   }
@@ -418,7 +419,7 @@ function DashboardPageComponent_Conditional_1_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("types", ctx_r1.types)("selectedTypes", ctx_r1.selectedTypes())("searchValue", ctx_r1.searchValue());
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("dataSource", animes_r9.items);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("dataSource", animes_r9.items)("matSortActive", ctx_r1.queryParams.field)("matSortDirection", ctx_r1.queryParams.direction);
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("matHeaderRowDef", ctx_r1.displayedColumns)("matHeaderRowDefSticky", true);
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"]();
@@ -444,7 +445,7 @@ let DashboardPageComponent = /*#__PURE__*/(() => {
       /** Anime types list. */
       this.types = _js_camp_core_models_enums_anime_type__WEBPACK_IMPORTED_MODULE_1__.AnimeType.toArray();
       /** Page size options. */
-      this.pageSizeOptions = _js_camp_core_mappers_anime_http_params_mapper__WEBPACK_IMPORTED_MODULE_3__.AnimeHttpParamsMapper.PAGE_SIZES;
+      this.pageSizeOptions = [5, 10, 25, 100];
       this.animeService = (0,_angular_core__WEBPACK_IMPORTED_MODULE_5__.inject)(_js_camp_angular_core_services_anime_service__WEBPACK_IMPORTED_MODULE_0__.AnimeService);
       this.activeRoute = (0,_angular_core__WEBPACK_IMPORTED_MODULE_5__.inject)(_angular_router__WEBPACK_IMPORTED_MODULE_6__.ActivatedRoute);
       this.router = (0,_angular_core__WEBPACK_IMPORTED_MODULE_5__.inject)(_angular_router__WEBPACK_IMPORTED_MODULE_6__.Router);
@@ -459,20 +460,24 @@ let DashboardPageComponent = /*#__PURE__*/(() => {
      * @param params Query params.
      */
     getAnimeList(params) {
-      return this.animeService.getAnimeList({
-        limit: params.limit,
-        offset: params.offset,
-        search: params.search,
-        typeIn: params.typeIn,
-        sort: params.sort
-      });
+      return this.animeService.getAnimeList(params);
     }
     createAnimeStream() {
       this.isLoading.set(true);
       return this.activeRoute.queryParams.pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_7__.distinctUntilChanged)(), (0,rxjs__WEBPACK_IMPORTED_MODULE_8__.map)(query => this.transformQueryParams(query)), (0,rxjs__WEBPACK_IMPORTED_MODULE_9__.switchMap)(params => this.getAnimeList(params).pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_10__.finalize)(() => {
         this.isLoading.set(false);
-        this.selectedTypes.set(this.queryParams.typeIn?.split(',') ?? []);
+        this.selectedTypes.set(this.transformTypes(this.queryParams.typeIn));
       }), (0,_angular_core_rxjs_interop__WEBPACK_IMPORTED_MODULE_11__.takeUntilDestroyed)(this.destroyRef))));
+    }
+    /**
+     * Transform type parameters.
+     * @param typeIn Query parameters.
+     */
+    transformTypes(typeIn) {
+      if (!typeIn) {
+        return [];
+      }
+      return typeIn.split(',');
     }
     /**
      * Transform query parameters.
@@ -518,15 +523,9 @@ let DashboardPageComponent = /*#__PURE__*/(() => {
      * @param sort Event.
      */
     onSortChange(sort) {
-      let ordering = '';
-      if (sort.direction === 'asc') {
-        ordering = sort.active;
-      }
-      if (sort.direction === 'desc') {
-        ordering = `-${sort.active}`;
-      }
       this.setQueryParams({
-        sort: ordering
+        field: sort.active,
+        direction: sort.direction
       });
     }
     /** Query params. */
@@ -538,7 +537,8 @@ let DashboardPageComponent = /*#__PURE__*/(() => {
         search: queryParams['search'],
         offset: queryParams['offset'],
         limit: queryParams['limit'],
-        sort: queryParams['sort'],
+        field: queryParams['field'],
+        direction: queryParams['direction'],
         typeIn: queryParams['typeIn']
       };
     }
@@ -568,10 +568,10 @@ let DashboardPageComponent = /*#__PURE__*/(() => {
         features: [_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵStandaloneFeature"]],
         decls: 3,
         vars: 4,
-        consts: [["color", "primary", "mode", "indeterminate", "diameter", "36", 1, "spinner"], [1, "table-wrapper"], [3, "filter", "search", "types", "selectedTypes", "searchValue"], ["mat-table", "", "matSort", "", 1, "mat-elevation-z8", 3, "matSortChange", "dataSource"], ["mat-header-row", "", 4, "matHeaderRowDef", "matHeaderRowDefSticky"], ["mat-row", "", 4, "matRowDef", "matRowDefColumns"], ["matColumnDef", "poster"], ["mat-header-cell", "", 4, "matHeaderCellDef"], ["mat-cell", "", 4, "matCellDef"], ["matColumnDef", "titleEnglish"], ["mat-header-cell", "", "mat-sort-header", "", 4, "matHeaderCellDef"], ["matColumnDef", "titleJapanese"], ["matColumnDef", "airedStart"], ["matColumnDef", "type"], ["matColumnDef", "status"], ["aria-label", "Select page", 1, "paginator", 3, "page", "length", "pageSize", "pageIndex", "pageSizeOptions"], ["mat-header-row", ""], ["mat-row", ""], ["mat-header-cell", ""], ["mat-cell", ""], ["loading", "lazy", 1, "poster", 3, "src", "alt"], ["mat-header-cell", "", "mat-sort-header", ""]],
+        consts: [["color", "primary", "mode", "indeterminate", "diameter", "36", 1, "spinner"], [1, "table-wrapper"], [3, "filter", "search", "types", "selectedTypes", "searchValue"], ["mat-table", "", "matSort", "", 1, "mat-elevation-z8", 3, "matSortChange", "dataSource", "matSortActive", "matSortDirection"], ["mat-header-row", "", 4, "matHeaderRowDef", "matHeaderRowDefSticky"], ["mat-row", "", 4, "matRowDef", "matRowDefColumns"], ["matColumnDef", "poster"], ["mat-header-cell", "", 4, "matHeaderCellDef"], ["mat-cell", "", 4, "matCellDef"], ["matColumnDef", "titleEnglish"], ["mat-header-cell", "", "mat-sort-header", "", 4, "matHeaderCellDef"], ["matColumnDef", "titleJapanese"], ["matColumnDef", "airedStart"], ["matColumnDef", "type"], ["matColumnDef", "status"], ["aria-label", "Select page", 1, "paginator", 3, "page", "length", "pageSize", "pageIndex", "pageSizeOptions"], ["mat-header-row", ""], ["mat-row", ""], ["mat-header-cell", ""], ["mat-cell", ""], ["loading", "lazy", 1, "poster", 3, "src", "alt"], ["mat-header-cell", "", "mat-sort-header", ""]],
         template: function DashboardPageComponent_Template(rf, ctx) {
           if (rf & 1) {
-            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](0, DashboardPageComponent_Conditional_0_Template, 1, 0, "mat-progress-spinner", 0)(1, DashboardPageComponent_Conditional_1_Template, 24, 11, "div", 1);
+            _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](0, DashboardPageComponent_Conditional_0_Template, 1, 0, "mat-progress-spinner", 0)(1, DashboardPageComponent_Conditional_1_Template, 24, 13, "div", 1);
             _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵpipe"](2, "async");
           }
           if (rf & 2) {
@@ -582,7 +582,8 @@ let DashboardPageComponent = /*#__PURE__*/(() => {
           }
         },
         dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_12__.CommonModule, _angular_common__WEBPACK_IMPORTED_MODULE_12__.AsyncPipe, _angular_common__WEBPACK_IMPORTED_MODULE_12__.DatePipe, _angular_material_table__WEBPACK_IMPORTED_MODULE_13__.MatTableModule, _angular_material_table__WEBPACK_IMPORTED_MODULE_13__.MatTable, _angular_material_table__WEBPACK_IMPORTED_MODULE_13__.MatHeaderCellDef, _angular_material_table__WEBPACK_IMPORTED_MODULE_13__.MatHeaderRowDef, _angular_material_table__WEBPACK_IMPORTED_MODULE_13__.MatColumnDef, _angular_material_table__WEBPACK_IMPORTED_MODULE_13__.MatCellDef, _angular_material_table__WEBPACK_IMPORTED_MODULE_13__.MatRowDef, _angular_material_table__WEBPACK_IMPORTED_MODULE_13__.MatHeaderCell, _angular_material_table__WEBPACK_IMPORTED_MODULE_13__.MatCell, _angular_material_table__WEBPACK_IMPORTED_MODULE_13__.MatHeaderRow, _angular_material_table__WEBPACK_IMPORTED_MODULE_13__.MatRow, _angular_material_paginator__WEBPACK_IMPORTED_MODULE_14__.MatPaginatorModule, _angular_material_paginator__WEBPACK_IMPORTED_MODULE_14__.MatPaginator, _angular_material_sort__WEBPACK_IMPORTED_MODULE_15__.MatSortModule, _angular_material_sort__WEBPACK_IMPORTED_MODULE_15__.MatSort, _angular_material_sort__WEBPACK_IMPORTED_MODULE_15__.MatSortHeader, _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_16__.MatProgressSpinnerModule, _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_16__.MatProgressSpinner, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_17__.MatFormFieldModule, _angular_material_select__WEBPACK_IMPORTED_MODULE_18__.MatSelectModule, _angular_material_icon__WEBPACK_IMPORTED_MODULE_19__.MatIconModule, _angular_forms__WEBPACK_IMPORTED_MODULE_20__.ReactiveFormsModule, _js_camp_angular_app_features_anime_components_filter_bar_filter_bar_component__WEBPACK_IMPORTED_MODULE_4__.FilterBarComponent],
-        styles: [".table-wrapper[_ngcontent-%COMP%] {\n  max-width: 1200px;\n  margin: 0 auto;\n}\n\n.paginator[_ngcontent-%COMP%] {\n  margin: var(--space-md) 0;\n}\n\n.poster[_ngcontent-%COMP%] {\n  width: 150px;\n  height: 150px;\n  padding: 8px;\n  object-fit: contain;\n}\n\n.spinner[_ngcontent-%COMP%] {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  transform: translate(-50%, -50%);\n}"]
+        styles: [".table-wrapper[_ngcontent-%COMP%] {\n  max-width: 1200px;\n  margin: 0 auto;\n}\n\n.paginator[_ngcontent-%COMP%] {\n  margin: var(--space-md) 0;\n}\n\n.poster[_ngcontent-%COMP%] {\n  width: 150px;\n  height: 150px;\n  padding: 8px;\n  object-fit: contain;\n}\n\n.spinner[_ngcontent-%COMP%] {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  transform: translate(-50%, -50%);\n}"],
+        changeDetection: 0
       });
     }
   }
@@ -628,7 +629,8 @@ let DetailsPageComponent = /*#__PURE__*/(() => {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
           }
         },
-        dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_1__.CommonModule]
+        dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_1__.CommonModule],
+        changeDetection: 0
       });
     }
   }
@@ -809,20 +811,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   AnimeHttpParamsMapper: () => (/* binding */ AnimeHttpParamsMapper)
 /* harmony export */ });
 /* harmony import */ var _models_enums_anime_sort__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../models/enums/anime-sort */ 3745);
+/* harmony import */ var _js_camp_core_mappers_sort_direction_mapper__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @js-camp/core/mappers/sort-direction.mapper */ 5628);
+
 
 /** Anime Http Parameters Mapper. */
 var AnimeHttpParamsMapper;
 (function (AnimeHttpParamsMapper) {
   const DEFAULT_PAGE_SIZE = 10;
-  /** Page sizes. */
-  AnimeHttpParamsMapper.PAGE_SIZES = [5, 10, 25, 100];
   /**
    * Converts model to dto.
    * @param model Params model.
    */
   function toDto(model) {
+    const field = _models_enums_anime_sort__WEBPACK_IMPORTED_MODULE_0__.AnimeSort.toReadable(model.field);
+    const ordering = _js_camp_core_mappers_sort_direction_mapper__WEBPACK_IMPORTED_MODULE_1__.SortDirectionMapper.toDto(field, model.direction);
     return {
-      ordering: _models_enums_anime_sort__WEBPACK_IMPORTED_MODULE_0__.AnimeSort.toReadable(model.sort),
+      ordering,
       search: model.search,
       limit: model?.limit ?? DEFAULT_PAGE_SIZE,
       offset: model.offset ? model.offset * (model?.limit ?? DEFAULT_PAGE_SIZE) : undefined,
@@ -835,11 +839,13 @@ var AnimeHttpParamsMapper;
    * @param params Unknown params.
    */
   function fromDto(params) {
+    const sort = _js_camp_core_mappers_sort_direction_mapper__WEBPACK_IMPORTED_MODULE_1__.SortDirectionMapper.fromDto(params['field'], params['direction']);
     return {
       offset: params['offset'] ?? 0,
       limit: params['limit'] ?? DEFAULT_PAGE_SIZE,
-      sort: params['sort'] ?? '',
       search: params['search'] ?? '',
+      field: sort.field,
+      direction: sort.direction,
       typeIn: params['typeIn'] ?? ''
     };
   }
@@ -919,6 +925,49 @@ var PaginationMapper;
 
 /***/ }),
 
+/***/ 5628:
+/*!****************************************************!*\
+  !*** ./libs/core/mappers/sort-direction.mapper.ts ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   SortDirectionMapper: () => (/* binding */ SortDirectionMapper)
+/* harmony export */ });
+var SortDirectionMapper;
+(function (SortDirectionMapper) {
+  /**
+   * Convert a sort direction from model to DTO.
+   * @param direction Sort direction.
+   * @param field The column being sorted.
+   */
+  function toDto(field, direction) {
+    if (!field || !direction) {
+      return '';
+    }
+    if (direction === 'desc') {
+      return `-${field}`;
+    }
+    return field;
+  }
+  SortDirectionMapper.toDto = toDto;
+  /**
+   * Convert a sort direction from DTO to mode.
+   * @param direction Sort direction.
+   * @param field The column being sorted.
+   */
+  function fromDto(field, direction) {
+    return {
+      field: field ?? '',
+      direction: direction ?? ''
+    };
+  }
+  SortDirectionMapper.fromDto = fromDto;
+})(SortDirectionMapper || (SortDirectionMapper = {}));
+
+/***/ }),
+
 /***/ 3158:
 /*!*****************************************!*\
   !*** ./libs/core/models/anime/anime.ts ***!
@@ -962,12 +1011,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /** Anime sort. */
 var AnimeSort = /*#__PURE__*/function (AnimeSort) {
-  AnimeSort["TitleEnglishAsc"] = "titleEnglish";
-  AnimeSort["TitleEnglishDesc"] = "-titleEnglish";
-  AnimeSort["StatusAsc"] = "status";
-  AnimeSort["StatusDesc"] = "-status";
-  AnimeSort["AiredStartAsc"] = "airedStart";
-  AnimeSort["AiredStartDesc"] = "-airedStart";
+  AnimeSort["TitleEnglish"] = "titleEnglish";
+  AnimeSort["Status"] = "status";
+  AnimeSort["AiredStart"] = "airedStart";
   AnimeSort["None"] = "";
   return AnimeSort;
 }(AnimeSort || {});
@@ -975,12 +1021,9 @@ var AnimeSort = /*#__PURE__*/function (AnimeSort) {
 (function (AnimeSort) {
   /** Anime ordering map-object to title view. */
   const TO_TITLE_MAP = {
-    [AnimeSort.TitleEnglishAsc]: 'title_eng',
-    [AnimeSort.TitleEnglishDesc]: '-title_eng',
-    [AnimeSort.StatusAsc]: 'status',
-    [AnimeSort.StatusDesc]: '-status',
-    [AnimeSort.AiredStartAsc]: 'aired__startswith',
-    [AnimeSort.AiredStartDesc]: '-aired__startswith',
+    [AnimeSort.TitleEnglish]: 'title_eng',
+    [AnimeSort.Status]: 'status',
+    [AnimeSort.AiredStart]: 'aired__startswith',
     [AnimeSort.None]: ''
   };
   /** Converts anime ordering enum to array. */
