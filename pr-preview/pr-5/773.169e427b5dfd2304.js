@@ -811,7 +811,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   AnimeHttpParamsMapper: () => (/* binding */ AnimeHttpParamsMapper)
 /* harmony export */ });
 /* harmony import */ var _models_enums_anime_sort__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../models/enums/anime-sort */ 3745);
-/* harmony import */ var _js_camp_core_mappers_sort_direction_mapper__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @js-camp/core/mappers/sort-direction.mapper */ 5628);
+/* harmony import */ var _mappers_sort_direction_mapper__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../mappers/sort-direction.mapper */ 5628);
 
 
 /** Anime Http Parameters Mapper. */
@@ -824,7 +824,7 @@ var AnimeHttpParamsMapper;
    */
   function toDto(model) {
     const field = _models_enums_anime_sort__WEBPACK_IMPORTED_MODULE_0__.AnimeSort.toReadable(model.field);
-    const ordering = _js_camp_core_mappers_sort_direction_mapper__WEBPACK_IMPORTED_MODULE_1__.SortDirectionMapper.toDto(field, model.direction);
+    const ordering = _mappers_sort_direction_mapper__WEBPACK_IMPORTED_MODULE_1__.SortDirectionMapper.toDto(field, model.direction);
     return {
       ordering,
       search: model.search,
@@ -839,7 +839,7 @@ var AnimeHttpParamsMapper;
    * @param params Unknown params.
    */
   function fromDto(params) {
-    const sort = _js_camp_core_mappers_sort_direction_mapper__WEBPACK_IMPORTED_MODULE_1__.SortDirectionMapper.fromDto(params['field'], params['direction']);
+    const sort = _mappers_sort_direction_mapper__WEBPACK_IMPORTED_MODULE_1__.SortDirectionMapper.fromDto(params['field'], params['direction']);
     return {
       offset: params['offset'] ?? 0,
       limit: params['limit'] ?? DEFAULT_PAGE_SIZE,
