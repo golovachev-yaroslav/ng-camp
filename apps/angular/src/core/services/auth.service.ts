@@ -1,6 +1,6 @@
 import { inject, Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
-import { Observable, map, catchError, throwError } from 'rxjs';
+import { Observable, map, switchMap, catchError, throwError } from 'rxjs';
 
 import { environment } from '@js-camp/angular/environments/environment';
 import { Register } from '@js-camp/core/models/auth/register';
@@ -12,12 +12,16 @@ import { RegisterMapper } from '@js-camp/core/mappers/register.mapper';
 import { LoginMapper } from '@js-camp/core/mappers/login.mapper';
 import { AppValidationError } from '@js-camp/core/models/app-error';
 
+import { UserSecretService } from './user-secret.service';
+
 /** Endpoints for auth API. */
 @Injectable({
 	providedIn: 'root',
 })
 export class AuthService {
 	private readonly httpService = inject(HttpClient);
+
+	private readonly userSecretStorage = inject(UserSecretService);
 
 	/** Url for this service. */
 	private readonly authApiUrl = `${environment.apiUrl}/api/v1/auth/`;
@@ -54,6 +58,7 @@ export class AuthService {
 	public login(data: Login): Observable<UserSecret> {
 		return this.httpService.post<UserSecretDto>(this.loginApiUrl, LoginMapper.toDto(data)).pipe(
 			map(secretDto => UserSecretMapper.fromDto(secretDto)),
+			switchMap(secret => this.userSecretStorage.save(secret)),
 			catchError((error: unknown): Observable<never> => {
 				if (error instanceof HttpErrorResponse) {
 					const mappedError = LoginMapper.validationErrorFromDto(error.error.errors);
@@ -63,6 +68,18 @@ export class AuthService {
 
 				return throwError(() => new Error('Unknown error'));
 			}),
+		);
+	}
+
+	/** Logout. */
+	public logout(): Observable<void> {
+		return this.userSecretStorage.remove();
+	}
+
+	/** Init current user stream. */
+	public isAuthorizedUser(): Observable<boolean> {
+		return this.userSecretStorage.get().pipe(
+			map(secret => Boolean(secret)),
 		);
 	}
 }
