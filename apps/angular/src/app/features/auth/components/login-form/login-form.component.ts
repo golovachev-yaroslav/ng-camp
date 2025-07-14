@@ -57,8 +57,8 @@ export class LoginFormComponent {
 	/** Login form group. */
 	protected readonly loginForm = this.formBuilder.group<LoginForm>(
 		{
-			email: this.formBuilder.control('', [Validators.required, Validators.email]),
-			password: this.formBuilder.control('', [Validators.required]),
+			email: this.formBuilder.control('golovachev@saritasa.com', [Validators.required, Validators.email]),
+			password: this.formBuilder.control('qweQWE123!', [Validators.required]),
 		},
 	);
 

@@ -1,1 +1,23 @@
-/* Temporary empty */
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.host {
+  max-width: 640px;
+  margin: 0 auto 20px;
+}
+
+.poster {
+  max-height: 400px;
+  object-fit: contain;
+}
+
+.description {
+  margin-bottom: var(--space-md);
+}

@@ -33,4 +33,14 @@ export class AnimeService {
 			.get<PaginationDto<AnimeDto>>(this.animeApiUrl, { params })
 			.pipe(map(data => PaginationMapper.fromDto(data, AnimeMapper.fromDto)));
 	}
+
+	/**
+	 * Get anime by id.
+	 * @param id Anime's id.
+	 */
+	public getAnime(id: number): Observable<Anime> {
+		return this.httpService
+			.get<AnimeDto>(`${this.animeApiUrl}${id}/`)
+			.pipe(map(data => AnimeMapper.fromDto(data)));
+	}
 }

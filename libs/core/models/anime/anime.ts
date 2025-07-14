@@ -39,6 +39,9 @@ export class Anime {
 	/** User score. */
 	public readonly userScore: number | null;
 
+	/** Synopsis. */
+	public readonly synopsis?: string;
+
 	public constructor(data: AnimeInitArgs) {
 		this.id = data.id;
 		this.titleEnglish = data.titleEnglish;
@@ -51,6 +54,7 @@ export class Anime {
 		this.aired = data.aired;
 		this.score = data.score;
 		this.userScore = data.userScore;
+		this.synopsis = data.synopsis;
 	}
 }
 

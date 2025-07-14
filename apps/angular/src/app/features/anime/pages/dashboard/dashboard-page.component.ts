@@ -1,6 +1,6 @@
 import { Component, DestroyRef, inject, signal } from '@angular/core';
 import { CommonModule, AsyncPipe } from '@angular/common';
-import { ActivatedRoute, Params, Router } from '@angular/router';
+import { ActivatedRoute, Params, Router, RouterLink } from '@angular/router';
 import { MatTableModule } from '@angular/material/table';
 import { MatSortModule, Sort } from '@angular/material/sort';
 import { MatPaginatorModule, PageEvent } from '@angular/material/paginator';
@@ -36,6 +36,7 @@ import { FilterBarComponent } from '@js-camp/angular/app/features/anime/componen
 		MatSelectModule,
 		MatIconModule,
 		FilterBarComponent,
+		RouterLink,
 	],
 	templateUrl: './dashboard-page.component.html',
 	styleUrl: './dashboard-page.component.css',

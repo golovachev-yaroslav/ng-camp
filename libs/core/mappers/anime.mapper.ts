@@ -23,6 +23,7 @@ export namespace AnimeMapper {
 			type: dto.type,
 			status: dto.status,
 			aired: AiredMapper.fromDto(dto.aired),
+			synopsis: dto.synopsis,
 		});
 	}
 }

@@ -38,4 +38,7 @@ export interface AnimeDto {
 
 	/** User score. */
 	readonly user_score: number | null;
+
+	/** Synopsis. */
+	readonly synopsis?: string;
 }

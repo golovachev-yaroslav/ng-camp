@@ -11,7 +11,7 @@
 		/>
 		<table mat-table matSort [dataSource]="animes.items" class="mat-elevation-z8" (matSortChange)="onSortChange($event)">
 			<tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
-			<tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+			<tr mat-row *matRowDef="let row; columns: displayedColumns" [routerLink]="['/anime', row.id]"></tr>
 
 			<ng-container matColumnDef="poster">
 				<th mat-header-cell *matHeaderCellDef></th>

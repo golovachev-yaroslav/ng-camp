@@ -4,6 +4,7 @@ import { provideRouter } from '@angular/router';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { HTTP_INTERCEPTORS, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 
+import { AuthInterceptor } from './core/interceptors/auth.interceptor';
 import { ApiKeyInterceptor } from './core/interceptors/api-key.interceptor';
 import { environment } from './environments/environment';
 import { AppComponent } from './app/app.component';
@@ -19,6 +20,7 @@ bootstrapApplication(AppComponent, {
 		provideAnimationsAsync(),
 		provideHttpClient(withInterceptorsFromDi()),
 		{ provide: HTTP_INTERCEPTORS, useClass: ApiKeyInterceptor, multi: true },
+		{ provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },
 	],
 
 }).catch(err => console.error(err));
