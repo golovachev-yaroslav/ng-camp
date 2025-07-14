@@ -3,6 +3,10 @@
   margin: 0 auto;
 }
 
+.paginator {
+  margin: var(--space-md) 0;
+}
+
 .poster {
   width: 150px;
   height: 150px;
