@@ -60,7 +60,7 @@ let FilterBarComponent = /*#__PURE__*/(() => {
       /** Selected types. */
       this.selectedTypes = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.input)([]);
       /** Search value. */
-      this.searchValue = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.input)();
+      this.searchValue = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.input)('');
       /** Is hidden clear button. */
       this.isHiddenClearButton = (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.signal)(true);
       /** Anime type enum. */
@@ -98,7 +98,7 @@ let FilterBarComponent = /*#__PURE__*/(() => {
     /** @inheritdoc */
     ngOnInit() {
       this.searchForm.setValue({
-        search: this.searchValue() ?? ''
+        search: this.searchValue()
       });
       this.isHiddenClearButton.set(!this.searchValue());
     }
