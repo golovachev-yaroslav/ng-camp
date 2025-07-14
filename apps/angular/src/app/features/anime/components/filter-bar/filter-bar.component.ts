@@ -44,7 +44,7 @@ export class FilterBarComponent implements OnInit {
 	public readonly selectedTypes = input<AnimeType[]>([]);
 
 	/** Search value. */
-	public readonly searchValue = input<string>();
+	public readonly searchValue = input<string>('');
 
 	/** Is hidden clear button. */
 	protected readonly isHiddenClearButton = signal(true);
@@ -90,7 +90,7 @@ export class FilterBarComponent implements OnInit {
 	/** @inheritdoc */
 	public ngOnInit(): void {
 		this.searchForm.setValue({
-			search: this.searchValue() ?? '',
+			search: this.searchValue(),
 		});
 		this.isHiddenClearButton.set(!this.searchValue());
 	}
