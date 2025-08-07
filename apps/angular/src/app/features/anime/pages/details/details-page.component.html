@@ -1,29 +1,37 @@
 @if (isLoading()) {
 	<mat-progress-spinner color="primary" mode="indeterminate" class="spinner" diameter="36" />
 }
-
 @if (anime$ | async; as anime) {
 	<mat-card class="host" appearance="outlined">
 		<mat-card-header>
-			<div mat-card-avatar class="example-header-image"></div>
 			<mat-card-title>{{ anime.titleEnglish }}</mat-card-title>
 			<mat-card-subtitle>{{ anime.titleJapanese }}</mat-card-subtitle>
 		</mat-card-header>
-		<img mat-card-image class="poster" [src]="anime.poster" [alt]="anime.titleEnglish" />
 		<mat-card-content>
-			<p class="description">
-				<strong>Status:</strong> {{ animeStatus.toReadable(anime.status) }}
-			</p>
-			<p class="description">
-				<strong>Type:</strong> {{ animeType.toReadable(anime.type) }}
-			</p>
-			<p class="description">
-				{{ anime.synopsis }}
-			</p>
+			<button
+				(click)="previewPoster(anime.poster, anime.titleEnglish)"
+				type="button"
+				class="button-preview"
+				matTooltip="Preview image"
+			>
+				<img class="poster" [src]="anime.poster" [alt]="anime.titleEnglish">
+			</button>
+			@if (anime.getYoutubeUrl) {
+				<div class="player">
+					<camp-youtube-player [src]="anime.getYoutubeUrl" />
+				</div>
+			}
+			<p class="description"><strong>Status:</strong> {{ animeStatus.toReadable(anime.status) }}</p>
+			<p class="description"><strong>Rating:</strong> {{ rating.toReadable(anime.rating) }}</p>
+			<p class="description"><strong>Source:</strong> {{ source.toReadable(anime.source) }}</p>
+			<p class="description"><strong>Type:</strong> {{ animeType.toReadable(anime.type) }}</p>
+			<p class="description"><strong>Season:</strong> {{ season.toReadable(anime.season) }}</p>
+			<p class="description"><strong>Synopsis:</strong> {{ anime.synopsis | empty }}</p>
+			<p class="description"><strong>Airing:</strong> {{ anime.airing ? "Yes" : "No" }}</p>
+			<p class="description"><strong>Start date:</strong> {{ anime.aired.start | date | empty }}</p>
+			<p class="description"><strong>End date:</strong> {{ anime.aired.end | date | empty }}</p>
+			<p class="description"><strong>Genres:</strong> {{ getGenresList(anime.genres) | empty }}</p>
+			<p class="description"><strong>Studios:</strong> {{ getStudiosList(anime.studios) | empty }}</p>
 		</mat-card-content>
-		<mat-card-actions>
-			<button mat-button color="primary" class="button" type="button">LIKE</button>
-			<button mat-button color="primary" class="button" type="button">SHARE</button>
-		</mat-card-actions>
 	</mat-card>
 }

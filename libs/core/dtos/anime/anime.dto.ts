@@ -1,7 +1,12 @@
 import { AnimeStatus } from '../../models/enums/anime-status';
 import { AnimeType } from '../../models/enums/anime-type';
+import { Season } from '../../models/enums/season';
+import { Source } from '../../models/enums/source';
+import { Rating } from '../../models/enums/rating';
 
 import { AiredDto } from './aired.dto';
+import { GenreDto } from './genre.dto';
+import { StudioDto } from './studio.dto';
 
 /** Anime DTO. */
 export interface AnimeDto {
@@ -39,6 +44,27 @@ export interface AnimeDto {
 	/** User score. */
 	readonly user_score: number | null;
 
+	/** Season. */
+	readonly season: Season;
+
+	/** Source. */
+	readonly source: Source;
+
+	/** Airing. */
+	readonly airing: boolean;
+
 	/** Synopsis. */
 	readonly synopsis?: string;
+
+	/** Rating. */
+	readonly rating: Rating;
+
+	/** Genres data. */
+	readonly genres_data?: readonly GenreDto[];
+
+	/** Studios data. */
+	readonly studios_data?: readonly StudioDto[];
+
+	/** Trailer Youtube id. */
+	readonly trailer_youtube_id: string;
 }
