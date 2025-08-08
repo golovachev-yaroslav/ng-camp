@@ -1,4 +1,4 @@
-import { inject, Injectable } from '@angular/core';
+import { inject, Injectable, computed } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Observable, map, switchMap, catchError, throwError } from 'rxjs';
 
@@ -31,6 +31,9 @@ export class AuthService {
 
 	/** Url for login a user. */
 	private readonly loginApiUrl = `${this.authApiUrl}login/`;
+
+	/** Url for refresh token. */
+	private readonly refreshTokenApiUrl = `${this.authApiUrl}token/refresh/`;
 
 	/**
 	 * Register a user.
@@ -71,15 +74,31 @@ export class AuthService {
 		);
 	}
 
+	/**
+	 * Refresh user's secret.
+	 */
+	public refreshSecret(): Observable<void> {
+		const secret = this.userSecretStorage.secret();
+
+		if (secret) {
+			return this.httpService.post<UserSecretDto>(this.refreshTokenApiUrl, UserSecretMapper.toDto(secret)).pipe(
+				map(secretDto => UserSecretMapper.fromDto(secretDto)),
+				switchMap(newSecret => this.userSecretStorage.save(newSecret)),
+				map(() => undefined),
+			);
+		}
+
+		return throwError(() => new Error('Unauthorized')).pipe(
+			catchError(() =>
+				this.logout()),
+		);
+	}
+
 	/** Logout. */
 	public logout(): Observable<void> {
 		return this.userSecretStorage.remove();
 	}
 
-	/** Init current user stream. */
-	public isAuthorizedUser(): Observable<boolean> {
-		return this.userSecretStorage.get().pipe(
-			map(secret => Boolean(secret)),
-		);
-	}
+	/** Is an authorized user. */
+	public readonly isAuthorizedUser = computed(() => Boolean(this.userSecretStorage.secret()));
 }

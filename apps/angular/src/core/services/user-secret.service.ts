@@ -1,5 +1,6 @@
-import { inject, Injectable, signal } from '@angular/core';
-import { Observable, map, tap, of } from 'rxjs';
+import { inject, Injectable } from '@angular/core';
+import { toSignal } from '@angular/core/rxjs-interop';
+import { Observable, map } from 'rxjs';
 
 import { UserSecret } from '@js-camp/core/models/auth/user-secret';
 
@@ -12,12 +13,11 @@ const SECRET_KEY = 'NG_SECRET_KEY';
 	providedIn: 'root',
 })
 export class UserSecretService {
-
 	/** Storage service. */
 	private readonly storageService = inject(StorageService);
 
 	/** Current secret. */
-	protected readonly secret = signal<string | null>(null);
+	public readonly secret = toSignal(this.storageService.get<UserSecret>(SECRET_KEY));
 
 	/**
 	 * Save a secret.
@@ -25,26 +25,12 @@ export class UserSecretService {
 	 */
 	public save(secret: UserSecret): Observable<UserSecret> {
 		return this.storageService.save(SECRET_KEY, secret).pipe(
-			map(() => {
-				this.secret.set(secret.access);
-				return secret;
-			}),
+			map(() => secret),
 		);
-	}
-
-	/**
-	 * Get a secret.
-	 */
-	public get(): Observable<UserSecret | null> {
-		if (this.storageService.get(SECRET_KEY)) {
-			return this.storageService.get(SECRET_KEY);
-		}
-
-		return of(null);
 	}
 
 	/** Removes the secret. */
 	public remove(): Observable<void> {
-		return this.storageService.remove(SECRET_KEY).pipe(tap(() => this.secret.set(null)));
+		return this.storageService.remove(SECRET_KEY);
 	}
 }

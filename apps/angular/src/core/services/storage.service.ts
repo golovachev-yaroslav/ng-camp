@@ -1,11 +1,24 @@
 import { Injectable } from '@angular/core';
-import { Observable, of, defer } from 'rxjs';
+import { Observable, Subject, defer, filter, fromEvent, map, merge, of, shareReplay, startWith } from 'rxjs';
 
-/** Storage service. */
+/**
+ * Storage service. Uses `localStorage` underhood.
+ */
 @Injectable({
 	providedIn: 'root',
 })
 export class StorageService {
+
+	/** Emits the key of the changed value. */
+	private readonly valueChanged$ = new Subject<string>();
+
+	private readonly localStorage: Storage;
+
+	private readonly window = window;
+
+	public constructor() {
+		this.localStorage = this.window.localStorage;
+	}
 
 	/**
 	 * Save data to storage.
@@ -14,19 +27,8 @@ export class StorageService {
 	 */
 	public save<T>(key: string, data: T): Observable<void> {
 		return defer(() => {
-			localStorage.setItem(key, JSON.stringify(data));
-
-			return of(undefined);
-		});
-	}
-
-	/**
-	 * Removes data from storage.
-	 * @param key Key.
-	 */
-	public remove(key: string): Observable<void> {
-		return defer(() => {
-			localStorage.removeItem(key);
+			this.localStorage.setItem(key, JSON.stringify(data));
+			this.valueChanged$.next(key);
 
 			return of(undefined);
 		});
@@ -36,19 +38,51 @@ export class StorageService {
 	 * Get item from storage by key.
 	 * @param key Key.
 	 */
-	public get<T>(key: string): Observable<T | null> {
-		return defer(() => {
-			const value = localStorage.getItem(key);
-			if (value != null) {
-				try {
-					return of(JSON.parse(value));
-				} catch (error: unknown) {
-					console.error(error);
-					return of(null);
-				}
-			}
+	public get<T = unknown>(key: string): Observable<T | null> {
+		return this.watchStorageChangeByKey(key).pipe(
+			map(() => this.obtainFromStorageByKey<T>(key)),
+			startWith(this.obtainFromStorageByKey<T>(key)),
+			shareReplay({ refCount: true, bufferSize: 1 }),
+		);
+	}
 
-			return of(null);
+	private watchStorageChangeByKey(keyToWatch: string): Observable<void> {
+		const otherPageChange$ = fromEvent(this.window, 'storage').pipe(
+			filter((event): event is StorageEvent => event instanceof StorageEvent),
+			map(event => event.key),
+		);
+
+		// storage event happens only for the other pages of this domain, so we need to handle the local changes manually
+		// https://developer.mozilla.org/en-US/docs/Web/API/Window/storage_event
+		const currentPageChange$ = this.valueChanged$;
+
+		return merge(
+			otherPageChange$,
+			currentPageChange$,
+		).pipe(
+			filter(key => key === keyToWatch),
+			map(() => undefined),
+		);
+	}
+
+	private obtainFromStorageByKey<T = unknown>(key: string): T | null {
+		const rawData = this.localStorage.getItem(key);
+		if (rawData == null) {
+			return null;
+		}
+		return JSON.parse(rawData) as T;
+	}
+
+	/**
+	 * Removed data from storage.
+	 * @param key Key.
+	 */
+	public remove(key: string): Observable<void> {
+		return defer(() => {
+			this.localStorage.removeItem(key);
+			this.valueChanged$.next(key);
+
+			return of(undefined);
 		});
 	}
 }

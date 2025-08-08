@@ -1,7 +1,7 @@
 <mat-toolbar class="root">
 	<a mat-button routerLink="/">Anime Application</a>
 	<div class="buttons">
-		@if (isAuthorizedUser$ | async) {
+		@if (isAuthorizedUser()) {
 			<button mat-button color="primary" class="button" type="button" (click)="onLogout()">Logout</button>
 		} @else {
 			<a mat-button color="primary" class="button" routerLink="/auth/register">Sign Up</a>

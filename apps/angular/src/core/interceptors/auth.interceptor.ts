@@ -1,7 +1,6 @@
 import { HttpEvent, HttpHandler, HttpHeaders, HttpInterceptor, HttpRequest } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
 import { Observable } from 'rxjs';
-import { first, map, switchMap } from 'rxjs/operators';
 
 import { UserSecret } from '@js-camp/core/models/auth/user-secret';
 import { environment } from '@js-camp/angular/environments/environment';
@@ -14,20 +13,20 @@ const AUTH_PREFIX = 'Bearer';
 /** Adds JWT to requests using Authorization HTTP header. */
 @Injectable()
 export class AuthInterceptor implements HttpInterceptor {
-
 	/** User secret. */
 	private readonly userSecret = inject(UserSecretService);
 
 	/** @inheritdoc */
 	public intercept(req: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<unknown>> {
 		if (this.shouldInterceptToken(req.url)) {
-			return this.userSecret.get().pipe(
-				first(),
-				map(userSecret =>
-					userSecret ? req.clone({ headers: this.appendAuthorizationHeader(req.headers, userSecret) }) : req),
-				switchMap(newReq => next.handle(newReq)),
-			);
+			const secret = this.userSecret.secret();
+
+			if (secret) {
+				const newReq = req.clone({ headers: this.appendAuthorizationHeader(req.headers, secret) });
+				return next.handle(newReq);
+			}
 		}
+
 		return next.handle(req);
 	}
 
