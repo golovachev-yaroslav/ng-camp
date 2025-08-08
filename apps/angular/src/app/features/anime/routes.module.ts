@@ -1,6 +1,8 @@
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 
+import { authorizedGuard } from '@js-camp/angular/core/guards/authorized.guard';
+
 import { DashboardPageComponent } from './pages/dashboard/dashboard-page.component';
 import { DetailsPageComponent } from './pages/details/details-page.component';
 
@@ -14,6 +16,7 @@ export const routes: Routes = [
 	{
 		title: 'Details',
 		path: ':id',
+		canMatch: [authorizedGuard()],
 		component: DetailsPageComponent,
 	},
 ];
