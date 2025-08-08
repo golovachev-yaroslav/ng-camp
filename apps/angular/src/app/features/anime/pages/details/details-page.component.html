@@ -1,7 +1,7 @@
 @if (isLoading()) {
 	<mat-progress-spinner color="primary" mode="indeterminate" class="spinner" diameter="36" />
 }
-@if (anime(); as anime) {
+@if (anime$ | async; as anime) {
 	<mat-card class="host" appearance="outlined">
 		<mat-card-header>
 			<mat-card-title>{{ anime.titleEnglish }}</mat-card-title>

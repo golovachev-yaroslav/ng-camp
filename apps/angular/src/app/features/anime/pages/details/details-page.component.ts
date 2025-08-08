@@ -1,4 +1,4 @@
-import { Component, DestroyRef, inject, Signal, signal } from '@angular/core';
+import { Component, DestroyRef, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
@@ -11,7 +11,7 @@ import {
 	MatCardSubtitle,
 	MatCardTitle,
 } from '@angular/material/card';
-import { takeUntilDestroyed, toSignal } from '@angular/core/rxjs-interop';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { Observable, finalize, switchMap, map, distinctUntilChanged } from 'rxjs';
 
 import { EmptyPipe } from '@js-camp/angular/shared/pipes/empty.pipe';
@@ -51,9 +51,6 @@ import { YoutubePlayerComponent } from './components/youtube-player/youtube-play
 export class DetailsPageComponent {
 	/** Anime details. */
 	protected readonly anime$: Observable<Anime>;
-
-	/** Anime details. */
-	protected readonly anime: Signal<Anime | undefined>;
 
 	/** Loading state. */
 	protected readonly isLoading = signal(false);
@@ -107,7 +104,6 @@ export class DetailsPageComponent {
 
 	public constructor() {
 		this.anime$ = this.createAnimeStream();
-		this.anime = toSignal(this.anime$);
 	}
 
 	private createAnimeStream(): Observable<Anime> {
