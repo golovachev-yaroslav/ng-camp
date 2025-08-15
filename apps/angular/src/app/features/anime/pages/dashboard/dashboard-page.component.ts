@@ -2,6 +2,8 @@ import { Component, DestroyRef, inject, signal } from '@angular/core';
 import { CommonModule, AsyncPipe } from '@angular/common';
 import { ActivatedRoute, Params, Router, RouterLink } from '@angular/router';
 import { MatTableModule } from '@angular/material/table';
+import { MatIconAnchor } from '@angular/material/button';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatSortModule, Sort } from '@angular/material/sort';
 import { MatPaginatorModule, PageEvent } from '@angular/material/paginator';
 import { MatSelectModule } from '@angular/material/select';
@@ -9,9 +11,11 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
-import { Observable, finalize, map, switchMap, distinctUntilChanged } from 'rxjs';
+import { Observable, finalize, map, tap, switchMap, distinctUntilChanged, combineLatest, BehaviorSubject } from 'rxjs';
 
 import { AnimeService } from '@js-camp/angular/core/services/anime.service';
+import { AuthService } from '@js-camp/angular/core/services/auth.service';
+import { ConfirmModalService } from '@js-camp/angular/core/services/confirm-modal.service';
 import { Anime } from '@js-camp/core/models/anime/anime';
 import { Pagination } from '@js-camp/core/models/pagintation';
 import { AnimeType } from '@js-camp/core/models/enums/anime-type';
@@ -28,6 +32,7 @@ import { FilterBarComponent } from '@js-camp/angular/app/features/anime/componen
 	imports: [
 		CommonModule,
 		AsyncPipe,
+		MatTooltipModule,
 		MatTableModule,
 		MatPaginatorModule,
 		MatSortModule,
@@ -37,6 +42,7 @@ import { FilterBarComponent } from '@js-camp/angular/app/features/anime/componen
 		MatIconModule,
 		FilterBarComponent,
 		RouterLink,
+		MatIconAnchor,
 	],
 	templateUrl: './dashboard-page.component.html',
 	styleUrl: './dashboard-page.component.css',
@@ -47,9 +53,6 @@ export class DashboardPageComponent {
 
 	/** Loading state. */
 	protected readonly isLoading = signal(false);
-
-	/** Selected types. */
-	protected readonly selectedTypes = signal<AnimeType[]>([]);
 
 	/** Search value. */
 	protected readonly searchValue = signal<string>('');
@@ -68,25 +71,35 @@ export class DashboardPageComponent {
 
 	private readonly animeService = inject(AnimeService);
 
+	private readonly authService = inject(AuthService);
+
+	private readonly confirmModalService = inject(ConfirmModalService);
+
 	private readonly activeRoute = inject(ActivatedRoute);
 
 	private readonly router = inject(Router);
 
 	private readonly destroyRef = inject(DestroyRef);
 
-	/** Columns. */
-	protected readonly displayedColumns: string[] = [
-		'poster',
-		'titleEnglish',
-		'titleJapanese',
-		'airedStart',
-		'type',
-		'status',
-	];
+	private readonly triggerReload$ = new BehaviorSubject<void>(undefined);
+
+	/** Is an authorized user. */
+	protected readonly isAuthorizedUser = this.authService.isAuthorizedUser;
 
 	public constructor() {
 		this.animes$ = this.createAnimeStream();
 		this.searchValue.set(this.queryParams.search);
+	}
+
+	/** Table columns. */
+	protected get displayedColumns(): string[] {
+		const allColumns = ['poster', 'titleEnglish', 'titleJapanese', 'airedStart', 'type', 'status', 'control'];
+
+		if (this.isAuthorizedUser()) {
+			return allColumns;
+		}
+
+		return allColumns.filter(column => column !== 'control');
 	}
 
 	/**
@@ -106,17 +119,23 @@ export class DashboardPageComponent {
 	private createAnimeStream(): Observable<Pagination<Anime>> {
 		this.isLoading.set(true);
 
-		return this.activeRoute.queryParams.pipe(
+		const params$ = this.activeRoute.queryParams.pipe(
 			distinctUntilChanged(),
 			map(query => this.transformQueryParams(query)),
-			switchMap(params =>
+		);
+
+		return combineLatest([
+			params$,
+			this.triggerReload$.pipe(),
+		]).pipe(
+			tap(() => this.isLoading.set(true)),
+			switchMap(([params]) =>
 				this.getAnimeList(params).pipe(
 					finalize(() => {
 						this.isLoading.set(false);
-						this.selectedTypes.set(this.queryParams.typeIn?.split(',') as AnimeType[] ?? []);
 					}),
-					takeUntilDestroyed(this.destroyRef),
 				)),
+			takeUntilDestroyed(this.destroyRef),
 		);
 	}
 
@@ -205,5 +224,26 @@ export class DashboardPageComponent {
 		const pathname = this.router.url.split('?')[0];
 
 		this.router.navigate([pathname], { queryParams: { ...this.queryParams, ...params } });
+	}
+
+	/**
+	 * Delete anime.
+	 * @param event Mouse event.
+	 * @param anime Anime.
+	 */
+	protected onDelete(event: MouseEvent, anime: Anime): void {
+		event.stopPropagation();
+		const title = anime.titleEnglish === '' ? anime.titleJapanese : anime.titleEnglish;
+
+		this.confirmModalService.open({
+			title: 'Delete Anime',
+			message: `Would you like to delete ${title}?`,
+		}).pipe(
+			switchMap(() => this.animeService.deleteAnime(anime.id)),
+			takeUntilDestroyed(this.destroyRef),
+		)
+			.subscribe(() => {
+				this.triggerReload$.next();
+			});
 	}
 }

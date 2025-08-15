@@ -39,3 +39,13 @@
 .description {
   margin-bottom: var(--space-md);
 }
+
+mat-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+mat-card-header > .mat-mdc-card-header-text {
+  display: none;
+}

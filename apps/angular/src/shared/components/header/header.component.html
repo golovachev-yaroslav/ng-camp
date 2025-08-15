@@ -2,7 +2,9 @@
 	<a mat-button routerLink="/">Anime Application</a>
 	<div class="buttons">
 		@if (isAuthorizedUser()) {
-			<button mat-button color="primary" class="button" type="button" (click)="onLogout()">Logout</button>
+			<button mat-button color="primary" class="button" type="button" (click)="onLogout()">
+				<mat-icon>logout</mat-icon> Logout
+			</button>
 		} @else {
 			<a mat-button color="primary" class="button" routerLink="/auth/register">Sign Up</a>
 			<a mat-button color="primary" class="button" routerLink="/auth/login">Sign In</a>

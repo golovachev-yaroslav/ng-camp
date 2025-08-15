@@ -1,5 +1,11 @@
 .filter-bar {
-  padding: var(--space-sm) 0;
+  padding: var(--space-sm) 0 var(--space-lg) 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter {
   display: flex;
 }
 
@@ -10,4 +16,8 @@
 .is-hidden-clear {
   visibility: hidden;
   opacity: 0;
+}
+
+camp-filter-bar .no-bottom .mat-mdc-form-field-subscript-wrapper {
+  display: none;
 }

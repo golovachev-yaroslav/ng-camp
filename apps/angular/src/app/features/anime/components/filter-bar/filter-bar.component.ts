@@ -1,12 +1,13 @@
-import { Component, OnInit, inject, input, output, signal } from '@angular/core';
+import { Component, OnInit, inject, input, output, signal, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatFormField, MatLabel, MatSuffix } from '@angular/material/form-field';
 import { MatIcon } from '@angular/material/icon';
-import { MatIconButton } from '@angular/material/button';
+import { MatAnchor, MatIconButton } from '@angular/material/button';
 import { MatInput } from '@angular/material/input';
 import { MatOption } from '@angular/material/autocomplete';
 import { MatSelect, MatSelectChange } from '@angular/material/select';
 import { NonNullableFormBuilder, ReactiveFormsModule } from '@angular/forms';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 
 import { AnimeType } from '@js-camp/core/models/enums/anime-type';
 
@@ -18,18 +19,23 @@ import { AnimeType } from '@js-camp/core/models/enums/anime-type';
 		CommonModule,
 		MatFormField,
 		MatIcon,
-		MatIconButton,
+		MatAnchor,
 		MatInput,
 		MatLabel,
 		MatOption,
 		MatSelect,
 		MatSuffix,
 		ReactiveFormsModule,
+		RouterLink,
+		MatIconButton,
 	],
 	templateUrl: './filter-bar.component.html',
 	styleUrl: './filter-bar.component.css',
+	encapsulation: ViewEncapsulation.None,
 })
 export class FilterBarComponent implements OnInit {
+	private readonly activeRoute = inject(ActivatedRoute);
+
 	/** Search emit. */
 	protected readonly search = output<string | undefined>();
 
@@ -39,14 +45,14 @@ export class FilterBarComponent implements OnInit {
 	/** Types list. */
 	public readonly types = input.required<AnimeType[]>();
 
-	/** Selected types. */
-	public readonly selectedTypes = input<AnimeType[]>([]);
-
 	/** Search value. */
 	public readonly searchValue = input<string>();
 
 	/** Is hidden clear button. */
 	protected readonly isHiddenClearButton = signal(true);
+
+	/** Selected types. */
+	public readonly selectedTypes = signal<AnimeType[]>([]);
 
 	/** Anime type enum. */
 	protected readonly animeType = AnimeType;
@@ -92,5 +98,10 @@ export class FilterBarComponent implements OnInit {
 			search: this.searchValue() ?? '',
 		});
 		this.isHiddenClearButton.set(!this.searchValue());
+
+		const typeIn = this.activeRoute.snapshot.queryParamMap.get('typeIn');
+		if (typeIn) {
+			this.selectedTypes.set(typeIn.split(',') as AnimeType[]);
+		}
 	}
 }

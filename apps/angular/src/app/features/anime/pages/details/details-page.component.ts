@@ -1,6 +1,6 @@
 import { Component, DestroyRef, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatProgressSpinner } from '@angular/material/progress-spinner';
@@ -9,7 +9,7 @@ import {
 	MatCardContent,
 	MatCardHeader,
 	MatCardSubtitle,
-	MatCardTitle,
+	MatCardTitle, MatCardTitleGroup,
 } from '@angular/material/card';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { Observable, finalize, switchMap, map, distinctUntilChanged } from 'rxjs';
@@ -24,6 +24,8 @@ import { Source } from '@js-camp/core/models/enums/source';
 import { Season } from '@js-camp/core/models/enums/season';
 import { Genre } from '@js-camp/core/models/anime/genre';
 import { Studio } from '@js-camp/core/models/anime/studio';
+import { MatAnchor } from '@angular/material/button';
+import { MatIcon } from '@angular/material/icon';
 
 import { PreviewPosterModalComponent } from './components/preview-poster-modal/preview-poster-modal.component';
 import { YoutubePlayerComponent } from './components/youtube-player/youtube-player.component';
@@ -44,6 +46,10 @@ import { YoutubePlayerComponent } from './components/youtube-player/youtube-play
 		MatCardContent,
 		EmptyPipe,
 		YoutubePlayerComponent,
+		MatCardTitleGroup,
+		RouterLink,
+		MatIcon,
+		MatAnchor,
 	],
 	templateUrl: './details-page.component.html',
 	styleUrl: './details-page.component.css',

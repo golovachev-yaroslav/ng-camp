@@ -6,12 +6,13 @@ import { MatAnchor, MatButton } from '@angular/material/button';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 
 import { AuthService } from '@js-camp/angular/core/services/auth.service';
+import { MatIcon } from '@angular/material/icon';
 
 /** Header component. */
 @Component({
 	selector: 'camp-header',
 	standalone: true,
-	imports: [MatToolbarModule, RouterLink, MatAnchor, MatButton, CommonModule],
+	imports: [MatToolbarModule, RouterLink, MatAnchor, MatButton, CommonModule, MatIcon],
 	templateUrl: './header.component.html',
 	styleUrl: './header.component.css',
 })

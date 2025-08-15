@@ -43,4 +43,12 @@ export class AnimeService {
 			.get<AnimeDto>(`${this.animeApiUrl}${id}/`)
 			.pipe(map(data => AnimeMapper.fromDto(data)));
 	}
+
+	/**
+	 * Delete anime by id.
+	 * @param id ID of anime.
+	 */
+	public deleteAnime(id: number): Observable<void> {
+		return this.httpService.delete<void>(`${this.animeApiUrl}${id}/`);
+	}
 }
