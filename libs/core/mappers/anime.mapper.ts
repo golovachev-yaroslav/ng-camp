@@ -25,12 +25,6 @@ export namespace AnimeMapper {
 			type: dto.type,
 			status: dto.status,
 			aired: AiredMapper.fromDto(dto.aired),
-			season: dto.season,
-			source: dto.source,
-			airing: dto.airing,
-			synopsis: dto.synopsis,
-			rating: dto.rating,
-			trailerYoutubeId: dto.trailer_youtube_id,
 			genres: dto.genres_data?.map(genre => GenreMapper.fromDto(genre)),
 			studios: dto.studios_data?.map(studio => StudioMapper.fromDto(studio)),
 		});

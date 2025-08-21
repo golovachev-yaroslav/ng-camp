@@ -11,7 +11,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
-import { Observable, finalize, map, tap, switchMap, distinctUntilChanged, combineLatest, BehaviorSubject } from 'rxjs';
+import { Observable, finalize, map, tap, switchMap, distinctUntilChanged, combineLatest, filter, BehaviorSubject } from 'rxjs';
 
 import { AnimeService } from '@js-camp/angular/core/services/anime.service';
 import { AuthService } from '@js-camp/angular/core/services/auth.service';
@@ -239,6 +239,7 @@ export class DashboardPageComponent {
 			title: 'Delete Anime',
 			message: `Would you like to delete ${title}?`,
 		}).pipe(
+			filter(Boolean),
 			switchMap(() => this.animeService.deleteAnime(anime.id)),
 			takeUntilDestroyed(this.destroyRef),
 		)

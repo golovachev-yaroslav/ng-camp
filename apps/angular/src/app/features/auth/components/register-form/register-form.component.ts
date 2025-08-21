@@ -2,7 +2,7 @@ import { Component, DestroyRef, inject, signal } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
-import { FormControl, NonNullableFormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
+import { NonNullableFormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButton, MatIconButton } from '@angular/material/button';
@@ -12,24 +12,11 @@ import { catchError, throwError } from 'rxjs';
 
 import { FormValidation } from '@js-camp/angular/core/utils/form-validation';
 import { AuthService } from '@js-camp/angular/core/services/auth.service';
+import { ControlsOf } from '@js-camp/core/utils/form';
+import { Register } from '@js-camp/core/models/auth/register';
 
-interface RegisterForm {
-
-	/** Email. */
-	readonly email: FormControl<string>;
-
-	/** First name. */
-	readonly firstName: FormControl<string>;
-
-	/** Last name. */
-	readonly lastName: FormControl<string>;
-
-	/** Password. */
-	readonly password: FormControl<string>;
-
-	/** Confirm password. */
-	readonly confirmPassword: FormControl<string>;
-}
+/** Register form. */
+type RegisterForm = ControlsOf<Register & { confirmPassword: string; }>;
 
 /** Register form component. */
 @Component({

@@ -9,7 +9,7 @@ export enum AnimeType {
 	Ona = 'ONA',
 	Music = 'MUSIC',
 	PromotionalVideos = 'PROMOTIONAL_VIDEOS',
-	Unknown = 'Unknown',
+	Unknown = 'UNKNOWN',
 }
 
 /** Anime types. */

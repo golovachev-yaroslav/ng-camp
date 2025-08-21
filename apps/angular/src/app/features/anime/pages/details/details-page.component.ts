@@ -9,14 +9,15 @@ import {
 	MatCardContent,
 	MatCardHeader,
 	MatCardSubtitle,
-	MatCardTitle, MatCardTitleGroup,
+	MatCardTitle,
+	MatCardTitleGroup,
 } from '@angular/material/card';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { Observable, finalize, switchMap, map, distinctUntilChanged } from 'rxjs';
 
 import { EmptyPipe } from '@js-camp/angular/shared/pipes/empty.pipe';
 import { AnimeService } from '@js-camp/angular/core/services/anime.service';
-import { Anime } from '@js-camp/core/models/anime/anime';
+import { AnimeDetail } from '@js-camp/core/models/anime/anime-detail';
 import { AnimeStatus } from '@js-camp/core/models/enums/anime-status';
 import { AnimeType } from '@js-camp/core/models/enums/anime-type';
 import { Rating } from '@js-camp/core/models/enums/rating';
@@ -56,7 +57,7 @@ import { YoutubePlayerComponent } from './components/youtube-player/youtube-play
 })
 export class DetailsPageComponent {
 	/** Anime details. */
-	protected readonly anime$: Observable<Anime>;
+	protected readonly anime$: Observable<AnimeDetail>;
 
 	/** Loading state. */
 	protected readonly isLoading = signal(false);
@@ -112,7 +113,7 @@ export class DetailsPageComponent {
 		this.anime$ = this.createAnimeStream();
 	}
 
-	private createAnimeStream(): Observable<Anime> {
+	private createAnimeStream(): Observable<AnimeDetail> {
 		this.isLoading.set(true);
 
 		return this.activeRoute.paramMap.pipe(
