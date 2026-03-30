@@ -1,0 +1,18 @@
+<div class="image-container">
+	@if (preview()) {
+		<img [src]="preview()" alt="Image" class="preview" />
+	}
+
+	<div class="image-button-container">
+		<button mat-button color="primary" type="button" (click)="selectFile()">
+			<mat-icon>insert_photo</mat-icon> Select image
+		</button>
+	</div>
+	<input
+		#imageInput
+		class="image-input"
+		accept="image/*"
+		type="file"
+		(change)="uploadFile($event)"
+	/>
+</div>
