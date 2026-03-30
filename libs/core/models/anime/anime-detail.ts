@@ -40,7 +40,7 @@ export class AnimeDetail extends Anime {
 	/**
 	 * Get YouTube video URL.
 	 */
-	public get getYoutubeUrl(): string | null {
+	public get youtubeUrl(): string | null {
 		if (this.trailerYoutubeId) {
 			return `https://www.youtube.com/embed/${this.trailerYoutubeId}`;
 		}
@@ -50,4 +50,4 @@ export class AnimeDetail extends Anime {
 }
 
 /** Anime. */
-type AnimeDetailInitArgs = Omit<OmitImmerable<AnimeDetail>, 'getYoutubeUrl'>;
+type AnimeDetailInitArgs = Omit<OmitImmerable<AnimeDetail>, 'youtubeUrl'>;

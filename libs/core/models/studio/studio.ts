@@ -1,11 +1,13 @@
-/** Genre. */
-export interface Genre {
-
+/** Studio. */
+export interface Studio {
 	/** Unique id. */
 	readonly id: number;
 
 	/** Name. */
 	readonly name: string;
+
+	/** Logo. */
+	readonly logo: string;
 
 	/**
 	 *  Created date.

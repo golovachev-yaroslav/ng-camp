@@ -1,5 +1,5 @@
-import { Genre } from '../models/anime/genre';
-import { GenreDto } from '../dtos/anime/genre.dto';
+import { Genre } from '../models/genre/genre';
+import { GenreDto } from '../dtos/genre/genre.dto';
 
 /** Genre mapper. */
 export namespace GenreMapper {
@@ -14,6 +14,7 @@ export namespace GenreMapper {
 			name: dto.name,
 			created: dto.created ? new Date(dto.created) : null,
 			modified: dto.modified ? new Date(dto.modified) : null,
+			type: dto.type
 		};
 	}
 }

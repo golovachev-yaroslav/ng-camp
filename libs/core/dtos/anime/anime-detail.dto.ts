@@ -3,8 +3,8 @@ import { Source } from '../../models/enums/source';
 import { Rating } from '../../models/enums/rating';
 
 import { AnimeDto } from './anime.dto';
-import { GenreDto } from './genre.dto';
-import { StudioDto } from './studio.dto';
+import { GenreDto } from '../genre/genre.dto';
+import { StudioDto } from '../studio/studio.dto';
 
 /** Anime detail DTO. */
 export interface AnimeDetailDto extends AnimeDto {

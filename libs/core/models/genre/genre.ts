@@ -1,14 +1,13 @@
-/** Studio. */
-export interface Studio {
+import { GenreType } from '@js-camp/core/models/enums/genre-type';
+
+/** Genre. */
+export interface Genre {
 
 	/** Unique id. */
 	readonly id: number;
 
 	/** Name. */
 	readonly name: string;
-
-	/** Logo. */
-	readonly logo: string;
 
 	/**
 	 *  Created date.
@@ -21,4 +20,7 @@ export interface Studio {
 	 *  @example 1975-01-01T00:00:00Z.
 	 */
 	readonly modified: Date | null;
+
+	/** Type. */
+	readonly type: GenreType;
 }

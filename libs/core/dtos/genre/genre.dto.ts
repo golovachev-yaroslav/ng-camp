@@ -1,3 +1,5 @@
+import { GenreType } from '@js-camp/core/models/enums/genre-type';
+
 /** Genre DTO. */
 export interface GenreDto {
 
@@ -18,4 +20,7 @@ export interface GenreDto {
 	 *  @example 1975-01-01T00:00:00Z.
 	 */
 	readonly modified: string | null;
+
+	/** Type. */
+	readonly type: GenreType;
 }

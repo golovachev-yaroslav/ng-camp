@@ -2,8 +2,8 @@ import { AnimeStatus } from '../../models/enums/anime-status';
 import { AnimeType } from '../../models/enums/anime-type';
 
 import { AiredDto } from './aired.dto';
-import { GenreDto } from './genre.dto';
-import { StudioDto } from './studio.dto';
+import { GenreDto } from '../genre/genre.dto';
+import { StudioDto } from '../studio/studio.dto';
 
 /** Anime DTO. */
 export interface AnimeDto {

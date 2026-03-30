@@ -10,7 +10,7 @@ export interface AnimeFormDto {
 	readonly title_jpn: string;
 
 	/** Image URL. */
-	readonly image: string | null;
+	readonly image?: string | null;
 
 	/** Aired dates. */
 	readonly aired: AiredDto;

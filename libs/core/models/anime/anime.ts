@@ -1,10 +1,10 @@
 import { AnimeType } from '../enums/anime-type';
 import { AnimeStatus } from '../enums/anime-status';
 import { OmitImmerable } from '../immerable';
+import { Genre } from '../genre/genre';
+import { Studio } from '../studio/studio';
 
 import { Aired } from './aired';
-import { Genre } from './genre';
-import { Studio } from './studio';
 
 /** Anime. */
 export class Anime {

@@ -1,8 +1,6 @@
 import { Season } from '@js-camp/core/models/enums/season';
 import { Source } from '@js-camp/core/models/enums/source';
 import { Rating } from '@js-camp/core/models/enums/rating';
-import { Genre } from '@js-camp/core/models/anime/genre';
-import { Studio } from '@js-camp/core/models/anime/studio';
 import { Aired } from '@js-camp/core/models/anime/aired';
 import { AnimeStatus } from '@js-camp/core/models/enums/anime-status';
 import { AnimeType } from '@js-camp/core/models/enums/anime-type';
@@ -41,17 +39,17 @@ export interface AnimeForm {
 	readonly rating: Rating;
 
 	/** Genre. */
-	readonly genres?: Genre[];
+	readonly genres?: number[];
 
 	/** Studio. */
-	readonly studios?: Studio[];
+	readonly studios?: number[];
 
-	/** Trailer Youtube id. */
-	readonly trailerYoutubeId?: string;
+	/** Trailer Youtube Url. */
+	readonly trailerYoutubeUrl?: string;
 
-	/** Image file. */
-	readonly imageFile: File | null;
+	/** Poster file. */
+	readonly posterFile: File | null;
 
-	/** Image URL. */
-	readonly imageUrl: string | null;
+	/** Poster URL. */
+	readonly poster?: string | null;
 }

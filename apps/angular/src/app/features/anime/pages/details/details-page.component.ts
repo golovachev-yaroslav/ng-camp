@@ -23,8 +23,8 @@ import { AnimeType } from '@js-camp/core/models/enums/anime-type';
 import { Rating } from '@js-camp/core/models/enums/rating';
 import { Source } from '@js-camp/core/models/enums/source';
 import { Season } from '@js-camp/core/models/enums/season';
-import { Genre } from '@js-camp/core/models/anime/genre';
-import { Studio } from '@js-camp/core/models/anime/studio';
+import { Genre } from '@js-camp/core/models/genre/genre';
+import { Studio } from '@js-camp/core/models/studio/studio';
 import { MatAnchor } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
 

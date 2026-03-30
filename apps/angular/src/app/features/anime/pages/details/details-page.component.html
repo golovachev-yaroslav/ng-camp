@@ -21,9 +21,9 @@
 			>
 				<img class="poster" [src]="anime.poster" [alt]="anime.titleEnglish">
 			</button>
-			@if (anime.getYoutubeUrl) {
+			@if (anime.youtubeUrl) {
 				<div class="player">
-					<camp-youtube-player [src]="anime.getYoutubeUrl" />
+					<camp-youtube-player [src]="anime.youtubeUrl" />
 				</div>
 			}
 			<p class="description"><strong>Status:</strong> {{ animeStatus.toReadable(anime.status) }}</p>

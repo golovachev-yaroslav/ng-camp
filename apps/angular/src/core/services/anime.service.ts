@@ -1,6 +1,6 @@
 import { Injectable, inject } from '@angular/core';
 import { HttpClient, HttpErrorResponse, HttpParams } from '@angular/common/http';
-import { Observable, map, switchMap, catchError, throwError } from 'rxjs';
+import { Observable, map, switchMap, catchError, throwError, of, first } from 'rxjs';
 
 import { Anime } from '@js-camp/core/models/anime/anime';
 import { AnimeDetail } from '@js-camp/core/models/anime/anime-detail';
@@ -16,6 +16,8 @@ import { environment } from '@js-camp/angular/environments/environment';
 import { AnimeParams } from '@js-camp/core/models/anime/anime-params';
 import { AppValidationError } from '@js-camp/core/models/app-error';
 import { AnimeForm } from '@js-camp/core/models/anime/anime-form';
+import { ImageService } from '@js-camp/angular/core/services/image.service';
+import { ConfigType } from '@js-camp/core/models/enums/s3-config';
 
 /** Endpoints for anime API. */
 @Injectable({
@@ -24,8 +26,10 @@ import { AnimeForm } from '@js-camp/core/models/anime/anime-form';
 export class AnimeService {
 	private readonly httpService = inject(HttpClient);
 
+	private readonly imageService = inject(ImageService);
+
 	/** Url for this service. */
-	private readonly animeApiUrl = `${environment.apiUrl}/api/v1/anime/`;
+	private readonly animeApiUrl = `${environment.apiUrl}/api/v1/anime/anime/`;
 
 	/**
 	 * Get anime list from server.
@@ -54,20 +58,48 @@ export class AnimeService {
 	 * @param payload Anime details.
 	 */
 	public createAnime(payload: AnimeForm): Observable<AnimeDetail> {
-		return this.httpService.post<AnimeDetailDto>(
-			this.animeApiUrl,
-			AnimeDetailMapper.toDto(payload),
-		).pipe(
-			map(dto => AnimeDetailMapper.fromDto(dto)),
-			catchError((error: unknown): Observable<never> => {
-				if (error instanceof HttpErrorResponse) {
-					const mappedError = AnimeDetailMapper.validationErrorFromDto(error.error.errors);
+		return this.uploadPoster(payload.posterFile).pipe(
+			switchMap(poster =>
+				this.httpService.post<AnimeDetailDto>(this.animeApiUrl, AnimeDetailMapper.toDto({ ...payload, poster })).pipe(
+					map(dto => AnimeDetailMapper.fromDto(dto)),
+					catchError((error: unknown): Observable<never> => {
+						if (error instanceof HttpErrorResponse) {
+							const mappedError = AnimeDetailMapper.validationErrorFromDto(error.error.errors);
 
-					return throwError(() => new AppValidationError(error.message, mappedError));
-				}
+							return throwError(() => new AppValidationError(error.message, mappedError));
+						}
 
-				return throwError(() => new Error('Unknown error'));
-			}),
+						return throwError(() => new Error('Unknown error'));
+					}),
+				)),
+		);
+	}
+
+	/**
+	 * Update anime.
+	 * @param id ID.
+	 * @param payload Anime details.
+	 */
+	public updateAnime(id: number, payload: AnimeForm): Observable<AnimeDetail> {
+		return this.uploadPoster(payload.posterFile).pipe(
+			switchMap(poster =>
+				this.httpService
+					.put<AnimeDetailDto>(
+					`${this.animeApiUrl}${id}/`,
+					AnimeDetailMapper.toDto({ ...payload, poster: payload.posterFile ? poster : payload.poster }),
+				)
+					.pipe(
+						map(dto => AnimeDetailMapper.fromDto(dto)),
+						catchError((error: unknown): Observable<never> => {
+							if (error instanceof HttpErrorResponse) {
+								const mappedError = AnimeDetailMapper.validationErrorFromDto(error.error.errors);
+
+								return throwError(() => new AppValidationError(error.message, mappedError));
+							}
+
+							return throwError(() => new Error('Unknown error'));
+						}),
+					)),
 		);
 	}
 
@@ -77,5 +109,17 @@ export class AnimeService {
 	 */
 	public deleteAnime(id: number): Observable<void> {
 		return this.httpService.delete<void>(`${this.animeApiUrl}${id}/`);
+	}
+
+	/**
+	 * Uploads poster.
+	 * @param file Image file.
+	 */
+	public uploadPoster(file: File | null): Observable<string | null> {
+		if (file === null) {
+			return of(null);
+		}
+
+		return this.imageService.upload(file, ConfigType.AnimeImages).pipe(first());
 	}
 }
