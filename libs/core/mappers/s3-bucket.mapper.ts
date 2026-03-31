@@ -1,8 +1,9 @@
-import { S3BucketDto } from '@js-camp/core/dtos/s3/s3-bucket.dto';
-import { ConfigType } from '@js-camp/core/models/enums/s3-config';
+import { S3BucketDto } from '../dtos/s3/s3-bucket.dto';
+import { ConfigType } from '../models/enums/s3-config';
 
 /** S3 file bucket mapper. */
 export namespace S3BucketMapper {
+
 	/**
 	 * Converts model to DTO.
 	 * @param file File.
@@ -13,7 +14,7 @@ export namespace S3BucketMapper {
 			config: configType,
 			filename: file.name,
 			content_type: file.type,
-			content_length: file.size
-		}
+			content_length: file.size,
+		};
 	}
 }

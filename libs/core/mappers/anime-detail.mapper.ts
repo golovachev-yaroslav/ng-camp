@@ -1,11 +1,12 @@
-import { AnimeMapper } from '@js-camp/core/mappers/anime.mapper';
-import { AiredMapper } from '@js-camp/core/mappers/aired.mapper';
-import { AnimeFormDto } from '@js-camp/core/dtos/anime/anime-form.dto';
-import { EntityValidationErrors } from '@js-camp/core/models/app-error';
-import { extractErrorMessages } from '@js-camp/core/utils/extract-error';
-import { AnimeForm } from '@js-camp/core/models/anime/anime-form';
+import { AnimeFormDto } from '../dtos/anime/anime-form.dto';
+import { EntityValidationErrors } from '../models/app-error';
+import { extractErrorMessages } from '../utils/extract-error';
+import { AnimeForm } from '../models/anime/anime-form';
 import { AnimeDetail } from '../models/anime/anime-detail';
 import { AnimeDetailDto } from '../dtos/anime/anime-detail.dto';
+
+import { AiredMapper } from './aired.mapper';
+import { AnimeMapper } from './anime.mapper';
 
 /** Anime detail mapper. */
 export namespace AnimeDetailMapper {
@@ -33,24 +34,20 @@ export namespace AnimeDetailMapper {
 			trailerYoutubeId: dto.trailer_youtube_id,
 			airing: dto.airing,
 			rating: dto.rating,
-			studios: dto.studios_data.map((studio) => {
-				return {
-					id: studio.id,
-					name: studio.name,
-					logo: studio.image,
-					created: studio.created ? new Date(studio.created) : null,
-					modified: studio.modified ? new Date(studio.modified) : null,
-				};
-			}),
-			genres: dto.genres_data.map((genre) => {
-				return {
-					id: genre.id,
-					name: genre.name,
-					type: genre.type,
-					created: genre.created ? new Date(genre.created) : null,
-					modified: genre.modified ? new Date(genre.modified) : null,
-				};
-			}),
+			studios: dto.studios_data.map(studio => ({
+				id: studio.id,
+				name: studio.name,
+				logo: studio.image,
+				created: studio.created ? new Date(studio.created) : null,
+				modified: studio.modified ? new Date(studio.modified) : null,
+			})),
+			genres: dto.genres_data.map(genre => ({
+				id: genre.id,
+				name: genre.name,
+				type: genre.type,
+				created: genre.created ? new Date(genre.created) : null,
+				modified: genre.modified ? new Date(genre.modified) : null,
+			})),
 		});
 	}
 

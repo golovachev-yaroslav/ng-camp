@@ -1,9 +1,11 @@
-import { Season } from '@js-camp/core/models/enums/season';
-import { Source } from '@js-camp/core/models/enums/source';
-import { Rating } from '@js-camp/core/models/enums/rating';
-import { Aired } from '@js-camp/core/models/anime/aired';
-import { AnimeStatus } from '@js-camp/core/models/enums/anime-status';
-import { AnimeType } from '@js-camp/core/models/enums/anime-type';
+import { Season } from '../enums/season';
+import { Source } from '../enums/source';
+import { Rating } from '../enums/rating';
+
+import { AnimeStatus } from '../enums/anime-status';
+import { AnimeType } from '../enums/anime-type';
+
+import { Aired } from './aired';
 
 /** Anime form. */
 export interface AnimeForm {

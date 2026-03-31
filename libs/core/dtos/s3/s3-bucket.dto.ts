@@ -1,4 +1,4 @@
-import { ConfigType } from '@js-camp/core/models/enums/s3-config';
+import { ConfigType } from '../../models/enums/s3-config';
 
 /** S3 bucket DTO. */
 export interface S3BucketDto {

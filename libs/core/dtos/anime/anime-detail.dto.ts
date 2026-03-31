@@ -2,9 +2,10 @@ import { Season } from '../../models/enums/season';
 import { Source } from '../../models/enums/source';
 import { Rating } from '../../models/enums/rating';
 
-import { AnimeDto } from './anime.dto';
 import { GenreDto } from '../genre/genre.dto';
 import { StudioDto } from '../studio/studio.dto';
+
+import { AnimeDto } from './anime.dto';
 
 /** Anime detail DTO. */
 export interface AnimeDetailDto extends AnimeDto {

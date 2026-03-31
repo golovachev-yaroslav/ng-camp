@@ -22,6 +22,7 @@ import { AbstractControl, FormControl, FormGroup } from '@angular/forms';
  * ```
  */
 
+/** Utility for creating `FormGroup` from an object. */
 export type ControlsOf<T> = {
 	[K in keyof T]: T[K] extends object
 		? FormGroup<ControlsOf<T[K]>>
@@ -30,14 +31,14 @@ export type ControlsOf<T> = {
 
 /** Utility type to get value from Angular `AbstractControl`. */
 export type FormValues<T> = {
-  [key in keyof T]: T[key] extends AbstractControl
-    ? T[key]['value']
-    : never
+	[key in keyof T]: T[key] extends AbstractControl
+		? T[key]['value']
+		: never
 };
 
 /** Utility type to get raw value from Angular `AbstractControl`. */
 export type RawFormValues<T> = {
-  [key in keyof T]: T[key] extends AbstractControl
-    ? ReturnType<T[key]['getRawValue']>
-    : never
+	[key in keyof T]: T[key] extends AbstractControl
+		? ReturnType<T[key]['getRawValue']>
+		: never
 };

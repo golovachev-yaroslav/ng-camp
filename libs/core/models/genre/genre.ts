@@ -1,4 +1,4 @@
-import { GenreType } from '@js-camp/core/models/enums/genre-type';
+import { GenreType } from '../enums/genre-type';
 
 /** Genre. */
 export interface Genre {

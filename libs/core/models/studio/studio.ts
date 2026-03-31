@@ -1,5 +1,6 @@
 /** Studio. */
 export interface Studio {
+
 	/** Unique id. */
 	readonly id: number;
 

@@ -1,5 +1,5 @@
-import { QueryParams } from '@js-camp/core/models/query-params';
-import { QueryParamsDto } from '@js-camp/core/dtos/query-params-dto';
+import { QueryParams } from '../models/query-params';
+import { QueryParamsDto } from '../dtos/query-params-dto';
 
 /** Base http parameters mapper. */
 export namespace BaseHttpParamsMapper {
