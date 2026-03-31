@@ -194,6 +194,15 @@ export class AnimeFormComponent {
 		}
 	}
 
+	/** Cancel form. */
+	protected onCancel(): void {
+		if (this.type() === 'edit') {
+			this.router.navigate(['/anime', this.initialData()?.id]);
+		} else {
+			this.router.navigate(['/anime']);
+		}
+	}
+
 	/** Submit form. */
 	protected onSubmit(): void {
 		if (this.animeForm.invalid) {
