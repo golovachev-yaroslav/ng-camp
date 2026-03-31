@@ -1,6 +1,8 @@
-import { AnimeType } from '../../dtos/enums/anime-type';
-import { AnimeStatus } from '../../dtos/enums/anime-status';
+import { AnimeType } from '../enums/anime-type';
+import { AnimeStatus } from '../enums/anime-status';
 import { OmitImmerable } from '../immerable';
+import { Genre } from '../genre/genre';
+import { Studio } from '../studio/studio';
 
 import { Aired } from './aired';
 
@@ -16,7 +18,7 @@ export class Anime {
 	public readonly titleJapanese: string;
 
 	/** Poster URL. */
-	public readonly poster: string | null;
+	public readonly poster: string;
 
 	/** Created date. */
 	public readonly created: Date;
@@ -39,6 +41,12 @@ export class Anime {
 	/** User score. */
 	public readonly userScore: number | null;
 
+	/** Genre. */
+	public readonly genres?: Genre[];
+
+	/** Studio. */
+	public readonly studios?: Studio[];
+
 	public constructor(data: AnimeInitArgs) {
 		this.id = data.id;
 		this.titleEnglish = data.titleEnglish;
@@ -51,6 +59,8 @@ export class Anime {
 		this.aired = data.aired;
 		this.score = data.score;
 		this.userScore = data.userScore;
+		this.genres = data.genres;
+		this.studios = data.studios;
 	}
 }
 

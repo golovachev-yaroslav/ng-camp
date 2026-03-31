@@ -3,6 +3,19 @@
   margin: 0 auto;
 }
 
+.mat-mdc-row .mat-mdc-cell {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.mat-mdc-row:hover {
+  background-color: var(--mdc-switch-selected-focus-handle-color);
+}
+
+.paginator {
+  margin: var(--space-md) 0;
+}
+
 .poster {
   width: 150px;
   height: 150px;

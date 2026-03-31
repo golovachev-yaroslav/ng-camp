@@ -1,0 +1,170 @@
+@let buttonText = type() === 'create' ? 'Create' : 'Save';
+
+<form [formGroup]="animeForm" (submit)="onSubmit()" class="host">
+	<div class="row">
+		<div class="cell-item-12">
+			<camp-image-uploader (select)="onSelectPoster($event)" [url]="animeForm.get('poster')?.value ?? null" />
+			@if (animeForm.get('posterFile')?.errors?.['required']) {
+				<mat-error>Required field</mat-error>
+			}
+		</div>
+	</div>
+	<div class="row">
+		<div class="cell-item-6">
+			<mat-form-field class="full-width">
+				<mat-label>Title English</mat-label>
+				<input matInput class="input-text" placeholder="Title English" formControlName="titleEnglish" />
+				@if (animeForm.get('titleEnglish')?.errors?.['required']) {
+					<mat-error>Required field</mat-error>
+				}
+				@if (animeForm.get('titleEnglish')?.errors?.['invalid']) {
+					<mat-error>{{ animeForm.get('titleEnglish')?.errors?.['invalid'] }}</mat-error>
+				}
+			</mat-form-field>
+		</div>
+		<div class="cell-item-6">
+			<mat-form-field class="full-width">
+				<mat-label>Title Japanese</mat-label>
+				<input matInput class="input-text" placeholder="Title Japanese" formControlName="titleJapanese" />
+				@if (animeForm.get('titleJapanese')?.errors?.['required']) {
+					<mat-error>Required field</mat-error>
+				}
+				@if (animeForm.get('titleJapanese')?.errors?.['invalid']) {
+					<mat-error>{{ animeForm.get('titleJapanese')?.errors?.['invalid'] }}</mat-error>
+				}
+			</mat-form-field>
+		</div>
+	</div>
+	<div class="row">
+		<div class="cell-item-4">
+			<mat-form-field class="full-width">
+				<mat-label>Type</mat-label>
+				<mat-select formControlName="type">
+					@for (type of animeTypes; track type) {
+						<mat-option [value]="type">{{ animeType.toReadable(type) }}</mat-option>
+					}
+				</mat-select>
+			</mat-form-field>
+		</div>
+		<div class="cell-item-4">
+			<mat-form-field class="full-width">
+				<mat-label>Status</mat-label>
+				<mat-select formControlName="status">
+					@for (status of animeStatuses; track status) {
+						<mat-option [value]="status">{{ animeStatus.toReadable(status) }}</mat-option>
+					}
+				</mat-select>
+			</mat-form-field>
+		</div>
+		<div class="cell-item-4">
+			<mat-form-field class="full-width">
+				<mat-label>Source</mat-label>
+				<mat-select formControlName="source">
+					@for (source of animeSources; track source) {
+						<mat-option [value]="source">{{ animeSource.toReadable(source) }}</mat-option>
+					}
+				</mat-select>
+			</mat-form-field>
+		</div>
+	</div>
+	<div class="row">
+		<div class="cell-item-4">
+			<mat-form-field class="full-width">
+				<mat-label>Rating</mat-label>
+				<mat-select formControlName="rating">
+					@for (rating of animeRatings; track rating) {
+						<mat-option [value]="rating">{{ animeRating.toReadable(rating) }}</mat-option>
+					}
+				</mat-select>
+			</mat-form-field>
+		</div>
+		<div class="cell-item-4">
+			<mat-form-field class="full-width">
+				<mat-label>Season</mat-label>
+				<mat-select formControlName="season">
+					@for (season of animeSeasons; track season) {
+						<mat-option [value]="season">{{ animeSeason.toReadable(season) }}</mat-option>
+					}
+				</mat-select>
+			</mat-form-field>
+		</div>
+		<div class="cell-item-4">
+			<mat-form-field class="full-width">
+				<mat-label>Genres</mat-label>
+				<mat-select formControlName="genres" multiple>
+					@for (genre of genres(); track genre.id) {
+						<mat-option [value]="genre.id">{{ genre.name }}</mat-option>
+					}
+				</mat-select>
+			</mat-form-field>
+		</div>
+	</div>
+	<div class="row">
+		<div class="cell-item-4">
+			<mat-form-field class="full-width">
+				<mat-label>Studios</mat-label>
+				<mat-select formControlName="studios" multiple>
+					@for (studio of studios(); track studio.id) {
+						<mat-option [value]="studio.id">{{ studio.name }}</mat-option>
+					}
+				</mat-select>
+			</mat-form-field>
+		</div>
+		<div class="cell-item-4">
+			<mat-form-field class="full-width">
+				<mat-label>Aired</mat-label>
+				<mat-date-range-input [formGroup]="animeForm.controls.aired" [rangePicker]="picker">
+					<input matStartDate formControlName="start" placeholder="Start date">
+					<input matEndDate formControlName="end" placeholder="End date">
+				</mat-date-range-input>
+				<mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+				<mat-date-range-picker #picker></mat-date-range-picker>
+				@if (animeForm.get(['aired', 'start'])?.errors?.['matDatepickerParse']) {
+					<mat-error>Invalid start date</mat-error>
+				}
+				@if (animeForm.get(['aired', 'end'])?.errors?.['matDatepickerParse']) {
+					<mat-error>Invalid end date</mat-error>
+				}
+			</mat-form-field>
+		</div>
+		<div class="cell-item-4">
+			<mat-form-field class="full-width">
+				<mat-label>Youtube trailer URL</mat-label>
+				<input matInput class="input-text" placeholder="Example: https://www.youtube.com/embed/QczGoCmX-pI" formControlName="trailerYoutubeUrl" />
+				@if (animeForm.get('trailerYoutubeUrl')?.errors?.['invalid']) {
+					<mat-error>{{ animeForm.get('trailerYoutubeUrl')?.errors?.['invalid'] }}</mat-error>
+				}
+			</mat-form-field>
+		</div>
+		<div class="cell-item-6">
+			<mat-form-field class="full-width">
+				<mat-label>Synopsis</mat-label>
+				<textarea matInput rows="5" placeholder="Synopsis" formControlName="synopsis"></textarea>
+				@if (animeForm.get('synopsis')?.errors?.['required']) {
+					<mat-error>Required field</mat-error>
+				}
+				@if (animeForm.get('synopsis')?.errors?.['invalid']) {
+					<mat-error>{{ animeForm.get('synopsis')?.errors?.['invalid'] }}</mat-error>
+				}
+			</mat-form-field>
+		</div>
+		<div class="cell-item-6">
+			<mat-checkbox color="primary" formControlName="airing">Airing</mat-checkbox>
+		</div>
+		<div class="cell-item-6"></div>
+	</div>
+	<div class="row">
+		<div class="cell-item-3"></div>
+		<div class="cell-item-3">
+			<button mat-button class="full-width" type="button" (click)="onCancel()">
+				Cancel
+			</button>
+		</div>
+		<div class="cell-item-3">
+			<button mat-flat-button class="full-width" type="submit" [disabled]="isLoading()">
+				{{buttonText}}
+			</button>
+		</div>
+		<div class="cell-item-3"></div>
+	</div>
+</form>

@@ -1,0 +1,38 @@
+<div class="filter-bar">
+	<div class="filter">
+		<mat-form-field class="no-bottom">
+			<mat-label>Filter by Type</mat-label>
+			<mat-select [value]="selectedTypes()" (selectionChange)="onFilterChange($event)" multiple>
+				@for (type of types(); track type) {
+					<mat-option [value]="type">{{ animeType.toReadable(type) }}</mat-option>
+				}
+			</mat-select>
+		</mat-form-field>
+		<form [formGroup]="searchForm" (submit)="onSearch()" class="search">
+			<mat-form-field class="no-bottom">
+				<input
+					matInput
+					placeholder="Search anime"
+					(input)="onInputSearchValue()"
+					formControlName="search"
+					[value]="searchForm.value.search"
+				/>
+				<button
+					type="button"
+					(click)="onClearSearch()"
+					mat-icon-button
+					matSuffix
+					[class]="isHiddenClearButton() ? 'is-hidden-clear' : ''"
+				>
+					<mat-icon>close</mat-icon>
+				</button>
+				<button type="submit" mat-icon-button matSuffix>
+					<mat-icon>search</mat-icon>
+				</button>
+			</mat-form-field>
+		</form>
+	</div>
+	<a mat-button [routerLink]="['/anime', 'create']" color="primary">
+		<mat-icon>add</mat-icon> Add Anime
+	</a>
+</div>

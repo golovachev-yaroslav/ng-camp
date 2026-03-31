@@ -1,5 +1,8 @@
-import { AnimeType } from '../enums/anime-type';
-import { AnimeStatus } from '../enums/anime-status';
+import { AnimeStatus } from '../../models/enums/anime-status';
+import { AnimeType } from '../../models/enums/anime-type';
+
+import { GenreDto } from '../genre/genre.dto';
+import { StudioDto } from '../studio/studio.dto';
 
 import { AiredDto } from './aired.dto';
 
@@ -38,4 +41,10 @@ export interface AnimeDto {
 
 	/** User score. */
 	readonly user_score: number | null;
+
+	/** Genres data. */
+	readonly genres_data?: readonly GenreDto[];
+
+	/** Studios data. */
+	readonly studios_data?: readonly StudioDto[];
 }

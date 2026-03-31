@@ -1,0 +1,53 @@
+<form [formGroup]="loginForm" (submit)="onLogin()" class="host">
+	<h1 class="mat-title-large">Login</h1>
+	<div class="row">
+		<div class="cell-item-12">
+			<mat-form-field class="full-width">
+				<input matInput class="input-text" placeholder="Email" formControlName="email" type="email" />
+				@if (loginForm.get('email')?.errors?.['required']) {
+					<mat-error>Required field</mat-error>
+				}
+				@if (loginForm.get('email')?.errors?.['invalid']) {
+					<mat-error>{{ loginForm.get('email')?.errors?.['invalid'] }}</mat-error>
+				}
+				@if (loginForm.get('email')?.errors?.['email']) {
+					<mat-error>Invalid email</mat-error>
+				}
+			</mat-form-field>
+		</div>
+	</div>
+	<div class="row">
+		<div class="cell-item-12">
+			<mat-form-field class="full-width">
+				<input
+					matInput
+					class="input-text"
+					[type]="isHiddenPassword() ? 'password' : 'text'"
+					placeholder="Password"
+					formControlName="password"
+				/>
+				<button
+					mat-icon-button
+					matSuffix
+					type="button"
+					(click)="onTogglePassword($event)"
+					[attr.aria-label]="'Hide password'"
+					[attr.aria-pressed]="isHiddenPassword()"
+				>
+					<mat-icon>{{ isHiddenPassword() ? "visibility_off" : "visibility" }}</mat-icon>
+				</button>
+				@if (loginForm.get('password')?.errors?.['required']) {
+					<mat-error>Required field</mat-error>
+				}
+				@if (loginForm.get('password')?.errors?.['invalid']) {
+					<mat-error>{{ loginForm.get('password')?.errors?.['invalid'] }}</mat-error>
+				}
+			</mat-form-field>
+		</div>
+	</div>
+	<div class="row">
+		<div class="cell-item-12">
+			<button mat-button class="full-width" type="submit" [disabled]="isLoading()">Login</button>
+		</div>
+	</div>
+</form>

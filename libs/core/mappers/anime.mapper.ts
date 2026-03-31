@@ -2,11 +2,14 @@ import { Anime } from '../models/anime/anime';
 import { AnimeDto } from '../dtos/anime/anime.dto';
 
 import { AiredMapper } from './aired.mapper';
+import { GenreMapper } from './genre.mapper';
+import { StudioMapper } from './studio.mapper';
 
+/** Anime mapper. */
 export namespace AnimeMapper {
 
 	/**
-	 * Maps dto to model.
+	 * Converts dto to model.
 	 * @param dto Anime dto.
 	 */
 	export function fromDto(dto: AnimeDto): Anime {
@@ -22,6 +25,8 @@ export namespace AnimeMapper {
 			type: dto.type,
 			status: dto.status,
 			aired: AiredMapper.fromDto(dto.aired),
+			genres: dto.genres_data?.map(genre => GenreMapper.fromDto(genre)),
+			studios: dto.studios_data?.map(studio => StudioMapper.fromDto(studio)),
 		});
 	}
 }

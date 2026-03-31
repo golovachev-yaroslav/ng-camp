@@ -1,0 +1,117 @@
+<form [formGroup]="registerForm" (submit)="onRegister()" class="host">
+	<h1 class="mat-title-large">Register a user</h1>
+	<div class="row">
+		<div class="cell-item-12">
+			<mat-form-field class="full-width">
+				<input matInput class="input-text" placeholder="Email" formControlName="email" type="email" />
+				@if (registerForm.get('email')?.errors?.['required']) {
+					<mat-error>Required field</mat-error>
+				}
+				@if (registerForm.get('email')?.errors?.['invalid']) {
+					<mat-error>{{ registerForm.get('email')?.errors?.['invalid'] }}</mat-error>
+				}
+				@if (registerForm.get('email')?.errors?.['email']) {
+					<mat-error>Invalid email</mat-error>
+				}
+			</mat-form-field>
+		</div>
+	</div>
+	<div class="row">
+		<div class="cell-item-12">
+			<mat-form-field class="full-width">
+				<input matInput class="input-text" placeholder="First Name" formControlName="firstName" />
+				@if (registerForm.get('firstName')?.errors?.['required']) {
+					<mat-error>Required field</mat-error>
+				}
+				@if (registerForm.get('firstName')?.errors?.['invalid']) {
+					<mat-error>{{ registerForm.get('firstName')?.errors?.['invalid'] }}</mat-error>
+				}
+			</mat-form-field>
+		</div>
+	</div>
+	<div class="row">
+		<div class="cell-item-12">
+			<mat-form-field class="full-width">
+				<input matInput class="input-text" placeholder="Last Name" formControlName="lastName" />
+				@if (registerForm.get('lastName')?.errors?.['required']) {
+					<mat-error>Required field</mat-error>
+				}
+				@if (registerForm.get('lastName')?.errors?.['invalid']) {
+					<mat-error>{{ registerForm.get('lastName')?.errors?.['invalid'] }}</mat-error>
+				}
+			</mat-form-field>
+		</div>
+	</div>
+	<div class="row">
+		<div class="cell-item-12">
+			<mat-form-field class="full-width">
+				<input
+					matInput
+					class="input-text"
+					[type]="isHiddenPassword() ? 'password' : 'text'"
+					placeholder="Password"
+					formControlName="password"
+				/>
+				<button
+					mat-icon-button
+					matSuffix
+					type="button"
+					(click)="onTogglePassword($event)"
+					[attr.aria-label]="'Hide password'"
+					[attr.aria-pressed]="isHiddenPassword()"
+				>
+					<mat-icon>{{ isHiddenPassword() ? "visibility_off" : "visibility" }}</mat-icon>
+				</button>
+				@if (registerForm.get('password')?.errors?.['required']) {
+					<mat-error>Required field</mat-error>
+				}
+				@if (registerForm.get('password')?.errors?.['invalid']) {
+					<mat-error>{{ registerForm.get('password')?.errors?.['invalid'] }}</mat-error>
+				}
+				@if (registerForm.get('password')?.errors?.['minlength']) {
+					<mat-error>Must be at least {{ passwordMinLength }} characters</mat-error>
+				}
+			</mat-form-field>
+		</div>
+	</div>
+	<div class="row">
+		<div class="cell-item-12">
+			<mat-form-field class="full-width">
+				<input
+					matInput
+					class="input-text"
+					[type]="isHiddenConfirmPassword() ? 'password' : 'text'"
+					placeholder="Re-type Password"
+					formControlName="confirmPassword"
+				/>
+				<button
+					mat-icon-button
+					matSuffix
+					type="button"
+					(click)="onToggleConfirmPassword($event)"
+					[attr.aria-label]="'Hide password'"
+					[attr.aria-pressed]="isHiddenConfirmPassword()"
+				>
+					<mat-icon>{{ isHiddenConfirmPassword() ? "visibility_off" : "visibility" }}</mat-icon>
+				</button>
+				@if (registerForm.get('confirmPassword')?.errors?.['required']) {
+					<mat-error>Required field</mat-error>
+				}
+				@if (registerForm.get('confirmPassword')?.errors?.['invalid']) {
+					<mat-error>{{ registerForm.get('confirmPassword')?.errors?.['invalid'] }}</mat-error>
+				}
+				@if (registerForm.get('confirmPassword')?.errors?.['minlength']) {
+					<mat-error>Must be at least {{ passwordMinLength }} characters</mat-error>
+				}
+				@if (registerForm.get('confirmPassword')?.errors?.['matching']) {
+					<mat-error>Password did not match</mat-error>
+				}
+			</mat-form-field>
+		</div>
+	</div>
+	<div class="row">
+		<div class="cell-item-12">
+			<button mat-button class="full-width" type="submit" [disabled]="isLoading()">Register</button>
+		</div>
+	</div>
+</form>

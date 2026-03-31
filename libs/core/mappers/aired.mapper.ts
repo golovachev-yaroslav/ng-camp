@@ -1,10 +1,11 @@
 import { Aired } from '../models/anime/aired';
 import { AiredDto } from '../dtos/anime/aired.dto';
 
+/** Aired mapper. */
 export namespace AiredMapper {
 
 	/**
-	 * Convert aired from model to DTO.
+	 * Converts model to dto.
 	 * @param model Aired.
 	 */
 	export function toDto(model: Aired): AiredDto {
@@ -15,7 +16,7 @@ export namespace AiredMapper {
 	}
 
 	/**
-	 * Convert aired from DTO to mode.
+	 * Converts dto to model.
 	 * @param dto Aired DTO.
 	 */
 	export function fromDto(dto: AiredDto): Aired {
