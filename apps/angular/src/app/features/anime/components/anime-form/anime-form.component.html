@@ -154,11 +154,17 @@
 		<div class="cell-item-6"></div>
 	</div>
 	<div class="row">
-		<div class="cell-item-6"></div>
-		<div class="cell-item-6">
+		<div class="cell-item-3"></div>
+		<div class="cell-item-3">
 			<button mat-button class="full-width" type="submit" [disabled]="isLoading()">
+				Cancel
+			</button>
+		</div>
+		<div class="cell-item-3">
+			<button mat-flat-button class="full-width" type="submit" [disabled]="isLoading()">
 				{{buttonText}}
 			</button>
 		</div>
+		<div class="cell-item-3"></div>
 	</div>
 </form>
