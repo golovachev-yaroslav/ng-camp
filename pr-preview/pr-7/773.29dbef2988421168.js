@@ -366,6 +366,14 @@ let AnimeFormComponent = /*#__PURE__*/(() => {
         this.animeForm.get('posterFile')?.setValue(file);
       }
     }
+    /** Cancel form. */
+    onCancel() {
+      if (this.type() === 'edit') {
+        this.router.navigate(['/anime', this.initialData()?.id]);
+      } else {
+        this.router.navigate(['/anime']);
+      }
+    }
     /** Submit form. */
     onSubmit() {
       if (this.animeForm.invalid) {
@@ -401,8 +409,8 @@ let AnimeFormComponent = /*#__PURE__*/(() => {
         standalone: true,
         features: [_angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵProvidersFeature"]([(0,_angular_material_core__WEBPACK_IMPORTED_MODULE_17__.provideNativeDateAdapter)()]), _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵStandaloneFeature"]],
         decls: 111,
-        vars: 20,
-        consts: [["picker", ""], [1, "host", 3, "submit", "formGroup"], [1, "row"], [1, "cell-item-12"], [3, "select", "url"], [1, "cell-item-6"], [1, "full-width"], ["matInput", "", "placeholder", "Title English", "formControlName", "titleEnglish", 1, "input-text"], ["matInput", "", "placeholder", "Title Japanese", "formControlName", "titleJapanese", 1, "input-text"], [1, "cell-item-4"], ["formControlName", "type"], [3, "value"], ["formControlName", "status"], ["formControlName", "source"], ["formControlName", "rating"], ["formControlName", "season"], ["formControlName", "genres", "multiple", ""], ["formControlName", "studios", "multiple", ""], [3, "formGroup", "rangePicker"], ["matStartDate", "", "formControlName", "start", "placeholder", "Start date"], ["matEndDate", "", "formControlName", "end", "placeholder", "End date"], ["matIconSuffix", "", 3, "for"], ["matInput", "", "placeholder", "Example: https://www.youtube.com/embed/QczGoCmX-pI", "formControlName", "trailerYoutubeUrl", 1, "input-text"], ["matInput", "", "rows", "5", "placeholder", "Synopsis", "formControlName", "synopsis"], ["color", "primary", "formControlName", "airing"], [1, "cell-item-3"], ["mat-button", "", "type", "submit", 1, "full-width", 3, "disabled"], ["mat-flat-button", "", "type", "submit", 1, "full-width", 3, "disabled"]],
+        vars: 19,
+        consts: [["picker", ""], [1, "host", 3, "submit", "formGroup"], [1, "row"], [1, "cell-item-12"], [3, "select", "url"], [1, "cell-item-6"], [1, "full-width"], ["matInput", "", "placeholder", "Title English", "formControlName", "titleEnglish", 1, "input-text"], ["matInput", "", "placeholder", "Title Japanese", "formControlName", "titleJapanese", 1, "input-text"], [1, "cell-item-4"], ["formControlName", "type"], [3, "value"], ["formControlName", "status"], ["formControlName", "source"], ["formControlName", "rating"], ["formControlName", "season"], ["formControlName", "genres", "multiple", ""], ["formControlName", "studios", "multiple", ""], [3, "formGroup", "rangePicker"], ["matStartDate", "", "formControlName", "start", "placeholder", "Start date"], ["matEndDate", "", "formControlName", "end", "placeholder", "End date"], ["matIconSuffix", "", 3, "for"], ["matInput", "", "placeholder", "Example: https://www.youtube.com/embed/QczGoCmX-pI", "formControlName", "trailerYoutubeUrl", 1, "input-text"], ["matInput", "", "rows", "5", "placeholder", "Synopsis", "formControlName", "synopsis"], ["color", "primary", "formControlName", "airing"], [1, "cell-item-3"], ["mat-button", "", "type", "button", 1, "full-width", 3, "click"], ["mat-flat-button", "", "type", "submit", 1, "full-width", 3, "disabled"]],
         template: function AnimeFormComponent_Template(rf, ctx) {
           if (rf & 1) {
             const _r1 = _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵgetCurrentView"]();
@@ -503,6 +511,10 @@ let AnimeFormComponent = /*#__PURE__*/(() => {
             _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵelementStart"](102, "div", 2);
             _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵelement"](103, "div", 25);
             _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵelementStart"](104, "div", 25)(105, "button", 26);
+            _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵlistener"]("click", function AnimeFormComponent_Template_button_click_105_listener() {
+              _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵrestoreView"](_r1);
+              return _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵresetView"](ctx.onCancel());
+            });
             _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵtext"](106, " Cancel ");
             _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵelementEnd"]()();
             _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵelementStart"](107, "div", 25)(108, "button", 27);
@@ -558,18 +570,16 @@ let AnimeFormComponent = /*#__PURE__*/(() => {
             _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵadvance"](3);
             _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵproperty"]("for", picker_r10);
             _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵadvance"](3);
-            _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵconditional"](((tmp_19_0 = ctx.animeForm.get(_angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵpureFunction0"](18, _c0))) == null ? null : tmp_19_0.errors == null ? null : tmp_19_0.errors["matDatepickerParse"]) ? 83 : -1);
+            _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵconditional"](((tmp_19_0 = ctx.animeForm.get(_angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵpureFunction0"](17, _c0))) == null ? null : tmp_19_0.errors == null ? null : tmp_19_0.errors["matDatepickerParse"]) ? 83 : -1);
             _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵadvance"]();
-            _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵconditional"](((tmp_20_0 = ctx.animeForm.get(_angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵpureFunction0"](19, _c1))) == null ? null : tmp_20_0.errors == null ? null : tmp_20_0.errors["matDatepickerParse"]) ? 84 : -1);
+            _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵconditional"](((tmp_20_0 = ctx.animeForm.get(_angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵpureFunction0"](18, _c1))) == null ? null : tmp_20_0.errors == null ? null : tmp_20_0.errors["matDatepickerParse"]) ? 84 : -1);
             _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵadvance"](6);
             _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵconditional"](((tmp_21_0 = ctx.animeForm.get("trailerYoutubeUrl")) == null ? null : tmp_21_0.errors == null ? null : tmp_21_0.errors["invalid"]) ? 90 : -1);
             _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵadvance"](6);
             _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵconditional"](((tmp_22_0 = ctx.animeForm.get("synopsis")) == null ? null : tmp_22_0.errors == null ? null : tmp_22_0.errors["required"]) ? 96 : -1);
             _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵadvance"]();
             _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵconditional"](((tmp_23_0 = ctx.animeForm.get("synopsis")) == null ? null : tmp_23_0.errors == null ? null : tmp_23_0.errors["invalid"]) ? 97 : -1);
-            _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵadvance"](8);
-            _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵproperty"]("disabled", ctx.isLoading());
-            _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵadvance"](3);
+            _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵadvance"](11);
             _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵproperty"]("disabled", ctx.isLoading());
             _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵadvance"]();
             _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵtextInterpolate1"](" ", buttonText_r11, " ");
@@ -2626,10 +2636,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   AnimeDetailMapper: () => (/* binding */ AnimeDetailMapper)
 /* harmony export */ });
-/* harmony import */ var _js_camp_core_mappers_anime_mapper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @js-camp/core/mappers/anime.mapper */ 228);
-/* harmony import */ var _js_camp_core_mappers_aired_mapper__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @js-camp/core/mappers/aired.mapper */ 8679);
-/* harmony import */ var _js_camp_core_utils_extract_error__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @js-camp/core/utils/extract-error */ 1802);
-/* harmony import */ var _models_anime_anime_detail__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../models/anime/anime-detail */ 7086);
+/* harmony import */ var _utils_extract_error__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/extract-error */ 1802);
+/* harmony import */ var _models_anime_anime_detail__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../models/anime/anime-detail */ 7086);
+/* harmony import */ var _aired_mapper__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./aired.mapper */ 8679);
+/* harmony import */ var _anime_mapper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./anime.mapper */ 228);
 
 
 
@@ -2641,7 +2651,7 @@ var AnimeDetailMapper;
   function validationErrorFromDto(errorDto) {
     return {
       // @ts-ignore
-      titleEnglish: (0,_js_camp_core_utils_extract_error__WEBPACK_IMPORTED_MODULE_2__.extractErrorMessages)(errorDto, 'title_eng')
+      titleEnglish: (0,_utils_extract_error__WEBPACK_IMPORTED_MODULE_0__.extractErrorMessages)(errorDto, 'title_eng')
     };
   }
   AnimeDetailMapper.validationErrorFromDto = validationErrorFromDto;
@@ -2650,32 +2660,28 @@ var AnimeDetailMapper;
    * @param dto Anime detail dto.
    */
   function fromDto(dto) {
-    return new _models_anime_anime_detail__WEBPACK_IMPORTED_MODULE_3__.AnimeDetail({
-      ..._js_camp_core_mappers_anime_mapper__WEBPACK_IMPORTED_MODULE_0__.AnimeMapper.fromDto(dto),
+    return new _models_anime_anime_detail__WEBPACK_IMPORTED_MODULE_1__.AnimeDetail({
+      ..._anime_mapper__WEBPACK_IMPORTED_MODULE_3__.AnimeMapper.fromDto(dto),
       synopsis: dto.synopsis,
       season: dto.season,
       source: dto.source,
       trailerYoutubeId: dto.trailer_youtube_id,
       airing: dto.airing,
       rating: dto.rating,
-      studios: dto.studios_data.map(studio => {
-        return {
-          id: studio.id,
-          name: studio.name,
-          logo: studio.image,
-          created: studio.created ? new Date(studio.created) : null,
-          modified: studio.modified ? new Date(studio.modified) : null
-        };
-      }),
-      genres: dto.genres_data.map(genre => {
-        return {
-          id: genre.id,
-          name: genre.name,
-          type: genre.type,
-          created: genre.created ? new Date(genre.created) : null,
-          modified: genre.modified ? new Date(genre.modified) : null
-        };
-      })
+      studios: dto.studios_data.map(studio => ({
+        id: studio.id,
+        name: studio.name,
+        logo: studio.image,
+        created: studio.created ? new Date(studio.created) : null,
+        modified: studio.modified ? new Date(studio.modified) : null
+      })),
+      genres: dto.genres_data.map(genre => ({
+        id: genre.id,
+        name: genre.name,
+        type: genre.type,
+        created: genre.created ? new Date(genre.created) : null,
+        modified: genre.modified ? new Date(genre.modified) : null
+      }))
     });
   }
   AnimeDetailMapper.fromDto = fromDto;
@@ -2692,7 +2698,7 @@ var AnimeDetailMapper;
       genres: model.genres ?? [],
       studios: model.studios ?? [],
       type: model.type,
-      aired: _js_camp_core_mappers_aired_mapper__WEBPACK_IMPORTED_MODULE_1__.AiredMapper.toDto(model.aired),
+      aired: _aired_mapper__WEBPACK_IMPORTED_MODULE_2__.AiredMapper.toDto(model.aired),
       airing: model.airing,
       image: model.poster,
       synopsis: model.synopsis,
