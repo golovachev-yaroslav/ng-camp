@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, DestroyRef, inject, OnInit, signal } from '@angular/core';
 import { CommonModule, AsyncPipe } from '@angular/common';
-import { ActivatedRoute, Params, Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { MatTableModule } from '@angular/material/table';
 import { MatSortModule, Sort } from '@angular/material/sort';
 import { MatPaginatorModule, PageEvent } from '@angular/material/paginator';
@@ -106,8 +106,8 @@ export class DashboardPageComponent implements OnInit {
 		this.isLoading.set(true);
 
 		return this.activeRoute.queryParams.pipe(
-			distinctUntilChanged(),
-			map(query => this.transformQueryParams(query)),
+			map(query => AnimeHttpParamsMapper.fromDto(query)),
+			distinctUntilChanged((previous, current) => JSON.stringify(previous) === JSON.stringify(current)),
 			switchMap(params =>
 				this.getAnimeList(params).pipe(
 					finalize(() => {
@@ -117,18 +117,6 @@ export class DashboardPageComponent implements OnInit {
 					takeUntilDestroyed(this.destroyRef),
 				)),
 		);
-	}
-
-	/**
-	 * Transform query parameters.
-	 * @param query Query parameters.
-	 */
-	private transformQueryParams(query: Params): AnimeParams {
-		const params = AnimeHttpParamsMapper.fromDto(query);
-
-		this.setQueryParams(params);
-
-		return params;
 	}
 
 	/**
@@ -185,9 +173,8 @@ export class DashboardPageComponent implements OnInit {
 	 * @param params Changed params.
 	 */
 	private setQueryParams(params: Partial<AnimeParams>): void {
-		const pathname = this.router.url.split('?')[0];
-
-		this.router.navigate([pathname], {
+		this.router.navigate([], {
+			relativeTo: this.activeRoute,
 			queryParams: AnimeHttpParamsMapper.toQueryParams({ ...this.queryParams, ...params }),
 		});
 	}
