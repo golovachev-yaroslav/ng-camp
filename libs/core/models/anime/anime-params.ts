@@ -1,5 +1,6 @@
 import { QueryParams } from '../query-params';
 import { AnimeStatus } from '../enums/anime-status';
+import { AnimeType } from '../enums/anime-type';
 
 /** Anime parameters. */
 export interface AnimeParams extends QueryParams {
@@ -7,6 +8,6 @@ export interface AnimeParams extends QueryParams {
 	/** Status. */
 	readonly status?: AnimeStatus;
 
-	/** Type in. */
-	readonly typeIn?: string;
+	/** Selected anime types. */
+	readonly typeIn?: readonly AnimeType[];
 }

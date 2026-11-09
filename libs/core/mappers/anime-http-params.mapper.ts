@@ -4,6 +4,7 @@ import { AnimeParams } from '../models/anime/anime-params';
 import { DEFAULT_PAGE_SIZE } from '../models/query-params';
 import { AnimeParamsDto } from '../dtos/anime/anime-params.dto';
 import { AnimeSort } from '../models/enums/anime-sort';
+import { AnimeType } from '../models/enums/anime-type';
 
 import { SortDirectionMapper } from './sort-direction.mapper';
 
@@ -24,7 +25,7 @@ export namespace AnimeHttpParamsMapper {
 			search: model.search,
 			limit,
 			offset: model.offset * limit,
-			type__in: model.typeIn?.toString() ?? '',
+			type__in: model.typeIn?.join(',') ?? '',
 		};
 	}
 
@@ -41,7 +42,35 @@ export namespace AnimeHttpParamsMapper {
 			search: params['search'] ?? '',
 			field: sort.field,
 			direction: sort.direction,
-			typeIn: params['typeIn'] ?? '',
+			typeIn: typesFromQueryParam(params['typeIn']),
 		};
+	}
+
+	/**
+	 * Converts model to router query params.
+	 * @param model Params model.
+	 */
+	export function toQueryParams(model: Partial<AnimeParams>): Params {
+		const { typeIn, ...params } = model;
+
+		if (typeIn === undefined) {
+			return params;
+		}
+
+		return { ...params, typeIn: typeIn.join(',') };
+	}
+
+	/**
+	 * Parses comma-separated anime types query param.
+	 * @param typeIn Comma-separated anime types.
+	 */
+	function typesFromQueryParam(typeIn?: string): AnimeType[] {
+		if (!typeIn) {
+			return [];
+		}
+
+		const types = AnimeType.toArray();
+
+		return typeIn.split(',').filter((type): type is AnimeType => types.includes(type as AnimeType));
 	}
 }

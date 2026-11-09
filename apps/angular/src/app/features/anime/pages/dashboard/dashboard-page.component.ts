@@ -17,7 +17,6 @@ import { Anime } from '@js-camp/core/models/anime/anime';
 import { Pagination } from '@js-camp/core/models/pagintation';
 import { AnimeType } from '@js-camp/core/models/enums/anime-type';
 import { AnimeStatus } from '@js-camp/core/models/enums/anime-status';
-import { QueryParams } from '@js-camp/core/models/query-params';
 import { AnimeHttpParamsMapper } from '@js-camp/core/mappers/anime-http-params.mapper';
 import { AnimeParams } from '@js-camp/core/models/anime/anime-params';
 import { FilterBarComponent } from '@js-camp/angular/app/features/anime/components/filter-bar/filter-bar.component';
@@ -113,7 +112,7 @@ export class DashboardPageComponent implements OnInit {
 				this.getAnimeList(params).pipe(
 					finalize(() => {
 						this.isLoading.set(false);
-						this.selectedTypes.set(this.transformTypes(this.queryParams.typeIn));
+						this.selectedTypes.set([...params.typeIn ?? []]);
 					}),
 					takeUntilDestroyed(this.destroyRef),
 				)),
@@ -121,22 +120,10 @@ export class DashboardPageComponent implements OnInit {
 	}
 
 	/**
-	 * Transform type parameters.
-	 * @param typeIn Query parameters.
-	 */
-	private transformTypes(typeIn?: string): AnimeType[] {
-		if (!typeIn) {
-			return [];
-		}
-
-		return typeIn.split(',') as AnimeType[];
-	}
-
-	/**
 	 * Transform query parameters.
 	 * @param query Query parameters.
 	 */
-	private transformQueryParams(query: Params): QueryParams {
+	private transformQueryParams(query: Params): AnimeParams {
 		const params = AnimeHttpParamsMapper.fromDto(query);
 
 		this.setQueryParams(params);
@@ -161,7 +148,7 @@ export class DashboardPageComponent implements OnInit {
 	 */
 	protected onFilterChange(types: AnimeType[]): void {
 		this.setQueryParams({
-			typeIn: types.toString(),
+			typeIn: types,
 			offset: 0,
 		});
 	}
@@ -190,16 +177,7 @@ export class DashboardPageComponent implements OnInit {
 
 	/** Query params. */
 	protected get queryParams(): AnimeParams {
-		const { queryParams } = this.activeRoute.snapshot;
-
-		return {
-			search: queryParams['search'],
-			offset: queryParams['offset'],
-			limit: queryParams['limit'],
-			field: queryParams['field'],
-			direction: queryParams['direction'],
-			typeIn: queryParams['typeIn'],
-		};
+		return AnimeHttpParamsMapper.fromDto(this.activeRoute.snapshot.queryParams);
 	}
 
 	/**
@@ -209,6 +187,8 @@ export class DashboardPageComponent implements OnInit {
 	private setQueryParams(params: Partial<AnimeParams>): void {
 		const pathname = this.router.url.split('?')[0];
 
-		this.router.navigate([pathname], { queryParams: { ...this.queryParams, ...params } });
+		this.router.navigate([pathname], {
+			queryParams: AnimeHttpParamsMapper.toQueryParams({ ...this.queryParams, ...params }),
+		});
 	}
 }
