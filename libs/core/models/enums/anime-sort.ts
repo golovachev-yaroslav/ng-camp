@@ -25,10 +25,10 @@ export namespace AnimeSort {
 	}
 
 	/**
-	 * Converts an anime status to readable title.
+	 * Converts an anime status to backend ordering field.
 	 * @param value Anime status.
 	 */
-	export function toReadable(value: AnimeSort): string {
+	export function toDto(value: AnimeSort): string {
 		return TO_TITLE_MAP[value];
 	}
 }

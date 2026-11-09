@@ -15,7 +15,7 @@ export namespace AnimeHttpParamsMapper {
 	 * @param model Params model.
 	 */
 	export function toDto(model: AnimeParams): AnimeParametersDto {
-		const field = AnimeSort.toReadable(model.field as AnimeSort);
+		const field = AnimeSort.toDto(model.field as AnimeSort);
 		const ordering = SortDirectionMapper.toDto(field, model.direction);
 		const limit = model.limit ?? DEFAULT_PAGE_SIZE;
 
