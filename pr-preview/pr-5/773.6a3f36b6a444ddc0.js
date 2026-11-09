@@ -202,8 +202,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_material_form_field__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/material/form-field */ 9344);
 /* harmony import */ var _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/material/progress-spinner */ 1640);
 /* harmony import */ var _angular_core_rxjs_interop__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/core/rxjs-interop */ 7212);
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! rxjs */ 3793);
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! rxjs */ 3527);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! rxjs */ 3527);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! rxjs */ 3793);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! rxjs */ 2831);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! rxjs */ 6347);
 /* harmony import */ var _js_camp_angular_core_services_anime_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @js-camp/angular/core/services/anime.service */ 6654);
@@ -467,29 +467,10 @@ let DashboardPageComponent = /*#__PURE__*/(() => {
     }
     createAnimeStream() {
       this.isLoading.set(true);
-      return this.activeRoute.queryParams.pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_7__.distinctUntilChanged)(), (0,rxjs__WEBPACK_IMPORTED_MODULE_8__.map)(query => this.transformQueryParams(query)), (0,rxjs__WEBPACK_IMPORTED_MODULE_9__.switchMap)(params => this.getAnimeList(params).pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_10__.finalize)(() => {
+      return this.activeRoute.queryParams.pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_7__.map)(query => _js_camp_core_mappers_anime_http_params_mapper__WEBPACK_IMPORTED_MODULE_3__.AnimeHttpParamsMapper.fromDto(query)), (0,rxjs__WEBPACK_IMPORTED_MODULE_8__.distinctUntilChanged)((previous, current) => JSON.stringify(previous) === JSON.stringify(current)), (0,rxjs__WEBPACK_IMPORTED_MODULE_9__.switchMap)(params => this.getAnimeList(params).pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_10__.finalize)(() => {
         this.isLoading.set(false);
-        this.selectedTypes.set(this.transformTypes(this.queryParams.typeIn));
+        this.selectedTypes.set([...(params.typeIn ?? [])]);
       }), (0,_angular_core_rxjs_interop__WEBPACK_IMPORTED_MODULE_11__.takeUntilDestroyed)(this.destroyRef))));
-    }
-    /**
-     * Transform type parameters.
-     * @param typeIn Query parameters.
-     */
-    transformTypes(typeIn) {
-      if (!typeIn) {
-        return [];
-      }
-      return typeIn.split(',');
-    }
-    /**
-     * Transform query parameters.
-     * @param query Query parameters.
-     */
-    transformQueryParams(query) {
-      const params = _js_camp_core_mappers_anime_http_params_mapper__WEBPACK_IMPORTED_MODULE_3__.AnimeHttpParamsMapper.fromDto(query);
-      this.setQueryParams(params);
-      return params;
     }
     /**
      * Change page parameter.
@@ -507,7 +488,7 @@ let DashboardPageComponent = /*#__PURE__*/(() => {
      */
     onFilterChange(types) {
       this.setQueryParams({
-        typeIn: types.toString(),
+        typeIn: types,
         offset: 0
       });
     }
@@ -533,29 +514,19 @@ let DashboardPageComponent = /*#__PURE__*/(() => {
     }
     /** Query params. */
     get queryParams() {
-      const {
-        queryParams
-      } = this.activeRoute.snapshot;
-      return {
-        search: queryParams['search'],
-        offset: queryParams['offset'],
-        limit: queryParams['limit'],
-        field: queryParams['field'],
-        direction: queryParams['direction'],
-        typeIn: queryParams['typeIn']
-      };
+      return _js_camp_core_mappers_anime_http_params_mapper__WEBPACK_IMPORTED_MODULE_3__.AnimeHttpParamsMapper.fromDto(this.activeRoute.snapshot.queryParams);
     }
     /**
      * Sets query params.
      * @param params Changed params.
      */
     setQueryParams(params) {
-      const pathname = this.router.url.split('?')[0];
-      this.router.navigate([pathname], {
-        queryParams: {
+      this.router.navigate([], {
+        relativeTo: this.activeRoute,
+        queryParams: _js_camp_core_mappers_anime_http_params_mapper__WEBPACK_IMPORTED_MODULE_3__.AnimeHttpParamsMapper.toQueryParams({
           ...this.queryParams,
           ...params
-        }
+        })
       });
     }
     static {
@@ -731,7 +702,7 @@ let AnimeService = /*#__PURE__*/(() => {
     constructor() {
       this.httpService = (0,_angular_core__WEBPACK_IMPORTED_MODULE_4__.inject)(_angular_common_http__WEBPACK_IMPORTED_MODULE_5__.HttpClient);
       /** Url for this service. */
-      this.animeApiUrl = `${_js_camp_angular_environments_environment__WEBPACK_IMPORTED_MODULE_3__.environment.apiUrl}/api/v1/anime/`;
+      this.animeApiUrl = `${_js_camp_angular_environments_environment__WEBPACK_IMPORTED_MODULE_3__.environment.apiUrl}/api/v1/anime/anime/`;
     }
     /**
      * Get anime list from server.
@@ -813,27 +784,31 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   AnimeHttpParamsMapper: () => (/* binding */ AnimeHttpParamsMapper)
 /* harmony export */ });
-/* harmony import */ var _models_enums_anime_sort__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../models/enums/anime-sort */ 3745);
-/* harmony import */ var _mappers_sort_direction_mapper__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../mappers/sort-direction.mapper */ 5628);
+/* harmony import */ var _models_query_params__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../models/query-params */ 1632);
+/* harmony import */ var _models_enums_anime_sort__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../models/enums/anime-sort */ 3745);
+/* harmony import */ var _models_enums_anime_type__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../models/enums/anime-type */ 381);
+/* harmony import */ var _sort_direction_mapper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./sort-direction.mapper */ 5628);
 
 
-/** Anime Http Parameters Mapper. */
+
+
+/** Anime Http Params Mapper. */
 var AnimeHttpParamsMapper;
 (function (AnimeHttpParamsMapper) {
-  const DEFAULT_PAGE_SIZE = 10;
   /**
    * Converts model to dto.
    * @param model Params model.
    */
   function toDto(model) {
-    const field = _models_enums_anime_sort__WEBPACK_IMPORTED_MODULE_0__.AnimeSort.toReadable(model.field);
-    const ordering = _mappers_sort_direction_mapper__WEBPACK_IMPORTED_MODULE_1__.SortDirectionMapper.toDto(field, model.direction);
+    const field = _models_enums_anime_sort__WEBPACK_IMPORTED_MODULE_1__.AnimeSort.toDto(model.field);
+    const ordering = _sort_direction_mapper__WEBPACK_IMPORTED_MODULE_3__.SortDirectionMapper.toDto(field, model.direction);
+    const limit = model.limit ?? _models_query_params__WEBPACK_IMPORTED_MODULE_0__.DEFAULT_PAGE_SIZE;
     return {
       ordering,
       search: model.search,
-      limit: model?.limit ?? DEFAULT_PAGE_SIZE,
-      offset: model.offset ? model.offset * (model?.limit ?? DEFAULT_PAGE_SIZE) : undefined,
-      type__in: model.typeIn?.toString() ?? ''
+      limit,
+      offset: model.offset * limit,
+      type__in: model.typeIn?.join(',') ?? ''
     };
   }
   AnimeHttpParamsMapper.toDto = toDto;
@@ -842,17 +817,46 @@ var AnimeHttpParamsMapper;
    * @param params Unknown params.
    */
   function fromDto(params) {
-    const sort = _mappers_sort_direction_mapper__WEBPACK_IMPORTED_MODULE_1__.SortDirectionMapper.fromDto(params['field'], params['direction']);
+    const sort = _sort_direction_mapper__WEBPACK_IMPORTED_MODULE_3__.SortDirectionMapper.fromDto(params['field'], params['direction']);
     return {
-      offset: params['offset'] ?? 0,
-      limit: params['limit'] ?? DEFAULT_PAGE_SIZE,
+      offset: Number(params['offset'] ?? 0),
+      limit: Number(params['limit'] ?? _models_query_params__WEBPACK_IMPORTED_MODULE_0__.DEFAULT_PAGE_SIZE),
       search: params['search'] ?? '',
       field: sort.field,
       direction: sort.direction,
-      typeIn: params['typeIn'] ?? ''
+      typeIn: typesFromQueryParam(params['typeIn'])
     };
   }
   AnimeHttpParamsMapper.fromDto = fromDto;
+  /**
+   * Converts model to router query params.
+   * @param model Params model.
+   */
+  function toQueryParams(model) {
+    const {
+      typeIn,
+      ...params
+    } = model;
+    if (typeIn === undefined) {
+      return params;
+    }
+    return {
+      ...params,
+      typeIn: typeIn.join(',')
+    };
+  }
+  AnimeHttpParamsMapper.toQueryParams = toQueryParams;
+  /**
+   * Parses comma-separated anime types query param.
+   * @param typeIn Comma-separated anime types.
+   */
+  function typesFromQueryParam(typeIn) {
+    if (!typeIn) {
+      return [];
+    }
+    const types = _models_enums_anime_type__WEBPACK_IMPORTED_MODULE_2__.AnimeType.toArray();
+    return typeIn.split(',').filter(type => types.includes(type));
+  }
 })(AnimeHttpParamsMapper || (AnimeHttpParamsMapper = {}));
 
 /***/ }),
@@ -1035,13 +1039,13 @@ var AnimeSort = /*#__PURE__*/function (AnimeSort) {
   }
   AnimeSort.toArray = toArray;
   /**
-   * Converts an anime status to readable title.
+   * Converts an anime status to backend ordering field.
    * @param value Anime status.
    */
-  function toReadable(value) {
+  function toDto(value) {
     return TO_TITLE_MAP[value];
   }
-  AnimeSort.toReadable = toReadable;
+  AnimeSort.toDto = toDto;
 })(AnimeSort || (AnimeSort = {}));
 
 /***/ }),
@@ -1141,6 +1145,21 @@ var AnimeType = /*#__PURE__*/function (AnimeType) {
   }
   AnimeType.toReadable = toReadable;
 })(AnimeType || (AnimeType = {}));
+
+/***/ }),
+
+/***/ 1632:
+/*!******************************************!*\
+  !*** ./libs/core/models/query-params.ts ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   DEFAULT_PAGE_SIZE: () => (/* binding */ DEFAULT_PAGE_SIZE)
+/* harmony export */ });
+/** Default page size. */
+const DEFAULT_PAGE_SIZE = 10;
 
 /***/ }),
 
