@@ -1,7 +1,7 @@
 import { QueryParamsDto } from '../query-params-dto';
 
 /** Anime parameters DTO. */
-export interface AnimeParametersDto extends QueryParamsDto {
+export interface AnimeParamsDto extends QueryParamsDto {
 
 	/** Status. */
 	readonly status?: string;

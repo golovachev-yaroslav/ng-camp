@@ -2,19 +2,19 @@ import { Params } from '@angular/router';
 
 import { AnimeParams } from '../models/anime/anime-params';
 import { DEFAULT_PAGE_SIZE } from '../models/query-params';
-import { AnimeParametersDto } from '../dtos/anime/anime-params.dto';
+import { AnimeParamsDto } from '../dtos/anime/anime-params.dto';
 import { AnimeSort } from '../models/enums/anime-sort';
 
 import { SortDirectionMapper } from './sort-direction.mapper';
 
-/** Anime Http Parameters Mapper. */
+/** Anime Http Params Mapper. */
 export namespace AnimeHttpParamsMapper {
 
 	/**
 	 * Converts model to dto.
 	 * @param model Params model.
 	 */
-	export function toDto(model: AnimeParams): AnimeParametersDto {
+	export function toDto(model: AnimeParams): AnimeParamsDto {
 		const field = AnimeSort.toDto(model.field as AnimeSort);
 		const ordering = SortDirectionMapper.toDto(field, model.direction);
 		const limit = model.limit ?? DEFAULT_PAGE_SIZE;
