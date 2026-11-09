@@ -1,5 +1,8 @@
 import { SortDirection } from '@angular/material/sort';
 
+/** Default page size. */
+export const DEFAULT_PAGE_SIZE = 10;
+
 /** Query params. */
 export interface QueryParams {
 

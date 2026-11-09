@@ -1,13 +1,14 @@
 import { Params } from '@angular/router';
 
 import { AnimeParams } from '../models/anime/anime-params';
+import { DEFAULT_PAGE_SIZE } from '../models/query-params';
 import { AnimeParametersDto } from '../dtos/anime/anime-params.dto';
 import { AnimeSort } from '../models/enums/anime-sort';
-import { SortDirectionMapper } from '../mappers/sort-direction.mapper';
+
+import { SortDirectionMapper } from './sort-direction.mapper';
 
 /** Anime Http Parameters Mapper. */
 export namespace AnimeHttpParamsMapper {
-	const DEFAULT_PAGE_SIZE = 10;
 
 	/**
 	 * Converts model to dto.
@@ -16,12 +17,13 @@ export namespace AnimeHttpParamsMapper {
 	export function toDto(model: AnimeParams): AnimeParametersDto {
 		const field = AnimeSort.toReadable(model.field as AnimeSort);
 		const ordering = SortDirectionMapper.toDto(field, model.direction);
+		const limit = model.limit ?? DEFAULT_PAGE_SIZE;
 
 		return {
 			ordering,
 			search: model.search,
-			limit: model?.limit ?? DEFAULT_PAGE_SIZE,
-			offset: model.offset ? model.offset * (model?.limit ?? DEFAULT_PAGE_SIZE) : undefined,
+			limit,
+			offset: model.offset * limit,
 			type__in: model.typeIn?.toString() ?? '',
 		};
 	}
@@ -34,8 +36,8 @@ export namespace AnimeHttpParamsMapper {
 		const sort = SortDirectionMapper.fromDto(params['field'], params['direction']);
 
 		return {
-			offset: params['offset'] ?? 0,
-			limit: params['limit'] ?? DEFAULT_PAGE_SIZE,
+			offset: Number(params['offset'] ?? 0),
+			limit: Number(params['limit'] ?? DEFAULT_PAGE_SIZE),
 			search: params['search'] ?? '',
 			field: sort.field,
 			direction: sort.direction,

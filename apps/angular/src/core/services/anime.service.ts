@@ -20,7 +20,7 @@ export class AnimeService {
 	private readonly httpService = inject(HttpClient);
 
 	/** Url for this service. */
-	private readonly animeApiUrl = `${environment.apiUrl}/api/v1/anime/`;
+	private readonly animeApiUrl = `${environment.apiUrl}/api/v1/anime/anime/`;
 
 	/**
 	 * Get anime list from server.
